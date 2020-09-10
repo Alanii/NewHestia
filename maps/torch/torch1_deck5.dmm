@@ -13173,7 +13173,9 @@
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
 "zX" = (
-/obj/machinery/door/window/brigdoor/southleft,
+/obj/machinery/door/window/brigdoor/southleft{
+	req_access = list("ACCESS_INFANTRY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "Ac" = (

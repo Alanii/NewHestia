@@ -1770,24 +1770,24 @@
 /area/operations_storage/medical
 	name = "\improper Medical Operations Storage"
 	icon_state = "green"
-	req_access = (access_medical)
+	req_access = list(access_medical)
 
 /area/operations_storage/security
 	name = "\improper Security Operations Storage"
 	icon_state = "red"
-	req_access = (access_security)
+	req_access = list(access_security)
 
 /area/operations_storage/science
 	name = "\improper Research Operations Storage"
 	icon_state = "purple"
-	req_access = (access_research)
+	req_access = list(access_research)
 
 /area/operations_storage/engineering
 	name = "\improper Engineering Operations Storage"
 	icon_state = "orange"
-	req_access = (access_engine)
+	req_access = list(access_engine)
 
 /area/operations_storage/robotics
 	name = "\improper Robotics Operations Storage"
 	icon_state = "pink"
-	req_access = (access_robotics)
+	req_access = list(access_robotics)
