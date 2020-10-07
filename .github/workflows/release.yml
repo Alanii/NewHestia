@@ -1,0 +1,19 @@
+name: Build Release
+
+on:
+  push:
+    branches:
+    - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build changelog
+      run: python tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs
+    - name: Upload changelog
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: Changelog
+        path: html/changelog.html 
