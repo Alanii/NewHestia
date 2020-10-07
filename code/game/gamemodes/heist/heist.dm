@@ -6,7 +6,7 @@
 	name = "Heist"
 	config_tag = "heist"
 	required_players = 6
-	required_enemies = 3
+	required_enemies = 2 //Originally 3, updated for lowpop (Also, 3v3 heist? Why though)
 	round_description = "An unidentified bluespace signature has slipped into close sensor range and is approaching!"
 	extended_round_description = "The Company's majority control of phoron in Nyx has marked the \
 		station to be a highly valuable target for many competing organizations and individuals. Being a \
