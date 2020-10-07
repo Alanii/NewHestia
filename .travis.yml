@@ -2,7 +2,7 @@ language: generic
 dist: xenial
 jdk: openjdk8
 before script:
-    - chmod +x send.sh
+    - chmod +x test.sh
 env:
   global:
     BYOND_MAJOR="512"
