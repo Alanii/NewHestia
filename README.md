@@ -1,8 +1,8 @@
-# Bastion of Hestia
+# New Hestia (Bastion of Hestia)
 
 [Website]() - [Code](https://github.com/BoHBranch/BoH-Bay) - [Discord]() - [IRC]()
 
-This is a fork of Baystation12's code for BYOND on Space Station 13.
+This is a fork of a fork of Baystation12's code for BYOND on Space Station 13.
 
 ---
 
