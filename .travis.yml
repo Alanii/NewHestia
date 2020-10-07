@@ -27,9 +27,6 @@ cache:
   directories:
     - $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}
 
-install:
-  - pip install --upgrade pip
-
 addons:
   apt:
     packages:
