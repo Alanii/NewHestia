@@ -2,7 +2,7 @@
 /obj/item/weapon/gun/projectile/pirate
 	name = "zip gun"
 	desc = "Little more than a barrel, handle, and firing mechanism, cheap makeshift firearms like this one are not uncommon in frontier systems."
-	icon = 'icons/obj/guns/zipgun.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/zipgun.dmi'
 	icon_state = "zipgun"
 	item_state = "sawnshotgun"
 	handle_casings = CYCLE_CASINGS //player has to take the old casing out manually before reloading

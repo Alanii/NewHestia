@@ -49,7 +49,7 @@
 /obj/item/weapon/gun/launcher/crossbow
 	name = "powered crossbow"
 	desc = "A modern twist on an old classic. Pick up that can."
-	icon = 'icons/obj/guns/crossbow.dmi'
+	icon = 'icons/obj/weapons/guns/Projectile/crossbow.dmi'
 	icon_state = "crossbow"
 	item_state = "crossbow-solid"
 	fire_sound = 'sound/weapons/gunshot/xbow.ogg' // TODO: Decent THWOK noise.

@@ -22,7 +22,7 @@
 /obj/item/weapon/gun/energy/darkmatter
 	name = "flux cannon"
 	desc = "A vicious beam weapon that crushes targets with dark-matter gravity pulses. Parts of it twitch and writhe, as if alive."
-	icon = 'icons/obj/guns/darkcannon.dmi'
+	icon = 'icons/obj/weapons/guns/Projectile/darkcannon.dmi'
 	icon_state = "darkcannon"
 	item_state = "darkcannon"
 	w_class = ITEM_SIZE_LARGE
@@ -45,7 +45,7 @@
 /obj/item/weapon/gun/energy/sonic
 	name = "soundcannon"
 	desc = "A vicious sonic weapon of alien manufacture. Parts of it quiver gelatinously, as though the insectile-looking thing is alive."
-	icon = 'icons/obj/guns/noise.dmi'
+	icon = 'icons/obj/weapons/guns/Special/noise.dmi'
 	icon_state = "noise"
 	item_state = "noise"
 	w_class = ITEM_SIZE_LARGE

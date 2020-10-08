@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/launcher/foam
 	name = "foam blaster"
 	desc = "The classic Jorf blaster!"
-	icon = 'icons/obj/guns/foam.dmi'
+	icon = 'icons/obj/weapons/guns/Special/foam.dmi'
 	icon_state = "blaster"
 	item_state = "foam_gun"
 	force = 1
@@ -76,7 +76,7 @@
 /obj/item/foam_dart
 	name = "foam dart"
 	desc = "An offical Jorf brand foam dart, for use only with offical Jorf brand foam dart launching products."
-	icon = 'icons/obj/guns/foam.dmi'
+	icon = 'icons/obj/weapons/guns/Special/foam.dmi'
 	icon_state = "dart"
 	w_class = ITEM_SIZE_TINY
 	force = 0
@@ -106,7 +106,7 @@
 /obj/item/weapon/storage/box/foam_darts
 	name = "box of foam darts"
 	desc = "It's a box of offical Jorf brand foam darts, for use only with offical Jorf brand products."
-	icon = 'icons/obj/guns/foam.dmi'
+	icon = 'icons/obj/weapons/guns/Projectile/foam.dmi'
 	icon_state = "dart_box"
 	startswith = list(/obj/item/foam_dart = 14)
 
@@ -114,7 +114,7 @@
 /obj/item/weapon/storage/box/large/foam_gun
 	name = "\improper Jorf blaster set"
 	desc = "It's an official Jorf brand blaster, with three official Jorf brand darts!"
-	icon = 'icons/obj/guns/foam.dmi'
+	icon = 'icons/obj/weapons/guns/Projectile/foam.dmi'
 	icon_state = "blaster_box"
 	startswith = list(/obj/item/weapon/gun/launcher/foam,
 					  /obj/item/foam_dart = 3)
