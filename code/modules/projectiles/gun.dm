@@ -31,7 +31,7 @@
 /obj/item/weapon/gun
 	name = "gun"
 	desc = "Its a gun. It's pretty terrible, though."
-	icon = 'icons/obj/guns/gui.dmi'
+	icon = 'icons/obj/weapons/guns/Special/gui.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
@@ -127,7 +127,7 @@
 				item_state_slots[slot_l_hand_str] = initial(item_state)
 				item_state_slots[slot_r_hand_str] = initial(item_state)
 		if(M.skill_check(SKILL_WEAPONS,SKILL_BASIC))
-			overlays += image('icons/obj/guns/gui.dmi',"safety[safety()]")
+			overlays += image('icons/obj/weapons/guns/Special/gui.dmi',"safety[safety()]")
 	if(safety_icon)
 		overlays += image(icon,"[safety_icon][safety()]")
 

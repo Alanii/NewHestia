@@ -2,7 +2,7 @@
 	name = "anti-materiel rifle"
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
 	Truly an anachronism from another time."
-	icon = 'icons/obj/guns/heavysniper.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/heavysniper.dmi'
 	icon_state = "heavysniper"
 	item_state = "heavysniper" //sort of placeholder
 	w_class = ITEM_SIZE_HUGE
@@ -82,7 +82,7 @@
 /obj/item/weapon/gun/projectile/heavysniper/boltaction
 	name = "bolt action rifle"
 	desc = "An old bolt action rifle from some forgotten war, still commonplace among farmers and colonists as an anti-varmint rifle."
-	icon = 'icons/obj/guns/boltaction.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/boltaction.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
@@ -99,7 +99,7 @@
 /obj/item/weapon/gun/projectile/hornetsniper
 	name = "hornet marksman rifle"
 	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
-	icon = 'icons/obj/guns/hornet.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"
 	w_class = ITEM_SIZE_HUGE

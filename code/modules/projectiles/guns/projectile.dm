@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/projectile
 	name = "gun"
 	desc = "A gun that fires bullets."
-	icon = 'icons/obj/guns/pistol.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/pistol.dmi'
 	icon_state = "secguncomp"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	w_class = ITEM_SIZE_NORMAL

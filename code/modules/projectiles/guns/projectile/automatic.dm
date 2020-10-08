@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/projectile/automatic
 	name = "prototype SMG"
 	desc = "A protoype lightweight, fast firing submachine gun."
-	icon = 'icons/obj/guns/prototype_smg.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/prototype_smg.dmi'
 	icon_state = "prototype"
 	item_state = "saber"
 	w_class = ITEM_SIZE_NORMAL
@@ -28,7 +28,7 @@
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
 	name = "machine pistol"
 	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
-	icon = 'icons/obj/guns/machine_pistol.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/machine_pistol.dmi'
 	icon_state = "mpistolen"
 	safety_icon = "safety"
 	item_state = "mpistolen"
@@ -63,7 +63,7 @@
 /obj/item/weapon/gun/projectile/automatic/merc_smg
 	name = "submachine gun"
 	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
-	icon = 'icons/obj/guns/merc_smg.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
 	safety_icon = "safety"
@@ -108,7 +108,7 @@
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
 	name = "assault rifle"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
-	icon = 'icons/obj/guns/assault_rifle.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/assault_rifle.dmi'
 	icon_state = "arifle"
 	item_state = null
 	w_class = ITEM_SIZE_HUGE
@@ -146,7 +146,7 @@
 /obj/item/weapon/gun/projectile/automatic/sec_smg
 	name = "submachine gun"
 	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
-	icon = 'icons/obj/guns/sec_smg.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
 	safety_icon = "safety"
@@ -180,7 +180,7 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
 	name = "bullpup assault rifle"
 	desc = "The Hephaestus Industries Z8 Bulldog is an older model bullpup carbine. Makes you feel like a space marine when you hold it."
-	icon = 'icons/obj/guns/bullpup_rifle.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"
 	w_class = ITEM_SIZE_HUGE
@@ -255,7 +255,7 @@
 /obj/item/weapon/gun/projectile/automatic/l6_saw
 	name = "light machine gun"
 	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2281' engraved on the reciever." //probably should refluff this
-	icon = 'icons/obj/guns/saw.dmi'
+	icon = 'icons/obj/weapons/guns/Ballistic/saw.dmi'
 	icon_state = "l6closed50"
 	item_state = "l6closedmag"
 	w_class = ITEM_SIZE_HUGE

@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/energy/particle
 	name = "particle lance"
 	desc = "A long, thick-bodied energy rifle of some kind, clad in a curious indigo polymer and lit from within by Cherenkov radiation. The grip is clearly not designed for human hands."
-	icon = 'icons/obj/guns/particle_rifle.dmi'
+	icon = 'icons/obj/weapons/guns/Energy/particle_rifle.dmi'
 	icon_state = "particle_rifle"
 	item_state = "particle_rifle"
 	slot_flags = SLOT_BACK

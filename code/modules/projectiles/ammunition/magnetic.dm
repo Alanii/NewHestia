@@ -1,7 +1,7 @@
 /obj/item/weapon/magnetic_ammo
 	name = "flechette magazine"
 	desc = "A magazine containing steel flechettes."
-	icon = 'icons/obj/ammo.dmi'
+	icon = 'icons/obj/weapons/ammo.dmi'
 	icon_state = "assault_rifle"
 	var/projectile_type = /obj/item/projectile/bullet/magnetic/flechette
 	var/projectile_name = "flechette"
@@ -18,7 +18,7 @@
 /obj/item/weapon/magnetic_ammo/skrell
 	name = "flechette cylinder"
 	desc = "A magazine containing flechettes, the design harkening back to cylinders on revolvers."
-	icon = 'icons/obj/guns/skrell_rifle.dmi'
+	icon = 'icons/obj/weapons/guns/Projectile/skrell_rifle.dmi'
 	icon_state = "skrell_magazine"
 	projectile_type = /obj/item/projectile/bullet/magnetic/flechette
 	projectile_name = "slug"
