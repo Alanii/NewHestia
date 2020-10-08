@@ -1,8 +1,8 @@
 language: generic
+sudo: false
 dist: xenial
 jdk: openjdk8
-before script:
-    - chmod +x test/run-test.sh
+
 env:
   global:
     BYOND_MAJOR="512"
