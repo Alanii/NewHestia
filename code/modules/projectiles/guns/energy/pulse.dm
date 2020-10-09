@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/energy/pulse_rifle
 	name = "pulse rifle"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists."
-	icon = 'icons/obj/weapons/guns/Energy/pulse_rifle.dmi'
+	icon = 'icons/obj/guns/pulse_rifle.dmi'
 	icon_state = "pulse"
 	item_state = "pulse"
 	slot_flags = SLOT_BACK
@@ -21,7 +21,7 @@
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
 	name = "pulse carbine"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
-	icon = 'icons/obj/weapons/guns/Energy/pulse_carbine.dmi'
+	icon = 'icons/obj/guns/pulse_carbine.dmi'
 	icon_state = "pulse_carbine"
 	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 8
@@ -36,7 +36,7 @@
 /obj/item/weapon/gun/energy/pulse_rifle/pistol
 	name = "pulse pistol"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Even smaller than the carbine."
-	icon = 'icons/obj/weapons/guns/Energy/pulse_pistol.dmi'
+	icon = 'icons/obj/guns/pulse_pistol.dmi'
 	icon_state = "pulse_pistol"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 6
@@ -67,7 +67,7 @@
 	
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "skrellian carbine"
-	icon = 'icons/obj/weapons/guns/Projectile/skrell_carbine.dmi'
+	icon = 'icons/obj/guns/skrell_carbine.dmi'
 	icon_state = "skrell_carbine"
 	item_state = "skrell_carbine"
 	slot_flags = SLOT_BACK|SLOT_BELT

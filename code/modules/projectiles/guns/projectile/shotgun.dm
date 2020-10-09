@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
 	name = "shotgun"
 	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
-	icon = 'icons/obj/weapons/guns/Ballistic/shotgun.dmi'
+	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 4
@@ -62,7 +62,6 @@
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
-	icon = 'icons/obj/weapons/guns/Ballistic/cshotgun.dmi'
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
@@ -82,7 +81,7 @@
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
 	desc = "A true classic."
-	icon = 'icons/obj/weapons/guns/Ballistic/dshotgun.dmi'
+	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
 	wielded_item_state = "dshotgun-wielded"
@@ -143,7 +142,6 @@
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
 	name = "sawn-off shotgun"
 	desc = "Omar's coming!"
-	icon = 'icons/obj/weapons/guns/Ballistic/sshotgun.dmi'
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"

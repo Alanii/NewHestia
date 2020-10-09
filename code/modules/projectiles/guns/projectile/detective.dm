@@ -83,4 +83,4 @@
 /datum/detective_gun_skin/mk_standard
 	name = "\improper NT Mk. 58"
 	icon_state = "secguncomp"
-	icon = 'icons/obj/weapons/guns/Ballistic/pistol.dmi'
+	icon = 'icons/obj/guns/pistol.dmi'

@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/magnetic/railgun
 	name = "railgun"
 	desc = "The HelTek Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Aigaion Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
-	icon = 'icons/obj/weapons/guns/Projectile/railgun.dmi'
+	icon = 'icons/obj/guns/railgun.dmi'
 	icon_state = "railgun"
 	removable_components = TRUE // Can swap out the capacitor for more shots, or cell for longer usage before recharge
 	load_type = /obj/item/weapon/rcd_ammo
@@ -66,13 +66,13 @@
 
 /obj/item/weapon/gun/magnetic/railgun/mmi
 	desc = "The Mars Military Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements."
-	icon = 'icons/obj/weapons/guns/Projectile/railgun_old.dmi'
+	icon = 'icons/obj/guns/railgun_old.dmi'
 	icon_state = "old_railgun"
 
 /obj/item/weapon/gun/magnetic/railgun/tcc // Oppa! Should only be available to TCC shock troops or high-budget mercs.
 	name = "advanced railgun"
 	desc = "The HelTek Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Terran shock troops and anti-tank personnel."
-	icon = 'icons/obj/weapons/guns/Projectile/railgun_adv.dmi'
+	icon = 'icons/obj/guns/railgun_adv.dmi'
 	icon_state = "railgun-tcc"
 	removable_components = TRUE // Railgunners are expected to be able to completely disassemble and reassemble their weapons in the field. But we don't have that mechanic, so the cell and capacitor will do.
 
@@ -112,7 +112,7 @@
 /obj/item/weapon/gun/magnetic/railgun/automatic // Adminspawn only, this shit is absurd.
 	name = "\improper LMRA autocannon"
 	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the United Colonies in the Aigaion Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
-	icon = 'icons/obj/weapons/guns/Projectile/railgun_heavy.dmi'
+	icon = 'icons/obj/guns/railgun_heavy.dmi'
 	icon_state = "heavy_railgun"
 	removable_components = FALSE // Absolutely not. This has an infinity cell.
 
@@ -141,13 +141,13 @@
 /obj/item/weapon/gun/magnetic/railgun/automatic/mmi
 	name = "\improper RHR accelerator"
 	desc = "The Mars Military Industries MI-227 Meteor. Originally a vehicle-mounted turret weapon for heavy anti-vehicular and anti-structural fire, the fact that it was made man-portable is mindboggling in itself."
-	icon = 'icons/obj/weapons/guns/Projectile/railgun_old_heavy.dmi'
+	icon = 'icons/obj/guns/railgun_old_heavy.dmi'
 	icon_state = "old_heavy_railgun"
 
 /obj/item/weapon/gun/magnetic/railgun/flechette
 	name = "flechette gun"
 	desc = "The MI-12 Skadi is a burst fire capable railgun that fires flechette rounds at high velocity. Deadly against armour, but much less effective against soft targets."
-	icon = 'icons/obj/weapons/guns/Projectile/flechette.dmi'
+	icon = 'icons/obj/guns/flechette.dmi'
 	icon_state = "flechette_gun"
 	item_state = "z8carbine"
 	one_hand_penalty = 2
@@ -174,7 +174,7 @@
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell
 	name = "skrellian rifle"
 	desc = "The Zquiv*Tzuuli-8, or ZT-8, is a railgun rarely seen by anyone other than those within Skrellian SDTF ranks. The rotary magazine houses a cylinder with individual chambers, that press against the barrel when loaded."
-	icon = 'icons/obj/weapons/guns/Projectile/skrell_rifle.dmi'
+	icon = 'icons/obj/guns/skrell_rifle.dmi'
 	icon_state = "skrell_rifle"
 	item_state = "skrell_rifle"
 	one_hand_penalty = 3

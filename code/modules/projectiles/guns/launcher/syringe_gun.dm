@@ -1,7 +1,7 @@
 /obj/item/weapon/syringe_cartridge
 	name = "syringe gun cartridge"
 	desc = "An impact-triggered compressed gas cartridge that can be fitted to a syringe for rapid injection."
-	icon = 'icons/obj/weapons/ammo.dmi'
+	icon = 'icons/obj/ammo.dmi'
 	icon_state = "syringe-cartridge"
 	var/icon_flight = "syringe-cartridge-flight" //so it doesn't look so weird when shot
 	matter = list(MATERIAL_STEEL = 125, MATERIAL_GLASS = 375)
@@ -62,7 +62,7 @@
 /obj/item/weapon/gun/launcher/syringe
 	name = "syringe gun"
 	desc = "A spring loaded rifle designed to fit syringes, designed to incapacitate unruly patients from a distance."
-	icon = 'icons/obj/weapons/guns/Projectile/syringegun.dmi'
+	icon = 'icons/obj/guns/syringegun.dmi'
 	icon_state = "syringegun"
 	item_state = "syringegun"
 	w_class = ITEM_SIZE_LARGE
