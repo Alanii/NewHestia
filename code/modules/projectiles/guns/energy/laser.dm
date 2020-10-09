@@ -4,8 +4,8 @@
 	icon = 'icons/obj/weapons/guns/Energy/laser_carbine.dmi'
 	icon_state = "laser"
 	item_state = "laser"
-	slot_flags = SLOT_BELT|SLOT_BACK
-	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
 	force = 10
 	one_hand_penalty = 2
 	bulk = GUN_BULK_RIFLE
