@@ -17,9 +17,9 @@
 		)
 	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT,
+	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	skill_points = 16
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
@@ -71,9 +71,10 @@
 						SKILL_COMBAT      = SKILL_ADEPT,
 						SKILL_WEAPONS     = SKILL_ADEPT)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
+	max_skill = list(	SKILL_COMBAT      = SKILL_SPEC,
+						SKILL_WEAPONS     = SKILL_SPEC,
+						SKILL_EVA		  = SKILL_EXPERT,
+						SKILL_HAULING     = SKILL_SPEC)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -100,11 +101,11 @@
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
-						SKILL_WEAPONS      = SKILL_MAX,
-						SKILL_EVA		   = SKILL_MAX,
-						SKILL_CONSTRUCTION = SKILL_MAX,
-						SKILL_ELECTRICAL   = SKILL_MAX)
+	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERT,
+						SKILL_WEAPONS      = SKILL_SPEC,
+						SKILL_EVA		   = SKILL_EXPERT,
+						SKILL_CONSTRUCTION = SKILL_EXPERT,
+						SKILL_ELECTRICAL   = SKILL_EXPERT)
 
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
@@ -145,9 +146,9 @@
 						SKILL_WEAPONS      = SKILL_ADEPT,
 						SKILL_EVA          = SKILL_BASIC)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
+	max_skill = list(	SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT,
+						SKILL_EVA		  = SKILL_EXPERT)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)

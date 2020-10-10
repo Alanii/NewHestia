@@ -8,7 +8,7 @@
 		NETWORK_ENGINEERING
 	)
 	subsystems = list(
-		/datum/nano_module/power_monitor, 
+		/datum/nano_module/power_monitor,
 		/datum/nano_module/supermatter_monitor
 	)
 	supported_upgrades = list(
@@ -62,10 +62,10 @@
 	)
 	emag = /obj/item/weapon/melee/baton/robot/electrified_arm
 	skills = list(
-		SKILL_ATMOS        = SKILL_PROF,
-		SKILL_ENGINES      = SKILL_PROF,
-		SKILL_CONSTRUCTION = SKILL_PROF,
-		SKILL_ELECTRICAL   = SKILL_PROF,
+		SKILL_ATMOS        = SKILL_SPEC,
+		SKILL_ENGINES      = SKILL_SPEC,
+		SKILL_CONSTRUCTION = SKILL_SPEC,
+		SKILL_ELECTRICAL   = SKILL_SPEC,
 		SKILL_COMPUTER     = SKILL_EXPERT
 	)
 

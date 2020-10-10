@@ -39,7 +39,7 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/handle_post_fire(mob/user, atom/target, var/pointblank=0, var/reflex=0)
 	..()
-	if(user && user.skill_check(SKILL_WEAPONS, SKILL_PROF))
+	if(user && user.skill_check(SKILL_WEAPONS, SKILL_SPEC))
 		to_chat(user, "<span class='notice'>You pump the shotgun with a reflexive motion, ejecting [chambered]!</span>")
 		pump()
 

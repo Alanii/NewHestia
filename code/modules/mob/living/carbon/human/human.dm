@@ -1709,7 +1709,7 @@
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERT))
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_PROF))
+	if(skill_check(SKILL_WEAPONS, SKILL_SPEC))
 		. += 2
 
 /mob/living/carbon/human/can_drown()

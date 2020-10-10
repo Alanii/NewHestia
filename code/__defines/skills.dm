@@ -2,7 +2,7 @@
 #define SKILL_BASIC    2
 #define SKILL_ADEPT    3
 #define SKILL_EXPERT   4
-#define SKILL_PROF     5
+#define SKILL_SPEC     5
 #define HAS_PERK       SKILL_NONE + 1
 
 #define SKILL_MIN      1 // Min skill value selectable

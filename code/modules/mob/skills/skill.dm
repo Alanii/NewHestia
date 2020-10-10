@@ -20,7 +20,7 @@ GLOBAL_LIST_EMPTY(skills)
 	switch(level)
 		if(SKILL_BASIC, SKILL_ADEPT)
 			return difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
+		if(SKILL_EXPERT, SKILL_SPEC)
 			return 2*difficulty
 		else
 			return 0
@@ -43,19 +43,19 @@ GLOBAL_LIST_EMPTY(skills)
 	name = "Organizational"
 	ID	 = "1"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/service
 	name = "Service"
 	ID	 = "service"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/security
 	name = "Security"
@@ -198,7 +198,7 @@ GLOBAL_LIST_EMPTY(skills)
 			return difficulty
 		if(SKILL_ADEPT, SKILL_EXPERT)
 			return 2*difficulty
-		if(SKILL_PROF)
+		if(SKILL_SPEC)
 			return 4*difficulty
 		else
 			return 0
@@ -219,7 +219,7 @@ GLOBAL_LIST_EMPTY(skills)
 			return difficulty
 		if(SKILL_ADEPT)
 			return 2*difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
+		if(SKILL_EXPERT, SKILL_SPEC)
 			return 4*difficulty
 		else
 			return 0
@@ -239,7 +239,7 @@ GLOBAL_LIST_EMPTY(skills)
 	switch(level)
 		if(SKILL_BASIC, SKILL_ADEPT, SKILL_EXPERT)
 			return difficulty * 2
-		if(SKILL_PROF)
+		if(SKILL_SPEC)
 			return 3 * difficulty
 		else
 			return 0

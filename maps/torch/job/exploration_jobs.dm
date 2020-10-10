@@ -20,9 +20,10 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT,
 	                    SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_EVA         = SKILL_SPEC,
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 22
 
@@ -69,8 +70,8 @@
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 
 /datum/job/explorer
 	title = "Explorer"
@@ -90,8 +91,9 @@
 	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT,
+						SKILL_EVA         = SKILL_SPEC,
 	                    SKILL_COMBAT      = SKILL_EXPERT,
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 

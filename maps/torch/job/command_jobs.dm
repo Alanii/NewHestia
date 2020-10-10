@@ -16,8 +16,8 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 30
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -55,8 +55,8 @@
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 30
 
 	access = list(access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
@@ -114,9 +114,9 @@
 	                    SKILL_DEVICES     = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_DEVICES     = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 30
 
 	access = list(
@@ -160,9 +160,9 @@
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
 						SKILL_DEVICES     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 	skill_points = 26
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -204,10 +204,11 @@
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
+						SKILL_COMPUTER     = SKILL_SPEC,
+	                    SKILL_ELECTRICAL   = SKILL_SPEC,
+	                    SKILL_ATMOS        = SKILL_SPEC,
+	                    SKILL_ENGINES      = SKILL_SPEC)
 	skill_points = 30
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -257,9 +258,10 @@
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	max_skill = list(   SKILL_COMBAT      = SKILL_SPEC,
+	                    SKILL_WEAPONS     = SKILL_SPEC,
+						SKILL_HAULING     = SKILL_SPEC,
+	                    SKILL_FORENSICS   = SKILL_SPEC)
 	skill_points = 28
 
 	access = list(access_security, access_brig, access_armory, access_forensics_lockers,
@@ -327,13 +329,13 @@
 	                    SKILL_COMBAT     = SKILL_BASIC,
 	                    SKILL_WEAPONS    = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX)
+	max_skill = list(   SKILL_COMBAT       = SKILL_EXPERT,
+	                    SKILL_WEAPONS      = SKILL_EXPERT,
+	                    SKILL_PILOT        = SKILL_EXPERT,
+	                    SKILL_CONSTRUCTION = SKILL_EXPERT,
+	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
+	                    SKILL_ENGINES      = SKILL_EXPERT,
+	                    SKILL_ATMOS        = SKILL_EXPERT)
 	skill_points = 24
 
 
@@ -372,8 +374,8 @@
 	                    SKILL_PILOT       = SKILL_ADEPT,
 						SKILL_SCIENCE     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-						SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+						SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 20
 
 

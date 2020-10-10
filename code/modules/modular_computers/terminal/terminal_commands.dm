@@ -145,7 +145,7 @@ Subtypes
 	name = "locate"
 	man_entry = list("Format: locate nid", "Attempts to locate the device with the given nid by triangulating via relays.")
 	pattern = "locate"
-	skill_needed = SKILL_PROF
+	skill_needed = SKILL_SPEC
 
 /datum/terminal_command/locate/proper_input_entered(text, mob/user, datum/terminal/terminal)
 	. = "Failed to find device with given nid. Try ping for diagnostics."

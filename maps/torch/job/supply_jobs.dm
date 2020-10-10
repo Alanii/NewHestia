@@ -25,7 +25,10 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+						SKILL_HAULING     = SKILL_SPEC,
+						SKILL_FINANCE     = SKILL_SPEC,
+						SKILL_BUREAUCRACY = SKILL_SPEC)
 	skill_points = 18
 
 	access = list(access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
@@ -63,7 +66,8 @@
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_HAULING     = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+						SKILL_HAULING     = SKILL_SPEC)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_cargo, access_guppy_helm,
 						access_cargo_bot, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_commissary)
@@ -90,7 +94,8 @@
 	                    SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_PILOT   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+						SKILL_HAULING     = SKILL_SPEC)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/prospector
 	allowed_branches = list(/datum/mil_branch/civilian)

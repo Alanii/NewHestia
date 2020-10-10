@@ -74,7 +74,9 @@ Civilian
 	min_skill = list(   SKILL_FINANCE = SKILL_ADEPT,
 	                    SKILL_PILOT	  = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+						SKILL_FINANCE     = SKILL_SPEC,
+						SKILL_BUREAUCRACY = SKILL_SPEC)
 	skill_points = 24
 	required_language = null
 	give_psionic_implant_on_join = FALSE
