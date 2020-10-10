@@ -16,7 +16,8 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+						SKILL_BUREAUCRACY = SKILL_SPEC,
 	                    SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 30
 
@@ -115,8 +116,8 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
-	                    SKILL_DEVICES     = SKILL_EXPERT,
-	                    SKILL_SCIENCE     = SKILL_EXPERT)
+	                    SKILL_DEVICES     = SKILL_SPEC,
+	                    SKILL_SCIENCE     = SKILL_SPEC)
 	skill_points = 30
 
 	access = list(
@@ -160,8 +161,8 @@
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
 						SKILL_DEVICES     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
-	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
+	                    SKILL_ANATOMY     = SKILL_SPEC,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 	skill_points = 26
 
