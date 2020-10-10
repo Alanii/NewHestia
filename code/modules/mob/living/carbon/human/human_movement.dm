@@ -12,7 +12,7 @@
 
 	var/area/a = get_area(src)
 	if(a && !a.has_gravity())
-		if(skill_check(SKILL_EVA, SKILL_PROF))
+		if(skill_check(SKILL_EVA, SKILL_SPEC))
 			tally -= 2
 		tally -= 1
 
@@ -137,7 +137,7 @@
 	if(.) //We moved
 		handle_exertion()
 		handle_leg_damage()
-	
+
 		if(client)
 			var/turf/B = GetAbove(src)
 			up_hint.icon_state = "uphint[(B ? B.is_open() : 0)]"

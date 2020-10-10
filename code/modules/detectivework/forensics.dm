@@ -210,7 +210,7 @@ atom/proc/add_fibers(mob/living/carbon/human/M)
 			to_chat(src, "<span class='notice'>You notice a faint acrid smell coming from \the [A]</span>")
 			clue = 1
 		//Noticing wiped blood is a bit harder
-		if((get_skill_value(SKILL_FORENSICS) >= SKILL_PROF) && LAZYLEN(A.blood_DNA))
+		if((get_skill_value(SKILL_FORENSICS) >= SKILL_SPEC) && LAZYLEN(A.blood_DNA))
 			to_chat(src, "<span class='warning'>You notice faint blood traces on \The [A]</span>")
 			clue = 1
 		if(clue && has_client_color(/datum/client_color/noir))

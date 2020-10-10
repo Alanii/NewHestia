@@ -16,11 +16,11 @@
 		/obj/item/stack/flag/red
 	)
 	skills = list(
-		SKILL_ELECTRICAL          = SKILL_PROF,
-		SKILL_ATMOS               = SKILL_PROF,
+		SKILL_ELECTRICAL          = SKILL_SPEC,
+		SKILL_ATMOS               = SKILL_SPEC,
 		SKILL_PILOT               = SKILL_EXPERT,
-		SKILL_BOTANY              = SKILL_PROF,
-		SKILL_EVA                 = SKILL_PROF,
+		SKILL_BOTANY              = SKILL_SPEC,
+		SKILL_EVA                 = SKILL_SPEC,
 		SKILL_MECH                = HAS_PERK,
 	)
 

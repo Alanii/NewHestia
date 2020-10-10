@@ -264,7 +264,7 @@
 			else
 				integrity_message = "At a glance, it seems to be in sound shape."
 		to_chat(user, integrity_message)
-		if(user.skill_check(SKILL_ENGINES, SKILL_PROF))
+		if(user.skill_check(SKILL_ENGINES, SKILL_SPEC))
 			var/display_power = power
 			display_power *= (0.85 + 0.3 * rand())
 			display_power = round(display_power, 20)

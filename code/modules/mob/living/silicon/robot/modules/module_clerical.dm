@@ -16,8 +16,8 @@
 		LANGUAGE_SPACER           = TRUE
 		)
 	skills = list(
-		SKILL_BUREAUCRACY         = SKILL_PROF,
-		SKILL_FINANCE             = SKILL_PROF,
+		SKILL_BUREAUCRACY         = SKILL_SPEC,
+		SKILL_FINANCE             = SKILL_SPEC,
 		SKILL_COMPUTER            = SKILL_EXPERT,
 		SKILL_SCIENCE             = SKILL_EXPERT,
 		SKILL_DEVICES             = SKILL_EXPERT
@@ -53,10 +53,10 @@
 	)
 	emag = /obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer
 	skills = list(
-		SKILL_BUREAUCRACY         = SKILL_PROF,
+		SKILL_BUREAUCRACY         = SKILL_SPEC,
 		SKILL_COMPUTER            = SKILL_EXPERT,
-		SKILL_COOKING             = SKILL_PROF,
-		SKILL_BOTANY              = SKILL_PROF,
+		SKILL_COOKING             = SKILL_SPEC,
+		SKILL_BOTANY              = SKILL_SPEC,
 		SKILL_MEDICAL             = SKILL_BASIC,
 		SKILL_CHEMISTRY           = SKILL_ADEPT
 	)

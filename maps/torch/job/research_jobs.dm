@@ -33,9 +33,9 @@
 	                    SKILL_DEVICES     = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_DEVICES     = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_SPEC)
 	skill_points = 20
 
 /datum/job/scientist
@@ -61,10 +61,10 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 						SKILL_CHEMISTRY   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-						SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_DEVICES     = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT,
+						SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(
@@ -115,9 +115,9 @@
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
 	max_pow_cat = 2
-	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_DEVICES     = SKILL_EXPERT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 
 	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov,
 						access_mining_office, access_mining_station, access_xenobiology,

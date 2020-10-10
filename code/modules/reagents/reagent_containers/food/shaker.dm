@@ -9,7 +9,7 @@
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
 
 /obj/item/weapon/reagent_containers/food/drinks/shaker/attack_self(mob/user as mob)
-	if(user.skill_check(SKILL_COOKING, SKILL_PROF))
+	if(user.skill_check(SKILL_COOKING, SKILL_SPEC))
 		user.visible_message("<span class='rose'>\The [user] shakes \the [src] briskly in one hand, with supreme confidence and competence.</span>", "<span class='rose'>You shake \the [src] briskly with one hand.</span>")
 		mix()
 		return

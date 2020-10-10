@@ -36,9 +36,9 @@
 	skills = list(
 		SKILL_BUREAUCRACY         = SKILL_EXPERT,
 		SKILL_FINANCE             = SKILL_EXPERT,
-		SKILL_COMPUTER            = SKILL_PROF,
-		SKILL_SCIENCE             = SKILL_PROF,
-		SKILL_DEVICES             = SKILL_PROF,
+		SKILL_COMPUTER            = SKILL_SPEC,
+		SKILL_SCIENCE             = SKILL_SPEC,
+		SKILL_DEVICES             = SKILL_SPEC,
 		SKILL_ANATOMY             = SKILL_ADEPT,
 		SKILL_CHEMISTRY           = SKILL_ADEPT,
 		SKILL_BOTANY              = SKILL_EXPERT,

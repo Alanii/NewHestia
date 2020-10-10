@@ -20,6 +20,8 @@
 	allowed_ranks = list(/datum/mil_rank/civ/ntr)
 	min_skill = list(   SKILL_BUREAUCRACY	= SKILL_EXPERT,
 	                    SKILL_FINANCE		= SKILL_BASIC)
+	max_skill = list(	SKILL_FINANCE       = SKILL_SPEC,
+					    SKILL_BUREAUCRACY   = SKILL_SPEC)
 	skill_points = 20
 	access = list(access_liaison, access_maint_tunnels, access_medical,
 						access_engine, access_research, access_bridge,
@@ -57,9 +59,10 @@
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	max_skill = list(   SKILL_COMBAT      = SKILL_SPEC,
+	                    SKILL_WEAPONS     = SKILL_SPEC,
+						SKILL_HAULING     = SKILL_SPEC,
+	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	alt_titles = list(
 		"Union Enforcer" = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union,
 		"Executive Assistant",
