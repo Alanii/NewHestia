@@ -2,7 +2,7 @@
 	name = "laser"
 	icon_state = "laser"
 	temperature = T0C + 300
-	fire_sound='sound/weapons/Laser4.wav'
+	fire_sound='sound/weapons/LaserShot_Rifle.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
 	damage = 30
@@ -49,7 +49,7 @@
 /obj/item/projectile/beam/xray
 	name = "x-ray beam"
 	icon_state = "xray"
-	fire_sound = 'sound/weapons/laser3.ogg'
+	fire_sound = 'sound/weapons/LaserShot_Heavy.ogg'
 	damage = 30
 	armor_penetration = 30
 	shrapnel_chance_multiplier = 0.8
