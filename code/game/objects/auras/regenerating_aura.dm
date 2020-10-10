@@ -23,7 +23,6 @@
 	var/last_nutrition_warning = 0
 	var/innate_heal = TRUE // Whether the aura is on, basically.
 
-
 /obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return
 
@@ -67,15 +66,16 @@
 			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
 			if(BP_IS_ROBOTIC(regen_organ))
 				continue
-			if(istype(regen_organ))
-				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
-					if (H.nutrition >= organ_mult)
-						regen_organ.damage = max(regen_organ.damage - (organ_mult + organ_mal), 0)
-						H.adjust_nutrition(-organ_mult + organ_mal)
-						if(prob(5))
-							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
-					else
-						low_nut_warning(regen_organ.name)
+			if(regen_organ != ignore_tag)
+				if(istype(regen_organ))
+					if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
+						if (H.nutrition >= organ_mult)
+							regen_organ.damage = max(regen_organ.damage - (organ_mult + organ_mal), 0)
+							H.adjust_nutrition(-organ_mult + organ_mal)
+							if(prob(5))
+								to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
+						else
+							low_nut_warning(regen_organ.name)
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
@@ -213,7 +213,38 @@
 	grow_chance = 20
 	grow_threshold = 50
 	external_nutrition_mult = 10
+	var/toggle_organ_blocked_until = 0 // Promethean version of healblock
+	var/last_damage = 0
+
+/obj/aura/regenerating/human/promethean/life_tick()
+	var/mob/living/carbon/human/H = user
+	if(innate_heal && istype(H) && H.stat != DEAD && H.nutrition < 50)
+		H.adjust_nutrition(3)
+		return 1
+
+	if(H.getBruteLoss() || H.getFireLoss())
+		if(H.should_have_organ(BP_SLIMECORE))
+			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
+			if(sponge)
+				sponge.take_internal_damage(1)
+
+	if(last_damage < H.getBruteLoss() + H.getFireLoss() && world.time < toggle_organ_blocked_until)
+		ignore_tag = null
+	else
+		toggle_organ_blocked_until = max(world.time + 1 MINUTE, toggle_organ_blocked_until)
+		ignore_tag = BP_SLIMECORE
+
+	last_damage = H.getBruteLoss() + H.getFireLoss()
+
+	return ..()
+
+/obj/aura/regenerating/human/promethean/can_regenerate_organs()
+	return can_toggle()
 
 /obj/aura/regenerating/human/promethean/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	to_chat(H, "<span class='warning'>You feel a slithering sensation as your [O.name] reforms.</span>")
+	H.visible_message("<span class='danger'>With a shower of fresh blood, a length of biomass shoots from [H]'s [O.amputation_point], forming a new [O.name]!</span>")
 	H.adjust_nutrition(-external_nutrition_mult)
+	var/datum/reagent/blood/B = locate(/datum/reagent/blood) in H.vessel.reagent_list
+	blood_splatter(H,B,1)
+	O.set_dna(H.dna)
