@@ -104,6 +104,13 @@
 	can_block_lasers = TRUE
 	slowdown_general = 1.5
 
+/obj/item/weapon/shield/riot/metal/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
+	if(istype(damage_source, /obj/item/projectile))
+		var/obj/item/projectile/P = damage_source
+		if((is_sharp(P) && damage > 10) || istype(P, /obj/item/projectile/beam))
+			return (base_block_chance - round(damage / 2.5)) //block bullets and beams using the old block chance
+	return base_block_chance
+
 /obj/item/weapon/shield/buckler
 	name = "buckler"
 	desc = "A wooden buckler used to block sharp things from entering your body back in the day.."
