@@ -233,7 +233,7 @@
 	damage = 80
 	stun = 3
 	weaken = 3
-	penetrating = 5
+	penetrating = 3
 	armor_penetration = 70
 	shrapnel_chance_multiplier = 1.2
 	arterial_bleed_chance_multiplier = 1.2
