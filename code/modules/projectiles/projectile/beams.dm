@@ -220,6 +220,7 @@
 	edge = 1
 	damage_type = BRUTE
 	life_span = 4
+	fire_delay = 10
 	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
 	distance_falloff = 8//makes up for the damage and pen
 	shrapnel_chance_multiplier = 0.0//no thanks
