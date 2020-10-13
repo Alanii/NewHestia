@@ -41,6 +41,10 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	initial_spawn_target = 6
 	antaghud_indicator = "hudcultist"
 	skill_setter = /datum/antag_skill_setter/station
+	antag_text = "You are a cultist, remember to cooperate with your fellow cultists and work towards your one goal: Bringing back Narsie.\
+	You have various abilities at your disposal, most of which harm you when you use them. \
+	Overusing of said abilties in short of span of time can result in death or massive damage \
+	"
 
 	var/allow_narsie = 1
 	var/powerless = 0
