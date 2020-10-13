@@ -63,9 +63,14 @@
 	desc = "A compact, durable gas mask that can be connected to an air supply."
 	icon_state = "halfgas"
 	item_state = "halfgas"
+	down_icon_state = "halfgasdown"
 	siemens_coefficient = 0.7
+	pull_mask = 1
 	body_parts_covered = FACE
 	w_class = ITEM_SIZE_SMALL
+	down_gas_transfer_coefficient = 1
+	down_body_parts_covered = null
+	down_item_flags = ITEM_FLAG_THICKMATERIAL
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
