@@ -1573,6 +1573,10 @@
 /area/janitor/aux
 	name = "\improper Aux Custodial Closet"
 
+/area/radio_host
+	name = "\improper Radio Host Office"
+	req_access = list(access_radio_host)
+
 // Tcomm
 /area/tcommsat/
 	ambience = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg')
