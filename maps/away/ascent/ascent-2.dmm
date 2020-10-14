@@ -3171,7 +3171,7 @@
 	dir = 8
 	},
 /obj/item/weapon/tank/mantid/reactor/oxygen/captives,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
 "gz" = (

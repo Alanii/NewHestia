@@ -5872,9 +5872,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/box/greenglowsticks,
 /obj/item/weapon/storage/box/greenglowsticks,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/item/device/radio/intercom{
 	pixel_y = 23
@@ -6161,7 +6161,7 @@
 	dir = 4
 	},
 /obj/item/weapon/rig/exploration/equipped,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/monotile,
