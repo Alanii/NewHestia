@@ -704,7 +704,7 @@ obj/random/obstruction/spawn_choices()
 
 /obj/random/masks/spawn_choices()
 	return list(/obj/item/clothing/mask/gas = 4,
-				/obj/item/clothing/mask/gas/half = 5,
+				/obj/item/clothing/mask/breath/half = 5,
 				/obj/item/clothing/mask/gas/swat = 1,
 				/obj/item/clothing/mask/gas/syndicate = 1,
 				/obj/item/clothing/mask/breath = 6,

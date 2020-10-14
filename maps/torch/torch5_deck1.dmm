@@ -7171,7 +7171,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/device/radio,
 /obj/item/weapon/crowbar,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/firealarm{
 	dir = 8;
@@ -18729,12 +18729,12 @@
 "deo" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
@@ -20415,8 +20415,8 @@
 /area/medical/infirmreception)
 "fWc" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/structure/cable/green,
