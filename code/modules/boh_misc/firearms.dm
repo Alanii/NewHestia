@@ -65,6 +65,7 @@
 	charge_cost= 80
 	self_recharge = 1
 	move_delay = 1
+	base_parry_chance = 20
 
 /////////
 // Skrell Launcher
@@ -83,6 +84,7 @@
 	projectile_type=/obj/item/projectile/hotgas/skrell
 	charge_cost=620
 	wielded_item_state = "skrell_rifle-wielded"
+	base_parry_chance = 20
 
 /////////
 // Recoilless Rifle
@@ -98,6 +100,7 @@
 	item_state = "recoilless"
 	wielded_item_state = "gun_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
 	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
@@ -118,6 +121,7 @@
 	desc = "An HI G40E, though this one appears to have a cracked projection lens."
 	icon_state = "lasersec"
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
+	base_parry_chance = 20
 
 /////////
 // Beanbag Launcher
@@ -172,6 +176,7 @@
 	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots. \
 	This one has a larger capacity."
 	max_shots = 24
+	base_parry_chance = 20
 
 /////////
 // EPP
@@ -184,6 +189,7 @@
 	max_shots = 3
 	self_recharge = 1
 	burst = 1
+	base_parry_chance = 10
 
 /////////
 // Casull

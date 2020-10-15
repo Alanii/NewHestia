@@ -24,6 +24,7 @@
 		)
 	item_state = null
 	req_access = list(list(access_brig, access_bridge))
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/gun/secure
 	name = "smartgun"
@@ -56,6 +57,7 @@
 		)
 	req_access = list(list(access_brig, access_heads))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/gun/secure/mounted
 	name = "robot energy gun"

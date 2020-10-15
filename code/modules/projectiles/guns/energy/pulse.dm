@@ -17,6 +17,7 @@
 	accuracy = -1
 	wielded_item_state = "gun_wielded"
 	bulk = GUN_BULK_RIFLE
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
 	name = "pulse carbine"
@@ -64,7 +65,7 @@
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
 	to_chat(user, "<span class='warning'>[src.name] has three settings, and they are all DESTROY.</span>")
-	
+
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "skrellian carbine"
 	icon = 'icons/obj/guns/skrell_carbine.dmi'
@@ -80,7 +81,7 @@
 	burst=1
 	burst_delay=null
 	wielded_item_state = "skrell_carbine-wielded"
-	
+
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/pulse/skrell/single, charge_cost=120, burst=1, burst_delay=null),
 		list(mode_name="heavy", projectile_type=/obj/item/projectile/beam/pulse/skrell/heavy, charge_cost=55, burst=2, burst_delay=3),

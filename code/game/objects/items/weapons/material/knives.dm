@@ -15,6 +15,7 @@
 	sharp = TRUE
 	edge = TRUE
 	item_flags = ITEM_FLAG_CAN_HIDE_IN_SHOES
+	base_parry_chance = 50
 
 /obj/item/weapon/material/knife/attack(mob/living/carbon/M, mob/living/carbon/user, target_zone)
 	if(!istype(M))
@@ -40,6 +41,7 @@
 	attack_verb = list("prodded")
 	applies_material_name = FALSE
 	w_class = ITEM_SIZE_SMALL
+	base_parry_chance = 0
 
 /obj/item/weapon/material/knife/table/plastic
 	default_material = MATERIAL_PLASTIC
@@ -51,6 +53,7 @@
 	default_material = MATERIAL_WOOD
 	applies_material_colour = FALSE
 	w_class = ITEM_SIZE_NORMAL
+	base_parry_chance = 30
 
 /obj/item/weapon/material/knife/table/duel
 	name = "dueling knife"
@@ -59,6 +62,7 @@
 	default_material = MATERIAL_WOOD
 	applies_material_colour = FALSE
 	w_class = ITEM_SIZE_NORMAL
+	base_parry_chance = 50
 
 //kitchen knives
 /obj/item/weapon/material/knife/kitchen

@@ -12,6 +12,7 @@
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun),
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock),
 		)
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/taser/carbine
 	name = "electrolaser carbine"
@@ -55,6 +56,7 @@
 	projectile_type = /obj/item/projectile/energy/electrode
 	max_shots = 6
 	combustion = 0
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/stunrevolver/rifle
 	name = "stun rifle"
@@ -71,6 +73,7 @@
 	accuracy = 2
 	projectile_type = /obj/item/projectile/energy/electrode/stunshot
 	wielded_item_state = "stunrifle-wielded"
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/crossbow
 	name = "mini energy-crossbow"
@@ -89,6 +92,7 @@
 	self_recharge = 1
 	charge_meter = 0
 	combustion = 0
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/crossbow/ninja
 	name = "energy dart thrower"
@@ -121,6 +125,7 @@
 	max_shots = 8
 	projectile_type = /obj/item/projectile/energy/plasmastun
 	combustion = 0
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/confuseray
 	name = "disorientator"
@@ -133,3 +138,4 @@
 	max_shots = 4
 	projectile_type = /obj/item/projectile/beam/confuseray
 	combustion = 0
+	base_parry_chance = 10
