@@ -17,6 +17,7 @@
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/weapon/cell/bcell
 	var/hitcost = 7
+	base_parry_chance = 30
 
 /obj/item/weapon/melee/baton/loaded
 	bcell = /obj/item/weapon/cell/device/high

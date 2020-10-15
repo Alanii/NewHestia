@@ -7,6 +7,7 @@
 	max_shots = 14
 	fire_delay = 4
 	force = 4
+	base_parry_chance = 20
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -29,6 +30,7 @@
 	fire_delay = 6
 	one_hand_penalty = 1
 	self_recharge = 1
+	base_parry_chance = 20
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
@@ -49,6 +51,7 @@
 	w_class = ITEM_SIZE_SMALL
 	force = 2 //it's the size of a car key, what did you expect?
 	modifystate = "smallgunstun"
+	base_parry_chance = 10
 
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="smallgunstun"),

@@ -7,6 +7,7 @@
 	accuracy_power = 7
 	var/empty_icon = TRUE  //If it should change icon when empty
 	var/ammo_indicator = FALSE
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/projectile/pistol/on_update_icon()
 	..()

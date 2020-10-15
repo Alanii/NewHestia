@@ -26,6 +26,7 @@
 		list(mode_name="lethal - overcharged", burst=1, move_delay=12, projectile_type=/obj/item/projectile/beam/particleadv)
 		)
 	var/charge_state = "pr"
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/particle/small
 	name = "particle projector"
@@ -47,6 +48,7 @@
 		list(mode_name="lethal - stable", projectile_type=/obj/item/projectile/beam/particle/small),
 		list(mode_name="lethal - overcharged", burst=1, move_delay=10, projectile_type=/obj/item/projectile/beam/particleadv/small)
 		)
+	base_parry_chance = 10
 
 
 /obj/item/weapon/gun/energy/particle/on_update_icon()

@@ -174,6 +174,7 @@
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	jam_chance = 25 //big ol' gun. Purely for balance.
+	base_parry_chance = 20
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)

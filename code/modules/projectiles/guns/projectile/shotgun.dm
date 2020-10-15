@@ -19,6 +19,7 @@
 	var/recentpump = 0 // to prevent spammage
 	wielded_item_state = "shotgun-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/projectile/shotgun/on_update_icon()
 	..()
@@ -99,6 +100,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	one_hand_penalty = 2
 	wielded_item_state = "gun_wielded"
+	base_parry_chance = 20
 
 	burst_delay = 0
 	firemodes = list(
@@ -151,6 +153,7 @@
 	force = 5
 	one_hand_penalty = 2
 	bulk = 2
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty
 	starts_loaded = FALSE
