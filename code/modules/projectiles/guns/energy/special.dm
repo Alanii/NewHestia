@@ -164,6 +164,7 @@
 	self_recharge = 1
 	var/datum/effect/effect/system/spark_spread/spark_system
 	base_parry_chance = 30
+	fire_delay = 10
 
 /obj/item/weapon/gun/energy/plasmacutter/mounted
 	name = "mounted plasma cutter"
