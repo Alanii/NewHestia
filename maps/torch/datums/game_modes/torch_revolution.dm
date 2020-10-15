@@ -19,7 +19,7 @@
 	faction = "mutiny"
 
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/submap)
-	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/chief_engineer, /datum/job/rd, /datum/job/cmo)
+	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/chief_engineer, /datum/job/rd, /datum/job/cmo, /datum/job/squad_lead, /datum/job/warden)
 	protected_jobs = list(/datum/job/officer)
 
 /datum/antagonist/loyalists
