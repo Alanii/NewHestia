@@ -218,9 +218,9 @@
 	damage = 35//enables it to cut off limbs without too many hits
 	sharp = 1
 	edge = 1
-	damage_type = BRUTE
+	damage_type = BURN
 	life_span = 4
-	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
+	armor_penetration = 40//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
 	distance_falloff = 8//makes up for the damage and pen
 	shrapnel_chance_multiplier = 0.0//no thanks
 	arterial_bleed_chance_multiplier = 0.0//you too
