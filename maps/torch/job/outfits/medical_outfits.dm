@@ -10,7 +10,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	name = OUTFIT_JOB_NAME("Physician")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/medical/senior
 
@@ -25,7 +25,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	name = OUTFIT_JOB_NAME("Medical Technician")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/medical
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/medical
 	l_ear = /obj/item/device/radio/headset/headset_corpsman

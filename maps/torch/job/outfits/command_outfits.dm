@@ -6,7 +6,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/CO
 	name = OUTFIT_JOB_NAME("Commanding Officer")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
@@ -21,7 +21,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO
 	name = OUTFIT_JOB_NAME("Executive Officer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/silver
@@ -35,7 +35,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	name = OUTFIT_JOB_NAME("Chief Medical Officer - Torch")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/commandmedical
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/silver/medical
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
@@ -52,7 +52,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	name = OUTFIT_JOB_NAME("Chief Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/engineering
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/command/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	id_type = /obj/item/weapon/card/id/torch/silver/engineering
