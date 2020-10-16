@@ -36,7 +36,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet
 	name = OUTFIT_JOB_NAME("Forensic Technician - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/security
+	uniform = /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
@@ -47,12 +47,12 @@
 
 /decl/hierarchy/outfit/job/torch/crew/security/maa
 	name = OUTFIT_JOB_NAME("Master at Arms")
-	uniform =  /obj/item/clothing/under/solgov/utility/fleet/combat/security
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/security
 	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet
 	name = OUTFIT_JOB_NAME("Master at Arms - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/security
+	uniform = /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots
