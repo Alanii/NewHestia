@@ -37,6 +37,10 @@
 	name = "\improper Medical Bay"
 	icon_state = "medbay"
 
+/area/ship/skrellscoutship/crew/medbay/alt
+	name = "\improper Cloning Room"
+	icon_state = "medbay"
+
 /area/ship/skrellscoutship/dock
 	name = "\improper Docking Bay 1"
 	icon_state = "entry_1"
