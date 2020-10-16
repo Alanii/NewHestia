@@ -107,7 +107,6 @@
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
 	#include "job/torch_jobs_boh.dm"
-	#include "job/hestia_jobs.dm"
 
 	#include "job/outfits/torch_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
