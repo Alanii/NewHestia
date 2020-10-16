@@ -40,6 +40,9 @@ addons:
 script:
   - test/run-test.sh
 
+before_install:
+  - sudo apt-get -y install dos2unix
+
 after_failure:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
