@@ -52,6 +52,16 @@
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += total_item_slowdown
 
+		if(skill_check(SKILL_HAULING, SKILL_BASIC))
+			tally -= 0.5
+		else if(skill_check(SKILL_HAULING, SKILL_ADEPT))
+			tally -= 1
+		else if(skill_check(SKILL_HAULING, SKILL_EXPERT))
+			tally -= 1.5
+		else if(skill_check(SKILL_HAULING, SKILL_SPEC))
+			tally -= 2
+		tally = max(tally, 0)
+
 		for(var/organ_name in list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT))
 			var/obj/item/organ/external/E = get_organ(organ_name)
 			tally += E ? E.movement_delay(4) : 4
