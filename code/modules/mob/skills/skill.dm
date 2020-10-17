@@ -137,7 +137,7 @@ GLOBAL_LIST_EMPTY(skills)
 	difficulty = SKILL_AVERAGE
 	default_max = SKILL_ADEPT
 
-/decl/hierarchy/general/security/hauling
+/decl/hierarchy/skill/general/hauling
 	ID = "hauling"
 	name = "Athletics"
 	desc = "Your ability to perform tasks requiring great strength, dexterity, or endurance."
