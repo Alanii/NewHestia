@@ -83,6 +83,8 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
+	max_skill = list(SKILL_COMBAT      = SKILL_EXPERT,
+					SKILL_WEAPONS     = SKILL_EXPERT)
 
 /datum/job/submap/skrellscoutship_crew/leader
 	title = "Qrri-Vuxix"
@@ -97,7 +99,9 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
-	max_skill = list(SKILL_PILOT = SKILL_SPEC)
+	max_skill = list(SKILL_PILOT = SKILL_SPEC,
+					SKILL_COMBAT      = SKILL_EXPERT,
+					SKILL_WEAPONS     = SKILL_EXPERT)
 
 /datum/job/submap/skrellscoutship_crew/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
 	. = ..(H, alt_title, branch, grade)	//passing through arguments

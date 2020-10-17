@@ -12,7 +12,8 @@
 	                    SKILL_PILOT       = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
-	                    SKILL_WEAPONS     = SKILL_EXPERT)
+	                    SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 30
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -104,7 +105,9 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_EXPERT,
-	                    SKILL_BUREAUCRACY = SKILL_ADEPT)
+	                    SKILL_BUREAUCRACY = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 30
 
 /datum/job/assistant
@@ -116,6 +119,8 @@
 		"Cargo Hand",
 		"Passenger")
 	hud_icon = "hudcargotechnician"
+	max_skill = list(SKILL_COMBAT      = SKILL_EXPERT,
+					SKILL_WEAPONS     = SKILL_EXPERT)
 
 /datum/job/engineer
 	title = "Junior Engineer"

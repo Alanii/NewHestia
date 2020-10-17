@@ -60,7 +60,7 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/security
 	name = "Security"
 	ID	 = "security"
-	default_max = SKILL_EXPERT
+	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/engineering
 	name = "Engineering"
@@ -137,7 +137,7 @@ GLOBAL_LIST_EMPTY(skills)
 	difficulty = SKILL_AVERAGE
 	default_max = SKILL_ADEPT
 
-/decl/hierarchy/skill/security/hauling
+/decl/hierarchy/general/security/hauling
 	ID = "hauling"
 	name = "Athletics"
 	desc = "Your ability to perform tasks requiring great strength, dexterity, or endurance."
