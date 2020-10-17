@@ -14,7 +14,7 @@
 	name = SPECIES_CUSTOM
 	name_plural = SPECIES_CUSTOM
 	selects_bodytype = TRUE
-	base_species = SPECIES_HUMAN
+	base_species = SPECIES_HUMAN2 // Runtime errors if this is custom
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 

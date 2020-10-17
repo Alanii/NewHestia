@@ -142,47 +142,47 @@
 /datum/sprite_accessory/facial_hair/vulp_blaze
 	name = "Blaze"
 	icon_state = "vulp_facial_blaze"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_vulpine
 	name = "Vulpine"
 	icon_state = "vulp_facial_vulpine"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_earfluff
 	name = "Earfluff"
 	icon_state = "vulp_facial_earfluff"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_mask
 	name = "Mask"
 	icon_state = "vulp_facial_mask"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_patch
 	name = "Patch"
 	icon_state = "vulp_facial_patch"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_ruff
 	name = "Ruff"
 	icon_state = "vulp_facial_ruff"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_kita
 	name = "Kita"
 	icon_state = "vulp_facial_kita"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
 
 /datum/sprite_accessory/facial_hair/vulp_swift
 	name = "Swift"
 	icon_state = "vulp_facial_swift"
-	species_allowed = list(SPECIES_VULP)
+	species_allowed = list(SPECIES_VULP,SPECIES_HUMAN2)
 	gender = NEUTER
