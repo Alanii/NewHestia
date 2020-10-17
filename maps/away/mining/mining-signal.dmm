@@ -823,7 +823,7 @@
 /turf/simulated/floor/carpet/blue,
 /area/outpost/abandoned)
 "cF" = (
-/obj/item/weapon/gun/projectile/manualcycle/imprifle,
+/obj/item/weapon/gun/projectile/heavysniper/imprifle
 /turf/simulated/floor/carpet/blue,
 /area/outpost/abandoned)
 "cG" = (
