@@ -61,7 +61,7 @@
 	center_of_mass = null
 	randpixel = 0
 	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_DIONA)
-	flash_protection = FLASH_PROTECTION_MAJOR
+	flash_protection = FLASH_PROTECTION_MINOR
 
 /obj/item/clothing/head/hardhat/firefighter/Chief
 	icon_state = "Firefighter-Helmet-Chief"
