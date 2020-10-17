@@ -95,7 +95,7 @@
 	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	skill_points = 16
 
-	outfit_type = /decl/hierachy/outfit/job/security/cadet
+	outfit_type = /decl/hierarchy/outfit/job/security/cadet
 
 /datum/job/seccadetn/get_description_blurb()
 	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
@@ -126,7 +126,7 @@
 						SKILL_EVA		  = SKILL_EXPERT,
 						SKILL_HAULING     = SKILL_SPEC)
 
-	outfit_type = /decl/hierachy/outfit/job/security/infantry/squadlead
+	outfit_type = /decl/hierarchy/outfit/job/security/infantry/squadlead
 
 /datum/job/squad_lead/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
@@ -159,7 +159,7 @@
 		"Combat Engineer",
 		"Combat Medic")
 
-	outfit_type = /decl/hierachy/outfit/job/security/infantry/combattech
+	outfit_type = /decl/hierarchy/outfit/job/security/infantry/combattech
 
 /datum/job/combat_tech/is_position_available()
 	if(..())
@@ -194,7 +194,7 @@
 		"Grunt",
 		"Trooper")
 
-	outfit_type = /decl/hierachy/outfit/job/security/infantry/grunt
+	outfit_type = /decl/hierarchy/outfit/job/security/infantry/grunt
 
 /datum/job/grunt/is_position_available()
 	if(..())

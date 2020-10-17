@@ -54,14 +54,14 @@
 	id_type = /obj/item/weapon/card/id/security
 	pda_type = /obj/item/modular_computer/pda/security
 
-/decl/hierachy/outfit/job/security/cadet
+/decl/hierarchy/outfit/job/security/cadet
 	name = OUTFIT_JOB_NAME("Security Cadet")
 
-/decl/hierachy/outfit/job/security/infantry/squadlead
+/decl/hierarchy/outfit/job/security/infantry/squadlead
 	name = OUTFIT_JOB_NAME("Squad Lead")
 
-/decl/hierachy/outfit/job/security/infantry/combattech
+/decl/hierarchy/outfit/job/security/infantry/combattech
 	name = OUTFIT_JOB_NAME("Combat Technician")
 
-/decl/hierachy/outfit/job/security/infantry/grunt
+/decl/hierarchy/outfit/job/security/infantry/grunt
 	name = OUTFIT_JOB_NAME("Rifleman")
