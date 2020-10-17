@@ -1486,7 +1486,8 @@
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/window/brigdoor/eastleft{
-	name = "Emergency Armory Desk"
+	name = "Emergency Armory Desk";
+	req_access = list()
 	},
 /obj/machinery/door/blast/regular/open{
 	dir = 4;
@@ -28645,10 +28646,12 @@
 /area/security/bo)
 "rjb" = (
 /obj/machinery/door/window/brigdoor/northright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = list()
 	},
 /obj/machinery/door/window/brigdoor/southright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = list()
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;

@@ -1480,7 +1480,6 @@
 #include "code\modules\boh\gunnery\structures.dm"
 #include "code\modules\boh\items\plasmasans.dm"
 #include "code\modules\boh\job_whitelist\jobwl.dm"
-#include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
 #include "code\modules\boh\makeshift_weapons\manual_cycle.dm"
 #include "code\modules\boh\nullglass\implant.dm"
 #include "code\modules\boh\nullglass\weapons.dm"

@@ -35,6 +35,7 @@
 	charge_cost = 20
 	max_shots = 4
 	projectile_type = /obj/item/projectile/ion/small
+	wielded_item_state = "ionpistol"
 	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/decloner
