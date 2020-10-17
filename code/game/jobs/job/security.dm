@@ -159,7 +159,7 @@
 		"Combat Engineer",
 		"Combat Medic")
 
-	outfit_type = /decl/hierarchy/outfit/job/security/infantry/combattech
+	outfit_type = /decl/hierarchy/outfit/job/security/infantry/tech
 
 /datum/job/combat_tech/is_position_available()
 	if(..())
