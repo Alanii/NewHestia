@@ -224,7 +224,7 @@
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERT,
+	max_skill = list(	SKILL_COMBAT       = SKILL_SPEC,
 						SKILL_WEAPONS      = SKILL_SPEC,
 						SKILL_EVA		   = SKILL_EXPERT,
 						SKILL_CONSTRUCTION = SKILL_EXPERT,
