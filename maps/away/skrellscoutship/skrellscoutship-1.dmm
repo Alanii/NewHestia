@@ -1712,6 +1712,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "dO" = (
@@ -2344,10 +2345,11 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "iU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/universal,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "iX" = (
@@ -2383,6 +2385,12 @@
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor/tiled/skrell/green,
+/area/ship/skrellscoutship/maintenance/atmos)
+"le" = (
+/obj/machinery/atmospherics/binary/passive_gate/on{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "lH" = (
@@ -2431,6 +2439,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 10
 	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "mI" = (
@@ -2551,6 +2560,18 @@
 /obj/item/weapon/reagent_containers/food/snacks/liquidfood,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/kitchen)
+"rO" = (
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 6
+	},
+/obj/structure/table/rack/dark,
+/obj/item/weapon/rpd,
+/obj/item/weapon/rpd,
+/obj/item/weapon/inflatable_dispenser,
+/obj/item/weapon/inflatable_dispenser,
+/obj/item/weapon/inflatable_dispenser,
+/turf/simulated/floor/tiled/skrell/green,
+/area/ship/skrellscoutship/maintenance/atmos)
 "rT" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/gloves/insulated,
@@ -2724,6 +2745,10 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/hangar)
+"yt" = (
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/turf/simulated/floor/tiled/skrell/green,
+/area/ship/skrellscoutship/maintenance/atmos)
 "yC" = (
 /obj/effect/paint/black,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
@@ -2825,6 +2850,9 @@
 	},
 /obj/machinery/light,
 /obj/machinery/meter,
+/turf/simulated/floor/tiled/skrell/green,
+/area/ship/skrellscoutship/maintenance/atmos)
+"BL" = (
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "BW" = (
@@ -3241,6 +3269,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Tf" = (
@@ -10845,7 +10874,7 @@ aU
 Ss
 AD
 iU
-iU
+le
 iU
 Jv
 lX
@@ -11208,7 +11237,7 @@ aU
 Lz
 de
 aU
-EY
+rO
 dS
 fb
 jj
@@ -11338,7 +11367,7 @@ lU
 wd
 Kq
 Kq
-Kq
+BL
 Ks
 Rn
 aa
@@ -11460,7 +11489,7 @@ NG
 Rn
 jR
 mk
-Bb
+yt
 Bb
 Rn
 aa
