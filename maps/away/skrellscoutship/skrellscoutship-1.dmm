@@ -248,7 +248,7 @@
 	name = "Skrellian Command helmet"
 	},
 /obj/item/clothing/glasses/material,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half, 
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "aG" = (
