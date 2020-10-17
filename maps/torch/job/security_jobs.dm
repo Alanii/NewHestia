@@ -23,8 +23,8 @@
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT,
+	max_skill = list(   SKILL_COMBAT      = SKILL_SPEC,
+	                    SKILL_WEAPONS     = SKILL_SPEC,
 	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	skill_points = 34
 

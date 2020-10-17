@@ -56,7 +56,8 @@
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+						SKILL_FINANCE	  = SKILL_SPEC,
 	                    SKILL_SCIENCE     = SKILL_EXPERT)
 	skill_points = 30
 
