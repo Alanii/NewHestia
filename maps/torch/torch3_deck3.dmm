@@ -1618,7 +1618,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/door/window/brigdoor/southleft{
 	dir = 8;
-	name = "suit storage"
+	name = "suit storage";
+	req_access = list()
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/phoronreinforced{
@@ -1800,11 +1801,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/head)
 "dL" = (
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -15941,7 +15937,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
 "GJ" = (
-/obj/machinery/door/window/brigdoor/westleft,
+/obj/machinery/door/window/brigdoor/westleft{
+	req_access = list()
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
