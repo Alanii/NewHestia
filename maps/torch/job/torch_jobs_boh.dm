@@ -159,22 +159,19 @@
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/nanotrasen
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/nanotrasen/e7_exp,
 		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2
 	)
 
 /datum/job/explorer
-	allowed_branches = list(/datum/mil_branch/nanotrasen)
+	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
-		/datum/mil_rank/nanotrasen/e2_exp,
-		/datum/mil_rank/nanotrasen/e3_exp,
-		/datum/mil_rank/nanotrasen/e5_exp
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4
 	)
 	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up NT not having sci skill by default.
 /***/
@@ -246,30 +243,30 @@
 		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
 	)
 
 /datum/job/scientist
 	allowed_branches = list(
-		/datum/mil_branch/nanotrasen,
+		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/nanotrasen/nt_emp,
+		/datum/mil_branch/fleet/o1,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
 	)
 
 /datum/job/scientist_assistant
 	allowed_branches = list(
-		/datum/mil_branch/nanotrasen,
+		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/nanotrasen/nt_int,
+		/datum/mil_branch/fleet/e3,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
