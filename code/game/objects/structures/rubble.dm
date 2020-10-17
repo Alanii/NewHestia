@@ -122,5 +122,5 @@
 	loot = list(/obj/item/weapon/archaeological_find/knife,
 	/obj/item/weapon/gun/projectile/heavysniper/boltaction,
 	/obj/item/weapon/gun/projectile/revolver/holdout,
-	/obj/item/weapon/gun/projectile/manualcycle/imprifle,
+	/obj/item/weapon/gun/projectile/heavysniper/imprifle/impriflesawn,
 	/obj/item/weapon/gun/magnetic)

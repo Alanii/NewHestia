@@ -92,6 +92,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
 	                    SKILL_ATMOS        = SKILL_EXPERT,
 						SKILL_EVA          = SKILL_SPEC,
+						SKILL_COMPUTER	   = SKILL_SPEC,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 	skill_points = 20
 
