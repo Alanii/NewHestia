@@ -2646,7 +2646,8 @@
 /obj/item/weapon/material/bell,
 /obj/machinery/door/window/brigdoor/eastright{
 	dir = 8;
-	name = "Executive Officer's Desk"
+	name = "Executive Officer's Desk";
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
 	},
 /obj/item/weapon/paper_bin{
 	pixel_x = -3;
@@ -3440,8 +3441,8 @@
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
-	dir = 8;
-	name = "CE's Equipment Storage"
+	name = "CE's Equipment Storage";
+	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
@@ -4096,7 +4097,9 @@
 	},
 /obj/effect/floor_decal/corner/red/full,
 /obj/item/weapon/tank/emergency/oxygen/double,
-/obj/item/weapon/rig/hazard/equipped,
+/obj/item/weapon/rig/hazard/equipped{
+	req_access = list("ACCESS_HEAD_OF_SECURITY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "gI" = (

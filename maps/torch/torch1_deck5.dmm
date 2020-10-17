@@ -15337,7 +15337,9 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/obj/structure/closet/secure_closet/medical_wall,
+/obj/structure/closet/secure_closet/medical_wall{
+	req_access = list("ACCESS_INFANTRY")
+	},
 /turf/simulated/wall/r_wall/hull,
 /area/infantry)
 "IA" = (
