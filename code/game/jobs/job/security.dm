@@ -97,7 +97,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/security/cadet
 
-/datum/job/seccadetn/get_description_blurb()
+/datum/job/seccadet/get_description_blurb()
 	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
 
 //Infantry Jobs

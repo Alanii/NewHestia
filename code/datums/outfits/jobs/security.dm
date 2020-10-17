@@ -57,6 +57,9 @@
 /decl/hierarchy/outfit/job/security/cadet
 	name = OUTFIT_JOB_NAME("Security Cadet")
 
+/decl/hierarchy/outfit/job/security/infantry
+	name = "Infantry Outfit"
+
 /decl/hierarchy/outfit/job/security/infantry/squadlead
 	name = OUTFIT_JOB_NAME("Squad Lead")
 
