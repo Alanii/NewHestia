@@ -4,6 +4,7 @@
 	icon = 'icons/obj/guns/coilgun.dmi'
 	icon_state = "coilgun"
 	item_state = "coilgun"
+	wielded_item_state = "coilgun-wielded"
 	one_hand_penalty = 5
 	fire_delay = 20
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 4, TECH_ESOTERIC = 2, TECH_MAGNET = 4)

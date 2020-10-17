@@ -241,5 +241,4 @@
 	*/
 	return ..()
 
-/datum/species/custom/get_bodytype(var/mob/living/carbon/human/H)
-	return SPECIES_HUMAN
+

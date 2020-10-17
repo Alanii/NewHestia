@@ -828,10 +828,6 @@
 	name = "Tress Shoulder"
 	icon_state = "hair_tressshoulder"
 
-/datum/sprite_accessory/hair/smessy
-	name = "Messy"
-	icon_state = "hair_smessy"
-
 /datum/sprite_accessory/hair/spikypony
 	name = "Spiky Ponytail"
 	icon_state = "hair_spikyponytail"
