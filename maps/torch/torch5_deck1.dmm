@@ -18168,7 +18168,7 @@
 /obj/structure/sign/warning/secure_area{
 	dir = 1
 	},
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/armoury)
 "ctb" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -30427,9 +30427,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
-"tiQ" = (
-/turf/simulated/wall/prepainted,
-/area/security/armoury)
 "tjb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -39636,7 +39633,7 @@ cZi
 cZi
 aLv
 aLv
-tiQ
+sHN
 aPu
 aPu
 aPu
@@ -39838,7 +39835,7 @@ cZi
 cZi
 aLv
 abQ
-tiQ
+sHN
 hLf
 adm
 adm
@@ -40444,7 +40441,7 @@ agc
 aae
 abK
 kCN
-tiQ
+sHN
 asO
 adl
 adO
@@ -40646,7 +40643,7 @@ uRO
 enM
 aLy
 aMC
-tiQ
+sHN
 hLf
 aPu
 aPu
@@ -40848,7 +40845,7 @@ cxk
 acU
 aaT
 aaV
-tiQ
+sHN
 amU
 ajj
 afl
