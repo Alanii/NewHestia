@@ -47,6 +47,7 @@
 	/datum/mil_rank/sol/scientist, \
 	)
 
+//Not in use
 #define NT_EC_CIV /datum/mil_branch/nanotrasen = list(	rank_types = list(\
 		/datum/mil_rank/nanotrasen/nt_int,\
 		/datum/mil_rank/nanotrasen/nt_emp,\
@@ -85,7 +86,7 @@
 		/datum/mil_rank/soviet/o8 \
 		/datum/mil_rank/soviet/o8_gnf \
 )
-
+//
 /datum/map/torch
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -720,7 +721,7 @@
 	name_short = "SAARE"
 	pow_cat = 3
 /*****/
-
+//Not in use
 // Nanotrasen Civilian Branch (Serves as a replacment for EC)
 /datum/mil_branch/nanotrasen
 	name = "Nanotrasen"
@@ -1034,6 +1035,7 @@
 	name_short = "HAM"
 	sort_order = 14
 	pow_cat = 3	
+//
 //
 // Ends of defines
 #undef UNRESTRICTED
