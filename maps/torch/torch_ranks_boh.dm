@@ -1,5 +1,5 @@
 // Branch-specific defines
-#define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet, /datum/mil_branch/nanotrasen
+#define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet
 #define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security, /datum/mil_branch/soviet
 
 // Rank-specific defines
@@ -47,17 +47,7 @@
 	/datum/mil_rank/sol/scientist, \
 	)
 
-//Not in use
-#define NT_EC_CIV /datum/mil_branch/nanotrasen = list(	rank_types = list(\
-		/datum/mil_rank/nanotrasen/nt_int,\
-		/datum/mil_rank/nanotrasen/nt_emp,\
-		/datum/mil_rank/nanotrasen/e1_exp,\
-		/datum/mil_rank/nanotrasen/e2_exp,\
-		/datum/mil_rank/nanotrasen/e3_exp,\
-		/datum/mil_rank/nanotrasen/e5_exp,\
-		/datum/mil_rank/nanotrasen/e7_exp \
-		)
-
+// Not used so far but will once we have ship
 #define GIAF_LIMITED_RANKS /datum/mil_branch/soviet = list(\
 		/datum/mil_rank/soviet/e1,\
 		/datum/mil_rank/soviet/e1_gnf, \
@@ -98,7 +88,6 @@
 		/datum/mil_branch/army,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
-		/datum/mil_branch/nanotrasen,
 		/datum/mil_branch/soviet
 	)
 
@@ -110,7 +99,6 @@
 		/datum/mil_branch/private_security,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
-		/datum/mil_branch/nanotrasen,
 		/datum/mil_branch/soviet
 	)
 
@@ -125,23 +113,22 @@
 			/datum/mil_branch/private_security,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet,
-			/datum/mil_branch/nanotrasen,
 			/datum/mil_branch/soviet
 		)
 	)
 
 	species_to_branch_whitelist = list(
-		/datum/species/diona		= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/nanotrasen),
+		/datum/species/diona		= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
 		/datum/species/nabber		= list(/datum/mil_branch/civilian),
-		/datum/species/skrell		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/skrell_fleet, /datum/mil_branch/nanotrasen),
-		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
-		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
-		/datum/species/adherent		= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
-		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
-		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
-		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
- 		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/nanotrasen),
-		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/nanotrasen),
+		/datum/species/skrell		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/adherent		= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
+		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+ 		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
+		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
 		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
@@ -721,96 +708,7 @@
 	name_short = "SAARE"
 	pow_cat = 3
 /*****/
-//Not in use
-// Nanotrasen Civilian Branch (Serves as a replacment for EC)
-/datum/mil_branch/nanotrasen
-	name = "Nanotrasen"
-	name_short = "NT"
-	email_domain = "nanotrasen.dagon.nt"
-
-	rank_types = list(
-		/datum/mil_rank/nanotrasen/nt_int,
-		/datum/mil_rank/nanotrasen/nt_emp,
-		/datum/mil_rank/nanotrasen/e1_exp,
-		/datum/mil_rank/nanotrasen/e2_exp,
-		/datum/mil_rank/nanotrasen/e3_exp,
-		/datum/mil_rank/nanotrasen/e5_exp,
-		/datum/mil_rank/nanotrasen/e7_exp
-	)
-	spawn_rank_types = list(
-		/datum/mil_rank/nanotrasen/nt_int,
-		/datum/mil_rank/nanotrasen/nt_emp,
-		/datum/mil_rank/nanotrasen/e2_exp,
-		/datum/mil_rank/nanotrasen/e3_exp,
-		/datum/mil_rank/nanotrasen/e5_exp,
-		/datum/mil_rank/nanotrasen/e7_exp
-	)
-//Civilian part of Nanotrasen
-
-
-//Nanotrasen Intern (Field Assistant/Lab Assistant)
-/datum/mil_rank/nanotrasen/nt_int
-	name = "Nanotrasen Intern"
-	name_short = "NTIT"
-	sort_order = 1
-	pow_cat = 3
-
-//Nanotrasen Employee (Scientist/Researcher)
-
-/datum/mil_rank/nanotrasen/nt_emp
-	name = "Nanotrasen Employee"
-	name_short = "NTEM"
-	sort_order = 2
-	pow_cat = 3
-
-//EC part of Nanotrasen
-
-//Nanotrasen RXPL (Not in use)
-
-/datum/mil_rank/nanotrasen/e1_exp
-	name = "Recruit Explorer"
-	name_short = "NTRE"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted)
-	sort_order = 1
-	pow_cat = 3
-
-//Nanotrasen JXPL (Explorer)
-
-/datum/mil_rank/nanotrasen/e2_exp
-	name = "Nanotrasen Junior Explorer"
-	name_short = "NTJE"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e2, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 2
-	pow_cat = 3
-
-//Nanotrasen XPL (Explorer)
-
-/datum/mil_rank/nanotrasen/e3_exp
-	name = "Nanotrasen Explorer"
-	name_short = "NTEX"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 3
-	pow_cat = 3
-
-//Nanotrasen SXPL (Explorer)
-
-/datum/mil_rank/nanotrasen/e5_exp
-	name = "Nanotrasen Senior Explorer"
-	name_short = "NTSE"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 5
-	pow_cat = 3
-
-//Nanotrasen CXPL (Pilot)
-
-/datum/mil_rank/nanotrasen/e7_exp
-	name = "Nanotrasen Chief Explorer"
-	name_short = "NTCE"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 7
-	pow_cat = 3
-
-
+//Currently not in use, will be used later once we get actual ship that can use these
 
 //The Gilgamesh Independent Armed Forces
 
