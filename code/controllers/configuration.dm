@@ -243,8 +243,8 @@ var/list/gamemode_cache = list()
 	var/job_whitelist = FALSE //Do we use the job whitelist? Set to false so devs don't have to set config options.
 	var/panic_bunker = FALSE //is the panic bunker enabled?
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
-	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
-	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
+	var/delist_population = 100 //What population do we automatically take ourselves off to hub at?
+	var/pb_population = 120 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
 
 	// fail2topic settings
@@ -817,7 +817,7 @@ var/list/gamemode_cache = list()
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
 					fail2topic_enabled = text2num(value)
-				
+
 				if ("show_gamemode_vote")
 					show_gamemode_vote = text2num(value)
 

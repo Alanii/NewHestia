@@ -247,15 +247,15 @@
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	display_name = "Starboard Dock C";
-	frequency = 1331;
-	id_tag = "admin_shuttle_dock_airlock";
+	frequency = 1380;
+	id_tag = "adminascent_shuttle_dock_airlock";
 	pixel_x = -24;
 	pixel_y = 24;
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
-	tag_airpump = "admin_shuttle_dock_pump";
-	tag_chamber_sensor = "admin_shuttle_dock_sensor";
-	tag_exterior_door = "admin_shuttle_dock_outer";
-	tag_interior_door = "admin_shuttle_dock_inner"
+	tag_airpump = "adminascent_shuttle_dock_pump";
+	tag_chamber_sensor = "adminascent_shuttle_dock_sensor";
+	tag_exterior_door = "adminascent_shuttle_dock_outer";
+	tag_interior_door = "adminascent_shuttle_dock_inner"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
@@ -263,7 +263,7 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "admin_shuttle_dock_inner";
+	id_tag = "adminascent_shuttle_dock_inner";
 	locked = 1;
 	name = "Docking Port Airlock"
 	},
@@ -2186,7 +2186,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "admin_shuttle_dock_pump"
+	id_tag = "adminascent_shuttle_dock_pump"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
@@ -7045,7 +7045,7 @@
 	},
 /obj/machinery/airlock_sensor{
 	frequency = 1380;
-	id_tag = "admin_shuttle_dock_sensor";
+	id_tag = "adminascent_shuttle_dock_sensor";
 	pixel_x = -30;
 	pixel_y = -8
 	},
@@ -14757,7 +14757,7 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "admin_shuttle_dock_outer";
+	id_tag = "adminascent_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock"
 	},
@@ -15109,9 +15109,8 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
 	frequency = 1380;
-	id_tag = "admin_shuttle_dock_pump"
+	id_tag = "adminascent_shuttle_dock_pump"
 	},
 /obj/item/device/radio/intercom{
 	dir = 8;
