@@ -130,3 +130,25 @@
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
+
+///datum/job/radiohost
+	//title = "Radio Host"
+	//department = "Service"
+	//department_flag = SRV
+	//minimum_character_age = list(SPECIES_HUMAN = 18)
+	//total_positions = 1
+	//spawn_positions = 1
+	//economic_power = 30
+	//minimal_player_age = 0
+	//skill_points = 12
+
+	//allowed_branches = list(
+	//datum/mil_branch/civilian
+	//)
+
+	//allowed_ranks = list(
+		///datum/mil_rank/civ/contractor
+	//)	
+
+	//access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew, access_radio_host)
+	//minimal_access = list() 
