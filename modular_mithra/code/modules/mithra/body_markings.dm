@@ -397,62 +397,6 @@
 		species_allowed = list(SPECIES_VULPKANIN)
 		gender = NEUTER
 
-	vulp_blaze
-		name = "Blaze"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_blaze"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_vulpine
-		name = "Vulpine"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_vulpine"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_earfluff
-		name = "Earfluff"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_earfluff"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_mask
-		name = "Mask"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_mask"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_patch
-		name = "Patch"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_patch"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_ruff
-		name = "Ruff"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_ruff"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_kita
-		name = "Kita"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_kita"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
-	vulp_swift
-		name = "Swift"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_state = "vulp_facial_swift"
-		species_allowed = list(SPECIES_VULPKANIN)
-		gender = NEUTER
-
 //Special hairstyles
 /datum/sprite_accessory/ears/inkling
 	name = "colorable mature inkling hair"
@@ -517,6 +461,54 @@
 	vulp_all
 		name = "all head highlights (Vulp)"
 		icon_state = "vulp_all"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_blaze
+		name = "blaze (Vulp)"
+		icon_state = "vulp_blaze"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_vulpine
+		name = "vulpine (Vulp)"
+		icon_state = "vulp_vulpine"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_earfluff
+		name = "earfluff (Vulp)"
+		icon_state = "vulp_earfluff"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_mask
+		name = "mask (Vulp)"
+		icon_state = "vulp_mask"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_patch
+		name = "patch (Vulp)"
+		icon_state = "vulp_patch"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_ruff
+		name = "ruff (Vulp)"
+		icon_state = "vulp_ruff"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_kita
+		name = "kita (Vulp)"
+		icon_state = "vulp_kita"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	vulp_swift
+		name = "swift (Vulp)"
+		icon_state = "vulp_swift"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
