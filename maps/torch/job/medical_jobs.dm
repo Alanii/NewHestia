@@ -73,9 +73,12 @@
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC,
+						SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -104,23 +107,24 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
 	)
 
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/civ/contractor
 	)
 
-	skill_points = 4
+	skill_points = 20
 	no_skill_buffs = TRUE
 
 	min_skill = list(   SKILL_EVA     = SKILL_ADEPT,
 	                    SKILL_HAULING = SKILL_ADEPT,
-	                    SKILL_MEDICAL = SKILL_EXPERT,
+	                    SKILL_MEDICAL = SKILL_BASIC,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
-	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
