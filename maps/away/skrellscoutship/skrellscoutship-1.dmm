@@ -1442,6 +1442,7 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
+/obj/machinery/meter,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "dS" = (
@@ -1776,11 +1777,8 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/crew/brig)
 "eZ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9;
+	dir = 6;
 	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/skrell/green,
@@ -2056,7 +2054,7 @@
 /obj/machinery/atmospherics/omni/filter{
 	tag_east = 4;
 	tag_north = 1;
-	tag_south = 2
+	tag_west = 2
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
@@ -2085,9 +2083,6 @@
 "lU" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
@@ -2436,8 +2431,10 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/brig)
 "uX" = (
-/obj/machinery/atmospherics/binary/passive_gate/on{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
@@ -2477,7 +2474,9 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/brig)
 "vX" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/machinery/atmospherics/binary/passive_gate/on{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "vZ" = (
@@ -2497,9 +2496,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 9
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "we" = (
@@ -2577,7 +2574,9 @@
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/robotics)
 "yt" = (
-/obj/machinery/portable_atmospherics/powered/pump/filled,
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "yX" = (
@@ -2688,12 +2687,11 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "BB" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 5;
-	icon_state = "intact"
-	},
 /obj/machinery/light,
-/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "BL" = (
@@ -2849,9 +2847,6 @@
 	dir = 5;
 	icon_state = "intact"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 10
-	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Jq" = (
@@ -2871,11 +2866,12 @@
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/robotics)
 "Jv" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 6;
+/obj/effect/paint/black,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 5;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/wall/r_wall,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Jx" = (
 /obj/structure/cable{
@@ -2886,9 +2882,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d2)
 "Kq" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Ks" = (
@@ -2982,10 +2976,7 @@
 /area/ship/skrellscoutship/crew/toilets)
 "MP" = (
 /obj/effect/paint/black,
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 5;
-	icon_state = "intact"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/wall/r_wall,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Nx" = (
@@ -3019,10 +3010,6 @@
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/kitchen)
 "OH" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4;
-	icon_state = "intact"
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
@@ -10889,8 +10876,8 @@ Ss
 AD
 iU
 BL
-BL
-Jv
+eZ
+EY
 EY
 ut
 Ak
@@ -11016,7 +11003,7 @@ OH
 vX
 HQ
 MP
-Rn
+Jv
 Rn
 aa
 aa
@@ -11134,7 +11121,7 @@ pz
 EY
 EY
 le
-eZ
+jj
 fb
 qE
 IS
@@ -11257,7 +11244,7 @@ BL
 jj
 Kw
 lU
-qE
+jj
 uq
 MH
 dO
@@ -11380,7 +11367,7 @@ uq
 Kw
 wd
 Kq
-Kq
+yt
 BL
 Ks
 Rn
@@ -11503,7 +11490,7 @@ NG
 Rn
 jR
 mk
-yt
+BL
 Bb
 Rn
 aa
