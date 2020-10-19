@@ -181,6 +181,7 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
+	is_whitelisted = TRUE
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_EVA         = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_BASIC,
