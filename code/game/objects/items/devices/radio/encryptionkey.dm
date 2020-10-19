@@ -16,7 +16,7 @@
 
 /obj/item/device/encryptionkey/syndicate
 	icon_state = "cypherkey"
-	channels = list("Mercenary" = 1)
+	channels = list("Terrorist" = 1)
 	origin_tech = list(TECH_ESOTERIC = 3)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 

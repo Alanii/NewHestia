@@ -105,7 +105,7 @@
 	desc = "A  rifle magazine loaded with flechette rounds. Contains 9 rounds."
 	item_cost = 8
 	path = /obj/item/weapon/magnetic_ammo
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 
 /datum/uplink_item/item/ammo/pistol_emp
 	name = "Standard EMP Ammo Box"
