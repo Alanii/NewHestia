@@ -6,7 +6,7 @@ GLOBAL_DATUM_INIT(mercs, /datum/antagonist/terrorist, new)
 	antag_indicator = "hudsyndicate"
 	role_text_plural = "Mercenaries"
 	landmark_id = "Syndicate-Spawn"
-	leader_welcome_text = "You are the leader of the Koalicja terrorist strikeforce; hail to the chief and death to non-human filth. Use :t to speak to your underlings."
+	leader_welcome_text = "You are a member of the Koalicja terrorist strikeforce; hail to the chief and death to non-human filth. Use :t to speak to your underlings."
 	welcome_text = "To speak on the strike team's private channel use :t."
 	flags = ANTAG_VOTABLE | ANTAG_OVERRIDE_JOB | ANTAG_OVERRIDE_MOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_CHOOSE_NAME | ANTAG_HAS_NUKE | ANTAG_SET_APPEARANCE_H | ANTAG_HAS_LEADER
 	antaghud_indicator = "hudoperative"
