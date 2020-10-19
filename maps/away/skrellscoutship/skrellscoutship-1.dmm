@@ -202,7 +202,7 @@
 	door_color = "#404040";
 	name = "Dormitory"
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/quarters)
 "aQ" = (
 /obj/structure/cable{
@@ -511,7 +511,7 @@
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "bQ" = (
 /obj/structure/cable{
@@ -761,7 +761,7 @@
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
 /obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/kitchen)
 "cs" = (
 /obj/machinery/vending/hydronutrients{
@@ -854,7 +854,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "skcell1_window"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "cB" = (
 /obj/structure/table/rack,
@@ -871,7 +871,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "skcell2_window"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "cE" = (
 /obj/machinery/light_switch{
@@ -958,7 +958,7 @@
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/kitchen)
 "cM" = (
 /obj/machinery/light,
@@ -1024,7 +1024,7 @@
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/wallframe_spawn/reinforced,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/armory)
 "cT" = (
 /obj/machinery/door/window/brigdoor/northright{
@@ -1165,7 +1165,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "skcell3_window"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "dh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -1723,7 +1723,7 @@
 	},
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/atmos)
 "eQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1987,7 +1987,7 @@
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
 "iD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
@@ -2145,7 +2145,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
 "oh" = (
 /obj/structure/hygiene/toilet{
@@ -2643,7 +2643,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
 "AD" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -2810,7 +2810,7 @@
 	dir = 4;
 	id_tag = "skcell3_window"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "HQ" = (
 /obj/machinery/computer/air_control{
@@ -2824,6 +2824,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/maintenance/atmos)
+"Ig" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor/autoset,
+/obj/effect/paint/black,
+/turf/simulated/floor/plating,
+/area/ship/skrellscoutship/crew/rec)
 "IE" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -3000,7 +3006,7 @@
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Oz" = (
 /mob/living/bot/farmbot{
@@ -3143,7 +3149,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "skcell2_door"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "TD" = (
 /obj/structure/hygiene/toilet,
@@ -3437,8 +3443,6 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "XV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/hygiene/shower,
-/obj/structure/curtain/open/shower/security,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/toilets)
 "Yh" = (
@@ -3461,7 +3465,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "skcell1_door"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/brig)
 "Zp" = (
 /obj/machinery/alarm/skrell{
@@ -9409,7 +9413,7 @@ bd
 Ej
 RC
 nf
-ZE
+Ig
 eB
 Dj
 Dj
@@ -9526,7 +9530,7 @@ bM
 TE
 TE
 TE
-ZE
+Ig
 du
 Ej
 TT
@@ -9648,7 +9652,7 @@ bM
 TE
 TE
 cd
-ZE
+Ig
 UT
 UT
 RC
@@ -9892,7 +9896,7 @@ bM
 TE
 TE
 TE
-ZE
+Ig
 WM
 mI
 TL
@@ -10014,12 +10018,12 @@ Dj
 TE
 TE
 TE
-ZE
+Ig
 sM
 sM
 TL
 fB
-ZE
+Ig
 TE
 Zr
 Xb

@@ -57,7 +57,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/command/office)
 "aj" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
@@ -68,7 +68,7 @@
 	},
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/office)
 "ao" = (
 /obj/machinery/door/blast/regular/open{
@@ -336,7 +336,7 @@
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
 /obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutshuttle)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -608,7 +608,7 @@
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "bY" = (
 /obj/machinery/computer/shuttle_control/explore/skrellscoutshuttle,
@@ -654,7 +654,7 @@
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "cj" = (
 /obj/machinery/computer/ship/engines,
@@ -696,7 +696,7 @@
 	id_tag = "xil_bridge";
 	name = "Blast Doors"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "cv" = (
 /obj/machinery/computer/ship/sensors,
@@ -1200,7 +1200,7 @@
 "eX" = (
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/medbay)
 "fr" = (
 /obj/machinery/computer/ship/navigation{
@@ -1229,7 +1229,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/hangar)
 "fU" = (
 /obj/effect/paint/black,
@@ -1251,7 +1251,7 @@
 	dir = 1;
 	icon_state = "map"
 	},
-/turf/simulated/floor/tiled/skrell,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/hangar)
 "go" = (
 /obj/structure/fitness/punchingbag,
@@ -1304,7 +1304,7 @@
 	dir = 8
 	},
 /obj/effect/paint/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "hj" = (
 /obj/structure/curtain/open/bed,
@@ -1381,7 +1381,7 @@
 /obj/machinery/door/firedoor/autoset,
 /obj/effect/paint/black,
 /obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/fit)
 "jA" = (
 /obj/machinery/door/firedoor/autoset,
@@ -1781,7 +1781,7 @@
 	name = "Blast Doors"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/hangar)
 "rQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -2492,7 +2492,7 @@
 	},
 /obj/effect/paint/black,
 /obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutshuttle)
 "Ha" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -3004,7 +3004,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/green,
-/area/ship/skrellscoutship/crew/rec)
+/area/ship/skrellscoutship/crew/fit)
 "PL" = (
 /obj/structure/table/glass,
 /obj/item/weapon/paper_bin,
@@ -10936,7 +10936,7 @@ aq
 aq
 PJ
 aq
-YL
+aq
 YL
 YL
 YL
