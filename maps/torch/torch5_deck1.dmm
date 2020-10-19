@@ -9890,13 +9890,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/structure/hygiene/sink{
-	dir = 4;
-	pixel_x = 11
-	},
 /obj/machinery/flasher{
 	id_tag = "Cell 5";
 	pixel_x = 24
+	},
+/obj/structure/hygiene/sink{
+	dir = 4;
+	pixel_x = 11;
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/nullglass,
 /area/security/brig/psionic)
@@ -9924,13 +9925,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -11
-	},
 /obj/machinery/flasher{
 	id_tag = "Cell 6";
 	pixel_x = -24
+	},
+/obj/structure/hygiene/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/nullglass,
 /area/security/brig/psionic)
