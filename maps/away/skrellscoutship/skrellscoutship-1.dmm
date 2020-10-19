@@ -2689,7 +2689,7 @@
 "BB" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/tiled/skrell/green,
