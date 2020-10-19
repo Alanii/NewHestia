@@ -4844,11 +4844,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "air" = (
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -9931,8 +9926,7 @@
 	},
 /obj/structure/hygiene/sink{
 	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
+	pixel_x = -11
 	},
 /obj/machinery/flasher{
 	id_tag = "Cell 6";
