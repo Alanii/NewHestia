@@ -83,7 +83,7 @@
 						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	minimal_access = list()
-	skill_points = 20
+	skill_points = 22
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
@@ -114,7 +114,14 @@
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
-	max_pow_cat = 2
+
+	skill_points = 20
+	no_skill_buffs = TRUE
+
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_DEVICES     = SKILL_BASIC,
+	                    SKILL_SCIENCE     = SKILL_BASIC)
+
 	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_DEVICES     = SKILL_EXPERT,
 	                    SKILL_SCIENCE     = SKILL_EXPERT)
