@@ -204,3 +204,4 @@ var/last_chew = 0
 	throw_speed = 2
 	throw_range = 5
 	gender = PLURAL
+	
