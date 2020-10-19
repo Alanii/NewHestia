@@ -4134,6 +4134,7 @@
 "hi" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "hj" = (
@@ -4310,7 +4311,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/random/obstruction,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fifthdeck/aftstarboard)
 "hE" = (
@@ -10600,6 +10601,7 @@
 "sk" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "sl" = (
@@ -16191,6 +16193,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/petrov/security)
+"LJ" = (
+/obj/random/obstruction,
+/turf/simulated/floor/plating,
+/area/vacant/bar)
 "LL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -16451,6 +16457,10 @@
 /obj/item/weapon/stool/bar,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
+"MI" = (
+/obj/random/obstruction,
+/turf/simulated/floor/wood/walnut,
+/area/vacant/bar)
 "MN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -16700,9 +16710,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "NL" = (
-/obj/random/obstruction,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/bar)
+/area/maintenance/fifthdeck/aftstarboard)
 "NP" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -19156,14 +19167,15 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
 "YH" = (
-/obj/random/obstruction,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/bar)
+/area/maintenance/fifthdeck/aftstarboard)
 "YJ" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/phoron)
@@ -41233,7 +41245,7 @@ aa
 Xi
 QL
 yI
-Ne
+MI
 Lj
 zL
 fz
@@ -41638,7 +41650,7 @@ Xi
 QL
 TC
 HE
-yI
+LJ
 XI
 XI
 aD
