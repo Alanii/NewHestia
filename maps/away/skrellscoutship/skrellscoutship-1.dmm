@@ -3,9 +3,12 @@
 /turf/space,
 /area/space)
 "ab" = (
-/obj/effect/paint/black,
-/turf/simulated/wall/r_wall,
-/area/ship/skrellscoutship/crew/medbay)
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/skrell,
+/area/ship/skrellscoutship/crew/hallway/d2)
 "ad" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/accessory/storage/black_vest,
@@ -9913,7 +9916,7 @@ vZ
 vZ
 vZ
 vZ
-bM
+vZ
 bM
 bM
 TE
@@ -10035,9 +10038,9 @@ ad
 ad
 ad
 bx
-bM
-bM
-bM
+vZ
+Dj
+Dj
 TE
 TE
 TE
@@ -10158,7 +10161,7 @@ VM
 cV
 aS
 vZ
-ab
+Dj
 ab
 TE
 TE
@@ -10281,7 +10284,7 @@ bl
 ai
 aP
 aX
-cw
+bc
 bv
 bc
 cg

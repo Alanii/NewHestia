@@ -16,7 +16,6 @@
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship, /datum/shuttle/autodock/overmap/skrellscoutshuttle)
 	apc_test_exempt_areas = list(
 		/area/ship/skrellscoutshuttle =                NO_SCRUBBER,
-		/area/ship/skrellscoutship/maintenance/power = NO_SCRUBBER,
 		/area/ship/skrellscoutship/solars =            NO_SCRUBBER|NO_VENT|NO_APC
 	)
 
