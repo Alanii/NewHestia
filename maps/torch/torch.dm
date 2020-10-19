@@ -47,7 +47,7 @@
 	#include "game/antagonist/outsider/deathsquad.dm"
 	#include "game/antagonist/outsider/ert.dm"
 	#include "game/antagonist/outsider/foundation.dm"
-	#include "game/antagonist/outsider/mercenary.dm"
+	#include "game/antagonist/outsider/terrorist.dm"
 	#include "game/antagonist/outsider/raider.dm"
 
 	#include "infantry/firearms.dm"

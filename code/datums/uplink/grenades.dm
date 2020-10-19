@@ -74,5 +74,5 @@
 	name = "5x Supermatter Grenades"
 	desc = "These grenades contains a small supermatter shard which will delaminate upon activation and pull in nearby objects, irradiate lifeforms, and eventually explode."
 	item_cost = 90
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 	path = /obj/item/weapon/storage/box/supermatters
