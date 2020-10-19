@@ -25,18 +25,18 @@
 						access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security,
 						access_petrov_maint, access_robotics, access_robotics_engineering)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
+	                    SKILL_COMPUTER    = SKILL_ADEPT,
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_BOTANY      = SKILL_BASIC,
 	                    SKILL_ANATOMY     = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_ADEPT,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_DEVICES     = SKILL_EXPERT,
-	                    SKILL_SCIENCE     = SKILL_SPEC)
-	skill_points = 20
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
+	skill_points = 24
 
 /datum/job/scientist
 	title = "Scientist"

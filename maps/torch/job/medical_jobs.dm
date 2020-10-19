@@ -72,7 +72,7 @@
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
-	                    SKILL_MEDICAL = SKILL_BASIC,
+	                    SKILL_MEDICAL = SKILL_ADEPT,
 						SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
@@ -117,13 +117,14 @@
 	skill_points = 20
 	no_skill_buffs = TRUE
 
-	min_skill = list(   SKILL_EVA     = SKILL_ADEPT,
-	                    SKILL_HAULING = SKILL_ADEPT,
+	min_skill = list(	SKILL_EVA     = SKILL_BASIC,
+						SKILL_HAULING = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
-	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
+						SKILL_ANATOMY     = SKILL_SPEC,
+	                    SKILL_CHEMISTRY   = SKILL_SPEC)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_surgery, access_medical_equip, access_solgov_crew)
