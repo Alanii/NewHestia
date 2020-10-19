@@ -53,3 +53,18 @@
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/security
 	pda_type = /obj/item/modular_computer/pda/security
+
+/decl/hierarchy/outfit/job/security/cadet
+	name = OUTFIT_JOB_NAME("Security Cadet")
+
+/decl/hierarchy/outfit/job/security/infantry
+	name = "Infantry Outfit"
+
+/decl/hierarchy/outfit/job/security/infantry/squadlead
+	name = OUTFIT_JOB_NAME("Squad Lead")
+
+/decl/hierarchy/outfit/job/security/infantry/tech
+	name = OUTFIT_JOB_NAME("Combat Tech")
+
+/decl/hierarchy/outfit/job/security/infantry/grunt
+	name = OUTFIT_JOB_NAME("Rifleman")

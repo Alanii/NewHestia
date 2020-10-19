@@ -23,8 +23,8 @@
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT,
+	max_skill = list(   SKILL_COMBAT      = SKILL_SPEC,
+	                    SKILL_WEAPONS     = SKILL_SPEC,
 	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	skill_points = 34
 
@@ -161,7 +161,7 @@
 	minimal_access = list()
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant)
 
-/datum/job/seccadetn/get_description_blurb()
+/datum/job/seccadet/get_description_blurb()
 	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
 
 //INFANTRY
@@ -181,6 +181,7 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
+	is_whitelisted = TRUE
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_EVA         = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_BASIC,
@@ -224,7 +225,7 @@
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERT,
+	max_skill = list(	SKILL_COMBAT       = SKILL_SPEC,
 						SKILL_WEAPONS      = SKILL_SPEC,
 						SKILL_EVA		   = SKILL_EXPERT,
 						SKILL_CONSTRUCTION = SKILL_EXPERT,

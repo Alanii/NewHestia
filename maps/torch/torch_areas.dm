@@ -1791,3 +1791,8 @@
 	name = "\improper Robotics Operations Storage"
 	icon_state = "pink"
 	req_access = list(access_robotics)
+
+//Radio Host
+/area/radio_host
+	name = "\improper Radio Host Office"
+	req_access = list(access_radio_host)
