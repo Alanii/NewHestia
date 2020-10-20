@@ -32,8 +32,8 @@
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
-	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
+	                    SKILL_ANATOMY     = SKILL_SPEC,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 	skill_points = 20
 
@@ -77,7 +77,7 @@
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
