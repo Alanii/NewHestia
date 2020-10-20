@@ -62,7 +62,7 @@
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "solgovseal"
 
-/obj/structure/sign/solgov
+/obj/structure/sign/ntcrest
 	name = "\improper NT Logo"
 	desc = "Crest that signifies the vessel is under the propert of NanoTrasen."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
