@@ -28,10 +28,11 @@
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
 	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
 	                    SKILL_ATMOS        = SKILL_EXPERT,
-						SKILL_EVA          = SKILL_EXPERT,
+						SKILL_COMPUTER     = SKILL_SPEC,
+						SKILL_EVA          = SKILL_SPEC,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 	skill_points = 24
 
@@ -81,7 +82,7 @@
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/civ/contractor
-	)	
+	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_HAULING      = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_ADEPT,
@@ -93,8 +94,8 @@
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
 	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
 	                    SKILL_ATMOS        = SKILL_EXPERT,
-						SKILL_EVA          = SKILL_EXPERT,
-						SKILL_COMPUTER	   = SKILL_EXPERT,
+						SKILL_EVA          = SKILL_SPEC,
+						SKILL_COMPUTER	   = SKILL_SPEC,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 	skill_points = 22
 
