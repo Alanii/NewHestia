@@ -33,7 +33,7 @@
 	name = "\improper Bathroom"
 	icon_state = "toilet"
 
-/area/ship/skrellscoutship/crew/medbay
+/area/ship/skrellscoutship/crew/infirmary
 	name = "\improper Medical Bay"
 	icon_state = "medbay"
 
@@ -41,7 +41,7 @@
 	name = "\improper Brig"
 	icon_state = "brig"
 
-/area/ship/skrellscoutship/crew/medbay/alt
+/area/ship/skrellscoutship/crew/cloning
 	name = "\improper Cloning Room"
 	icon_state = "medbay"
 
