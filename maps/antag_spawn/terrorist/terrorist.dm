@@ -1,4 +1,4 @@
-/datum/map_template/ruin/antag_spawn/mercenary
+/datum/map_template/ruin/antag_spawn/terrorist
 	name = "Mercenary Base"
 	suffixes = list("mercenary/mercenary_base.dmm")
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/merc_shuttle)
@@ -19,7 +19,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/merc
 	name = "Desperado"
-	desc = "A military gunship of ICCG design. Scanner detects heavy modification to the framework of the vessel and no designation."
+	desc = "A military gunship of UCG design. Scanner detects heavy modification to the framework of the vessel and no designation."
 	shuttle = "Desperado"
 	fore_dir = NORTH
 	vessel_size = SHIP_SIZE_SMALL

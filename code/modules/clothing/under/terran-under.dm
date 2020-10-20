@@ -18,6 +18,10 @@
 		)
 	siemens_coefficient = 0.8
 
+/obj/item/clothing/under/terran/navy/utility/koalicja
+	name = "Koalicja utility uniform"
+	desc = "A comfortable black utility jumpsuit. Worn by the koalicja extremist group."
+
 /obj/item/clothing/under/terran/navy/service
 	name = "UCGNF service uniform"
 	desc = "The service uniform of the UCG National Fleet, for low-ranking crew."

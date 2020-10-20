@@ -39,7 +39,7 @@
 		/decl/item_modifier/space_suit/atmos,
 		/decl/item_modifier/space_suit/science,
 		/decl/item_modifier/space_suit/pilot,
-		/decl/item_modifier/space_suit/mercenary/emag
+		/decl/item_modifier/space_suit/terrorist/emag
 	)
 
 	//Species that the suits can be configured to fit.
