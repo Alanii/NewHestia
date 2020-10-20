@@ -28,11 +28,11 @@
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
-	                    SKILL_ELECTRICAL   = SKILL_SPEC,
-	                    SKILL_ATMOS        = SKILL_SPEC,
-						SKILL_EVA          = SKILL_SPEC,
-	                    SKILL_ENGINES      = SKILL_SPEC)
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
+	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
+	                    SKILL_ATMOS        = SKILL_EXPERT,
+						SKILL_EVA          = SKILL_EXPERT,
+	                    SKILL_ENGINES      = SKILL_EXPERT)
 	skill_points = 24
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -93,8 +93,8 @@
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
 	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
 	                    SKILL_ATMOS        = SKILL_EXPERT,
-						SKILL_EVA          = SKILL_SPEC,
-						SKILL_COMPUTER	   = SKILL_SPEC,
+						SKILL_EVA          = SKILL_EXPERT,
+						SKILL_COMPUTER	   = SKILL_EXPERT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 	skill_points = 22
 
@@ -144,10 +144,10 @@
 	                    SKILL_ATMOS        = SKILL_BASIC,
 	                    SKILL_ENGINES      = SKILL_BASIC)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
 	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
 	                    SKILL_ATMOS        = SKILL_EXPERT,
-	                    SKILL_ENGINES      = SKILL_SPEC)
+	                    SKILL_ENGINES      = SKILL_EXPERT)
 
 	access = list(access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_eva, access_tech_storage, access_construction,
