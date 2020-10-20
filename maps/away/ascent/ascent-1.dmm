@@ -1688,8 +1688,8 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/tank/mantid/reactor/oxygen/captives,
 /obj/item/weapon/tank/mantid/reactor/oxygen/captives,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
 "dG" = (

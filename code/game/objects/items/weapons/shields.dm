@@ -100,9 +100,16 @@
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	matter = list(MATERIAL_PLASTEEL = 8500)
-	max_block = 50
+	max_block = 40
 	can_block_lasers = TRUE
 	slowdown_general = 1.5
+
+/obj/item/weapon/shield/riot/metal/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
+	if(istype(damage_source, /obj/item/projectile))
+		var/obj/item/projectile/P = damage_source
+		if((is_sharp(P) && damage > 10) || istype(P, /obj/item/projectile/beam))
+			return (base_block_chance - round(damage / 2.5)) //block bullets and beams using the old block chance
+	return base_block_chance
 
 /obj/item/weapon/shield/buckler
 	name = "buckler"

@@ -24,8 +24,8 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	id = MODE_CULTIST
 	role_text = "Cultist"
 	role_text_plural = "Cultists"
-	restricted_jobs = list(/datum/job/captain, /datum/job/hos)
-	protected_jobs = list(/datum/job/officer, /datum/job/warden, /datum/job/detective)
+	restricted_jobs = list(/datum/job/captain, /datum/job/hos, /datum/job/squad_lead, /datum/job/warden)
+	protected_jobs = list(/datum/job/officer, /datum/job/detective)
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/submap)
 	feedback_tag = "cult_objective"
 	antag_indicator = "hudcultist"
@@ -41,6 +41,10 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	initial_spawn_target = 6
 	antaghud_indicator = "hudcultist"
 	skill_setter = /datum/antag_skill_setter/station
+	antag_text = "You are a cultist, remember to cooperate with your fellow cultists and work towards your one goal: Bringing back Narsie.\
+	You have various abilities at your disposal, most of which harm you when you use them. \
+	Overusing of said abilties in short of span of time can result in death or massive damage \
+	"
 
 	var/allow_narsie = 1
 	var/powerless = 0

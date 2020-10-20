@@ -6,7 +6,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_STEEL = 1000)
-	screen_shake = 1
+	screen_shake = 0
 	combustion = 1
 
 	var/caliber = CALIBER_PISTOL		//determines which casings will fit
@@ -53,7 +53,7 @@
 		is_jammed = 1
 		var/mob/user = loc
 		if(istype(user))
-			if(prob(user.skill_fail_chance(SKILL_WEAPONS, 100, SKILL_PROF)))
+			if(prob(user.skill_fail_chance(SKILL_WEAPONS, 100, SKILL_SPEC)))
 				return null
 			else
 				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")

@@ -98,6 +98,10 @@
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_SCIENCE = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
+	max_skill = list(SKILL_EVA         = SKILL_SPEC,
+					SKILL_COMBAT      = SKILL_SPEC,
+					SKILL_WEAPONS     = SKILL_SPEC,
+					SKILL_HAULING     = SKILL_SPEC)
 
 /datum/job/submap/ascent/is_position_available()
 	. = ..()

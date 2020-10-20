@@ -17,6 +17,7 @@
 	accuracy_power = 8
 	one_hand_penalty = 2
 	bulk = 3
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
@@ -76,6 +77,7 @@
 	caliber = CALIBER_CAPS
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	ammo_type = /obj/item/ammo_casing/cap
+	base_parry_chance = 0
 
 /obj/item/weapon/gun/projectile/revolver/capgun/attackby(obj/item/weapon/wirecutters/W, mob/user)
 	if(!istype(W) || icon_state == "revolver")

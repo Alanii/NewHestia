@@ -165,7 +165,7 @@
 	return list(
 		/obj/item/inflatable/door = 2,
 		/obj/item/weapon/storage/med_pouch/burn = 2,
-		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/breath/half,
 		/obj/item/weapon/storage/backpack/dufflebag/firefighter
 		)
 

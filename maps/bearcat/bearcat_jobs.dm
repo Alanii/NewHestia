@@ -11,8 +11,9 @@
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_SPEC,
+	                    SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 30
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -67,10 +68,10 @@
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
+	                    SKILL_ELECTRICAL   = SKILL_SPEC,
+	                    SKILL_ATMOS        = SKILL_SPEC,
+	                    SKILL_ENGINES      = SKILL_SPEC)
 	skill_points = 30
 
 /datum/job/doctor
@@ -87,9 +88,9 @@
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
+	                    SKILL_ANATOMY     = SKILL_SPEC,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 	skill_points = 28
 
 /datum/job/hop
@@ -102,9 +103,11 @@
 	                    SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_FINANCE     = SKILL_MAX,
-	                    SKILL_BUREAUCRACY = SKILL_ADEPT)
+	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+	                    SKILL_FINANCE     = SKILL_EXPERT,
+	                    SKILL_BUREAUCRACY = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 30
 
 /datum/job/assistant
@@ -116,6 +119,8 @@
 		"Cargo Hand",
 		"Passenger")
 	hud_icon = "hudcargotechnician"
+	max_skill = list(SKILL_COMBAT      = SKILL_EXPERT,
+					SKILL_WEAPONS     = SKILL_EXPERT)
 
 /datum/job/engineer
 	title = "Junior Engineer"
@@ -130,10 +135,10 @@
 	                    SKILL_ATMOS        = SKILL_BASIC,
 	                    SKILL_ENGINES      = SKILL_BASIC)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_SPEC,
+	                    SKILL_ELECTRICAL   = SKILL_SPEC,
+	                    SKILL_ATMOS        = SKILL_SPEC,
+	                    SKILL_ENGINES      = SKILL_SPEC)
 	skill_points = 20
 
 /datum/job/cyborg

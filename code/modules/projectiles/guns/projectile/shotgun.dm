@@ -19,6 +19,7 @@
 	var/recentpump = 0 // to prevent spammage
 	wielded_item_state = "shotgun-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/projectile/shotgun/on_update_icon()
 	..()
@@ -39,7 +40,7 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/handle_post_fire(mob/user, atom/target, var/pointblank=0, var/reflex=0)
 	..()
-	if(user && user.skill_check(SKILL_WEAPONS, SKILL_PROF))
+	if(user && user.skill_check(SKILL_WEAPONS, SKILL_SPEC))
 		to_chat(user, "<span class='notice'>You pump the shotgun with a reflexive motion, ejecting [chambered]!</span>")
 		pump()
 
@@ -99,6 +100,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	one_hand_penalty = 2
 	wielded_item_state = "gun_wielded"
+	base_parry_chance = 20
 
 	burst_delay = 0
 	firemodes = list(
@@ -151,6 +153,7 @@
 	force = 5
 	one_hand_penalty = 2
 	bulk = 2
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty
 	starts_loaded = FALSE

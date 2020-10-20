@@ -169,3 +169,8 @@
 	name = "Clown"
 	alive_icon = "ai-clown2"
 	alive_light = "#e50213"
+
+/datum/ai_icon/apollo
+	name = "Apollo"
+	alive_icon = "ai-apollo"
+	alive_light = "#81ddff"

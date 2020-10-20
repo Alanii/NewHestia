@@ -7,11 +7,15 @@
 	whitelisted_species = list(SPECIES_VOX_ARMALIS)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
-	min_skill = list(   SKILL_EVA         = SKILL_MAX,
-	                    SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_HAULING     = SKILL_MAX,
+	min_skill = list(   SKILL_EVA         = SKILL_EXPERT,
+	                    SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_HAULING     = SKILL_EXPERT,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 4 //hahaha no not when you get min skills bucko
+	max_skill = list(	SKILL_EVA         = SKILL_SPEC,
+						SKILL_COMBAT      = SKILL_SPEC,
+						SKILL_WEAPONS     = SKILL_SPEC,
+						SKILL_HAULING     = SKILL_SPEC)
+	skill_points = 6
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis
 	name = "Shoal Armalis"

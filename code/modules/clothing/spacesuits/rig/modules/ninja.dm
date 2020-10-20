@@ -60,7 +60,7 @@
 	name = "teleportation module"
 	desc = "A complex, sleek-looking, hardsuit-integrated teleportation module."
 	icon_state = "teleporter"
-	use_power_cost = 25 KILOWATTS
+	use_power_cost = 350 KILOWATTS
 	redundant = 1
 	usable = 1
 	selectable = 1
@@ -143,7 +143,7 @@
 	engage_string = "Fabricate Net"
 
 	fabrication_type = /obj/item/weapon/energy_net
-	use_power_cost = 20 KILOWATTS
+	use_power_cost = 100 KILOWATTS
 	origin_tech = list(TECH_MATERIAL = 5, TECH_POWER = 6, TECH_MAGNET = 5, TECH_ESOTERIC = 4, TECH_ENGINEERING = 6)
 
 /obj/item/rig_module/fabricator/energy_net/engage(atom/target)

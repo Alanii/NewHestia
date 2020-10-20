@@ -58,21 +58,6 @@
 
 	return filtered
 
-/obj/item/clothing/mask/gas/half
-	name = "face mask"
-	desc = "A compact, durable gas mask that can be connected to an air supply."
-	icon_state = "halfgas"
-	item_state = "halfgas"
-	siemens_coefficient = 0.7
-	body_parts_covered = FACE
-	w_class = ITEM_SIZE_SMALL
-	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
-		bio = ARMOR_BIO_RESISTANT
-		)
-
 //In scaling order of utility and seriousness
 
 /obj/item/clothing/mask/gas/radical

@@ -4,6 +4,8 @@
 	var/fire_mult = 1
 	var/tox_mult = 1
 	var/oxy_mult = 0
+	var/brute_mal = 0
+	var/organ_mal = 0
 
 /obj/aura/regenerating/life_tick()
 	user.adjustBruteLoss(-brute_mult)
@@ -17,10 +19,9 @@
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your ORGAN regenerate.</span>"
 	var/grow_chance = 0
 	var/grow_threshold = 0
-	var/ignore_tag//organ tag to ignore
+	var/ignore_tag //organ tag to ignore
 	var/last_nutrition_warning = 0
 	var/innate_heal = TRUE // Whether the aura is on, basically.
-
 
 /obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return
@@ -37,7 +38,7 @@
 		return 0
 
 	if(brute_mult && H.getBruteLoss())
-		H.adjustBruteLoss(-brute_mult * config.organ_regeneration_multiplier)
+		H.adjustBruteLoss((-brute_mult + brute_mal)* config.organ_regeneration_multiplier)
 		H.adjust_nutrition(-nutrition_damage_mult)
 	if(fire_mult && H.getFireLoss())
 		H.adjustFireLoss(-fire_mult * config.organ_regeneration_multiplier)
@@ -65,15 +66,16 @@
 			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
 			if(BP_IS_ROBOTIC(regen_organ))
 				continue
-			if(istype(regen_organ))
-				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
-					if (H.nutrition >= organ_mult)
-						regen_organ.damage = max(regen_organ.damage - organ_mult, 0)
-						H.adjust_nutrition(-organ_mult)
-						if(prob(5))
-							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
-					else
-						low_nut_warning(regen_organ.name)
+			if(regen_organ != ignore_tag)
+				if(istype(regen_organ))
+					if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
+						if (H.nutrition >= organ_mult)
+							regen_organ.damage = max(regen_organ.damage - (organ_mult + organ_mal), 0)
+							H.adjust_nutrition(-organ_mult + organ_mal)
+							if(prob(5))
+								to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
+						else
+							low_nut_warning(regen_organ.name)
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
@@ -150,6 +152,23 @@
 		H.apply_damage(5, TOX)
 		H.adjust_nutrition(3)
 		return 1
+
+	if(H.getBruteLoss() >= 30 && !(organ_mal >= 1))
+		brute_mal = 0.3
+		organ_mal = 1
+	else if(H.getBruteLoss() >= 60 && !(organ_mal >= 2))
+		brute_mal = 0.5
+		organ_mal = 2
+	else if(H.getBruteLoss() >= 100)
+		brute_mal = 1
+		organ_mal = 3
+
+	if(H.getFireLoss() >= 30 && !(organ_mal >= 1))
+		organ_mal = 1
+	else if(H.getFireLoss() >= 60 && !(organ_mal >= 2))
+		organ_mal = 2
+	else if(H.getFireLoss() >= 100)
+		organ_mal = 3
 	return ..()
 
 /obj/aura/regenerating/human/unathi/can_regenerate_organs()
@@ -194,7 +213,38 @@
 	grow_chance = 20
 	grow_threshold = 50
 	external_nutrition_mult = 10
+	var/toggle_organ_blocked_until = 0 // Promethean version of healblock
+	var/last_damage = 0
+
+/obj/aura/regenerating/human/promethean/life_tick()
+	var/mob/living/carbon/human/H = user
+	if(innate_heal && istype(H) && H.stat != DEAD && H.nutrition < 50)
+		H.adjust_nutrition(3)
+		return 1
+
+	if(H.getBruteLoss() || H.getFireLoss())
+		if(H.should_have_organ(BP_SLIMECORE))
+			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
+			if(sponge)
+				sponge.take_internal_damage(1)
+
+	if(last_damage < H.getBruteLoss() + H.getFireLoss() && world.time < toggle_organ_blocked_until)
+		ignore_tag = null
+	else
+		toggle_organ_blocked_until = max(world.time + 1 MINUTE, toggle_organ_blocked_until)
+		ignore_tag = BP_SLIMECORE
+
+	last_damage = H.getBruteLoss() + H.getFireLoss()
+
+	return ..()
+
+/obj/aura/regenerating/human/promethean/can_regenerate_organs()
+	return can_toggle()
 
 /obj/aura/regenerating/human/promethean/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	to_chat(H, "<span class='warning'>You feel a slithering sensation as your [O.name] reforms.</span>")
+	H.visible_message("<span class='danger'>With a shower of fresh blood, a length of biomass shoots from [H]'s [O.amputation_point], forming a new [O.name]!</span>")
 	H.adjust_nutrition(-external_nutrition_mult)
+	var/datum/reagent/blood/B = locate(/datum/reagent/blood) in H.vessel.reagent_list
+	blood_splatter(H,B,1)
+	O.set_dna(H.dna)

@@ -105,7 +105,7 @@
 		/obj/item/device/radio/headset/headset_corpsman/alt,
 		/obj/item/taperoll/medical,
 		/obj/item/weapon/storage/belt/medical/emt,
-		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/breath/half,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/weapon/storage/box/autoinjectors,
 		/obj/item/device/scanner/health,

@@ -26,7 +26,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		. -= 20
 	if(user.skill_check(SKILL_ELECTRICAL, SKILL_BASIC))
 		. += 10
-	if(user.skill_check(SKILL_DEVICES, SKILL_PROF))
+	if(user.skill_check(SKILL_DEVICES, SKILL_SPEC))
 		. += 20
 
 //////////////////////////////////////////////////////////////////

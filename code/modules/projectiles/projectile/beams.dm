@@ -2,7 +2,7 @@
 	name = "laser"
 	icon_state = "laser"
 	temperature = T0C + 300
-	fire_sound='sound/weapons/Laser4.wav'
+	fire_sound='sound/weapons/LaserShot_Rifle.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
 	damage = 30
@@ -49,7 +49,7 @@
 /obj/item/projectile/beam/xray
 	name = "x-ray beam"
 	icon_state = "xray"
-	fire_sound = 'sound/weapons/laser3.ogg'
+	fire_sound = 'sound/weapons/LaserShot_Heavy.ogg'
 	damage = 30
 	armor_penetration = 30
 	shrapnel_chance_multiplier = 0.8
@@ -218,9 +218,9 @@
 	damage = 35//enables it to cut off limbs without too many hits
 	sharp = 1
 	edge = 1
-	damage_type = BRUTE
+	damage_type = BURN
 	life_span = 4
-	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
+	armor_penetration = 40//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
 	distance_falloff = 8//makes up for the damage and pen
 	shrapnel_chance_multiplier = 0.0//no thanks
 	arterial_bleed_chance_multiplier = 0.0//you too

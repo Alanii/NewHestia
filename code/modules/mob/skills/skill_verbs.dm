@@ -201,7 +201,7 @@ The Appraise verb. Used on objects to estimate their value.
 /datum/skill_verb/noirvision/should_see_verb()
 	if(!..())
 		return
-	if(!skillset.owner.skill_check(SKILL_FORENSICS, SKILL_PROF))
+	if(!skillset.owner.skill_check(SKILL_FORENSICS, SKILL_SPEC))
 		return
 	return 1
 

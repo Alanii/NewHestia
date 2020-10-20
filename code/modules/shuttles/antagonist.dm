@@ -6,7 +6,7 @@
 /obj/machinery/computer/shuttle_control/multi/syndicate
 	name = "mercenary shuttle control console"
 	req_access = list(access_syndicate)
-	shuttle_tag = "Mercenary"
+	shuttle_tag = "Terrorist"
 
 /obj/machinery/computer/shuttle_control/multi/rescue
 	name = "rescue shuttle control console"

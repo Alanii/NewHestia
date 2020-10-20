@@ -16,6 +16,7 @@
 	projectile_type = /obj/item/projectile/ion
 	wielded_item_state = "ionrifle-wielded"
 	combustion = 0
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/ionrifle/emp_act(severity)
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess
@@ -34,6 +35,8 @@
 	charge_cost = 20
 	max_shots = 4
 	projectile_type = /obj/item/projectile/ion/small
+	wielded_item_state = "ionpistol"
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/decloner
 	name = "biological demolecularisor"
@@ -45,6 +48,7 @@
 	max_shots = 10
 	projectile_type = /obj/item/projectile/energy/declone
 	combustion = 0
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/floragun
 	name = "floral somatoray"
@@ -160,6 +164,8 @@
 	max_shots = 10
 	self_recharge = 1
 	var/datum/effect/effect/system/spark_spread/spark_system
+	base_parry_chance = 30
+	fire_delay = 10
 
 /obj/item/weapon/gun/energy/plasmacutter/mounted
 	name = "mounted plasma cutter"
@@ -201,3 +207,4 @@
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
 	max_shots = 5
 	self_recharge = 1
+	base_parry_chance = 20

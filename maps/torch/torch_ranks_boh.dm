@@ -1,6 +1,6 @@
 // Branch-specific defines
 #define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet
-#define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security
+#define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security, /datum/mil_branch/soviet
 
 // Rank-specific defines
 #define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(\
@@ -33,15 +33,11 @@
 #define NTEF_ENLISTED_ONLY /datum/mil_branch/fleet = list(\
 	/datum/mil_rank/fleet/e1, \
 	/datum/mil_rank/fleet/e2, \
-	/datum/mil_rank/fleet/e2_exp, \
 	/datum/mil_rank/fleet/e3, \
-	/datum/mil_rank/fleet/e3_exp, \
 	/datum/mil_rank/fleet/e4, \
 	/datum/mil_rank/fleet/e5, \
-	/datum/mil_rank/fleet/e5_exp, \
 	/datum/mil_rank/fleet/e6, \
 	/datum/mil_rank/fleet/e7, \
-	/datum/mil_rank/fleet/e7_exp, \
 	/datum/mil_rank/fleet/e8, \
 	/datum/mil_rank/fleet/e9, \
 	/datum/mil_rank/fleet/e9_alt1, \
@@ -51,6 +47,36 @@
 	/datum/mil_rank/sol/scientist, \
 	)
 
+// Not used so far but will once we have ship
+#define GIAF_LIMITED_RANKS /datum/mil_branch/soviet = list(\
+		/datum/mil_rank/soviet/e1,\
+		/datum/mil_rank/soviet/e1_gnf, \
+		/datum/mil_rank/soviet/e2, \
+		/datum/mil_rank/soviet/e2_gnf, \
+		/datum/mil_rank/soviet/e3, \
+		/datum/mil_rank/soviet/e3_gnf, \
+		/datum/mil_rank/soviet/e4, \
+		/datum/mil_rank/soviet/e4_gnf, \
+		/datum/mil_rank/soviet/e5, \
+		/datum/mil_rank/soviet/w1, \
+		/datum/mil_rank/soviet/o1, \
+		/datum/mil_rank/soviet/o1_gnf, \
+		/datum/mil_rank/soviet/o2, \
+		/datum/mil_rank/soviet/o2_gnf, \
+		/datum/mil_rank/soviet/o3, \
+		/datum/mil_rank/soviet/o3_gnf, \
+		/datum/mil_rank/soviet/o4, \
+		/datum/mil_rank/soviet/o4_gnf, \
+		/datum/mil_rank/soviet/o5, \
+		/datum/mil_rank/soviet/o5_gnf, \
+		/datum/mil_rank/soviet/o6, \
+		/datum/mil_rank/soviet/o6_gnf, \
+		/datum/mil_rank/soviet/o7, \
+		/datum/mil_rank/soviet/o7_gnf, \
+		/datum/mil_rank/soviet/o8 \
+		/datum/mil_rank/soviet/o8_gnf \
+)
+//
 /datum/map/torch
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -61,7 +87,8 @@
 		/datum/mil_branch/private_security,
 		/datum/mil_branch/army,
 		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet
+		/datum/mil_branch/skrell_fleet,
+		/datum/mil_branch/soviet
 	)
 
 	spawn_branch_types = list(
@@ -71,12 +98,13 @@
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/private_security,
 		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet
+		/datum/mil_branch/skrell_fleet,
+		/datum/mil_branch/soviet
 	)
 
 	species_to_branch_blacklist = list(
 		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
+		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/soviet),
 		/datum/species/vox     = list(
 			/datum/mil_branch/expeditionary_corps,
 			/datum/mil_branch/fleet,
@@ -84,7 +112,8 @@
 			/datum/mil_branch/civilian,
 			/datum/mil_branch/private_security,
 			/datum/mil_branch/solgov,
-			/datum/mil_branch/skrell_fleet
+			/datum/mil_branch/skrell_fleet,
+			/datum/mil_branch/soviet
 		)
 	)
 
@@ -118,17 +147,12 @@
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
-		/datum/mil_rank/fleet/e1_exp,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/fleet/e9,
 		/datum/mil_rank/fleet/e9_alt1,
@@ -155,15 +179,11 @@
 
 	spawn_rank_types = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/fleet/e9,
 		/datum/mil_rank/fleet/e9_alt1,
@@ -258,13 +278,6 @@
 	sort_order = 1
 	pow_cat = 1
 
-/datum/mil_rank/fleet/e1_exp
-	name = "Recruit Explorer"
-	name_short = "RXPL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted)
-	sort_order = 1
-	pow_cat = 1
-
 /datum/mil_rank/fleet/e2
 	name = "Crewman Apprentice"
 	name_short = "CA"
@@ -272,24 +285,10 @@
 	sort_order = 2
 	pow_cat = 1
 
-/datum/mil_rank/fleet/e2_exp
-	name = "Junior Explorer"
-	name_short = "JXPL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e2, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 2
-	pow_cat = 1
-
 /datum/mil_rank/fleet/e3
 	name = "Crewman"
 	name_short = "CN"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 3
-	pow_cat = 1
-
-/datum/mil_rank/fleet/e3_exp
-	name = "Explorer"
-	name_short = "XPL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 3
 	pow_cat = 1
 
@@ -307,13 +306,6 @@
 	sort_order = 5
 	pow_cat = 2
 
-/datum/mil_rank/fleet/e5_exp
-	name = "Senior Explorer"
-	name_short = "SXPL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
-	sort_order = 5
-	pow_cat = 2
-
 /datum/mil_rank/fleet/e6
 	name = "Petty Officer First Class"
 	name_short = "PO1"
@@ -325,13 +317,6 @@
 	name = "Chief Petty Officer"
 	name_short = "CPO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e7, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 7
-	pow_cat = 2
-
-/datum/mil_rank/fleet/e7_exp
-	name = "Chief Explorer"
-	name_short = "CXPL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 7
 	pow_cat = 2
 
@@ -723,7 +708,233 @@
 	name_short = "SAARE"
 	pow_cat = 3
 /*****/
+//Currently not in use, will be used later once we get actual ship that can use these
 
+//The Gilgamesh Independent Armed Forces
+
+/datum/mil_branch/soviet
+	name = "Gilgamesh Independant Armed Forces"
+	name_short = "GIAF"
+	email_domain = "dagon.ucg"
+
+//Without designation (Gilgamesh Army/Marine corps), with designation (Gilgamesh National FLeet)
+
+	rank_types = list(
+		/datum/mil_rank/soviet/e1,
+		/datum/mil_rank/soviet/e1_gnf,
+		/datum/mil_rank/soviet/e2,
+		/datum/mil_rank/soviet/e2_gnf,
+		/datum/mil_rank/soviet/e3,
+		/datum/mil_rank/soviet/e3_gnf,
+		/datum/mil_rank/soviet/e4,
+		/datum/mil_rank/soviet/e4_gnf,
+		/datum/mil_rank/soviet/e5,
+		/datum/mil_rank/soviet/w1,
+		/datum/mil_rank/soviet/o1,
+		/datum/mil_rank/soviet/o1_gnf,
+		/datum/mil_rank/soviet/o2,
+		/datum/mil_rank/soviet/o2_gnf,
+		/datum/mil_rank/soviet/o3,
+		/datum/mil_rank/soviet/o3_gnf,
+		/datum/mil_rank/soviet/o4,
+		/datum/mil_rank/soviet/o4_gnf,
+		/datum/mil_rank/soviet/o5,
+		/datum/mil_rank/soviet/o5_gnf,
+		/datum/mil_rank/soviet/o6,
+		/datum/mil_rank/soviet/o6_gnf,
+		/datum/mil_rank/soviet/o7,
+		/datum/mil_rank/soviet/o7_gnf,
+		/datum/mil_rank/soviet/o8,
+		/datum/mil_rank/soviet/o8_gnf
+	)
+	spawn_rank_types = list(
+		/datum/mil_rank/soviet/e1,
+		/datum/mil_rank/soviet/e1_gnf,
+		/datum/mil_rank/soviet/e2,
+		/datum/mil_rank/soviet/e2_gnf,
+		/datum/mil_rank/soviet/e3,
+		/datum/mil_rank/soviet/e3_gnf,
+		/datum/mil_rank/soviet/e4,
+		/datum/mil_rank/soviet/e4_gnf,
+		/datum/mil_rank/soviet/e5,
+		/datum/mil_rank/soviet/w1,
+		/datum/mil_rank/soviet/o1,
+		/datum/mil_rank/soviet/o1_gnf,
+		/datum/mil_rank/soviet/o2,
+		/datum/mil_rank/soviet/o2_gnf,
+		/datum/mil_rank/soviet/o3,
+		/datum/mil_rank/soviet/o3_gnf,
+		/datum/mil_rank/soviet/o4,
+		/datum/mil_rank/soviet/o4_gnf,
+		/datum/mil_rank/soviet/o5,
+		/datum/mil_rank/soviet/o5_gnf,
+		/datum/mil_rank/soviet/o6,
+		/datum/mil_rank/soviet/o6_gnf,
+		/datum/mil_rank/soviet/o7,
+		/datum/mil_rank/soviet/o7_gnf,
+		/datum/mil_rank/soviet/o8,
+		/datum/mil_rank/soviet/o8_gnf
+	)
+//Gilgamesh National Army (GNA)
+
+/datum/mil_rank/soviet/e1
+	name = "Private"
+	name_short = "PVT"
+	sort_order = 1
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e2
+	name = "Junior Sergeant"
+	name_short = "JSG"
+	sort_order = 2
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e3
+	name = "Sergeant"
+	name_short = "SGT"
+	sort_order = 3
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e4
+	name = "Senior Sergeant"
+	name_short = "SSG"
+	sort_order = 4
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e5
+	name = "Sergeant Major"
+	name_short = "SGM"
+	sort_order = 5
+	pow_cat = 3
+
+/datum/mil_rank/soviet/w1
+	name = "Warrant Officer"
+	name_short = "WRO"
+	sort_order = 6
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o1
+	name = "Lieutenant"
+	name_short = "LFT"
+	sort_order = 7
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o2
+	name = "Captain"
+	name_short = "CPT"
+	sort_order = 8
+	pow_cat = 3	
+
+/datum/mil_rank/soviet/o3
+	name = "Major"
+	name_short = "MAJ"
+	sort_order = 9
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o4
+	name = "Colonel"
+	name_short = "COL"
+	sort_order = 10
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o5
+	name = "Major General"
+	name_short = "MJG"
+	sort_order = 11
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o6
+	name = "Colonel General"
+	name_short = "COG"
+	sort_order = 12
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o7
+	name = "General"
+	name_short = "GEN"
+	sort_order = 13
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o8
+	name = "Marshal"
+	name_short = "MAR"
+	sort_order = 14
+	pow_cat = 3
+
+//Gilgamesh National Fleet (GNF)
+/datum/mil_rank/soviet/e1_gnf
+	name = "Seaman"
+	name_short = "SEA"
+	sort_order = 1
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e2_gnf
+	name = "Leading Seaman"
+	name_short = "LSE"
+	sort_order = 2
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e3_gnf
+	name = "Junior Sergeant"
+	name_short = "JSG"
+	sort_order = 3
+	pow_cat = 3
+
+/datum/mil_rank/soviet/e4_gnf
+	name = "Sergeant"
+	name_short = "SGT"
+	sort_order = 4
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o1_gnf
+	name = "Junior Officer"
+	name_short = "JNO"
+	sort_order = 7
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o2_gnf
+	name = "Lieutenant"
+	name_short = "LFT"
+	sort_order = 8
+	pow_cat = 3	
+
+/datum/mil_rank/soviet/o3_gnf
+	name = "Captain Lieutenant"
+	name_short = "CLF"
+	sort_order = 9
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o4_gnf
+	name = "Captain 2nd Class"
+	name_short = "CAP2nd"
+	sort_order = 10
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o5_gnf
+	name = "Captain 1st Class"
+	name_short = "CAP1st"
+	sort_order = 11
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o6_gnf
+	name = "Vice Admiral"
+	name_short = "VAM"
+	sort_order = 12
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o7_gnf
+	name = "Admiral"
+	name_short = "ADM"
+	sort_order = 13
+	pow_cat = 3
+
+/datum/mil_rank/soviet/o8_gnf
+	name = "High Admiral"
+	name_short = "HAM"
+	sort_order = 14
+	pow_cat = 3	
+//
+//
 // Ends of defines
 #undef UNRESTRICTED
 #undef SEMIRESTRICTED

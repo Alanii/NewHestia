@@ -172,8 +172,8 @@
 		)
 	)
 
-/decl/item_modifier/space_suit/mercenary
-	name = "Mercenary"
+/decl/item_modifier/space_suit/terrorist
+	name = "Terrorist"
 	type_setups = list(
 		/obj/item/clothing/head/helmet/space = list(
 			SETUP_NAME = "blood-red voidsuit helmet",
@@ -190,7 +190,7 @@
 		)
 	)
 
-/decl/item_modifier/space_suit/mercenary/emag
+/decl/item_modifier/space_suit/terrorist/emag
 	name = "^%###^%$"
 
 /decl/item_modifier/space_suit/pilot

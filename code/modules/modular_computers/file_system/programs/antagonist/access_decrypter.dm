@@ -47,7 +47,7 @@
 			var/list/valid_access_values = get_all_station_access()
 			valid_access_values -= restricted_access_codes
 			valid_access_values -= RFID.stored_card.access
-			if(operator_skill < SKILL_PROF) // Don't want to randomly assign an access that we wouldn't be able to decrypt normally
+			if(operator_skill < SKILL_SPEC) // Don't want to randomly assign an access that we wouldn't be able to decrypt normally
 				valid_access_values -= skill_restricted_access_codes_master
 			target_access = get_access_by_id(pick(valid_access_values))
 		RFID.stored_card.access |= target_access.id
@@ -83,7 +83,7 @@
 			return 1
 		if(access in restricted_access_codes)
 			return 1
-		if((access in skill_restricted_access_codes_master) && operator_skill < SKILL_PROF)
+		if((access in skill_restricted_access_codes_master) && operator_skill < SKILL_SPEC)
 			return 1
 		target_access = get_access_by_id(access)
 		if(!target_access)
@@ -142,7 +142,7 @@
 						"desc" = replacetext(get_access_desc(access), " ", "&nbsp"),
 						"ref" = access,
 						"allowed" = (access in id_card.access) ? 1 : 0,
-						"blocked" = ((access in PRG.restricted_access_codes) || ((access in PRG.skill_restricted_access_codes_master) && PRG.operator_skill < SKILL_PROF)) ? 1 : 0)))
+						"blocked" = ((access in PRG.restricted_access_codes) || ((access in PRG.skill_restricted_access_codes_master) && PRG.operator_skill < SKILL_SPEC)) ? 1 : 0)))
 
 			regions.Add(list(list(
 				"name" = get_region_accesses_name(i),

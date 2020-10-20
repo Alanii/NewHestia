@@ -122,9 +122,10 @@
 /* short-casing projectiles, like the kind used in pistols or SMGs */
 
 /obj/item/projectile/bullet/pistol
-	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_gunshot_pistol.ogg'
 	damage = 45
 	distance_falloff = 3
+	
 
 /obj/item/projectile/bullet/pistol/holdout
 	damage = 40
@@ -132,14 +133,16 @@
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 4
 
+//10mm Revolver
 /obj/item/projectile/bullet/pistol/xo
-	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	fire_sound = 'sound/weapons/gunshot/revolver_2.ogg'
 	damage = 45
 	armor_penetration = 10
 	distance_falloff = 3
 
+//Ultimate Argument
 /obj/item/projectile/bullet/pistol/strong
-	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	fire_sound = 'sound/weapons/gunshot/revolver_1.ogg'
 	damage = 50
 	shrapnel_chance_multiplier = 0.8
 	arterial_bleed_chance_multiplier = 0.8
@@ -162,10 +165,9 @@
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette
-	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_gunshot_4mm.ogg'
 	damage = 23
-	penetrating = 1
-	armor_penetration = 70
+	armor_penetration = 30
 	embed = 0
 	distance_falloff = 2
 
@@ -173,7 +175,7 @@
 
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
-	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_shotgun.ogg'
 	damage = 60
 	armor_penetration = 10
 	distance_falloff = 1.5
@@ -190,7 +192,7 @@
 //High number of pellets with low velocity lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
-	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_shotgun.ogg'
 	damage = 30
 	armor_penetration = 10
 	pellets = 8
@@ -200,32 +202,34 @@
 
 /* "Rifle" rounds */
 
+//Mercenary Assault Rifle
 /obj/item/projectile/bullet/rifle
-	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_gunshot_AR.ogg'
 	damage = 45
 	armor_penetration = 25
 	shrapnel_chance_multiplier = 1.5
 	arterial_bleed_chance_multiplier = 1.5
-	penetrating = 1
 
+//Most onship assault rifles (Z8 Bulldog)
 /obj/item/projectile/bullet/rifle/military
-	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_gunshot_carbine.ogg'
 	damage = 35
 	armor_penetration = 35
 	shrapnel_chance_multiplier = 1
 	arterial_bleed_chance_multiplier = 1
 
+//Hornet
 /obj/item/projectile/bullet/rifle/military/large
 	fire_sound = 'sound/weapons/gunshot/hornet.ogg'
 	damage = 45
 	armor_penetration = 30
-	penetrating = 0
 	distance_falloff = 0.50
 	shrapnel_chance_multiplier = 1
 	arterial_bleed_chance_multiplier = 1
 
+//Anti Material Rifle
 /obj/item/projectile/bullet/rifle/shell
-	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+	fire_sound = 'sound/weapons/gunshot/new_sniper.ogg'
 	damage = 80
 	stun = 3
 	weaken = 3
@@ -235,12 +239,14 @@
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 0.5
 
+// Not used for anything//
 /obj/item/projectile/bullet/rifle/shell/apds
 	damage = 70
 	penetrating = 5
 	armor_penetration = 80
 	shrapnel_chance_multiplier = 1.5
 	arterial_bleed_chance_multiplier = 1.5
+//
 
 /* Miscellaneous */
 /obj/item/projectile/bullet/gyro

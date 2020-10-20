@@ -1486,7 +1486,8 @@
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/window/brigdoor/eastleft{
-	name = "Emergency Armory Desk"
+	name = "Emergency Armory Desk";
+	req_access = list()
 	},
 /obj/machinery/door/blast/regular/open{
 	dir = 4;
@@ -4843,11 +4844,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "air" = (
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -7171,7 +7167,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/device/radio,
 /obj/item/weapon/crowbar,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/firealarm{
 	dir = 8;
@@ -9894,13 +9890,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/structure/hygiene/sink{
-	dir = 4;
-	pixel_x = 11
-	},
 /obj/machinery/flasher{
 	id_tag = "Cell 5";
 	pixel_x = 24
+	},
+/obj/structure/hygiene/sink{
+	dir = 4;
+	pixel_x = 11;
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/nullglass,
 /area/security/brig/psionic)
@@ -9928,14 +9925,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/machinery/flasher{
+	id_tag = "Cell 6";
+	pixel_x = -24
+	},
 /obj/structure/hygiene/sink{
 	dir = 8;
 	pixel_x = -12;
 	pixel_y = 2
-	},
-/obj/machinery/flasher{
-	id_tag = "Cell 6";
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/nullglass,
 /area/security/brig/psionic)
@@ -18729,12 +18726,12 @@
 "deo" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
@@ -20415,8 +20412,8 @@
 /area/medical/infirmreception)
 "fWc" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/structure/cable/green,
@@ -28645,10 +28642,12 @@
 /area/security/bo)
 "rjb" = (
 /obj/machinery/door/window/brigdoor/northright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = list()
 	},
 /obj/machinery/door/window/brigdoor/southright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = list()
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;

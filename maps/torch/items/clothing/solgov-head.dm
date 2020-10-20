@@ -26,14 +26,19 @@
 		)
 
 /obj/item/clothing/head/soft/solgov/expedition/co
-	name = "\improper Surveyor Corps captain's cap"
+	name = "\improper NTEF captain's cap"
 	desc = "It's a black ballcap bearing the Surveyor Corps crest. The brim has gold trim."
 	icon_state = "expeditioncomsoft"
 
 /obj/item/clothing/head/soft/solgov/fleet
 	name = "fleet cap"
-	desc = "It's a navy blue field cap with NT's Private Fleet crest in a silver colour."
+	desc = "It's a navy blue field cap with NT's Expedionary Fleet crest in a silver colour."
 	icon_state = "fleetsoft"
+
+/obj/item/clothing/head/soft/solgov/fleet/ntef
+	name = "NTEF cap"
+	desc = "It's a dark grey field cap with NT's Expedionary Fleet crest in a silver colour."
+	icon_state = "ntef_soft"
 
 /obj/item/clothing/head/solgov/utility
 	name = "utility cover"
@@ -47,8 +52,13 @@
 
 /obj/item/clothing/head/solgov/utility/fleet
 	name = "fleet utility cover"
-	desc = "A navy blue utility cover bearing the crest of NT's Private Fleet."
+	desc = "A navy blue utility cover bearing the crest of NT's Expeditonary Fleet."
 	icon_state = "navyutility"
+
+/obj/item/clothing/head/solgov/utility/fleet/ntef
+	name = "fleet utility cover"
+	desc = "A dark grey utility cover bearing the crest of NT's Expeditonary Fleet."
+	icon_state = "ntef_utility"
 
 /obj/item/clothing/head/solgov/utility/fleet/marine
 	name = "navy utility cover"

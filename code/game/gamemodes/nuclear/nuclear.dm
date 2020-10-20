@@ -1,23 +1,23 @@
 /*
-	MERCENARY ROUNDTYPE
+	TERRORIST ROUNDTYPE
 */
 
 var/list/nuke_disks = list()
 
 /datum/game_mode/nuclear
-	name = "Mercenary"
-	round_description = "A mercenary strike force is approaching!"
+	name = "Terrorist"
+	round_description = "A terrorist strike force is approaching!"
 	extended_round_description = "The Company's majority control of phoron in Nyx has marked the \
 		station to be a highly valuable target for many competing organizations and individuals. Being a \
 		colony of sizable population and considerable wealth causes it to often be the target of various \
 		attempts of robbery, fraud and other malicious actions."
-	config_tag = "mercenary"
+	config_tag = "terrorist"
 	required_players = 12
-	required_enemies = 6
+	required_enemies = 2 //Originally 6, changed for lowpop (also the max number of mercs is 5, who thought 6 minimum would work...?)
 	end_on_antag_death = FALSE
 	var/nuke_off_station = 0 //Used for tracking if the syndies actually haul the nuke to the station
 	var/syndies_didnt_escape = 0 //Used for tracking if the syndies got the shuttle off of the z-level
-	antag_tags = list(MODE_MERCENARY)
+	antag_tags = list(MODE_TERRORIST)
 	cinematic_icon_states = list(
 		"intro_nuke" = 35,
 		"summary_nukewin",
@@ -32,7 +32,7 @@ var/list/nuke_disks = list()
 	return FALSE
 
 /datum/game_mode/nuclear/declare_completion()
-	var/datum/antagonist/merc = GLOB.all_antag_types_[MODE_MERCENARY]
+	var/datum/antagonist/merc = GLOB.all_antag_types_[MODE_TERRORIST]
 	if(config.objectives_disabled == CONFIG_OBJECTIVE_NONE || (merc && !merc.global_objectives.len))
 		..()
 		return

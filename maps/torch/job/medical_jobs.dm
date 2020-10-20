@@ -32,9 +32,9 @@
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 	skill_points = 20
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
@@ -72,11 +72,14 @@
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
-	                    SKILL_MEDICAL = SKILL_BASIC,
+	                    SKILL_MEDICAL = SKILL_ADEPT,
+						SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_eva, access_surgery, access_medical_equip, access_solgov_crew, access_hangar)
@@ -111,17 +114,17 @@
 		/datum/mil_rank/fleet/e2
 	)
 
-	skill_points = 4
+	skill_points = 20
 	no_skill_buffs = TRUE
 
-	min_skill = list(   SKILL_EVA     = SKILL_ADEPT,
-	                    SKILL_HAULING = SKILL_ADEPT,
-	                    SKILL_MEDICAL = SKILL_EXPERT,
+	min_skill = list(	SKILL_EVA     = SKILL_BASIC,
+						SKILL_HAULING = SKILL_BASIC,
+	                    SKILL_MEDICAL = SKILL_BASIC,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_surgery, access_medical_equip, access_solgov_crew)
@@ -151,7 +154,7 @@
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_ADEPT,
 						SKILL_ANATOMY	  = SKILL_ADEPT,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	                    SKILL_CHEMISTRY   = SKILL_SPEC)
 	skill_points = 16
 
 	access = list(access_medical, access_maint_tunnels, access_emergency_storage, access_medical_equip, access_solgov_crew, access_chemistry,
@@ -184,7 +187,7 @@
 		SKILL_MEDICAL     = SKILL_BASIC
 	)
 	max_skill = list(
-		SKILL_MEDICAL     = SKILL_MAX
+		SKILL_MEDICAL     = SKILL_EXPERT
 	)
 	access = list(access_medical, access_psychiatrist, access_maint_tunnels, access_solgov_crew, access_medical_equip, access_virology)
 	minimal_access = list()

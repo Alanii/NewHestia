@@ -564,7 +564,7 @@
 	pixel_y = 32
 	},
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cockpit)
 "bg" = (
@@ -645,7 +645,7 @@
 	pixel_y = 32
 	},
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/crew)
 "bp" = (
@@ -4134,6 +4134,7 @@
 "hi" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "hj" = (
@@ -4310,7 +4311,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/random/obstruction,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fifthdeck/aftstarboard)
 "hE" = (
@@ -5872,9 +5873,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/box/greenglowsticks,
 /obj/item/weapon/storage/box/greenglowsticks,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/item/device/radio/intercom{
 	pixel_y = 23
@@ -6161,7 +6162,7 @@
 	dir = 4
 	},
 /obj/item/weapon/rig/exploration/equipped,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/monotile,
@@ -9175,7 +9176,7 @@
 	dir = 8;
 	icon_state = "closed";
 	id_tag = "PetrovAccess";
-	name = "Petrov Access"
+	name = "Polyp Access"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
@@ -10600,6 +10601,7 @@
 "sk" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "sl" = (
@@ -13158,7 +13160,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
 "zS" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fifthdeck/aft)
 "zW" = (
@@ -14789,6 +14791,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/eva)
+"GD" = (
+/obj/effect/paint/hull,
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/titanium,
+/area/guppy_hangar/start)
 "GE" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/firealarm{
@@ -15337,7 +15344,9 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/obj/structure/closet/secure_closet/medical_wall,
+/obj/structure/closet/secure_closet/medical_wall{
+	req_access = list("ACCESS_INFANTRY")
+	},
 /turf/simulated/wall/r_wall/hull,
 /area/infantry)
 "IA" = (
@@ -16189,6 +16198,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/petrov/security)
+"LJ" = (
+/obj/random/obstruction,
+/turf/simulated/floor/plating,
+/area/vacant/bar)
 "LL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -16449,6 +16462,10 @@
 /obj/item/weapon/stool/bar,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
+"MI" = (
+/obj/random/obstruction,
+/turf/simulated/floor/wood/walnut,
+/area/vacant/bar)
 "MN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -16623,7 +16640,7 @@
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Nx" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/fifthdeck/aftport)
 "Ny" = (
@@ -16698,9 +16715,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "NL" = (
-/obj/random/obstruction,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/bar)
+/area/maintenance/fifthdeck/aftstarboard)
 "NP" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -17328,7 +17346,7 @@
 /area/infantry)
 "QJ" = (
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "QK" = (
@@ -17527,6 +17545,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell2)
+"RM" = (
+/obj/structure/sign/solgov,
+/turf/simulated/wall/r_wall/hull,
+/area/infantry)
 "RN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/artifact_scanpad,
@@ -18410,7 +18432,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/security)
 "Vr" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/fifthdeck/aftstarboard)
 "Vv" = (
@@ -19154,14 +19176,15 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
 "YH" = (
-/obj/random/obstruction,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/bar)
+/area/maintenance/fifthdeck/aftstarboard)
 "YJ" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/phoron)
@@ -31538,7 +31561,7 @@ aa
 aa
 aa
 ZG
-zA
+RM
 SG
 zX
 vv
@@ -38820,7 +38843,7 @@ bG
 Cm
 cj
 cj
-cj
+GD
 cj
 cj
 sK
@@ -41231,7 +41254,7 @@ aa
 Xi
 QL
 yI
-Ne
+MI
 Lj
 zL
 fz
@@ -41636,7 +41659,7 @@ Xi
 QL
 TC
 HE
-yI
+LJ
 XI
 XI
 aD

@@ -12,7 +12,7 @@
 
 	var/area/a = get_area(src)
 	if(a && !a.has_gravity())
-		if(skill_check(SKILL_EVA, SKILL_PROF))
+		if(skill_check(SKILL_EVA, SKILL_SPEC))
 			tally -= 2
 		tally -= 1
 
@@ -51,6 +51,18 @@
 						item_slowdown = item_slowdown - size_mod
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += total_item_slowdown
+
+		var/mob/living/carbon/human/C = src
+
+		if(C.skill_check(SKILL_HAULING, SKILL_BASIC))
+			tally -= 0.5
+		else if(C.skill_check(SKILL_HAULING, SKILL_ADEPT))
+			tally -= 1
+		else if(C.skill_check(SKILL_HAULING, SKILL_EXPERT))
+			tally -= 1.5
+		else if(C.skill_check(SKILL_HAULING, SKILL_SPEC))
+			tally -= 2
+		tally = max(tally, 0)
 
 		for(var/organ_name in list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT))
 			var/obj/item/organ/external/E = get_organ(organ_name)
@@ -137,7 +149,7 @@
 	if(.) //We moved
 		handle_exertion()
 		handle_leg_damage()
-	
+
 		if(client)
 			var/turf/B = GetAbove(src)
 			up_hint.icon_state = "uphint[(B ? B.is_open() : 0)]"

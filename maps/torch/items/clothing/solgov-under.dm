@@ -139,6 +139,9 @@
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/utility/fleet/command
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)

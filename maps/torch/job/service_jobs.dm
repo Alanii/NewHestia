@@ -80,6 +80,8 @@
 	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
+	max_skill = list(	SKILL_COOKING   = SKILL_SPEC,
+						SKILL_BOTANY    = SKILL_SPEC)
 	access = list(access_maint_tunnels, access_hydroponics, access_kitchen, access_solgov_crew, access_bar, access_commissary)
 	minimal_access = list()
 
@@ -104,6 +106,8 @@
 	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
+	max_skill = list(	SKILL_COOKING   = SKILL_SPEC,
+						SKILL_BOTANY    = SKILL_SPEC)
 
 /datum/job/crew
 	title = "Crewman"
@@ -126,3 +130,25 @@
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
+
+/datum/job/radiohost
+	title = "Radio Host"
+	department = "Service"
+	department_flag = SRV
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	total_positions = 1
+	spawn_positions = 1
+	economic_power = 30
+	minimal_player_age = 0
+	skill_points = 12
+
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+		)
+
+	allowed_ranks = list(
+		/datum/mil_rank/civ/contractor
+	)
+	
+	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew, access_radio_host)
+	minimal_access = list() 

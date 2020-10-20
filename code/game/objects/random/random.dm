@@ -704,7 +704,7 @@ obj/random/obstruction/spawn_choices()
 
 /obj/random/masks/spawn_choices()
 	return list(/obj/item/clothing/mask/gas = 4,
-				/obj/item/clothing/mask/gas/half = 5,
+				/obj/item/clothing/mask/breath/half = 5,
 				/obj/item/clothing/mask/gas/swat = 1,
 				/obj/item/clothing/mask/gas/syndicate = 1,
 				/obj/item/clothing/mask/breath = 6,
@@ -1489,8 +1489,8 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 	icon_state = "coffee_dispenser"
 
 /obj/random/illegal/spawn_choices()
-	return list(/obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn = 1,
-				/obj/item/weapon/gun/projectile/manualcycle/imprifle = 1,
+	return list(/obj/item/weapon/gun/projectile/heavysniper/imprifle/impriflesawn = 1,
+				/obj/item/weapon/gun/projectile/heavysniper/imprifle = 1,
 				/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin = 14,
 				/obj/item/weapon/reagent_containers/glass/beaker/sulphuric = 14,
 				/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp = 1,

@@ -44,7 +44,7 @@
 	name = "Nonstandard suit cycler"
 	model_text = "Nonstandard"
 	req_access = list(access_syndicate)
-	available_modifications = list(/decl/item_modifier/space_suit/mercenary)
+	available_modifications = list(/decl/item_modifier/space_suit/terrorist)
 	can_repair = 1
 
 /obj/machinery/suit_cycler/pilot

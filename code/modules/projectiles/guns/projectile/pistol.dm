@@ -7,6 +7,7 @@
 	accuracy_power = 7
 	var/empty_icon = TRUE  //If it should change icon when empty
 	var/ammo_indicator = FALSE
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/projectile/pistol/on_update_icon()
 	..()
@@ -27,7 +28,7 @@
 /obj/item/weapon/gun/projectile/pistol/military
 	name = "military pistol"
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
-	magazine_type = /obj/item/ammo_magazine/pistol/double
+	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'icons/obj/guns/military_pistol.dmi'
 	icon_state = "military"
@@ -69,7 +70,6 @@
 	force = 9
 	caliber = CALIBER_PISTOL_MAGNUM
 	fire_delay = 12
-	screen_shake = 2
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'

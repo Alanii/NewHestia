@@ -4,8 +4,8 @@
 	icon = 'icons/obj/guns/laser_carbine.dmi'
 	icon_state = "laser"
 	item_state = "laser"
-	slot_flags = SLOT_BELT|SLOT_BACK
-	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
 	force = 10
 	one_hand_penalty = 2
 	bulk = GUN_BULK_RIFLE
@@ -13,6 +13,7 @@
 	matter = list(MATERIAL_STEEL = 2000)
 	projectile_type = /obj/item/projectile/beam/midlaser
 	wielded_item_state = "laser-wielded"
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/laser/mounted
 	self_recharge = 1
@@ -59,6 +60,7 @@ obj/item/weapon/gun/energy/retro
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 15 //old technology, and a pistol
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/captain
 	name = "antique laser gun"
@@ -74,6 +76,7 @@ obj/item/weapon/gun/energy/retro
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/lasercannon
 	name = "laser cannon"
@@ -91,6 +94,7 @@ obj/item/weapon/gun/energy/retro
 	accuracy = 2
 	fire_delay = 20
 	wielded_item_state = "gun_wielded"
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/lasercannon/mounted
 	name = "mounted laser cannon"
@@ -116,6 +120,7 @@ obj/item/weapon/gun/energy/retro
 	max_shots = 10
 	wielded_item_state = "gun_wielded"
 	combustion = 0
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/xray/pistol
 	name = "x-ray laser gun"
@@ -128,6 +133,7 @@ obj/item/weapon/gun/energy/retro
 	one_hand_penalty = 1
 	w_class = ITEM_SIZE_NORMAL
 	fire_delay = 10
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/sniperrifle
 	name = "marksman energy rifle"
@@ -148,6 +154,7 @@ obj/item/weapon/gun/energy/retro
 	scoped_accuracy = 9
 	scope_zoom = 2
 	wielded_item_state = "gun_wielded"
+	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/sniperrifle/on_update_icon()
 	..()

@@ -3048,12 +3048,12 @@
 /area/map_template/rescue_base/start)
 "fL" = (
 /obj/structure/table/rack,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
+/obj/item/clothing/mask/breath/half,
 /turf/simulated/floor/tiled/dark,
 /area/map_template/rescue_base/start)
 "fM" = (

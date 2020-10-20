@@ -15,6 +15,18 @@
 	icon_state = "bald"
 	flags = VERY_SHORT | HAIR_BALD
 
+/datum/sprite_accessory/hair/adhara
+	name = "Adhara"
+	icon_state = "hair_adhara"
+
+/datum/sprite_accessory/hair/angelique
+	name = "Angelique"
+	icon_state = "hair_angelique"
+
+/datum/sprite_accessory/hair/asymmbob
+	name = "Asymmetrical Bob"
+	icon_state = "hair_asymmbob"
+
 /datum/sprite_accessory/hair/short
 	name = "Short Hair"	  // try to capatilize the names please~
 	icon_state = "hair_a" // you do not need to define _s or _l sub-states, game automatically does this for you
@@ -417,6 +429,10 @@
 	icon_state = "hair_longeralt2"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/longeralt3
+	name = "Long 3"
+	icon_state = "hair_longeralt3"
+
 /datum/sprite_accessory/hair/shortbangs
 	name = "Short Bangs"
 	icon_state = "hair_shortbangs"
@@ -683,3 +699,150 @@
 	name = "Zieglertail"
 	icon_state = "hair_ziegler"
 	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/beachwave
+	name = "Beachwave"
+	icon_state = "hair_beachwave"
+
+/datum/sprite_accessory/hair/belle
+	name = "Belle"
+	icon_state = "hair_belle"
+
+/datum/sprite_accessory/hair/blackswordsman
+	name = "Blackswords Man"
+	icon_state = "hair_blackswordsman"
+
+/datum/sprite_accessory/hair/boyish1
+	name = "Boyish 1"
+	icon_state = "hair_boyish1"
+
+/datum/sprite_accessory/hair/boyish2
+	name = "Boyish 2"
+	icon_state = "hair_boyish2"
+
+/datum/sprite_accessory/hair/boyish3
+	name = "Boyish 3"
+	icon_state = "hair_boyish3"
+
+/datum/sprite_accessory/hair/boyish4
+	name = "Boyish 4"
+	icon_state = "hair_boyish4"
+
+/datum/sprite_accessory/hair/boyish5
+	name = "Boyish 5"
+	icon_state = "hair_boyish5"
+
+/datum/sprite_accessory/hair/boyish6
+	name = "Boyish 6"
+	icon_state = "hair_boyish6"
+
+/datum/sprite_accessory/hair/business
+	name = "Business"
+	icon_state = "hair_business"
+
+/datum/sprite_accessory/hair/business2
+	name = "Business 2"
+	icon_state = "hair_business2"
+
+/datum/sprite_accessory/hair/business3
+	name = "Business 3"
+	icon_state = "hair_business3"
+
+/datum/sprite_accessory/hair/business4
+	name = "Business 4"
+	icon_state = "hair_business4"
+
+/datum/sprite_accessory/hair/celebcurls
+	name = "Celebrity Curls"
+	icon_state = "hair_celebcurls"
+
+/datum/sprite_accessory/hair/chop
+	name = "Chop"
+	icon_state = "hair_chop"
+
+/datum/sprite_accessory/hair/elize
+	name = "Elize"
+	icon_state = "hair_elize"
+
+/datum/sprite_accessory/hair/cut2
+	name = "Cut 2"
+	icon_state = "hair_femc"
+
+/datum/sprite_accessory/hair/emofringe
+	name = "Emo Fringe"
+	icon_state = "hair_emofringe"
+
+/datum/sprite_accessory/hair/flipped
+	name = "Flipped"
+	icon_state = "hair_flipped"
+
+/datum/sprite_accessory/hair/hamasaki
+	name = "Hamasaki"
+	icon_state = "hair_hamasaki"
+
+/datum/sprite_accessory/hair/combed
+	name = "Combed"
+	icon_state = "hair_hbangs"
+
+/datum/sprite_accessory/hair/combedalt
+	name = "Combed 2"
+	icon_state = "hair_hbangs_alt"
+
+/datum/sprite_accessory/hair/highpony
+	name = "High Ponytail"
+	icon_state = "hair_highponytail"
+
+/datum/sprite_accessory/hair/jessica
+	name = "Jessica"
+	icon_state = "hair_jessica"
+
+/datum/sprite_accessory/hair/ladylike
+	name = "Ladylike"
+	icon_state = "hair_ladylike"
+
+/datum/sprite_accessory/hair/ladylike2
+	name = "Ladylike 2"
+	icon_state = "hair_ladylike2"
+
+/datum/sprite_accessory/hair/miles
+	name = "Miles"
+	icon_state = "hair_miles"
+
+/datum/sprite_accessory/hair/newyou
+	name = "New You"
+	icon_state = "hair_newyou"
+
+/datum/sprite_accessory/hair/oxton
+	name = "Oxton"
+	icon_state = "hair_oxton"
+
+/datum/sprite_accessory/hair/protagonist
+	name = "Protagonist"
+	icon_state = "hair_protagonist"
+
+/datum/sprite_accessory/hiar/oneshoulder
+	name = "One Shoulder"
+	icon_state = "hair_oneshoulder"
+
+/datum/sprite_accessory/hair/tressshoulder
+	name = "Tress Shoulder"
+	icon_state = "hair_tressshoulder"
+
+/datum/sprite_accessory/hair/spikypony
+	name = "Spiky Ponytail"
+	icon_state = "hair_spikyponytail"
+
+/datum/sprite_accessory/hair/wisp
+	name = "Wisp"
+	icon_state = "hair_wisp"
+
+/datum/sprite_accessory/hair/zone 
+	name = "Zone"
+	icon_state = "hair_zone"
+
+/datum/sprite_accessory/hair/kajam
+	name = "Kajam"
+	icon_state = "hair_kajam"
+/datum/sprite_accessory/hair/shortwavy
+	name = "Short Wavy"
+	icon_state = "hair_shortwavy"

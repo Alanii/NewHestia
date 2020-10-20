@@ -62,6 +62,12 @@
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "solgovseal"
 
+/obj/structure/sign/ntcrest
+	name = "\improper NT Logo"
+	desc = "Crest that signifies the vessel is under the propert of NanoTrasen."
+	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
+	icon_state = "ntcrest"
+
 /obj/structure/sign/double/solgovflag
 	name = "Sol Central Government Flag"
 	desc = "The flag of the Sol Central Government, a symbol of many things to many people."

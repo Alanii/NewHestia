@@ -39,7 +39,7 @@ var/bomb_set
 /obj/machinery/nuclearbomb/Process(var/wait)
 	if(timing)
 		timeleft = max(timeleft - (wait / 10), 0)
-		playsound(loc, 'sound/items/timer.ogg', 50)
+		playsound(loc, 'sound/items/Alarm_new.ogg', 50)
 		if(timeleft <= 0)
 			addtimer(CALLBACK(src, .proc/explode), 0)
 		SSnano.update_uis(src)
