@@ -217,3 +217,10 @@
 	allowed = list(/obj/item/stack/medical, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/hypospray, /obj/item/weapon/reagent_containers/syringe, \
 	/obj/item/device/scanner/health, /obj/item/device/flashlight, /obj/item/device/radio, /obj/item/weapon/tank/emergency,/obj/item/weapon/scalpel,/obj/item/weapon/retractor,/obj/item/weapon/hemostat, \
 	/obj/item/weapon/cautery,/obj/item/weapon/bonegel,/obj/item/weapon/FixOVein)
+
+/obj/item/clothing/suit/storage/toggle/highvis
+	name = "\improper high-visibility jacket"
+	desc = "A loose-fitting, high visibility jacket to help crew be recognizable in high traffic areas with large industrial equipment. Don't catch the Gaunt's landing gear with your teeth!"
+	icon_state = "highvis_open"
+	icon_open = "highvis_open"
+	icon_closed = "highvis"
