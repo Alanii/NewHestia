@@ -6,7 +6,7 @@
 
 /area/ship/skrellscoutship/solars
 	name = "\improper Solar Area"
-	
+
 /area/ship/skrellscoutship/crew/quarters
 	name = "\improper Quarters"
 	icon_state = "crew_quarters"
@@ -24,7 +24,7 @@
 /area/ship/skrellscoutship/crew/rec
 	name = "\improper Recreational Area"
 	icon_state = "green"
-	
+
 /area/ship/skrellscoutship/crew/fit
 	name = "\improper Exercise Area"
 	icon_state = "green"
@@ -33,18 +33,22 @@
 	name = "\improper Bathroom"
 	icon_state = "toilet"
 
-/area/ship/skrellscoutship/crew/medbay
+/area/ship/skrellscoutship/crew/infirmary
 	name = "\improper Medical Bay"
 	icon_state = "medbay"
 
-/area/ship/skrellscoutship/crew/medbay/alt
+/area/ship/skrellscoutship/crew/brig
+	name = "\improper Brig"
+	icon_state = "brig"
+
+/area/ship/skrellscoutship/crew/cloning
 	name = "\improper Cloning Room"
 	icon_state = "medbay"
 
 /area/ship/skrellscoutship/dock
 	name = "\improper Docking Bay 1"
 	icon_state = "entry_1"
-	
+
 /area/ship/skrellscoutship/dock/alt
 	name = "\improper Docking Bay 2"
 	icon_state = "entry_1"
@@ -56,7 +60,7 @@
 /area/ship/skrellscoutship/robotics
 	name = "\improper Maintenance"
 	icon_state = "green"
-	
+
 /area/ship/skrellscoutship/maintenance/atmos
 	name = "\improper Atmospherics"
 	icon_state = "atmos"
@@ -70,11 +74,15 @@
 /area/ship/skrellscoutship/command/bridge
 	name = "\improper Helm"
 	icon_state = "bridge"
-	
+
 /area/ship/skrellscoutship/command/armory
 	name = "\improper Armory"
 	icon_state = "shuttlered"
-	
+
+/area/ship/skrellscoutship/command/office
+	name = "\improper Vuxix Office"
+	icon_state = "bridge"
+
 /area/ship/skrellscoutshuttle
 	name = "\improper Skrellian Shuttle"
 	icon_state = "bridge"

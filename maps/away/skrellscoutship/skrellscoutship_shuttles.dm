@@ -30,7 +30,7 @@
 /obj/effect/overmap/visitable/ship/landable/skrellscoutshuttle
 	name = "SSV-S"
 	shuttle = "Skrellian Shuttle"
-	fore_dir = WEST
+	fore_dir = NORTH
 	color = "#880088"
 	vessel_mass = 750
 	vessel_size = SHIP_SIZE_TINY
@@ -45,10 +45,11 @@
 	shuttle_area = list(
 		/area/ship/skrellscoutship/solars, /area/ship/skrellscoutship/crew/quarters, /area/ship/skrellscoutship/crew/hallway/d1,
 		/area/ship/skrellscoutship/crew/hallway/d2, /area/ship/skrellscoutship/crew/kitchen, /area/ship/skrellscoutship/crew/toilets,
-		/area/ship/skrellscoutship/crew/medbay, /area/ship/skrellscoutship/crew/medbay/alt, /area/ship/skrellscoutship/dock, /area/ship/skrellscoutship/dock/alt,
+		/area/ship/skrellscoutship/dock, /area/ship/skrellscoutship/dock/alt,
 		/area/ship/skrellscoutship/hangar, /area/ship/skrellscoutship/robotics, /area/ship/skrellscoutship/maintenance/atmos,
 		/area/ship/skrellscoutship/maintenance/power, /area/ship/skrellscoutship/command/bridge, /area/ship/skrellscoutship/crew/fit,
-		/area/ship/skrellscoutship/command/armory, /area/ship/skrellscoutship/crew/rec
+		/area/ship/skrellscoutship/command/office, /area/ship/skrellscoutship/command/armory, /area/ship/skrellscoutship/crew/rec,
+		/area/ship/skrellscoutship/crew/brig, /area/ship/skrellscoutship/crew/infirmary, /area/ship/skrellscoutship/crew/cloning
 		)
 	defer_initialisation = TRUE
 	knockdown = FALSE

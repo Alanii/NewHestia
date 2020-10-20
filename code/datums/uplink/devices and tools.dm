@@ -134,7 +134,7 @@
 	name = "Camera MIU"
 	desc = "Wearing this mask allows you to remotely view any cameras you currently have access to. Take the mask off to stop viewing."
 	item_cost = 55
-	antag_costs = list(MODE_MERCENARY = 30)
+	antag_costs = list(MODE_TERRORIST= 30)
 	path = /obj/item/clothing/mask/ai
 
 /datum/uplink_item/item/tools/interceptor

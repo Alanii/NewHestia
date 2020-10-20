@@ -1,0 +1,1 @@
+/datum/antagonist/terrorist/required_language = LANGUAGE_HUMAN_RUSSIAN

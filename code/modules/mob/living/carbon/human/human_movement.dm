@@ -52,13 +52,15 @@
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += total_item_slowdown
 
-		if(skill_check(SKILL_HAULING, SKILL_BASIC))
+		var/mob/living/carbon/human/C = src
+
+		if(C.skill_check(SKILL_HAULING, SKILL_BASIC))
 			tally -= 0.5
-		else if(skill_check(SKILL_HAULING, SKILL_ADEPT))
+		else if(C.skill_check(SKILL_HAULING, SKILL_ADEPT))
 			tally -= 1
-		else if(skill_check(SKILL_HAULING, SKILL_EXPERT))
+		else if(C.skill_check(SKILL_HAULING, SKILL_EXPERT))
 			tally -= 1.5
-		else if(skill_check(SKILL_HAULING, SKILL_SPEC))
+		else if(C.skill_check(SKILL_HAULING, SKILL_SPEC))
 			tally -= 2
 		tally = max(tally, 0)
 

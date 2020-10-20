@@ -189,3 +189,19 @@ var/last_chew = 0
 	breakouttime  = 300
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	elastic = 1
+
+//Fuzzy cuffs. Regular cuffs. Dont look at me that way
+/obj/item/weapon/handcuffs/fuzzy
+	name = "fuzzy cuffs"
+	desc = "Use this to keep prisoners in line or for your happy times."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "fuzzycuff"
+	health = 0
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	throwforce = 5
+	w_class = ITEM_SIZE_SMALL
+	throw_speed = 2
+	throw_range = 5
+	gender = PLURAL
+	

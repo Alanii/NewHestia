@@ -843,3 +843,6 @@
 /datum/sprite_accessory/hair/kajam
 	name = "Kajam"
 	icon_state = "hair_kajam"
+/datum/sprite_accessory/hair/shortwavy
+	name = "Short Wavy"
+	icon_state = "hair_shortwavy"

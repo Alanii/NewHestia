@@ -146,28 +146,28 @@
 	desc = "A triple burst, heavy laser rifle, with a large battery compacity."
 	item_cost = 68
 	path = /obj/item/weapon/gun/energy/pulse_rifle
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 
 /datum/uplink_item/item/visible_weapons/flechetterifle
 	name = "Flechette Rifle"
 	desc = "A railgun with two togglable fire modes, able to launch flechette ammunition at incredible speeds."
 	item_cost = 60
 	path = /obj/item/weapon/gun/magnetic/railgun/flechette
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 
 /datum/uplink_item/item/visible_weapons/railgun // Like a semi-auto AMR
 	name = "Railgun"
 	desc = "An anti-armour magnetic launching system fed by a high-capacity matter cartridge, \
 			capable of firing slugs at intense speeds."
 	item_cost = DEFAULT_TELECRYSTAL_AMOUNT - (DEFAULT_TELECRYSTAL_AMOUNT - (DEFAULT_TELECRYSTAL_AMOUNT % 6)) / 6
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 	path = /obj/item/weapon/gun/magnetic/railgun
 
 /datum/uplink_item/item/visible_weapons/railguntcc // Only slightly better than the normal railgun; but cooler looking
 	name = "Advanced Railgun"
 	desc = "A modified prototype of the original railgun implement, this time boring slugs out of steel rods loaded into the chamber, \
 			now with even MORE stopping power."
-	antag_roles = list(MODE_MERCENARY)
+	antag_roles = list(MODE_TERRORIST)
 	item_cost = DEFAULT_TELECRYSTAL_AMOUNT
 	path = /obj/item/weapon/gun/magnetic/railgun/tcc
 

@@ -2157,11 +2157,11 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/fore)
 "eA" = (
-/obj/structure/sign/solgov{
-	pixel_y = 32
-	},
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air/airlock,
+/obj/structure/sign/ntcrest{
+	pixel_y = 31
+	},
 /turf/simulated/floor/plating,
 /area/command/gunnery/ob)
 "eB" = (
@@ -6479,8 +6479,7 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1480;
 	id_tag = "ob_sensor";
-	pixel_x = 0;
-	pixel_y = -25
+	pixel_y = -20
 	},
 /turf/simulated/floor/tiled,
 /area/command/gunnery/ob/airlock)
@@ -19541,9 +19540,9 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
 "Qh" = (
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_x = 32;
-	pixel_y = 32
+	pixel_y = 33
 	},
 /turf/space,
 /area/space)
@@ -21174,13 +21173,13 @@
 /area/hallway/primary/thirddeck/aft)
 "Vo" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
-/obj/structure/sign/solgov,
 /obj/machinery/door/blast/regular/open{
 	dir = 4;
 	icon_state = "pdoor0";
 	id_tag = "bsa-window";
 	name = "Observation Blast Door"
 	},
+/obj/structure/sign/ntcrest,
 /turf/simulated/floor/plating,
 /area/command/disperser)
 "Vp" = (
