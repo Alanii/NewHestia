@@ -564,7 +564,7 @@
 	pixel_y = 32
 	},
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cockpit)
 "bg" = (
@@ -645,7 +645,7 @@
 	pixel_y = 32
 	},
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/crew)
 "bp" = (
@@ -13160,7 +13160,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
 "zS" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fifthdeck/aft)
 "zW" = (
@@ -14791,6 +14791,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/eva)
+"GD" = (
+/obj/effect/paint/hull,
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/titanium,
+/area/guppy_hangar/start)
 "GE" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/firealarm{
@@ -16635,7 +16640,7 @@
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Nx" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/fifthdeck/aftport)
 "Ny" = (
@@ -17341,7 +17346,7 @@
 /area/infantry)
 "QJ" = (
 /obj/effect/paint/hull,
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "QK" = (
@@ -17540,6 +17545,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell2)
+"RM" = (
+/obj/structure/sign/solgov,
+/turf/simulated/wall/r_wall/hull,
+/area/infantry)
 "RN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/artifact_scanpad,
@@ -18423,7 +18432,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/security)
 "Vr" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/fifthdeck/aftstarboard)
 "Vv" = (
@@ -31552,7 +31561,7 @@ aa
 aa
 aa
 ZG
-zA
+RM
 SG
 zX
 vv
@@ -38834,7 +38843,7 @@ bG
 Cm
 cj
 cj
-cj
+GD
 cj
 cj
 sK
