@@ -101,3 +101,7 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
 	allowed_roles = list(/datum/job/detective)
+
+/datum/gear/suit/labcoat_long
+	allowed_roles = DOCTOR_ROLES
+	allowed_branches = CASUAL_BRANCHES
