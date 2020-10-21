@@ -281,8 +281,7 @@
 /obj/machinery/door/firedoor/autoset,
 /obj/machinery/door/airlock/multi_tile/glass{
 	door_color = "#404040";
-	name = "Docking Bay 1";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	name = "Docking Bay 1"
 	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
@@ -1404,8 +1403,7 @@
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 8;
 	door_color = "#404040";
-	name = "Docking Bay 2";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	name = "Helm"
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/bridge)
@@ -2286,7 +2284,7 @@
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 8;
 	door_color = "#404040";
-	name = "Docking Bay 2"
+	name = "Shuttle Dock"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3311,7 +3309,6 @@
 /obj/machinery/door/airlock/command{
 	door_color = "#404040";
 	name = "Helm";
-	req_access = list("ACCESS_SKRELLSCOUT");
 	stripe_color = "#46698c"
 	},
 /obj/machinery/door/firedoor/autoset,
