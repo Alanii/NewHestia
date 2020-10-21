@@ -4551,7 +4551,8 @@
 "wd" = (
 /obj/machinery/door/window/brigdoor{
 	color = "PURPLE";
-	dir = 4
+	dir = 4;
+	req_access = list()
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
