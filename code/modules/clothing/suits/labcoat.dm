@@ -148,22 +148,22 @@
 	icon_closed = "labcoat_rd"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
-/obj/item/clothing/suit/storage/toggle/labcoat/rd/nanotrasen
-	name = "\improper NT research director's labcoat"
+/obj/item/clothing/suit/storage/toggle/labcoat/roles/science/nanotrasen
+	name = "\improper NT long labcoat"
 	desc = "A full-body labcoat covered in red and black designs, denoting it as a NanoTrasen management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_nt_open"
 	icon_open = "labcoat_rd_nt_open"
 	icon_closed = "labcoat_rd_nt"
 
-/obj/item/clothing/suit/storage/toggle/labcoat/rd/heph
-	name = "\improper HI research director's labcoat"
+/obj/item/clothing/suit/storage/toggle/labcoat/roles/science/heph
+	name = "\improper HI long labcoat"
 	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Hephaestus Industries management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_heph_open"
 	icon_open = "labcoat_rd_heph_open"
 	icon_closed = "labcoat_rd_heph"
 
-/obj/item/clothing/suit/storage/toggle/labcoat/rd/zeng
-	name = "\improper Z-H research director's labcoat"
+/obj/item/clothing/suit/storage/toggle/labcoat/roles/science/zeng
+	name = "\improper Z-H long labcoat"
 	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Zeng-Hu Pharmaceuticals management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_zeng_open"
 	icon_open = "labcoat_rd_zeng_open"
