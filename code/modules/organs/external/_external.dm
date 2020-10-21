@@ -923,7 +923,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 
 			for(var/obj/item/organ/I in internal_organs)
-				I.removed()
+				I.drop_organ(victim, src)
 				if(!QDELETED(I) && isturf(loc))
 					I.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 
@@ -1185,7 +1185,7 @@ obj/item/organ/external/proc/remove_clamps()
 		H.drop_from_inventory(W)
 	W.forceMove(owner)
 
-/obj/item/organ/external/removed(var/mob/living/user, var/ignore_children = 0)
+/obj/item/organ/external/removed(var/mob/living/user, var/ignore_children = 0, var/droptype = DROPLIMB_EDGE)
 
 	if(!owner)
 		return
