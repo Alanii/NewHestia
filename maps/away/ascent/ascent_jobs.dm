@@ -14,8 +14,8 @@
 		/datum/job/submap/ascent/alate,
 		/datum/job/submap/ascent/drone,
 		//datum/job/submap/ascent/control_mind,
-		//datum/job/submap/ascent/msq,
-		//datum/job/submap/ascent/msw,
+		/datum/job/submap/ascent/msq,
+		/datum/job/submap/ascent/msw,
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -173,10 +173,10 @@
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
 
-/*
 /datum/job/submap/ascent/msw
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
+	requires_supervisor = "Serpentid Queen"
 	total_positions = 2
 	info = "You are a Monarch Serpentid Worker serving as an attendant to your Queen on this vessel. Serve her however she requires."
 	set_species_on_join = SPECIES_MONARCH_WORKER
@@ -191,6 +191,7 @@
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
 	supervisors = "the Gyne"
+	requires_supervisor = "Ascent Gyne"
 	total_positions = 1
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
@@ -200,7 +201,7 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
-*/
+
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
