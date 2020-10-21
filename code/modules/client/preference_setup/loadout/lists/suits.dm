@@ -151,3 +151,8 @@
 	trenchcoats += /obj/item/clothing/suit/storage/det_trench/grey
 	trenchcoats += /obj/item/clothing/suit/leathercoat
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(trenchcoats)
+
+/datum/gear/suit/highvis
+	display_name = "high-visibility jacket"
+	path = /obj/item/clothing/suit/storage/toggle/highvis
+	cost = 1
