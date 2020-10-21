@@ -3678,9 +3678,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "hf" = (
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_x = 32;
-	pixel_y = 32
+	pixel_y = 33
 	},
 /turf/space,
 /area/space)
@@ -11316,9 +11316,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "wb" = (
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_x = 32;
-	pixel_y = -32
+	pixel_y = -33
 	},
 /turf/space,
 /area/space)
@@ -18588,7 +18588,7 @@
 /area/engineering/engine_smes)
 "Te" = (
 /obj/structure/lattice,
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_y = -32
 	},
 /turf/space,
@@ -20469,8 +20469,8 @@
 /area/engineering/drone_fabrication)
 "Zk" = (
 /obj/structure/lattice,
-/obj/structure/sign/solgov{
-	pixel_y = 32
+/obj/structure/sign/ntcrest{
+	pixel_y = 33
 	},
 /turf/space,
 /area/space)

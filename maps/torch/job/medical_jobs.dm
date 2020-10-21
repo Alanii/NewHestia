@@ -77,7 +77,7 @@
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
@@ -122,9 +122,9 @@
 	                    SKILL_MEDICAL = SKILL_BASIC,
 	                    SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
-						SKILL_ANATOMY     = SKILL_SPEC,
-	                    SKILL_CHEMISTRY   = SKILL_SPEC)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_surgery, access_medical_equip, access_solgov_crew)

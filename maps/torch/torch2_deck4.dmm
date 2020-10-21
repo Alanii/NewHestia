@@ -5305,7 +5305,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
 "os" = (
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_x = 32;
 	pixel_y = -32
 	},
@@ -8076,7 +8076,7 @@
 /turf/space,
 /area/space)
 "wx" = (
-/obj/structure/sign/solgov{
+/obj/structure/sign/ntcrest{
 	pixel_x = 32;
 	pixel_y = 32
 	},
@@ -12512,7 +12512,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Nv" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fourthdeck/fore)
 "Nw" = (
@@ -13410,7 +13410,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/starboard)
 "Qd" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fourthdeck/aft)
 "Qe" = (
