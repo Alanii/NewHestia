@@ -213,6 +213,21 @@
 		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      80),
 		list("crystal brothime",    "crystal brothime",    /datum/reagent/crystaltram,   80)
 	)
+//Serpentid version of chemical injector
+/obj/item/rig_module/chem_dispenser/mantid/serpentid
+	name = "serpentid chemical injector"
+	desc = "A compact chemical dispenser of mantid design."
+	interface_name = "serpentid chemical injector"
+	interface_desc = "A compact chemical dispenser of mantid design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "injector"
+	charges = list(
+		list("inaprovaline", "inaprovaline", /datum/reagent/inaprovaline, 20),
+		list("dexalin plus", "dexalin plus", /datum/reagent/dexalinp,       20),
+		list("spaceacillin", "spaceacillin", /datum/reagent/spaceacillin,  20),
+		list("tramadol",   "tramadol",    /datum/reagent/tramadol,      20),
+		list("glucose",    "glucose",   /datum/reagent/nutriment/glucose,   20)
+	)
 
 // Rig definitions.
 /obj/item/weapon/rig/mantid/gyne
@@ -244,7 +259,7 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/batterer
 	)
-
+//Normal rig for her guards
 /obj/item/weapon/rig/mantid/nabber
 	name = "serpentid utility exosuit"
 	icon_override = 'icons/mob/species/nabber/onmob_back_gas.dmi'
@@ -255,7 +270,8 @@
 
 /obj/item/clothing/suit/space/rig/mantid/serpentid
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
-
+	
+//Queen Rig
 /obj/item/weapon/rig/mantid/nabber/queen
 	name = "small support exosuit"
 	mantid_caste = SPECIES_MONARCH_QUEEN
@@ -263,7 +279,7 @@
 		/obj/item/rig_module/vision/thermal,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
-		/obj/item/rig_module/chem_dispenser/mantid,
+		/obj/item/rig_module/chem_dispenser/mantid/serpentid,
 		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,

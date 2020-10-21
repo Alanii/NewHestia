@@ -234,4 +234,5 @@
 
 /datum/species/nabber/monarch/queen
 	name = SPECIES_MONARCH_QUEEN
+	spawn_flags = SPECIES_IS_WHITELISTED
 	name_plural = "Monarch Serpentid Queens"
