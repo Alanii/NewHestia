@@ -533,11 +533,6 @@
 	var/extra_overlay_w // Flapping state for extra overlay
 
 
-/datum/sprite_accessory/wing/none //Temp fix.
-	name = "NONE"
-	desc = ""
-	icon_state = null
-
 /datum/sprite_accessory/wing/featheredlarge //Made by Natje!
 	name = "large feathered wings (colorable)"
 	desc = ""
