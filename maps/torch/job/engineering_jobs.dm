@@ -183,9 +183,9 @@
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet,
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/marine)
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/marine)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
