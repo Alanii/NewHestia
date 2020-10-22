@@ -22,6 +22,7 @@
 	var/ignore_tag //organ tag to ignore
 	var/last_nutrition_warning = 0
 	var/innate_heal = TRUE // Whether the aura is on, basically.
+	var/message_time = 0
 
 /obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return
@@ -72,7 +73,8 @@
 						if (H.nutrition >= organ_mult)
 							regen_organ.damage = max(regen_organ.damage - (organ_mult + organ_mal), 0)
 							H.adjust_nutrition(-organ_mult + organ_mal)
-							if(prob(5))
+							if(message_time < world.time)
+								message_time = world.time + 10 MINUTES
 								to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
 						else
 							low_nut_warning(regen_organ.name)
@@ -226,7 +228,7 @@
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
-				sponge.take_internal_damage(20)
+				sponge.take_internal_damage(5)
 
 	if(last_damage < H.getBruteLoss() + H.getFireLoss() && world.time < toggle_organ_blocked_until)
 		ignore_tag = null
