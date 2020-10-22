@@ -5,6 +5,7 @@
 	icon_state = "shark"
 	icon_living = "shark"
 	icon_dead = "shark_dead"
+	faction = "syndicate"
 	turns_per_move = 2
 	move_to_delay = 2
 	attack_same = 1

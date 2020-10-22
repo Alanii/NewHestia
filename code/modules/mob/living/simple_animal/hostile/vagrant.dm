@@ -17,7 +17,7 @@
 	response_disarm = "gently pushes aside the"
 	response_harm = "hits the"
 	break_stuff_probability = 0
-	faction = "vagrant"
+	faction = "syndicate"
 	harm_intent_damage = 3
 	melee_damage_lower = 3
 	melee_damage_upper = 4

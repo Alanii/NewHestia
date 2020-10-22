@@ -15,7 +15,7 @@
 	speed = -1
 	maxHealth = 250
 	health = 250
-
+	faction = "syndicate"
 	pixel_x = -16
 
 	harm_intent_damage = 5

@@ -27,7 +27,7 @@
 
 	environment_smash = 1
 
-	faction = "scarybat"
+	faction = "syndicate"
 	var/mob/living/owner
 
 /mob/living/simple_animal/hostile/scarybat/New(loc, mob/living/L as mob)

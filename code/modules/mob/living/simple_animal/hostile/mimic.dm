@@ -41,7 +41,7 @@ var/global/list/protected_objects = list(/obj/machinery,
 	max_gas = null
 	minbodytemp = 0
 
-	faction = "mimic"
+	faction = "syndicate"
 	move_to_delay = 8
 
 	var/weakref/copy_of

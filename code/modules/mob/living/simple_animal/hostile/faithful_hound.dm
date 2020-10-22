@@ -18,7 +18,7 @@
 	var/password
 	var/list/allowed_mobs = list() //Who we allow past us
 	var/last_check = 0
-	faction = "cute ghost dogs"
+	faction = "syndicate"
 	supernatural = 1
 
 /mob/living/simple_animal/faithful_hound/death()

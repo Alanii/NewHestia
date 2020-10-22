@@ -126,4 +126,4 @@
 	qdel(src)
 
 /mob/living/simple_animal/hostile/viscerator/hive
-	faction = "hivebot"
+	faction = "syndicate"
