@@ -11,7 +11,7 @@
 	emote_see = list("shakes the sand off itself")
 	response_harm   = "strikes"
 	attacktext = "bit"
-	faction = "antlions"
+	faction = "syndicate"
 	bleed_colour = COLOR_SKY_BLUE
 
 	health = 65

@@ -11,7 +11,7 @@
 	melee_damage_lower = 5
 	melee_damage_upper = 8
 	attacktext = "sliced"
-	faction = "silicon"
+	faction = "syndicate"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0

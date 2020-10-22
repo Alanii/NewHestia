@@ -12,7 +12,7 @@
 	melee_damage_upper = 25
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
-	faction = "creature"
+	faction = "syndicate"
 	speed = 4
 	supernatural = 1
 

@@ -14,7 +14,7 @@
 	response_harm   = "strikes"
 	break_stuff_probability = 15
 	attacktext = "slashed"
-	faction = "drakes"
+	faction = "syndicate"
 	pry_time = 4 SECONDS
 	skull_type = /obj/item/weapon/melee/whip/tail
 	bleed_colour = COLOR_VIOLET

@@ -27,7 +27,7 @@
 	melee_damage_flags = DAM_SHARP
 	heat_damage_per_tick = 20
 	cold_damage_per_tick = 20
-	faction = "spiders"
+	faction = "syndicate"
 	pass_flags = PASS_FLAG_TABLE
 	move_to_delay = 3
 	speed = 1
