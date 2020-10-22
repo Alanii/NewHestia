@@ -182,8 +182,17 @@
 		"Biomechanical Technician"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/marine)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
 	                    SKILL_DEVICES		= SKILL_ADEPT,
 	                    SKILL_ANATOMY       = SKILL_EXPERT,
