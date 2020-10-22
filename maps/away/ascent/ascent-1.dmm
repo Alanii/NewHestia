@@ -1762,8 +1762,6 @@
 /area/ship/ascent/subdeck_armory)
 "dN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent,
-/obj/structure/table/rack/dark,
-/obj/item/weapon/rig/mantid/nabber/queen,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
 "dO" = (
@@ -2435,33 +2433,6 @@
 /obj/structure/bed/chair/padded/purple/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
-"ys" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/mask/gas/ascent,
-/obj/item/weapon/tank/mantid/reactor,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_armory)
-"CN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"PX" = (
-/obj/structure/table/rack/dark,
-/obj/item/weapon/storage/box/ascentimplants,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_armory)
 
 (1,1,1) = {"
 aa
@@ -8263,7 +8234,7 @@ cD
 bu
 ak
 ak
-CN
+aK
 ak
 ak
 bt
@@ -10700,8 +10671,8 @@ ai
 by
 bK
 ch
-PX
-ys
+ch
+ch
 dN
 dV
 fn
