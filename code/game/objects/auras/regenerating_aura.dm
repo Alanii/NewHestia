@@ -226,7 +226,7 @@
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
-				sponge.take_internal_damage(20)
+				sponge.take_internal_damage(15)
 
 	if(last_damage < H.getBruteLoss() + H.getFireLoss() && world.time < toggle_organ_blocked_until)
 		ignore_tag = null
