@@ -236,19 +236,8 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "aO" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/skrell,
-/area/ship/skrellscoutship/hangar)
+/turf/simulated/floor/reinforced/airless,
+/area/ship/skrellscoutshuttle)
 "aP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -327,15 +316,8 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "aW" = (
-/obj/machinery/door/blast/regular/open{
-	dir = 2;
-	id_tag = "xil_shuttle";
-	name = "Blast Doors"
-	},
-/obj/machinery/door/firedoor/autoset,
-/obj/effect/paint/black,
-/obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/plating,
+/obj/machinery/shipsensors,
+/turf/simulated/floor/reinforced/airless,
 /area/ship/skrellscoutshuttle)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -396,6 +378,16 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
@@ -599,8 +591,8 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
 "bU" = (
-/obj/machinery/shipsensors,
-/turf/simulated/floor/reinforced/airless,
+/obj/machinery/computer/shuttle_control/explore/skrellscoutshuttle,
+/turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "bW" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -608,10 +600,6 @@
 /obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
-"bY" = (
-/obj/machinery/computer/shuttle_control/explore/skrellscoutshuttle,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutshuttle)
 "bZ" = (
 /obj/machinery/power/apc/critical{
 	dir = 2;
@@ -633,7 +621,8 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
 "cd" = (
-/turf/simulated/floor/reinforced/airless,
+/obj/machinery/computer/ship/sensors,
+/turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "ce" = (
 /obj/machinery/door/blast/regular/open{
@@ -679,11 +668,6 @@
 /obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
-"cn" = (
-/obj/machinery/computer/ship/helm,
-/obj/effect/overmap/visitable/ship/landable/skrellscoutshuttle,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutshuttle)
 "cp" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/firedoor/autoset,
@@ -696,17 +680,22 @@
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "cv" = (
-/obj/machinery/computer/ship/sensors,
-/turf/simulated/floor/tiled/skrell/red,
+/obj/machinery/door/blast/regular/open{
+	dir = 2;
+	id_tag = "xil_shuttle";
+	name = "Blast Doors"
+	},
+/obj/machinery/door/firedoor/autoset,
+/obj/effect/paint/black,
+/obj/effect/wallframe_spawn/reinforced_phoron,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutshuttle)
 "cw" = (
-/obj/structure/table/steel,
-/obj/machinery/button/blast_door{
-	id_tag = "xil_shuttle";
-	name = "Shuttle Blast Doors";
-	pixel_y = 30
+/obj/structure/bed/chair/shuttle{
+	dir = 1;
+	icon_state = "shuttle_chair_preview";
+	tag = "icon-shuttle_chair_preview (NORTH)"
 	},
-/obj/machinery/recharger,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "cx" = (
@@ -735,18 +724,17 @@
 /area/ship/skrellscoutship/dock)
 "cC" = (
 /obj/structure/lattice,
-/obj/structure/cable{
-	d1 = 32;
-	d2 = 2;
-	dir = 4;
-	icon_state = "32-8"
-	},
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = 8
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/supply,
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
+/obj/structure/cable{
+	d1 = 32;
+	d2 = 2;
+	icon_state = "32-2"
+	},
 /turf/simulated/open,
 /area/ship/skrellscoutship/crew/hallway/d1)
 "cD" = (
@@ -1245,6 +1233,7 @@
 	dir = 1;
 	icon_state = "map"
 	},
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/hangar)
 "go" = (
@@ -1414,16 +1403,15 @@
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 8;
 	door_color = "#404040";
-	name = "Docking Bay 2"
+	name = "Helm"
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/bridge)
 "lj" = (
-/obj/structure/bed/chair/shuttle{
-	dir = 1;
-	icon_state = "shuttle_chair_preview";
-	tag = "icon-shuttle_chair_preview (NORTH)"
+/obj/machinery/computer/ship/helm{
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
+/obj/effect/overmap/visitable/ship/landable/skrellscoutshuttle,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "lu" = (
@@ -1522,13 +1510,13 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
 "nv" = (
-/obj/structure/bed/chair/shuttle{
-	dir = 8;
-	icon_state = "shuttle_chair_preview";
-	tag = "icon-shuttle_chair_preview (WEST)"
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor/autoset{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutshuttle)
+/obj/effect/paint/black,
+/turf/simulated/floor/plating,
+/area/ship/skrellscoutship/crew/infirmary)
 "nK" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
@@ -1618,9 +1606,12 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "oP" = (
-/obj/machinery/computer/ship/navigation{
-	dir = 4
+/obj/machinery/button/blast_door{
+	id_tag = "xil_shuttle";
+	name = "Shuttle Blast Doors";
+	pixel_y = 30
 	},
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "oS" = (
@@ -1757,6 +1748,20 @@
 /obj/item/weapon/bedsheet/medical,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
+"rM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/skrell,
+/area/ship/skrellscoutship/hangar)
 "rN" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/firedoor/autoset,
@@ -1999,7 +2004,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
 "ye" = (
@@ -2280,7 +2284,7 @@
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 8;
 	door_color = "#404040";
-	name = "Docking Bay 2"
+	name = "Shuttle Dock"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2300,17 +2304,16 @@
 /area/ship/skrellscoutship/command/bridge)
 "Dt" = (
 /obj/machinery/computer/ship/helm{
-	dir = 4
+	dir = 4;
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/bridge)
 "DF" = (
-/obj/structure/bed/chair/shuttle{
-	dir = 8;
-	icon_state = "shuttle_chair_preview";
-	tag = "icon-shuttle_chair_preview (WEST)"
-	},
 /obj/machinery/light,
+/obj/machinery/computer/ship/navigation{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "DZ" = (
@@ -2405,6 +2408,14 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/hangar)
+"FE" = (
+/obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/airlock/medical{
+	door_color = "#404040";
+	name = "Sub-Acute"
+	},
+/turf/simulated/floor/tiled/skrell/white,
+/area/ship/skrellscoutship/crew/infirmary)
 "FK" = (
 /obj/machinery/light{
 	dir = 4;
@@ -2533,7 +2544,7 @@
 /area/ship/skrellscoutship/crew/fit)
 "HA" = (
 /obj/machinery/computer/ship/engines{
-	dir = 4
+	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
@@ -2945,10 +2956,6 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/bridge)
 "Pp" = (
-/obj/machinery/airlock_sensor{
-	id_tag = "xil_shuttle_dock_sensor";
-	pixel_y = 22
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
 	frequency = 1292;
@@ -3104,6 +3111,9 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/machinery/sleeper{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutshuttle)
 "Sc" = (
@@ -3121,6 +3131,14 @@
 	},
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
+"SC" = (
+/obj/machinery/alarm/skrell{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/skrell,
+/area/ship/skrellscoutship/hangar)
 "SD" = (
 /obj/machinery/door/firedoor/autoset,
 /obj/machinery/door/airlock/medical{
@@ -3132,7 +3150,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/infirmary)
 "SE" = (
@@ -3432,7 +3449,8 @@
 /obj/machinery/button/blast_door{
 	id_tag = "xil_bridge";
 	name = "Window Blast Doors";
-	pixel_x = -10
+	pixel_x = -10;
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "xil_airlock";
@@ -8731,7 +8749,7 @@ aa
 aa
 Bz
 Bz
-bo
+xw
 xw
 Bz
 Uk
@@ -9591,11 +9609,11 @@ YL
 YL
 YL
 YL
+nv
+nv
 YL
-YL
-YL
-YL
-YL
+nv
+nv
 YL
 ZD
 sh
@@ -9840,7 +9858,7 @@ lx
 dn
 mK
 qP
-YL
+FE
 Bb
 qA
 xn
@@ -10080,9 +10098,9 @@ RQ
 es
 YL
 YL
-YL
-YL
-YL
+nv
+nv
+nv
 YL
 fv
 GF
@@ -10323,9 +10341,9 @@ ql
 XW
 Av
 IC
+rM
 ZE
 ZE
-aO
 ZE
 zc
 ZE
@@ -10446,9 +10464,9 @@ Zh
 wG
 YL
 YL
-YL
-YL
-YL
+nv
+nv
+nv
 YL
 fv
 GF
@@ -10820,7 +10838,7 @@ YL
 Vk
 Ib
 Jj
-Bb
+SC
 ZD
 dq
 de
@@ -11049,8 +11067,8 @@ pi
 Ec
 Zw
 aq
-cd
-cy
+aq
+aO
 cy
 cy
 cy
@@ -11171,9 +11189,9 @@ uX
 vk
 go
 aq
+aq
 cy
 cy
-cw
 oP
 HA
 cy
@@ -11293,9 +11311,9 @@ wb
 mv
 DZ
 aq
-aW
-bY
-cI
+aq
+cv
+bU
 cI
 DF
 cy
@@ -11415,10 +11433,10 @@ uX
 lT
 go
 aq
-aW
-cn
+aq
+cv
 lj
-cI
+cw
 cI
 Aq
 HH
@@ -11537,9 +11555,9 @@ wb
 Ht
 yY
 aq
-aW
+aq
 cv
-cI
+cd
 cI
 cI
 cI
@@ -11659,13 +11677,13 @@ yh
 EU
 NU
 aq
+aq
 cy
 cy
 hK
 vF
 vF
 vF
-nv
 nK
 Ck
 cy
@@ -11781,8 +11799,8 @@ aq
 aq
 aq
 aq
-bU
-cy
+aq
+aW
 cy
 cy
 cy
