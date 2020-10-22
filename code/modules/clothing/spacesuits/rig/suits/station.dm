@@ -127,7 +127,7 @@
 /obj/item/clothing/suit/space/rig/eva
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_IPC)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
 		)
 
 /obj/item/clothing/shoes/magboots/rig/eva
