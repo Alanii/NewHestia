@@ -1698,7 +1698,6 @@
 "dH" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/storage/box/ascentimplants,
-/obj/item/weapon/storage/box/ascentimplants,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
 "dI" = (
@@ -2436,17 +2435,6 @@
 /obj/structure/bed/chair/padded/purple/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
-"po" = (
-/obj/structure/table/rack/dark,
-/obj/item/weapon/rig/mantid/nabber,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_armory)
-"uP" = (
-/obj/structure/table/rack/dark,
-/obj/item/weapon/tank/mantid/reactor,
-/obj/item/clothing/mask/gas/ascent,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_armory)
 "ys" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/mask/gas/ascent,
@@ -2469,28 +2457,11 @@
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"Iw" = (
-/obj/machinery/light/ascent,
-/obj/effect/submap_landmark/spawnpoint/ascent_seedship/adjunct,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_center)
-"Lk" = (
-/obj/structure/table/rack/dark,
-/obj/item/ascentbox,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_armory)
 "PX" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/storage/box/ascentimplants,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
-"TR" = (
-/obj/machinery/light/ascent{
-	dir = 1
-	},
-/obj/effect/submap_landmark/spawnpoint/ascent_seedship/adjunct,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_center)
 
 (1,1,1) = {"
 aa
@@ -8169,9 +8140,9 @@ cq
 bu
 bu
 al
-TR
+aq
 aK
-Iw
+bC
 al
 bt
 bt
@@ -10484,15 +10455,15 @@ ai
 ai
 by
 bK
-Lk
-uP
+ch
+ch
 dI
-po
+ch
 dL
-po
+ch
 dI
-uP
-Lk
+ch
+ch
 ft
 by
 ai
