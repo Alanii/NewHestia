@@ -47,7 +47,7 @@
 	pda_type = /obj/item/modular_computer/pda/roboticist
 
 	/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet
-	name = OUTFIT_JOB_NAME("Roboticist - Fleet")
+	name = OUTFIT_JOB_NAME("Roboticist - NTEF")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	
