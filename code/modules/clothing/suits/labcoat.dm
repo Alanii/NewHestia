@@ -176,3 +176,11 @@
 	icon_open = "labcoat_cso_open"
 	icon_closed = "labcoat_cso"
 	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/toggle/labcoat/lclabcoat
+	name = "long labcoat"
+	desc = "A suit that protects against minor chemical spills. For the stylish megalomaniac."
+	icon_state = "labcoat_long_open"
+	icon_state = "labcoat_long_open"
+	icon_state = "labcoat_long"
+	color = "#FEFFFF"

@@ -168,3 +168,8 @@
 	longlabcoats += /obj/item/clothing/suit/storage/toggle/labcoat/roles/science/heph
 	longlabcoats += /obj/item/clothing/suit/storage/toggle/labcoat/roles/science/zeng
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(longlabcoats)
+
+/datum/gear/suit/labcoat_long_colorable
+	display_name = "long labcoat, colour select"
+	path = /obj/item/clothing/suit/storage/toggle/labcoat/lclabcoat
+	flags = GEAR_HAS_COLOR_SELECTION
