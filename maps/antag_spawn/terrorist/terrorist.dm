@@ -1,6 +1,6 @@
 /datum/map_template/ruin/antag_spawn/terrorist
-	name = "Mercenary Base"
-	suffixes = list("mercenary/mercenary_base.dmm")
+	name = "Terrorist Base"
+	suffixes = list("terrorist/terrorist_base.dmm")
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/merc_shuttle)
 
 /obj/effect/overmap/visitable/merc_base
