@@ -5014,11 +5014,6 @@
 	name = "plastic table frame"
 	},
 /obj/random/smokes,
-/obj/structure/sign/double/icarus/solgovflag/left{
-	dir = 8;
-	icon_state = "solgovflag-left";
-	pixel_x = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
 "iz" = (
@@ -5431,11 +5426,6 @@
 	},
 /obj/machinery/light{
 	dir = 4
-	},
-/obj/structure/sign/double/icarus/solgovflag/right{
-	dir = 8;
-	icon_state = "solgovflag-right";
-	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
@@ -12249,11 +12239,6 @@
 /area/turret_protected/ai_outer_chamber)
 "uE" = (
 /obj/structure/bed/chair/padded/blue,
-/obj/structure/sign/double/icarus/solgovflag/left{
-	dir = 8;
-	icon_state = "solgovflag-left";
-	pixel_x = 32
-	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
 	},
@@ -12618,11 +12603,6 @@
 "vl" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
-	},
-/obj/structure/sign/double/icarus/solgovflag/right{
-	dir = 8;
-	icon_state = "solgovflag-right";
-	pixel_x = 32
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -13481,6 +13461,10 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/representative)
+"wF" = (
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/auxsolarbridge)
 "wH" = (
 /obj/item/weapon/bedsheet/browndouble{
 	dir = 4
@@ -15211,6 +15195,11 @@
 "DN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/bridge/aft)
+"DR" = (
+/obj/effect/paint/hull,
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/titanium,
+/area/aquila/passenger)
 "DY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -17064,12 +17053,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
 "Oc" = (
-/obj/structure/sign/solgov{
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/turf/simulated/floor/reinforced/airless,
-/area/space)
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/r_wall/hull,
+/area/hallway/primary/bridge/aft)
 "Od" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -17342,6 +17328,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"PR" = (
+/obj/structure/sign/ntcrest,
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/safe_room/bridge)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -17679,10 +17669,6 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
-	},
-/obj/structure/sign/solgov{
-	pixel_x = -32;
-	pixel_y = 32
 	},
 /turf/simulated/floor/airless,
 /area/solar/bridge)
@@ -19021,8 +19007,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Xp" = (
-/obj/structure/sign/solgov,
 /obj/effect/paint/hull,
+/obj/structure/sign/ntcrest,
 /turf/simulated/wall/titanium,
 /area/aquila/airlock)
 "Xr" = (
@@ -29563,7 +29549,7 @@ rQ
 ti
 ti
 ti
-ti
+PR
 ti
 ti
 ti
@@ -36007,7 +35993,7 @@ bD
 bD
 ad
 dy
-Oc
+ad
 ad
 gX
 hK
@@ -36210,7 +36196,7 @@ ad
 ad
 dy
 ad
-DN
+Oc
 DN
 DN
 DN
@@ -36231,7 +36217,7 @@ on
 dV
 dV
 ws
-dV
+wF
 ad
 ad
 ad
@@ -39852,7 +39838,7 @@ QF
 QF
 QF
 Ag
-QF
+DR
 QF
 QF
 gw
