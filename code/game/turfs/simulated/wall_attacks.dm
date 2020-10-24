@@ -98,6 +98,13 @@
 		else
 			fail_smash(user)
 			return 1
+	if (MUTATION_FERAL in user.mutations)
+		user.visible_message(SPAN_DANGER("[user.name] slams into \the [src]!"), SPAN_DANGER("You slam into \the [src]!"))
+		playsound(src, pick(GLOB.punch_sound), 45)
+		take_damage(5)
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN*2) //Additional cooldown
+		attack_animation(user)
+		return 1
 
 	try_touch(user, rotting)
 

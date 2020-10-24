@@ -292,8 +292,9 @@ var/const/NO_EMAG_ACT = -50
 	if(GLOB.using_map.flags & MAP_HAS_BRANCH)
 		id_card.military_branch = char_branch
 	if(GLOB.using_map.flags & MAP_HAS_RANK)
-		id_card.military_rank = char_rank
-		id_card.pow_cat = char_rank.pow_cat
+		if(char_rank)
+			id_card.military_rank = char_rank
+			id_card.pow_cat = char_rank.pow_cat
 		if(id_card.pow_cat > id_card.max_pow_cat)
 			id_card.pow_cat = id_card.max_pow_cat
 

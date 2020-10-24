@@ -179,6 +179,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if(response != "Ghost")
 			return
 		resting = 1
+		ghosted = 1
 		log_and_message_admins("has ghosted.")
 		var/mob/observer/ghost/ghost = ghostize(0)	//0 parameter is so we can never re-enter our body, "Charlie, you can never come baaaack~" :3
 		ghost.timeofdeath = world.time // Because the living mob won't have a time of death and we want the respawn timer to work properly.

@@ -17,6 +17,8 @@
 //#define MUTATION_       28
 #define MUTATION_SKELETON      29
 #define MUTATION_PLANT         30
+#define MUTATION_FERAL         31 // Smash objects instead of using them, and unable to use items
+
 
 // Other Mutations:
 #define mNobreath      100 // No need to breathe.
