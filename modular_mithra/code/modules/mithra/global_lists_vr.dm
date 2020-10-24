@@ -39,16 +39,8 @@ var/global/list/custom_species_bases = list() // Species that can be used for a 
 		var/datum/trait/instance = new path()
 		if(!instance.name)
 			continue //A prototype or something
-		var/cost = instance.cost
-		traits_costs[path] = cost
 		all_traits[path] = instance
-		switch(cost)
-			if(-INFINITY to -0.1)
-				negative_traits[path] = instance
-			if(0)
-				neutral_traits[path] = instance
-			if(0.1 to INFINITY)
-				positive_traits[path] = instance
+		neutral_traits[path] = instance
 
 	// Custom species icon bases
 	var/list/blacklisted_icons = list(SPECIES_CUSTOM,SPECIES_PROMETHEAN,SPECIES_HUMAN) //Just ones that won't work well, and Humans, as Custom Humans will be used instead.

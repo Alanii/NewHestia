@@ -2,7 +2,6 @@
 	var/name
 	var/desc = "Contact a developer if you see this trait."
 
-	var/cost = 0			// 0 is neutral, negative cost means negative, positive cost means positive.
 	var/list/var_changes	// A list to apply to the custom species vars.
 	var/list/excludes		// Store a list of paths of traits to exclude, but done automatically if they change the same vars.
 
