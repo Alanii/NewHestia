@@ -5,4 +5,4 @@
 	allowed_ranks = list(/datum/mil_rank/alien)
 
 /datum/job/submap
-	psi_latency_chance = 10
+	psi_latency_chance = 5
