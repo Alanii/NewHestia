@@ -3015,7 +3015,7 @@
 
 /datum/reagent/ethanol/creme_de_menthe
 	name = "Creme de Menthe"
-	description = "A sweet, mint-flavored alcoholic beverage"
+	description = "A sweet, mint-flavored alcoholic beverage."
 	taste_description = "melted breathmints"
 	color = "#98ecb4"
 	strength = 50
@@ -3070,7 +3070,7 @@
 		return
 	if(alien == IS_SKRELL)
 		strength_mod *= 2
-	if(prob(1*strength_mod))
+	if(prob(strength_mod))
 		M.sleeping = max(M.sleeping, 1)
 
 /datum/reagent/ethanol/cobalt_velvet
@@ -3130,7 +3130,7 @@
 	strength = 13
 
 	glass_name = "Stinger"
-	glass_desc = "Holding this glass will make you seem like high-soceity... if you were from the 1800s."
+	glass_desc = "Holding this glass will make you seem like high-society... if you were from the 1800s."
 
 /datum/reagent/ethanol/sugar_rush
 	name = "Sugar Rush"
