@@ -246,11 +246,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
+		///datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
+	//	/datum/mil_rank/ec/o3,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3
 	)
