@@ -181,6 +181,6 @@
 	name = "long labcoat"
 	desc = "A suit that protects against minor chemical spills. For the stylish megalomaniac."
 	icon_state = "labcoat_long_open"
-	icon_state = "labcoat_long_open"
-	icon_state = "labcoat_long"
+	icon_open = "labcoat_long_open"
+	icon_closed = "labcoat_long"
 	color = "#FEFFFF"
