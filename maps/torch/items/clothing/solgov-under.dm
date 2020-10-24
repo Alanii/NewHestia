@@ -167,6 +167,9 @@
 /obj/item/clothing/under/solgov/utility/fleet/exploration
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/fleet)
 
+///obj/item/clothing/under/solgov/utility/fleet/research
+	//starting_accessories = list(/obj/item/clothing/accessory/solgov/department/research/fleet)
+
 /obj/item/clothing/under/solgov/utility/fleet/polopants
 	name = "fleet polo and pants"
 	desc = "An alternative utility uniform of the SCG Fleet, specially designed for engineering staff. The pants sports some yellow reflective stripes, and have knee pads."
@@ -229,9 +232,9 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/officer
 	name = "fleet officer's coveralls"
-	desc = "Alternative utility uniform of NT's Expeditionary Fleet, for officers."
-	icon_state = "navyutilityoff"
-	worn_state = "navyutilityoff"
+	desc = "The utility uniform of NT's Expeditionary Fleet, made from an insulated material. This one has gold stripes denoting it as an officer's."
+	icon_state = "navyutilityofficer"
+	worn_state = "navyutilityofficer"
 
 /obj/item/clothing/under/solgov/utility/fleet/officer/command
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
@@ -427,17 +430,56 @@
 
 /obj/item/clothing/under/solgov/service/fleet
 	name = "fleet service uniform"
-	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric."
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for enlisted."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
 	starting_accessories = list(/obj/item/clothing/accessory/navy)
 
+/obj/item/clothing/under/solgov/service/fleet/officer
+	name = "fleet service uniform"
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for junior officers and has a silver trim."
+	icon_state = "whiteservice"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_off"
+
+/obj/item/clothing/under/solgov/service/fleet/seniorofficer
+	name = "fleet service uniform"
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for senior officers and has a gold trim."
+	icon_state = "whiteservice"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_comm"
+
+/obj/item/clothing/under/solgov/service/fleet/flagofficer
+	name = "fleet service uniform"
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for flag officers and has a red trim."
+	icon_state = "whiteservice"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_flag"
+
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
-	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric."
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for enlisted."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/officer
+	name = "fleet service skirt"
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for junior officers and has a silver trim."
+	icon_state = "whiteservicefem_off"
+	worn_state = "whiteservicefem_off"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/seniorofficer
+	name = "fleet service skirt"
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for senior officers and has a gold trim."
+	icon_state = "whiteservicefem_comm"
+	worn_state = "whiteservicefem_comm"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/flagofficer
+	name = "fleet service skirt"
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one is for flag officers amd has a red trim."
+	icon_state = "whiteservicefem_flag"
+	worn_state = "whiteservicefem_flag"
 
 /obj/item/clothing/under/solgov/service/army
 	name = "marine service uniform"
