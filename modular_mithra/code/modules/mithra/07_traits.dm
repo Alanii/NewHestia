@@ -101,7 +101,7 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		. += "<ul>"
 		for(var/T in pref.neu_traits)
 			var/datum/trait/trait = neutral_traits[T]
-			. += "<li>- <a href='?src=\ref[src];clicked_neu_trait=[T]'>[trait.name] ([trait.cost])</a></li>"
+			. += "<li>- <a href='?src=\ref[src];clicked_neu_trait=[T]'>[trait.name]</a></li>"
 		. += "</ul>"
 
 	. += "<b>Blood Color: </b>" //People that want to use a certain species to have that species traits (xenochimera/promethean/spider) should be able to set their own blood color.
@@ -181,7 +181,7 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 				done = TRUE
 			if(trait_choice in nicelist)
 				var/datum/trait/path = nicelist[trait_choice]
-				var/choice = alert("\[Cost:[initial(path.cost)]\] [initial(path.desc)]",initial(path.name),"Take Trait","Cancel","Go Back")
+				var/choice = alert("\ [initial(path.desc)]","[initial(path.name)]","Take Trait","Cancel","Go Back")
 				if(choice == "Cancel")
 					trait_choice = null
 				if(choice != "Go Back")
