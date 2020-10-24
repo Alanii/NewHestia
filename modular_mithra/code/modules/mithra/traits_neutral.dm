@@ -57,3 +57,14 @@
 	desc = "You're only able to eat plants. Eating meat and other animal protein will poison you."
 	cost = 0
 	var_changes = list(reagent_tag = IS_HERBIVORE)
+
+/datum/trait/melee_attack
+	name = "Rending Claws"
+	desc = "You have claws. You use them in unarmed combat."
+	cost = 0
+	var_changes = list("unarmed_types" = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp))
+
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		for(var/u_type in S.unarmed_types)
+			S.unarmed_attacks += new u_type()

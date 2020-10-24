@@ -1,15 +1,12 @@
-#define POSITIVE_MODE 1
-#define NEUTRAL_MODE 2
-#define NEGATIVE_MODE 3
+#define NEUTRAL_MODE 1
 
 /datum/preferences
 	var/custom_species	// Custom species name, can't be changed due to it having been used in savefiles already.
 	var/custom_base		// What to base the custom species on
 	var/blood_color = "#f5e400"
 
-	var/list/pos_traits	= list()	// What traits they've selected for their custom species
+	// What traits they've selected for their custom species
 	var/list/neu_traits = list()
-	var/list/neg_traits = list()
 
 	var/traits_cheating = 0 //Varedit by admins allows saving new maximums on people who apply/etc
 	var/starting_trait_points = STARTING_SPECIES_POINTS
@@ -22,9 +19,7 @@
 /datum/category_item/player_setup_item/vore/traits/load_character(var/savefile/S)
 	from_file(S["custom_species"], pref.custom_species)
 	from_file(S["custom_base"], pref.custom_base)
-	from_file(S["pos_traits"], pref.pos_traits)
 	from_file(S["neu_traits"], pref.neu_traits)
-	from_file(S["neg_traits"], pref.neg_traits)
 	from_file(S["blood_color"], pref.blood_color)
 
 	from_file(S["traits_cheating"], pref.traits_cheating)
@@ -34,9 +29,7 @@
 /datum/category_item/player_setup_item/vore/traits/save_character(var/savefile/S)
 	to_file(S["custom_species"], pref.custom_species)
 	to_file(S["custom_base"], pref.custom_base)
-	to_file(S["pos_traits"], pref.pos_traits)
 	to_file(S["neu_traits"], pref.neu_traits)
-	to_file(S["neg_traits"], pref.neg_traits)
 	to_file(S["blood_color"], pref.blood_color)
 
 	to_file(S["traits_cheating"], pref.traits_cheating)
@@ -44,9 +37,7 @@
 	to_file(S["trait_points"], pref.starting_trait_points)
 
 /datum/category_item/player_setup_item/vore/traits/sanitize_character()
-	if(!pref.pos_traits) pref.pos_traits = list()
 	if(!pref.neu_traits) pref.neu_traits = list()
-	if(!pref.neg_traits) pref.neg_traits = list()
 
 	pref.blood_color = sanitize_hexcolor(pref.blood_color, default="#f5e400")
 
@@ -55,22 +46,12 @@
 		pref.max_traits = MAX_SPECIES_TRAITS
 
 	if(pref.species != SPECIES_CUSTOM)
-		pref.pos_traits.Cut()
 		pref.neu_traits.Cut()
-		pref.neg_traits.Cut()
 	else
-		// Clean up positive traits
-		for(var/path in pref.pos_traits)
-			if(!(path in positive_traits))
-				pref.pos_traits -= path
 		//Neutral traits
 		for(var/path in pref.neu_traits)
 			if(!(path in neutral_traits))
 				pref.neu_traits -= path
-		//Negative traits
-		for(var/path in pref.neg_traits)
-			if(!(path in negative_traits))
-				pref.neg_traits -= path
 
 	var/datum/species/selected_species = all_species[pref.species]
 	if(selected_species.selects_bodytype)
@@ -90,7 +71,7 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 	if(selected_species.selects_bodytype)
 		var/datum/species/custom/CS = character.species
 		var/S = custom_base ? custom_base : "Human"
-		var/datum/species/custom/new_CS = CS.produceCopy(S, pos_traits + neu_traits + neg_traits, character)
+		var/datum/species/custom/new_CS = CS.produceCopy(S, neu_traits, character)
 
 		//Any additional non-trait settings can be applied here
 		new_CS.blood_color = blood_color
@@ -116,38 +97,13 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		. += "<b>Icon Base: </b> "
 		. += "<a href='?src=\ref[src];custom_base=1'>[pref.custom_base ? pref.custom_base : "Custom Human"]</a><br>"
 
-	if(pref.species == SPECIES_CUSTOM)
-		var/points_left = pref.starting_trait_points
-		var/traits_left = pref.max_traits
-		for(var/T in pref.pos_traits + pref.neg_traits)
-			points_left -= traits_costs[T]
-			traits_left--
-
-		. += "<b>Points Left:</b> [points_left]<br>"
-		. += "<b>Traits Left:</b> [traits_left]<br>"
-		if(points_left < 0 || traits_left < 0 || !pref.custom_species)
-			. += "<span style='color:red;'><b>^ Fix things! ^</b></span><br>"
-
-		. += "<a href='?src=\ref[src];add_trait=[POSITIVE_MODE]'>Positive Trait +</a><br>"
-		. += "<ul>"
-		for(var/T in pref.pos_traits)
-			var/datum/trait/trait = positive_traits[T]
-			. += "<li>- <a href='?src=\ref[src];clicked_pos_trait=[T]'>[trait.name] ([trait.cost])</a></li>"
-		. += "</ul>"
-
-		. += "<a href='?src=\ref[src];add_trait=[NEUTRAL_MODE]'>Neutral Trait +</a><br>"
+		. += "<a href='?src=\ref[src];add_trait=[NEUTRAL_MODE]'>Trait +</a><br>"
 		. += "<ul>"
 		for(var/T in pref.neu_traits)
 			var/datum/trait/trait = neutral_traits[T]
 			. += "<li>- <a href='?src=\ref[src];clicked_neu_trait=[T]'>[trait.name] ([trait.cost])</a></li>"
 		. += "</ul>"
 
-		. += "<a href='?src=\ref[src];add_trait=[NEGATIVE_MODE]'>Negative Trait +</a><br>"
-		. += "<ul>"
-		for(var/T in pref.neg_traits)
-			var/datum/trait/trait = negative_traits[T]
-			. += "<li>- <a href='?src=\ref[src];clicked_neg_trait=[T]'>[trait.name] ([trait.cost])</a></li>"
-		. += "</ul>"
 	. += "<b>Blood Color: </b>" //People that want to use a certain species to have that species traits (xenochimera/promethean/spider) should be able to set their own blood color.
 	. += "<a href='?src=\ref[src];blood_color=1'>Set Color</a>"
 	. += "<a href='?src=\ref[src];blood_reset=1'>R</a><br>"
@@ -190,13 +146,6 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 			pref.blood_color = "#f5e400"
 		return TOPIC_REFRESH
 
-	else if(href_list["clicked_pos_trait"])
-		var/datum/trait/trait = text2path(href_list["clicked_pos_trait"])
-		var/choice = alert("Remove [initial(trait.name)] and regain [initial(trait.cost)] points?","Remove Trait","Remove","Cancel")
-		if(choice == "Remove")
-			pref.pos_traits -= trait
-		return TOPIC_REFRESH
-
 	else if(href_list["clicked_neu_trait"])
 		var/datum/trait/trait = text2path(href_list["clicked_neu_trait"])
 		var/choice = alert("Remove [initial(trait.name)]?","Remove Trait","Remove","Cancel")
@@ -204,28 +153,13 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 			pref.neu_traits -= trait
 		return TOPIC_REFRESH
 
-	else if(href_list["clicked_neg_trait"])
-		var/datum/trait/trait = text2path(href_list["clicked_neg_trait"])
-		var/choice = alert("Remove [initial(trait.name)] and lose [initial(trait.cost)] points?","Remove Trait","Remove","Cancel")
-		if(choice == "Remove")
-			pref.neg_traits -= trait
-		return TOPIC_REFRESH
-
 	else if(href_list["add_trait"])
 		var/mode = text2num(href_list["add_trait"])
 		var/list/picklist
 		var/list/mylist
-		switch(mode)
-			if(POSITIVE_MODE)
-				picklist = positive_traits.Copy() - pref.pos_traits
-				mylist = pref.pos_traits
-			if(NEUTRAL_MODE)
-				picklist = neutral_traits.Copy() - pref.neu_traits
-				mylist = pref.neu_traits
-			if(NEGATIVE_MODE)
-				picklist = negative_traits.Copy() - pref.neg_traits
-				mylist = pref.neg_traits
-			else
+		if(mode == NEUTRAL_MODE)
+			picklist = neutral_traits.Copy() - pref.neu_traits
+			mylist = pref.neu_traits
 
 		if(isnull(picklist))
 			return TOPIC_REFRESH
@@ -238,16 +172,10 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 			var/datum/trait/T = picklist[P]
 			nicelist[T.name] = P
 
-		var/points_left = pref.starting_trait_points
-		for(var/T in pref.pos_traits + pref.neu_traits + pref.neg_traits)
-			points_left -= traits_costs[T]
-
-		var/traits_left = pref.max_traits - (pref.pos_traits.len + pref.neg_traits.len)
-
 		var/trait_choice
 		var/done = FALSE
 		while(!done)
-			var/message = "\[Remaining: [points_left] points, [traits_left] traits\] Select a trait to read the description and see the cost."
+			var/message = "Select a trait to read the description."
 			trait_choice = input(message,"Trait List") as null|anything in nicelist
 			if(!trait_choice)
 				done = TRUE
@@ -267,11 +195,11 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 
 			var/conflict = FALSE
 
-			if(trait_choice in pref.pos_traits + pref.neu_traits + pref.neg_traits)
+			if(trait_choice in pref.neu_traits)
 				conflict = instance.name
 
 			varconflict:
-				for(var/P in pref.pos_traits + pref.neu_traits + pref.neg_traits)
+				for(var/P in pref.neu_traits)
 					var/datum/trait/instance_test = all_traits[P]
 					if(path in instance_test.excludes)
 						conflict = instance_test.name
@@ -292,6 +220,4 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 
 	return ..()
 
-#undef POSITIVE_MODE
 #undef NEUTRAL_MODE
-#undef NEGATIVE_MODE
