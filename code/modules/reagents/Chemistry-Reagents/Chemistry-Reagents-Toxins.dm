@@ -129,6 +129,39 @@
 /datum/reagent/toxin/phoron/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_NABBER)
 		return
+	if(alien == IS_PLASMASANS)
+		metabolism = 0.5
+		var/mob/living/carbon/human/H = M
+		for(var/obj/item/organ/internal/I in H.internal_organs)
+			if(!BP_IS_ROBOTIC(I))
+				if(I.organ_tag == BP_BRAIN)
+					if(I.damage >= I.max_damage)
+						continue
+					H.confused++
+					H.drowsyness++
+				I.heal_damage(removed*7)
+				if(prob(5))
+					to_chat(M, "<span class='danger'>You feel your insides fusing with the phoron and healing!</span>")
+				for(var/obj/item/organ/external/E in H.organs)
+					if(E.status & ORGAN_ARTERY_CUT)
+						E.status &= ~ORGAN_ARTERY_CUT
+		var/in_progress = 0
+		H.sleeping = 1
+		H.adjustBruteLoss(-5)
+		H.adjustFireLoss(-5)
+		for(var/obj/item/organ/external/E in H.organs)
+			if((E.status & ORGAN_BROKEN || E.is_stump()) && in_progress == 0 && !(BP_IS_ROBOTIC(E)))
+				in_progress = 1
+				to_chat(H, "<span class='notice'>You feel the jarring sensation of invisible hands forcing your [E.name] back together.</span>")
+				H.make_dizzy(10)
+				if(E.status || E.is_stump())
+					to_chat(H, "<span class='notice'><font size = [rand(1,3)]>POP!</font></span>")
+					playsound(H.loc, "fracture", 30, 1, -2)
+					if(E.is_stump() && (E.limb_flags & ORGAN_FLAG_CAN_AMPUTATE))
+						E.droplimb(1,DROPLIMB_EDGE)
+					else
+						E.status &= ~ORGAN_BROKEN
+				in_progress = 0
 	..()
 
 /datum/reagent/toxin/phoron/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
