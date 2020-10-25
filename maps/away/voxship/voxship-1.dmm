@@ -314,10 +314,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/item/device/radio/intercom/map_preset/voxship{
-	dir = 4;
-	pixel_x = -24
-	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship)
 "bb" = (
@@ -1974,25 +1970,6 @@
 /obj/item/device/suit_cooling_unit,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/base)
-"tj" = (
-/obj/item/device/radio/intercom/map_preset/voxship{
-	dir = 1;
-	pixel_y = -32
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/base)
-"wE" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/obj/item/device/radio/intercom/map_preset/voxship{
-	pixel_y = 24
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/base)
 "ys" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/catwalk,
@@ -2012,18 +1989,6 @@
 /obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/space)
-"Hx" = (
-/obj/machinery/telecomms/bus/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
-"KC" = (
-/obj/machinery/telecomms/receiver/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
-"Lm" = (
-/obj/machinery/telecomms/broadcaster/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
 "Lt" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2038,10 +2003,6 @@
 /obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/base)
-"RW" = (
-/obj/machinery/telecomms/processor/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
 "Tf" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/space)
@@ -2049,14 +2010,6 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/black,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship)
-"Wv" = (
-/obj/machinery/telecomms/server/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
-"YN" = (
-/obj/machinery/telecomms/hub/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/base)
 
 (1,1,1) = {"
 aa
@@ -6980,7 +6933,7 @@ bA
 cM
 dL
 aQ
-wE
+dT
 bU
 bT
 bB
@@ -7700,7 +7653,7 @@ bU
 bG
 ey
 aV
-tj
+aV
 aQ
 cH
 eB
@@ -8113,12 +8066,12 @@ aQ
 eq
 eB
 eg
-Wv
-KC
-RW
-YN
-Hx
-Lm
+ai
+ai
+ai
+ai
+ai
+ai
 cY
 ac
 ac

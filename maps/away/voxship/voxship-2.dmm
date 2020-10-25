@@ -8,10 +8,6 @@
 "ac" = (
 /turf/simulated/wall/r_wall/hull,
 /area/voxship/engineering)
-"ad" = (
-/obj/machinery/telecomms/processor/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/thrusters)
 "ae" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6;
@@ -117,17 +113,12 @@
 /obj/machinery/door/airlock/hatch/voxship,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"ao" = (
-/obj/machinery/telecomms/bus/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/thrusters)
 "ap" = (
 /obj/effect/decal/cleanable/filth,
 /turf/simulated/floor/plating/vox,
 /area/voxship/thrusters)
 "aq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/obj/machinery/telecomms/server/map_preset/voxship,
 /turf/simulated/floor/plating/vox,
 /area/voxship/thrusters)
 "ar" = (
@@ -181,7 +172,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/telecomms/hub/map_preset/voxship,
 /turf/simulated/floor/plating/vox,
 /area/voxship/thrusters)
 "aC" = (
@@ -3129,14 +3119,6 @@
 /obj/random/snack,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
-"Dc" = (
-/obj/machinery/telecomms/broadcaster/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/thrusters)
-"PN" = (
-/obj/machinery/telecomms/receiver/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
-/area/voxship/thrusters)
 
 (1,1,1) = {"
 fX
@@ -9501,7 +9483,7 @@ fX
 fX
 ab
 ab
-ao
+ah
 ah
 aX
 by
@@ -9602,7 +9584,7 @@ fX
 fX
 ab
 ab
-Dc
+ah
 ap
 aC
 aY
@@ -9703,7 +9685,7 @@ fX
 fX
 fX
 ab
-ad
+ah
 ah
 ah
 aD
@@ -9805,7 +9787,7 @@ fX
 fX
 fX
 ab
-PN
+ah
 ai
 aq
 aE
