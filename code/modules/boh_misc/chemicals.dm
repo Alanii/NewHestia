@@ -70,7 +70,7 @@
 /////////
 /obj/item/weapon/reagent_containers/glass/beaker/vial/zombie
 	name = "odd vial"
-	reagents_to_add = list(/datum/reagent/toxin/zombie = 30)
+	reagents_to_add = list(/datum/reagent/zombie = 30)
 
 /////////
 // Enfluroprobine

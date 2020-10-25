@@ -119,10 +119,10 @@ Please contact me on #coderbus IRC. ~Carn x
 #define HO_MUTATIONS_LAYER  1
 #define HO_SKIN_LAYER       2
 #define HO_DAMAGE_LAYER     3
-#define HO_SURGERY_LAYER    4 //bs12 specific.
-#define HO_UNDERWEAR_LAYER  5
-#define HO_UNIFORM_LAYER    6
-#define HO_ID_LAYER         7
+#define HO_UNDERWEAR_LAYER  4
+#define HO_UNIFORM_LAYER    5
+#define HO_ID_LAYER         6
+#define HO_SURGERY_LAYER    7 //bs12 specific.
 #define HO_SHOES_LAYER      8
 #define HO_GLOVES_LAYER     9
 #define HO_BELT_LAYER       10
@@ -380,9 +380,11 @@ var/global/list/damage_icon_parts = list()
 			var/husk_icon = species.get_husk_icon(src)
 			if(husk_icon)
 				var/icon/mask = new(base_icon)
+				var/blood = species.get_blood_colour(src)
 				var/icon/husk_over = new(species.husk_icon,"")
 				mask.MapColors(0,0,0,1, 0,0,0,1, 0,0,0,1, 0,0,0,1, 0,0,0,0)
 				husk_over.Blend(mask, ICON_ADD)
+				husk_over.Blend(blood, ICON_MULTIPLY)
 				base_icon.Blend(husk_over, ICON_OVERLAY)
 
 		human_icon_cache[icon_key] = base_icon
