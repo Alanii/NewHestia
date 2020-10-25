@@ -25,6 +25,12 @@
 	item_cost = 24
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
 
+/datum/uplink_item/item/armor/phoron_space_suit
+	name = "Modified Phoron Reconstructed Human Adapter"
+	desc = "A Modified Phoron Reconstructed Human Adapter, apply this and the new suit will offer the same protection as our best voidsuit."
+	item_cost = 16
+	path = /obj/item/device/plasmasanssuit_changer/traitor
+
 /datum/uplink_item/item/armor/soft_suit
 	name = "Soft Suit"
 	desc = "A generic soft suit, specially packed into an ordinary box. Once removed, it won't fit back in the box."

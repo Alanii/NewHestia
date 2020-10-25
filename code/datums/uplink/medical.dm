@@ -58,6 +58,12 @@
 	item_cost = 4
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
 
+/datum/uplink_item/item/medical/phoron
+	name = "Phoron"
+	desc = "While lethal to most, this is perfect for Phoron Reconstructed Humans. Great assassination tool as well."
+	item_cost = 12
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/phoron
+
 /datum/uplink_item/item/medical/peridaxon
 	name = "Peridaxon"
 	desc = "An autoinjector containing an emergency dose of peridaxon - a potent organ-mending medicine."

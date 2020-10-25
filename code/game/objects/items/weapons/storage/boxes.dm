@@ -120,6 +120,7 @@
 	icon_state = "survivaleng"
 	startswith = list(
 		/obj/item/weapon/tank/emergency/phoron = 2,
+		/obj/item/weapon/tape_roll = 1,
 		/obj/item/weapon/extinguisher/mini = 1,
 		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
 		/obj/item/stack/medical/bruise_pack = 1,
