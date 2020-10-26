@@ -397,8 +397,6 @@ SUBSYSTEM_DEF(jobs)
 	if(H.client.prefs.Gear() && job.loadout_allowed)
 		for(var/thing in H.client.prefs.Gear())
 			var/datum/gear/G = gear_datums[thing]
-			if(H.species == list(SPECIES_PLASMASANS))
-				loadout_taken_slots.Add(slot_head, slot_wear_suit)
 			if(G)
 				var/permitted = 0
 				if(G.allowed_branches)
