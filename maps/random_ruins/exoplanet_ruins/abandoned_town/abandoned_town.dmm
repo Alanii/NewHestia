@@ -4,7 +4,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "aU" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 1
@@ -13,136 +13,137 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "bM" = (
-/obj/structure/janitorialcart,
+/obj/structure/dogbed,
+/obj/item/weapon/gun/energy/ionrifle,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "cc" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "ci" = (
 /obj/machinery/door/airlock/external/glass/bolted,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "cX" = (
 /obj/structure/mopbucket,
 /obj/item/weapon/storage/bag/trash,
 /obj/item/weapon/mop/advanced,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "eL" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "fj" = (
 /mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "gq" = (
 /obj/item/stack/material/steel,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "gR" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "hn" = (
 /obj/structure/sign/warning/secure_area{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "hO" = (
 /obj/machinery/door/unpowered/simple/iron,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "hW" = (
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "iD" = (
 /obj/machinery/access_button/airlock_exterior{
 	pixel_y = -26
 	},
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "jZ" = (
 /obj/item/stack/material/rods,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "kn" = (
 /obj/effect/floor_decal/corner/yellow,
 /obj/effect/floor_decal/corner/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "ku" = (
 /obj/machinery/door/airlock/external/glass/bolted,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "la" = (
 /turf/simulated/floor/tiled/skrell,
-/area/template_noop)
+/area/outpost/abandoned)
 "lO" = (
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "lQ" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "mp" = (
 /obj/item/weapon/material/shard,
 /obj/structure/window/reinforced,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "mr" = (
 /obj/structure/flora/ausbushes/fernybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "mJ" = (
 /obj/structure/table/standard,
 /obj/random/medical,
 /obj/random/medical,
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "mL" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "nm" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "nq" = (
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "oo" = (
 /mob/living/simple_animal/hostile/syndicate/melee,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "ov" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "oX" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "pR" = (
 /obj/structure/bed/chair/armchair/green{
 	dir = 8
@@ -151,70 +152,70 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "qn" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "ri" = (
 /obj/item/inflatable/torn,
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "rP" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "rW" = (
 /obj/structure/table/rack/shelf,
 /obj/random/ammo,
 /obj/item/weapon/gun/projectile/pirate,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "sr" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/template_noop)
+/area/outpost/abandoned)
 "sx" = (
 /obj/item/weapon/bedsheet,
 /obj/structure/bed,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "sz" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "sD" = (
 /turf/simulated/wall/prepainted,
-/area/template_noop)
+/area/outpost/abandoned)
 "th" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "tx" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "tX" = (
 /mob/living/simple_animal/corgi,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "ub" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "uY" = (
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "wp" = (
 /obj/structure/window/reinforced,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "wJ" = (
 /obj/structure/sign/warning/vent_port{
 	pixel_y = 30
@@ -223,51 +224,51 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "xd" = (
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "xw" = (
 /obj/machinery/flasher/portable,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "yz" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "yM" = (
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
+/area/outpost/abandoned)
 "zn" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "zt" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "AR" = (
 /obj/effect/floor_decal/corner/blue/full,
 /obj/machinery/door/airlock/medical,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Be" = (
 /obj/machinery/body_scanconsole{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Bf" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "BS" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -275,7 +276,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "BV" = (
 /obj/structure/bed/chair/armchair/blue{
 	dir = 8
@@ -284,13 +285,13 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "Cn" = (
 /obj/item/weapon/bedsheet,
 /obj/structure/bed,
 /obj/item/paper/cig,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "CF" = (
 /obj/machinery/computer/modular{
 	dir = 8
@@ -299,54 +300,54 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "CL" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
+/area/outpost/abandoned)
 "Dq" = (
 /obj/machinery/flasher/portable,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "DI" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
+/area/outpost/abandoned)
 "DL" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Ei" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "El" = (
 /mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Em" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "ED" = (
 /obj/item/stack/material/steel,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "EJ" = (
 /obj/effect/wallframe_spawn,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "Fe" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Ff" = (
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/template_noop)
+/area/outpost/abandoned)
 "Fn" = (
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Fz" = (
 /obj/structure/bed/chair/armchair/red{
 	dir = 4
@@ -355,38 +356,38 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "FE" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "FQ" = (
 /obj/structure/table/rack/shelf,
 /obj/item/weapon/gun/energy/mindflayer,
 /turf/simulated/floor/tiled/skrell,
-/area/template_noop)
+/area/outpost/abandoned)
 "Hb" = (
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "HJ" = (
 /obj/structure/sign/bluecross_2{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Id" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled/skrell,
-/area/template_noop)
+/area/outpost/abandoned)
 "IB" = (
 /obj/item/weapon/material/shard,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "IY" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Jv" = (
 /obj/machinery/computer/modular{
 	dir = 8
@@ -395,7 +396,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "JF" = (
 /obj/machinery/button/windowtint{
 	pixel_x = 30
@@ -407,35 +408,35 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Lz" = (
 /obj/machinery/computer/modular{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/green/three_quarters,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "LA" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "LQ" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "LZ" = (
 /obj/effect/floor_decal/corner/blue,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Me" = (
 /obj/random/closet,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "Mi" = (
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "Mq" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -443,20 +444,20 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Nz" = (
 /obj/machinery/mining/drill,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "NG" = (
 /obj/structure/table/rack/shelf,
 /obj/random/powercell,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "NH" = (
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/template_noop)
+/area/outpost/abandoned)
 "NJ" = (
 /obj/item/modular_computer/telescreen/preset/engineering{
 	pixel_y = 30
@@ -466,58 +467,58 @@
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "Oi" = (
 /obj/machinery/door/airlock/external,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
+/area/outpost/abandoned)
 "Pc" = (
 /obj/machinery/atmospherics/pipe/vent{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Pn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/hat,
 /obj/random/powercell,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "PJ" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "Qd" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Qn" = (
 /obj/structure/table/steel,
 /obj/random/handgun,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "RQ" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "RV" = (
 /mob/living/bot/medbot,
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Sj" = (
 /obj/item/stack/material/rods,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "Sk" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "So" = (
 /mob/living/bot/mulebot,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Sv" = (
 /obj/machinery/airlock_sensor/airlock_interior{
 	pixel_x = 26
@@ -525,43 +526,43 @@
 /obj/machinery/atmospherics/pipe/vent,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "TA" = (
 /obj/machinery/mining/brace,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "TB" = (
 /obj/structure/bed/chair/comfy{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "TE" = (
 /turf/simulated/wall/iron,
-/area/template_noop)
+/area/outpost/abandoned)
 "TH" = (
 /obj/structure/closet/walllocker/emerglocker{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Ue" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Uq" = (
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "UF" = (
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/skrell,
-/area/template_noop)
+/area/outpost/abandoned)
 "UH" = (
 /obj/machinery/sleeper{
 	dir = 4
@@ -570,22 +571,22 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Vn" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Wg" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Ww" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "WG" = (
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/outpost/abandoned)
 "WJ" = (
 /obj/structure/bed/chair/armchair/yellow{
 	dir = 4
@@ -594,35 +595,35 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "WK" = (
 /mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "WL" = (
 /obj/item/weapon/material/shard,
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "Xl" = (
 /obj/structure/sign/warning/secure_area/armory{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "XS" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Yb" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/grass,
-/area/template_noop)
+/area/outpost/abandoned)
 "Yl" = (
 /obj/machinery/computer/modular{
 	dir = 4
@@ -631,39 +632,39 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/outpost/abandoned)
 "Yn" = (
 /obj/item/weapon/inflatable_dispenser,
 /turf/template_noop,
-/area/template_noop)
+/area/outpost/abandoned)
 "YH" = (
 /obj/machinery/door/airlock/glass/command,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
+/area/outpost/abandoned)
 "YL" = (
 /obj/structure/table/standard,
 /obj/item/weapon/defibrillator,
 /obj/random/medical,
 /turf/simulated/floor/tiled/white,
-/area/template_noop)
+/area/outpost/abandoned)
 "Zw" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "Zz" = (
 /obj/structure/table/rack/shelf,
 /obj/random/illegaltwo,
 /obj/random/illegaltwo,
 /obj/random/contraband,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 "ZA" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/one,
 /turf/simulated/floor/tiled/dark,
-/area/template_noop)
+/area/outpost/abandoned)
 
 (1,1,1) = {"
 Mi
