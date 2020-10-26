@@ -4,7 +4,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "aU" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 1
@@ -13,137 +13,137 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "bM" = (
 /obj/structure/dogbed,
 /obj/item/weapon/gun/energy/ionrifle,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "cc" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ci" = (
 /obj/machinery/door/airlock/external/glass/bolted,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "cX" = (
 /obj/structure/mopbucket,
 /obj/item/weapon/storage/bag/trash,
 /obj/item/weapon/mop/advanced,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "eL" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "fj" = (
 /mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "gq" = (
 /obj/item/stack/material/steel,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "gR" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "hn" = (
 /obj/structure/sign/warning/secure_area{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "hO" = (
 /obj/machinery/door/unpowered/simple/iron,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "hW" = (
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "iD" = (
 /obj/machinery/access_button/airlock_exterior{
 	pixel_y = -26
 	},
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "jZ" = (
 /obj/item/stack/material/rods,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "kn" = (
 /obj/effect/floor_decal/corner/yellow,
 /obj/effect/floor_decal/corner/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ku" = (
 /obj/machinery/door/airlock/external/glass/bolted,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "la" = (
 /turf/simulated/floor/tiled/skrell,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "lO" = (
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "lQ" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "mp" = (
 /obj/item/weapon/material/shard,
 /obj/structure/window/reinforced,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "mr" = (
 /obj/structure/flora/ausbushes/fernybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "mJ" = (
 /obj/structure/table/standard,
 /obj/random/medical,
 /obj/random/medical,
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "mL" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "nm" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "nq" = (
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "oo" = (
 /mob/living/simple_animal/hostile/syndicate/melee,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ov" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "oX" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "pR" = (
 /obj/structure/bed/chair/armchair/green{
 	dir = 8
@@ -152,70 +152,70 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "qn" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ri" = (
 /obj/item/inflatable/torn,
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "rP" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "rW" = (
 /obj/structure/table/rack/shelf,
 /obj/random/ammo,
 /obj/item/weapon/gun/projectile/pirate,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "sr" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "sx" = (
 /obj/item/weapon/bedsheet,
 /obj/structure/bed,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "sz" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "sD" = (
 /turf/simulated/wall/prepainted,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "th" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "tx" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "tX" = (
 /mob/living/simple_animal/corgi,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ub" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "uY" = (
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "wp" = (
 /obj/structure/window/reinforced,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "wJ" = (
 /obj/structure/sign/warning/vent_port{
 	pixel_y = 30
@@ -224,51 +224,51 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "xd" = (
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "xw" = (
 /obj/machinery/flasher/portable,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "yz" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "yM" = (
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "zn" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "zt" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "AR" = (
 /obj/effect/floor_decal/corner/blue/full,
 /obj/machinery/door/airlock/medical,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Be" = (
 /obj/machinery/body_scanconsole{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Bf" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "BS" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -276,7 +276,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "BV" = (
 /obj/structure/bed/chair/armchair/blue{
 	dir = 8
@@ -285,13 +285,13 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Cn" = (
 /obj/item/weapon/bedsheet,
 /obj/structure/bed,
 /obj/item/paper/cig,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "CF" = (
 /obj/machinery/computer/modular{
 	dir = 8
@@ -300,54 +300,54 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "CL" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Dq" = (
 /obj/machinery/flasher/portable,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "DI" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "DL" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Ei" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "El" = (
 /mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Em" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ED" = (
 /obj/item/stack/material/steel,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "EJ" = (
 /obj/effect/wallframe_spawn,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Fe" = (
 /mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Ff" = (
 /obj/machinery/door/airlock/vault,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Fn" = (
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Fz" = (
 /obj/structure/bed/chair/armchair/red{
 	dir = 4
@@ -356,38 +356,38 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "FE" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "FQ" = (
 /obj/structure/table/rack/shelf,
 /obj/item/weapon/gun/energy/mindflayer,
 /turf/simulated/floor/tiled/skrell,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Hb" = (
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "HJ" = (
 /obj/structure/sign/bluecross_2{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Id" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled/skrell,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "IB" = (
 /obj/item/weapon/material/shard,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "IY" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Jv" = (
 /obj/machinery/computer/modular{
 	dir = 8
@@ -396,7 +396,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "JF" = (
 /obj/machinery/button/windowtint{
 	pixel_x = 30
@@ -408,35 +408,35 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Lz" = (
 /obj/machinery/computer/modular{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/green/three_quarters,
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "LA" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "LQ" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "LZ" = (
 /obj/effect/floor_decal/corner/blue,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Me" = (
 /obj/random/closet,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Mi" = (
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Mq" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -444,20 +444,20 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Nz" = (
 /obj/machinery/mining/drill,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "NG" = (
 /obj/structure/table/rack/shelf,
 /obj/random/powercell,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "NH" = (
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "NJ" = (
 /obj/item/modular_computer/telescreen/preset/engineering{
 	pixel_y = 30
@@ -467,58 +467,58 @@
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Oi" = (
 /obj/machinery/door/airlock/external,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Pc" = (
 /obj/machinery/atmospherics/pipe/vent{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Pn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/hat,
 /obj/random/powercell,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "PJ" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Qd" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Qn" = (
 /obj/structure/table/steel,
 /obj/random/handgun,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "RQ" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "RV" = (
 /mob/living/bot/medbot,
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Sj" = (
 /obj/item/stack/material/rods,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Sk" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "So" = (
 /mob/living/bot/mulebot,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Sv" = (
 /obj/machinery/airlock_sensor/airlock_interior{
 	pixel_x = 26
@@ -526,43 +526,43 @@
 /obj/machinery/atmospherics/pipe/vent,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "TA" = (
 /obj/machinery/mining/brace,
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "TB" = (
 /obj/structure/bed/chair/comfy{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "TE" = (
 /turf/simulated/wall/iron,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "TH" = (
 /obj/structure/closet/walllocker/emerglocker{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Ue" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Uq" = (
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "UF" = (
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/skrell,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "UH" = (
 /obj/machinery/sleeper{
 	dir = 4
@@ -571,22 +571,22 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Vn" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Wg" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Ww" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "WG" = (
 /turf/simulated/floor/exoplanet/concrete,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "WJ" = (
 /obj/structure/bed/chair/armchair/yellow{
 	dir = 4
@@ -595,35 +595,35 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "WK" = (
 /mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "WL" = (
 /obj/item/weapon/material/shard,
 /obj/item/weapon/material/shard,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Xl" = (
 /obj/structure/sign/warning/secure_area/armory{
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "XS" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Yb" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/grass,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Yl" = (
 /obj/machinery/computer/modular{
 	dir = 4
@@ -632,39 +632,39 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Yn" = (
 /obj/item/weapon/inflatable_dispenser,
 /turf/template_noop,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "YH" = (
 /obj/machinery/door/airlock/glass/command,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "YL" = (
 /obj/structure/table/standard,
 /obj/item/weapon/defibrillator,
 /obj/random/medical,
 /turf/simulated/floor/tiled/white,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Zw" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "Zz" = (
 /obj/structure/table/rack/shelf,
 /obj/random/illegaltwo,
 /obj/random/illegaltwo,
 /obj/random/contraband,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 "ZA" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/one,
 /turf/simulated/floor/tiled/dark,
-/area/outpost/abandoned)
+/area/lost_supply_base/common)
 
 (1,1,1) = {"
 Mi
