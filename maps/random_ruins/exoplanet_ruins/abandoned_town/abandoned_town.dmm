@@ -1,0 +1,1630 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aG" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"aU" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"bM" = (
+/obj/structure/janitorialcart,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"cc" = (
+/obj/effect/wallframe_spawn/no_grille,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"ci" = (
+/obj/machinery/door/airlock/external/glass/bolted,
+/turf/template_noop,
+/area/template_noop)
+"cX" = (
+/obj/structure/mopbucket,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/mop/advanced,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"eL" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"fj" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"gq" = (
+/obj/item/stack/material/steel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"gR" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"hn" = (
+/obj/structure/sign/warning/secure_area{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"hO" = (
+/obj/machinery/door/unpowered/simple/iron,
+/turf/template_noop,
+/area/template_noop)
+"hW" = (
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"iD" = (
+/obj/machinery/access_button/airlock_exterior{
+	pixel_y = -26
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"jZ" = (
+/obj/item/stack/material/rods,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"kn" = (
+/obj/effect/floor_decal/corner/yellow,
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"ku" = (
+/obj/machinery/door/airlock/external/glass/bolted,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"la" = (
+/turf/simulated/floor/tiled/skrell,
+/area/template_noop)
+"lO" = (
+/obj/structure/inflatable/wall,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"lQ" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"mp" = (
+/obj/item/weapon/material/shard,
+/obj/structure/window/reinforced,
+/turf/template_noop,
+/area/template_noop)
+"mr" = (
+/obj/structure/flora/ausbushes/fernybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"mJ" = (
+/obj/structure/table/standard,
+/obj/random/medical,
+/obj/random/medical,
+/obj/machinery/atmospherics/unary/vent_pump,
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"mL" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"nm" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/sunnybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"nq" = (
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"oo" = (
+/mob/living/simple_animal/hostile/syndicate/melee,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"ov" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"oX" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"pR" = (
+/obj/structure/bed/chair/armchair/green{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"qn" = (
+/obj/structure/table/standard,
+/obj/structure/bedsheetbin,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"ri" = (
+/obj/item/inflatable/torn,
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/template_noop)
+"rP" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"rW" = (
+/obj/structure/table/rack/shelf,
+/obj/random/ammo,
+/obj/item/weapon/gun/projectile/pirate,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"sr" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/template_noop)
+"sx" = (
+/obj/item/weapon/bedsheet,
+/obj/structure/bed,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"sz" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"sD" = (
+/turf/simulated/wall/prepainted,
+/area/template_noop)
+"th" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/template_noop,
+/area/template_noop)
+"tx" = (
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"tX" = (
+/mob/living/simple_animal/corgi,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"ub" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"uY" = (
+/obj/effect/floor_decal/corner/yellow,
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"wp" = (
+/obj/structure/window/reinforced,
+/turf/template_noop,
+/area/template_noop)
+"wJ" = (
+/obj/structure/sign/warning/vent_port{
+	pixel_y = 30
+	},
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/template_noop)
+"xd" = (
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/template_noop)
+"xw" = (
+/obj/machinery/flasher/portable,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"yz" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"yM" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
+"zn" = (
+/obj/machinery/atmospherics/unary/vent_pump,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"zt" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"AR" = (
+/obj/effect/floor_decal/corner/blue/full,
+/obj/machinery/door/airlock/medical,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Be" = (
+/obj/machinery/body_scanconsole{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Bf" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"BS" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"BV" = (
+/obj/structure/bed/chair/armchair/blue{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"Cn" = (
+/obj/item/weapon/bedsheet,
+/obj/structure/bed,
+/obj/item/paper/cig,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"CF" = (
+/obj/machinery/computer/modular{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/three_quarters{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"CL" = (
+/obj/machinery/door/airlock/hatch/maintenance,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
+"Dq" = (
+/obj/machinery/flasher/portable,
+/turf/template_noop,
+/area/template_noop)
+"DI" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"DL" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Ei" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"El" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Em" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"ED" = (
+/obj/item/stack/material/steel,
+/turf/template_noop,
+/area/template_noop)
+"EJ" = (
+/obj/effect/wallframe_spawn,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"Fe" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Ff" = (
+/obj/machinery/door/airlock/vault,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/template_noop)
+"Fn" = (
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Fz" = (
+/obj/structure/bed/chair/armchair/red{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"FB" = (
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
+"FE" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"FQ" = (
+/obj/structure/table/rack/shelf,
+/obj/item/weapon/gun/energy/mindflayer,
+/turf/simulated/floor/tiled/skrell,
+/area/template_noop)
+"Hb" = (
+/turf/simulated/floor/plating,
+/area/template_noop)
+"HJ" = (
+/obj/structure/sign/bluecross_2{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Id" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/skrell,
+/area/template_noop)
+"IB" = (
+/obj/item/weapon/material/shard,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"IY" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Jv" = (
+/obj/machinery/computer/modular{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/yellow/three_quarters{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"JF" = (
+/obj/machinery/button/windowtint{
+	pixel_x = 30
+	},
+/obj/machinery/bodyscanner{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Lz" = (
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/green/three_quarters,
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"LA" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"LQ" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"LZ" = (
+/obj/effect/floor_decal/corner/blue,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Me" = (
+/obj/random/closet,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"Mi" = (
+/turf/template_noop,
+/area/template_noop)
+"Mq" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Nz" = (
+/obj/machinery/mining/drill,
+/turf/template_noop,
+/area/template_noop)
+"NG" = (
+/obj/structure/table/rack/shelf,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"NH" = (
+/obj/structure/inflatable/door,
+/turf/simulated/floor/plating,
+/area/template_noop)
+"NJ" = (
+/obj/item/modular_computer/telescreen/preset/engineering{
+	pixel_y = 30
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"Oi" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
+"Pc" = (
+/obj/machinery/atmospherics/pipe/vent{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Pn" = (
+/obj/structure/table/rack/shelf,
+/obj/random/hat,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"PJ" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"Qd" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Qn" = (
+/obj/structure/table/steel,
+/obj/random/handgun,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"RQ" = (
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"RV" = (
+/mob/living/bot/medbot,
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Sj" = (
+/obj/item/stack/material/rods,
+/turf/template_noop,
+/area/template_noop)
+"Sk" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"So" = (
+/mob/living/bot/mulebot,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Sv" = (
+/obj/machinery/airlock_sensor/airlock_interior{
+	pixel_x = 26
+	},
+/obj/machinery/atmospherics/pipe/vent,
+/obj/structure/inflatable/door,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"TA" = (
+/obj/machinery/mining/brace,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"TB" = (
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"TE" = (
+/turf/simulated/wall/iron,
+/area/template_noop)
+"TH" = (
+/obj/structure/closet/walllocker/emerglocker{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Ue" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Uq" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"UF" = (
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/tiled/skrell,
+/area/template_noop)
+"UH" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Vn" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Wg" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Ww" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"WG" = (
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"WJ" = (
+/obj/structure/bed/chair/armchair/yellow{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/yellow{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"WK" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"WL" = (
+/obj/item/weapon/material/shard,
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/template_noop)
+"Xl" = (
+/obj/structure/sign/warning/secure_area/armory{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"XS" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Yb" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/grass,
+/area/template_noop)
+"Yl" = (
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/three_quarters{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/template_noop)
+"Yn" = (
+/obj/item/weapon/inflatable_dispenser,
+/turf/template_noop,
+/area/template_noop)
+"YH" = (
+/obj/machinery/door/airlock/multi_tile/glass,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
+"YL" = (
+/obj/structure/table/standard,
+/obj/item/weapon/defibrillator,
+/obj/random/medical,
+/turf/simulated/floor/tiled/white,
+/area/template_noop)
+"Zw" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"Zz" = (
+/obj/structure/table/rack/shelf,
+/obj/random/illegaltwo,
+/obj/random/illegaltwo,
+/obj/random/contraband,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+"ZA" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/one,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+
+(1,1,1) = {"
+Mi
+Mi
+Mi
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+"}
+(2,1,1) = {"
+Mi
+Mi
+WG
+WG
+sr
+sr
+sr
+sr
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+th
+Mi
+WG
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+WG
+"}
+(3,1,1) = {"
+Mi
+Mi
+WG
+sr
+sr
+qn
+Me
+sr
+sr
+sr
+FE
+FE
+FE
+FE
+FE
+sr
+sr
+sr
+WG
+Mi
+jZ
+WG
+sr
+rW
+Fn
+Fn
+Fn
+Ww
+sr
+WG
+"}
+(4,1,1) = {"
+Mi
+Mi
+WG
+sr
+bM
+Hb
+Hb
+sD
+So
+Fn
+Fe
+Fn
+Fn
+Fn
+Fn
+Fn
+RQ
+sr
+WG
+WG
+WG
+WG
+sr
+NG
+Ww
+Fn
+Fn
+Fn
+sr
+WG
+"}
+(5,1,1) = {"
+Mi
+Mi
+WG
+sr
+cX
+tX
+Em
+sD
+TH
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+sr
+sr
+sr
+WG
+WG
+sr
+Pn
+Fn
+Fn
+Fn
+Fn
+sr
+WG
+"}
+(6,1,1) = {"
+Mi
+Mi
+WG
+sr
+sD
+CL
+sD
+sD
+Fn
+Fn
+sD
+sD
+yM
+sD
+sD
+Fn
+Fn
+Fn
+Uq
+sr
+WG
+WG
+sr
+Zz
+Fn
+Fn
+Fn
+Fn
+sr
+WG
+"}
+(7,1,1) = {"
+Mi
+Mi
+WG
+sr
+zn
+Fn
+sx
+sD
+Fn
+Fn
+EJ
+Yl
+aU
+Lz
+EJ
+Fn
+Fn
+Fn
+ZA
+sr
+WG
+iD
+sr
+sr
+sr
+Fn
+Fn
+Fn
+sr
+WG
+"}
+(8,1,1) = {"
+Mi
+Mi
+WG
+sr
+Cn
+Fn
+aG
+sD
+Fn
+Fn
+EJ
+BV
+hW
+pR
+EJ
+Fn
+Fn
+Fn
+TB
+sr
+WG
+WG
+Oi
+Sv
+Oi
+Fn
+Fn
+WK
+sr
+WG
+"}
+(9,1,1) = {"
+Mi
+Mi
+WG
+sr
+Fn
+oo
+Zw
+sD
+Bf
+Fn
+sD
+NJ
+hW
+sz
+sD
+Fn
+WK
+sr
+sr
+sr
+WG
+WG
+sr
+sr
+sr
+Xl
+Fn
+hn
+sr
+WG
+"}
+(10,1,1) = {"
+Mi
+Mi
+WG
+sr
+sx
+Fn
+Zw
+yM
+Bf
+Fn
+YH
+hW
+hW
+hW
+YH
+Fn
+Fn
+sr
+Pc
+sr
+WG
+WG
+WG
+WG
+sr
+sr
+Ff
+sr
+sr
+WG
+"}
+(11,1,1) = {"
+Mi
+Mi
+WG
+sr
+Fn
+El
+Zw
+sD
+Bf
+Fn
+FB
+hW
+hW
+hW
+FB
+Fn
+Fn
+sr
+Pc
+ci
+WG
+WG
+WG
+WG
+sr
+UF
+la
+la
+sr
+WG
+"}
+(12,1,1) = {"
+Mi
+Mi
+WG
+sr
+sx
+Fn
+Fn
+sD
+Fn
+Fn
+sD
+ub
+hW
+uY
+sD
+Fn
+Fn
+ku
+Pc
+sr
+WG
+WG
+jZ
+WG
+sr
+UF
+la
+la
+sr
+WG
+"}
+(13,1,1) = {"
+Mi
+Mi
+WG
+sr
+zn
+Fn
+sx
+sD
+Fn
+Fn
+EJ
+Fz
+hW
+WJ
+EJ
+Fn
+Fn
+sr
+sr
+sr
+WG
+WG
+WG
+WG
+sr
+UF
+la
+la
+sr
+WG
+"}
+(14,1,1) = {"
+Mi
+Mi
+WG
+sr
+sx
+Fn
+aG
+sD
+Fn
+Fn
+EJ
+CF
+kn
+Jv
+EJ
+Fn
+Fn
+sr
+wJ
+WG
+WG
+WG
+IB
+WG
+sr
+UF
+la
+UF
+sr
+WG
+"}
+(15,1,1) = {"
+Mi
+Mi
+Mi
+sr
+sD
+RQ
+sx
+sD
+Fn
+Fn
+sD
+sD
+yM
+sD
+sD
+Fn
+Fn
+sr
+WG
+WG
+WG
+WG
+WG
+WG
+sr
+FQ
+Id
+UF
+sr
+WG
+"}
+(16,1,1) = {"
+Mi
+Mi
+Mi
+sr
+sr
+sD
+sD
+sD
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+sr
+WG
+PJ
+Mq
+WG
+WG
+WG
+sr
+sr
+sr
+sr
+sr
+WG
+"}
+(17,1,1) = {"
+Mi
+Hb
+Hb
+sr
+lO
+NH
+NH
+CL
+Fn
+Fn
+Fn
+Fn
+HJ
+Fn
+Fn
+Fn
+Fn
+sr
+PJ
+oX
+eL
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+"}
+(18,1,1) = {"
+Mi
+Hb
+Mi
+sr
+lO
+NH
+sr
+sD
+sD
+sD
+DI
+DI
+sD
+sD
+sD
+sD
+sr
+sr
+PJ
+Wg
+Qd
+IB
+WG
+xd
+xd
+mp
+WG
+WG
+Mi
+Mi
+"}
+(19,1,1) = {"
+Mi
+Mi
+ED
+Mi
+Hb
+NH
+sr
+rP
+LQ
+cc
+LA
+Fn
+cc
+mJ
+nq
+UH
+sr
+WG
+PJ
+Wg
+IY
+WG
+WG
+Mi
+Nz
+wp
+WG
+WG
+Mi
+Mi
+"}
+(20,1,1) = {"
+Mi
+Hb
+Mi
+ri
+Sj
+Hb
+sr
+LQ
+Ei
+cc
+LA
+Fn
+cc
+nq
+nq
+nq
+sr
+WG
+PJ
+Ei
+nm
+WG
+WG
+xd
+Mi
+mp
+WG
+WG
+Mi
+Mi
+"}
+(21,1,1) = {"
+Mi
+Mi
+Mi
+Hb
+Mi
+Sj
+sr
+rP
+Wg
+cc
+LA
+LZ
+cc
+mL
+nq
+nq
+sr
+PJ
+Yb
+mr
+lQ
+WG
+WG
+xd
+th
+wp
+WG
+WG
+Mi
+Mi
+"}
+(22,1,1) = {"
+Mi
+Mi
+xd
+Mi
+ED
+Mi
+sr
+Vn
+tx
+cc
+LA
+Zw
+AR
+XS
+RV
+nq
+sr
+PJ
+Vn
+Ei
+eL
+WG
+WG
+WG
+WG
+TA
+TA
+WG
+WG
+Mi
+"}
+(23,1,1) = {"
+Mi
+Mi
+ED
+WL
+Mi
+Yn
+sr
+rP
+rP
+cc
+LA
+ov
+cc
+JF
+Be
+YL
+sr
+PJ
+rP
+DL
+gR
+WG
+WG
+WG
+TE
+TE
+TE
+TE
+WG
+Mi
+"}
+(24,1,1) = {"
+Mi
+Mi
+Mi
+ED
+Mi
+Mi
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+PJ
+Wg
+Vn
+gR
+WG
+WG
+WG
+TE
+Qn
+Sk
+TE
+WG
+Mi
+"}
+(25,1,1) = {"
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+WG
+PJ
+zt
+Ue
+BS
+WG
+WG
+TE
+TE
+WG
+fj
+TE
+WG
+Mi
+"}
+(26,1,1) = {"
+Mi
+Mi
+Mi
+Mi
+Hb
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+WG
+WG
+WG
+WG
+WG
+WG
+gq
+WG
+WG
+WG
+WG
+WG
+hO
+WG
+yz
+WG
+TE
+WG
+Mi
+"}
+(27,1,1) = {"
+Mi
+ED
+Mi
+Mi
+Mi
+Mi
+ED
+Mi
+Mi
+ED
+Mi
+Mi
+Mi
+WG
+WG
+WG
+jZ
+WG
+WG
+WG
+WG
+WG
+WG
+TE
+TE
+WG
+xw
+TE
+WG
+Mi
+"}
+(28,1,1) = {"
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Dq
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Sj
+Mi
+Mi
+WG
+TE
+TE
+TE
+TE
+WG
+Mi
+"}
+(29,1,1) = {"
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+ED
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+WG
+WG
+WG
+WG
+WG
+WG
+Mi
+"}
+(30,1,1) = {"
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+Mi
+"}
