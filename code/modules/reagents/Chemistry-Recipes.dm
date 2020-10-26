@@ -2373,35 +2373,36 @@
 /datum/chemical_reaction/anfo
 	name = "EZ-ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/eznutrient=20, /datum/reagent/fuel=10)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/eznutrient=30, /datum/reagent/fuel=15)
 	result_amount = 15
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo2
 	name = "Left 4 ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/left4zed=10, /datum/reagent/fuel=5)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/left4zed=20, /datum/reagent/fuel=10)
 	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo3
 	name = "Robust ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/robustharvest=15, /datum/reagent/fuel=5)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/robustharvest=30, /datum/reagent/fuel=10)
 	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo4
 	name = "Chemlab ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/ammonia=10, /datum/reagent/fuel=5)
-	result_amount = 15
+	required_reagents = list(/datum/reagent/ammonia=20, /datum/reagent/fuel=20)
+	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo_plus
 	name = "ANFO+"
 	result = /datum/reagent/anfo/plus
 	required_reagents = list(/datum/reagent/anfo=15, /datum/reagent/aluminium=5)
+	catalysts = list(/datum/reagent/toxin/phoron = 5)
 	result_amount = 20
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
