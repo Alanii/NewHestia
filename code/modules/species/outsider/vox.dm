@@ -155,9 +155,10 @@
 	speech_chance = 10
 
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_IS_WHITELISTED
-	brute_mod = 0.75
-	burn_mod = 0.75
-	toxins_mod = 1.5
+	brute_mod = 0.6
+	burn_mod = 0.6
+	toxins_mod = 1.2
+	strenght = STR_HIGH
 	mob_size = MOB_LARGE
 
 	bump_flag = HEAVY
