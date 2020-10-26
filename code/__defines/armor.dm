@@ -11,10 +11,10 @@
 
 #define  ARMOR_LASER_MINOR			10
 #define  ARMOR_LASER_SMALL			25	//Blocks small e-guns
-#define  ARMOR_LASER_HANDGUNS		40	//Blocks normal e-guns
-#define  ARMOR_LASER_MAJOR			50
-#define  ARMOR_LASER_RIFLES			70	//Blocks laser rifles
-#define  ARMOR_LASER_HEAVY			100
+#define  ARMOR_LASER_PISTOL			50	//Blocks normal e-guns
+#define  ARMOR_LASER_RESISTANT		65
+#define  ARMOR_LASER_RIFLE			80	//Blocks laser rifles
+#define  ARMOR_LASER_HEAVY			110
 
 #define  ARMOR_MELEE_MINOR			5
 #define  ARMOR_MELEE_SMALL			10

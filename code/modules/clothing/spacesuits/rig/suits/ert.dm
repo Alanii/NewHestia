@@ -14,7 +14,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -53,13 +53,13 @@
 	desc = "A hardsuit, designed for response teams and the like. Designed for engineering use and bomb disposal. Has orange highlights."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
-		
+
 	armor = list( //This is the guy you throw at a bomb, or a hole in the ship.
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_SHIELDED, 
+		bomb = ARMOR_BOMB_SHIELDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
@@ -108,7 +108,7 @@
 	armor = list( //Same as the Lead Commander
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -124,7 +124,7 @@
 	armor = list( //This is the guy you throw at antags.
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -143,11 +143,11 @@
 	name = "heavy emergency response suit control module"
 	desc = "A very heavy hardsuit, modified to take on the galaxies most hostile environments, this one appears to have a LOT of armour. Do not mess with the person wearing this."
 	icon_state = "asset_protection_rig"
-	
+
 	armor = list( //This is the guy you throw at everything.
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_RIFLE,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
