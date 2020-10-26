@@ -310,7 +310,7 @@
 /area/template_noop)
 "DI" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
 "DL" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -355,9 +355,6 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/template_noop)
-"FB" = (
-/turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
 "FE" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
@@ -640,7 +637,7 @@
 /turf/template_noop,
 /area/template_noop)
 "YH" = (
-/obj/machinery/door/airlock/multi_tile/glass,
+/obj/machinery/door/airlock/glass/command,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
 "YL" = (
@@ -999,11 +996,11 @@ Zw
 sD
 Bf
 Fn
-FB
+YH
 hW
 hW
 hW
-FB
+YH
 Fn
 Fn
 sr
