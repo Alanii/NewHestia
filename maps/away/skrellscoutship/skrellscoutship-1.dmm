@@ -1234,6 +1234,11 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+/obj/item/device/radio/headset/skrellian,
+/obj/item/device/radio/headset/skrellian,
+/obj/item/device/radio/headset/skrellian,
+/obj/item/device/radio/headset/skrellian,
+/obj/item/device/radio/headset/skrellian,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/quarters)
 "de" = (
