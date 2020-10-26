@@ -2168,7 +2168,6 @@
 	dir = 8;
 	icon_state = "map_scrubber_on"
 	},
-/obj/structure/armalispod,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/fore)
 "eQ" = (

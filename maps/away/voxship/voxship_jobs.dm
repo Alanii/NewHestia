@@ -192,4 +192,7 @@
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
 	name = "Quill"
 
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/vox_armalis
+	name = "Armalis"
+	
 #undef VOXSHIP_OUTFIT_JOB_NAME
