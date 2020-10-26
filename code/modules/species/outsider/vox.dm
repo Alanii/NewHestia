@@ -158,7 +158,7 @@
 	brute_mod = 0.6
 	burn_mod = 0.6
 	toxins_mod = 1.2
-	strenght = STR_HIGH
+	strength = STR_HIGH
 	mob_size = MOB_LARGE
 
 	bump_flag = HEAVY
