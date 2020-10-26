@@ -334,7 +334,7 @@
 		organ.vital = 0
 		if (!BP_IS_ROBOTIC(organ))
 			organ.rejuvenate(1)
-			organ.max_damage *= 1.5
+			organ.max_damage *= 2
 			organ.min_broken_damage = Floor(organ.max_damage * 0.75)
 
 	resuscitate()
@@ -345,7 +345,7 @@
 		for(var/decl/hierarchy/skill/S in GLOB.skills) //Only want trained CQC and athletics
 			skillset.skill_list[S.type] = SKILL_NONE
 		skillset.skill_list[SKILL_HAULING] = SKILL_ADEPT
-		skillset.skill_list[SKILL_COMBAT] = SKILL_ADEPT
+		skillset.skill_list[SKILL_COMBAT] = SKILL_EXPERT
 		skillset.on_levels_change()
 
 	species = all_species[SPECIES_ZOMBIE]
