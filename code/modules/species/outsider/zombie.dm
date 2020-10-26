@@ -6,7 +6,7 @@
 	death_message = "writhes and twitches before falling motionless."
 	species_flags = SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SCAN
 	brute_mod = 1
-	burn_mod = 3 //Vulnerable to fire
+	burn_mod = 2 //Vulnerable to fire
 	oxy_mod = 0
 	stun_mod = 0.05
 	weaken_mod = 0.05
@@ -24,7 +24,7 @@
 	unarmed_types = list(/datum/unarmed_attack/bite/sharp/zombie)
 	move_intents = list(/decl/move_intent/creep)
 
-	var/heal_rate = 0.5 // Regen.
+	var/heal_rate = 1 // Regen.
 	var/mob/living/carbon/human/target = null
 
 	var/list/obstacles = list(/obj/structure/window,
@@ -86,8 +86,7 @@
 		if(I.damage > 0)
 			I.damage = max(I.damage - heal_rate, 0)
 
-	if(H.should_have_organ(BP_HEART) && H.organs_by_name[BP_HEART])
-		H.vessel.add_reagent(/datum/reagent/blood, min(heal_rate*5, blood_volume - H.vessel.total_volume))
+	H.vessel.add_reagent(/datum/reagent/blood, min(heal_rate*10, blood_volume - H.vessel.total_volume))
 
 	if(H.getBruteLoss() || H.getFireLoss() || H.getOxyLoss() || H.getToxLoss())
 		H.adjustBruteLoss(-heal_rate)

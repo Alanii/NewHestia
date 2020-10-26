@@ -135,7 +135,7 @@ var/global/list/sparring_attack_cache = list()
 
 /datum/unarmed_attack/bite/sharp/zombie
 	attack_verb = list("slashed", "sunk their teeth into", "bit", "mauled")
-	damage = 4
+	damage = 3
 
 /datum/unarmed_attack/bite/sharp/zombie/is_usable(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone)
 	. = ..()
@@ -154,6 +154,8 @@ var/global/list/sparring_attack_cache = list()
 
 	if(!(target.species.name in ORGANIC_SPECIES) || isspecies(target,SPECIES_DIONA) || target.isFBP()) //No need to check infection for FBPs
 		return
+
+	target.adjustHalLoss(9) //To help bring down targets in voidsuits
 
 	var/vuln = 1 - target.get_blocked_ratio(zone, TOX, damage_flags = DAM_BIO) //Are they protected from bites?
 	if(vuln > 0.05)
