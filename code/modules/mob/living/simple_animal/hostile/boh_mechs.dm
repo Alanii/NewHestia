@@ -36,7 +36,7 @@ Not much else to it.
 	natural_armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_AP,
-		laser = ARMOR_LASER_RIFLES
+		laser = ARMOR_LASER_RIFLE
 		)
 	can_escape = TRUE
 	armor_type = /datum/extension/armor/toggle

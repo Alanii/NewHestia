@@ -63,6 +63,7 @@
 	Additionally, it features a higher capacity."
 	charge_cost = 10
 	max_shots = 20
+	fire_delay = 10
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(

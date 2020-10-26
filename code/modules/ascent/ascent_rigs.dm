@@ -8,7 +8,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_RIFLE,
 		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -235,7 +235,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_RIFLE,
 		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -270,7 +270,7 @@
 
 /obj/item/clothing/suit/space/rig/mantid/serpentid
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
-	
+
 //Queen Rig
 /obj/item/weapon/rig/mantid/nabber/queen
 	name = "small support exosuit"

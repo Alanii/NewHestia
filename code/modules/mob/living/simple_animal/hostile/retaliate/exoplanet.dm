@@ -184,7 +184,7 @@
 	natural_armor = list(
 		melee = ARMOR_MELEE_RESISTANT
 		)
-	
+
 /mob/living/simple_animal/hostile/retaliate/beast/charbaby
 	name = "charbaby"
 	desc = "A huge grubby creature."
@@ -207,7 +207,7 @@
 	harm_intent_damage = 1
 	blood_color = COLOR_NT_RED
 	natural_armor = list(
-		laser = ARMOR_LASER_HANDGUNS
+		laser = ARMOR_LASER_PISTOL
 		)
 
 /mob/living/simple_animal/hostile/retaliate/beast/charbaby/attack_hand(mob/living/carbon/human/H)
