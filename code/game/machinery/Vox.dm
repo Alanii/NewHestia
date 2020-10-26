@@ -6,6 +6,7 @@
 	density = 1
 	anchored = 1
 	idle_power_usage = 40
+	base_type = /obj/machinery/voxfab
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = 0
@@ -29,6 +30,9 @@
 			/mob/living/carbon/human/vox/stackless/ = 500),
 		/*"BioAugments" = list()
 		TODO - actually add bioaugments so this section has a reason to exist*/)
+	var/list/materials = list(MATERIAL_VOXRES  = 0)
+	var/res_max_amount = 200000
+
 
 /obj/machinery/voxfab/New()
 	..()
