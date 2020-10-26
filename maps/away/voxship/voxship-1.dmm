@@ -2010,6 +2010,11 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/black,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship)
+"Xn" = (
+/obj/effect/floor_decal/borderfloor/full,
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/vox_armalis,
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship)
 
 (1,1,1) = {"
 aa
@@ -5815,7 +5820,7 @@ bW
 aP
 aX
 dH
-bH
+Xn
 bH
 bW
 eJ
