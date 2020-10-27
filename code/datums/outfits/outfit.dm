@@ -136,7 +136,7 @@ var/list/outfits_decls_by_type_
 		H.w_uniform.attackby(H, equip_holster)
 		if(equip_holster.loc != H.w_uniform)
 			qdel(equip_holster)
-	if(suit)
+	if(suit && H.species.name != SPECIES_PLASMASANS)
 		H.equip_to_slot_or_del(new suit(H),slot_wear_suit)
 	if(back)
 		H.equip_to_slot_or_del(new back(H),slot_back)
@@ -148,7 +148,7 @@ var/list/outfits_decls_by_type_
 		H.equip_to_slot_or_del(new shoes(H),slot_shoes)
 	if(mask)
 		H.equip_to_slot_or_del(new mask(H),slot_wear_mask)
-	if(head)
+	if(head && H.species.name != SPECIES_PLASMASANS)
 		H.equip_to_slot_or_del(new head(H),slot_head)
 	if(l_ear)
 		var/l_ear_path = (OUTFIT_ADJUSTMENT_PLAIN_HEADSET & equip_adjustments) && ispath(l_ear, /obj/item/device/radio/headset) ? /obj/item/device/radio/headset : l_ear
