@@ -76,9 +76,9 @@
 		/obj/item/rig_module/vision,
 		/obj/item/rig_module/chem_dispenser/skrell,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/device/clustertool/skrell
+		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/cooling_unit
-	)
+		)
 	req_access = list("ACCESS_SKRELLSCOUT")
 
 //Skrell Engineering Suit
