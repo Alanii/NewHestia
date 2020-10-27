@@ -226,5 +226,4 @@
 				return
 		else
 	return
-
 /////////////////////////// DNA MACHINES
