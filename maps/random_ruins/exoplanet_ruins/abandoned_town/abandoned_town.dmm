@@ -1,0 +1,1628 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ab" = (
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"ac" = (
+/obj/item/stack/material/steel,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ad" = (
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"ae" = (
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"af" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/map_template/abandoned_town)
+"ag" = (
+/obj/item/inflatable/torn,
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ah" = (
+/obj/item/weapon/material/shard,
+/obj/item/weapon/material/shard,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ai" = (
+/obj/structure/dogbed,
+/obj/item/weapon/gun/energy/ionrifle,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aj" = (
+/obj/structure/mopbucket,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/mop/advanced,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"ak" = (
+/turf/simulated/wall/prepainted,
+/area/map_template/abandoned_town)
+"al" = (
+/obj/machinery/atmospherics/unary/vent_pump,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"am" = (
+/obj/item/weapon/bedsheet,
+/obj/structure/bed,
+/obj/item/paper/cig,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"an" = (
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ao" = (
+/obj/item/weapon/bedsheet,
+/obj/structure/bed,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ap" = (
+/obj/structure/inflatable/wall,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aq" = (
+/obj/item/stack/material/rods,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ar" = (
+/obj/structure/table/standard,
+/obj/structure/bedsheetbin,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"as" = (
+/mob/living/simple_animal/corgi,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"at" = (
+/obj/machinery/door/airlock/hatch/maintenance,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/map_template/abandoned_town)
+"au" = (
+/mob/living/simple_animal/hostile/syndicate/melee,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"av" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aw" = (
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ax" = (
+/obj/structure/inflatable/door,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"ay" = (
+/obj/item/weapon/inflatable_dispenser,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"az" = (
+/obj/random/closet,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aA" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aB" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aC" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aD" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/map_template/abandoned_town)
+"aE" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aF" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aG" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aH" = (
+/mob/living/bot/mulebot,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aI" = (
+/obj/structure/closet/walllocker/emerglocker{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aJ" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aK" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aL" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aM" = (
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"aN" = (
+/obj/effect/wallframe_spawn/no_grille,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aO" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aP" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aQ" = (
+/obj/effect/wallframe_spawn,
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"aR" = (
+/obj/machinery/door/airlock/glass/command,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/map_template/abandoned_town)
+"aS" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/map_template/abandoned_town)
+"aT" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"aU" = (
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/three_quarters{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"aV" = (
+/obj/structure/bed/chair/armchair/blue{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"aW" = (
+/obj/item/modular_computer/telescreen/preset/engineering{
+	pixel_y = 30
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"aX" = (
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"aY" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"aZ" = (
+/obj/structure/bed/chair/armchair/red{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"ba" = (
+/obj/machinery/computer/modular{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/three_quarters{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bb" = (
+/obj/effect/floor_decal/corner/blue,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bc" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bd" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"be" = (
+/obj/effect/floor_decal/corner/yellow,
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bf" = (
+/obj/structure/sign/bluecross_2{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bg" = (
+/obj/effect/floor_decal/corner/blue/full,
+/obj/machinery/door/airlock/medical,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bh" = (
+/obj/machinery/flasher/portable,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"bi" = (
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/green/three_quarters,
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bj" = (
+/obj/structure/bed/chair/armchair/green{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bk" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bl" = (
+/obj/effect/floor_decal/corner/yellow,
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bm" = (
+/obj/structure/bed/chair/armchair/yellow{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/yellow{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bn" = (
+/obj/machinery/computer/modular{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/yellow/three_quarters{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/map_template/abandoned_town)
+"bo" = (
+/obj/structure/table/standard,
+/obj/random/medical,
+/obj/random/medical,
+/obj/machinery/atmospherics/unary/vent_pump,
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bp" = (
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bq" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"br" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bs" = (
+/obj/machinery/button/windowtint{
+	pixel_x = 30
+	},
+/obj/machinery/bodyscanner{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bt" = (
+/mob/living/bot/medbot,
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bu" = (
+/obj/machinery/body_scanconsole{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bv" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bw" = (
+/obj/structure/table/standard,
+/obj/item/weapon/defibrillator,
+/obj/random/medical,
+/turf/simulated/floor/tiled/white,
+/area/map_template/abandoned_town)
+"bx" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"by" = (
+/obj/item/stack/material/rods,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"bz" = (
+/obj/machinery/door/airlock/external/glass/bolted,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bA" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"bB" = (
+/obj/item/stack/material/steel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"bC" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bD" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/one,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bE" = (
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bF" = (
+/obj/machinery/atmospherics/pipe/vent{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"bG" = (
+/obj/structure/sign/warning/vent_port{
+	pixel_y = 30
+	},
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/map_template/abandoned_town)
+"bH" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bI" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bJ" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"bK" = (
+/obj/machinery/door/airlock/external/glass/bolted,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"bL" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bM" = (
+/obj/structure/flora/ausbushes/fernybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bN" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bO" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bP" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bQ" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bR" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bS" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bT" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/sunnybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bU" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bV" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/ausbushes/leafybush,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bW" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/grass,
+/area/map_template/abandoned_town)
+"bX" = (
+/obj/machinery/access_button/airlock_exterior{
+	pixel_y = -26
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"bY" = (
+/obj/item/weapon/material/shard,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"bZ" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/map_template/abandoned_town)
+"ca" = (
+/obj/structure/table/rack/shelf,
+/obj/random/ammo,
+/obj/item/weapon/gun/projectile/pirate,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"cb" = (
+/obj/structure/table/rack/shelf,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"cc" = (
+/obj/structure/table/rack/shelf,
+/obj/random/hat,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"cd" = (
+/obj/structure/table/rack/shelf,
+/obj/random/illegaltwo,
+/obj/random/illegaltwo,
+/obj/random/contraband,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ce" = (
+/obj/machinery/airlock_sensor/airlock_interior{
+	pixel_x = 26
+	},
+/obj/machinery/atmospherics/pipe/vent,
+/obj/structure/inflatable/door,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"cf" = (
+/turf/simulated/wall/iron,
+/area/map_template/abandoned_town)
+"cg" = (
+/obj/machinery/door/unpowered/simple/iron,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"ch" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ci" = (
+/obj/machinery/mining/drill,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"cj" = (
+/obj/structure/sign/warning/secure_area/armory{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"ck" = (
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/tiled/skrell,
+/area/map_template/abandoned_town)
+"cl" = (
+/obj/structure/table/rack/shelf,
+/obj/item/weapon/gun/energy/mindflayer,
+/turf/simulated/floor/tiled/skrell,
+/area/map_template/abandoned_town)
+"cm" = (
+/obj/item/weapon/material/shard,
+/obj/structure/window/reinforced,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"cn" = (
+/obj/structure/window/reinforced,
+/turf/template_noop,
+/area/map_template/abandoned_town)
+"co" = (
+/obj/machinery/mining/brace,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cp" = (
+/obj/structure/table/steel,
+/obj/random/handgun,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cq" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cr" = (
+/obj/machinery/door/airlock/vault,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/map_template/abandoned_town)
+"cs" = (
+/turf/simulated/floor/tiled/skrell,
+/area/map_template/abandoned_town)
+"ct" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/skrell,
+/area/map_template/abandoned_town)
+"cu" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cv" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cw" = (
+/obj/machinery/flasher/portable,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"cx" = (
+/obj/structure/sign/warning/secure_area{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+
+(1,1,1) = {"
+aa
+aa
+aa
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+"}
+(2,1,1) = {"
+aa
+aa
+ad
+ad
+af
+af
+af
+af
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+bJ
+aa
+ad
+af
+af
+af
+af
+af
+af
+af
+ad
+"}
+(3,1,1) = {"
+aa
+aa
+ad
+af
+af
+ar
+az
+af
+af
+af
+aO
+aO
+aO
+aO
+aO
+af
+af
+af
+ad
+aa
+by
+ad
+af
+ca
+an
+an
+an
+ch
+af
+ad
+"}
+(4,1,1) = {"
+aa
+aa
+ad
+af
+ai
+ab
+ab
+ak
+aH
+an
+aP
+an
+an
+an
+an
+an
+aw
+af
+ad
+ad
+ad
+ad
+af
+cb
+ch
+an
+an
+an
+af
+ad
+"}
+(5,1,1) = {"
+aa
+aa
+ad
+af
+aj
+as
+aA
+ak
+aI
+an
+an
+an
+an
+an
+an
+an
+an
+af
+af
+af
+ad
+ad
+af
+cc
+an
+an
+an
+an
+af
+ad
+"}
+(6,1,1) = {"
+aa
+aa
+ad
+af
+ak
+at
+ak
+ak
+an
+an
+ak
+ak
+aD
+ak
+ak
+an
+an
+an
+bC
+af
+ad
+ad
+af
+cd
+an
+an
+an
+an
+af
+ad
+"}
+(7,1,1) = {"
+aa
+aa
+ad
+af
+al
+an
+ao
+ak
+an
+an
+aQ
+aU
+bd
+bi
+aQ
+an
+an
+an
+bD
+af
+ad
+bX
+af
+af
+af
+an
+an
+an
+af
+ad
+"}
+(8,1,1) = {"
+aa
+aa
+ad
+af
+am
+an
+aB
+ak
+an
+an
+aQ
+aV
+aX
+bj
+aQ
+an
+an
+an
+bE
+af
+ad
+ad
+bZ
+ce
+bZ
+an
+an
+bx
+af
+ad
+"}
+(9,1,1) = {"
+aa
+aa
+ad
+af
+an
+au
+aC
+ak
+aJ
+an
+ak
+aW
+aX
+bk
+ak
+an
+bx
+af
+af
+af
+ad
+ad
+af
+af
+af
+cj
+an
+cx
+af
+ad
+"}
+(10,1,1) = {"
+aa
+aa
+ad
+af
+ao
+an
+aC
+aD
+aJ
+an
+aR
+aX
+aX
+aX
+aR
+an
+an
+af
+bF
+af
+ad
+ad
+ad
+ad
+af
+af
+cr
+af
+af
+ad
+"}
+(11,1,1) = {"
+aa
+aa
+ad
+af
+an
+av
+aC
+ak
+aJ
+an
+aR
+aX
+aX
+aX
+aR
+an
+an
+af
+bF
+bK
+ad
+ad
+ad
+ad
+af
+ck
+cs
+cs
+af
+ad
+"}
+(12,1,1) = {"
+aa
+aa
+ad
+af
+ao
+an
+an
+ak
+an
+an
+ak
+aY
+aX
+bl
+ak
+an
+an
+bz
+bF
+af
+ad
+ad
+by
+ad
+af
+ck
+cs
+cs
+af
+ad
+"}
+(13,1,1) = {"
+aa
+aa
+ad
+af
+al
+an
+ao
+ak
+an
+an
+aQ
+aZ
+aX
+bm
+aQ
+an
+an
+af
+af
+af
+ad
+ad
+ad
+ad
+af
+ck
+cs
+cs
+af
+ad
+"}
+(14,1,1) = {"
+aa
+aa
+ad
+af
+ao
+an
+aB
+ak
+an
+an
+aQ
+ba
+be
+bn
+aQ
+an
+an
+af
+bG
+ad
+ad
+ad
+bY
+ad
+af
+ck
+cs
+ck
+af
+ad
+"}
+(15,1,1) = {"
+aa
+aa
+aa
+af
+ak
+aw
+ao
+ak
+an
+an
+ak
+ak
+aD
+ak
+ak
+an
+an
+af
+ad
+ad
+ad
+ad
+ad
+ad
+af
+cl
+ct
+ck
+af
+ad
+"}
+(16,1,1) = {"
+aa
+aa
+aa
+af
+af
+ak
+ak
+ak
+an
+an
+an
+an
+an
+an
+an
+an
+an
+af
+ad
+bA
+bP
+ad
+ad
+ad
+af
+af
+af
+af
+af
+ad
+"}
+(17,1,1) = {"
+aa
+ab
+ab
+af
+ap
+ax
+ax
+at
+an
+an
+an
+an
+bf
+an
+an
+an
+an
+af
+bA
+bL
+bQ
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+"}
+(18,1,1) = {"
+aa
+ab
+aa
+af
+ap
+ax
+af
+ak
+ak
+ak
+aS
+aS
+ak
+ak
+ak
+ak
+af
+af
+bA
+aL
+bR
+bY
+ad
+ae
+ae
+cm
+ad
+ad
+aa
+aa
+"}
+(19,1,1) = {"
+aa
+aa
+ac
+aa
+ab
+ax
+af
+aE
+aF
+aN
+aT
+an
+aN
+bo
+bp
+bv
+af
+ad
+bA
+aL
+bS
+ad
+ad
+aa
+ci
+cn
+ad
+ad
+aa
+aa
+"}
+(20,1,1) = {"
+aa
+ab
+aa
+ag
+aq
+ab
+af
+aF
+aK
+aN
+aT
+an
+aN
+bp
+bp
+bp
+af
+ad
+bA
+aK
+bT
+ad
+ad
+ae
+aa
+cm
+ad
+ad
+aa
+aa
+"}
+(21,1,1) = {"
+aa
+aa
+aa
+ab
+aa
+aq
+af
+aE
+aL
+aN
+aT
+bb
+aN
+bq
+bp
+bp
+af
+bA
+bH
+bM
+bU
+ad
+ad
+ae
+bJ
+cn
+ad
+ad
+aa
+aa
+"}
+(22,1,1) = {"
+aa
+aa
+ae
+aa
+ac
+aa
+af
+aG
+aM
+aN
+aT
+aC
+bg
+br
+bt
+bp
+af
+bA
+aG
+aK
+bQ
+ad
+ad
+ad
+ad
+co
+co
+ad
+ad
+aa
+"}
+(23,1,1) = {"
+aa
+aa
+ac
+ah
+aa
+ay
+af
+aE
+aE
+aN
+aT
+bc
+aN
+bs
+bu
+bw
+af
+bA
+aE
+bN
+bV
+ad
+ad
+ad
+cf
+cf
+cf
+cf
+ad
+aa
+"}
+(24,1,1) = {"
+aa
+aa
+aa
+ac
+aa
+aa
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+bA
+aL
+aG
+bV
+ad
+ad
+ad
+cf
+cp
+cu
+cf
+ad
+aa
+"}
+(25,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+bA
+bI
+bO
+bW
+ad
+ad
+cf
+cf
+ad
+cv
+cf
+ad
+aa
+"}
+(26,1,1) = {"
+aa
+aa
+aa
+aa
+ab
+aa
+aa
+aa
+aa
+aa
+aa
+ad
+ad
+ad
+ad
+ad
+ad
+bB
+ad
+ad
+ad
+ad
+ad
+cg
+ad
+cq
+ad
+cf
+ad
+aa
+"}
+(27,1,1) = {"
+aa
+ac
+aa
+aa
+aa
+aa
+ac
+aa
+aa
+ac
+aa
+aa
+aa
+ad
+ad
+ad
+by
+ad
+ad
+ad
+ad
+ad
+ad
+cf
+cf
+ad
+cw
+cf
+ad
+aa
+"}
+(28,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+bh
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aq
+aa
+aa
+ad
+cf
+cf
+cf
+cf
+ad
+aa
+"}
+(29,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ac
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ad
+ad
+ad
+ad
+ad
+ad
+aa
+"}
+(30,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
