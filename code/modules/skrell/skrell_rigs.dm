@@ -64,6 +64,7 @@
 		/obj/item/weapon/gun,
 		/obj/item/ammo_magazine,
 		/obj/item/device/flashlight,
+		/obj/item/weapon/storage/,
 		/obj/item/weapon/tank,
 		/obj/item/device/suit_cooling_unit
 	)
@@ -72,10 +73,11 @@
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi'
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/vision,
 		/obj/item/rig_module/chem_dispenser/skrell,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell
+		/obj/item/rig_module/cooling_unit
 	)
 	req_access = list("ACCESS_SKRELLSCOUT")
 
@@ -94,14 +96,15 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision/nvg,
-		/obj/item/rig_module/chem_dispenser/skrell,
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/chem_dispenser/skrell/combat,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/device/cable_coil/skrell,
 		/obj/item/rig_module/device/multitool/skrell,
 		/obj/item/rig_module/device/welder/skrell,
-		/obj/item/rig_module/device/rcd
+		/obj/item/rig_module/device/rcd,
+		/obj/item/rig_module/cooling_unit
 	)
 
 //Skrell Medical Suit
@@ -110,13 +113,15 @@
 	desc = "A highly sophisticated, cutting-edge medical hardsuit with an integrated power supply and atmosphere. It's impressive design is resistant yet extremely lightweight, perfectly tailoring itself to the user's body"
 	icon_state = "skrell_med_rig"
 	initial_modules = list(
-		/obj/item/rig_module/vision/nvg,
-		/obj/item/rig_module/chem_dispenser/skrell,
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/chem_dispenser/injector/skrell,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/device/healthscanner,
 		/obj/item/rig_module/device/defib,
-		/obj/item/rig_module/chem_dispenser/injector
+		/obj/item/rig_module/vision/medhud,
+		/obj/item/rig_module/chem_dispenser/injector,
+		/obj/item/rig_module/cooling_unit
 	)
 
 //Skrell Combat Suit
@@ -134,11 +139,12 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/vision,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/chem_dispenser/skrell/combat,
-		/obj/item/rig_module/device/flash
+		/obj/item/rig_module/device/flash,
+		/obj/item/rig_module/cooling_unit
 	)
 
 //Skrell Command Suit
@@ -156,17 +162,18 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/vision,
 		/obj/item/rig_module/chem_dispenser/skrell/combat,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
-		/obj/item/rig_module/device/flash/advanced
+		/obj/item/rig_module/device/flash/advanced,
+		/obj/item/rig_module/cooling_unit
 	)
 
 
 
 // Skrell medical dispensers
-/obj/item/rig_module/chem_dispenser/skrell
+/obj/item/rig_module/chem_dispenser/injector/skrell
 	name = "skrellian medical injector"
 	desc = "A sleek medical injector of skrellian design."
 	interface_name = "skrellian medical injector"
@@ -209,7 +216,7 @@
 	var/charge_cost = 0.01
 	var/refill_gas_type = GAS_OXYGEN
 	var/gas_regen_amount = 1
-	var/gas_regen_cap = 1013
+	var/gas_regen_cap = 175
 
 /obj/item/weapon/tank/skrell/Initialize()
 	starting_pressure = list("[refill_gas_type]" = 6 * ONE_ATMOSPHERE)
