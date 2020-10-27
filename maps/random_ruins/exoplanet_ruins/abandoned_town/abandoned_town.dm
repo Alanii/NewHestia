@@ -6,3 +6,10 @@
 	cost = 1
 	template_flags = TEMPLATE_FLAG_CLEAR_CONTENTS|TEMPLATE_FLAG_NO_RUINS
 	ruin_tags = RUIN_HUMAN
+
+
+
+
+/area/map_template/abandoned_town
+	name = "\improper Abandoned Town"
+	icon_state = "blue"
