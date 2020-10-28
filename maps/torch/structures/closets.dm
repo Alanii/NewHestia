@@ -100,9 +100,9 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
-		/obj/item/weapon/storage/box/flares,
+		/obj/item/weapon/storage/box/illumnades,
+		/obj/item/device/gps,
 		/obj/item/gunbox/inftech,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol
 		)
@@ -131,10 +131,12 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
-		/obj/item/device/megaphone,
+		/obj/item/weapon/storage/box/illumnades,
+		/obj/item/device/gps,
+		/obj/item/ammo_magazine/shotholder/sabot = 6,
+		/obj/item/ammo_magazine/smg = 6,
 		/obj/item/gunbox/infcom,
 		/obj/item/weapon/storage/box/flares
 		)
