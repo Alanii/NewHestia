@@ -19,7 +19,6 @@
 	var/recentpump = 0 // to prevent spammage
 	wielded_item_state = "shotgun-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
-	base_parry_chance = 20
 
 /obj/item/weapon/gun/projectile/shotgun/on_update_icon()
 	..()
