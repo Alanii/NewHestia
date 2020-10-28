@@ -15627,9 +15627,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/item/modular_computer/tablet/lease{
-	pixel_x = 2
-	},
+/obj/item/rig_module/grenade_launcher/light,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Jf" = (
@@ -18452,6 +18450,9 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain,
+/obj/item/modular_computer/tablet/lease{
+	pixel_x = 2
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
