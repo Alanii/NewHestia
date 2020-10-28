@@ -72,6 +72,7 @@
 "ar" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
+/obj/item/weapon/storage/box/lights/mixed/empty,
 /turf/simulated/floor/plating,
 /area/map_template/abandoned_town)
 "as" = (
@@ -540,7 +541,9 @@
 /area/map_template/abandoned_town)
 "bX" = (
 /obj/machinery/access_button/airlock_exterior{
-	pixel_y = -26
+	desc = "An access button. This one looks quite intentionally broken.";
+	name = "broken access button";
+	pixel_y = -32
 	},
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/abandoned_town)
@@ -649,6 +652,7 @@
 /area/map_template/abandoned_town)
 "cu" = (
 /obj/structure/table/steel,
+/obj/item/weapon/storage/box/lights/mixed/empty,
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/abandoned_town)
 "cv" = (
@@ -662,6 +666,64 @@
 "cx" = (
 /obj/structure/sign/warning/secure_area{
 	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"fQ" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"lR" = (
+/obj/machinery/atmospherics/pipe/vent{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"Aw" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/skrell,
+/area/map_template/abandoned_town)
+"CS" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"Fm" = (
+/obj/machinery/access_button/airlock_exterior{
+	desc = "An access button. This one looks quite intentionally broken.";
+	name = "broken access button";
+	pixel_y = 32
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/abandoned_town)
+"Mq" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"Of" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"UW" = (
+/obj/machinery/power/apc/inactive{
+	dir = 1;
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/dark,
+/area/map_template/abandoned_town)
+"WE" = (
+/obj/machinery/access_button/airlock_exterior{
+	desc = "An access button. This one looks quite intentionally broken.";
+	name = "broken access button";
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/map_template/abandoned_town)
@@ -772,13 +834,13 @@ ab
 ab
 ak
 aH
-an
+Of
 aP
 an
 an
 an
 an
-an
+Of
 aw
 af
 ad
@@ -842,7 +904,7 @@ ak
 aD
 ak
 ak
-an
+CS
 an
 an
 bC
@@ -886,7 +948,7 @@ af
 af
 an
 an
-an
+fQ
 af
 ad
 "}
@@ -973,9 +1035,9 @@ aR
 an
 an
 af
-bF
+lR
 af
-ad
+Fm
 ad
 ad
 ad
@@ -1003,7 +1065,7 @@ aX
 aX
 aR
 an
-an
+WE
 af
 bF
 bK
@@ -1046,7 +1108,7 @@ ad
 af
 ck
 cs
-cs
+Aw
 af
 ad
 "}
@@ -1091,7 +1153,7 @@ ao
 an
 aB
 ak
-an
+UW
 an
 aQ
 ba
@@ -1187,14 +1249,14 @@ ap
 ax
 ax
 at
-an
+Mq
 an
 an
 an
 bf
 an
 an
-an
+Mq
 an
 af
 bA
@@ -1481,7 +1543,7 @@ aa
 ad
 ad
 ad
-ad
+by
 ad
 ad
 bB
@@ -1595,7 +1657,7 @@ ad
 aa
 "}
 (30,1,1) = {"
-aa
+aq
 aa
 aa
 aa
