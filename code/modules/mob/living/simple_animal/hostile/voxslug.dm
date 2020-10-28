@@ -12,6 +12,7 @@ Small, little HP, poisonous.
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "stamps on"
+	faction = "syndicate"
 	destroy_surroundings = 0
 	health = 15
 	maxHealth = 15
@@ -33,7 +34,7 @@ Small, little HP, poisonous.
 	for(var/a in hearers(src, dist))
 		if(istype(a,/mob/living/carbon/human))
 			var/mob/living/carbon/human/H = a
-			if(H.species.get_bodytype() == SPECIES_VOX)
+			if(H.species.get_bodytype() == SPECIES_VOX || H.species.get_bodytype() == SPECIES_VOX_ARMALIS)
 				continue
 		if(isliving(a))
 			var/mob/living/M = a

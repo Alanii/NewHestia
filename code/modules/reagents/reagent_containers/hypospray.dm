@@ -206,6 +206,11 @@
 	band_color = COLOR_WHITE
 	reagents_to_add = list(/datum/reagent/hypeross = 3)
 
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/phoron
+	name = "autoinjector (phoron)"
+	band_color = COLOR_PURPLE
+	reagents_to_add = list(/datum/reagent/toxin/phoron = 10)
+
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
 	name = "autoinjector (peri)"
 	band_color = COLOR_PINK

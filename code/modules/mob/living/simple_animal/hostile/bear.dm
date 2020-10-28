@@ -23,7 +23,7 @@
 	melee_damage_upper = 30
 	melee_damage_flags = DAM_SHARP
 	can_escape = TRUE
-	faction = "russian"
+	faction = "syndicate"
 
 	//Space bears aren't affected by atmos.
 	min_gas = null

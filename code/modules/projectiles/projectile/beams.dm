@@ -30,7 +30,7 @@
 	armor_penetration = 5
 
 /obj/item/projectile/beam/midlaser
-	damage = 45
+	damage = 40
 	armor_penetration = 20
 	distance_falloff = 1
 
@@ -52,8 +52,6 @@
 	fire_sound = 'sound/weapons/LaserShot_Heavy.ogg'
 	damage = 30
 	armor_penetration = 30
-	shrapnel_chance_multiplier = 0.8
-	arterial_bleed_chance_multiplier = 0.8
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
 	tracer_type = /obj/effect/projectile/laser/xray/tracer

@@ -14,8 +14,7 @@
 			to_chat(src,"<span class='warning'>You have to name your custom species. Do this under the genemod tab in character setup.</span>")
 
 		//Check traits/costs
-		var/list/megalist = client.prefs.pos_traits + client.prefs.neu_traits + client.prefs.neg_traits
-		var/points_left = client.prefs.starting_trait_points
+		var/list/megalist = client.prefs.neu_traits
 		var/traits_left = client.prefs.max_traits
 		for(var/T in megalist)
 			var/cost = traits_costs[T]
@@ -28,11 +27,9 @@
 				pass = FALSE
 				to_chat(src,"<span class='warning'>Your custom species is not playable. One or more traits appear to have been removed from the game or renamed. Enter character setup to correct this.</span>")
 				break
-			else
-				points_left -= traits_costs[T]
 
 		//Went into negatives
-		if(points_left < 0 || traits_left < 0)
+		if(traits_left < 0)
 			pass = FALSE
 			to_chat(src,"<span class='warning'>Your custom species is not playable. Reconfigure your traits under the genemod tab.</span>")
 

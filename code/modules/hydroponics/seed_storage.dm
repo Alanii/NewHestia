@@ -154,6 +154,14 @@
 		/obj/item/seeds/random = 2
 	)
 
+/obj/machinery/seed_storage/voxship
+	name = "Vox seed storage"
+	scanner = list("stats", "produce", "soil", "temperature", "light")
+	starting_seeds = list(
+		/obj/item/seeds/breather = 15,
+		/obj/item/seeds/resin = 15
+	)
+
 /obj/machinery/seed_storage/interface_interact(mob/user)
 	interact(user)
 	return TRUE

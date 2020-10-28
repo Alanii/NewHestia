@@ -24,7 +24,7 @@
 	minbodytemp = 0
 	speed = 4
 
-	faction = "faithless"
+	faction = "syndicate"
 	supernatural = 1
 
 	meat_type =     null

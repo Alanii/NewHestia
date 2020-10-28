@@ -12,7 +12,7 @@
 		SPECIES_PLASMASANS = 'icons/mob/species/plasmasans/onmob_suit_plasmasans.dmi'
 		)
 	can_breach = 1
-	breach_threshold = 12
+	breach_threshold = 100
 	resilience = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -304,11 +304,36 @@
 /obj/item/clothing/suit/space/plasmasans/nuclear
 	name = "blood red Phoron Restructurant suit"
 	icon_state = "phorosianNukeops"
+	item_state = "phorosianNukeops"
+	w_class = ITEM_SIZE_LARGE
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RESISTANT,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SMALL
+		)
+	siemens_coefficient = 0.3
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs)
+	breach_threshold = 200
 
 /obj/item/clothing/head/helmet/space/plasmasans/nuclear
 	name = "blood red Phoron Restructurant helmet"
 	icon_state = "phorosianNukeops_helmet0"
 	item_state = "phorosianNukeops_helmet0"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RESISTANT,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SMALL
+		)
+	siemens_coefficient = 0.3
+	camera = /obj/machinery/camera/network/mercenary
 
 /obj/item/device/plasmasanssuit_changer //Can be used to change the type of plasmaman suit.
 	var/used = 0
@@ -320,9 +345,17 @@
 	force = 0
 	throwforce = 0
 	var/chosensuit
+	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Chef", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
+
+/obj/item/device/plasmasanssuit_changer/traitor
+	name = "Modified Phoron Restructurant suit adapter kit"
+	desc = "A device used to recolor and adapt a Phoron Restructurant containment suit to be more suited for the job they are assigned to, this one seems to be modified."
 
 /obj/item/device/plasmasanssuit_changer/attack_self(mob/living/user)
-	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Chef", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
+	chosensuit = input(user, "Pick the type of suit you would like to wear.") as null|anything in suits
+
+/obj/item/device/plasmasanssuit_changer/traitor/attack_self(mob/living/user)
+	suits= list("Modified")
 	chosensuit = input(user, "Pick the type of suit you would like to wear.") as null|anything in suits
 
 #define USED_ADAPT_HELM 1
@@ -398,6 +431,9 @@
 		if("Civilian")
 			suit=/obj/item/clothing/suit/space/plasmasans/assistant
 			helm=/obj/item/clothing/head/helmet/space/plasmasans/assistant
+		if("Modified")
+			suit=/obj/item/clothing/suit/space/plasmasans/nuclear
+			helm=/obj/item/clothing/head/helmet/space/plasmasans/nuclear
 
 	if(istype(target, /obj/item/clothing/head/helmet/space/plasmasans))
 		if(used & USED_ADAPT_HELM)

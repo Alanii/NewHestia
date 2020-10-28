@@ -8,7 +8,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -28,7 +28,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -45,11 +45,11 @@
 
 /obj/item/clothing/suit/space/void/skrell
 	name = "Skrellian voidsuit"
-	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic."
+	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. The inferior quality of its construction mark this as a low-budget model."
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -68,11 +68,11 @@
 
 /obj/item/clothing/head/helmet/space/void/skrell/exchange
 	name = "Skrellian exchange voidsuit helmet"
-	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl. The inferior quality of its construction mark this as a somewhat outdated model."
+	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl. The inferior quality of its construction mark this as a very outdated model."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_MINOR,
 		bio = ARMOR_BIO_SHIELDED,
@@ -87,11 +87,11 @@
 
 /obj/item/clothing/suit/space/void/skrell/exchange
 	name = "Skrellian exchange voidsuit"
-	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic. The inferior quality of the fabric and other material used in its construction mark this as a somewhat outdated model."
+	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic. The inferior quality of the fabric and other material used in its construction mark this as a very outdated model."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_MINOR,
 		bio = ARMOR_BIO_SHIELDED,

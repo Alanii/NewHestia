@@ -13,7 +13,7 @@
 	attacktext = "clawed"
 	projectilesound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
 	projectiletype = /obj/item/projectile/beam/smalllaser
-	faction = "hivebot"
+	faction = "syndicate"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0

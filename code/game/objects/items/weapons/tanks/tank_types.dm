@@ -53,7 +53,7 @@
 	icon_state = "phoron"
 	gauge_icon = null
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = null	//they have no straps!
+	slot_flags = SLOT_HOLSTER	//they have no straps! They do now!
 	starting_pressure = list(GAS_PHORON = 3*ONE_ATMOSPHERE)
 
 /obj/item/weapon/tank/phoron_big
@@ -129,7 +129,7 @@
 	desc = "An emergency air tank hastily painted orange and issued to plasma-afflicted crewmembers."
 	icon_state = "emergency_phoron"
 	gauge_icon = "indicator_emergency"
-	starting_pressure = list(GAS_PLASMA = 10*ONE_ATMOSPHERE)
+	starting_pressure = list(GAS_PHORON = 10*ONE_ATMOSPHERE)
 	distribute_pressure = 12
 
 /obj/item/weapon/tank/emergency/nitrogen/double

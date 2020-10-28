@@ -35,7 +35,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	min_age =             18
 	max_age =             125
 	brute_mod =           0.8
-	burn_mod =            1.2
+	burn_mod =            1.1
 	toxins_mod =          0.1
 	oxy_mod =             0
 	total_health =        400
@@ -156,7 +156,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 		)
 	)
 
-	valid_transform_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SKRELL,SPECIES_VULP,SPECIES_AKULA,SPECIES_TAJ,SPECIES_DIONA,"Monkey")
+	valid_transform_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SKRELL,SPECIES_VULP,SPECIES_AKULA,SPECIES_TAJ,SPECIES_DIONA,SPECIES_MONKEY)
 	monochromatic = 1
 
 /datum/species/shapeshifter/promethean/New()

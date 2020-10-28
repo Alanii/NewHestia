@@ -22,7 +22,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -39,7 +39,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -68,7 +68,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -140,7 +140,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -204,7 +204,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -245,7 +245,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -257,7 +257,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -293,6 +293,12 @@
 /obj/item/clothing/suit/armor/pcarrier/medium/nt
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor/tag/nt)
 
+/obj/item/clothing/suit/armor/pcarrier/ipc
+	name = "refitted plate carrier"
+	desc = "A modular, compact black plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_ipc"
+	species_restricted = list(SPECIES_IPC)
+
 /obj/item/clothing/suit/armor/pcarrier/blue
 	name = "blue plate carrier"
 	desc = "A lightweight blue plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
@@ -303,15 +309,39 @@
 	desc = "A lightweight green plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_green"
 
+/obj/item/clothing/suit/armor/pcarrier/green/ipc
+	name = "compact green plate carrier"
+	desc = "A modular, compact green plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_green_ipc"
+	species_restricted = list(SPECIES_IPC)
+
 /obj/item/clothing/suit/armor/pcarrier/navy
 	name = "navy plate carrier"
 	desc = "A lightweight navy blue plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_navy"
 
+/obj/item/clothing/suit/armor/pcarrier/navy/ipc
+	name = "compact navy plate carrier"
+	desc = "A modular, compact navy plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_navy_ipc"
+	species_restricted = list(SPECIES_IPC)
+
+/obj/item/clothing/suit/armor/pcarrier/blue/ipc
+	name = "compact blue plate carrier"
+	desc = "A modular, compact blue plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_blue_ipc"
+	species_restricted = list(SPECIES_IPC)
+
 /obj/item/clothing/suit/armor/pcarrier/tan
 	name = "tan plate carrier"
 	desc = "A lightweight tan plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_tan"
+
+/obj/item/clothing/suit/armor/pcarrier/tan/ipc
+	name = "compact tan plate carrier"
+	desc = "A modular, compact tan plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_tan_ipc"	
+	species_restricted = list(SPECIES_IPC)
 
 /obj/item/clothing/suit/armor/pcarrier/tan/tactical
 	name = "tactical plate carrier"
@@ -378,7 +408,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_RIFLE,
 		energy = ARMOR_ENERGY_RESISTANT
 		)
 	siemens_coefficient = 0

@@ -2373,35 +2373,36 @@
 /datum/chemical_reaction/anfo
 	name = "EZ-ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/eznutrient=20, /datum/reagent/fuel=10)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/eznutrient=30, /datum/reagent/fuel=15)
 	result_amount = 15
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo2
 	name = "Left 4 ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/left4zed=10, /datum/reagent/fuel=5)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/left4zed=20, /datum/reagent/fuel=10)
 	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo3
 	name = "Robust ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/toxin/fertilizer/robustharvest=15, /datum/reagent/fuel=5)
+	required_reagents = list(/datum/reagent/toxin/fertilizer/robustharvest=30, /datum/reagent/fuel=10)
 	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo4
 	name = "Chemlab ANFO"
 	result = /datum/reagent/anfo
-	required_reagents = list(/datum/reagent/ammonia=10, /datum/reagent/fuel=5)
-	result_amount = 15
+	required_reagents = list(/datum/reagent/ammonia=20, /datum/reagent/fuel=20)
+	result_amount = 10
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
 /datum/chemical_reaction/anfo_plus
 	name = "ANFO+"
 	result = /datum/reagent/anfo/plus
 	required_reagents = list(/datum/reagent/anfo=15, /datum/reagent/aluminium=5)
+	catalysts = list(/datum/reagent/toxin/phoron = 5)
 	result_amount = 20
 	mix_message = "The solution gives off the eye-watering reek of spilled fertilizer and petroleum."
 
@@ -2824,3 +2825,58 @@
 	required_reagents = list(/datum/reagent/drink/alien/unathijuice = 2, /datum/reagent/nutriment/protein = 1)
 	result_amount = 3
 	mix_message = "The mixture turns a dark green"
+
+/datum/chemical_reaction/grasshopper
+	name = "Grasshopper"
+	result = /datum/reagent/ethanol/grasshopper
+	required_reagents = list(/datum/reagent/drink/milk/cream = 1, /datum/reagent/ethanol/creme_de_menthe = 1, /datum/reagent/ethanol/creme_de_cacao = 1)
+	result_amount = 3
+
+/datum/chemical_reaction/stinger
+	name = "Stinger"
+	result = /datum/reagent/ethanol/stinger
+	required_reagents = list(/datum/reagent/ethanol/creme_de_menthe = 1, /datum/reagent/ethanol/cognac = 2)
+	result_amount = 3
+
+/datum/chemical_reaction/alexander
+	name = "Alexander"
+	result = /datum/reagent/ethanol/alexander
+	required_reagents = list(/datum/reagent/ethanol/creme_de_menthe = 1, /datum/reagent/ethanol/cognac = 1, /datum/reagent/drink/milk/cream = 1)
+	result_amount = 3
+
+/datum/chemical_reaction/between_the_sheets
+	name = "Between the Sheets"
+	result = /datum/reagent/ethanol/between_the_sheets
+	required_reagents = list(/datum/reagent/ethanol/rum = 1, /datum/reagent/ethanol/cognac = 2, /datum/reagent/ethanol/triple_sec = 1, /datum/reagent/drink/juice/lemon = 1)
+	result_amount = 5
+
+/datum/chemical_reaction/forget_me_shot
+	name = "Forget-me-shot"
+	result = /datum/reagent/ethanol/forget_me_shot
+	required_reagents = list(/datum/reagent/ethanol/jagermeister = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/triple_sec = 1, /datum/reagent/nutriment/vinegar =1, /datum/reagent/ethanol/hooch = 1)
+	result_amount = 3
+	mix_message = "The liquid is brought to a roiling boil, and then suddenly stops."
+
+/datum/chemical_reaction/bad_touch
+	name = "Bad Touch"
+	result = /datum/reagent/ethanol/bad_touch
+	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/ethanol/rum = 2, /datum/reagent/ethanol/absinthe = 1, /datum/reagent/drink/lemon_lime = 1)
+	result_amount = 6
+
+/datum/chemical_reaction/sugar_rush
+	name = "Sugar Rush"
+	result = /datum/reagent/ethanol/sugar_rush
+	required_reagents = list(/datum/reagent/drink/spacemountainwind = 4, /datum/reagent/drink/grenadine = 1, /datum/reagent/ethanol/vodka = 1)
+	result_amount = 6
+
+/datum/chemical_reaction/cobalt_velvet
+	name = "Cobalt Velvet"
+	result = /datum/reagent/ethanol/cobalt_velvet
+	required_reagents = list(/datum/reagent/ethanol/champagne = 3, /datum/reagent/drink/space_cola = 1, /datum/reagent/ethanol/bluecuracao = 2)
+	result_amount = 6
+
+/datum/chemical_reaction/fringe_weaver
+	name = "Fringe Weaver"
+	result = /datum/reagent/ethanol/fringe_weaver
+	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/ethanol = 2)
+	result_amount = 3

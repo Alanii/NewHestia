@@ -3,11 +3,11 @@
 	desc = "A spiky, golden crown. It's probably worth more than your bank account."
 	icon_state = "champhelm"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH, 
-		bullet = ARMOR_BALLISTIC_AP, 
-		laser = ARMOR_LASER_HANDGUNS, 
-		energy = ARMOR_ENERGY_SMALL, 
-		bomb = ARMOR_BOMB_RESISTANT, 
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_PISTOL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_MINOR
 		)
 	species_restricted = list(SPECIES_HUMAN)
@@ -19,11 +19,11 @@
 	siemens_coefficient = 0.5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH, 
-		bullet = ARMOR_BALLISTIC_AP, 
-		laser = ARMOR_LASER_HANDGUNS, 
-		energy = ARMOR_ENERGY_SMALL, 
-		bomb = ARMOR_BOMB_RESISTANT, 
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_PISTOL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_MINOR
 		)
 
@@ -44,10 +44,10 @@
 	icon_state = "medievalboots"
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT, 
-		bullet = ARMOR_BALLISTIC_MINOR, 
-		laser = ARMOR_LASER_MINOR, 
-		energy = ARMOR_ENERGY_MINOR, 
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 	)
 

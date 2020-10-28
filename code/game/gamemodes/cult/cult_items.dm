@@ -41,7 +41,7 @@
 
 /obj/item/weapon/melee/cultblade/pickup(mob/living/user as mob)
 	if(!iscultist(user))
-		to_chat(user, SPAN_WARNING("An overwhelming feeling of dread comes over you as you pick up the cultist's sword. It would be wise to be rid of this blade quickly.") ) 
+		to_chat(user, SPAN_WARNING("An overwhelming feeling of dread comes over you as you pick up the cultist's sword. It would be wise to be rid of this blade quickly.") )
 		user.make_dizzy(120)
 
 
@@ -68,7 +68,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_RESISTANT
 	)
 
@@ -103,7 +103,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -119,7 +119,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -135,7 +135,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,

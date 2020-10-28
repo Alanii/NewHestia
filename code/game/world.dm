@@ -1,4 +1,4 @@
-/var/server_name = "Bastion of Hestia"
+/var/server_name = "Vesta"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()

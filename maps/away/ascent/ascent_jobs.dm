@@ -172,11 +172,11 @@
 	info = "You are a Machine Intelligence of an independent Ascent vessel. The Gyne you assist, and her children, have wandered into this sector full of primitive bioforms. Try to keep them alive, and assist where you can."
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
-
 /*
 /datum/job/submap/ascent/msw
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
+	requires_supervisor = "Serpentid Queen"
 	total_positions = 2
 	info = "You are a Monarch Serpentid Worker serving as an attendant to your Queen on this vessel. Serve her however she requires."
 	set_species_on_join = SPECIES_MONARCH_WORKER
@@ -191,6 +191,7 @@
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
 	supervisors = "the Gyne"
+	requires_supervisor = "Ascent Gyne"
 	total_positions = 1
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
@@ -212,13 +213,13 @@
 
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/drone
 	name = "Ascent Drone"
-
+/*
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/adjunct
 	name = "Serpentid Adjunct"
 
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen
 	name = "Serpentid Queen"
-
+*/
 /*
 /datum/job/submap/ascent/control_mind
 	title = "Ascent Control Mind"

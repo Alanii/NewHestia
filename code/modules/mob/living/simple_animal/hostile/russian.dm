@@ -22,7 +22,7 @@
 	a_intent = I_HURT
 	var/corpse = /obj/effect/landmark/corpse/russian
 	unsuitable_atmos_damage = 15
-	faction = "russian"
+	faction = "syndicate"
 	status_flags = CANPUSH
 	melee_damage_flags = DAM_SHARP|DAM_EDGE
 

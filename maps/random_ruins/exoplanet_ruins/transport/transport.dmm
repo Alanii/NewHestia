@@ -1,0 +1,433 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/obj/effect/landmark/clear,
+/obj/effect/landmark/corpse/syndicate/commando,
+/turf/template_noop,
+/area)
+"d" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular,
+/turf/space,
+/area)
+"e" = (
+/obj/effect/landmark/scorcher,
+/turf/simulated/floor/plating,
+/area)
+"f" = (
+/mob/living/simple_animal/hostile/syndicate,
+/turf/simulated/floor/tiled/dark,
+/area)
+"h" = (
+/obj/machinery/door/window/southright,
+/turf/simulated/floor/tiled/dark,
+/area)
+"l" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/floor/plating,
+/area)
+"n" = (
+/obj/structure/catwalk,
+/turf/template_noop,
+/area)
+"p" = (
+/obj/effect/landmark/scorcher,
+/turf/simulated/wall/r_wall/hull,
+/area)
+"r" = (
+/obj/structure/lattice,
+/obj/effect/landmark/scorcher,
+/turf/template_noop,
+/area)
+"t" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/artifact,
+/turf/simulated/floor/tiled/dark,
+/area)
+"u" = (
+/obj/structure/bed/chair/comfy/black,
+/mob/living/simple_animal/hostile/syndicate,
+/turf/simulated/floor/tiled/dark,
+/area)
+"v" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled/dark,
+/area)
+"y" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area)
+"A" = (
+/obj/machinery/computer/dummy,
+/turf/simulated/floor/tiled/dark,
+/area)
+"C" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/lattice,
+/obj/effect/landmark/scorcher,
+/turf/template_noop,
+/area)
+"D" = (
+/obj/structure/bed/chair/comfy/black,
+/turf/simulated/floor/tiled/dark,
+/area)
+"E" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/closet/crate,
+/obj/item/weapon/ore/strangerock,
+/obj/item/weapon/ore/strangerock,
+/obj/item/weapon/archaeological_find/laser,
+/turf/simulated/floor/tiled/dark,
+/area)
+"F" = (
+/obj/effect/landmark/clear,
+/turf/template_noop,
+/area)
+"G" = (
+/obj/structure/catwalk,
+/obj/structure/handrai,
+/turf/template_noop,
+/area)
+"H" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/hull,
+/area)
+"I" = (
+/turf/simulated/wall/r_wall/hull,
+/area)
+"J" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
+/turf/simulated/floor/tiled/dark,
+/area)
+"K" = (
+/obj/structure/table/rack,
+/obj/random/loot,
+/turf/simulated/floor/tiled/dark,
+/area)
+"L" = (
+/turf/simulated/floor/tiled/dark,
+/area)
+"Q" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area)
+"R" = (
+/mob/living/simple_animal/hostile/syndicate/melee,
+/turf/simulated/floor/tiled/dark,
+/area)
+"S" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/blast_door{
+	id_tag = "scraplock";
+	name = "External Lockdown"
+	},
+/turf/simulated/floor/tiled/dark,
+/area)
+"T" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/landmark/scorcher,
+/turf/simulated/wall/r_wall/hull,
+/area)
+"X" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/artifact,
+/turf/simulated/floor/tiled/dark,
+/area)
+"Y" = (
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled/dark,
+/area)
+"Z" = (
+/obj/effect/landmark/clear,
+/obj/effect/landmark/scorcher,
+/turf/template_noop,
+/area)
+
+(1,1,1) = {"
+F
+F
+F
+F
+F
+F
+Z
+Z
+Z
+Z
+Z
+F
+F
+F
+F
+"}
+(2,1,1) = {"
+F
+F
+F
+F
+F
+Z
+Z
+r
+p
+Z
+Z
+F
+F
+F
+F
+"}
+(3,1,1) = {"
+F
+F
+F
+F
+F
+Z
+Z
+C
+r
+Z
+Z
+F
+F
+F
+F
+"}
+(4,1,1) = {"
+F
+F
+F
+F
+F
+F
+F
+T
+e
+Z
+c
+F
+F
+F
+F
+"}
+(5,1,1) = {"
+F
+F
+F
+F
+F
+I
+I
+H
+I
+I
+I
+I
+I
+I
+F
+"}
+(6,1,1) = {"
+F
+F
+I
+I
+I
+I
+D
+Q
+L
+v
+L
+K
+I
+G
+F
+"}
+(7,1,1) = {"
+F
+F
+d
+A
+L
+I
+D
+Q
+X
+J
+L
+R
+I
+G
+F
+"}
+(8,1,1) = {"
+F
+F
+d
+A
+u
+Y
+L
+Q
+y
+h
+L
+L
+Y
+n
+F
+"}
+(9,1,1) = {"
+F
+F
+d
+A
+S
+I
+D
+Q
+t
+E
+L
+v
+I
+G
+F
+"}
+(10,1,1) = {"
+F
+F
+I
+I
+I
+I
+D
+Q
+L
+f
+L
+K
+I
+G
+F
+"}
+(11,1,1) = {"
+F
+F
+F
+F
+F
+I
+I
+H
+I
+I
+I
+I
+I
+I
+F
+"}
+(12,1,1) = {"
+F
+F
+F
+F
+F
+F
+F
+H
+l
+F
+F
+F
+F
+F
+F
+"}
+(13,1,1) = {"
+F
+F
+F
+F
+F
+F
+F
+H
+l
+F
+F
+F
+F
+F
+F
+"}
+(14,1,1) = {"
+F
+F
+F
+F
+F
+F
+F
+I
+I
+F
+F
+F
+F
+F
+F
+"}
+(15,1,1) = {"
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+"}

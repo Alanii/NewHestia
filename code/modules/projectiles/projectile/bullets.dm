@@ -188,6 +188,14 @@
 	armor_penetration = 10
 	embed = 0
 
+//Skrell version of slug
+/obj/item/projectile/bullet/shotgun/flechette
+	name = "flechette"
+	fire_sound = 'sound/weapons/gunshot/new_shotgun.ogg'
+	damage = 60
+	armor_penetration = 80
+	distance_falloff = 1.2
+
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
 //High number of pellets with low velocity lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun

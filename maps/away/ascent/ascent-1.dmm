@@ -1398,8 +1398,8 @@
 /area/ship/ascent/subdeck_atmos)
 "da" = (
 /obj/machinery/atmospherics/unary/freezer{
-	icon_state = "freezer";
-	dir = 1
+	dir = 1;
+	icon_state = "freezer"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
@@ -1624,8 +1624,8 @@
 "dy" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
+	dir = 9;
+	icon_state = "intact-supply"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_atmos)

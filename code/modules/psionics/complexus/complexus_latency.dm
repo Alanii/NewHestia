@@ -7,7 +7,7 @@
 		return FALSE
 
 	var/faculty = pick(latencies)
-	var/new_rank = rand(2,5)
+	var/new_rank = rand(2,4)
 	owner.set_psi_rank(faculty, new_rank)
 	var/decl/psionic_faculty/faculty_decl = SSpsi.get_faculty(faculty)
 	to_chat(owner, SPAN_DANGER("You scream internally as your [faculty_decl.name] faculty is forced into operancy by [source]!"))

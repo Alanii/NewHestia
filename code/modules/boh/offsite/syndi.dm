@@ -17,4 +17,4 @@
 /mob/living/simple_animal/hostile/retaliate/malf_drone/guard
 	speak = list("Unregistered personnel detected. Engaging.")
 	projectiletype = /obj/item/projectile/beam/drone/weak
-	faction = "icarus"
+	faction = "syndicate"

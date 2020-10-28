@@ -823,7 +823,7 @@
 	name = "Captain"
 	name_short = "CPT"
 	sort_order = 8
-	pow_cat = 3	
+	pow_cat = 3
 
 /datum/mil_rank/soviet/o3
 	name = "Major"
@@ -896,7 +896,7 @@
 	name = "Lieutenant"
 	name_short = "LFT"
 	sort_order = 8
-	pow_cat = 3	
+	pow_cat = 3
 
 /datum/mil_rank/soviet/o3_gnf
 	name = "Captain Lieutenant"
@@ -932,7 +932,7 @@
 	name = "High Admiral"
 	name_short = "HAM"
 	sort_order = 14
-	pow_cat = 3	
+	pow_cat = 3
 //
 //
 // Ends of defines

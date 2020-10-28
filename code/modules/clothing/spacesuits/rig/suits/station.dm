@@ -38,7 +38,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -106,7 +106,16 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/eva
 	glove_type = /obj/item/clothing/gloves/rig/eva
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/toolbox,/obj/item/weapon/storage/briefcase/inflatable,/obj/item/weapon/inflatable_dispenser,/obj/item/device/t_scanner,/obj/item/weapon/rcd, /obj/item/weapon/storage/)
+	allowed = list(
+		/obj/item/device/flashlight,
+		/obj/item/weapon/tank,
+		/obj/item/device/suit_cooling_unit,
+		/obj/item/weapon/storage/toolbox,
+		/obj/item/weapon/storage/briefcase/inflatable,
+		/obj/item/weapon/inflatable_dispenser,
+		/obj/item/device/t_scanner,/obj/item/weapon/rcd, 
+		/obj/item/weapon/storage/
+		)
 
 	req_access = list(access_engine_equip)
 
@@ -127,7 +136,7 @@
 /obj/item/clothing/suit/space/rig/eva
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_IPC)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
 		)
 
 /obj/item/clothing/shoes/magboots/rig/eva
@@ -207,7 +216,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_HANDGUNS,
+		laser = ARMOR_LASER_PISTOL,
 		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -221,7 +230,25 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/hazmat
 	glove_type = /obj/item/clothing/gloves/rig/hazmat
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/stack/flag,/obj/item/weapon/storage/excavation,/obj/item/weapon/pickaxe,/obj/item/device/scanner/health,/obj/item/device/measuring_tape,/obj/item/device/ano_scanner,/obj/item/device/depth_scanner,/obj/item/device/core_sampler,/obj/item/device/gps,/obj/item/weapon/pinpointer/radio,/obj/item/device/radio/beacon,/obj/item/weapon/pickaxe/xeno,/obj/item/weapon/storage/bag/fossils, /obj/item/weapon/storage/)
+	allowed = list(
+		/obj/item/device/flashlight,
+		/obj/item/weapon/tank,
+		/obj/item/device/suit_cooling_unit,
+		/obj/item/stack/flag,
+		/obj/item/weapon/storage/excavation,
+		/obj/item/weapon/pickaxe,
+		/obj/item/device/scanner/health,
+		/obj/item/device/measuring_tape,
+		/obj/item/device/ano_scanner,
+		/obj/item/device/depth_scanner,
+		/obj/item/device/core_sampler,
+		/obj/item/device/gps,
+		/obj/item/weapon/pinpointer/radio,
+		/obj/item/device/radio/beacon,
+		/obj/item/weapon/pickaxe/xeno,
+		/obj/item/weapon/storage/bag/fossils, 
+		/obj/item/weapon/storage/
+		)
 
 	req_access = list(access_tox)
 
@@ -270,7 +297,18 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/medical
 	glove_type = /obj/item/clothing/gloves/rig/medical
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical,/obj/item/roller,/obj/item/auto_cpr,/obj/item/weapon/inflatable_dispenser, /obj/item/weapon/storage/)
+	allowed = list(
+		/obj/item/device/flashlight,
+		/obj/item/weapon/tank,
+		/obj/item/device/suit_cooling_unit,
+		/obj/item/weapon/storage/firstaid,
+		/obj/item/device/scanner/health,
+		/obj/item/stack/medical,
+		/obj/item/roller,
+		/obj/item/auto_cpr,
+		/obj/item/weapon/inflatable_dispenser, 
+		/obj/item/weapon/storage/
+		)
 
 	req_access = list(access_medical_equip)
 
@@ -320,7 +358,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,

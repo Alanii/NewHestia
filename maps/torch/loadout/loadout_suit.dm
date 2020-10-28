@@ -95,9 +95,18 @@
 	armors["blue plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
+	armors["black ipc plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/ipc
+	armors["navy ipc plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/navy/ipc
+	armors["blue ipc plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue/ipc
+	armors["green ipc plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green/ipc
+	armors["tan ipc plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan/ipc
 	gear_tweaks += new/datum/gear_tweak/path(armors)
 
 /datum/gear/suit/sfp
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
 	allowed_roles = list(/datum/job/detective)
+
+/datum/gear/suit/labcoat_long
+	allowed_roles = DOCTOR_ROLES
+	allowed_branches = CASUAL_BRANCHES
