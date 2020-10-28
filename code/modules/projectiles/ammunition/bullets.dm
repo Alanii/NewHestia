@@ -104,6 +104,15 @@
 	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag
 	matter = list(MATERIAL_STEEL = 180)
 
+/obj/item/ammo_casing/shotgun/flechette
+	name = "flechette shell"
+	desc = "A skrellian flechette shell."
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = CALIBER_SHOTGUN
+	projectile_type = /obj/item/projectile/bullet/shotgun/flechette
+	matter = list(MATERIAL_STEEL = 360)
+
 //Can stun in one hit if aimed at the head, but
 //is blocked by clothing that stops tasers and is vulnerable to EMP
 /obj/item/ammo_casing/shotgun/stunshell

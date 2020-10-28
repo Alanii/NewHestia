@@ -95,6 +95,12 @@
 	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
 	marking_color = COLOR_MUZZLE_FLASH
 
+/obj/item/ammo_magazine/shotholder/flecchete
+	name = "flechette shell holder"
+	ammo_type = /obj/item/ammo_casing/shotgun/flechette
+	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
+	marking_color = COLOR_PURPLE
+
 /obj/item/ammo_magazine/shotholder/empty
 	name = "shotgun ammunition holder"
 	matter = list(MATERIAL_STEEL = 250)
