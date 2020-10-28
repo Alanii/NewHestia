@@ -12890,7 +12890,7 @@
 /area/vacant/bar)
 "yK" = (
 /obj/machinery/door/airlock/security{
-	id_tag = InfantryEntrance2;
+	id_tag = "InfantryStorage";
 	name = "Infantry Storage"
 	},
 /obj/machinery/door/firedoor,
