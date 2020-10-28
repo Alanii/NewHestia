@@ -978,6 +978,7 @@
 	hidden_from_codex = TRUE
 	heating_products = null
 	heating_point = null
+	filterable = FALSE
 
 /datum/reagent/zombie/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(!istype(M, /mob/living/carbon/human))
@@ -1007,7 +1008,7 @@
 		M.hallucination(50, min(true_dose/2, 50))
 		if(M.getBrainLoss() < 75)
 			M.adjustBrainLoss(rand(1,2))
-		if(prob(0.5))
+		if(prob(1))
 			H.seizure()
 			H.adjustBrainLoss(rand(12, 24))
 		if(prob(5))
@@ -1015,10 +1016,11 @@
 		M.bodytemperature += 9
 
 	if(true_dose >= 110)
-		M.adjustHalLoss(5)
+		M.adjustHalLoss(9)
 		M.make_dizzy(10)
 		if(prob(8))
 			to_chat(M, SPAN_DANGER("<font style='font-size:[rand(3,4)]'>[pick(stage3_messages)]</font>"))
+		M.bodytemperature += 5
 
 	if(true_dose >= 135)
 		if(prob(3))
