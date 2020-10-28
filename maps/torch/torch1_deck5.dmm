@@ -15741,22 +15741,18 @@
 /area/shuttle/petrov/analysis)
 "Jy" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/item/weapon/storage/belt/utility{
 	pixel_x = -2;
 	pixel_y = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/inflatable_dispenser{
-	pixel_x = 2;
-	pixel_y = -2
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
@@ -19251,6 +19247,19 @@
 "XS" = (
 /obj/machinery/light/spot{
 	dir = 1
+	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/inflatable_dispenser{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
