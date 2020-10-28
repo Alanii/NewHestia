@@ -213,10 +213,9 @@
 	icon = 'icons/obj/skrell.dmi'
 	icon_state = "skrelltank"
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
-	var/charge_cost = 0.01
 	var/refill_gas_type = GAS_OXYGEN
-	var/gas_regen_amount = 1
-	var/gas_regen_cap = 175
+	var/gas_regen_amount = 0.05
+	var/gas_regen_cap = 50
 
 /obj/item/weapon/tank/skrell/Initialize()
 	starting_pressure = list("[refill_gas_type]" = 6 * ONE_ATMOSPHERE)
@@ -224,8 +223,7 @@
 
 /obj/item/weapon/tank/skrell/Process()
 	..()
-	var/obj/item/weapon/rig/holder = loc
-	if(air_contents.total_moles < gas_regen_cap && istype(holder) && holder.cell && holder.cell.use(charge_cost))
+	if(air_contents.total_moles < gas_regen_cap)
 		air_contents.adjust_gas(refill_gas_type, gas_regen_amount)
 
 //Skrell Cluster Tool
