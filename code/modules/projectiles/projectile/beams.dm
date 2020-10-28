@@ -52,8 +52,6 @@
 	fire_sound = 'sound/weapons/LaserShot_Heavy.ogg'
 	damage = 30
 	armor_penetration = 30
-	shrapnel_chance_multiplier = 0.8
-	arterial_bleed_chance_multiplier = 0.8
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
 	tracer_type = /obj/effect/projectile/laser/xray/tracer

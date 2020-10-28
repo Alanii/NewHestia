@@ -1720,23 +1720,18 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "ey" = (
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
+/obj/item/ammo_magazine/shotholder/flecchete,
 /obj/structure/table/rack/dark,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
-/obj/item/weapon/magnetic_ammo/skrell,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "eA" = (
@@ -2744,6 +2739,15 @@
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
+/turf/simulated/floor/tiled/skrell/blue,
+/area/ship/skrellscoutship/command/armory)
+"yf" = (
+/obj/structure/table/rack/dark,
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "yk" = (
@@ -10156,7 +10160,7 @@ TE
 yX
 cS
 UQ
-dA
+yf
 eJ
 dA
 aH
