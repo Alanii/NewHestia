@@ -3854,7 +3854,6 @@
 /obj/structure/catwalk,
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/material/hatchet,
-/obj/random/toy,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gH" = (
@@ -12062,7 +12061,6 @@
 /obj/structure/catwalk,
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/material/minihoe,
-/obj/random/tool,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "vz" = (
@@ -17769,6 +17767,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
+/obj/item/rig_module/device/healthscanner,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "RN" = (
@@ -18431,6 +18430,8 @@
 	dir = 1
 	},
 /obj/item/device/radio,
+/obj/item/device/binoculars,
+/obj/item/device/scanner/health,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
