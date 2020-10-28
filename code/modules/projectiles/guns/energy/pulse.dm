@@ -83,7 +83,7 @@
 	wielded_item_state = "skrell_carbine-wielded"
 
 	firemodes = list(
-		list(mode_name="stun", /obj/item/projectile/beam/stun/heavy, charge_cost=40, burst=1, burst_delay=null),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy, charge_cost=40, burst=1, burst_delay=null),
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/pulse/skrell/single, charge_cost=120, burst=1, burst_delay=null),
 		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/pulse/skrell/heavy, charge_cost=55, burst=2, burst_delay=3),
 		)
