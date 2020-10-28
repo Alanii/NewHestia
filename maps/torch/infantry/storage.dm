@@ -26,7 +26,7 @@
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic - Tectonic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot)
-	options["Ballistic - LMG"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - Komodo"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/energy/revolver/secure)
 	options["Energy - Laser Carbine (has burst fire)"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
@@ -44,8 +44,8 @@
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
 //	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Ballistic - Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Ballistic - Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder,/obj/item/ammo_magazine/shotholder,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Ballistic - Combat Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder,/obj/item/ammo_magazine/shotholder,/obj/item/ammo_magazine/shotholder,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

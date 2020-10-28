@@ -82,8 +82,7 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/weapon/extinguisher/mini,
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/gps,
 		/obj/item/gunbox/infantry,
 		/obj/item/weapon/storage/box/flares
@@ -104,7 +103,7 @@
 		/obj/item/weapon/storage/box/illumnades,
 		/obj/item/device/gps,
 		/obj/item/gunbox/inftech,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol
 		)
 
 //demolocker
@@ -135,10 +134,7 @@
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/weapon/storage/box/illumnades,
 		/obj/item/device/gps,
-		/obj/item/ammo_magazine/shotholder/sabot = 6,
-		/obj/item/ammo_magazine/smg = 6,
 		/obj/item/gunbox/infcom,
-		/obj/item/weapon/storage/box/flares
 		)
 
 /////////

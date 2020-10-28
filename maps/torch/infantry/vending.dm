@@ -5,6 +5,7 @@
 	products = list(
 		/obj/item/ammo_magazine/mil_rifle/sec = 15,
 		/obj/item/ammo_magazine/mil_rifle/sec/large = 3,
-		/obj/item/ammo_magazine/pistol/double = 9,
-		/obj/item/stack/medical/advanced/bruise_pack = 4,
-		/obj/item/stack/medical/advanced/ointment = 4)
+		/obj/item/ammo_magazine/pistol/double = 10,
+		/obj/item/ammo_magazine/shotholder/shell = 4,
+		/obj/item/ammo_magazine/shotholder = 4
+		)

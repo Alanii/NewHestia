@@ -405,7 +405,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/suit_cycler/infantry,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "aN" = (
@@ -3410,7 +3410,7 @@
 	},
 /obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "fP" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 0;
@@ -3581,6 +3581,7 @@
 	},
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/radio,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "gg" = (
@@ -3881,7 +3882,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/security{
-	id_tag = InfantryEntrance;
+	id_tag = "InfantryEntrance";
 	name = "Infantry Prep"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -4584,6 +4585,11 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/weapon/reagent_containers/ivbag/nanoblood,
 /obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "hV" = (
@@ -12885,7 +12891,7 @@
 "yK" = (
 /obj/machinery/door/airlock/security{
 	id_tag = InfantryEntrance2;
-	name = "Infantry Prep"
+	name = "Infantry Storage"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -13254,6 +13260,13 @@
 /obj/item/weapon/storage/pill_bottle/dylovene,
 /obj/item/weapon/storage/belt/medical,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "Ae" = (
@@ -13860,6 +13873,7 @@
 	},
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/radio,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "Cy" = (
@@ -14367,6 +14381,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/door/window/brigdoor{
+	autoclose = 1;
 	dir = 8;
 	req_access = list("ACCESS_INFANTRY")
 	},
@@ -14641,7 +14656,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "Fn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -16926,7 +16941,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "Od" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -16995,7 +17010,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "Oq" = (
 /obj/machinery/door/blast/regular{
 	density = 1;
@@ -17279,7 +17294,7 @@
 	pixel_y = 17
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "PJ" = (
 /obj/structure/catwalk,
 /obj/machinery/light/small{
@@ -18432,6 +18447,11 @@
 /obj/item/device/radio,
 /obj/item/device/binoculars,
 /obj/item/device/scanner/health,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
@@ -19468,9 +19488,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "YN" = (
-/obj/effect/landmark/start{
-	name = "Squad Lead"
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -19485,7 +19502,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry)
+/area/infantry/infcom)
 "YQ" = (
 /obj/structure/cable/cyan{
 	d2 = 4;
