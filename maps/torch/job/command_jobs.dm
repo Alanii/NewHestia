@@ -296,6 +296,9 @@
 	allowed_ranks = list(/datum/mil_rank/sol/gov)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
+	
+	max_skill = list(   SKILL_BUREAUCY    = SKILL_SPEC,
+						SKILL_FINANCE     = SKILL_SPEC)
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
