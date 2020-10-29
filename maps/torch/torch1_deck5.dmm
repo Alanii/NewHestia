@@ -671,8 +671,8 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
@@ -3262,11 +3262,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
@@ -3279,6 +3274,11 @@
 	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "fD" = (
@@ -3503,6 +3503,11 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gb" = (
@@ -3536,6 +3541,11 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/storage)
 "ge" = (
@@ -3590,11 +3600,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/door/airlock/security{
-	id_tag = "InfantryStorage";
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/command{
 	name = "Infantry Storage"
 	},
-/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/fifthdeck/aftstarboard)
 "gi" = (
@@ -3873,14 +3882,14 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/security{
-	id_tag = "InfantryEntrance";
-	name = "Infantry Prep"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/command{
+	id_tag = "InfantryEntrance";
+	name = "Infantry Prep"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/infantry)
@@ -3916,6 +3925,11 @@
 /obj/random/tool,
 /obj/random/mre,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gO" = (
@@ -3943,16 +3957,16 @@
 /obj/item/seeds/random,
 /obj/item/seeds/random,
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
-"gR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
+"gR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -3961,14 +3975,14 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "gS" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/storage/box/lights/bulbs,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gT" = (
@@ -3982,16 +3996,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -5310,26 +5314,21 @@
 "jq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/floodlight,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/quartermaster/expedition/storage)
-"jr" = (
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/quartermaster/expedition/storage)
+"jr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/security{
-	id_tag = "InfantryStorage";
-	name = "Infantry Storage"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/wall/r_wall/prepainted,
 /area/quartermaster/expedition/storage)
 "js" = (
 /obj/machinery/door/blast/shutters{
@@ -5485,18 +5484,14 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/pilot)
 "jI" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/mining/drill,
 /obj/structure/cable/green{
-	d1 = 1;
+	d1 = 4;
 	d2 = 8;
-	icon_state = "1-8"
+	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
 "jJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6591,6 +6586,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
 "lE" = (
@@ -6601,6 +6601,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
 "lF" = (
@@ -7287,10 +7292,10 @@
 /area/maintenance/fifthdeck/aftport)
 "mM" = (
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/security{
-	id_tag = "InfantryStorage";
+/obj/machinery/door/airlock/command{
 	name = "Infantry Storage"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/fifthdeck/fore)
 "mN" = (
@@ -9831,6 +9836,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
 "qR" = (
@@ -12044,8 +12054,25 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/material/minihoe,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"vx" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/mining/brace{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/quartermaster/expedition/storage)
 "vz" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/inflatable/wall,
@@ -12271,6 +12298,11 @@
 	dir = 1
 	},
 /obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -12855,10 +12887,6 @@
 /turf/simulated/floor/plating,
 /area/vacant/bar)
 "yK" = (
-/obj/machinery/door/airlock/security{
-	id_tag = "InfantryStorage";
-	name = "Infantry Storage"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12870,6 +12898,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Infantry Storage"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/infantry)
@@ -14878,6 +14909,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
+"Gp" = (
+/obj/effect/catwalk_plated,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "Gq" = (
 /obj/effect/floor_decal/carpet/blue2{
 	icon_state = "blue2"
@@ -15053,6 +15096,11 @@
 /obj/item/weapon/screwdriver{
 	pixel_x = -2;
 	pixel_y = 6
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
@@ -17752,6 +17800,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
 "RE" = (
@@ -17800,6 +17853,15 @@
 /obj/machinery/artifact_scanpad,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/analysis)
+"RR" = (
+/obj/effect/catwalk_plated,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "RU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -18177,6 +18239,11 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
@@ -18883,6 +18950,19 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/petrov/isolation)
+"VS" = (
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id_tag = "mine_warehouse";
+	name = "Storage Shutters"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/quartermaster/expedition/storage)
 "VT" = (
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
@@ -33734,9 +33814,9 @@ ZG
 ZG
 dd
 fC
-Xk
+gL
 gR
-Xk
+gL
 gU
 PJ
 gW
@@ -34141,7 +34221,7 @@ gk
 ce
 iw
 bq
-jI
+jJ
 ix
 lx
 Sd
@@ -34342,7 +34422,7 @@ dr
 gl
 ce
 gp
-gp
+jI
 jJ
 jz
 jz
@@ -34544,7 +34624,7 @@ eN
 gn
 ce
 hk
-hk
+vx
 jJ
 jA
 lq
@@ -35150,7 +35230,7 @@ nI
 lY
 ce
 ce
-js
+VS
 js
 ce
 ce
@@ -35352,7 +35432,7 @@ lm
 lA
 lY
 mc
-jt
+Gp
 jt
 jB
 aX
@@ -35554,7 +35634,7 @@ CR
 zv
 lY
 eM
-aX
+RR
 cy
 Ho
 eU
@@ -35756,7 +35836,7 @@ Rz
 aQ
 lZ
 EC
-aX
+RR
 ee
 bi
 bi
