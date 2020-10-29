@@ -275,6 +275,26 @@
 	interface_name = "mounted chem injector"
 	interface_desc = "Dispenses loaded chemicals via an arm-mounted injector."
 
+/////////
+// Deathsquad ChemInjector
+/////////
+
+/obj/item/rig_module/chem_dispenser/deathsquad
+
+	name = "combat chemical injector"
+	desc = "A complex web of tubing and needles suitable for hardsuit use."
+
+	charges = list(
+		list("synaptizine", "synaptizine", /datum/reagent/synaptizine,       30),
+		list("hyperzine",   "hyperzine",   /datum/reagent/hyperzine,         30),
+		list("oxycodone",   "oxycodone",   /datum/reagent/tramadol/oxycodone,         80),
+		list("glucose",     "glucose",     /datum/reagent/nutriment/glucose, 80),
+		list("peridaxon",     "peridaxon",     /datum/reagent/peridaxon, 60),
+		)
+
+	interface_name = "combat chem dispenser"
+	interface_desc = "Dispenses loaded chemicals directly into the bloodstream."
+
 /obj/item/rig_module/voice
 
 	name = "hardsuit voice synthesiser"

@@ -1644,8 +1644,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "acV" = (
@@ -2412,7 +2410,6 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/plasmastun,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aen" = (
@@ -8766,8 +8763,6 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
 /turf/simulated/floor/tiled/dark,
 /area/operations_storage/security)
 "aoP" = (

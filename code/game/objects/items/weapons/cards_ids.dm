@@ -427,6 +427,18 @@ var/const/NO_EMAG_ACT = -50
 	..()
 	access |= get_all_station_access()
 
+/////////
+// Deathsquad
+/////////
+
+/obj/item/weapon/card/id/centcom/deathsquad
+	name = "Asset Protection ID"
+	assignment = "Corporate Commando"
+
+/obj/item/weapon/card/id/centcom/deathsquad/New()
+	..()
+	access |= get_all_station_access()
+
 /obj/item/weapon/card/id/foundation_civilian
 	name = "operant registration card"
 	desc = "A registration card in a faux-leather case. It marks the named individual as a registered, law-abiding psionic."

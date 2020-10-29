@@ -8,10 +8,6 @@
 /datum/fabricator_recipe/arms_ammo/shotgun_holder
 	path = /obj/item/ammo_magazine/shotholder/empty
 
-/datum/fabricator_recipe/arms_ammo/shotgun_blanks
-	name = "ammo (shotgun, blank)"
-	path = /obj/item/ammo_casing/shotgun/blank
-
 /datum/fabricator_recipe/arms_ammo/hidden
 	path = /obj/item/weapon/material/hatchet/machete/steel
 	hidden = TRUE
@@ -79,10 +75,6 @@
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double_rubber
 	name = "pistol magazine (10mm), (extended), (rubber)"
 	path = /obj/item/ammo_magazine/pistol/double/rubber
-
-/datum/fabricator_recipe/arms_ammo/hidden/pepper
-	name = "pistol magazine (10mm), (extended), (pepperball)"
-	path = /obj/item/ammo_magazine/pistol/double/pepperball
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double_practice
 	name = "pistol magazine (10mm), (extended), (practice)"

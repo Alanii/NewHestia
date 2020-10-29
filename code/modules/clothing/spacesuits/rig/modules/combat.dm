@@ -406,3 +406,18 @@
 	interface_desc = "An integrated microfactory that produces wet floor signs from thin air and electricity."
 
 	fabrication_type = /obj/item/weapon/caution
+
+/////////
+// grenade launcher - combat
+/////////
+
+/obj/item/rig_module/grenade_launcher/combat
+	name = "mounted grenade launcher"
+	interface_name = "grenade launcher"
+	desc = "A shoulder-mounted micro-explosive dispenser."
+
+	charges = list(
+		list("teargas",   "teargas",   /obj/item/weapon/grenade/chem_grenade/teargas,  12),
+		list("localized frag",   "localized frag",   /obj/item/weapon/grenade/frag/shell,  12),
+		list("EMP (DANGER)",   "EMP (DANGER)",   /obj/item/weapon/grenade/empgrenade,  6),
+		)

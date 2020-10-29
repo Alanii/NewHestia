@@ -293,6 +293,26 @@
 /obj/item/clothing/suit/armor/pcarrier/medium/nt
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor/tag/nt)
 
+// Cadet Vest
+/obj/item/clothing/suit/armor/pcarrier/light/security
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/storage/pouches)
+
+/obj/item/clothing/suit/armor/pcarrier/grey
+	name = "grey plate carrier"
+	desc = "A lightweight grey plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon_state = "pcarrier_grey"
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate)
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light/civ
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ)
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light/med
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ/med)
+
 /obj/item/clothing/suit/armor/pcarrier/ipc
 	name = "refitted plate carrier"
 	desc = "A modular, compact black plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."

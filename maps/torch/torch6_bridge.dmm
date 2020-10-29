@@ -2861,15 +2861,6 @@
 "eM" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/PPE,
-/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,
-/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,
-/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,
-/obj/item/ammo_magazine/smg,
-/obj/item/ammo_magazine/smg,
-/obj/item/ammo_magazine/smg,
-/obj/item/ammo_magazine/smg,
-/obj/item/ammo_magazine/smg,
-/obj/item/ammo_magazine/smg,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "eN" = (

@@ -170,10 +170,20 @@
 	desc = "A sturdy metal box with several warning symbols on the front.<br>WARNING: Live ammunition. Misuse may result in serious injury or death."
 	use_sound = 'sound/effects/closet_open.ogg'
 
-/obj/item/weapon/storage/box/ammo/blanks
-	name = "box of blank shells"
+/obj/item/weapon/storage/box/ammo/solar
+	name = "box of handgun magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_casing/shotgun/blank = 8)
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 3)
+
+/obj/item/weapon/storage/box/ammo/solar/full
+	name = "box of handgun magazines"
+	desc = "It has a picture of a gun and several warning symbols on the front."
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 7)
+
+/obj/item/weapon/storage/box/ammo/solar/rubber
+	name = "box of handgun 'rubber' magazines"
+	desc = "It has a picture of a gun and several warning symbols on the front."
+	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 7)
 
 /obj/item/weapon/storage/box/ammo/practiceshells
 	name = "box of practice shells"
@@ -198,6 +208,30 @@
 /obj/item/weapon/storage/box/ammo/stunshells
 	name = "box of stun shells"
 	startswith = list(/obj/item/ammo_magazine/shotholder/stun = 2)
+
+/obj/item/weapon/storage/box/ammo/shotgunammo/full
+	name = "heavy box of shotgun slugs"
+	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
+
+/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
+	name = "heavy box of rubbershot"
+	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
+
+/obj/item/weapon/storage/box/ammo/sabotbox
+	name = "box of sabot shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
+
+/obj/item/weapon/storage/box/ammo/beanbags/full
+	name = "heavy box of beanbag shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 6)
+
+/obj/item/weapon/storage/box/ammo/beanbags/half
+	name = "box of beanbag shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
+
+/obj/item/weapon/storage/box/ammo/beanbags/eight
+	name = "box of beanbag shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 2)
 
 /obj/item/weapon/storage/box/ammo/sniperammo
 	name = "box of sniper shells"
@@ -644,3 +678,26 @@
 
 /obj/item/weapon/storage/box/canned/tomato
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/canned/tomato = 6)
+
+/obj/item/weapon/storage/box/illumnades
+	name = "box of illumination grenades"
+	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
+	icon_state = "flashbang"
+	startswith = list(/obj/item/weapon/grenade/light = 6)
+
+/obj/item/weapon/storage/backpack/dufflebag/syndie/c4
+	name = "hefty bag"
+	startswith = list(/obj/item/weapon/plastique = 19)
+
+/obj/item/weapon/storage/lockbox/vials/random
+	name = "secure vial storage box"
+	desc = "A locked box for keeping things away from children."
+	w_class = ITEM_SIZE_NORMAL
+	req_access = list(access_research)
+	startswith = list(/obj/item/weapon/reagent_containers/glass/beaker/vial/projectsecret = 12)
+
+/obj/item/weapon/storage/box/flares
+	name = "box of flares"
+	desc = "Box o' flares. Not much else to say."
+	icon_state = "box"
+	startswith = list(/obj/item/device/flashlight/flare = 12)

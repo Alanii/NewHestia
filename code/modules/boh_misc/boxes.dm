@@ -1,47 +1,3 @@
-/////////
-// Ammo
-/////////
-
-/obj/item/weapon/storage/box/ammo/beanbags/full
-	name = "heavy box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 6)
-
-/obj/item/weapon/storage/box/ammo/beanbags/half
-	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
-
-/obj/item/weapon/storage/box/ammo/beanbags/eight
-	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 2)
-
-/obj/item/weapon/storage/box/ammo/solar
-	name = "box of handgun magazines"
-	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double = 3)
-
-/obj/item/weapon/storage/box/ammo/solar/full
-	name = "box of handgun magazines"
-	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double = 7)
-
-/obj/item/weapon/storage/box/ammo/solar/rubber
-	name = "box of handgun 'rubber' magazines"
-	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 7)
-
-/obj/item/weapon/storage/box/ammo/shotgunammo/full
-	name = "heavy box of shotgun slugs"
-	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
-
-/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
-	name = "heavy box of rubbershot"
-	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
-
-/obj/item/weapon/storage/box/ammo/sabotbox
-	name = "box of sabot shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
-
-
 /obj/item/gunbox
 	name = "equipment kit"
 	desc = "A secure box containing a sidearm."
@@ -107,41 +63,89 @@
 		qdel(src)
 
 /////////
-// Illum Box
+// Infantry Kits
 /////////
 
-/obj/item/weapon/storage/box/illumnades
-	name = "box of illumination grenades"
-	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
-	icon_state = "flashbang"
-	startswith = list(/obj/item/weapon/grenade/light = 6)
+/obj/item/gunbox/infantry
+	name = "Standard Kit"
+	desc = "A secure box containing a sidearm and primary."
+
+/obj/item/gunbox/infantry/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/,/obj/item/ammo_magazine/mil_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell)
+	options["Energy - Laser Carbine"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+
+/obj/item/gunbox/infcom
+	name = "Squad Leader Kit"
+	desc = "A secure box containing a sidearm and primary."
+
+/obj/item/gunbox/infcom/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - Tectonic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Energy - Laser Carbine (has burst fire)"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/energy/revolver/secure)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+
+/obj/item/gunbox/inftech
+	name = "Technician Kit"
+	desc = "A secure box containing a sidearm and primary."
+
+/obj/item/gunbox/inftech/attack_self(mob/living/user)
+	var/list/options = list()
+//	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Combat Medic"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/storage/firstaid/combat,/obj/item/weapon/storage/belt/medical/emt)
+	options["Automatic Rifleman"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
 
 /////////
-// Explosive Duffle
+// Suits
 /////////
-// LOTS O' C4
-/obj/item/weapon/storage/backpack/dufflebag/syndie/c4
-	name = "hefty bag"
-	startswith = list(/obj/item/weapon/plastique = 19)
+/obj/machinery/suit_cycler/infantry
+	name = "Infantry suit cycler"
+	model_text = "Infantry"
+	req_access = list(access_infantry)
+	available_modifications = list(/decl/item_modifier/space_suit/hazard, /decl/item_modifier/space_suit/engineering/alt, /decl/item_modifier/space_suit/security/alt, /decl/item_modifier/space_suit/security)
 
 /////////
-// Chemical Box
+// Firearm Kit
 /////////
-/obj/item/weapon/storage/lockbox/vials/random
-	name = "secure vial storage box"
-	desc = "A locked box for keeping things away from children."
-	w_class = ITEM_SIZE_NORMAL
-	req_access = list(access_research)
-	startswith = list(/obj/item/weapon/reagent_containers/glass/beaker/vial/projectsecret = 12)
+/obj/item/ascentbox
+	name = "equipment kit"
+	desc = "A secure box containing equipment."
+	icon = 'icons/obj/ascent_doodads.dmi'
+	icon_state = "box" //temp
 
-/////////
-// flares
-/////////
-// why this didn't exist already stuns me. or i'm just blind
-
-/obj/item/weapon/storage/box/flares
-	name = "box of flares"
-	desc = "Box o' flares. Not much else to say."
-	icon_state = "box"
-	startswith = list(/obj/item/device/flashlight/flare = 12)
+/obj/item/ascentbox/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Support Alate"] = list(/obj/item/stack/medical/resin/large,/obj/item/weapon/gun/energy/particle/support)
+	options["Enforcering Alate"] = list(/obj/item/weapon/gun/energy/particle/small,/obj/item/weapon/storage/med_pouch/ascent)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your Gyne thinks of you.")
+		qdel(src)
 

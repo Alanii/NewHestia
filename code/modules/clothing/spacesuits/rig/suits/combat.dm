@@ -127,3 +127,69 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/cooling_unit
 		)
+
+/////////
+// Deathsquad
+/////////
+
+/obj/item/weapon/rig/military/deathsquad		//Deathsquad only, considering you're basically unkillable.
+	name = "heavy suit control module"
+	desc = "A heavy, incredibly sleek suit of the best armor available to... well, anyone. Jesus, this is a lot of armor. \
+	You suspect that not even an organized military such as the SCG's would be able to contend with this. \
+	The ablative coating and composite armor makes it seem immune to nearly everything you can think of."
+	suit_type = "military hardsuit"
+	icon_state = "military_rig"
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLE,
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_SHIELDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
+	initial_modules = list(
+		/obj/item/rig_module/self_destruct,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/grenade_launcher/combat,
+		/obj/item/rig_module/mounted/lcannon,
+		/obj/item/rig_module/mounted/energy_blade,
+		/obj/item/rig_module/vision/multi,
+		/obj/item/rig_module/chem_dispenser/deathsquad,
+		/obj/item/rig_module/device/rcd,
+		/obj/item/rig_module/datajack,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/teleporter,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/maneuvering_jets
+	)
+
+
+/obj/item/weapon/rig/military/infantry
+	name = "heavy suit control module"
+	desc = "A heavy, incredibly sleek suit of military grade armor. \
+	The minor ablative coating and composite armor makes it seem incredibly sturdy."
+	req_access = list(access_infantry)
+	suit_type = "military hardsuit"
+	icon_state = "military_rig"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_SMALL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
+
+	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/handcuffs,/obj/item/device/t_scanner, /obj/item/weapon/rcd, /obj/item/weapon/crowbar, \
+	/obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/device/multitool, \
+	/obj/item/device/radio, /obj/item/device/scanner/gas,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
+	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit, /obj/item/weapon/storage/)
+
+	initial_modules = list(
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/maneuvering_jets
+	)
