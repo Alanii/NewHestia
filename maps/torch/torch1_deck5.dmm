@@ -14654,7 +14654,7 @@
 	},
 /obj/machinery/power/apc{
 	dir = 8;
-	name = "west bump";
+	name = "Infantry Prep";
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
@@ -16268,8 +16268,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
+	name = "Squad Leader";
 	pixel_y = -24
 	},
 /obj/machinery/light/spot,
@@ -17323,7 +17322,7 @@
 "PJ" = (
 /obj/machinery/light/small{
 	dir = 4;
-	flickering = `
+	flickering = 1
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -18103,8 +18102,7 @@
 	},
 /obj/machinery/power/apc{
 	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
+	name = "Combat Technician";
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
