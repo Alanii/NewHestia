@@ -3942,10 +3942,6 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/seeds/random,
 /obj/item/seeds/random,
-/obj/item/seeds/random,
-/obj/item/seeds/random,
-/obj/item/seeds/random,
-/obj/item/seeds/random,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -12050,16 +12046,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"vx" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/space)
 "vz" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/inflatable/wall,
@@ -33348,7 +33334,7 @@ gG
 OP
 MV
 Hd
-vx
+EX
 ye
 ye
 er
