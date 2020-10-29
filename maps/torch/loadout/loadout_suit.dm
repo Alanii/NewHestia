@@ -110,3 +110,20 @@
 /datum/gear/suit/labcoat_long
 	allowed_roles = DOCTOR_ROLES
 	allowed_branches = CASUAL_BRANCHES
+
+/datum/gear/tactical/kevlar
+	display_name = "kevlar selection"
+	description = "A selection of kevlar vests. They can be equipped with armor plates, but provides no protection of their own."
+	path = /obj/item/clothing/suit/armor/pcarrier
+	cost = 1
+	slot = slot_wear_suit
+	allowed_branches = TACTICOOL_BRANCHES
+
+/datum/gear/tactical/kevlar/New()
+	..()
+	var/armors = list()
+	armors["tan kevlar"] = /obj/item/clothing/suit/armor/pcarrier/kevlar/tan
+	armors["navy kevlar"] = /obj/item/clothing/suit/armor/pcarrier/kevlar/navy
+	armors["blue kevlar"] = /obj/item/clothing/suit/armor/pcarrier/kevlar/blue
+	armors["green kevlar"] = /obj/item/clothing/suit/armor/pcarrier/kevlar/green
+	gear_tweaks += new/datum/gear_tweak/path(armors)
