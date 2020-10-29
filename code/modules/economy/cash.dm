@@ -1,33 +1,29 @@
-#define CASH_PER_STAT 5000 // The cost of a single level of a statistic
-
 /obj/item/weapon/spacecash
-	name = "0 credit"
-	desc = "It's worth 0 credits."
+	name = "0 thalers"
+	desc = "It's worth 0 thalers."
 	gender = PLURAL
 	icon = 'icons/obj/items.dmi'
 	icon_state = "spacecash1"
 	opacity = 0
-	density = FALSE
-	anchored = FALSE
-	force = 1
-	throwforce = 1
+	density = 0
+	anchored = 0.0
+	force = 1.0
+	throwforce = 1.0
 	throw_speed = 1
 	throw_range = 2
-	w_class = ITEM_SIZE_SMALL
-	spawn_blacklisted = TRUE
+	w_class = ITEM_SIZE_TINY
 	var/access = list()
 	access = access_crate_cash
 	var/worth = 0
+	var/global/denominations = list(1000,500,200,100,50,20,10,1)
 
 /obj/item/weapon/spacecash/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/spacecash))
-		if(istype(W, /obj/item/weapon/spacecash/ewallet))
-			return FALSE
+		if(istype(W, /obj/item/weapon/spacecash/ewallet)) return 0
 
 		var/obj/item/weapon/spacecash/bundle/bundle
 		if(!istype(W, /obj/item/weapon/spacecash/bundle))
 			var/obj/item/weapon/spacecash/cash = W
-			user.drop_from_inventory(cash)
 			bundle = new (src.loc)
 			bundle.worth += cash.worth
 			qdel(cash)
@@ -35,65 +31,75 @@
 			bundle = W
 		bundle.worth += src.worth
 		bundle.update_icon()
-		if(ishuman(user))
+		if(istype(user, /mob/living/carbon/human))
 			var/mob/living/carbon/human/h_user = user
-			h_user.drop_from_inventory(src)
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, SPAN_NOTICE("You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] credits now."))
+		to_chat(user, "<span class='notice'>You add [src.worth] [GLOB.using_map.local_currency_name] worth of money to the bundles.<br>It holds [bundle.worth] [GLOB.using_map.local_currency_name] now.</span>")
 		qdel(src)
 
-/obj/item/weapon/spacecash/Destroy()
-	. = ..()
-	worth = 0		// Prevents money from be duplicated anytime.
+	else if(istype(W, /obj/item/weapon/gun/launcher/money))
+		var/obj/item/weapon/gun/launcher/money/L = W
+		L.absorb_cash(src, user)
+
+/obj/item/weapon/spacecash/proc/getMoneyImages()
+	if(icon_state)
+		return list(icon_state)
 
 /obj/item/weapon/spacecash/bundle
-	name = "pile of credits"
+	name = "pile of thalers"
 	icon_state = ""
-	desc = "They are worth 0 credits."
+	desc = "They are worth 0 Thalers."
 	worth = 0
 
-/obj/item/weapon/spacecash/bundle/update_icon()
-	overlays.Cut()
+/obj/item/weapon/spacecash/bundle/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/weapon/spacecash/bundle/getMoneyImages()
+	if(icon_state)
+		return list(icon_state)
+	. = list()
 	var/sum = src.worth
 	var/num = 0
-	var/list/denominations = list(1000,500,200,100,50,20,10,1)
 	for(var/i in denominations)
 		while(sum >= i && num < 50)
 			sum -= i
 			num++
-			var/image/banknote = image('icons/obj/items.dmi', "spacecash[i]")
-			var/matrix/M = matrix()
-			M.Translate(rand(-6, 6), rand(-4, 8))
-			M.Turn(pick(-45, -27.5, 0, 0, 0, 0, 0, 0, 0, 27.5, 45))
-			banknote.transform = M
-			src.overlays += banknote
-	if(num == 0) // Less than one credit, let's just make it look like 1 for ease
-		var/image/banknote = image('icons/obj/items.dmi', "spacecash1")
+			. += "spacecash[i]"
+	if(num == 0) // Less than one thaler, let's just make it look like 1 for ease
+		. += "spacecash1"
+
+/obj/item/weapon/spacecash/bundle/on_update_icon()
+	overlays.Cut()
+	var/list/images = src.getMoneyImages()
+
+	for(var/A in images)
+		var/image/banknote = image('icons/obj/items.dmi', A)
 		var/matrix/M = matrix()
 		M.Translate(rand(-6, 6), rand(-4, 8))
 		M.Turn(pick(-45, -27.5, 0, 0, 0, 0, 0, 0, 0, 27.5, 45))
 		banknote.transform = M
 		src.overlays += banknote
-	src.desc = "They are worth [worth] credits."
+
+	src.desc = "They are worth [worth] [GLOB.using_map.local_currency_name]."
 	if(worth in denominations)
-		src.name = "[worth] credit"
+		src.SetName("[worth] [GLOB.using_map.local_currency_name]")
 	else
-		src.name = "pile of credits"
+		src.SetName("pile of [worth] [GLOB.using_map.local_currency_name]")
+
+	if(overlays.len <= 2)
+		w_class = ITEM_SIZE_TINY
+	else
+		w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/spacecash/bundle/attack_self()
-	var/amount = input(usr, "How many credits do you want to take? (0 to [src.worth])", "Take Money", 20) as num
-	amount = round(CLAMP(amount, 0, src.worth))
+	var/amount = input(usr, "How many [GLOB.using_map.local_currency_name] do you want to take? (0 to [src.worth])", "Take Money", 20) as num
+	amount = round(Clamp(amount, 0, src.worth))
 	if(amount==0) return 0
-	else if (!Adjacent(usr))
-		to_chat(usr, SPAN_WARNING("You need to be in arm's reach for that!"))
-		return
 
 	src.worth -= amount
 	src.update_icon()
-	if(!worth)
-		usr.drop_from_inventory(src)
-		qdel(src)
 	if(amount in list(1000,500,200,100,50,20,1))
 		var/cashtype = text2path("/obj/item/weapon/spacecash/bundle/c[amount]")
 		var/obj/cash = new cashtype (usr.loc)
@@ -103,84 +109,62 @@
 		bundle.worth = amount
 		bundle.update_icon()
 		usr.put_in_hands(bundle)
-
-/obj/item/weapon/spacecash/bundle/Initialize()
-	. = ..()
-	AddComponent(/datum/component/inspiration, CALLBACK(src, .proc/return_stats))
-
-/// Returns a list to use with inspirations. It can be empty if there's not enough money in the bundle. Important side-effects: converts worth to points, thus reducing worth.
-/obj/item/weapon/spacecash/bundle/proc/return_stats()
-	RETURN_TYPE(/list)
-	var/points = min(worth/CASH_PER_STAT, 10) // capped at 10 points per bundle, costs 50k
-	var/list/stats = list()
-	// Distribute points evenly with random statistics. Just skips the loop if there's not enough money in the bundle, resulting in an empty list.
-	while(points > 0)
-		stats[pick(ALL_STATS)] += 1 // Picks a random stat, if not present it adds it with a value of 1, else it increases the value by 1
-		points--
-	worth -= points*CASH_PER_STAT
-	update_icon()
 	if(!worth)
 		qdel(src)
-	return stats
 
 /obj/item/weapon/spacecash/bundle/c1
-	name = "1 credit"
+	name = "1 Thaler"
 	icon_state = "spacecash1"
 	desc = "It's worth 1 credit."
 	worth = 1
 
 /obj/item/weapon/spacecash/bundle/c10
-	name = "10 credits"
+	name = "10 Thaler"
 	icon_state = "spacecash10"
-	desc = "It's worth 10 credits."
+	desc = "It's worth 10 Thalers."
 	worth = 10
 
 /obj/item/weapon/spacecash/bundle/c20
-	name = "20 credits"
+	name = "20 Thaler"
 	icon_state = "spacecash20"
-	desc = "It's worth 20 credits."
+	desc = "It's worth 20 Thalers."
 	worth = 20
 
 /obj/item/weapon/spacecash/bundle/c50
-	name = "50 credits"
+	name = "50 Thaler"
 	icon_state = "spacecash50"
-	desc = "It's worth 50 credits."
+	desc = "It's worth 50 Thalers."
 	worth = 50
 
 /obj/item/weapon/spacecash/bundle/c100
-	name = "100 credits"
+	name = "100 Thaler"
 	icon_state = "spacecash100"
-	desc = "It's worth 100 credits."
+	desc = "It's worth 100 Thalers."
 	worth = 100
 
 /obj/item/weapon/spacecash/bundle/c200
-	name = "200 credits"
+	name = "200 Thaler"
 	icon_state = "spacecash200"
-	desc = "It's worth 200 credits."
+	desc = "It's worth 200 Thalers."
 	worth = 200
 
 /obj/item/weapon/spacecash/bundle/c500
-	name = "500 credits"
+	name = "500 Thaler"
 	icon_state = "spacecash500"
-	desc = "It's worth 500 credits."
+	desc = "It's worth 500 Thalers."
 	worth = 500
 
-// exists here specifically for vagabond since they do not have bank accounts and used to have around 800 credits.
-/obj/item/weapon/spacecash/bundle/vagabond
-	name = "pile of credits"
-	icon_state = "spacecash500"
-
-/obj/item/weapon/spacecash/bundle/vagabond/Initialize()
-	var/rand_amount = rand(700,900)
-	desc = "They are worth [rand_amount] credits."
-	worth = rand_amount
-	. = ..()
-
 /obj/item/weapon/spacecash/bundle/c1000
-	name = "1000 credits"
+	name = "1000 Thaler"
 	icon_state = "spacecash1000"
-	desc = "It's worth 1000 credits."
+	desc = "It's worth 1000 Thalers."
 	worth = 1000
+
+/obj/item/weapon/spacecash/bundle/c50000
+	name = "50000 Thaler"
+	icon_state = "spacecash1000"
+	desc = "It's worth 50000 Thalers."
+	worth = 50000
 
 proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 	if(sum in list(1000,500,200,100,50,20,10,1))
@@ -202,9 +186,7 @@ proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 	desc = "A card that holds an amount of money."
 	var/owner_name = "" //So the ATM can set it so the EFTPOS can put a valid name on transactions.
 
-/obj/item/weapon/spacecash/ewallet/examine(mob/user)
-	..(user)
-	if (!(user in view(2)) && user!=src.loc) return
-	to_chat(user, "\blue Charge card's owner: [src.owner_name]. Credits remaining: [src.worth].")
-
-#undef CASH_PER_STAT
+/obj/item/weapon/spacecash/ewallet/examine(mob/user, distance)
+	. = ..(user)
+	if (distance > 2 && user != loc) return
+	to_chat(user, "<span class='notice'>Charge card's owner: [src.owner_name]. [GLOB.using_map.local_currency_name] remaining: [src.worth].</span>")
