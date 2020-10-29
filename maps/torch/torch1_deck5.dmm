@@ -3382,7 +3382,7 @@
 	},
 /obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "fP" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 0;
@@ -13204,11 +13204,7 @@
 /obj/item/weapon/gun/energy/laser/practice,
 /obj/item/weapon/gun/energy/laser/practice,
 /obj/item/weapon/gun/energy/laser/practice,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
-	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Ac" = (
@@ -13723,12 +13719,13 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -14641,7 +14638,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "Fn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -16933,7 +16930,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "Od" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -17009,7 +17006,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "Oq" = (
 /obj/machinery/door/blast/regular{
 	density = 1;
@@ -17304,7 +17301,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "PJ" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -18711,9 +18708,6 @@
 /obj/item/target/syndicate,
 /obj/item/target/syndicate,
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Vm" = (
@@ -19539,7 +19533,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/infantry/infcom)
+/area/infantry)
 "YQ" = (
 /obj/structure/cable/cyan{
 	d2 = 4;
