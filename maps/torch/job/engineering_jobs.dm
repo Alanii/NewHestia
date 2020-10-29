@@ -170,8 +170,8 @@
 	department = "Engineering"
 	department_flag = ENG
 
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	supervisors = "the Chief Engineer and the Corporate Liaison."
@@ -179,7 +179,6 @@
 	economic_power = 6
 	alt_titles = list(
 		"Mechsuit Technician",
-		"Biomechanical Technician"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
@@ -195,7 +194,7 @@
 		/datum/mil_rank/marine_corps/w2)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
 	                    SKILL_DEVICES		= SKILL_ADEPT,
-	                    SKILL_ANATOMY       = SKILL_EXPERT,
+	                    SKILL_ANATOMY       = SKILL_ADEPT,
 	                    SKILL_SCIENCE     	= SKILL_ADEPT,
 	                    SKILL_MEDICAL     	= SKILL_ADEPT,
 	                    SKILL_MECH          = HAS_PERK,
@@ -211,7 +210,9 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERT)
 	skill_points = 24
 
-	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, access_solgov_crew, access_maint_tunnels, access_research, access_petrov, access_petrov_maint, access_research,)
+	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, 
+					access_solgov_crew, access_maint_tunnels, access_research, access_petrov, 
+					access_petrov_maint, access_research,)
 	minimal_access = list()
 
 /datum/job/roboticist/get_description_blurb()

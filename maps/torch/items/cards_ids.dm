@@ -58,6 +58,12 @@
 /obj/item/weapon/card/id/torch/contractor/medical/counselor
 	job_access_type = /datum/job/psychiatrist
 
+/obj/item/weapon/card/id/torch/contractor/medical/biomech
+	job_access_type = /datum/job/biomech
+
+/obj/item/weapon/card/id/torch/crew/medical/biomech
+	job_access_type = /datum/job/biomech
+
 /obj/item/weapon/card/id/torch/silver/security
 	job_access_type = /datum/job/hos
 	detail_color = "#e00000"
