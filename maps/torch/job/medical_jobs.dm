@@ -218,3 +218,54 @@
 	if(H.mind.role_alt_title == "Mentalist")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()
+
+/datum/job/biomech
+	title = "Biomechanical Technician"
+	department = "Medical"
+	department_flag = MED
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Chief Medical Officer"
+	selection_color = "#013d3b"
+	economic_power = 8
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/biomech
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/marine,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/biomech
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/marine_corps/o3,
+		/datum/mil_rank/marine_corps/o4,
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4,
+		/datum/mil_rank/civ/contractor
+	)
+	min_skill = list(   SKILL_BUREAUCRACY   = SKILL_BASIC,
+						SKILL_COMPUTER		= SKILL_BASIC,
+	                    SKILL_MEDICAL       = SKILL_EXPERT,
+	                    SKILL_ANATOMY       = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY     = SKILL_BASIC,
+						SKILL_MECH          = HAS_PERK,
+						SKILL_ELECTRICAL    = SKILL_BASIC,
+	                    SKILL_CONSTRUCTION  = SKILL_BASIC,
+	                    SKILL_DEVICES       = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+						SKILL_DEVICES     = SKILL_SPEC,
+						SKILL_SCIENCE     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
+	skill_points = 20
+
+	access = list(access_maint_tunnels, access_research, access_petrov, access_petrov_maint, 
+					access_research, access_robotics, access_robotics_engineering, access_medical, 
+					access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+			        access_crematorium, access_chemistry, access_surgery,
+			        access_medical_equip, access_solgov_crew, access_senmed, access_hangar)
+
+	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/camera_monitor)
