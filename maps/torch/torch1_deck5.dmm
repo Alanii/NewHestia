@@ -14835,7 +14835,10 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "Gf" = (
 /obj/structure/table/steel,
-/obj/item/weapon/deck/cards,
+/obj/item/weapon/deck/cards{
+	pixel_x = -5;
+	pixel_y = 5
+	},
 /obj/effect/floor_decal/carpet/blue2{
 	icon_state = "blue2"
 	},
@@ -19300,7 +19303,7 @@
 	},
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/inflatable_dispenser{
-	pixel_x = 2;
+	pixel_x = -1;
 	pixel_y = -2
 	},
 /obj/structure/window/reinforced{
@@ -19639,7 +19642,9 @@
 /obj/effect/floor_decal/carpet/blue2{
 	dir = 1
 	},
-/obj/item/weapon/hand_labeler,
+/obj/item/weapon/hand_labeler{
+	pixel_y = 5
+	},
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
 "YZ" = (
