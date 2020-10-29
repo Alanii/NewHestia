@@ -17,7 +17,7 @@
 		if(istype(H)) H.change_appearance(APPEARANCE_ALL, H.loc, H, valid_species, state = GLOB.z_state)
 	else if(!preserve_appearance && (flags & ANTAG_SET_APPEARANCE_H))
 		var/mob/living/carbon/human/H = player.current
-		if(istype(H)) H.change_appearance(APPEARANCE_ALL, H.loc, H, list(SPECIES_HUMAN, SPECIES_IPC), state = GLOB.z_state)
+		if(istype(H)) H.change_appearance(APPEARANCE_ALL, H.loc, H, 1, list(SPECIES_HUMAN, SPECIES_IPC), state = GLOB.z_state)
 	return player.current
 
 /datum/antagonist/proc/update_access(var/mob/living/player)
