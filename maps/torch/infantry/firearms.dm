@@ -26,7 +26,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
-	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
+	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle, /obj/item/ammo_magazine/mil_rifle/practice)
 	auto_eject = 0
 	starts_loaded = 0
 	one_hand_penalty = 6 //lower power rounds
@@ -138,6 +138,12 @@
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
+//combat shotgun
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/infantry
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
+	It appears to have a firing restrictor installed, to prevent firing without authorization aboard the Dagon."
+	req_access = list(access_hop)
+	authorized_modes = list(UNAUTHORIZED)
 /////////
 // Recoilless Rifle
 /////////

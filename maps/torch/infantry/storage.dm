@@ -45,7 +45,7 @@
 	var/list/options = list()
 //	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Ballistic - Combat Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder/shell,/obj/item/ammo_magazine/shotholder,/obj/item/ammo_magazine/shotholder,/obj/item/ammo_magazine/shotholder,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Ballistic - Combat Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

@@ -3493,15 +3493,14 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "gc" = (
@@ -3574,7 +3573,9 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Infantry Storage"
+	autoset_access = 0;
+	name = "Infantry Storage";
+	req_access = list("ACCESS_INFANTRY")
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -3887,7 +3888,6 @@
 /area/quartermaster/expedition/atmos)
 "gN" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/table/rack/shelf/steel,
 /obj/random/tool,
 /obj/random/mre,
 /obj/structure/catwalk,
@@ -3899,6 +3899,9 @@
 /obj/random/mre,
 /obj/random/mre,
 /obj/random/mre,
+/obj/structure/largecrate{
+	name = "large crate of MREs"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gO" = (
@@ -3923,8 +3926,12 @@
 "gQ" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/seeds/random,
-/obj/item/seeds/random,
+/obj/item/seeds/random{
+	pixel_x = -6
+	},
+/obj/item/seeds/random{
+	pixel_x = 7
+	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3944,14 +3951,28 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "gS" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/box/lights/bulbs,
 /obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/largecrate{
+	name = "large crate of training ammunition"
+	},
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/mil_rifle/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/ammo_magazine/pistol/double/practice,
+/obj/item/weapon/storage/box/ammo/practiceshells,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gT" = (
@@ -7249,7 +7270,9 @@
 "mM" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/command{
-	name = "Infantry Storage"
+	autoset_access = 0;
+	name = "Infantry Storage";
+	req_access = list("ACCESS_INFANTRY")
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -9252,7 +9275,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/vending/engineering,
+/obj/machinery/vending/engineering{
+	req_access = list("ACCESS_INFTECH")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "pT" = (
@@ -12005,8 +12030,8 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/material/minihoe{
-	pixel_x = 3;
-	pixel_y = -4
+	pixel_x = 5;
+	pixel_y = -8
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -12015,11 +12040,11 @@
 	icon_state = "1-2"
 	},
 /obj/item/weapon/material/hatchet{
-	pixel_x = -5;
+	pixel_x = -3;
 	pixel_y = 6
 	},
 /obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = -4
+	pixel_x = -1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -14347,10 +14372,6 @@
 	health = 1e+006
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/gun/energy/laser/infantry,
-/obj/item/weapon/gun/energy/laser/infantry,
-/obj/item/weapon/gun/energy/laser/infantry,
-/obj/item/weapon/gun/energy/laser/infantry,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -14363,6 +14384,9 @@
 	},
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/item/weapon/storage/box/frags{
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -14636,6 +14660,10 @@
 	},
 /obj/effect/floor_decal/corner/blue/border{
 	dir = 4
+	},
+/obj/machinery/chemical_dispenser/tac_coffee/full/good{
+	pixel_x = -7;
+	pixel_y = -10
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -17279,12 +17307,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/atmos)
 "PF" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
 /obj/structure/table/steel,
 /obj/item/weapon/folder/blue{
 	pixel_x = 2;
@@ -17299,6 +17321,11 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -17810,7 +17837,9 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/machinery/vending/medical/torch,
+/obj/machinery/vending/medical/torch{
+	req_access = list("ACCESS_INFTECH")
+	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
