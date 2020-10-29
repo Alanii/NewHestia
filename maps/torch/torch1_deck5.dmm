@@ -14679,7 +14679,7 @@
 	},
 /obj/item/weapon/pen{
 	pixel_x = 8;
-	pixel_y = 13
+	pixel_y = 3
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
