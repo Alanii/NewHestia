@@ -12,6 +12,10 @@
 	name = "ammo (shotgun, blank)"
 	path = /obj/item/ammo_casing/shotgun/blank
 
+/datum/fabricator_recipe/arms_ammo/flaregun
+	name = "flare gun"
+	path = /obj/item/weapon/gun/projectile/flare
+
 /datum/fabricator_recipe/arms_ammo/hidden
 	path = /obj/item/weapon/material/hatchet/machete/steel
 	hidden = TRUE
@@ -32,7 +36,7 @@
 	name = "shotgun shell pack (12g), (beanbag)"
 	path = /obj/item/ammo_magazine/shotholder/beanbag
 
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_flash
+/datum/fabricator_recipe/arms_ammo/shotgun_holder_flash
 	name = "shotgun shell pack (12g), (flash)"
 	path = /obj/item/ammo_magazine/shotholder/flash
 
