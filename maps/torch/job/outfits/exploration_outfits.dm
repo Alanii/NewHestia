@@ -19,6 +19,26 @@
 	id_type = /obj/item/weapon/card/id/torch/crew/explorer
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/exploration
+	backpack_contents = list(/obj/item/weapon/gun/projectile/flare = 1, /obj/item/ammo_magazine/shotholder/flash = 1)
+
+/decl/hierarchy/outfit/job/torch/crew/exploration/medic
+	name = OUTFIT_JOB_NAME("Medic Explorer")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/exploration
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/weapon/card/id/torch/crew/explorer
+	pda_type = /obj/item/modular_computer/pda/explorer
+	l_ear = /obj/item/device/radio/headset/exploration
+	backpack_contents = list(/obj/item/weapon/storage/firstaid/stab = 1)
+
+
+/decl/hierarchy/outfit/job/torch/crew/exploration/technician
+	name = OUTFIT_JOB_NAME("Technician Explorer")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/exploration
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/weapon/card/id/torch/crew/explorer
+	pda_type = /obj/item/modular_computer/pda/explorer
+	l_ear = /obj/item/device/radio/headset/exploration
+	backpack_contents = list(/obj/item/weapon/storage/belt/utility/full = 1)
 
 /decl/hierarchy/outfit/job/torch/passenger/pilot
 	name = OUTFIT_JOB_NAME("Shuttle Pilot")

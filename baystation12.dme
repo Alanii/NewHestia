@@ -2777,6 +2777,7 @@
 #include "code\modules\projectiles\projectile\bullets.dm"
 #include "code\modules\projectiles\projectile\change.dm"
 #include "code\modules\projectiles\projectile\energy.dm"
+#include "code\modules\projectiles\projectile\flaregun.dm"
 #include "code\modules\projectiles\projectile\force.dm"
 #include "code\modules\projectiles\projectile\magnetic.dm"
 #include "code\modules\projectiles\projectile\special.dm"

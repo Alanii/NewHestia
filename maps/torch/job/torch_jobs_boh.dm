@@ -142,7 +142,7 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/marine
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2, 
+		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3
@@ -154,7 +154,8 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
 	)
 
 /datum/job/nt_pilot
@@ -170,11 +171,16 @@
 	)
 
 /datum/job/explorer
+	alt_titles = list(
+		"Technician Explorer" = /decl/hierarchy/outfit/job/torch/crew/exploration/technician,
+		"Medic Explorer" = /decl/hierarchy/outfit/job/torch/crew/exploration/medic
+	)
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5
 	)
 	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up NT not having sci skill by default.
 /***/
