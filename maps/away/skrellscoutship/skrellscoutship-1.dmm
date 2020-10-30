@@ -2743,11 +2743,11 @@
 /area/ship/skrellscoutship/command/armory)
 "yf" = (
 /obj/structure/table/rack/dark,
-/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
-/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
-/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
-/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
-/obj/item/weapon/gun/projectile/shotgun/pump/skrell,
+/obj/item/weapon/gun/projectile/shotgun/skrell,
+/obj/item/weapon/gun/projectile/shotgun/skrell,
+/obj/item/weapon/gun/projectile/shotgun/skrell,
+/obj/item/weapon/gun/projectile/shotgun/skrell,
+/obj/item/weapon/gun/projectile/shotgun/skrell,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "yk" = (

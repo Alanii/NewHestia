@@ -107,10 +107,12 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
 		/datum/mil_rank/marine_corps/e8,
 		/datum/mil_rank/marine_corps/w1,
@@ -164,7 +166,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
 		/datum/mil_rank/fleet/w1,
-		/datum/mil_rank/fleet/w2
+		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/fleet/w3
 	)
 
 /datum/job/explorer
@@ -290,14 +293,10 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/w1,
-		/datum/mil_rank/fleet/w2,
-		/datum/mil_rank/fleet/w3,
+		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
-		/datum/mil_rank/marine_corps/w1,
-		/datum/mil_rank/marine_corps/w2,
-		/datum/mil_rank/marine_corps/w3
+		/datum/mil_rank/marine_corps/e8
 	)
 
 /datum/job/detective
@@ -418,12 +417,12 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2,
-		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/marine_corps/w1,
 		/datum/mil_rank/marine_corps/w2,
-		/datum/mil_rank/marine_corps/w3,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3
 	)
