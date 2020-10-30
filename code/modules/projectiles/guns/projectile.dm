@@ -118,9 +118,9 @@
 		chambered = null
 
 #define EXP_TAC_RELOAD 1 SECOND
-#define PROF_TAC_RELOAD 0.5 SECONDS
+#define SPEC_TAC_RELOAD 0.5 SECONDS
 #define EXP_SPD_RELOAD 0.5 SECONDS
-#define PROF_SPD_RELOAD 0.25 SECONDS
+#define SPEC_SPD_RELOAD 0.25 SECONDS
 
 //Attempts to load A into src, depending on the type of thing being loaded and the load_method
 //Maybe this should be broken up into separate procs for each load method?
@@ -148,7 +148,7 @@
 							if(!user.unEquip(AM, src))
 								return
 							//Experienced gets a 1 second delay, master gets a 0.5 second delay
-							if(do_after(user, user.get_skill_value(SKILL_WEAPONS) == SKILL_PROF ? PROF_TAC_RELOAD : EXP_TAC_RELOAD, src))
+							if(do_after(user, user.get_skill_value(SKILL_WEAPONS) == SKILL_SPEC ? SPEC_TAC_RELOAD : EXP_TAC_RELOAD, src))
 								ammo_magazine.update_icon()
 								user.put_in_hands(ammo_magazine)
 								user.visible_message(SPAN_WARNING("\The [user] reloads \the [src] with \the [AM]!"),
@@ -160,7 +160,7 @@
 							if(!user.unEquip(AM, src))
 								return
 							//Experienced gets a 0.5 second delay, master gets a 0.25 second delay
-							if(do_after(user, user.get_skill_value(SKILL_WEAPONS) == SKILL_PROF ? PROF_SPD_RELOAD : EXP_SPD_RELOAD, src))
+							if(do_after(user, user.get_skill_value(SKILL_WEAPONS) == SKILL_SPEC ? SPEC_SPD_RELOAD : EXP_SPD_RELOAD, src))
 								ammo_magazine.update_icon()	
 								ammo_magazine.dropInto(user.loc)
 								user.visible_message(SPAN_WARNING("\The [user] reloads \the [src] with \the [AM]!"),
@@ -210,9 +210,9 @@
 	update_icon()
 
 #undef EXP_TAC_RELOAD
-#undef PROF_TAC_RELOAD
+#undef SPEC_TAC_RELOAD
 #undef EXP_SPD_RELOAD
-#undef PROF_SPD_RELOAD
+#undef SPEC_SPD_RELOAD
 //attempts to unload src. If allow_dump is set to 0, the speedloader unloading method will be disabled
 /obj/item/weapon/gun/projectile/proc/unload_ammo(mob/user, var/allow_dump=1)
 	if(is_jammed)
