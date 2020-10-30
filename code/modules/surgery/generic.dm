@@ -28,7 +28,7 @@
 		/obj/item/weapon/scalpel/laser1 = 75,
 		/obj/item/weapon/melee/energy/sword = 5
 	)
-	min_duration = 20
+	min_duration = 30
 	max_duration = 50
 
 /decl/surgery_step/generic/cut_with_laser/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -61,8 +61,8 @@
 	allowed_tools = list(
 		/obj/item/weapon/scalpel/manager = 100
 	)
-	min_duration = 15
-	max_duration = 40
+	min_duration = 30
+	max_duration = 50
 
 /decl/surgery_step/generic/managed/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
