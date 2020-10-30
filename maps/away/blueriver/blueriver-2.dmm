@@ -311,16 +311,6 @@
 /obj/item/weapon/reagent_containers/spray,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
-"bd" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	level = 2
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
 "be" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -575,8 +565,8 @@
 	pixel_x = -24
 	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bluespaceriver/ship)
@@ -621,8 +611,8 @@
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable{
-	charge = 0;
-	RCon_tag = "Solar - Port"
+	RCon_tag = "Solar - Port";
+	charge = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bluespaceriver/ship)
@@ -634,8 +624,8 @@
 /area/bluespaceriver/ship)
 "bV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	icon_state = "map_universal";
-	dir = 4
+	dir = 4;
+	icon_state = "map_universal"
 	},
 /turf/simulated/wall/titanium,
 /area/bluespaceriver/ship)
@@ -647,14 +637,6 @@
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ship)
-"bX" = (
-/obj/structure/bed/padded,
-/obj/item/weapon/bedsheet/yellow,
-/obj/item/weapon/storage/secure/safe{
-	pixel_y = 24
-	},
-/turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "bY" = (
 /obj/structure/bed/padded,
@@ -839,12 +821,6 @@
 /obj/effect/landmark/corpse/scientist,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
-"cG" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/space,
-/turf/simulated/floor/exoplanet/snow{
-	temperature = 240
-	},
-/area/bluespaceriver/ground)
 "cH" = (
 /mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/exoplanet/snow{
@@ -869,6 +845,15 @@
 	temperature = 240
 	},
 /area/bluespaceriver/ground)
+"ea" = (
+/obj/structure/bed/padded,
+/obj/item/weapon/bedsheet/yellow,
+/obj/item/weapon/storage/secure/safe{
+	pixel_y = 24
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
+/area/bluespaceriver/ship)
 "hN" = (
 /obj/machinery/door/airlock/science,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -876,9 +861,24 @@
 	},
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
+"hU" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	level = 2
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled,
+/area/bluespaceriver/ship)
 "Co" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/wall/titanium,
+/area/bluespaceriver/ship)
+"Fv" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "Lk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -2662,7 +2662,7 @@ ay
 ay
 aM
 au
-bd
+hU
 bq
 ay
 bG
@@ -2973,7 +2973,7 @@ bs
 ay
 bI
 ay
-bX
+ea
 ay
 cd
 ch
@@ -3273,7 +3273,7 @@ aw
 ay
 aI
 aQ
-au
+Fv
 bh
 aA
 aA
@@ -3578,7 +3578,7 @@ an
 an
 aC
 aK
-au
+Fv
 au
 bk
 bw
@@ -3899,13 +3899,13 @@ ac
 ac
 ac
 ac
-ac
-ac
-cG
-ac
-ac
-ac
 cH
+ac
+ac
+ac
+ac
+ac
+ac
 ac
 ac
 ac
@@ -4202,7 +4202,7 @@ ac
 ac
 ac
 ac
-ac
+cH
 ac
 ac
 ac
@@ -4502,7 +4502,7 @@ ac
 ac
 ac
 ac
-cH
+ac
 ac
 ac
 ac
@@ -4797,7 +4797,6 @@ ac
 ac
 ac
 ac
-cH
 ac
 ac
 ac
@@ -4806,7 +4805,8 @@ ac
 ac
 ac
 ac
-cG
+ac
+ac
 ac
 ac
 ac
@@ -4997,9 +4997,9 @@ ac
 ac
 ac
 ac
-ac
-ac
 ah
+ac
+ac
 ac
 ac
 ac
