@@ -171,4 +171,4 @@
 	base_parry_chance = 20
 	load_method = SINGLE_CASING
 	handle_casings = EJECT_CASINGS
-	caliber = CALIBER_SABOT
+	caliber = CALIBER_SHOTGUN
