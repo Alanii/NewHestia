@@ -244,22 +244,17 @@
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/civ/contractor
 	)
-	min_skill = list(   SKILL_BUREAUCRACY   = SKILL_BASIC,
-						SKILL_COMPUTER		= SKILL_BASIC,
-	                    SKILL_MEDICAL       = SKILL_EXPERT,
+	min_skill = list(	SKILL_MEDICAL       = SKILL_ADEPT,
 	                    SKILL_ANATOMY       = SKILL_EXPERT,
-	                    SKILL_CHEMISTRY     = SKILL_BASIC,
 						SKILL_MECH          = HAS_PERK,
-						SKILL_ELECTRICAL    = SKILL_BASIC,
-	                    SKILL_CONSTRUCTION  = SKILL_BASIC,
 	                    SKILL_DEVICES       = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 						SKILL_DEVICES     = SKILL_SPEC,
 						SKILL_SCIENCE     = SKILL_EXPERT,
-	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
-	skill_points = 20
+	                    SKILL_CHEMISTRY   = SKILL_ADEPT)
+	skill_points = 16
 
 	access = list(access_maint_tunnels, access_research, access_petrov, access_petrov_maint, 
 					access_research, access_robotics, access_robotics_engineering, access_medical, 
