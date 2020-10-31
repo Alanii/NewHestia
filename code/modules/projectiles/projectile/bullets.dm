@@ -192,9 +192,9 @@
 /obj/item/projectile/bullet/shotgun/flechette
 	name = "flechette"
 	fire_sound = 'sound/weapons/gunshot/new_shotgun.ogg'
-	damage = 60
-	armor_penetration = 80
-	distance_falloff = 1.2
+	damage = 45
+	armor_penetration = 60
+	distance_falloff = 1.5
 
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
 //High number of pellets with low velocity lends itself to more embeds
