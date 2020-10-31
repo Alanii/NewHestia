@@ -6,7 +6,7 @@
 		if(player.current.faction != MOB_FACTION_NEUTRAL)
 			return 0
 
-	if(is_type_in_list(player.assigned_job, blacklisted_jobs))
+	if(is_type_in_list(player.assigned_job, blacklisted_jobs) || is_type_in_list(player.current.get_species(), blacklisted_species))
 		return 0
 
 	if(!ignore_role)
