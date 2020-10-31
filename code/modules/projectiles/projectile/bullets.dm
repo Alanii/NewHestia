@@ -194,7 +194,7 @@
 	fire_sound = 'sound/weapons/gunshot/new_shotgun.ogg'
 	damage = 45
 	armor_penetration = 60
-	distance_falloff = 1.5
+	distance_falloff = 1
 
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
 //High number of pellets with low velocity lends itself to more embeds
