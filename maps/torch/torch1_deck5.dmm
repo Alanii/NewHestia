@@ -16571,9 +16571,6 @@
 	dir = 4;
 	icon_state = "corner_white"
 	},
-/obj/item/weapon/gun/energy/laser/infantry,
-/obj/item/weapon/gun/energy/laser/infantry,
-/obj/item/weapon/gun/energy/laser/infantry,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "Nl" = (
