@@ -1,3 +1,5 @@
+//If anyone asks it was like this when I found it :wink://
+
 /////////
 // projectile global lock
 /////////
@@ -81,6 +83,48 @@
 	model_text = "Infantry"
 	req_access = list(access_infantry)
 	available_modifications = list(/decl/item_modifier/space_suit/hazard, /decl/item_modifier/space_suit/engineering/alt, /decl/item_modifier/space_suit/security/alt, /decl/item_modifier/space_suit/security)
+
+
+/obj/item/weapon/rig/military/infantry
+	name = "heavy suit control module"
+	desc = "A heavy, incredibly sleek suit of military grade armor. \
+	The minor ablative coating and composite armor makes it seem incredibly sturdy."
+	req_access = list(access_infantry)
+	suit_type = "military hardsuit"
+	icon_state = "military_rig"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_SMALL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
+
+	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/handcuffs,/obj/item/device/t_scanner, /obj/item/weapon/rcd, /obj/item/weapon/crowbar, \
+	/obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/device/multitool, \
+	/obj/item/device/radio, /obj/item/device/scanner/gas,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
+	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit, /obj/item/weapon/storage/)
+
+	initial_modules = list(
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/maneuvering_jets
+	)
+
+//Vending
+/obj/machinery/vending/security/infantry
+	name = "InfTech"
+	desc = "A munition vendor."
+	req_access = list(access_infantry)
+	products = list(
+		/obj/item/ammo_magazine/mil_rifle/sec = 12,
+		/obj/item/ammo_magazine/mil_rifle/sec/large = 2,
+		/obj/item/ammo_magazine/pistol/double = 8,
+		/obj/item/ammo_magazine/shotholder/sabot = 6,
+		/obj/item/ammo_magazine/smg = 2,
+		/obj/item/stack/medical/advanced/bruise_pack = 4,
+		/obj/item/stack/medical/advanced/ointment = 4)
 
 /////////
 // Pistol

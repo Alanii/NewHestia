@@ -1465,16 +1465,4 @@
 		/obj/item/clothing/accessory/armorplate/tactical = 2,
 		/obj/item/clothing/accessory/armorplate/shock = 4)
 	contraband = list(/obj/item/clothing/accessory/storage/bandolier = 2,/obj/item/clothing/accessory/storage/drop_pouches/black = 2)
-
-/obj/machinery/vending/security/infantry
-	name = "InfTech"
-	desc = "A munition vendor."
-	req_access = list(access_infantry)
-	products = list(
-		/obj/item/ammo_magazine/mil_rifle/sec = 12,
-		/obj/item/ammo_magazine/mil_rifle/sec/large = 2,
-		/obj/item/ammo_magazine/pistol/double = 8,
-		/obj/item/ammo_magazine/shotholder/sabot = 6,
-		/obj/item/ammo_magazine/smg = 2,
-		/obj/item/stack/medical/advanced/bruise_pack = 4,
-		/obj/item/stack/medical/advanced/ointment = 4)
+	
