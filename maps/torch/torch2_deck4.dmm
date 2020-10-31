@@ -87,8 +87,8 @@
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2;
-	name = "Deck Chief";
-	req_access = list("ACCESS_CARGO, ACCESS_QUATERMASTER")
+	name = "\improper Deck Chief";
+	req_access = list("ACCESS_QUARTERMASTER")
 	},
 /obj/machinery/door/blast/shutters{
 	dir = 2;

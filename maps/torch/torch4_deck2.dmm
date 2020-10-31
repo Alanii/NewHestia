@@ -9542,12 +9542,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "su" = (
@@ -9845,7 +9839,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "td" = (
-/obj/random/tool,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
