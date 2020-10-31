@@ -57,7 +57,6 @@
 /area/bluespaceriver/underground)
 "m" = (
 /obj/item/weapon/pickaxe/drill,
-/mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 "n" = (
@@ -93,6 +92,10 @@
 /area/bluespaceriver/underground)
 "t" = (
 /obj/item/device/geiger,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"u" = (
+/obj/structure/inflatable/wall,
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 "v" = (
@@ -140,9 +143,29 @@
 /obj/structure/wall_frame/away,
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
-"P" = (
-/mob/living/simple_animal/hostile/syndicate/melee/space,
+"B" = (
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"E" = (
+/obj/item/inflatable/torn,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"I" = (
+/mob/living/simple_animal/hostile/hive_alien/defender,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"O" = (
+/obj/structure/inflatable/door,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"P" = (
+/obj/random/junk,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
+"R" = (
+/mob/living/simple_animal/hostile/hive_alien/defender,
+/turf/simulated/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 
 (1,1,1) = {"
@@ -2343,7 +2366,7 @@ a
 a
 a
 a
-k
+P
 k
 k
 w
@@ -2549,7 +2572,7 @@ a
 a
 k
 k
-k
+E
 k
 a
 a
@@ -2649,10 +2672,10 @@ a
 a
 a
 a
+u
+O
 k
 k
-k
-P
 a
 a
 a
@@ -4387,7 +4410,7 @@ k
 k
 k
 x
-k
+I
 k
 k
 k
@@ -4492,7 +4515,7 @@ k
 k
 k
 k
-k
+B
 a
 a
 a
@@ -5710,7 +5733,7 @@ c
 e
 c
 f
-f
+R
 f
 f
 f

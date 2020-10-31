@@ -414,6 +414,7 @@
 "bq" = (
 /obj/structure/bed/chair/office/light,
 /obj/machinery/light,
+/mob/living/simple_animal/hostile/hive_alien/defender/wounded,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "br" = (
@@ -461,6 +462,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "bz" = (
@@ -822,11 +824,10 @@
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "cH" = (
-/mob/living/simple_animal/hostile/syndicate/melee/space,
-/turf/simulated/floor/exoplanet/snow{
-	temperature = 240
-	},
-/area/bluespaceriver/ground)
+/obj/structure/bed/chair/office/light,
+/obj/item/weapon/grenade/spawnergrenade/manhacks,
+/turf/simulated/floor/tiled,
+/area/bluespaceriver/ship)
 "cI" = (
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/exoplanet/snow{
@@ -851,7 +852,6 @@
 /obj/item/weapon/storage/secure/safe{
 	pixel_y = 24
 	},
-/mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "hN" = (
@@ -869,16 +869,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "Co" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
-"Fv" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/space,
-/turf/simulated/floor/tiled,
 /area/bluespaceriver/ship)
 "Lk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -2459,7 +2454,7 @@ ac
 an
 an
 bb
-aN
+cH
 ay
 ay
 ay
@@ -3273,7 +3268,7 @@ aw
 ay
 aI
 aQ
-Fv
+au
 bh
 aA
 aA
@@ -3578,7 +3573,7 @@ an
 an
 aC
 aK
-Fv
+au
 au
 bk
 bw
@@ -3899,7 +3894,7 @@ ac
 ac
 ac
 ac
-cH
+ac
 ac
 ac
 ac
@@ -4202,7 +4197,7 @@ ac
 ac
 ac
 ac
-cH
+ac
 ac
 ac
 ac
