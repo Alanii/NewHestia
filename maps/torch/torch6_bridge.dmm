@@ -2861,6 +2861,10 @@
 "eM" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "eN" = (
@@ -8656,9 +8660,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/guncabinet/PPE{
-	name = "Saferoom primary cabinet"
-	},
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
 "ow" = (
@@ -11043,6 +11045,10 @@
 	dir = 5;
 	icon_state = "techfloor_edges"
 	},
+/obj/structure/bed/chair/padded/blue{
+	dir = 8;
+	icon_state = "chair_preview"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "sr" = (
@@ -11902,7 +11908,6 @@
 /turf/simulated/wall/r_wall/hull,
 /area/turret_protected/ai_foyer)
 "ub" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
 	cycle_to_external_air = 1;
 	id_tag = "bridge_safe";
@@ -11922,9 +11927,7 @@
 	pixel_x = -26;
 	pixel_y = 9
 	},
-/obj/machinery/suit_storage_unit/standard_unit{
-	req_access = newlist()
-	},
+/obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
 "uc" = (
@@ -12547,6 +12550,7 @@
 	icon_state = "techfloor_edges"
 	},
 /obj/item/device/geiger,
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "vj" = (
@@ -12976,6 +12980,10 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
 	icon_state = "techfloor_edges"
+	},
+/obj/structure/bed/chair/padded/blue{
+	dir = 4;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -17258,7 +17266,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Pf" = (
-/obj/random/maintenance/solgov,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -17266,6 +17273,10 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 9;
 	icon_state = "techfloor_edges"
+	},
+/obj/structure/bed/chair/padded/blue{
+	dir = 4;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -18932,10 +18943,6 @@
 /turf/simulated/wall/prepainted,
 /area/bridge/meeting_room)
 "Xa" = (
-/obj/structure/bed/chair/padded/blue{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
 /obj/machinery/power/apc/high{
 	dir = 8;
 	name = "west bump";
@@ -18957,6 +18964,7 @@
 	dir = 10;
 	icon_state = "techfloor_edges"
 	},
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "Xb" = (

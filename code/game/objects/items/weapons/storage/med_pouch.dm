@@ -167,6 +167,26 @@ Single Use Emergency Pouches
 	6) Stay in place once they respond.\
 		"}
 
+	
+//pouch
+/obj/item/weapon/storage/med_pouch/ascent
+	name = "chemical pouch"
+	injury_type = "ascent"
+	color = COLOR_PURPLE
+
+	startswith = list(
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
+		)
+	instructions = {"
+	1) Tear open the emergency medical pack using the easy open tab at the top.\n\
+	\t2) Carefully try not to die.\n\
+	\t3) Don't overdose yourself, use one injector at a time.\n\
+		"}	
+
 /obj/item/weapon/reagent_containers/pill/pouch_pill
 	name = "emergency pill"
 	desc = "An emergency pill from an emergency medical pouch"
@@ -224,3 +244,9 @@ Single Use Emergency Pouches
 	name = "emergency adrenaline autoinjector"
 	amount_per_transfer_from_this = 8
 	reagents_to_add = list(/datum/reagent/adrenaline = 8)
+
+//hypo
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
+	name = "autoinjector (Crystal Brothime)"
+	band_color = COLOR_GOLD
+	reagents_to_add = list(/datum/reagent/crystaltram = 5)

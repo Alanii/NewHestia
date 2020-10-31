@@ -1176,18 +1176,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/defturrets)
-"cl" = (
-/obj/random/illegal,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "cm" = (
 /obj/item/weapon/stool,
 /obj/machinery/alarm{
@@ -1270,8 +1258,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "cv" = (
 /obj/machinery/door/airlock/hatch{
@@ -1351,8 +1338,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "cG" = (
 /obj/structure/table/marble,
@@ -1624,6 +1610,7 @@
 /obj/machinery/door/airlock/civilian{
 	name = "Custodial Closet"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor)
 "de" = (
@@ -3538,10 +3525,10 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/closet/secure_closet/guncabinet,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/storage/box/ammo/shotgunammo/full,
+/obj/item/weapon/storage/box/ammo/shotgunammo/full,
 /turf/simulated/floor/tiled/steel_grid,
 /area/defturrets)
 "gR" = (
@@ -9446,11 +9433,10 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced,
+/obj/effect/floor_decal/industrial/outline/red,
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/random/illegal,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sk" = (
@@ -9491,7 +9477,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/red,
-/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "so" = (
@@ -9518,7 +9503,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/red,
-/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sq" = (
@@ -9547,7 +9531,6 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/random/illegal,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -9559,13 +9542,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
-/area/vacant/armory)
-"st" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9597,12 +9580,11 @@
 /area/vacant/armory)
 "sx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sy" = (
-/obj/random/torchcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sz" = (
@@ -9621,9 +9603,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/substation/seconddeck)
 "sB" = (
-/obj/structure/closet/secure_closet/guncabinet/sidearm,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/table/rack{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sC" = (
@@ -9666,14 +9650,11 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sI" = (
-/obj/random/powercell,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sJ" = (
 /obj/structure/table/rack{
@@ -9688,21 +9669,6 @@
 	name = "Weapons locker"
 	},
 /obj/effect/floor_decal/industrial/outline/red,
-/obj/random/illegaltwo,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
-"sK" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sL" = (
@@ -9711,11 +9677,9 @@
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
 "sM" = (
-/obj/machinery/door/firedoor,
-/obj/random/tank,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sN" = (
 /obj/machinery/door/airlock/glass/engineering{
@@ -9730,15 +9694,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/bluespace)
 "sO" = (
-/obj/random/ammo,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sP" = (
 /obj/machinery/door/firedoor,
@@ -9768,12 +9730,10 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/random/ammo,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sS" = (
-/obj/random/tool,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	pixel_y = 0
@@ -9879,7 +9839,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "tc" = (
-/obj/random/ammo,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
@@ -9899,20 +9858,16 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "te" = (
-/obj/random/illegal,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "tf" = (
-/obj/random/ammo,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "tg" = (
 /obj/structure/table/rack{
@@ -10141,6 +10096,7 @@
 /obj/machinery/door/airlock/civilian{
 	name = "Shower"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/seconddeck/foreport)
 "tD" = (
@@ -11110,7 +11066,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "vs" = (
-/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "vt" = (
@@ -18046,6 +18001,16 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/engineering/engineering_monitoring)
+"Ra" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "Rb" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
@@ -18461,8 +18426,6 @@
 	name = "Weapons locker"
 	},
 /obj/effect/floor_decal/industrial/outline/red,
-/obj/random/illegal,
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "Sx" = (
@@ -20296,8 +20259,6 @@
 	name = "Weapons locker"
 	},
 /obj/effect/floor_decal/industrial/outline/red,
-/obj/random/ammo,
-/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "YO" = (
@@ -32867,7 +32828,7 @@ rt
 tu
 sP
 td
-st
+sI
 sI
 sO
 sz
@@ -33270,12 +33231,12 @@ wE
 wE
 dX
 aK
-cl
+cu
 sj
 aK
 sB
 sS
-sK
+YN
 sz
 sz
 sz
@@ -33477,7 +33438,7 @@ sn
 aK
 sH
 vs
-sK
+YN
 sz
 sz
 sz
@@ -36098,7 +36059,7 @@ Nm
 Nm
 Nm
 Nm
-Nm
+Ra
 Nm
 Nm
 zM
