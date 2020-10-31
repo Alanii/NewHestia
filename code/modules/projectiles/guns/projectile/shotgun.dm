@@ -219,3 +219,20 @@
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty
 	starts_loaded = FALSE
+
+/obj/item/weapon/gun/projectile/shotgun/skrell
+	name = "QX-2 shotgun"
+	desc = "Modeled after VT-3, the Qerr Xira-2 or refered to in Sol as QX-2, is a pulse shotgun capable of delivering devastating blast of flechettes with minimal spread."
+	icon = 'icons/obj/guns/skrell_shotgun.dmi'
+	icon_state = "skrellshotgun"
+	item_state = "skrellshotgun"
+	wielded_item_state = "skrellshotgun-wielded"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	max_shells = 11 //+1 in chamber
+	ammo_type = /obj/item/ammo_casing/shotgun/flechette
+	one_hand_penalty = 10
+	base_parry_chance = 20
+	load_method = SINGLE_CASING
+	handle_casings = EJECT_CASINGS
+	caliber = CALIBER_SHOTGUN
+

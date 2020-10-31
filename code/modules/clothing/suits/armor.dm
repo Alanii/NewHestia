@@ -503,3 +503,23 @@
 	name = "bundeforz armored vest"
 	desc = "A heavy armored vest in a light grey urban camo. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "m_vest"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/tan
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_tan"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/navy
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_navy"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/blue
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_blue"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/green
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_green"

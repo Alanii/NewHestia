@@ -140,6 +140,10 @@
 /obj/structure/wall_frame/away,
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
+"P" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
 
 (1,1,1) = {"
 a
@@ -2648,7 +2652,7 @@ a
 k
 k
 k
-k
+P
 a
 a
 a
