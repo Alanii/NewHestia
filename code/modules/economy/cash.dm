@@ -97,6 +97,9 @@
 	var/amount = input(usr, "How many [GLOB.using_map.local_currency_name] do you want to take? (0 to [src.worth])", "Take Money", 20) as num
 	amount = round(Clamp(amount, 0, src.worth))
 	if(amount==0) return 0
+	else if (!Adjacent(usr))
+		to_chat(usr, SPAN_WARNING("You need to be in arm's reach for that!"))
+		return
 
 	src.worth -= amount
 	src.update_icon()
@@ -111,6 +114,10 @@
 		usr.put_in_hands(bundle)
 	if(!worth)
 		qdel(src)
+
+/obj/item/weapon/spacecash/Destroy()
+	. = ..()
+	worth = 0		// Prevents money from be duplicated anytime.
 
 /obj/item/weapon/spacecash/bundle/c1
 	name = "1 Thaler"
