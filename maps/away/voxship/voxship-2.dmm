@@ -110,9 +110,7 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "an" = (
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "ap" = (
@@ -931,8 +929,8 @@
 /area/voxship/fore)
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
+/obj/machinery/door/airlock{
+	name = "Armory"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/fore)
@@ -1333,8 +1331,8 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
+/obj/machinery/door/airlock{
+	name = "Helm"
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/fore)
@@ -1442,9 +1440,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "dl" = (
@@ -1680,9 +1676,7 @@
 /area/voxship/thrusters)
 "dL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/thrusters)
 "dM" = (
@@ -2054,8 +2048,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
+/obj/machinery/door/airlock{
+	name = "Canister Storage"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
@@ -2285,8 +2279,8 @@
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
+/obj/machinery/door/airlock{
+	name = "Engine"
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
@@ -2384,9 +2378,7 @@
 	dir = 5;
 	icon_state = "intact"
 	},
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "fr" = (
@@ -2707,9 +2699,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "gk" = (
@@ -2808,9 +2798,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
 "gB" = (
@@ -2820,9 +2808,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
-/obj/machinery/door/airlock/hatch/voxship{
-	name = "Airtight Hatch"
-	},
+/obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "gC" = (
@@ -3118,6 +3104,25 @@
 /obj/random/snack,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
+"nU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock{
+	name = "Medbay"
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/fore)
+"OG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock{
+	name = "Botany"
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/scavship)
 
 (1,1,1) = {"
 fX
@@ -7349,7 +7354,7 @@ bY
 cy
 dc
 dt
-cy
+nU
 ep
 eS
 fm
@@ -7651,7 +7656,7 @@ au
 aL
 bl
 bN
-gi
+OG
 cz
 de
 du
