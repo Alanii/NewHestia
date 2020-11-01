@@ -9698,14 +9698,14 @@
 /obj/effect/floor_decal/corner/blue/half,
 /obj/machinery/button/blast_door{
 	id_tag = "sea_mc_shutters";
-	name = "SEA Office Shutters";
+	name = "SMC Attache Office Shutters";
 	pixel_y = -25
 	},
 /obj/structure/bed/chair/padded/red{
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Senior Enlisted Advisor of Marine Corps"
+	name = "SMC Attache"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea/marine)

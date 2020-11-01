@@ -689,7 +689,7 @@
 	req_access = list(access_senadv)
 
 /area/crew_quarters/heads/office/sea/marine
-	name = "\improper Command - Marine SEA's Office"
+	name = "\improper Command - SMC Attache's Office"
 
 // Engineering
 
