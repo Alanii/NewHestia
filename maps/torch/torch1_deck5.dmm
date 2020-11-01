@@ -12233,6 +12233,7 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
+/obj/item/device/gps,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "xN" = (
@@ -17939,6 +17940,7 @@
 /obj/item/modular_computer/tablet/lease{
 	pixel_x = 2
 	},
+/obj/item/device/gps,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
