@@ -12229,7 +12229,6 @@
 /obj/item/device/radio,
 /obj/item/weapon/storage/box/gloves,
 /obj/item/weapon/storage/box/masks,
-/obj/item/weapon/storage/box/autoinjectors,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
@@ -16756,14 +16755,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/empty,
+/obj/item/weapon/storage/box/autoinjectors,
 /obj/item/weapon/storage/pill_bottle/dermaline{
 	pixel_x = -8;
 	pixel_y = 4
