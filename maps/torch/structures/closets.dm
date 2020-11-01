@@ -129,7 +129,8 @@
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/gunbox/infcom,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/device/gps,
+		/obj/item/weapon/storage/box/illumnades,
 		)
 
 /////////
