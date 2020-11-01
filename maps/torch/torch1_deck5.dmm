@@ -11669,9 +11669,6 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "vz" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/rig_module/device/healthscanner,
 /obj/item/rig_module/vision/medhud,
@@ -13915,9 +13912,6 @@
 	dir = 1;
 	health = 1e+006
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/light/spot{
 	dir = 4
 	},
@@ -14827,9 +14821,6 @@
 "HL" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/item/weapon/weldpack/bigwelder{
 	pixel_x = -2
 	},
@@ -15256,9 +15247,6 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/crowbar,
 /obj/item/weapon/wrench,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -16720,9 +16708,6 @@
 /area/shuttle/petrov/isolation)
 "Ps" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/weapon/storage/box/autoinjectors,
 /obj/item/weapon/storage/pill_bottle/dermaline{
@@ -16864,10 +16849,6 @@
 /area/shuttle/petrov/rd)
 "PU" = (
 /obj/machinery/vending/security/infantry,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -17246,9 +17227,6 @@
 /obj/item/weapon/crowbar,
 /obj/item/weapon/wrench,
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/light/spot{
 	dir = 4
