@@ -3330,12 +3330,14 @@
 	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -3364,16 +3366,11 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
 "gf" = (
-/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/rig_module/vision/meson{
 	pixel_x = 2;
@@ -3384,6 +3381,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
@@ -6650,17 +6650,13 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/item/weapon/rig/military/infantry,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
 	},
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/radio,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "mj" = (
@@ -10538,9 +10534,7 @@
 /obj/machinery/vending/medical/torch{
 	req_access = list("ACCESS_INFTECH")
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "sV" = (
@@ -11674,22 +11668,17 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "vz" = (
-/obj/structure/window/reinforced,
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light/spot{
-	dir = 4
-	},
 /obj/item/rig_module/device/healthscanner,
 /obj/item/rig_module/vision/medhud,
 /obj/item/rig_module/device/defib,
+/obj/machinery/light/spot{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "vA" = (
@@ -12215,7 +12204,6 @@
 /obj/item/weapon/rig/military/infantry,
 /obj/item/ammo_magazine/mil_rifle/sec/large,
 /obj/item/ammo_magazine/mil_rifle/sec/large,
-/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1;
 	health = 1e+006
@@ -12234,6 +12222,10 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon,
 /obj/item/device/gps,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "xN" = (
@@ -13426,6 +13418,7 @@
 /obj/machinery/vending/engineering{
 	req_access = list("ACCESS_INFTECH")
 	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "Cy" = (
@@ -13912,9 +13905,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "Ej" = (
-/obj/machinery/light/spot{
-	dir = 1
-	},
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/inflatable_dispenser{
 	pixel_x = -1;
@@ -13924,10 +13914,13 @@
 	dir = 1;
 	health = 1e+006
 	},
-/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "Ek" = (
@@ -14056,10 +14049,6 @@
 "EG" = (
 /obj/structure/closet/secure_closet/infantry,
 /obj/item/weapon/rig/military/infantry,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -14070,6 +14059,7 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "EH" = (
@@ -14150,11 +14140,6 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/item/weapon/rig/military/infantry,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
 	},
@@ -14162,6 +14147,7 @@
 /obj/item/device/radio,
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "Fd" = (
@@ -14839,12 +14825,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "HL" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -15156,16 +15137,12 @@
 	health = 1e+006
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
 /obj/item/rig_module/grenade_launcher/light,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Jf" = (
@@ -15278,11 +15255,6 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/crowbar,
 /obj/item/weapon/wrench,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -16748,11 +16720,6 @@
 "Ps" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -16904,6 +16871,7 @@
 	dir = 8;
 	health = 1e+006
 	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "Qd" = (
@@ -17278,14 +17246,12 @@
 /obj/item/weapon/wrench,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light/spot,
+/obj/machinery/light/spot{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
 "RN" = (
@@ -17671,11 +17637,11 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
 "Tj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
@@ -17917,15 +17883,6 @@
 /obj/item/weapon/rig/military/infantry,
 /obj/item/weapon/storage/firstaid/adv,
 /obj/item/clothing/accessory/storage/black_vest,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
@@ -17941,6 +17898,7 @@
 	pixel_x = 2
 	},
 /obj/item/device/gps,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
