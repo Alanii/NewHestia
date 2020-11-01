@@ -25,8 +25,8 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-/decl/hierarchy/outfit/job/torch/crew/command/sea/marine
-	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Marine Corps")
+/decl/hierarchy/outfit/job/torch/crew/command/sea/marineattache
+	name = OUTFIT_JOB_NAME("Marine Attache")
 	uniform = /obj/item/clothing/under/solgov/utility/army/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset/sea
