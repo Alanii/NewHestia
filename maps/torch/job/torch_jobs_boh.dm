@@ -75,7 +75,8 @@
 		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/e9_alt,
 		/datum/mil_rank/marine_corps/o1,
-		/datum/mil_rank/marine_corps/o2
+		/datum/mil_rank/marine_corps/o2,
+		/datum/mil_rank/marine_corps/o3
 	)
 
 /datum/job/bridgeofficer
