@@ -232,14 +232,10 @@
 	economic_power = 8
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/biomech
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/marine,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/fleet,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/biomech
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/civ/contractor
@@ -256,8 +252,8 @@
 	                    SKILL_CHEMISTRY   = SKILL_ADEPT)
 	skill_points = 16
 
-	access = list(access_maint_tunnels, access_research, access_petrov, access_petrov_maint, 
-					access_research, access_robotics, access_robotics_engineering, access_medical, 
+	access = list(access_maint_tunnels, access_research, access_petrov, access_petrov_maint,
+					access_research, access_robotics, access_robotics_engineering, access_medical,
 					access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			        access_crematorium, access_chemistry, access_surgery,
 			        access_medical_equip, access_solgov_crew, access_senmed, access_hangar)
