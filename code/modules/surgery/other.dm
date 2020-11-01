@@ -105,8 +105,8 @@
 	)
 	can_infect = 0
 	blood_level = 0
-	min_duration = 120
-	max_duration = 180
+	min_duration = 80
+	max_duration = 120
 	surgery_candidate_flags = 0
 
 /decl/surgery_step/hardsuit/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
