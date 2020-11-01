@@ -8197,8 +8197,8 @@
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/item/device/taperecorder,
 /obj/item/modular_computer/tablet/lease/preset/command,
-/obj/item/weapon/stamp/sea,
-/obj/structure/closet/secure_closet/sea,
+/obj/item/weapon/stamp/smcattache,
+/obj/structure/closet/secure_closet/smcattache,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea/marine)
 "anU" = (
@@ -9389,7 +9389,7 @@
 	},
 /obj/machinery/door/airlock/sol{
 	id_tag = "seamcforedoor";
-	name = "Senior Enlisted Advisor of Marine Corps";
+	name = "Solar Marine Corps Attache";
 	secured_wires = 1
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -9698,14 +9698,14 @@
 /obj/effect/floor_decal/corner/blue/half,
 /obj/machinery/button/blast_door{
 	id_tag = "sea_mc_shutters";
-	name = "SEA Office Shutters";
+	name = "SMC Attache Office Shutters";
 	pixel_y = -25
 	},
 /obj/structure/bed/chair/padded/red{
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Senior Enlisted Advisor of Marine Corps"
+	name = "SMC Attache"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea/marine)
