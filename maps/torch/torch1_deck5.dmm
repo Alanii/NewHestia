@@ -12226,6 +12226,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/box/illumnades,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/inftech)
 "xN" = (
@@ -17899,6 +17900,7 @@
 	},
 /obj/item/device/gps,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/box/illumnades,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
