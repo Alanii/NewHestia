@@ -101,10 +101,23 @@
 	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
 	marking_color = COLOR_PURPLE
 
+/obj/item/ammo_magazine/shotholder/sabot
+	name = "sabot shell holder"
+	caliber = CALIBER_SABOT
+	ammo_type = /obj/item/ammo_casing/sabot
+	matter = list(MATERIAL_STEEL = 1240)
+	marking_color = COLOR_GUNMETAL
+
 /obj/item/ammo_magazine/shotholder/empty
 	name = "shotgun ammunition holder"
 	matter = list(MATERIAL_STEEL = 250)
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/shotholder/birdshot
+	name = "rubbershot shell holder"
+	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
+	matter = list(MATERIAL_STEEL = 620)
+	marking_color = COLOR_PALE_YELLOW	
 
 /obj/item/ammo_magazine/machine_pistol
 	name = "stick magazine"
@@ -210,6 +223,10 @@
 /obj/item/ammo_magazine/magnum/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/magnum/rubber
+	name = "less-lethal magazine"
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/rubber
+
 /obj/item/ammo_magazine/box/smallpistol
 	name = "ammunition box"
 	icon_state = "smallpistol"
@@ -235,6 +252,18 @@
 	name = "pistol magazine"
 	caliber = CALIBER_PISTOL_ANTIQUE
 	ammo_type = /obj/item/ammo_casing/pistol/throwback
+
+/obj/item/ammo_magazine/gyrojet
+	name = "microrocket magazine"
+	icon_state = "gyrojet"
+	mag_type = MAGAZINE
+	caliber = CALIBER_GYROJET
+	ammo_type = /obj/item/ammo_casing/gyrojet
+	multiple_sprites = 1
+	max_ammo = 4
+
+/obj/item/ammo_magazine/gyrojet/empty
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/box/emp/pistol
 	name = "ammunition box"
@@ -262,18 +291,6 @@
 	ammo_type = /obj/item/ammo_casing/flechette
 	max_ammo = 40
 	multiple_sprites = 1
-
-/obj/item/ammo_magazine/gyrojet
-	name = "microrocket magazine"
-	icon_state = "gyrojet"
-	mag_type = MAGAZINE
-	caliber = CALIBER_GYROJET
-	ammo_type = /obj/item/ammo_casing/gyrojet
-	multiple_sprites = 1
-	max_ammo = 4
-
-/obj/item/ammo_magazine/gyrojet/empty
-	initial_ammo = 0
 
 /obj/item/ammo_magazine/box/machinegun
 	name = "magazine box"
@@ -310,6 +327,17 @@
 	max_ammo = 15 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/mil_rifle/sec
+	name = "frangible munitions rifle magazine"
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+
+//bigger mag
+/obj/item/ammo_magazine/mil_rifle/sec/large
+	name = "high-cap frangible munitions rifle magazine"
+	icon_state = "assault_rifle"
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	max_ammo = 30
+
 /obj/item/ammo_magazine/mil_rifle/empty
 	initial_ammo = 0
 
@@ -325,4 +353,13 @@
 	ammo_type = /obj/item/ammo_casing/cap
 	matter = list(MATERIAL_STEEL = 600)
 	max_ammo = 7
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/large
+	name = "heavy speed loader"
+	icon_state = "spdloader_magnum"
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
+	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
+	max_ammo = 6
 	multiple_sprites = 1

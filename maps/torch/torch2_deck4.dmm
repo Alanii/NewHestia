@@ -87,7 +87,8 @@
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2;
-	name = "Deck Chief"
+	name = "\improper Deck Chief";
+	req_access = list("ACCESS_QUARTERMASTER")
 	},
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -3912,20 +3913,24 @@
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
 "jB" = (
-/obj/structure/noticeboard{
-	pixel_x = 0;
-	pixel_y = 32
-	},
 /obj/machinery/button/blast_door{
 	id_tag = "sup_office";
 	name = "Desk Shutter Control";
 	pixel_x = 26;
 	pixel_y = 28
 	},
-/obj/machinery/computer/modular/preset/civilian,
-/obj/effect/floor_decal/corner/brown/mono,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/obj/effect/floor_decal/corner/brown/half{
+	dir = 4;
+	icon_state = "bordercolorhalf"
+	},
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/brown/half{
+	dir = 4;
+	icon_state = "bordercolorhalf"
+	},
+/turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "jE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -7532,6 +7537,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/flightcontrol)
+"uF" = (
+/obj/item/modular_computer/telescreen/preset/supply,
+/turf/simulated/wall/r_wall/prepainted,
+/area/hallway/primary/fourthdeck/aft)
 "uH" = (
 /obj/effect/floor_decal/corner/brown,
 /obj/structure/cable{
@@ -9668,6 +9677,19 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
+"CV" = (
+/obj/structure/table/standard,
+/obj/item/weapon/folder/red{
+	pixel_x = -3
+	},
+/obj/item/weapon/folder/yellow,
+/obj/item/weapon/stamp/denied{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/weapon/stamp/supply,
+/turf/simulated/floor/tiled,
+/area/quartermaster/office)
 "Da" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
@@ -13715,11 +13737,7 @@
 	dir = 2;
 	level = 2
 	},
-/obj/machinery/computer/modular/preset/supply_public{
-	dir = 2;
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "Rf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -15282,7 +15300,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "Vh" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -15394,23 +15412,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "VC" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/structure/noticeboard{
+	pixel_x = 0;
+	pixel_y = 32
 	},
-/obj/item/weapon/folder/yellow,
-/obj/item/weapon/stamp/denied{
-	pixel_x = 4;
-	pixel_y = -2
-	},
-/obj/item/weapon/stamp/supply,
-/obj/item/weapon/folder/red{
-	pixel_x = -3
-	},
-/obj/effect/floor_decal/corner/brown/half{
-	dir = 1;
-	icon_state = "bordercolorhalf"
-	},
-/turf/simulated/floor/tiled/monotile,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/computer/modular/preset/civilian,
+/obj/effect/floor_decal/corner/brown/mono,
+/turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "VD" = (
 /obj/structure/railing/mapped,
@@ -37545,9 +37554,9 @@ Cs
 lr
 vQ
 ln
-VC
 yy
 yy
+CV
 uo
 VO
 KD
@@ -37746,7 +37755,7 @@ lr
 lr
 lr
 oP
-vQ
+VC
 jB
 IF
 UI
@@ -38150,7 +38159,7 @@ Ym
 kM
 VA
 RD
-wa
+uF
 Re
 Vf
 SS

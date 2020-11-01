@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/laser
-	name = "laser carbine"
+	name = "G40E carbine"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
 	icon = 'icons/obj/guns/laser_carbine.dmi'
 	icon_state = "laser"
@@ -50,6 +50,13 @@
 			desc += " The optical pathway is melted and useless."
 			projectile_type = null
 
+/obj/item/weapon/gun/energy/laser/broken
+	name = "broken laser carbine"
+	desc = "An HI G40E, though this one appears to have a cracked projection lens."
+	icon_state = "lasersec"
+	projectile_type = /obj/item/projectile/beam/incendiary_laser
+	base_parry_chance = 20
+
 obj/item/weapon/gun/energy/retro
 	name = "retro laser"
 	icon = 'icons/obj/guns/retro_laser.dmi'
@@ -79,7 +86,7 @@ obj/item/weapon/gun/energy/retro
 	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/lasercannon
-	name = "laser cannon"
+	name = "G40 cannon"
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
 	icon_state = "lasercannon"
 	icon = 'icons/obj/guns/laser_cannon.dmi'
@@ -106,7 +113,7 @@ obj/item/weapon/gun/energy/retro
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/xray
-	name = "x-ray laser carbine"
+	name = "XR2 carbine"
 	desc = "A high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams."
 	icon = 'icons/obj/guns/xray.dmi'
 	icon_state = "xray"
@@ -123,7 +130,7 @@ obj/item/weapon/gun/energy/retro
 	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/xray/pistol
-	name = "x-ray laser gun"
+	name = "XR1 pistol"
 	icon = 'icons/obj/guns/xray_pistol.dmi'
 	icon_state = "oldxray"
 	item_state = "oldxray"
@@ -136,7 +143,7 @@ obj/item/weapon/gun/energy/retro
 	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/sniperrifle
-	name = "marksman energy rifle"
+	name = "HI DMR 9E Maraunder"
 	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
 	icon = 'icons/obj/guns/laser_sniper.dmi'
 	icon_state = "sniper"

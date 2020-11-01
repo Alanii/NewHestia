@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/heavysniper
-	name = "anti-material rifle"
+	name = "PTR-7"
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
 	Truly an anachronism from another time."
 	icon = 'icons/obj/guns/heavysniper.dmi'
@@ -77,7 +77,12 @@
 	if(!bolt_open)
 		return
 	..()
-
+	
+//actual thing considering ammo can't be readily found, and much better options are present
+/obj/item/weapon/gun/projectile/heavysniper/display
+	name = "PTR-7"
+	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. Fires armor piercing 14.5mm shells. This is quite a decent replica, obviously purchased for a significant sum of thalers."
+	starts_loaded = 0
 
 /obj/item/weapon/gun/projectile/heavysniper/boltaction
 	name = "bolt action rifle"
@@ -97,8 +102,8 @@
 	wielded_item_state = "boltaction-wielded"
 
 /obj/item/weapon/gun/projectile/hornetsniper
-	name = "hornet marksman rifle"
-	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	name = "Z2 Hornet"
+	desc = "The Z2 Hornet, is an older cousin of the Z9 Pitbull Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"

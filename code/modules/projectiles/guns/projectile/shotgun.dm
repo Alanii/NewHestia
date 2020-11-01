@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
+	name = "W-T Remmington 29x"
 	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
@@ -60,7 +60,7 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
+	name = "KS-40"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
@@ -77,6 +77,69 @@
 			var/image/I = image(icon, "shell")
 			I.pixel_x = i * 2
 			overlays += I
+
+
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell
+	name = "QX-2 shotgun"
+	desc = "Modeled after VT-3, the Qerr Xira-2 or refered to in Sol as QX-2, is a pulse shotgun capable of delivering devastating blast of flechettes with minimal spread."
+	icon_state = "skrell_shotgun"
+	item_state = "skrell_shotgun"
+	wielded_item_state = "skrell_shotgun-wielded"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	max_shells = 9
+	ammo_type = /obj/item/ammo_casing/shotgun
+	one_hand_penalty = 10
+	base_parry_chance = 20
+
+/obj/item/weapon/gun/projectile/shotgun/pump/skrell/on_update_icon()
+	..()
+	if(length(loaded) > 3)
+		for(var/i = 0 to length(loaded) - 4)
+			var/image/I = image(icon, "shell")
+			I.pixel_x = i * 2
+			overlays += I
+
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag
+	name = "KS-40b"
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
+	This one appears to be modified to fire nothing but beanbags, and has an orange paintjob on the slide. Trying to fire lethals doesn't seem like a good idea."
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "bshotgun"
+	item_state = "bshotgun"
+	wielded_item_state = "cshotgun-wielded"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	max_shells = 7
+	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	one_hand_penalty = 8
+	var/explosion_chance = 100
+
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag/on_update_icon()
+	..()
+	if(length(loaded) > 3)
+		for(var/i = 0 to length(loaded) - 4)
+			var/image/I = image(icon, "bshell")
+			I.pixel_x = i * 2
+			overlays += I
+
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag/special_check()
+	if(chambered && chambered.BB && prob(explosion_chance))
+		var/damage = chambered.BB.get_structure_damage()
+		if(istype(chambered.BB, /obj/item/projectile/bullet/pellet))
+			var/obj/item/projectile/bullet/pellet/PP = chambered.BB
+			damage = PP.damage*PP.pellets
+		if(damage > 30)
+			var/mob/living/carbon/C = loc
+			if(istype(loc))
+				C.visible_message("<span class='danger'>[src] explodes in [C]'s hands!</span>", "<span class='danger'>[src] explodes in your face!</span>")
+				C.drop_from_inventory(src)
+				for(var/zone in list(BP_L_HAND, BP_R_HAND, BP_HEAD))
+					C.apply_damage(rand(10,20), def_zone=zone)
+			else
+				visible_message("<span class='danger'>[src] explodes!</span>")
+			explosion(get_turf(src), -1, -1, 1)
+			qdel(src)
+			return FALSE
+	return ..()
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
@@ -172,3 +235,4 @@
 	load_method = SINGLE_CASING
 	handle_casings = EJECT_CASINGS
 	caliber = CALIBER_SHOTGUN
+

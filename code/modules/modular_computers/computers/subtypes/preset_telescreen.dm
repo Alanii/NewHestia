@@ -31,3 +31,10 @@
 	var/datum/extension/interactive/ntos/os = get_extension(src, /datum/extension/interactive/ntos)
 	if(os)
 		os.set_autorun("alarmmonitor")
+
+/obj/item/modular_computer/telescreen/preset/supply/install_default_programs()
+	..()
+	hard_drive.store_file(new/datum/computer_file/program/supply())
+	var/datum/extension/interactive/ntos/os = get_extension(src, /datum/extension/interactive/ntos)
+	if(os)
+		os.set_autorun("supply")

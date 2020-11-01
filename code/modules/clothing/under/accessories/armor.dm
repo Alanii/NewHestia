@@ -115,6 +115,21 @@
 	siemens_coefficient = 0.3
 	slowdown = 0.5
 
+
+// Shockplate
+/obj/item/clothing/accessory/armorplate/shock
+	name = "shock plating"
+	desc = "An incredibly expensive armor plate made of visco-elastic materials, designed to provide the most protection from pure physical harm. \
+	Given how the material functions, it's better for protecting against brute force weapons, rather than bullets. Attaches to a plate carrier."
+	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
+	icon_state = "armor_shock"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT
+		)
+
 //Arm guards
 /obj/item/clothing/accessory/armguards
 	name = "black arm guards"

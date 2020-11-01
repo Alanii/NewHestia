@@ -120,3 +120,15 @@
 	if(G.total_moles >= 0.005)
 		return 1
 	qdel(G)
+
+/////////
+// Vox Jetpack
+/////////
+/obj/item/weapon/tank/jetpack/nitrogen
+	name = "jump pack"
+	desc = "A belt with tanks of compressed nitrogen for use as propulsion, worn like a backpack. Quite against the name, honestly. \
+	This appears to be a compact unit, meant for integration with something larger."
+	icon_state = "jetpack-void"
+	item_state =  "jetpack-void"
+	starting_pressure = list(GAS_NITROGEN = 12*ONE_ATMOSPHERE)
+	volume = 1280

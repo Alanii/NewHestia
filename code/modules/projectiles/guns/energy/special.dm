@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/ionrifle
-	name = "ion rifle"
+	name = "NT Mk60 EW Halicon"
 	desc = "The NT Mk60 EW Halicon is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
 	icon = 'icons/obj/guns/ion_rifle.dmi'
 	icon_state = "ionrifle"
@@ -22,7 +22,7 @@
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess
 
 /obj/item/weapon/gun/energy/ionrifle/small
-	name = "ion pistol"
+	name = "NT Mk72 EW Preston"
 	desc = "The NT Mk72 EW Preston is a personal defense weapon designed to disable mechanical threats."
 	icon = 'icons/obj/guns/ion_pistol.dmi'
 	icon_state = "ionpistol"
@@ -195,7 +195,7 @@
 	return 0
 
 /obj/item/weapon/gun/energy/incendiary_laser
-	name = "dispersive blaster"
+	name = "A&M Icarus"
 	desc = "The A&M \"Icarus\" was the first of a now-banned class of dispersive laser weapons which, instead of firing a focused beam, \
 	scan over a target rapidly with the goal of setting it ablaze. It is powered by a microfusion battery, effectively making it self charge."
 	icon = 'icons/obj/guns/incendiary_laser.dmi'
@@ -207,4 +207,20 @@
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
 	max_shots = 5
 	self_recharge = 1
+	base_parry_chance = 20
+
+/obj/item/weapon/gun/energy/charge
+	name = "ZT-8B"
+	desc = "The ZT-8B, is a modification of the railgun rarely seen by anyone other than those within Skrellian SDTF ranks. This modification flips the railgun on its head, and changes the projectile altogether to a lower velocity 'gas' charge. \
+	The rotary magazine has been replaced with a 'hot' chamber, and the barrel has been shortened to accommodate for the new projectile."
+	icon = 'icons/boh/items/launchers.dmi' //really shitty cut of the railgun until an actual sprite is slapped up.
+	icon_state = "skrell_launcher"
+	item_state = "skrell_launcher"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	cell_type = /obj/item/weapon/cell
+	self_recharge = 1
+	move_delay = 4
+	projectile_type=/obj/item/projectile/hotgas/skrell
+	charge_cost=620
+	wielded_item_state = "skrell_rifle-wielded"
 	base_parry_chance = 20

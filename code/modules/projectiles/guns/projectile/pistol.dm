@@ -26,8 +26,8 @@
 			overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/pistol/military
-	name = "military pistol"
-	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
+	name = "P20 pistol"
+	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'icons/obj/guns/military_pistol.dmi'
@@ -39,7 +39,8 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
-	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
+	name = "HT Optimus"
+	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the UCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
 	safety_icon = "safety"
@@ -47,7 +48,7 @@
 	fire_delay = 8
 
 /obj/item/weapon/gun/projectile/pistol/sec
-	name = "pistol"
+	name = "NT Mk58"
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are."
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
@@ -60,8 +61,21 @@
 /obj/item/weapon/gun/projectile/pistol/sec/lethal
 	magazine_type = /obj/item/ammo_magazine/pistol
 
+/obj/item/weapon/gun/projectile/pistol/command
+	name = "NT Mk58"
+	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one appears to be ID locked."
+	icon = 'icons/obj/guns/pistol.dmi'
+	icon_state = "secguncomp"
+	safety_icon = "safety"
+	magazine_type = /obj/item/ammo_magazine/pistol/rubber
+	accuracy = -1
+	fire_delay = 6
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	has_firing_pin = TRUE
+	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
+
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol
-	name = "magnum pistol"
+	name = "HT Magnus"
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
@@ -78,6 +92,12 @@
 	one_hand_penalty = 2
 	bulk = 3
 	ammo_indicator = TRUE
+
+/obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
+	name = "Eagle"
+	desc = "The HI Eagle, a reverse engineered HT Magnus. This one has 'To the Chief of Security Aboard the NTSS Dagon' engraved"
+	magazine_type = /obj/item/ammo_magazine/magnum/rubber
+	starts_loaded = 1
 
 /obj/item/weapon/gun/projectile/pistol/throwback
 	name = "pistol"
@@ -104,33 +124,8 @@
 	else
 		icon_state = "[base_icon]-e"
 
-/obj/item/weapon/gun/projectile/pistol/gyropistol
-	name = "gyrojet pistol"
-	desc = "A bulky pistol designed to fire self propelled rounds."
-	icon = 'icons/obj/guns/gyropistol.dmi'
-	icon_state = "gyropistol"
-	max_shells = 8
-	caliber = CALIBER_GYROJET
-	origin_tech = list(TECH_COMBAT = 3)
-	magazine_type = /obj/item/ammo_magazine/gyrojet
-	allowed_magazines = /obj/item/ammo_magazine/gyrojet
-	handle_casings = CLEAR_CASINGS	//the projectile is the casing
-	fire_delay = 25
-	auto_eject = 1
-	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
-	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'
-	empty_icon = FALSE
-
-/obj/item/weapon/gun/projectile/pistol/gyropistol/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "gyropistolloaded"
-	else
-		icon_state = "gyropistol"
-
 /obj/item/weapon/gun/projectile/pistol/holdout
-	name = "holdout pistol"
+	name = "P3 Whisper"
 	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun."
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "pistol"
@@ -186,3 +181,28 @@
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/gun/projectile/pistol/gyropistol
+	name = "gyrojet pistol"
+	desc = "A bulky pistol designed to fire self propelled rounds."
+	icon = 'icons/obj/guns/gyropistol.dmi'
+	icon_state = "gyropistol"
+	max_shells = 8
+	caliber = CALIBER_GYROJET
+	origin_tech = list(TECH_COMBAT = 3)
+	magazine_type = /obj/item/ammo_magazine/gyrojet
+	allowed_magazines = /obj/item/ammo_magazine/gyrojet
+	handle_casings = CLEAR_CASINGS	//the projectile is the casing
+	fire_delay = 25
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
+	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'
+	empty_icon = FALSE
+
+/obj/item/weapon/gun/projectile/pistol/gyropistol/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "gyropistolloaded"
+	else
+		icon_state = "gyropistol"

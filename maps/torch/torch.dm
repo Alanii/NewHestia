@@ -51,9 +51,6 @@
 	#include "game/antagonist/outsider/raider.dm"
 
 	#include "infantry/firearms.dm"
-	#include "infantry/outfits.dm"
-	#include "infantry/storage.dm"
-	#include "infantry/vending.dm"
 
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"

@@ -200,3 +200,10 @@
 		to_chat(target, SPAN_WARNING("You feel a wave of heat wash over you!"))
 		L.adjust_fire_stacks(rand(5,8))
 		L.IgniteMob()
+
+/obj/item/projectile/hotgas/skrell
+	name = "gas"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "mustard"
+	fire_sound = 'sound/effects/stealthoff.ogg'
+	silenced = FALSE

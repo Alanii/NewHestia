@@ -16,7 +16,7 @@
 	id = "militarypistol"
 	req_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	materials = list(MATERIAL_STEEL = 4000)
-	build_path = /obj/item/weapon/gun/projectile/pistol/military/alt/solar
+	build_path = /obj/item/weapon/gun/projectile/pistol/military/
 	sort_string = "TCDAB"
 
 /datum/design/item/weapon/beanbagshot

@@ -262,3 +262,10 @@
 	reagents_to_add = list(/datum/reagent/space_drugs = 15,
 							/datum/reagent/mindbreaker = 15
 							)
+
+//beaker
+/obj/item/weapon/reagent_containers/glass/beaker/cryobromide
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/cryobromide, 60)
+		update_icon()

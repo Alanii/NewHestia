@@ -50,6 +50,16 @@
 	wielded_item_state = null
 	bulk = 0
 
+/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp
+	name = "experimental pulse pistol"
+	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. It's fitted with an incredibly tiny self-contained reactor. \
+	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, it cannot fire a concentrated beam, having been modified to be less-than-lethal."
+	projectile_type = /obj/item/projectile/beam/pulse/epp
+	max_shots = 3
+	self_recharge = 1
+	burst = 1
+	base_parry_chance = 10
+
 /obj/item/weapon/gun/energy/pulse_rifle/mounted
 	self_recharge = 1
 	use_external_power = 1
@@ -65,6 +75,18 @@
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
 	to_chat(user, "<span class='warning'>[src.name] has three settings, and they are all DESTROY.</span>")
+
+/obj/item/weapon/gun/energy/pulse_rifle/deathsquad
+	name = "heavy pulse rifle"
+	desc = "A bulky experimental squad support weapon. This pulls from a nullspace pocket to charge its capacitor, which in turn projects the pulse. \
+	Or so you'd think, if you weren't probably dead already."
+	cell_type = /obj/item/weapon/cell
+	fire_delay = 25
+	projectile_type=/obj/item/projectile/beam/pulse/heavy
+	charge_cost= 80
+	self_recharge = 1
+	move_delay = 1
+	base_parry_chance = 20
 
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "VT-3 carbine"
