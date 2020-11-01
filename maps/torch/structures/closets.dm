@@ -130,7 +130,6 @@
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
-		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
