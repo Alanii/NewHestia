@@ -23,3 +23,16 @@ As it can't be deconstructed, this shouldn't be too much of an issue, as, again,
 	uncreated_component_parts = list(
 		/obj/item/weapon/stock_parts/smes_coil/ascent = 1)
 	construct_state = /decl/machine_construction/default/no_deconstruct
+
+/obj/machinery/power/shield_generator/ascent
+	name = "superior shield generator"
+	desc = "An incredibly powerful shield generator, capable of generating energy shields at insanely fast speeds."
+	color = "#a33fbf"
+	upkeep_multiplier = 0
+	ai_control_disabled = 1
+	idle_multiplier   = 0
+	idle_valid_values = list(30)
+	spinup_delay      = 0
+	spinup_counter    = 0
+	inefficency_counter = 0
+	field_radius = 200
