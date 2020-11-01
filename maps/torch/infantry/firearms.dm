@@ -29,8 +29,8 @@
 
 /obj/item/gunbox/infantry/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/,/obj/item/ammo_magazine/mil_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell)
-	options["Energy - Laser Carbine"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,/obj/item/ammo_magazine/mil_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell)
+	options["Energy - Laser Carbine"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag,/obj/item/weapon/grenade/frag,/obj/item/weapon/grenade/frag)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -46,8 +46,27 @@
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Tectonic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - Tectonic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot,/obj/item/ammo_magazine/shotholder/sabot)
+	options["Ballistic - Komodo"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/energy/revolver/secure)
 	options["Energy - Laser Carbine (has burst fire)"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/energy/revolver/secure)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+		
+/obj/item/gunbox/infcom/secondary
+	name = "Squad Leader Squad Kit"
+	desc = "A secure box containing a secondary set of equipment for the entire squad's benefit."
+
+/obj/item/gunbox/infcom/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Tactical Goggles x5"] = list(/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles)
+	options["Combat Lifesaver Kit"] = list(/obj/item/weapon/defibrillator/compact/combat/loaded,/obj/item/bodybag/cryobag,/obj/item/weapon/reagent_containers/hypospray/vial)
+	options["Demolitions"] = list(/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/spray)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -63,9 +82,9 @@
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-//	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Combat Medic"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/storage/firstaid/combat,/obj/item/weapon/storage/belt/medical/emt)
-	options["Automatic Rifleman"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/projectile/pistol/military/sec)
+//	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Ballistic - Combat Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -118,13 +137,12 @@
 	desc = "A munition vendor."
 	req_access = list(access_infantry)
 	products = list(
-		/obj/item/ammo_magazine/mil_rifle/sec = 12,
-		/obj/item/ammo_magazine/mil_rifle/sec/large = 2,
-		/obj/item/ammo_magazine/pistol/double = 8,
-		/obj/item/ammo_magazine/shotholder/sabot = 6,
-		/obj/item/ammo_magazine/smg = 2,
-		/obj/item/stack/medical/advanced/bruise_pack = 4,
-		/obj/item/stack/medical/advanced/ointment = 4)
+		/obj/item/ammo_magazine/mil_rifle/sec = 15,
+		/obj/item/ammo_magazine/mil_rifle/sec/large = 3,
+		/obj/item/ammo_magazine/pistol/double = 10,
+		/obj/item/ammo_magazine/shotholder/shell = 4,
+		/obj/item/ammo_magazine/shotholder = 4
+		)
 
 /////////
 // Pistol
@@ -188,7 +206,14 @@
 		list(mode_name="burst fire",  burst=5, fire_delay=null, move_delay=2, one_hand_penalty=10, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
-
+		
+//combat shotgun
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/infantry
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
+	It appears to have a firing restrictor installed, to prevent firing without authorization aboard the Dagon."
+	req_access = list(access_hop)
+	authorized_modes = list(UNAUTHORIZED)
+	
 /////////
 // Laser Carbine
 /////////
