@@ -62,7 +62,7 @@
 	name = "Squad Leader Squad Kit"
 	desc = "A secure box containing a secondary set of equipment for the entire squad's benefit."
 
-/obj/item/gunbox/infcom/attack_self(mob/living/user)
+/obj/item/gunbox/infcom/secondary/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Tactical Goggles x5"] = list(/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles)
 	options["Combat Lifesaver Kit"] = list(/obj/item/weapon/defibrillator/compact/combat/loaded,/obj/item/bodybag/cryobag,/obj/item/weapon/reagent_containers/hypospray/vial)

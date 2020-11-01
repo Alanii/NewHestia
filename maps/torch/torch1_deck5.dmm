@@ -17939,6 +17939,7 @@
 /obj/item/modular_computer/tablet/lease{
 	pixel_x = 2
 	},
+/obj/item/gunbox/infcom/secondary,
 /turf/simulated/floor/tiled/dark,
 /area/infantry/infcom)
 "Um" = (
