@@ -50,7 +50,7 @@
 /obj/item/gunbox/executive/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic - ID locked Mk58"] = list(/obj/item/weapon/gun/projectile/pistol/command,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
-	options["Ballistic - 10mm Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/xo,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/xo)
+	options["Ballistic - Magnum Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large/xo,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/magnum)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
 	options["Energy - Smart Service Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options

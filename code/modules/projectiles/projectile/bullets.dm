@@ -140,18 +140,19 @@
 	armor_penetration = 10
 	distance_falloff = 3
 
-//Ultimate Argument
+
 /obj/item/projectile/bullet/pistol/strong
+	damage = 50
+	armor_penetration = 10
+	
+//Ultimate Argument
+/obj/item/projectile/bullet/pistol/large
 	fire_sound = 'sound/weapons/gunshot/revolver_1.ogg'
 	damage = 50
 	shrapnel_chance_multiplier = 0.8
 	arterial_bleed_chance_multiplier = 0.8
 	distance_falloff = 2.5
 	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/large
-	damage = 50
-	armor_penetration = 10
 
 //"rubber" bullets
 //Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
