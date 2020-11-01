@@ -2,36 +2,36 @@
 	icon = 'voxship.dmi'
 
 /area/voxship/base
-	name = "\improper Vox Base"
+	name = "Vox Base"
 	icon_state = "base"
-	req_access = list(access_voxship)
+
 
 /area/voxship/ship
-	name = "\improper Vox Ship"
+	name = "Vox Ship"
 	icon_state = "ship"
-	req_access = list(access_voxship)
+
 
 /area/voxship/scavship
-	name = "\improper Vox Scavenger Ship"
+	name = "Vox Scavenger Ship"
 	icon_state = "scavship"
-	req_access = list(access_voxship)
+
 
 /area/voxship/fore
-	name = "\improper Vox Fore"
+	name = "Vox Fore"
 	icon_state = "fore"
-	req_access = list(access_voxship)
+
 
 /area/voxship/engineering
-	name = "\improper Vox Engineering"
+	name = "Vox Engineering"
 	icon_state = "eng"
-	req_access = list(access_voxship)
+
 
 /area/voxship/thrusters
-	name = "\improper Vox Thrusters"
+	name = "Vox Thrusters"
 	icon_state = "thrust"
-	req_access = list(access_voxship)
+
 
 /area/voxship/shuttle
-	name = "\improper Vox Shuttle"
+	name = "Vox Shuttle"
 	icon_state = "shuttle"
-	req_access = list(access_voxship)
+	
