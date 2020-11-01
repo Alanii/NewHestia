@@ -333,10 +333,6 @@
 "aaA" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
 /obj/structure/table/rack,
 /obj/item/weapon/gun/energy/stunrevolver/rifle,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -480,9 +476,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/light,
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/structure/table/rack,
 /obj/item/weapon/gun/energy/ionrifle,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -1021,8 +1014,16 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 4;
+	name = "Assault Rifle Case"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
@@ -1799,6 +1800,8 @@
 	},
 /obj/item/weapon/storage/box/ammo/solar/full,
 /obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adk" = (
@@ -1835,6 +1838,10 @@
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adn" = (
@@ -2296,16 +2303,10 @@
 "aed" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/light,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
-/obj/structure/table/rack,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
+/obj/effect/floor_decal/corner/red/mono,
+/obj/machinery/fabricator/hacked,
+/obj/structure/cable/green,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aee" = (
@@ -2388,11 +2389,14 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8;
+	health = 1e+006
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aen" = (
@@ -2973,6 +2977,7 @@
 	name = "security fabrication console";
 	req_access = list("ACCESS_BRIG")
 	},
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "afm" = (
@@ -3517,18 +3522,15 @@
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics)
 "agj" = (
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/effect/floor_decal/corner/red{
+	dir = 6
 	},
-/obj/structure/window/reinforced{
-	health = 1e+007
+/obj/effect/floor_decal/corner/red{
+	dir = 5
 	},
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
-/obj/structure/table/rack,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "agk" = (
@@ -7705,8 +7707,8 @@
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/item/weapon/gun/projectile/automatic/sec_smg,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "ani" = (
@@ -7902,6 +7904,7 @@
 /obj/structure/table/rack,
 /obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
 /obj/item/clothing/accessory/storage/bandolier,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "any" = (
@@ -8024,13 +8027,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "anH" = (
-/obj/machinery/fabricator/hacked,
 /obj/machinery/power/apc{
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/structure/cable/green,
-/obj/effect/floor_decal/corner/red/mono,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack,
+/obj/structure/window/reinforced,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "anI" = (
@@ -9773,6 +9778,7 @@
 /area/security/wing)
 "aqI" = (
 /obj/machinery/vending/security/accessory,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aqJ" = (
@@ -11118,6 +11124,9 @@
 /obj/item/device/radio/intercom/department/security{
 	pixel_y = 23
 	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "asN" = (
@@ -11132,6 +11141,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "asO" = (
@@ -11140,6 +11152,9 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
@@ -11160,8 +11175,11 @@
 "asQ" = (
 /obj/structure/cable/green{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
@@ -14810,6 +14828,9 @@
 /area/command/armoury)
 "aMC" = (
 /obj/machinery/light,
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "aMD" = (
@@ -15061,6 +15082,9 @@
 /turf/simulated/wall/r_wall/hull,
 /area/thruster/d1port)
 "aPu" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aPG" = (
@@ -17226,6 +17250,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "bjb" = (
@@ -18134,7 +18161,7 @@
 /obj/structure/sign/warning/secure_area{
 	dir = 1
 	},
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/armoury)
 "ctb" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -18216,7 +18243,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 6;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "cyb" = (
 /obj/effect/floor_decal/corner/pink{
@@ -19853,6 +19884,17 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/crematorium)
+"flc" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "fll" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/flasher/portable,
@@ -20901,7 +20943,10 @@
 /obj/item/device/radio/intercom/department/security{
 	pixel_y = 23
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "gIb" = (
 /obj/machinery/light,
@@ -21278,6 +21323,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/operations_storage/science)
+"hkV" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "hlb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -21447,6 +21501,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
 	level = 2
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -21814,6 +21871,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "hLD" = (
@@ -22033,6 +22093,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/breakroom)
+"ihB" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 6;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "ihT" = (
 /obj/machinery/dna_scannernew,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -23697,7 +23770,10 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "ksK" = (
 /obj/effect/floor_decal/techfloor{
@@ -23844,6 +23920,9 @@
 /obj/structure/sign/warning/secure_area/armory{
 	dir = 1;
 	pixel_y = -32
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -24231,6 +24310,15 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/assembly/robotics)
+"ldw" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "leb" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -24243,6 +24331,13 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/chargebay)
+"leJ" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 6;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "lfb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/floor_decal/corner/green/half{
@@ -24733,7 +24828,14 @@
 	pixel_x = -6;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 6;
+	icon_state = "corner_white"
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "lUb" = (
 /obj/structure/cable/green{
@@ -25254,6 +25356,12 @@
 /obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"mCs" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "mDt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -28933,6 +29041,26 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
+"rxD" = (
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/structure/table/rack,
+/obj/item/weapon/gun/energy/laser/secure,
+/obj/item/weapon/gun/energy/laser/secure,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 1;
+	name = "Laser Carbines Case"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "rxK" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -30494,8 +30622,11 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "tiQ" = (
-/turf/simulated/wall/prepainted,
-/area/security/armoury)
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "tjb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -30824,6 +30955,17 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1port)
+"tJA" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "tJO" = (
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
@@ -30937,11 +31079,23 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "umI" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
+"unz" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "uoC" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -31678,7 +31832,13 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "wyb" = (
 /obj/structure/disposalpipe/segment{
@@ -31811,6 +31971,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/operations_storage)
+"wTw" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "wWc" = (
 /obj/structure/sign/warning/secure_area{
 	dir = 4
@@ -39735,11 +39904,11 @@ cZi
 cZi
 pVx
 pVx
-tiQ
+sHN
+hkV
 aPu
 aPu
-aPu
-aPu
+ldw
 aqI
 tAS
 tAS
@@ -39937,11 +40106,11 @@ cZi
 cZi
 aLv
 abQ
-tiQ
+sHN
 hLf
 adm
 sBK
-aPu
+flc
 aed
 tAS
 tAS
@@ -40136,14 +40305,14 @@ vMH
 vMH
 wvZ
 huf
-enM
-enM
-enM
+tiQ
+tiQ
+wTw
 csy
 asM
 adh
 adH
-aPu
+tJA
 aem
 tAS
 tAS
@@ -40543,11 +40712,11 @@ agc
 aae
 abK
 kCN
-tiQ
+sHN
 asO
 adl
 adO
-aPu
+mCs
 aaA
 tAS
 tAS
@@ -40745,11 +40914,11 @@ uRO
 enM
 aLy
 aMC
-tiQ
-hLf
-aPu
-aPu
-aPu
+sHN
+ihB
+leJ
+leJ
+unz
 aaO
 tAS
 tAS
@@ -40947,12 +41116,12 @@ cxk
 acU
 aaT
 aaV
-tiQ
+sHN
 amU
 ajj
 afl
 agj
-amK
+rxD
 tAS
 tAS
 tAS
