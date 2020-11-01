@@ -183,12 +183,15 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet,
-		/datum/mil_branch/civilian)
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/marine)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/civ/contractor)
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
 	                    SKILL_DEVICES		= SKILL_ADEPT,
 	                    SKILL_ANATOMY       = SKILL_ADEPT,
@@ -207,8 +210,8 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERT)
 	skill_points = 24
 
-	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine,
-					access_solgov_crew, access_maint_tunnels, access_research, access_petrov,
+	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, 
+					access_solgov_crew, access_maint_tunnels, access_research, access_petrov, 
 					access_petrov_maint, access_research,)
 	minimal_access = list()
 
