@@ -298,6 +298,21 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can build or repair an exosuit or cyborg chassis, use a protolathe and destructive analyzer, and build prosthetic limbs. You can safely transfer an MMI or posibrain into a cyborg chassis.<br>- You can attach robotic limbs. Its speed increases with level.",
 						"Experienced"		= "You have years of experience building or reverse-engineering complex devices. Your use of the lathes and destructive analyzers is efficient and methodical. You can design contraptions to order, and likely sell those designs at a profit.",
 						"Master"		= "You are an inventor or researcher. You can design, build, and modify equipment that most people don't even know exists. You are at home in the lab and the workshop and you've never met a gadget you couldn't take apart, put back together, and replicate.")
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_ADEPT
+
+/decl/hierarchy/skill/research/devices/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/research/science
 	ID = "science"
