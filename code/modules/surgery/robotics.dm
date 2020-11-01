@@ -39,8 +39,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/coin = 50,
 		/obj/item/weapon/material/knife = 50
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 30
+	max_duration = 60
 
 /decl/surgery_step/robotics/unscrew_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -74,8 +74,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/coin = 50,
 		/obj/item/weapon/material/knife = 50
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 30
+	max_duration = 60
 
 /decl/surgery_step/robotics/screw_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -110,8 +110,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/kitchen/utensil = 50
 	)
 
-	min_duration = 30
-	max_duration = 40
+	min_duration = 20
+	max_duration = 30
 
 /decl/surgery_step/robotics/open_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -146,8 +146,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/kitchen/utensil = 50
 	)
 
-	min_duration = 70
-	max_duration = 100
+	min_duration = 20
+	max_duration = 30
 
 /decl/surgery_step/robotics/close_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -184,7 +184,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/wrench = 35
 	)
 
-	min_duration = 50
+	min_duration = 30
 	max_duration = 60
 
 /decl/surgery_step/robotics/repair_brute/success_chance(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
@@ -210,11 +210,11 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 			if(!cutter.slice(user))
 				return FALSE
 		if(istype(tool, /obj/item/weapon/wrench))
-			min_duration = 100
-			max_duration = 120
+			min_duration = 40
+			max_duration = 70
 		else
-			min_duration = 50
-			max_duration = 60
+			min_duration = 30
+			max_duration = 50
 		return TRUE
 	return FALSE
 
@@ -248,8 +248,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 /decl/surgery_step/robotics/repair_brittle
 	name = "Reinforce prosthetic"
 	allowed_tools = list(/obj/item/stack/nanopaste = 100)
-	min_duration = 50
-	max_duration = 60
+	min_duration = 30
+	max_duration = 50
 
 /decl/surgery_step/robotics/repair_brittle/success_chance(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
 	. = ..()
@@ -289,8 +289,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/wirecutters = 35
 	)
 
-	min_duration = 50
-	max_duration = 60
+	min_duration = 30
+	max_duration = 50
 
 /decl/surgery_step/robotics/repair_burn/success_chance(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
 	. = ..()
@@ -314,11 +314,11 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 				else
 					return TRUE
 		if(istype(tool, /obj/item/weapon/wirecutters))
-			min_duration = 100
-			max_duration = 120
+			min_duration = 40
+			max_duration = 70
 		if(istype(tool, /obj/item/stack/cable_coil))
-			min_duration = 50
-			max_duration = 60
+			min_duration = 30
+			max_duration = 50
 		return TRUE
 	return FALSE
 
@@ -356,8 +356,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/bonegel = 30,
 		/obj/item/weapon/screwdriver = 70,
 	)
-	min_duration = 70
-	max_duration = 90
+	min_duration = 40
+	max_duration = 70
 	surgery_candidate_flags = SURGERY_NO_STUMP
 
 /decl/surgery_step/robotics/fix_organ_robotic/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
@@ -413,8 +413,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/device/multitool = 100
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 50
+	max_duration = 80
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/detatch_organ_robotic/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -455,8 +455,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/weapon/screwdriver = 100,
 	)
-	min_duration = 100
-	max_duration = 120
+	min_duration = 50
+	max_duration = 80
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/attach_organ_robotic/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -505,8 +505,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/device/mmi = 100
 	)
-	min_duration = 60
-	max_duration = 80
+	min_duration = 50
+	max_duration = 70
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/install_mmi/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -572,8 +572,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/remove_mmi
 	name = "Remove MMI"
-	min_duration = 60
-	max_duration = 80
+	min_duration = 50
+	max_duration = 70
 	allowed_tools = list(
 		/obj/item/weapon/hemostat = 100,
 		/obj/item/weapon/wirecutters = 75,

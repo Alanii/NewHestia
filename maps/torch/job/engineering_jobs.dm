@@ -193,7 +193,7 @@
 		/datum/mil_rank/marine_corps/w1,
 		/datum/mil_rank/marine_corps/w2)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
-	                    SKILL_DEVICES		= SKILL_ADEPT,
+	                    SKILL_DEVICES		= SKILL_EXPERT,
 	                    SKILL_ANATOMY       = SKILL_ADEPT,
 	                    SKILL_SCIENCE     	= SKILL_ADEPT,
 	                    SKILL_MEDICAL     	= SKILL_ADEPT,
