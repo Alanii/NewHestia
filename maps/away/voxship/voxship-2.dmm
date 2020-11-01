@@ -111,6 +111,9 @@
 /area/voxship/scavship)
 "an" = (
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "ap" = (
@@ -785,6 +788,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "cc" = (
@@ -941,6 +947,9 @@
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/fore)
 "cz" = (
@@ -1042,6 +1051,9 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "cF" = (
@@ -1116,6 +1128,12 @@
 	},
 /obj/structure/catwalk,
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "cK" = (
@@ -1348,7 +1366,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/fore)
 "db" = (
@@ -1455,6 +1475,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
@@ -1694,6 +1717,9 @@
 /obj/machinery/door/airlock/hatch/voxship{
 	id_tag = "voxengine";
 	locked = 1
+	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/thrusters)
@@ -2067,6 +2093,9 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "eG" = (
@@ -2296,6 +2325,9 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fe" = (
@@ -2392,6 +2424,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 5;
 	icon_state = "intact"
+	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
@@ -2714,6 +2749,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "gk" = (
@@ -2813,6 +2851,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
 "gB" = (
@@ -2823,6 +2864,9 @@
 	icon_state = "1-2"
 	},
 /obj/effect/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
+/obj/machinery/door/airlock/hatch/voxship{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "gC" = (
@@ -2966,6 +3010,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/effect/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
 "gQ" = (

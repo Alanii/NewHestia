@@ -2012,7 +2012,7 @@
 /area/voxship/ship)
 "Xn" = (
 /obj/effect/floor_decal/borderfloor/full,
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/vox_armalis,
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship)
 
