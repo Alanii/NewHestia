@@ -295,8 +295,8 @@ GLOBAL_LIST_EMPTY(skills)
 	desc = "Describes the ability to assemble complex devices, such as computers, circuits, printers, robots or gas tank assemblies (bombs). Note that if a device requires electronics or programming, those skills are also required in addition to this skill."
 	levels = list( "Unskilled"			= "You know how to use the technology that was present in whatever society you grew up in. You know how to tell when something is malfunctioning, but you have to call tech support to get it fixed.",
 						"Basic"				= "You use and repair high-tech equipment in the course of your daily work. You can fix simple problems, and you know how to use a circuit printer or autolathe. You can build simple robots such as cleanbots and medibots.",
-						"Trained"			= "You can build or repair an exosuit or cyborg chassis, use a protolathe and destructive analyzer, and build prosthetic limbs. You can safely transfer an MMI or posibrain into a cyborg chassis.<br>- You can attach robotic limbs. Its speed increases with level.",
-						"Experienced"		= "You have years of experience building or reverse-engineering complex devices. Your use of the lathes and destructive analyzers is efficient and methodical. You can design contraptions to order, and likely sell those designs at a profit.",
+						"Trained"			= "You can build or repair an exosuit or cyborg chassis, use a protolathe and destructive analyzer. You do not have an extensive knowledge of prostethics, but you know how to handle minor issues with them. <br>- You can perform simple repairs on prostethic limbs. Maybe you could try more complex repairs, but those are very likely to fail.",
+						"Experienced"		= "You have years of experience building or reverse-engineering complex devices. Your use of the lathes and destructive analyzers is efficient and methodical. You can design contraptions to order, and likely sell those designs at a profit. <br>- You can safely attach prostethic limbs aswell as attach, repair and remove prostethic organs and MMIs. The speed increases with your skill.",
 						"Master"		= "You are an inventor or researcher. You can design, build, and modify equipment that most people don't even know exists. You are at home in the lab and the workshop and you've never met a gadget you couldn't take apart, put back together, and replicate.")
 	difficulty = SKILL_AVERAGE
 	default_max = SKILL_ADEPT
@@ -309,7 +309,7 @@ GLOBAL_LIST_EMPTY(skills)
 			return 2*difficulty
 		if(SKILL_EXPERT)
 			return 3*difficulty
-		if(SKILL_PROF)
+		if(SKILL_SPEC)
 			return 4*difficulty
 		else
 			return 0
