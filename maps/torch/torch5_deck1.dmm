@@ -25018,7 +25018,7 @@
 /obj/item/clothing/glasses/hud/security,
 /obj/item/clothing/head/helmet,
 /obj/item/clothing/suit/armor/pcarrier,
-/turf/space,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "mlb" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -32122,7 +32122,7 @@
 /obj/item/clothing/glasses/hud/security,
 /obj/item/clothing/head/helmet,
 /obj/item/clothing/suit/armor/pcarrier,
-/turf/space,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "yeI" = (
 /obj/structure/bed/chair/office/comfy/red,
