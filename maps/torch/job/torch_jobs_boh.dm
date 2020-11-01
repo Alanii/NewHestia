@@ -67,6 +67,7 @@
 /datum/job/sea/marine
 	title = "SMC Attache"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marineattache
+	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21,SPECIES_SERGAL = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_VASS = 21, SPECIES_TAJ = 21, SPECIES_CUSTOM = 21, SPECIES_AKULA = 21)
 	allowed_branches = list(
 		/datum/mil_branch/marine_corps
 	)
