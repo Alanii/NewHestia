@@ -297,8 +297,8 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
 	
-	max_skill = list(   SKILL_BUREAUCY    = SKILL_SPEC,
-						SKILL_FINANCE     = SKILL_SPEC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_SPEC,
+	                    SKILL_WEAPONS     = SKILL_SPEC)
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
