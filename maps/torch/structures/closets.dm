@@ -81,9 +81,7 @@
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
-		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/weapon/extinguisher/mini,
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/gps,
 		/obj/item/gunbox/infantry,
 		/obj/item/weapon/storage/box/flares
@@ -99,12 +97,9 @@
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
-		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/weapon/storage/belt/utility,
-		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/gunbox/inftech,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol
 		)
 
 //demolocker
@@ -133,9 +128,9 @@
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
-		/obj/item/device/megaphone,
 		/obj/item/gunbox/infcom,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/device/gps,
+		/obj/item/weapon/storage/box/illumnades,
 		)
 
 /////////
