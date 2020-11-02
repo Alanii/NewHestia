@@ -103,7 +103,7 @@
 		)
 	access = list(access_hydroponics, access_bar, access_solgov_crew, access_kitchen, access_commissary, access_maint_tunnels)
 	minimal_access = list()
-	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
+	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
 	max_skill = list(	SKILL_COOKING   = SKILL_SPEC,
