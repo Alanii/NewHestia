@@ -341,7 +341,7 @@
 
 	grabber.remove_cloaking_source(src)
 	if(grabber.make_grab(grabber, target, GRAB_NAB_SPECIAL))
-		if(get_skill_difference(SKILL_COMBAT, target) >= 1)
+		if(grabber.get_skill_difference(SKILL_COMBAT, target) >= 1)
 			target.LAssailant = grabber
 			grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out and grabs \the [target]!</span>")
 			grabber.do_attack_animation(target)
