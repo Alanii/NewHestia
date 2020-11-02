@@ -110,7 +110,7 @@
 	req_access = list(access_senadv)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
 
-/obj/structure/closet/secure_closet/sea/WillContain()
+/obj/structure/closet/secure_closet/smcattache/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/device/radio/headset/smcattache,
