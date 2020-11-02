@@ -32389,7 +32389,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/assembly/robotics/surgery)
+/area/operations_storage)
 "wTw" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
