@@ -8478,7 +8478,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/turbolift/robotics_lift)
+/area/vacant/robotics)
 "aot" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -9032,7 +9032,7 @@
 /area/command/gunnery/mim)
 "apm" = (
 /turf/simulated/floor/tiled/steel_grid,
-/area/turbolift/robotics_lift)
+/area/vacant/robotics)
 "apn" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
@@ -15684,7 +15684,7 @@
 	},
 /obj/machinery/holosign/surgery{
 	dir = 4;
-	id_tag = "operating2"
+	id_tag = "operating3"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19298,7 +19298,7 @@
 	invisibility = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/turbolift/robotics_lift)
+/area/vacant/robotics)
 "dSb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1;
@@ -23825,9 +23825,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/techfloor,
-/obj/effect/shuttle_landmark/lift/robotics_top,
 /turf/simulated/floor/tiled/steel_grid,
-/area/turbolift/robotics_lift)
+/area/vacant/robotics)
 "knu" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -25028,7 +25027,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/button/holosign{
-	id_tag = "robosurg";
+	id_tag = "robotsurg";
 	pixel_x = 6;
 	pixel_y = 24
 	},
@@ -27195,7 +27194,7 @@
 	},
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/steel_grid,
-/area/turbolift/robotics_lift)
+/area/vacant/robotics)
 "oOb" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/corner/red{

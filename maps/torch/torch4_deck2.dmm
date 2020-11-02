@@ -4776,10 +4776,6 @@
 /obj/random/illegal,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"jr" = (
-/obj/effect/shuttle_landmark/lift/robotics_bottom,
-/turf/simulated/floor/plating,
-/area/vacant/robotics)
 "js" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -37274,7 +37270,7 @@ fx
 XR
 hN
 hN
-jr
+hN
 XR
 nW
 Sa

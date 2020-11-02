@@ -534,12 +534,6 @@
 	name = "\improper Cargo Lift"
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
-
-/area/turbolift/robotics_lift
-	name = "\improper Robotics Lift"
-	icon_state = "shuttle3"
-	base_turf = /turf/simulated/open
-
 //Merchant
 
 /area/shuttle/merchant/home
