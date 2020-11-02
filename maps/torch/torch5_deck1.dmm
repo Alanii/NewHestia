@@ -24634,6 +24634,9 @@
 "lsb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/cryopod/robot,
+/obj/machinery/computer/cryopod/robot{
+	pixel_x = 27
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/chargebay)
 "ltb" = (
