@@ -1503,9 +1503,6 @@
 	name = "\improper Robotics Lab"
 	icon_state = "robotics"
 
-/area/assembly/robotics/lower
-	name = "\improper Lower Robotics Lab"
-
 /area/assembly/robotics/surgery
 	name = "\improper Robotics Operating Theatre"
 
