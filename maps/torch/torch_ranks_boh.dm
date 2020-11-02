@@ -201,8 +201,7 @@
 	)
 
 
-	min_skill = list(	SKILL_WEAPONS = SKILL_BASIC,
-						SKILL_COMBAT  = SKILL_BASIC,
+	min_skill = list(	SKILL_MEDICAL = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
 
 /datum/mil_branch/marine_corps
