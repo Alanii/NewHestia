@@ -178,6 +178,9 @@
 /obj/item/weapon/card/id/torch/crew/research/scientist
 	job_access_type = /datum/job/scientist
 
+/obj/item/weapon/card/id/torch/crew/research/roboticist
+	job_access_type = /datum/job/scientist
+
 //NanoTrasen and Passengers
 
 /obj/item/weapon/card/id/torch/passenger

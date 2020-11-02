@@ -747,6 +747,10 @@
 	name = "\improper Unused Chapel"
 	icon_state = "chapel"
 
+/area/vacant/robotics
+	name = "\improper Old Robotics"
+	icon_state = "chapel"
+
 /area/vacant/prototype
 	req_access = list(access_engine)
 
@@ -1110,8 +1114,8 @@
 	req_access = list(access_crematorium)
 
 /area/medical/lounge
-	name = "\improper Staff Lounge"
-	icon_state = "locker"
+	name = "\improper Intensive Care Ward"
+	icon_state = "patients"
 	req_access = list(access_medical_equip)
 
 /area/medical/reslab
@@ -1481,6 +1485,11 @@
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
 	req_access = list(list(access_surgery, access_robotics_engineering))
+
+/area/medical/surgery3
+	name = "\improper Operating Theatre 3"
+	icon_state = "surgery"
+	req_access = list(access_surgery)
 
 // Research
 /area/assembly
