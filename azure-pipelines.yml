@@ -1,0 +1,62 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - name: BYOND_MAJOR
+    value: 512
+    readonly: true
+  - name: BYOND_MINOR
+    value: 1485
+    readonly: true
+
+workspace:
+  clean: all
+
+strategy:
+  matrix:
+    code: # code testing
+      displayName: "Code"
+      variables:
+        - name: TEST
+          value: "CODE"
+      steps:
+        - bash: apt-get install dos2unix
+    torch: # map testing - torch
+      displayName: "Map - Torch"
+      variables:
+        - name: TEST
+          value: MAP
+        - name: MAP_PATH
+          value: torch
+    example: # map testing - example
+      displayName: "Map - Example"
+      variables:
+        - name: TEST
+          value: MAP
+        - name: MAP_PATH
+          value: example
+    bearcat: # map testing - bearcat
+      displayName: "Map - Bearcat"
+      variables:
+        - name: TEST
+          value: MAP
+        - name: MAP_PATH
+          value: bearcat
+    away: # map testing - away sites
+      displayName: "Map - Away Sites"
+      variables:
+        - name: TEST
+          value: MAP
+        - name: MAP_PATH
+          value: away_sites_testing
+
+steps:
+  - bash: apt-get update && apt-get upgrade
+    displayName: Update APT
+  - bash: apt-get install libc6-i386 libgcc1:i386 libstdc++6:i386 python python-pip uchardet
+    displayName: Download APT Packages
+  - script: test/run-test.sh
+    displayName: Run Build
