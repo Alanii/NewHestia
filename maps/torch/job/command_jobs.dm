@@ -109,12 +109,12 @@
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_COMPUTER    = SKILL_ADEPT,
 	                    SKILL_FINANCE     = SKILL_ADEPT,
-	                    SKILL_BOTANY      = SKILL_BASIC,
+	                    SKILL_BOTANY      = SKILL_ADEPT,
 	                    SKILL_ANATOMY     = SKILL_BASIC,
-	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_DEVICES     = SKILL_ADEPT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_DEVICES     = SKILL_SPEC,
@@ -156,16 +156,17 @@
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/ec/o3
 	)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
-	                    SKILL_CHEMISTRY   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY   = SKILL_ADEPT,
 						SKILL_DEVICES     = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
 	                    SKILL_ANATOMY     = SKILL_SPEC,
-	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
-	skill_points = 26
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT,
+						SKILL_DEVICES     = SKILL_SPEC)
+	skill_points = 24
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_heads,
@@ -198,10 +199,10 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3
 	)
-	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_ADEPT,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
 	                    SKILL_EVA          = SKILL_ADEPT,
-	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
+	                    SKILL_CONSTRUCTION = SKILL_EXPERT,
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
@@ -211,7 +212,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_SPEC,
 	                    SKILL_ATMOS        = SKILL_SPEC,
 	                    SKILL_ENGINES      = SKILL_SPEC)
-	skill_points = 30
+	skill_points = 28
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
@@ -256,7 +257,7 @@
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
