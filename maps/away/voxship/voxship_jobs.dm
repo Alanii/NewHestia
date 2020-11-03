@@ -112,8 +112,23 @@
 	)
 	skill_points = 20
 
+/datum/job/submap/voxship_vox/armalis
+	title = "Shoal Armalis"
+	total_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
+	supervisors = "apex and the arkship"
+	info = "Towering over their contemporaries, the Armalis are the muscle of the Vox. Not useful for much aside from rending the flesh of their foes."
+	whitelisted_species = list(SPECIES_VOX_ARMALIS)
+	blacklisted_species = null
+	is_semi_antagonist = TRUE
+	min_skill = list(   SKILL_EVA         = SKILL_MAX,
+	                    SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_HAULING     = SKILL_MAX,
+	                    SKILL_PILOT       = SKILL_BASIC)
+	skill_points = 4 //hahaha no not when you get min skills bucko
+
 /datum/job/submap/voxship_vox/quill
-	title = "Quill"
+	title = "Shoal Quill"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "apex and the arkship"
@@ -152,17 +167,6 @@
 	)
 	skill_points = 20
 
-/var/const/access_voxship = "ACCESS_VOXSHIP"
-/datum/access/vox
-	id = access_voxship
-	desc = "Vox Ship"
-	region = ACCESS_REGION_NONE
-
-/obj/item/weapon/card/id/voxship
-	access = list(access_voxship)
-
-/obj/machinery/door/airlock/hatch/voxship
-
 #define VOXSHIP_OUTFIT_JOB_NAME
 /decl/hierarchy/outfit/job/voxship
 	hierarchy_type = /decl/hierarchy/outfit/job/voxship
@@ -170,7 +174,7 @@
 	r_ear = null
 
 /decl/hierarchy/outfit/job/voxship/crew
-	id = list(/obj/item/weapon/card/id/voxship)
+	id_type = /obj/item/weapon/card/id/voxship
 	name = ("Vox - Job - Shoal Scavenger")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
@@ -189,10 +193,10 @@
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/engineer
 	name = "Shoal Technician"
 
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
-	name = "Quill"
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis
+	name = "Shoal Armalis"
 
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/vox_armalis
-	name = "Armalis"
-	
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
+	name = "Shoal Quill"
+
 #undef VOXSHIP_OUTFIT_JOB_NAME

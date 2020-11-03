@@ -2,20 +2,22 @@
 
 #include "voxship_areas.dm"
 #include "voxship_jobs.dm"
+#include "voxship_access.dm"
 
-/datum/map_template/ruin/away_site/voxship
-	name = "Vox Base"
-	id = "awaysite_voxship"
-	description = "Vox ship and base."
+//~~~~~~~~~~~~~~~~~~~~~~~~~~This is where the second site's code starts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/datum/map_template/ruin/away_site/scavship
+	name = "Vox Scavenger Ship"
+	id = "awaysite_voxship2"
+	description = "Vox Scavenger Ship."
 	suffixes = list("voxship/voxship-1.dmm")
 	cost = 0.5
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
-	area_usage_test_exempted_root_areas = list(/area/voxship)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_ship, /datum/shuttle/autodock/overmap/vox_lander)
 	spawn_weight = 0.33
 
-/obj/effect/overmap/visitable/sector/vox_base
-	name = "large asteroid"
-	desc = "Sensor array detects a large asteroid."
+/obj/effect/overmap/visitable/sector/vox_scav_ship
+	name = "small asteroid cluster"
+	desc = "Sensor array detects a small asteroid cluster."
 	icon_state = "meteor4"
 	hide_from_reports = TRUE
 	initial_generic_waypoints = list(
@@ -23,12 +25,8 @@
 	)
 
 	initial_restricted_waypoints = list(
-		"Vox Shuttle" = list("nav_hangar_vox")
+		"Vox Scavenger Ship" = list("nav_hangar_voxship")
 	)
-
-/obj/effect/shuttle_landmark/nav_voxbase/nav1
-	name = "Northest of Large Asteroid"
-	landmark_tag = "nav_voxbase_1"
 
 /datum/shuttle/autodock/overmap/vox_shuttle
 	name = "Vox Shuttle"
@@ -68,46 +66,6 @@
 	var/datum/language/vox/pidgin = all_languages[LANGUAGE_VOX]
 	name = "[pidgin.get_random_name()]-[pidgin.get_random_name()]"
 	..()
-
-/decl/webhook/submap_loaded/vox
-	id = WEBHOOK_SUBMAP_LOADED_VOX
-
-/decl/submap_archetype/derelict/voxship
-	descriptor = "Shoal forward base"
-	map = "Vox Base"
-	crew_jobs = list(
-		/datum/job/submap/voxship_vox,
-		/datum/job/submap/voxship_vox/doc,
-		/datum/job/submap/voxship_vox/engineer,
-		/datum/job/submap/voxship_vox/quill
-	)
-	whitelisted_species = list(SPECIES_VOX)
-	blacklisted_species = null
-	call_webhook = WEBHOOK_SUBMAP_LOADED_VOX
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~This is where the second site's code starts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-/datum/map_template/ruin/away_site/scavship
-	name = "Vox Scavenger Ship"
-	id = "awaysite_voxship2"
-	description = "Vox Scavenger Ship."
-	suffixes = list("voxship/voxship-2.dmm")
-	cost = 0.5
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_ship, /datum/shuttle/autodock/overmap/vox_lander)
-	spawn_weight = 0.33
-
-/obj/effect/overmap/visitable/sector/vox_scav_ship
-	name = "small asteroid cluster"
-	desc = "Sensor array detects a small asteroid cluster."
-	icon_state = "meteor4"
-	hide_from_reports = TRUE
-	initial_generic_waypoints = list(
-		"nav_voxbase_1"
-	)
-
-	initial_restricted_waypoints = list(
-		"Vox Scavenger Ship" = list("nav_hangar_voxship")
-	)
 
 /datum/shuttle/autodock/overmap/vox_ship
 	name = "Vox Scavenger Ship"
