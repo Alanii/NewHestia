@@ -32,7 +32,7 @@
 		LAZYSET(tool_icons, t, overlay_image(icon, t, flags=RESET_COLOR))
 
 /obj/item/weapon/material/knife/folding/swiss/attack_self(mob/user)
-	var/choice	
+	var/choice
 	if(user.a_intent != I_HELP && ((SWISSKNF_LBLADE in tools) || (SWISSKNF_SBLADE in tools)) && active_tool == SWISSKNF_CLOSED)
 		open = TRUE
 		choice = (SWISSKNF_LBLADE in tools) ? SWISSKNF_LBLADE : SWISSKNF_SBLADE
@@ -45,7 +45,7 @@
 		else
 			choice = SWISSKNF_CLOSED
 			open = FALSE
-	
+
 	if(!choice || (choice == active_tool) || !CanPhysicallyInteract(user))
 		return
 	if(choice == SWISSKNF_CLOSED)
@@ -56,7 +56,7 @@
 		user.visible_message("<span class='[(choice in sharp_tools) ? "warning" : "notice"]'>\The [user] opens the [lowertext(choice)].</span>")
 		if(choice == SWISSKNF_LBLADE || choice == SWISSKNF_SBLADE)
 			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
-			
+
 	active_tool = choice
 	update_force()
 	update_icon()
@@ -102,7 +102,7 @@
 	return (active_tool == SWISSKNF_CLIFTER || active_tool == SWISSKNF_COPENER) && can_use_tools
 
 /obj/item/weapon/material/knife/folding/swiss/iswirecutter()
-	return active_tool == SWISSKNF_WCUTTER && can_use_tools
+	return active_tool == SWISSKNF_WCUTTER
 
 /obj/item/weapon/material/knife/folding/swiss/ishatchet()
 	return active_tool == SWISSKNF_WBLADE
@@ -113,12 +113,11 @@
 		. = ..()
 		update_force()
 		return
-	if(istype(target, /obj/item))
-		if(target.w_class <= ITEM_SIZE_NORMAL)
-			can_use_tools = TRUE
-			. = ..()
-			can_use_tools = FALSE
-			return
+	if(istype(target, /obj))
+		can_use_tools = TRUE
+		. = ..()
+		can_use_tools = FALSE
+		return
 	return ..()
 
 #undef SWISSKNF_CLOSED
