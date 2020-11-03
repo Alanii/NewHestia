@@ -1546,6 +1546,7 @@
 #include "code\modules\clothing\chameleon.dm"
 #include "code\modules\clothing\clothing.dm"
 #include "code\modules\clothing\clothing_accessories.dm"
+#include "code\modules\clothing\skrell-accessory.dm"
 #include "code\modules\clothing\terran-accessory.dm"
 #include "code\modules\clothing\ears\earrings.dm"
 #include "code\modules\clothing\ears\headphones.dm"

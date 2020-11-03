@@ -108,6 +108,10 @@ SUBSYSTEM_DEF(jobs)
 			titles_to_datums[job.title] = job
 			for(var/alt_title in job.alt_titles)
 				titles_to_datums[alt_title] = job
+			if(istype(job, datum/job/submap)
+			for(var/alt_title in subjob.alt_titles)
+           		var/datum/job/submap/subjob
+				titles_to_datums[alt_title] = subjob
 			if(job.department_flag)
 				for (var/I in 1 to GLOB.bitflags.len)
 					if(job.department_flag & GLOB.bitflags[I])

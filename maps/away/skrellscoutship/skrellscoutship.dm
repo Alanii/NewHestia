@@ -37,11 +37,11 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/medical
-	name = "Mero'ta-Ketish"
+	name = "Merota-Ketish"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry
-	name = "Me'Kerr-Ketish"
+	name = "Mekerr-Ketish"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
@@ -75,7 +75,6 @@
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
 
-//TODO: Create separate files for jobs/loadouts
 /datum/job/submap/skrellscoutship_crew
 	title = "Xiqarr-Ketish"
 	supervisors = "your Qrri-Vuxix"
@@ -83,14 +82,14 @@
 	selection_color = "#5b4d20"
 	whitelisted_species = list("Skrell")
 	alt_titles = list(
-		"Goxo’i-Ketish",
+		"Goxoi-Ketish",
 		)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	branch = /datum/mil_branch/skrell_fleet
 	rank = /datum/mil_rank/skrell_fleet
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
-	allowed_ranks = list(/datum/mil_rank/skrell_fleet)
+	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
 	skill_points = 30
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_COMPUTER     = SKILL_BASIC,
@@ -105,19 +104,20 @@
 	max_skill = list(SKILL_CONSTRUCTION = SKILL_SPEC,
 					SKILL_ELECTRICAL   = SKILL_SPEC,
 					SKILL_ATMOS        = SKILL_SPEC,
+					SKILL_ENGINES      = SKILL_SPEC,
 					SKILL_EVA          = SKILL_SPEC,
 					SKILL_HAULING      = SKILL_SPEC)
 /datum/job/submap/skrellscoutship_crew/get_description_blurb()
 	return "You are an engineer and/or a demolitions specialist for your crew. You are responsible for repairing damage to your SSV aswell as providing engineering support in the field. You answer directly to your Qrii'Vuxix"
 
 /datum/job/submap/skrellscoutship_crew/medical
-	title = "Mero'ta Ketish"
+	title = "Merota-Ketish"
 	supervisors = "your Qrri-Vuxix"
 	total_positions = 2
 	selection_color = "#013d3b"
 	whitelisted_species = list("Skrell")
 	alt_titles = list(
-		"Mero'tol-Ketish",
+		"Merotol-Ketish",
 		)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
@@ -140,13 +140,13 @@
 	return "You serve as one of the medical specialists of your vessel. You can specialize in corpsmanship as a Mero'tol-Ketish or specialize in providing surgery and emergency procedures for your kin as a Mero'ta-Ketish. You answer directly to your Qrii'Vuxix"
 
 /datum/job/submap/skrellscoutship_crew/infantry
-	title = "Me'kerr-Ketish"
+	title = "Mekerr-Ketish"
 	supervisors = "your Qrri-Vuxix"
 	total_positions = 4
 	selection_color = "#601c1c"
 	alt_titles = list(
-		"Qi'xoal-Ketish",
-		"Me'xoal-Ketish"
+		"Qixoal-Ketish",
+		"Mexoal-Ketish"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
@@ -171,14 +171,19 @@
 	selection_color = "#2f2f7f"
 	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING  = SKILL_ADEPT,
 					SKILL_COMBAT   = SKILL_ADEPT,
 					SKILL_PILOT    = SKILL_ADEPT,
+					SKILL_SCIENCE  = SKILL_ADEPT,
 					SKILL_WEAPONS  = SKILL_ADEPT)
 	max_skill = list(SKILL_PILOT   = SKILL_SPEC,
+					SKILL_SCIENCE  = SKILL_SPEC,
+					SKILL_CONSTRUCTION  = SKILL_SPEC,
+					SKILL_ELECTRICAL  = SKILL_SPEC,
 					SKILL_EVA	   = SKILL_SPEC,
 					SKILL_HAULING  = SKILL_SPEC,
 					SKILL_WEAPONS  = SKILL_SPEC,
@@ -273,17 +278,28 @@
 	label_text = "Ambrosia"
 	starting_reagents = list(/datum/reagent/space_drugs = 50)
 
-
 /datum/mil_branch/skrell_fleet
 	name = "Skrellian Defense Task Force"
 	name_short = "SDTF"
 	email_domain = "sdtf.qb"
+	rank_types = list(
+		/datum/mil_rank/skrell_fleet/zuumqix,
+		/datum/mil_rank/skrell_fleet/vuxix
+	)
+	spawn_rank_types = list(
+		/datum/mil_rank/skrell_fleet/zuumqix,
+		/datum/mil_rank/skrell_fleet/vuxix
+	)
 
-	rank_types = list(/datum/mil_rank/skrell_fleet)
-	spawn_rank_types = list(/datum/mil_rank/skrell_fleet)
+/datum/mil_rank/skrell_fleet/zuumqix
+	name = "Qrii-Zuumqix"
+	name_short = "QZQX"
+	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX)
 
-/datum/mil_rank/skrell_fleet
-	name = "NULL"
+/datum/mil_rank/skrell_fleet/vuxix
+	name = "Qrii-Vuxix"
+	name_short = "QVX"
+	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QVX)
 
 /obj/machinery/power/apc/skrell
 	req_access = list(access_skrellscoutship)
