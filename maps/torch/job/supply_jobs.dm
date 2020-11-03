@@ -95,6 +95,7 @@
 	                    SKILL_PILOT   = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_EXPERT,
+						SKILL_EVA         = SKILL_SPEC,
 						SKILL_HAULING     = SKILL_SPEC)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/prospector
