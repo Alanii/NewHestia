@@ -2915,7 +2915,7 @@
 "BW" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed/padded,
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/medical,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/quarters)
 "CX" = (
@@ -2974,6 +2974,13 @@
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/rec)
+"FA" = (
+/obj/structure/curtain/open/bed,
+/obj/structure/bed/padded,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
+/turf/simulated/floor/tiled/skrell/orange,
+/area/ship/skrellscoutship/crew/quarters)
 "FK" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light,
@@ -3257,6 +3264,13 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
+"NN" = (
+/obj/structure/curtain/open/bed,
+/obj/structure/bed/padded,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/turf/simulated/floor/tiled/skrell/orange,
+/area/ship/skrellscoutship/crew/quarters)
 "Oz" = (
 /mob/living/bot/farmbot{
 	locked = 0
@@ -10751,9 +10765,9 @@ aa
 vZ
 BW
 gX
-BW
-BW
-BW
+FA
+FA
+NN
 vZ
 en
 Zp

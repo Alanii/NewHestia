@@ -30,8 +30,18 @@
 	name = "Xilvuxix"
 	archetype = /decl/submap_archetype/skrellscoutship
 
+//Spawnpoints
+
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship
-	name = "Qrri-Zuumqix"
+	name = "Xiqarr-Ketish"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/medical
+	name = "Mero'ta-Ketish"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry
+	name = "Me'Kerr-Ketish"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
@@ -45,6 +55,8 @@
 	map = "Xilvuxix"
 	crew_jobs = list(
 		/datum/job/submap/skrellscoutship_crew,
+		/datum/job/submap/skrellscoutship_crew/medical,
+		/datum/job/submap/skrellscoutship_crew/infantry,
 		/datum/job/submap/skrellscoutship_crew/leader
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_SKRELL
@@ -63,11 +75,16 @@
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
 
+//TODO: Create separate files for jobs/loadouts
 /datum/job/submap/skrellscoutship_crew
-	title = "Qrri-Zuumqix"
+	title = "Xiqarr-Ketish"
 	supervisors = "your Qrri-Vuxix"
-	total_positions = 5
+	total_positions = 2
+	selection_color = "#5b4d20"
 	whitelisted_species = list("Skrell")
+	alt_titles = list(
+		"Goxo’i-Ketish",
+		)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	branch = /datum/mil_branch/skrell_fleet
@@ -76,28 +93,101 @@
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet)
 	skill_points = 30
 	is_semi_antagonist = TRUE
+	min_skill = list(SKILL_COMPUTER     = SKILL_BASIC,
+					SKILL_HAULING      = SKILL_ADEPT,
+					SKILL_EVA          = SKILL_ADEPT,
+					SKILL_COMBAT		= SKILL_BASIC,
+					SKILL_WEAPONS		= SKILL_BASIC,
+					SKILL_CONSTRUCTION = SKILL_ADEPT,
+					SKILL_ELECTRICAL   = SKILL_ADEPT,
+					SKILL_ATMOS        = SKILL_ADEPT,
+					SKILL_ENGINES      = SKILL_ADEPT)
+	max_skill = list(SKILL_CONSTRUCTION = SKILL_SPEC,
+					SKILL_ELECTRICAL   = SKILL_SPEC,
+					SKILL_ATMOS        = SKILL_SPEC,
+					SKILL_EVA          = SKILL_SPEC,
+					SKILL_HAULING      = SKILL_SPEC)
+/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+	return "You are an engineer and/or a demolitions specialist for your crew. You are responsible for repairing damage to your SSV aswell as providing engineering support in the field. You answer directly to your Qrii'Vuxix"
+
+/datum/job/submap/skrellscoutship_crew/medical
+	title = "Mero'ta Ketish"
+	supervisors = "your Qrri-Vuxix"
+	total_positions = 2
+	selection_color = "#013d3b"
+	whitelisted_species = list("Skrell")
+	alt_titles = list(
+		"Mero'tol-Ketish",
+		)
+	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
+	is_semi_antagonist = TRUE
+	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC,
+					SKILL_MEDICAL     = SKILL_ADEPT,
+					SKILL_COMBAT	  = SKILL_BASIC,
+					SKILL_WEAPONS	  = SKILL_BASIC,
+					SKILL_ANATOMY     = SKILL_ADEPT,
+					SKILL_HAULING	  = SKILL_BASIC,
+					SKILL_CHEMISTRY   = SKILL_BASIC,
+					SKILL_DEVICES     = SKILL_ADEPT)
+	max_skill = list(SKILL_MEDICAL     = SKILL_SPEC,
+					SKILL_ANATOMY     = SKILL_SPEC,
+					SKILL_HAULING	  = SKILL_EXPERT,
+					SKILL_EVA	  	  = SKILL_EXPERT,
+					SKILL_DEVICES     = SKILL_EXPERT,
+					SKILL_CHEMISTRY   = SKILL_SPEC)
+/datum/job/submap/skrellscoutship_crew/medical/get_description_blurb()
+	return "You serve as one of the medical specialists of your vessel. You can specialize in corpsmanship as a Mero'tol-Ketish or specialize in providing surgery and emergency procedures for your kin as a Mero'ta-Ketish. You answer directly to your Qrii'Vuxix"
+
+/datum/job/submap/skrellscoutship_crew/infantry
+	title = "Me'kerr-Ketish"
+	supervisors = "your Qrri-Vuxix"
+	total_positions = 4
+	selection_color = "#601c1c"
+	alt_titles = list(
+		"Qi'xoal-Ketish",
+		"Me'xoal-Ketish"
+		)
+	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
+	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+					SKILL_HAULING  = SKILL_ADEPT,
+					SKILL_COMBAT   = SKILL_ADEPT,
+					SKILL_PILOT    = SKILL_BASIC,
+					SKILL_WEAPONS  = SKILL_ADEPT)
+	max_skill = list(SKILL_PILOT   = SKILL_SPEC,
+					SKILL_EVA	   = SKILL_SPEC,
+					SKILL_HAULING  = SKILL_SPEC,
+					SKILL_WEAPONS  = SKILL_SPEC,
+					SKILL_COMBAT   = SKILL_SPEC)
+/datum/job/submap/skrellscoutship_crew/infantry/get_description_blurb()
+	return "You are a Raskinta-Katish and you act as the main combat force of your vessel. You can specialize in different areas depending on your subcaste, but you answer directly to your Qrii'Vuxix"
 
 /datum/job/submap/skrellscoutship_crew/leader
 	title = "Qrri-Vuxix"
 	supervisors = "your SDTF"
 	total_positions = 1
+	selection_color = "#2f2f7f"
+	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_PILOT = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
-	max_skill = list(SKILL_PILOT = SKILL_SPEC)
+					SKILL_HAULING  = SKILL_ADEPT,
+					SKILL_COMBAT   = SKILL_ADEPT,
+					SKILL_PILOT    = SKILL_ADEPT,
+					SKILL_WEAPONS  = SKILL_ADEPT)
+	max_skill = list(SKILL_PILOT   = SKILL_SPEC,
+					SKILL_EVA	   = SKILL_SPEC,
+					SKILL_HAULING  = SKILL_SPEC,
+					SKILL_WEAPONS  = SKILL_SPEC,
+					SKILL_COMBAT   = SKILL_SPEC)
 
-/datum/job/submap/skrellscoutship_crew/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
+/datum/job/submap/skrellscoutship_crew/leader/get_description_blurb()
+	return "You are the Qrii'Vuxix of your vessel. You are tasked with conducting reconaissance operations on this sector, aswell as managing your crewmembers effectively. Your answer directly to your SDTF."
+
+/datum/job/submap/skrellscoutship_crew/leader/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
 	. = ..(H, alt_title, branch, grade)	//passing through arguments
 	//Limited to subcastes that make sense on the vessel. No need for ground-forces or R&D on such a ship.
 	var/skrellscoutcastes = list(
@@ -200,7 +290,7 @@
 
 /obj/machinery/alarm/skrell
 	req_access = list(access_skrellscoutship)
-	target_temperature = T0C+40
+	target_temperature = T0C+70
 
 /obj/machinery/alarm/skrell/Initialize()
 	. = ..()
