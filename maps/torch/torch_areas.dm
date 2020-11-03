@@ -534,12 +534,6 @@
 	name = "\improper Cargo Lift"
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
-
-/area/turbolift/robotics_lift
-	name = "\improper Robotics Lift"
-	icon_state = "shuttle3"
-	base_turf = /turf/simulated/open
-
 //Merchant
 
 /area/shuttle/merchant/home
@@ -745,6 +739,10 @@
 
 /area/vacant/chapel
 	name = "\improper Unused Chapel"
+	icon_state = "chapel"
+
+/area/vacant/robotics
+	name = "\improper Old Robotics"
 	icon_state = "chapel"
 
 /area/vacant/prototype
@@ -1110,8 +1108,8 @@
 	req_access = list(access_crematorium)
 
 /area/medical/lounge
-	name = "\improper Staff Lounge"
-	icon_state = "locker"
+	name = "\improper Intensive Care Ward"
+	icon_state = "patients"
 	req_access = list(access_medical_equip)
 
 /area/medical/reslab
@@ -1482,6 +1480,11 @@
 	icon_state = "surgery"
 	req_access = list(list(access_surgery, access_robotics_engineering))
 
+/area/medical/surgery3
+	name = "\improper Operating Theatre 3"
+	icon_state = "surgery"
+	req_access = list(access_surgery)
+
 // Research
 /area/assembly
 	req_access = list(access_robotics_engineering)
@@ -1493,9 +1496,6 @@
 /area/assembly/robotics
 	name = "\improper Robotics Lab"
 	icon_state = "robotics"
-
-/area/assembly/robotics/lower
-	name = "\improper Lower Robotics Lab"
 
 /area/assembly/robotics/surgery
 	name = "\improper Robotics Operating Theatre"
