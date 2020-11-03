@@ -40,6 +40,19 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod6/station)
+"ad" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "ae" = (
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8;
@@ -1176,6 +1189,18 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/defturrets)
+"cl" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/random/junk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "cm" = (
 /obj/item/weapon/stool,
 /obj/machinery/alarm{
@@ -1934,6 +1959,21 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"dR" = (
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "dS" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2549,6 +2589,11 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
+"eO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/random/obstruction,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "eP" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -2785,6 +2830,33 @@
 /obj/item/weapon/cell/device/high,
 /turf/simulated/floor/tiled/monotile,
 /area/teleporter/seconddeck)
+"fq" = (
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
+"fr" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/random/junk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "fs" = (
 /turf/simulated/floor/tiled/steel_ridged,
 /area/defturrets)
@@ -2813,6 +2885,29 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/seconddeck/central)
+"fv" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/random/junk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
+"fw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "fx" = (
 /obj/machinery/power/rad_collector,
 /turf/simulated/floor/plating,
@@ -3031,6 +3126,16 @@
 "fU" = (
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod6/station)
+"fV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/light_construct/small{
+	icon_state = "bulb-construct-stage1";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "fW" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3783,6 +3888,13 @@
 "hn" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/defturrets)
+"ho" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/random/junk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "hp" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/engine_smes)
@@ -3982,12 +4094,29 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
+"hI" = (
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/junk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "hJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 6
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/atmos)
+"hK" = (
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "hL" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/visible/green{
@@ -4094,6 +4223,15 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/engineering/locker_room)
+"hT" = (
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "hU" = (
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -4538,6 +4676,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
+"iN" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "iO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -5038,6 +5185,19 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
+"jP" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/random/illegal,
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "jQ" = (
 /obj/machinery/door/airlock/external/escapepod{
 	frequency = 1380;
@@ -5069,6 +5229,22 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
+"jT" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/random/illegal,
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "jU" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -9425,20 +9601,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engine_monitoring)
-"sj" = (
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sk" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/radio/intercom{
@@ -9468,17 +9630,6 @@
 /obj/effect/engine_setup/pump_max,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
-"sn" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
-	},
-/obj/structure/window/reinforced,
-/obj/effect/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "so" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4;
@@ -9491,20 +9642,6 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
-"sp" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -9525,25 +9662,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
-"ss" = (
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9572,10 +9690,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
-"sx" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sy" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/reagent_dispensers/fueltank,
@@ -9596,14 +9710,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/substation/seconddeck)
-"sB" = (
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sC" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/item/weapon/stool/padded,
@@ -9639,13 +9745,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
-"sH" = (
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techfloor,
@@ -9687,15 +9786,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/bluespace)
-"sO" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sP" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
@@ -9719,14 +9809,6 @@
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
-"sR" = (
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "sS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -9818,14 +9900,6 @@
 "sZ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/atmos)
-"ta" = (
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "tb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -9835,24 +9909,6 @@
 "tc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
-"td" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
-"te" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
@@ -16046,6 +16102,18 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/aftport)
+"KD" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Weapons locker"
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/armory)
 "KE" = (
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
@@ -18407,20 +18475,6 @@
 "Ss" = (
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
-"Sv" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/armory)
 "Sx" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -32820,10 +32874,10 @@ rt
 rt
 tu
 sP
-td
+ad
+eO
 sI
-sI
-sO
+fV
 sz
 sz
 sz
@@ -33025,7 +33079,7 @@ aK
 cb
 aK
 aK
-te
+ho
 tf
 sJ
 sz
@@ -33225,9 +33279,9 @@ wE
 dX
 aK
 cu
-sj
+fq
 aK
-sB
+hI
 sS
 YN
 sz
@@ -33426,12 +33480,12 @@ jB
 wE
 dX
 aK
-cu
-sn
+cl
+fr
 aK
-sH
+hK
 vs
-YN
+KD
 sz
 sz
 sz
@@ -33629,11 +33683,11 @@ wE
 dX
 aK
 cF
-sp
+fv
 aK
-sR
+hT
 tb
-YN
+jP
 sz
 sz
 sz
@@ -33830,12 +33884,12 @@ jD
 dd
 dX
 aK
-ss
-sx
+dR
+fw
 sM
-ta
+iN
 tc
-Sv
+jT
 sz
 sz
 sz
