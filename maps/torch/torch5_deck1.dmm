@@ -14830,6 +14830,9 @@
 	},
 /obj/item/stack/nanopaste,
 /obj/item/bodybag/rescue/loaded,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/clothing/accessory/armband/medblue,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "aMC" = (
@@ -17392,6 +17395,34 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
+"bqQ" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/crate/medical,
+/obj/item/weapon/storage/firstaid/fire{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/weapon/storage/firstaid/toxin{
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/obj/item/weapon/storage/firstaid/regular,
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/stack/nanopaste,
+/obj/item/bodybag/rescue/loaded,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/clothing/accessory/armband/medblue,
+/obj/item/clothing/accessory/armband/medblue,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/command/armoury)
 "brb" = (
 /obj/structure/closet/crate,
 /obj/random/tank,
@@ -20274,6 +20305,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/clothing/accessory/armband/engine,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "fMb" = (
@@ -27932,6 +27966,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/clothing/accessory/armband/engine,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "qbN" = (
@@ -31717,6 +31754,8 @@
 /obj/item/device/flashlight,
 /obj/item/device/flashlight,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/clothing/accessory/armband/engine,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "vVe" = (
@@ -60705,7 +60744,7 @@ rFK
 aMB
 aNE
 vlw
-aMB
+bqQ
 aNE
 kyt
 aQt
