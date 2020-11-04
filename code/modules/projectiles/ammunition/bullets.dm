@@ -101,10 +101,10 @@
 
 /obj/item/ammo_casing/shotgun/flechette
 	name = "flechette shell"
-	desc = "A skrellian flechette shell."
+	desc = "A skrellian flechette shell, this thing is huge"
 	icon_state = "fshell"
 	spent_icon = "fshell-spent"
-	caliber = CALIBER_SHOTGUN
+	caliber = CALIBER_SHOTGUN_BIG
 	projectile_type = /obj/item/projectile/bullet/shotgun/flechette
 	matter = list(MATERIAL_STEEL = 360)
 

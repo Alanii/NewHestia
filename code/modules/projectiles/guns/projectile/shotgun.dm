@@ -228,11 +228,14 @@
 	item_state = "skrellshotgun"
 	wielded_item_state = "skrellshotgun-wielded"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	max_shells = 11 //+1 in chamber
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
+	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/shotgun/flechette
 	one_hand_penalty = 10
 	base_parry_chance = 20
+	fire_delay = 8
 	load_method = SINGLE_CASING
 	handle_casings = EJECT_CASINGS
-	caliber = CALIBER_SHOTGUN
-
+	caliber = CALIBER_SHOTGUN_BIG
+	
