@@ -7,7 +7,7 @@
 
 	layer = SIDE_WINDOW_LAYER
 	anchored = 1.0
-	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CHECKS_BORDER
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE
 	obj_flags = OBJ_FLAG_ROTATABLE
 	alpha = 180
 	var/material/reinf_material
@@ -30,8 +30,6 @@
 /obj/structure/window/get_material()
 	return material
 
-/obj/structure/window/New(var/newloc, var/start_dir, var/new_material, var/new_reinf_material)
-	..(newloc, start_dir, new_material, new_reinf_material)
 /obj/structure/window/Initialize(mapload, start_dir=null, constructed=0, var/new_material, var/new_reinf_material)
 	. = ..()
 	if(!new_material)
@@ -63,7 +61,10 @@
 
 	health = maxhealth
 
-	set_anchored(!constructed)
+	if (constructed)
+		set_anchored(FALSE)
+		construction_state = 0
+
 	update_connections(1)
 	update_icon()
 	update_nearby_tiles(need_rebuild=1)
@@ -73,8 +74,9 @@
 	update_nearby_tiles()
 	var/turf/location = loc
 	. = ..()
-	for(var/obj/structure/window/W in orange(location, 1))
-		W.update_icon()
+	for(var/obj/structure/window/W in orange(1, location))
+		W.update_connections()
+		W.queue_icon_update()
 
 /obj/structure/window/examine(mob/user)
 	. = ..(user)
@@ -115,6 +117,7 @@
 		else if(health < maxhealth * 3/4 && initialhealth >= maxhealth * 3/4)
 			visible_message(SPAN_WARNING("Cracks begin to appear in \the [src]!"))
 			playsound(loc, "glasscrack", 100, 1)
+		update_icon()
 	return
 
 /obj/structure/window/proc/shatter(var/display_message = 1)
@@ -123,7 +126,7 @@
 		visible_message("<span class='warning'>\The [src] shatters!</span>")
 
 	var/debris_count = is_fulltile() ? 4 : 1
-	for(var/i = 0 to debris_count)
+	for(var/i = 1 to debris_count)
 		material.place_shard(loc)
 		if(reinf_material)
 			new /obj/item/stack/material/rods(loc, 1, reinf_material.name)
@@ -291,7 +294,7 @@
 			playsound(src, 'sound/items/Welder.ogg', 80, 1)
 			construction_state = 0
 			set_anchored(0)
-	else
+	else if (!istype(W, /obj/item/weapon/rcd))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		if(W.damtype == BRUTE || W.damtype == BURN)
 			user.do_attack_animation(src)
@@ -389,22 +392,46 @@
 		icon_state = basestate
 		return
 
-	var/image/I
 	icon_state = ""
+
+	var/percent_damage = 0 // Used for icon state of damage layer
+	var/damage_alpha = 0 // Used for alpha blending of damage layer
+	if (maxhealth && health < maxhealth)
+		percent_damage = (maxhealth - health) / maxhealth // Percentage of damage received (Not health remaining)
+		percent_damage = round(percent_damage, 0.25) // Round to nearest multiple of 25
+		damage_alpha = 256 * percent_damage - 1
+
+	var/img_dir
 	if(is_on_frame())
 		for(var/i = 1 to 4)
+			img_dir = 1<<(i-1)
 			if(other_connections[i] != "0")
-				I = image(icon, "[basestate]_other_onframe[connections[i]]", dir = 1<<(i-1))
+				process_icon(basestate, "_other_onframe", "_onframe", connections[i], img_dir, damage_alpha)
 			else
-				I = image(icon, "[basestate]_onframe[connections[i]]", dir = 1<<(i-1))
-			overlays += I
+				process_icon(basestate, "_onframe", "_onframe", connections[i], img_dir, damage_alpha)
 	else
 		for(var/i = 1 to 4)
+			img_dir = 1<<(i-1)
 			if(other_connections[i] != "0")
-				I = image(icon, "[basestate]_other[connections[i]]", dir = 1<<(i-1))
+				process_icon(basestate, "_other", "", connections[i], img_dir, damage_alpha)
 			else
-				I = image(icon, "[basestate][connections[i]]", dir = 1<<(i-1))
-			overlays += I
+				process_icon(basestate, "", "", connections[i], img_dir, damage_alpha)
+
+/obj/structure/window/proc/process_icon(basestate, icon_group, damage_group, connections, img_dir, damage_alpha)
+	var/image/I = image(icon, "[basestate][icon_group][connections]", dir = img_dir)
+	overlays += I
+
+	if (damage_group == "_onframe")
+		process_overlay_damage("window0_damage", damage_alpha, img_dir)
+	else
+		process_overlay_damage("window[damage_group][connections]_damage", damage_alpha, img_dir)
+
+/obj/structure/window/proc/process_overlay_damage(damage_state, damage_alpha, img_dir)
+	var/image/D
+	D = image(icon, damage_state, dir = img_dir)
+	D.blend_mode = BLEND_MULTIPLY
+	D.alpha = damage_alpha
+	overlays += D
 
 /obj/structure/window/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	var/melting_point = material.melting_point
@@ -471,17 +498,6 @@
 	basestate = "w"
 	reinf_basestate = "w"
 	dir = 5
-
-//Cult windows.
-/obj/structure/window/cult
-	name = "fellglass window"
-	color = "#b13d27"
-	basestate = "window"
-	init_material = MATERIAL_CULT_GLASS
-
-/obj/structure/window/cult/reinforced
-	basestate = "rwindow"
-	init_reinf_material = MATERIAL_CULT
 
 /obj/structure/window/reinforced/polarized
 	name = "electrochromic window"
@@ -553,6 +569,17 @@
 /obj/machinery/button/windowtint/on_update_icon()
 	icon_state = "light[active]"
 
+//Cult windows.
+/obj/structure/window/cult
+	name = "fellglass window"
+	color = "#b13d27"
+	basestate = "window"
+	init_material = MATERIAL_CULT_GLASS
+
+/obj/structure/window/cult/reinforced
+	basestate = "rwindow"
+	init_reinf_material = MATERIAL_CULT
+
 //Centcomm windows
 /obj/structure/window/reinforced/crescent/attack_hand()
 	return
@@ -585,7 +612,7 @@
 			to_chat(user, "<span class='notice'>There is already a window there.</span>")
 			return
 	to_chat(user, "<span class='notice'>You start placing the window.</span>")
-	if(do_after(user,20,src))
+	if(do_after(user,20))
 		for(var/obj/structure/window/WINDOW in loc)
 			if(WINDOW.dir == dir_to_set)//checking this for a 2nd time to check if a window was made while we were waiting.
 				to_chat(user, "<span class='notice'>There is already a window facing this way there.</span>")
