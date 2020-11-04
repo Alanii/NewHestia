@@ -96,7 +96,6 @@ var/datum/species/shapeshifter/promethean/prometheans
 			CULTURE_HUMAN_CETI,
 			CULTURE_HUMAN_SPACER,
 			CULTURE_HUMAN_SPAFRO,
-			CULTURE_HUMAN_CONFED,
 			CULTURE_HUMAN_OTHER
 		),
 		TAG_HOMEWORLD = list(
@@ -108,7 +107,6 @@ var/datum/species/shapeshifter/promethean/prometheans
 			HOME_SYSTEM_PLUTO,
 			HOME_SYSTEM_TAU_CETI,
 			HOME_SYSTEM_HELIOS,
-			HOME_SYSTEM_TERRA,
 			HOME_SYSTEM_TERSTEN,
 			HOME_SYSTEM_LORRIMAN,
 			HOME_SYSTEM_CINU,
@@ -124,7 +122,6 @@ var/datum/species/shapeshifter/promethean/prometheans
 			FACTION_SOL_CENTRAL,
 			FACTION_FLEET,
 			FACTION_CORPORATE,
-			FACTION_INDIE_CONFED,
 			FACTION_EXPEDITIONARY,
 			FACTION_MARINES,
 			FACTION_SPACECOPS,

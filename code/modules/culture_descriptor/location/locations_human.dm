@@ -12,6 +12,7 @@
 	distance = "1.5AU"
 	capital = "Olympus"
 	economic_power = 1.1
+	language = LANGUAGE_HUMAN_EURO
 
 /decl/cultural_info/location/human/earth
 	name = HOME_SYSTEM_EARTH
@@ -25,6 +26,7 @@
 	distance = "1AU"
 	capital = "Geneva"
 	economic_power = 1.2
+	language = LANGUAGE_HUMAN_EURO
 
 /decl/cultural_info/location/human/luna
 	name = HOME_SYSTEM_LUNA
@@ -61,6 +63,7 @@
 	surface. These surfacers often resent and are at odds with their rich, carefree employers."
 	capital = "Central Administration Zone"
 	economic_power = 1.4
+	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/ceres
 	name = HOME_SYSTEM_CERES
@@ -73,6 +76,7 @@
 	employed in shipbuilding, manufacturing, vessel services and hospitality. Belters generally regard themselves as adaptive, proud members of the SCG \
 	and some of the best engineers Humanity has to offer."
 	capital = "Government Zone, Ceres Station"
+	secondary_langs = list(LANGUAGE_SPACER, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/pluto
 	name = HOME_SYSTEM_PLUTO
@@ -87,6 +91,7 @@
 	manage to escape rarely wish to return, though often possess a looser set of morales as a result of their time on the planet."
 	capital = "New Santa Domingo"
 	economic_power = 0.8
+	secondary_langs = list(LANGUAGE_SPACER, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/cetiepsilon
 	name = HOME_SYSTEM_TAU_CETI
@@ -111,7 +116,7 @@
 	gateway installation in SCG space and provides vital links to many other SCG systems. Practically a city in space unto itself, the HGI is home to a hodgepodge of private individuals, \
 	Fleet and law enforcement outposts, government services and a wide array of private enterprises all catering to the many hangabouts, travellers, merchants and soldiers who pass through it daily. \
 	This fact alone is what has allowed the Helios system and Eos as a whole to weather multiple economic recessions and has allowed Eos to establish itself as a premier commercial centre of the wider \
-	SCG. This process was hindered during the Aigaion conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
+	SCG. This process was hindered during the Aigaion conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the UCG advance. It has recovered rapidly \
 	since the occupation, though the memories of that event carry in the collective consciousness of those who remained through it."
 	capital = "Surya"
 	economic_power = 1.3
@@ -129,7 +134,7 @@
 	distance = "22.5 light years."
 	economic_power = 0.9
 	ruling_body = "Gilgamesh Colonial Confederation"
-	language = LANGUAGE_HUMAN_RUSSIAN
+	secondary_langs = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/tersten
 	name = HOME_SYSTEM_TERSTEN
@@ -178,6 +183,7 @@
 	with many refusing to participate in the Defence Forces. Instead, they serve as peacekeepers and diplomats. The Cinuan People were controversially non-aligned during the Aigaion Conflict."
 	capital = "Al-Mular"
 	economic_power = 1.0
+	secondary_langs = list(LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_ARABIC)
 
 /decl/cultural_info/location/human/yuklid
 	name = HOME_SYSTEM_YUKLID
@@ -191,6 +197,7 @@
 	More recently, a spiritualist movement has developed on the planet, taking aspects of religious theory and the hippocratic oath."
 	capital = "Iyeegi"
 	economic_power = 0.9
+	secondary_langs = (LANGUAGE_HUMAN_SELENIAN)
 
 /decl/cultural_info/location/human/lordania
 	name = HOME_SYSTEM_LORDANIA
@@ -205,6 +212,7 @@
 	and often see themselves as better. Most Lordanians are seen as untrustworthy, or selfish. As such, they are rarely seen within Sol's Defence Forces."
 	capital = "New Ares"
 	economic_power = 1.2
+	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/kingston
 	name = HOME_SYSTEM_KINGSTON
@@ -219,6 +227,7 @@
 	Typically dark in skin due to the planet's proximity to it's sun, Kingstonians come in various forms."
 	capital = "New Havana"
 	economic_power = 1.1
+	secondary_langs = list(LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_INDIAN)
 
 /decl/cultural_info/location/human/gaia
 	name = HOME_SYSTEM_GAIA
@@ -231,7 +240,7 @@
 	once again.  They suffered hard twenty years prior, and fear they may suffer again."
 	capital = "New Venice"
 	economic_power = 1.0
-	language = LANGUAGE_HUMAN_GAIAN
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 
 /decl/cultural_info/location/human/magnitka
 	name = HOME_SYSTEM_MAGNITKA
@@ -243,5 +252,5 @@
 	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the Gilgamesh Colonial Confederation, in an effort to offset its economic decline."
 	capital = "Labortown"
 	economic_power = 0.8
-	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN, LANGUAGE_GUTTER)
 	ruling_body = "Magnitka"
