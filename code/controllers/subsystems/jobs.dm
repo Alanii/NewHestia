@@ -103,19 +103,22 @@ SUBSYSTEM_DEF(jobs)
 	positions_by_department = list()
 	for(var/map_name in job_lists_by_map_name)
 		var/list/map_data = job_lists_by_map_name[map_name]
+		//var/datum/job/subjob
 		for(var/datum/job/job in map_data["jobs"])
 			types_to_datums[job.type] = job
 			titles_to_datums[job.title] = job
 			for(var/alt_title in job.alt_titles)
 				titles_to_datums[alt_title] = job
-			if(istype(job, datum/job/submap)
-			for(var/alt_title in subjob.alt_titles)
-           		var/datum/job/submap/subjob
-				titles_to_datums[alt_title] = subjob
+			// This would, supposedely, allow off-ship roles to properly update their IDs to the alt titles (If they have any.)
+			// It is, however, horribly broken and I have absolutely no clue on how to make it work. Make sure to uncomment var/datum/job/subjob if you plan on trying to make this work. May god be with you.
+			//for(var/alt_title in subjob.alt_titles)
+			//	if(istype(job, /datum/job/submap))
+			//		titles_to_datums[alt_title] = subjob
 			if(job.department_flag)
 				for (var/I in 1 to GLOB.bitflags.len)
 					if(job.department_flag & GLOB.bitflags[I])
 						LAZYDISTINCTADD(positions_by_department["[GLOB.bitflags[I]]"], job.title)
+
 
 	// Set up syndicate phrases.
 	syndicate_code_phrase = generate_code_phrase()

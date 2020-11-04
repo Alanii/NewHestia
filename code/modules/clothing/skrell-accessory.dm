@@ -15,10 +15,10 @@ ranks - SDTF
 
 /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
 	name = "ranks (Qrii-Zuumqix)"
-	desc = "Skrellian Insigna denoting the position of Qrii-Zuumqix"
+	desc = "Skrellian holographic insigna denoting the position of Qrii-Zuumqix"
 	icon_state = "skrell_qriizuumqix"
 
 /obj/item/clothing/accessory/skrellian/rank/SDTF/QVX
 	name = "ranks (Qrii-Vuxix)"
-	desc = "Skrellian Insigna denoting the position of Qrii-Vuxix"
+	desc = "Skrellian holographic insigna denoting the position of Qrii-Vuxix"
 	icon_state = "skrell_qriivuxix"
