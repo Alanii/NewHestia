@@ -14384,9 +14384,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
-"Gg" = (
-/turf/space,
-/area/maintenance/fifthdeck/aftport)
 "Gh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
@@ -15066,6 +15063,14 @@
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/fifthdeck/aftstarboard)
+"II" = (
+/obj/structure/catwalk,
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "IO" = (
 /obj/effect/catwalk_plated,
@@ -18926,6 +18931,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
+"YT" = (
+/obj/structure/catwalk,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
 "YV" = (
 /obj/structure/hygiene/shower{
 	dir = 4
@@ -32465,7 +32477,7 @@ ZG
 aM
 ye
 ye
-ye
+YT
 ye
 ZH
 BW
@@ -33071,10 +33083,10 @@ ZG
 dd
 fC
 ye
+II
 ye
 ye
-ye
-ye
+II
 gW
 VI
 hU
@@ -42590,7 +42602,7 @@ ws
 ws
 ws
 ws
-Gg
+ws
 gI
 gI
 gI
