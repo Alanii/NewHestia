@@ -188,7 +188,7 @@
 	desc = "A shoulder-mounted micro-explosive dispenser designed only to accept standard illumination grenades."
 
 	charges = list(
-		list("illumination grenade",   "illumination grenade",   /obj/item/weapon/grenade/light,  6),
+		list("illumination grenade",   "illumination grenade",   /obj/item/weapon/grenade/light,  8),
 		)
 
 /obj/item/rig_module/mounted
