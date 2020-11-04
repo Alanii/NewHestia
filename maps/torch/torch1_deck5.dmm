@@ -3777,13 +3777,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"gR" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "gS" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -4740,6 +4733,9 @@
 "iH" = (
 /obj/machinery/floodlight,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "iI" = (
@@ -4853,9 +4849,6 @@
 "iR" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/vehicle/train/cargo/engine,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "iS" = (
@@ -5016,6 +5009,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
+/obj/machinery/light/spot{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
 "jg" = (
@@ -5077,6 +5073,7 @@
 /area/quartermaster/storage)
 "jm" = (
 /obj/structure/closet/crate/medical,
+/obj/item/weapon/defibrillator/compact,
 /obj/item/weapon/storage/firstaid/fire{
 	pixel_x = -4;
 	pixel_y = -4
@@ -5086,13 +5083,13 @@
 	pixel_y = -2
 	},
 /obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/storage/firstaid/o2{
-	pixel_x = 2;
-	pixel_y = 2
-	},
 /obj/item/weapon/storage/firstaid/adv{
 	pixel_x = 4;
 	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 2;
+	pixel_y = 2
 	},
 /obj/item/stack/nanopaste,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -8095,6 +8092,9 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "ot" = (
@@ -8998,6 +8998,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
+"pW" = (
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/storage)
 "pX" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/power/emitter{
@@ -14380,6 +14384,9 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
+"Gg" = (
+/turf/space,
+/area/maintenance/fifthdeck/aftport)
 "Gh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
@@ -15071,14 +15078,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
-"IQ" = (
-/obj/machinery/light/small{
-	dir = 8;
-	flickering = 1
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "IU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16158,9 +16157,6 @@
 /obj/structure/closet/medical_wall/filled{
 	pixel_y = 32
 	},
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "MX" = (
@@ -16524,6 +16520,8 @@
 	},
 /obj/machinery/cell_charger,
 /obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
 "Oz" = (
@@ -16782,14 +16780,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/infantry)
-"PJ" = (
-/obj/machinery/light/small{
-	dir = 4;
-	flickering = 1
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "PK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -18743,19 +18733,12 @@
 /obj/structure/table/rack{
 	dir = 4
 	},
-/obj/item/stack/material/steel{
-	amount = 30
-	},
-/obj/item/stack/material/steel{
-	amount = 30
-	},
-/obj/item/stack/material/steel{
-	amount = 30
-	},
-/obj/item/stack/material/plasteel{
-	amount = 20
-	},
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "Yj" = (
@@ -19115,7 +19098,6 @@
 	dir = 1;
 	pixel_y = -25
 	},
-/obj/machinery/light/small,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
 "Zu" = (
@@ -19251,15 +19233,17 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/item/stack/material/cardboard/fifty,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
-/obj/item/weapon/tape_roll,
-/obj/machinery/light/small,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
+/obj/random/illegal,
+/obj/random/illegal,
+/obj/random/illegal,
+/obj/item/stack/material/cardboard/fifty,
+/obj/item/weapon/tape_roll,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "ZY" = (
@@ -32481,7 +32465,7 @@ ZG
 aM
 ye
 ye
-IQ
+ye
 ye
 ZH
 BW
@@ -33087,10 +33071,10 @@ ZG
 dd
 fC
 ye
-gR
 ye
 ye
-PJ
+ye
+ye
 gW
 VI
 hU
@@ -40989,7 +40973,7 @@ HG
 os
 OG
 ox
-iF
+Nm
 ji
 ss
 Ym
@@ -41393,7 +41377,7 @@ HG
 MS
 MS
 HG
-Nm
+iF
 iJ
 mD
 jl
@@ -41600,7 +41584,7 @@ ht
 CL
 Ht
 Ht
-Ht
+pW
 Em
 XT
 pv
@@ -42606,7 +42590,7 @@ ws
 ws
 ws
 ws
-gI
+Gg
 gI
 gI
 gI
