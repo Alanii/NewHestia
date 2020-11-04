@@ -12,7 +12,7 @@
 	distance = "1.5AU"
 	capital = "Olympus"
 	economic_power = 1.1
-	language = LANGUAGE_HUMAN_EURO
+	additional_langs = list(additional_langs = list(LANGUAGE_HUMAN_EURO))
 
 /decl/cultural_info/location/human/earth
 	name = HOME_SYSTEM_EARTH
@@ -26,7 +26,7 @@
 	distance = "1AU"
 	capital = "Geneva"
 	economic_power = 1.2
-	language = LANGUAGE_HUMAN_EURO
+	additional = list(additional_langs = list(LANGUAGE_HUMAN_EURO))
 
 /decl/cultural_info/location/human/luna
 	name = HOME_SYSTEM_LUNA
