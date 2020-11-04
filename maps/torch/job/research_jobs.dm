@@ -105,8 +105,13 @@
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/research/roboticist/fleet,
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
 		/datum/mil_rank/civ/contractor
 		)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
@@ -135,7 +140,6 @@
 
 /datum/job/roboticist/get_description_blurb()
 	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Corporate Liaison and the Chief Science Officer."
-
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"

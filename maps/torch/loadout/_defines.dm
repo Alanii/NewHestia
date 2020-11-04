@@ -26,7 +26,7 @@
 #define ENGINEERING_ROLES list(/datum/job/chief_engineer, /datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee)
 
 //For members of Engineering, Cargo, and Research
-#define TECHNICAL_ROLES list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/qm, /datum/job/cargo_tech, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/chief_engineer, /datum/job/janitor, /datum/job/engineer_trainee)
+#define TECHNICAL_ROLES list(/datum/job/senior_engineer, /datum/job/roboticist, /datum/job/engineer, /datum/job/qm, /datum/job/cargo_tech, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/chief_engineer, /datum/job/janitor, /datum/job/engineer_trainee)
 
 //For members of the security department
 #define SECURITY_ROLES list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/seccadet)
@@ -53,7 +53,7 @@
 #define COMMAND_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/psiadvisor, /datum/job/representative)
 
 //For jobs that have at least O-1 in either NTEF or SMC, but aren't considered Command or Command Support.
-#define OFFICER_ROLES list(/datum/job/scientist, /datum/job/biomech, /datum/job/roboticist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
+#define OFFICER_ROLES list(/datum/job/scientist, /datum/job/biomech, /datum/job/qm, /datum/job/roboticist, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
 
 //For members of Command, Command Support and all other officer roles. Basically COMMAND_ROLES and OFFICER_ROLES merged together as a last resort.
 #define COMMANDANDOFFICER_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/psiadvisor, /datum/job/representative, /datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
