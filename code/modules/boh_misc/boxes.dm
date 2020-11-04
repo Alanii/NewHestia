@@ -28,7 +28,7 @@
 /obj/item/gunbox/captain/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic - .454 Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/large)
-	options["Ballistic - Mk58 semi-automatic"] = list(/obj/item/weapon/gun/projectile/pistol/sec,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
+	options["Ballistic - Mk58 semi-automatic"] = list(/obj/item/weapon/gun/projectile/pistol/sec/lethal,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
 	options["Energy - Smart Service Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
@@ -49,7 +49,7 @@
 
 /obj/item/gunbox/executive/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Mk58 semi-automatic"] = list(/obj/item/weapon/gun/projectile/pistol/sec,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
+	options["Ballistic - Mk58 semi-automatic"] = list(/obj/item/weapon/gun/projectile/pistol/sec/lethal,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
 	options["Ballistic - Magnum Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large/xo,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/magnum)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
 	options["Energy - Smart Service Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
