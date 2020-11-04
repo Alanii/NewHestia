@@ -18,7 +18,7 @@
 	average level of comfort expected in Sol space. Most surfacers are like many across the galaxy, though a few harbour rivalries with other Martian cultural \
 	groups or are generally overly proud of their heritage, as is the case with the Gideons, to the point that they constantly refer to it."
 	economic_power = 1
-	language = additional_langs = list(LANGUAGE_HUMAN_EURO)
+	additional_langs = list(LANGUAGE_HUMAN_EURO)
 
 /decl/cultural_info/culture/human/martian_tunneller
 	name = CULTURE_HUMAN_MARSTUN
@@ -55,7 +55,7 @@
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy, being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
-	language = additional_langs = list(LANGUAGE_HUMAN_EURO)
+	additional_langs = list(LANGUAGE_HUMAN_EURO)
 
 /decl/cultural_info/culture/human/venusian_surfacer
 	name = CULTURE_HUMAN_VENUSLOW
@@ -93,7 +93,7 @@
 	The long recovery period of Earth has resulted in much of the population being environmentally aware and heavily conservationist, eager to avoid past mistakes. Most Earthers are \
 	a content folk who see themselves as close to nature and keepers of the heritage of humanity."
 	economic_power = 1.1
-	language = additional_langs = list(LANGUAGE_HUMAN_EURO)
+	additional_langs = list(LANGUAGE_HUMAN_EURO)
 
 /decl/cultural_info/culture/human/ceti
 	name = CULTURE_HUMAN_CETI
@@ -103,7 +103,7 @@
 	being considered some of the best qualified technical specialists in humanity. Recently there has been a rising transhumanist element in Ceti society resulting in a large \
 	cybernetics culture; it is not uncommon to see many Cetites sporting some chrome."
 	economic_power = 1.1
-	language = additional_langs = list(LANGUAGE_HUMAN_EURO)
+	additional_langs = list(LANGUAGE_HUMAN_EURO)
 
 /decl/cultural_info/culture/human/spacer_core
 	name = CULTURE_HUMAN_SPACER
