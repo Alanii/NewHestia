@@ -114,6 +114,13 @@
 		update_force()
 		return
 	if(istype(target, /obj))
+		if(active_tool == SWISSKNF_CROWBAR && !istype(target,/obj/item))
+			to_chat(user,"<span class = 'notice'>[src] doesn't provide the leverage to do that!</span>")
+			return
+		if(active_tool in list(SWISSKNF_CROWBAR, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WCUTTER, SWISSKNF_WBLADE))
+			to_chat(user,"<span class = 'notice'>You start preparing to use [src]'s [active_tool] on [target]...</span>")
+			if(!do_after(user,3 SECONDS,src))
+				return
 		can_use_tools = TRUE
 		. = ..()
 		can_use_tools = FALSE
