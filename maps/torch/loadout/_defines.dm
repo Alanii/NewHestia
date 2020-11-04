@@ -53,7 +53,7 @@
 #define COMMAND_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/psiadvisor, /datum/job/representative)
 
 //For jobs that have at least O-1 in either NTEF or SMC, but aren't considered Command or Command Support.
-#define OFFICER_ROLES list(/datum/job/scientist, /datum/job/biomech, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
+#define OFFICER_ROLES list(/datum/job/scientist, /datum/job/biomech, /datum/job/qm, /datum/job/roboticist, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
 
 //For members of Command, Command Support and all other officer roles. Basically COMMAND_ROLES and OFFICER_ROLES merged together as a last resort.
 #define COMMANDANDOFFICER_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/psiadvisor, /datum/job/representative, /datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
