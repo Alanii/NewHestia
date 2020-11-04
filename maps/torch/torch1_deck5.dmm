@@ -17026,6 +17026,7 @@
 	dir = 8;
 	pixel_x = -24
 	},
+/obj/machinery/recharger,
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
 "QJ" = (
@@ -19110,6 +19111,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
+"Zs" = (
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/crowbar,
+/obj/item/weapon/wrench,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/infantry)
 "Zt" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -32078,7 +32091,7 @@ ZG
 zA
 XS
 Jy
-Jy
+Zs
 RM
 yV
 Ej
