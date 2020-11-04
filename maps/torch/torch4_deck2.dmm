@@ -19072,6 +19072,7 @@
 /area/hallway/primary/seconddeck/fore)
 "US" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics/lower)
 "UX" = (
@@ -19083,6 +19084,9 @@
 	name = "Robotics RC";
 	pixel_x = -30;
 	pixel_y = 0
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics/lower)
