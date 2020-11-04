@@ -61,19 +61,6 @@
 /obj/item/weapon/gun/projectile/pistol/sec/lethal
 	magazine_type = /obj/item/ammo_magazine/pistol
 
-/obj/item/weapon/gun/projectile/pistol/command
-	name = "NT Mk58"
-	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one appears to be ID locked."
-	icon = 'icons/obj/guns/pistol.dmi'
-	icon_state = "secguncomp"
-	safety_icon = "safety"
-	magazine_type = /obj/item/ammo_magazine/pistol/rubber
-	accuracy = -1
-	fire_delay = 6
-	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	has_firing_pin = TRUE
-	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
-
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol
 	name = "HT Magnus"
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
