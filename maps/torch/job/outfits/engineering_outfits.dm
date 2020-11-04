@@ -38,20 +38,3 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/torch/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
-
-/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist	
-	name = OUTFIT_JOB_NAME("Roboticist - Torch")	
-	uniform = /obj/item/clothing/under/rank/roboticist	
-	shoes = /obj/item/clothing/shoes/black	
-	id_type = /obj/item/weapon/card/id/torch/contractor/engineering/roboticist	
-	pda_type = /obj/item/modular_computer/pda/roboticist	
-
-/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet	
-	name = OUTFIT_JOB_NAME("Roboticist - NTEF")	
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering	
-	shoes = /obj/item/clothing/shoes/dutyboots	
-
-/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/marine	
-	name = OUTFIT_JOB_NAME("Roboticist - Marine")	
-	uniform = /obj/item/clothing/under/solgov/utility/army/engineering	
-	shoes = /obj/item/clothing/shoes/dutyboots 

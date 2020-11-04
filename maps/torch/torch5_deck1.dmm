@@ -703,7 +703,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "abk" = (
-/obj/effect/floor_decal/corner/yellow,
+/obj/effect/floor_decal/corner/research,
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 9
 	},
@@ -731,8 +731,9 @@
 /obj/machinery/optable{
 	name = "Robotics Operating Table"
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 10
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 1
@@ -746,8 +747,9 @@
 "abm" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/firstaid/surgery,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 10
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 1
@@ -859,8 +861,9 @@
 /area/medical/sleeper)
 "abu" = (
 /obj/structure/table/standard,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 8
+/obj/effect/floor_decal/corner/research{
+	dir = 8;
+	tag = "icon-corner_white (WEST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 5
@@ -2350,8 +2353,9 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 6
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 8
@@ -2852,8 +2856,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
 "afb" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 4
@@ -3509,8 +3514,9 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "agi" = (
-/obj/effect/floor_decal/corner/yellow/half{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3535,7 +3541,9 @@
 /area/security/armoury)
 "agk" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Surgical Theater 2"
+	door_color = "#ffffff";
+	name = "Surgical Theater 2";
+	stripe_color = "#a2819e"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3579,8 +3587,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 6
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 8
@@ -3722,8 +3731,9 @@
 /turf/simulated/floor/reinforced,
 /area/thruster/d1starboard)
 "agx" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 4
@@ -3827,8 +3837,9 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/device/mmi,
 /obj/item/device/mmi,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 4
+/obj/effect/floor_decal/corner/research{
+	dir = 4;
+	tag = "icon-corner_white (EAST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 10
@@ -3975,8 +3986,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "agU" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 5
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain,
 /obj/structure/closet/crate/secure/biohazard/alt,
@@ -4691,8 +4703,9 @@
 /area/security/processing)
 "aig" = (
 /obj/machinery/organ_printer/flesh/mapped,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 1;
+	tag = "icon-corner_white (NORTH)"
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 6
@@ -5405,8 +5418,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7269,8 +7283,9 @@
 /area/security/brig/perma)
 "amp" = (
 /obj/effect/floor_decal/floordetail/edgedrain,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 5
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/machinery/optable{
 	name = "Robotics Operating Table"
@@ -8456,8 +8471,9 @@
 /turf/simulated/floor/tiled,
 /area/operations_storage)
 "aor" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 8
+/obj/effect/floor_decal/corner/research{
+	dir = 8;
+	tag = "icon-corner_white (WEST)"
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1
@@ -11626,8 +11642,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/corner/yellow/half{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics)
@@ -12072,8 +12089,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 10
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 4
+/obj/effect/floor_decal/corner/research{
+	dir = 4;
+	tag = "icon-corner_white (EAST)"
 	},
 /obj/structure/table/standard,
 /obj/item/weapon/storage/box/bodybags,
@@ -12086,8 +12104,9 @@
 /area/assembly/robotics/surgery)
 "auP" = (
 /obj/effect/floor_decal/floordetail/edgedrain,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 5
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/structure/table/standard,
 /obj/item/weapon/storage/firstaid/surgery,
@@ -17317,8 +17336,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/floor_decal/corner/yellow/half{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics)
@@ -17446,7 +17466,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/surgery)
 "bxz" = (
 /obj/effect/floor_decal/corner/blue{
@@ -17458,7 +17478,7 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 9
 	},
-/obj/effect/floor_decal/corner/yellow,
+/obj/effect/floor_decal/corner/research,
 /obj/machinery/alarm{
 	pixel_y = 23;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
@@ -19287,7 +19307,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "dRs" = (
-/obj/effect/floor_decal/corner/yellow,
+/obj/effect/floor_decal/corner/research,
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
@@ -19467,6 +19487,8 @@
 	},
 /obj/item/clothing/gloves/insulated,
 /obj/item/clothing/gloves/insulated,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex,
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "ehT" = (
@@ -21092,8 +21114,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 8
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 6
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
 	},
 /obj/structure/table/standard,
 /obj/item/weapon/storage/toolbox/mechanical,
@@ -23485,8 +23508,9 @@
 "kcb" = (
 /obj/machinery/organ_printer/robot/mapped,
 /obj/effect/floor_decal/floordetail/edgedrain,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 5
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
@@ -23535,8 +23559,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 10
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
 	},
 /obj/structure/hygiene/sink{
 	dir = 1;
@@ -23659,8 +23684,9 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "knb" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 1;
+	tag = "icon-corner_white (NORTH)"
 	},
 /obj/effect/floor_decal/techfloor,
 /obj/effect/shuttle_landmark/lift/robotics_top,
@@ -23936,8 +23962,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 5
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 8
+/obj/effect/floor_decal/corner/research{
+	dir = 8;
+	tag = "icon-corner_white (WEST)"
 	},
 /obj/machinery/button/windowtint{
 	id = "robotics_surg";
@@ -23994,7 +24021,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics"
+	door_color = "#ffffff";
+	name = "Robotics";
+	stripe_color = "#a2819e"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -24072,7 +24101,9 @@
 /area/assembly/chargebay)
 "kMb" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics Surgical Theater"
+	door_color = "#ffffff";
+	name = "Robotics Surgical Theater";
+	stripe_color = "#a2819e"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -24282,8 +24313,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 6
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 1;
+	tag = "icon-corner_white (NORTH)"
 	},
 /obj/machinery/computer/operating{
 	dir = 1;
@@ -24312,7 +24344,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics"
+	door_color = "#ffffff";
+	name = "Robotics";
+	stripe_color = "#a2819e"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/assembly/robotics)
@@ -24936,7 +24970,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/surgery)
 "mdv" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
@@ -26320,8 +26354,9 @@
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 10
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
 	},
 /obj/structure/cable/green{
 	d2 = 4;
@@ -26574,8 +26609,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/corner/yellow/half{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	level = 2
@@ -26988,8 +27024,9 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/wing)
 "oMq" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 4
+/obj/effect/floor_decal/corner/research{
+	dir = 4;
+	tag = "icon-corner_white (EAST)"
 	},
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/steel_grid,
@@ -31818,8 +31855,9 @@
 /obj/structure/closet/medical_wall{
 	pixel_y = 32
 	},
-/obj/effect/floor_decal/corner/yellow/half{
-	dir = 1
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
