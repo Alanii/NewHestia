@@ -133,7 +133,7 @@
 	capital = "Ameranth"
 	distance = "22.5 light years."
 	economic_power = 0.9
-	ruling_body = "Gilgamesh Colonial Confederation"
+	ruling_body = "United Colonies of Gilgamesh"
 	secondary_langs = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/tersten
@@ -249,7 +249,7 @@
 	Ruled by an authoritarian government heavily associated with the corporations that founded it, Magnitka's recent history is marked by civil war. Even today, a large number of rebel groups populate the planet. \
 	Founded by German companies in the 2300s, the overwhelming majority of Magnitka's population is descended from Eastern European laborers and their German managers. \
 	Unfortunately, Magnitka's economy is in a decline as its principle export, iron, grows cheaper by the day. The primary careers available to Magnitkans are military service, mining, or organized crime.  \
-	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the Gilgamesh Colonial Confederation, in an effort to offset its economic decline."
+	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the United Colonies of Gilgamesh, in an effort to offset its economic decline."
 	capital = "Labortown"
 	economic_power = 0.8
 	secondary_langs = list(LANGUAGE_HUMAN_GAIAN, LANGUAGE_GUTTER)

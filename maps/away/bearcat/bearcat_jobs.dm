@@ -7,6 +7,7 @@
 	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
 	unexplored space. Most of the crew jumped ship at the first sight of the storm. What good judgement you have for hiring, eh? \
 	Organize what's left of your crew, and continue with your trading efforts."
+	required_language = LANGUAGE_SPACER
 
 /datum/job/submap/bearcat_crewman
 	title = "Independant Crewman"
@@ -17,6 +18,7 @@
 	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
 	unexplored space. Most of the crew jumped ship at the first sight of the storm. \
 	Work together with the Captain and what's left of the crew."
+	required_language = LANGUAGE_SPACER
 
 #define BEARCAT_OUTFIT_JOB_NAME(job_name) ("Bearcat - Job - " + job_name)
 
