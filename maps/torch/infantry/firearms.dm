@@ -65,8 +65,8 @@
 /obj/item/gunbox/infcom/secondary/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Tactical Goggles x5"] = list(/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles)
-	options["Combat Lifesaver Kit"] = list(/obj/item/weapon/defibrillator/compact/combat/loaded,/obj/item/bodybag/cryobag,/obj/item/weapon/reagent_containers/hypospray/vial)
-	options["Demolitions"] = list(/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/spray)
+	options["Advanced Medical Equipment"] = list(/obj/item/bodybag/cryobag,/obj/item/weapon/reagent_containers/hypospray/vial,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/ivbag/nanoblood,/obj/item/weapon/reagent_containers/ivbag/nanoblood)
+	options["Demolitions Equipment"] = list(/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/glass/bottle/thermite,/obj/item/weapon/reagent_containers/spray)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
