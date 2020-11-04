@@ -1147,3 +1147,12 @@
 	H.weedlevel += removed*strength*0.05
 	seed.set_trait(TRAIT_POTENCY, seed.get_trait(TRAIT_POTENCY) + removed*0.1, 200, 0)
 	return
+
+/datum/reagent/toxin/boron
+	name = "Boron"
+	description = "A chemical that is highly valued in fusion energy."
+	taste_description = "metal"
+	reagent_state = SOLID
+	color = "#837E79"
+	value = 4
+	strength = 7
