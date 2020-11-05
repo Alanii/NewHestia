@@ -237,3 +237,72 @@
 	icon = 'icons/turf/flooring/cult.dmi'
 	icon_state = "cult_g"
 	color = "#c9ae5e"
+
+//MINING-4 // DERELICT
+/obj/effect/overmap/visitable/sector/derelictskrell
+	name = "Ship signatures from an asteroid"
+	desc = "Sensors detect an artificial building within the asteroid."
+	icon_state = "sector"
+	initial_generic_waypoints = list(
+		"nav_derelict_1",
+		"nav_derelict_2",
+		"nav_derelict_3",
+		"nav_derelict_4",
+	)
+	known = 0
+
+/obj/effect/overmap/visitable/sector/orb/get_skybox_representation()
+	var/image/res = overlay_image('icons/skybox/skybox_rock_128.dmi', "bigrock", COLOR_ASTEROID_ROCK, RESET_COLOR)
+	res.pixel_x = rand(256,512)
+	res.pixel_y = rand(256,512)
+	return res
+
+/datum/map_template/ruin/away_site/derelictskrell
+	name = "Mining - Derelict"
+	id = "awaysite_mining_derelict"
+	description = "An asteroid with faint radio signals coming from within."
+	suffixes = list("mining/mining-derelict.dmm")
+	cost = 1
+	accessibility_weight = 10
+	generate_mining_by_z = 1
+	base_turf_for_zs = /turf/simulated/floor/asteroid
+	area_usage_test_exempted_root_areas = list(/area/mine)
+	area_usage_test_exempted_areas = list(/area/djstation)
+	apc_test_exempt_areas = list(
+		/area/mine/explored = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/mine/unexplored = NO_SCRUBBER|NO_VENT|NO_APC
+	)
+	area_coherency_test_exempt_areas =  list(/area/mine/explored, /area/mine/unexplored)
+
+/obj/effect/shuttle_landmark/derelict/nav1
+	name = "Anchor point A"
+	landmark_tag = "nav_derelict_1"
+
+/obj/effect/shuttle_landmark/derelict/nav2
+	name = "Anchor point B"
+	landmark_tag = "nav_derelict_2"
+
+/obj/effect/shuttle_landmark/derelict/nav3
+	name = "Anchor point C"
+	landmark_tag = "nav_derelict_3"
+
+/obj/effect/shuttle_landmark/derelict/nav4
+	name = "Anchor point D"
+	landmark_tag = "nav_derelict_4"
+
+/obj/effect/landmark/corpse/marooned_skrell
+	name = "Qriivol Quumxux" 
+	species = list(SPECIES_SKRELL)               
+	corpse_outfits = list(/decl/hierarchy/outfit/marooned_skrell)
+ 
+/decl/hierarchy/outfit/marooned_skrell 
+	name = "Dead Skrell belonging to one of the many SDTFs" 
+	uniform = /obj/item/clothing/under/skrelljumpsuit
+	shoes = /obj/item/clothing/shoes/dutyboots
+	gloves = /obj/item/clothing/gloves/thick/swat/skrell
+	suit = /obj/item/clothing/suit/space/void/skrell/exchange/black
+	head = /obj/item/clothing/head/helmet/space/void/skrell/exchange/black
+
+/obj/item/weapon/paper/derelict/orders
+	name = "Skrellian Orders"
+	info = "*A series of skrellian letters and numbers with particularly sharp edges fill this page.*"

@@ -15,6 +15,13 @@
 	wielded_item_state = "laser-wielded"
 	base_parry_chance = 20
 
+/obj/item/weapon/gun/energy/laser/skrell
+	name = "VT-1 carbine"
+	desc = "The Vuu'Xqu*ix T-1, known as 'VT-1' by SolGov. A true relic of the early space exploration age of the Skrell, this millenia-old outdated laser carbine remains operational even today due to its robust construction."
+	icon = 'icons/obj/guns/skrell_carbine.dmi'
+	icon_state = "skrell_oldcarbine"
+	item_state = "skrell_oldcarbine"
+
 /obj/item/weapon/gun/energy/laser/mounted
 	self_recharge = 1
 	use_external_power = 1
