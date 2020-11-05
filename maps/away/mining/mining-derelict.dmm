@@ -1,6 +1,6 @@
 "a" = (/turf/space,/area/space)
 "c" = (/turf/simulated/floor/airless,/area/mine/explored)
-"d" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/helmet/space/void/skrell/exchange/black{name = "Skrellian voidsuit helmet"},/turf/simulated/floor/tiled/skrell,/area/mine/explored)
+"d" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/helmet/space/void/skrell/exchange/black{name = "Skrellian voidsuit helmet"},/obj/item/remains/xeno,/turf/simulated/floor/tiled/skrell,/area/mine/explored)
 "e" = (/obj/effect/shuttle_landmark/derelict/nav1,/turf/space,/area/space)
 "f" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/asteroid,/area/mine/explored)
 "g" = (/turf/simulated/mineral,/area/mine/explored)
@@ -37,6 +37,7 @@
 "M" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/asteroid,/area/mine/explored)
 "N" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/asteroid,/area/mine/explored)
 "O" = (/obj/effect/decal/cleanable/dirt,/obj/effect/paint/black,/turf/simulated/wall/r_titanium,/area/mine/explored)
+"P" = (/obj/structure/bed/chair/shuttle{dir = 1; icon_state = "shuttle_chair_preview"; tag = "icon-shuttle_chair_preview (NORTH)"},/obj/item/remains/xeno,/turf/simulated/floor/tiled/skrell,/area/mine/explored)
 "Q" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/door/airlock/external,/turf/simulated/floor/tiled/skrell,/area/mine/explored)
 "R" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/effect/paint/black,/turf/simulated/floor/airless,/area/mine/explored)
 "S" = (/turf/simulated/floor/tiled/skrell,/area/mine/explored)
@@ -152,7 +153,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaG
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGGGGGGqqqGGGGGGGGqqGGGGGGGGGGqqGGGVVRjsxXggkuzSSzfMffMfJJJJJJaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGGGGqqqqqGGGGGGGqqGGGGGGGGGGGqqqVVVVRCAAmdghAISSQMMffffqfJJJJaaaaaaaaaaaaaGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGGGqqqGGGGGGGGqqqGGGGGGGGGGGGGGqqGVVpELAAoYooQAAQHffWHffJJJJJaaaaaaaaaaaaGGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGGqqGGGGGGGGGGqqGGGGGGGGGGGGGGGGqqGVgnKvvivvSUSSOMfHJfJfffJJJaaaaaaaaaaaaGGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGGqqGGGGGGGGGGqqGGGGGGGGGGGGGGGGqqGVgnKvvivPSUSSOMfHJfJfffJJJaaaaaaaaaaaaGGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGGGqqGGGGGGGGGGqqGGGGGGGGGGGGGGGGGqqGVzzzzzzzzzzcUUfMfJfJJfJJJJaaaaaaaaaaaGGGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGqqqqGGGGGGGGGGqqGGGGGGGGqqqqqqqqqqqGGGGVVVJJqJJJJJMJqJqqqqqqqqaaaaaaaaaaaGGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqqGGGGGGGGGGGGGqqGGGGGGqqqGGGGGGGGqqqGGGVVGVVVVJJJJfqqqqqqqqqqqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
