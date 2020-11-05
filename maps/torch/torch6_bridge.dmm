@@ -1740,7 +1740,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
 	id_tag = "csodoor";
-	name = "Chief Science Officer";
+	name = "Head of Research";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -1990,7 +1990,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	name = "CMO's suit storage";
+	name = "HoM's suit storage";
 	req_access = list("ACCESS_CHIEF_MEDICAL_OFFICER")
 	},
 /obj/effect/floor_decal/corner/paleblue/diagonal,
@@ -2223,7 +2223,7 @@
 /obj/item/weapon/rcd_ammo,
 /obj/item/weapon/rcd_ammo,
 /obj/machinery/door/window/brigdoor/eastleft{
-	name = "CE's Equipment Storage"
+	name = "HoE's Equipment Storage"
 	},
 /obj/structure/window/reinforced{
 	dir = 2;
@@ -2309,7 +2309,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "cedoor";
-	name = "CE's Office Door Control";
+	name = "HoE's Office Door Control";
 	pixel_x = 0;
 	pixel_y = -27;
 	req_access = list("ACCESS_CHIEF_ENGINEER")
@@ -3432,7 +3432,7 @@
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
-	name = "CE's Equipment Storage";
+	name = "HoE's Equipment Storage";
 	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -4083,7 +4083,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	name = "CoS' suit storage";
+	name = "HoS's suit storage";
 	req_access = list("ACCESS_HEAD_OF_SECURITY")
 	},
 /obj/effect/floor_decal/corner/red/full,
@@ -4385,7 +4385,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "cosdoor";
-	name = "COS's Office Door Control";
+	name = "HoS's Office Door Control";
 	pixel_x = 0;
 	pixel_y = 27;
 	req_access = list("ACCESS_HEAD_OF_SECURITY")
@@ -4490,7 +4490,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/engineering{
 	id_tag = "cedoor";
-	name = "Chief Engineer";
+	name = "Head of Engineering";
 	secured_wires = 1
 	},
 /obj/structure/disposalpipe/segment,
@@ -4728,7 +4728,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	name = "CSO's suit storage";
+	name = "HoR's suit storage";
 	req_access = list("ACCESS_RESEARCH_DIRECTOR")
 	},
 /obj/item/weapon/rig/hazmat/equipped,
@@ -7681,7 +7681,7 @@
 	pixel_x = 20
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "COS"
+	department = "Head of Security"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
@@ -9801,7 +9801,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	id_tag = "cosdoor";
-	name = "Chief of Security";
+	name = "Head of Security";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -9873,9 +9873,9 @@
 "qu" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Medical Officer's Desk";
+	department = "Head of Medical's Desk";
 	departmentType = 5;
-	name = "Chief Medical Officer RC";
+	name = "Head of Medical RC";
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -14047,7 +14047,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "cmodoor";
-	name = "CMO's Office Door Control";
+	name = "HoM's Office Door Control";
 	pixel_x = -5;
 	pixel_y = -35;
 	req_access = list("ACCESS_CHIEF_MEDICAL_OFFICER")
@@ -14675,9 +14675,9 @@
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Engineer's Desk";
+	department = "Head of Engineering's Desk";
 	departmentType = 6;
-	name = "Chief Engineer RC";
+	name = "Head of Engineering RC";
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -16241,7 +16241,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "csodoor";
-	name = "CSO's Office Door Control";
+	name = "HoR's Office Door Control";
 	pixel_x = 28;
 	pixel_y = 28;
 	req_access = list("ACCESS_RESEARCH_DIRECTOR")
@@ -16534,7 +16534,7 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Chief Medical Officer's Office - Torch"
+	department = "Head of Medical"
 	},
 /obj/item/weapon/stamp/cmo,
 /obj/item/device/radio{
@@ -16808,9 +16808,9 @@
 /obj/effect/floor_decal/corner/red/mono,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief of Security's Desk";
+	department = "Head of Security's Desk";
 	departmentType = 5;
-	name = "Chief of Security RC";
+	name = "Head of Security RC";
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -18617,9 +18617,9 @@
 /obj/item/weapon/folder/white,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Science Officer's Desk";
+	department = "Head of Research's Desk";
 	departmentType = 5;
-	name = "Chief Science Officer RC";
+	name = "Head of Research RC";
 	pixel_x = 0;
 	pixel_y = 30
 	},
@@ -18825,7 +18825,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Chief Science Officer's Office - Torch"
+	department = "Head of Research - Dagon"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -19017,7 +19017,7 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
 	id_tag = "cmodoor";
-	name = "Chief Medical Officer";
+	name = "Head of Medical";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -19438,7 +19438,7 @@
 	},
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/machinery/photocopier/faxmachine{
-	department = "CE"
+	department = "Head of Engineering"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)

@@ -14,14 +14,14 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	name = "chief medical officer's labcoat"
+	name = "head of medical's labcoat"
 	desc = "Bluer than the standard model."
 	icon_state = "labcoat_cmo_open"
 	icon_open = "labcoat_cmo_open"
 	icon_closed = "labcoat_cmo"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmoalt
-	name = "chief medical officer labcoat"
+	name = "head of medical's labcoat"
 	desc = "A labcoat with command blue highlights."
 	icon_state = "labcoat_cmoalt_open"
 	icon_open = "labcoat_cmoalt_open"
@@ -74,7 +74,7 @@
 	icon_open = "labcoat_xy_open"
 	icon_closed = "labcoat_xy"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR, 
+		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_MINOR
 		)
 	species_restricted = list(SPECIES_IPC)
@@ -170,7 +170,7 @@
 	icon_closed = "labcoat_rd_zeng"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
-	name = "chief science officer's labcoat"
+	name = "head of research's labcoat"
 	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders denoting it as an Expeditionary Corps labcoat, and purple trim to indicate a Chief Science Officer."
 	icon_state = "labcoat_cso_open"
 	icon_open = "labcoat_cso_open"

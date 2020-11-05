@@ -23,6 +23,7 @@
 	)
 
 /datum/job/rd
+	title = "Head of Research"
 	allowed_branches = list(
 		/datum/mil_branch/fleet
 	)
@@ -32,6 +33,7 @@
 	)
 
 /datum/job/cmo
+	title = "Head of Medical"
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/cmo/marine
@@ -44,6 +46,7 @@
 	)
 
 /datum/job/chief_engineer
+	title = "Head of Engineering"
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/marine
@@ -56,6 +59,7 @@
 	)
 
 /datum/job/hos
+	title = "Head of Security"
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/cos/marine

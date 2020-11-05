@@ -26,7 +26,7 @@
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/CMO_torch
-	name = "chief medical officer's locker"
+	name = "head of medical's locker"
 	req_access = list(access_cmo)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/cmo
 

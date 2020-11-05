@@ -209,26 +209,26 @@
 	ks1type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/ce
-	name = "chief engineer's headset"
+	name = "head of engineering's headset"
 	desc = "The headset of the guy who is in charge of morons."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/ce
 
 /obj/item/device/radio/headset/heads/ce/alt
-	name = "chief engineer's bowman headset"
+	name = "head of engineering's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/heads/cmo
-	name = "chief medical officer's headset"
+	name = "head of medical's headset"
 	desc = "The headset of the highly trained medical chief."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/cmo
 
 /obj/item/device/radio/headset/heads/cmo/alt
-	name = "chief medical officer's bowman headset"
+	name = "head of medical's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 

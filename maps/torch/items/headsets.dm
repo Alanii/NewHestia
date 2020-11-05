@@ -42,7 +42,7 @@
 	item_state = "nt_headset_alt"
 
 /obj/item/device/radio/headset/heads/torchntdirector
-	name = "chief science officer headset"
+	name = "head of research's headset"
 	desc = "Headset of the masters of the universe."
 	icon_state = "sci_headset"
 	item_state = "headset"
@@ -54,14 +54,14 @@
 	item_state = "nt_headset_alt"
 
 /obj/item/device/radio/headset/heads/cos
-	name = "chief of security's headset"
+	name = "head of security's headset"
 	desc = "The headset of the man who protects your worthless lives."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/cos/alt
-	name = "chief of security's bowman headset"
+	name = "head of security's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 

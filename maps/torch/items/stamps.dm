@@ -15,7 +15,7 @@
 	icon_state = "stamp-xo"
 
 /obj/item/weapon/stamp/cos
-	name = "chief of security's rubber stamp"
+	name = "head of security's rubber stamp"
 	icon_state = "stamp-cos"
 
 /obj/item/weapon/stamp/brig

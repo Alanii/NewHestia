@@ -14346,13 +14346,13 @@
 "Gc" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Chief Science Officer's Office"
+	department = "Head of Research - Polyp"
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Science Officer's Desk";
+	department = "Head of Research's Desk";
 	departmentType = 5;
-	name = "Chief Science Officer RC";
+	name = "Head of Research RC";
 	pixel_x = -30
 	},
 /turf/simulated/floor/lino,
@@ -17997,7 +17997,7 @@
 "UM" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	name = "Chief Science Officer";
+	name = "Head of Research";
 	secured_wires = 1
 	},
 /obj/structure/cable/cyan{

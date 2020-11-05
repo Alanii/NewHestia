@@ -449,7 +449,7 @@
 
 /area/shuttle/petrov/rd
 	icon_state = "heads_rd"
-	name = "\improper NTRL Polyp - CSO's Office"
+	name = "\improper NTRL Polyp - HoR's Office"
 	icon_state = "head_quarters"
 	req_access = list(access_petrov_rd)
 
@@ -535,10 +535,10 @@
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
-/area/turbolift/robotics_lift	
-	name = "\improper Robotics Lift"	
-	icon_state = "shuttle3"	
-	base_turf = /turf/simulated/open	
+/area/turbolift/robotics_lift
+	name = "\improper Robotics Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/open
 
 //Merchant
 
@@ -650,22 +650,22 @@
 
 /area/crew_quarters/heads/office/rd
 	icon_state = "heads_rd"
-	name = "\improper Command - CSO's Office"
+	name = "\improper Command - HoR's Office"
 	req_access = list(access_rd)
 
 /area/crew_quarters/heads/office/cmo
 	icon_state = "heads_cmo"
-	name = "\improper Command - CMO's Office"
+	name = "\improper Command - HoM's Office"
 	req_access = list(access_cmo)
 
 /area/crew_quarters/heads/office/ce
 	icon_state = "heads_ce"
-	name = "\improper Engineering - CE's Office"
+	name = "\improper Engineering - HoE's Office"
 	req_access = list(access_ce)
 
 /area/crew_quarters/heads/office/cos
 	icon_state = "heads_hos"
-	name = "\improper Command - CoS' Office"
+	name = "\improper Command - HoS' Office"
 	req_access = list(access_hos)
 
 /area/crew_quarters/heads/office/cl
@@ -1494,7 +1494,7 @@
 	name = "\improper Robotics Lab"
 	icon_state = "robotics"
 
-/area/assembly/robotics/lower	
+/area/assembly/robotics/lower
 	name = "\improper Lower Robotics Lab"
 
 /area/assembly/robotics/surgery

@@ -16,15 +16,15 @@
 	icon_state = "stamp-cap"
 
 /obj/item/weapon/stamp/ce
-	name = "chief engineer's rubber stamp"
+	name = "head of engineering's rubber stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/weapon/stamp/rd
-	name = "chief science officer's rubber stamp"
+	name = "head of research's rubber stamp"
 	icon_state = "stamp-rd"
 
 /obj/item/weapon/stamp/cmo
-	name = "chief medical officer's rubber stamp"
+	name = "head of medical's rubber stamp"
 	icon_state = "stamp-cmo"
 
 /obj/item/weapon/stamp/denied
