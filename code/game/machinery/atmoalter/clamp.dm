@@ -51,7 +51,7 @@
 
 /obj/machinery/clamp/Destroy()
 	if(!open)
-		spawn(-1) open()
+		open()
 	if (target && target.clamp == src)
 		target.clamp = null
 	. = ..()
