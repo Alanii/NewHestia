@@ -32,6 +32,13 @@
 	if (amount >= 1)
 		src.amount = amount
 	..()
+	if(isturf(loc))
+		spawn(0)
+			for(var/obj/item/stack/S in loc)
+				if(S == src)
+					continue
+				if(S.stacktype == stacktype)
+					transfer_to(S)
 
 /obj/item/stack/Initialize()
 	. = ..()
@@ -306,6 +313,12 @@
 	. = ..()
 	if (amount < max_amount)
 		. = ceil(. * amount / max_amount)
+
+/obj/item/stack/Crossed(obj/o)
+	if(istype(o, /obj/item/stack) && !o.throwing)
+		var/obj/item/stack/S = o
+		transfer_to(S)
+	. = ..()
 
 /obj/item/stack/attack_hand(mob/user as mob)
 	if (user.get_inactive_hand() == src)
