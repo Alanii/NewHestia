@@ -369,11 +369,13 @@
 	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
 	
 /decl/hierarchy/outfit/job/skrellscoutship/exchange
+	name = "Xilvuxix Exchange"
 	uniform = /obj/item/clothing/under/skrelljumpsuit/exchange
 	backpack_contents = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX = 1, /obj/item/weapon/implanter = 1) 
 	r_pocket = /obj/item/weapon/implant/translator/skrellian
 
 /decl/hierarchy/outfit/job/skrellscoutship/leader
+	name = "Xilvuxix Vuxix"
 	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QVX
 
 /obj/item/weapon/stock_parts/circuitboard/telecomms/allinone/skrellscoutship
