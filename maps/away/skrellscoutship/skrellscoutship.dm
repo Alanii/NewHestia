@@ -44,6 +44,10 @@
 	name = "Mekerr-Ketish"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/exchange
+	name = "Exchange Qrii-Zuumqix"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
 	name = "Qrri-Vuxix"
 
@@ -54,7 +58,8 @@
 	descriptor = "Skrellian Scout Ship"
 	map = "Xilvuxix"
 	crew_jobs = list(
-		/datum/job/submap/skrellscoutship_crew,
+		/datum/job/submap/skrellscoutship_crew/exchange,
+		/datum/job/submap/skrellscoutship_crew/engineer,
 		/datum/job/submap/skrellscoutship_crew/medical,
 		/datum/job/submap/skrellscoutship_crew/infantry,
 		/datum/job/submap/skrellscoutship_crew/leader
@@ -75,7 +80,64 @@
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
 
+//Template job used for the other ones.
 /datum/job/submap/skrellscoutship_crew
+	title = "Qrii-Zuumqix"
+	supervisors = "your Qrri-Vuxix"
+	total_positions = 2
+	selection_color = "#5b4d20"
+	whitelisted_species = list("Skrell")
+	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
+	branch = /datum/mil_branch/skrell_fleet
+	rank = /datum/mil_rank/skrell_fleet
+	allowed_branches = list(/datum/mil_branch/skrell_fleet)
+	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
+	skill_points = 30
+	is_semi_antagonist = TRUE
+	min_skill = list(SKILL_EVA = SKILL_ADEPT,
+					SKILL_HAULING = SKILL_ADEPT,
+					SKILL_COMBAT = SKILL_ADEPT,
+					SKILL_WEAPONS = SKILL_ADEPT,
+					SKILL_MEDICAL = SKILL_BASIC)
+
+/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+	return "You are an engineer and/or a demolitions specialist for your crew. You are responsible for repairing damage to your SSV aswell as providing engineering support in the field. You answer directly to your Qrii'Vuxix"
+//Real jobs start here
+
+/datum/job/submap/skrellscoutship_crew/exchange
+	title = "Exchange Qrii-Zuumqix"
+	supervisors = "your Qrri-Vuxix"
+	total_positions = 1
+	selection_color = "#656565"
+	whitelisted_species = list(SPECIES_HUMAN, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
+	blacklisted_species = list(SPECIES_SKRELL)
+	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/exchange
+	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies. Your STDF has given you a implant that allows you to understand and speak skrellian."
+	branch = /datum/mil_branch/skrell_fleet
+	rank = /datum/mil_rank/skrell_fleet
+	allowed_branches = list(/datum/mil_branch/skrell_fleet)
+	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
+	skill_points = 30
+	is_semi_antagonist = TRUE
+	min_skill = list(SKILL_EVA 			= SKILL_ADEPT,
+					SKILL_HAULING 		= SKILL_ADEPT,
+					SKILL_COMBAT 		= SKILL_BASIC,
+					SKILL_WEAPONS 		= SKILL_BASIC,
+					SKILL_MEDICAL 		= SKILL_BASIC)
+	max_skill = list(SKILL_CONSTRUCTION = SKILL_EXPERT,
+					SKILL_ELECTRICAL   = SKILL_EXPERT,
+					SKILL_ATMOS        = SKILL_EXPERT,
+					SKILL_ENGINES      = SKILL_EXPERT,
+					SKILL_EVA          = SKILL_EXPERT,
+					SKILL_HAULING      = SKILL_EXPERT,
+					SKILL_WEAPONS	   = SKILL_EXPERT,
+					SKILL_COMBAT	   = SKILL_EXPERT
+					)
+/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You answer to the Qrii'Vuxix."
+
+/datum/job/submap/skrellscoutship_crew/engineer
 	title = "Xiqarr-Ketish"
 	supervisors = "your Qrri-Vuxix"
 	total_positions = 2
@@ -142,7 +204,7 @@
 /datum/job/submap/skrellscoutship_crew/infantry
 	title = "Mekerr-Ketish"
 	supervisors = "your Qrri-Vuxix"
-	total_positions = 4
+	total_positions = 2
 	selection_color = "#601c1c"
 	alt_titles = list(
 		"Qixoal-Ketish",
@@ -170,7 +232,7 @@
 	total_positions = 1
 	selection_color = "#2f2f7f"
 	alt_titles = list()
-	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
+	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/leader
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/vuxix)
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
@@ -219,6 +281,63 @@
 		if(istype(C))
 			C.assignment = skrellsubcaste
 
+//This is a temporary fix until we are able to properly allow offship alt-titles to be updated.
+
+/datum/job/submap/skrellscoutship_crew/engineer/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
+	. = ..(H, alt_title, branch, grade)	//passing through arguments
+	//Limited to subcastes that make sense on the vessel. No need for ground-forces or R&D on such a ship.
+	var/skrellscoutcastes = list(
+		"Kanin-Katish" = list(
+			"Xi'qarr-Ketish",
+			"Goxo'i-Ketish"
+		),
+	)
+
+	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
+	if(skrellcaste)
+		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
+		var/obj/item/weapon/card/id/C = H.wear_id
+		if(istype(C))
+			C.assignment = skrellsubcaste
+
+
+/datum/job/submap/skrellscoutship_crew/medical/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
+	. = ..(H, alt_title, branch, grade)	//passing through arguments
+	//Limited to subcastes that make sense on the vessel. No need for ground-forces or R&D on such a ship.
+	var/skrellscoutcastes = list(
+		"Malish-Katish" = list(
+			"Mero'ta-Ketish",
+		),
+		"Kanin-Katish" = list(
+			"Mero'tol-Ketish",
+		),
+	)
+
+	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
+	if(skrellcaste)
+		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
+		var/obj/item/weapon/card/id/C = H.wear_id
+		if(istype(C))
+			C.assignment = skrellsubcaste
+
+/datum/job/submap/skrellscoutship_crew/infantry/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
+	. = ..(H, alt_title, branch, grade)	//passing through arguments
+	//Limited to subcastes that make sense on the vessel. No need for ground-forces or R&D on such a ship.
+	var/skrellscoutcastes = list(
+		"Raskinta-Katish" = list(
+			"Me'kerr-Ketish",
+			"Qi'kerr-Ketish",
+			"Me'xoal-Ketish"
+		)
+	)
+
+	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
+	if(skrellcaste)
+		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
+		var/obj/item/weapon/card/id/C = H.wear_id
+		if(istype(C))
+			C.assignment = skrellsubcaste
+
 /obj/item/clothing/gloves/thick/swat/skrell
 	name = "black gloves"
 	desc = "A pair of black, reinforced gloves. The tag on the inner stitching appears to be written in some form of Skrellian."
@@ -226,6 +345,13 @@
 /obj/item/clothing/under/skrelljumpsuit
 	name = "black bodysuit"
 	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
+	icon_state = "skrell_suit"
+	item_state = "skrell_suit"
+	worn_state = "skrell_suit"
+
+/obj/item/clothing/under/skrelljumpsuit/exchange
+	name = "adapted black bodysuit"
+	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian. This one seems to be especifically tailored for Humans."
 	icon_state = "skrell_suit"
 	item_state = "skrell_suit"
 	worn_state = "skrell_suit"
@@ -240,6 +366,15 @@
 	l_ear = /obj/item/device/radio/headset/skrellian
 	id_type = /obj/item/weapon/card/id/skrellscoutship
 	l_pocket = /obj/item/clothing/accessory/badge/tags/skrell
+	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
+	
+/decl/hierarchy/outfit/job/skrellscoutship/exchange
+	uniform = /obj/item/clothing/under/skrelljumpsuit/exchange
+	backpack_contents = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX = 1, /obj/item/weapon/implanter = 1) 
+	r_pocket = /obj/item/weapon/implant/translator/skrellian
+
+/decl/hierarchy/outfit/job/skrellscoutship/leader
+	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QVX
 
 /obj/item/weapon/stock_parts/circuitboard/telecomms/allinone/skrellscoutship
 	build_path = /obj/machinery/telecomms/allinone/skrellscoutship

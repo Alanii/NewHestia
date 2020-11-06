@@ -110,7 +110,7 @@ SUBSYSTEM_DEF(jobs)
 			for(var/alt_title in job.alt_titles)
 				titles_to_datums[alt_title] = job
 			// This would, supposedely, allow off-ship roles to properly update their IDs to the alt titles (If they have any.)
-			// It is, however, horribly broken and I have absolutely no clue on how to make it work. Make sure to uncomment var/datum/job/subjob if you plan on trying to make this work. May god be with you.
+			// This is not working, though, and I am not going to bother with it for now since we plan to rebase anyway.
 			//for(var/alt_title in subjob.alt_titles)
 			//	if(istype(job, /datum/job/submap))
 			//		titles_to_datums[alt_title] = subjob
