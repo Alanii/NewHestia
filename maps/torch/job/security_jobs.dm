@@ -176,7 +176,7 @@
 
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
-	minimal_player_age = 12
+	minimal_player_age = 5
 	economic_power = 7
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
