@@ -200,11 +200,14 @@ var/datum/robolimb/basic_robolimb
 	can_eat = 1
 	skintone = 1
 	unavailable_at_fab = 1
+	allowed_bodytypes = list(SPECIES_HUMAN, SPECIES_SHELL)
+	species_cannot_use = list(SPECIES_IPC)
 
 /datum/robolimb/shellguard
 	company = "Shellguard"
 	desc = "This limb has a sturdy and heavy build to it."
 	icon = 'icons/mob/human_races/cyberlimbs/shellguard/shellguard_main.dmi'
+
 
 /datum/robolimb/shellguard/alt
 	company = "Shellguard Alt."
