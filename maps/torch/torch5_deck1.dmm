@@ -10474,27 +10474,6 @@
 /obj/machinery/door/airlock/glass/security,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
-"asd" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/camera/network/security{
-	c_tag = "Security Hallway - Execution Room";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "ase" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
@@ -10505,24 +10484,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
-"asf" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/obj/machinery/light,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "asg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -10965,34 +10926,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
-"atf" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/obj/machinery/alarm{
-	dir = 1;
-	pixel_y = -22
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "atg" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -17510,6 +17446,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod7/station)
+"bQk" = (
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "bRb" = (
 /obj/item/device/radio/intercom{
 	dir = 8;
@@ -19359,6 +19302,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"eAU" = (
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "eBz" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
@@ -20727,6 +20677,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
+"gDh" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "gDm" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
@@ -31954,6 +31908,13 @@
 /obj/item/modular_computer/laptop/preset/records,
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
+"vZP" = (
+/obj/machinery/camera/network/security{
+	c_tag = "Security Hallway - Execution Room";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "wcQ" = (
 /obj/machinery/recharger/wallcharger{
 	dir = 4;
@@ -32068,6 +32029,9 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics)
+"wuz" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/maintenance/firstdeck/foreport)
 "wvZ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/armoury)
@@ -32303,6 +32267,9 @@
 	},
 /turf/simulated/open,
 /area/assembly/robotics)
+"xgz" = (
+/turf/simulated/wall/r_wall/hull,
+/area/space)
 "xhX" = (
 /obj/structure/table/steel,
 /obj/random/clipboard,
@@ -43644,7 +43611,7 @@ arI
 avI
 tkr
 tAS
-aaa
+xgz
 aaa
 aaa
 aaa
@@ -43845,8 +43812,8 @@ alU
 asr
 asa
 aoi
-tAS
-aaa
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -44046,9 +44013,9 @@ arB
 aqX
 asr
 aot
-aoi
-tAS
-aaa
+ahf
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -44248,9 +44215,9 @@ aqO
 aqY
 arN
 jiJ
-aoi
-tAS
-aaa
+ahf
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -44449,10 +44416,10 @@ aoe
 aqR
 aqZ
 asp
-asf
-aoi
-tAS
-aaa
+atg
+gDh
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -44651,10 +44618,10 @@ lwP
 mIc
 kTp
 asr
-asd
-aoi
-tAS
-aaa
+atg
+vZP
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -44853,11 +44820,11 @@ aqT
 aqT
 aqT
 asp
-atf
-aoi
-tAS
+atg
+bQk
+wuz
+xgz
 afB
-aaa
 aaa
 aaa
 aaa
@@ -45055,10 +45022,10 @@ ara
 ara
 ara
 asp
-asf
-aoi
-tAS
-aaa
+atg
+gDh
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -45258,9 +45225,9 @@ arD
 ahf
 asp
 atg
-aoi
-tAS
-aaa
+eAU
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -45461,8 +45428,8 @@ aoi
 asr
 hKu
 aoi
-tAS
-aaa
+wuz
+xgz
 aaa
 aaa
 aaa
@@ -45664,7 +45631,7 @@ atc
 mLO
 aoi
 tAS
-aaa
+xgz
 aaa
 aaa
 aaa
@@ -45866,7 +45833,7 @@ asu
 asg
 aoi
 tAS
-aaa
+xgz
 aaa
 aaa
 aaa
