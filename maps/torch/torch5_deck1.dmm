@@ -17733,7 +17733,9 @@
 /obj/effect/landmark{
 	name = "lightsout"
 	},
-/turf/simulated/floor/tiled,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "chb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -31349,6 +31351,25 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
+"uCI" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/firstdeck/aft)
 "uDu" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "interviewwindow"
@@ -31364,7 +31385,9 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "uGu" = (
 /obj/machinery/door/firedoor,
@@ -57332,7 +57355,7 @@ mlb
 avu
 scr
 uFk
-hnN
+uCI
 cgu
 ahZ
 ahZ
