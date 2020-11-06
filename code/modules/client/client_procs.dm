@@ -467,12 +467,8 @@ client/verb/character_setup()
 	//Say, OOC, me Buttons etc.
 	winset(src, "saybutton", "background-color = [COLOR_DARKMODE_BACKGROUND];background-color = none")
 	winset(src, "saybutton", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
-	winset(src, "hotkey_toggle", "background-color = [COLOR_DARKMODE_BACKGROUND];background-color = none")
-	winset(src, "hotkey_toggle", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
 	winset(src, "asset_cache_browser", "background-color = [COLOR_DARKMODE_BACKGROUND];background-color = none")
-	winset(src, "asset_cache_browser", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
-	winset(src, "tooltip", "background-color = [COLOR_DARKMODE_BACKGROUND];background-color = none")
-	winset(src, "tooltip", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
+	winset(src, "asset_cache_browser", "background-color = [COLOR_DARKMODE_BACKGROUND];background-color = none")
 
 /client/proc/activate_darkmode()
 	//Main windows
@@ -526,14 +522,10 @@ client/verb/character_setup()
 	winset(src, "info", "prefix-color = #000000;prefix-color = [COLOR_DARKMODE_TEXT]")
 	winset(src, "info", "suffix-color = #000000;suffix-color = [COLOR_DARKMODE_TEXT]")
 	//Say, OOC, me Buttons etc.
-	winset(src, "saybutton", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
+	winset(src, "saybutton", "background-color = none;background-color = #494949")
 	winset(src, "saybutton", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
-	winset(src, "hotkey_toggle", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
-	winset(src, "hotkey_toggle", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
 	winset(src, "asset_cache_browser", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
 	winset(src, "asset_cache_browser", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
-	winset(src, "tooltip", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
-	winset(src, "tooltip", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
 	
 client/verb/darkmodeon()
 	set name = "Darkmode On"
