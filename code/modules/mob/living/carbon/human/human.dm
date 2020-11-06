@@ -315,11 +315,14 @@
 
 	if(status_flags & GODMODE)	return 0	//godmode
 
+	var/mob/living/carbon/human/H = src
 	if(species.siemens_coefficient == -1)
 		if(stored_shock_by_ref["\ref[src]"])
 			stored_shock_by_ref["\ref[src]"] += shock_damage
 		else
 			stored_shock_by_ref["\ref[src]"] = shock_damage
+		if(stored_shock_by_ref["\ref[src]"] > 150)
+			H.gib()
 		return
 
 	if (!def_zone)
