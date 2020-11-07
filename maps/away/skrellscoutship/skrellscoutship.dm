@@ -134,8 +134,8 @@
 					SKILL_WEAPONS	   = SKILL_EXPERT,
 					SKILL_COMBAT	   = SKILL_EXPERT
 					)
-/datum/job/submap/skrellscoutship_crew/get_description_blurb()
-	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You answer to the Qrii'Vuxix."
+/datum/job/submap/skrellscoutship_crew/exchange/get_description_blurb()
+	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You likely specialize in one area, and you must be previously either in the SMC or in NTEF. You answer to the Qrii'Vuxix."
 
 /datum/job/submap/skrellscoutship_crew/engineer
 	title = "Xiqarr-Ketish"
