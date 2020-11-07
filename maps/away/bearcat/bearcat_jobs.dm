@@ -11,7 +11,7 @@
 /datum/job/submap/bearcat_crewman
 	title = "Independant Crewman"
 	supervisors = "the Captain"
-	total_positions = 6
+	total_positions = 5
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/crew
 	is_semi_antagonist = TRUE
 	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
