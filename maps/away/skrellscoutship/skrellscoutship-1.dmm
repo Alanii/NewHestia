@@ -1611,11 +1611,21 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/toilets)
 "eg" = (
-/obj/machinery/alarm/skrell{
+/obj/structure/table/rack,
+/obj/item/weapon/tank/skrell,
+/obj/machinery/door/window/brigdoor/northleft{
 	dir = 8;
-	pixel_x = 24
+	name = "Command RIG";
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/item/weapon/rig/skrell/exchange,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "en" = (
@@ -2915,7 +2925,7 @@
 "BW" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed/padded,
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/medical,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/quarters)
 "CX" = (
@@ -2925,6 +2935,12 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d2)
+"CZ" = (
+/obj/structure/curtain/open/bed,
+/obj/structure/bed/padded,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/exchange,
+/turf/simulated/floor/tiled/skrell/orange,
+/area/ship/skrellscoutship/crew/quarters)
 "Dj" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall,
@@ -2974,6 +2990,13 @@
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/crew/rec)
+"FA" = (
+/obj/structure/curtain/open/bed,
+/obj/structure/bed/padded,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
+/turf/simulated/floor/tiled/skrell/orange,
+/area/ship/skrellscoutship/crew/quarters)
 "FK" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light,
@@ -3257,6 +3280,13 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/atmos)
+"NN" = (
+/obj/structure/curtain/open/bed,
+/obj/structure/bed/padded,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
+/turf/simulated/floor/tiled/skrell/orange,
+/area/ship/skrellscoutship/crew/quarters)
 "Oz" = (
 /mob/living/bot/farmbot{
 	locked = 0
@@ -3622,6 +3652,8 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/robotics)
 "XI" = (
@@ -10751,9 +10783,9 @@ aa
 vZ
 BW
 gX
-BW
-BW
-BW
+FA
+CZ
+NN
 vZ
 en
 Zp

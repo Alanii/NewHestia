@@ -9,6 +9,17 @@
 	var/learning_threshold = 20 //need to hear language spoken this many times to learn it
 	var/max_languages = 5
 
+/obj/item/weapon/implant/translator/skrellian
+	name = "skrellian translator implant"
+	desc = "A small implant with a microphone on it. This one appears to be of skrellian design and is handed to exchange personnel."
+	icon_state = "implant_evil"
+	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 2, TECH_ESOTERIC = 3)
+	hidden = 0
+	known  = 1
+	list/languages = list(LANGUAGE_SKRELLIAN)
+	learning_threshold = 1 //need to hear language spoken this many times to learn it
+	max_languages = 1
+
 /obj/item/weapon/implant/translator/get_data()
 	return "WARNING: No match found in the database."
 
