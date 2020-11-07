@@ -1036,13 +1036,6 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 
-/area/security/brig/psionic
-	name = "\improper Psionic Holding"
-	icon_state = "misclab"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-	req_access = list(access_brig)
-	ambience = list('sound/ambience/spookyspace1.ogg')
-
 // AI
 /area/turret_protected/ai_foyer
 	name = "\improper AI Chamber Foyer"
