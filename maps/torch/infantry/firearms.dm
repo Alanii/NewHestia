@@ -57,7 +57,7 @@
 			if(istype(AM, /obj/item/weapon/gun/))
 				to_chat(user, "You have chosen \the [AM].")
 		qdel(src)
-		
+
 /obj/item/gunbox/infcom/secondary
 	name = "Squad Leader Squad Kit"
 	desc = "A secure box containing a secondary set of equipment for the entire squad's benefit."
@@ -167,7 +167,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
-	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
+	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large)
 	auto_eject = 0
 	starts_loaded = 1
 	one_hand_penalty = 6 //lower power rounds
@@ -206,14 +206,14 @@
 		list(mode_name="burst fire",  burst=5, fire_delay=null, move_delay=2, one_hand_penalty=10, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.3, 0.5, 0.7, 1.0)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
-		
+
 //combat shotgun
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/infantry
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
 	It appears to have a firing restrictor installed, to prevent firing without authorization aboard the Dagon."
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
-	
+
 /////////
 // Laser Carbine
 /////////

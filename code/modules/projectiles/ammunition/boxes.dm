@@ -118,7 +118,7 @@
 	name = "rubbershot shell holder"
 	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
 	matter = list(MATERIAL_STEEL = 620)
-	marking_color = COLOR_PALE_YELLOW	
+	marking_color = COLOR_PALE_YELLOW
 
 /obj/item/ammo_magazine/machine_pistol
 	name = "stick magazine"
@@ -331,6 +331,7 @@
 /obj/item/ammo_magazine/mil_rifle/sec
 	name = "frangible munitions rifle magazine"
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	allowed_round = list(/obj/item/ammo_casing/rifle/military/low)
 
 //bigger mag
 /obj/item/ammo_magazine/mil_rifle/sec/large
