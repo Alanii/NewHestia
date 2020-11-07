@@ -10,6 +10,7 @@
 	species_to_job_blacklist = list(
 		/datum/species/adherent = list(/datum/job/psiadvisor, /datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/detective),
 		/datum/species/machine = list(/datum/job/psiadvisor),
+		/datum/species/shell = list(/datum/job/psiadvisor),
 		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/seccadet, /datum/job/sea, /datum/job/bodyguard, /datum/job/representative, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
 	)
 

@@ -2131,6 +2131,8 @@
 /obj/item/weapon/towel/random,
 /obj/item/weapon/towel/random,
 /obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
 "eC" = (
@@ -2971,12 +2973,16 @@
 /turf/simulated/floor/plating,
 /area/thruster/d3starboard)
 "fZ" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/structure/window/reinforced/polarized/full,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id_tag = "saunashutters";
+	name = "privacy shutters";
+	opacity = 0
 	},
-/obj/item/weapon/towel/random,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/head/sauna)
 "ga" = (
 /obj/machinery/telecomms/hub/preset,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -3568,13 +3574,22 @@
 "hj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/window/northleft,
+/obj/machinery/door/window,
+/obj/structure/curtain/open/shower,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id_tag = "saunashutters";
+	name = "privacy shutters"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/head/sauna)
 "hk" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -3622,17 +3637,8 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cryolocker)
 "hp" = (
-/obj/structure/hygiene/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/obj/item/weapon/storage/mirror{
-	pixel_x = 28
-	},
-/obj/item/weapon/lipstick/random,
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/head/sauna)
 "hq" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -3869,14 +3875,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
 "hP" = (
-/obj/structure/window/reinforced/polarized/full,
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id_tag = "saunashutters";
-	name = "privacy shutters"
-	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "hQ" = (
 /obj/machinery/telecomms/receiver/preset_right,
@@ -4260,19 +4259,10 @@
 "iy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/window/northleft,
-/obj/machinery/door/window,
-/obj/structure/curtain/open/shower,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id_tag = "saunashutters";
-	name = "privacy shutters"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -4335,20 +4325,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "iF" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
-/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
-/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
-/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
-/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
-/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
-/obj/item/weapon/reagent_containers/food/drinks/cans/artbru,
-/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
-/obj/machinery/firealarm{
-	pixel_y = 21
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	external_pressure_bound = 202;
+	external_pressure_bound_default = 202
+	},
+/obj/machinery/space_heater{
+	set_temperature = 348.15
+	},
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -4514,7 +4499,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "iW" = (
@@ -4680,16 +4664,15 @@
 /obj/machinery/button/windowtint{
 	pixel_x = 28
 	},
-/obj/machinery/alarm/warm{
-	alarm_frequency = 1438;
-	pixel_y = 24
-	},
 /obj/item/weapon/stool/wood,
 /obj/item/weapon/bikehorn/rubberducky,
 /obj/machinery/button/blast_door{
 	id_tag = "saunashutters";
 	name = "privacy button";
 	pixel_x = 34
+	},
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -4948,10 +4931,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/thirddeck)
 "jO" = (
-/obj/machinery/light/small{
-	dir = 8
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
 	},
-/obj/item/weapon/stool/wood,
+/obj/structure/closet/athletic_mixed,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "jP" = (
@@ -5132,14 +5115,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
-"kh" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/obj/item/weapon/stool/wood,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/head/sauna)
 "kj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5167,7 +5142,13 @@
 /turf/simulated/floor/reinforced,
 /area/thruster/d3starboard)
 "km" = (
-/obj/item/weapon/stool/wood,
+/obj/machinery/portable_atmospherics/reagent_sublimator/sauna{
+	anchored = 1
+	},
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/item/weapon/reagent_containers/glass/bucket/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "kn" = (
@@ -5208,13 +5189,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/thirddeck)
 "kt" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	external_pressure_bound = 202;
-	external_pressure_bound_default = 202
-	},
-/obj/machinery/space_heater{
-	set_temperature = 348.15
+/obj/structure/hygiene/sink{
+	pixel_y = -13
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -5371,13 +5347,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green,
-/obj/machinery/atmospherics/binary/pump{
-	dir = 8
-	},
-/obj/item/weapon/reagent_containers/glass/bucket/wood,
-/obj/structure/hygiene/sink{
-	pixel_z = -14
-	},
+/obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "kN" = (
@@ -5458,17 +5428,7 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/bar)
-"kU" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/reagent_sublimator/sauna{
-	anchored = 1
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/head/sauna)
 "kV" = (
-/obj/item/clothing/under/swimsuit/red,
 /obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -20155,14 +20115,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/office)
 "TZ" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
+/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
+/obj/item/weapon/reagent_containers/food/drinks/cans/speer,
+/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
+/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
+/obj/item/weapon/reagent_containers/food/drinks/cans/ale,
+/obj/item/weapon/reagent_containers/food/drinks/cans/artbru,
+/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,
+/obj/machinery/firealarm{
+	pixel_y = 21
 	},
-/obj/item/device/flashlight/lamp/lava/red{
-	pixel_z = 14
-	},
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/head/sauna)
 "Ub" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -21726,6 +21695,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
+"Yq" = (
+/obj/machinery/alarm/warm{
+	alarm_frequency = 1438;
+	pixel_y = 24
+	},
+/obj/item/weapon/stool/wood,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/head/sauna)
 "Yr" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -41222,7 +41199,7 @@ uU
 uU
 fo
 gr
-uU
+hp
 hL
 hL
 hL
@@ -41424,8 +41401,8 @@ vY
 eE
 YK
 gK
-TZ
 hL
+TZ
 iF
 jO
 km
@@ -42030,11 +42007,11 @@ eB
 YK
 YK
 Ix
-YK
-hP
+fZ
+kV
 jl
 kg
-kU
+kV
 hL
 Vw
 wf
@@ -42232,10 +42209,10 @@ eD
 YK
 fD
 fD
-hp
 hL
+Yq
 jp
-kh
+kV
 kV
 hL
 CE
@@ -42434,7 +42411,7 @@ uU
 fl
 uU
 uU
-uU
+hp
 hL
 hL
 hL
