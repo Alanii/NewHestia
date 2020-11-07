@@ -3233,11 +3233,6 @@
 /area/medical/sleeper)
 "agc" = (
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
@@ -9851,21 +9846,13 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/detectives_office)
-"arg" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "ari" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	level = 2
 	},
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "arj" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 5
@@ -10296,7 +10283,7 @@
 	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "arR" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/red{
@@ -10453,7 +10440,7 @@
 /obj/structure/closet/l3closet/security,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "asj" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
@@ -10486,7 +10473,7 @@
 	pixel_y = -22
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "asp" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -12777,11 +12764,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -18949,7 +18931,7 @@
 	c_tag = "Security  - Surplus Supplies Room"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "dVw" = (
 /turf/simulated/wall/r_wall/hull,
 /area/command/armoury/tactical)
@@ -19304,7 +19286,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "eGb" = (
 /obj/structure/table/standard,
 /obj/item/stack/material/uranium,
@@ -20278,14 +20260,9 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/glass/security,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/security/storage)
+/area/security/brig/perma)
 "gfb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20325,7 +20302,7 @@
 /obj/structure/closet/l3closet/security,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "gmb" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced,
@@ -20738,7 +20715,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "gIb" = (
 /obj/machinery/light,
 /obj/machinery/power/apc{
@@ -20786,7 +20763,7 @@
 /obj/structure/closet/bombclosetsecurity,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "gNb" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 1
@@ -23625,15 +23602,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/aux)
 "kss" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -25611,15 +25579,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/operations_storage/medical)
-"nbb" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green,
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/plating,
-/area/security/processing)
 "nbl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -25836,13 +25795,8 @@
 /area/security/wing)
 "nli" = (
 /turf/simulated/wall/r_wall/hull,
-/area/security/storage)
+/area/security/armoury)
 "nmb" = (
-/obj/structure/cable/green,
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/security/processing)
@@ -26149,7 +26103,7 @@
 /obj/item/weapon/storage/box/flares,
 /obj/item/weapon/storage/box/greenglowsticks,
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "nOA" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -26833,11 +26787,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/firstdeck)
 "oCr" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
@@ -26845,7 +26794,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "oDb" = (
 /obj/structure/table/glass,
 /obj/item/weapon/pen,
@@ -29562,9 +29511,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
-"sam" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/maintenance/firstdeck/foreport)
 "saS" = (
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
@@ -31249,17 +31195,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "uxw" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
 /turf/simulated/floor/tiled/dark,
-/area/security/storage)
+/area/security/brig/perma)
 "uCe" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8
@@ -32100,11 +32037,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -39960,7 +39892,7 @@ tAS
 tAS
 tAS
 tAS
-tAS
+nli
 aWJ
 kbd
 kbP
@@ -40364,7 +40296,7 @@ vMH
 vMH
 vMH
 vMH
-ioo
+wvZ
 ahc
 arr
 arw
@@ -42175,7 +42107,7 @@ wyb
 aby
 xRh
 xRh
-nbb
+nmb
 nmb
 xRh
 aCy
@@ -43612,7 +43544,7 @@ oby
 arI
 leJ
 tkr
-sam
+tkr
 tAS
 aaa
 aaa
@@ -45632,7 +45564,7 @@ ahf
 atc
 mLO
 aoi
-sam
+aoi
 tAS
 aaa
 aaa
@@ -46030,12 +45962,12 @@ ale
 amF
 alU
 aqS
-ioo
-ioo
+aoi
+aoi
 gdJ
-ioo
-ioo
-ioo
+aoi
+aoi
+aoi
 tAS
 aaa
 aaa
@@ -46232,12 +46164,12 @@ ahz
 amG
 alU
 arv
-ioo
+aoi
 ari
 oCr
 arQ
 gip
-ioo
+aoi
 tAS
 aaa
 aaa
@@ -46434,12 +46366,12 @@ ahz
 ane
 alU
 arp
-ioo
+aoi
 uxw
-arg
+uxw
 gHq
 asi
-ioo
+aoi
 tAS
 aaa
 aaa
@@ -46636,12 +46568,12 @@ aid
 anf
 alU
 arq
-ioo
+aoi
 dVi
-arS
-arS
+uxw
+uxw
 asm
-ioo
+aoi
 tAS
 aaa
 aaa
@@ -46838,12 +46770,12 @@ amV
 amJ
 alU
 arv
-ioo
+aoi
 gMI
 gMI
 eET
 nMN
-ioo
+aoi
 tAS
 aaa
 aaa
@@ -47040,12 +46972,12 @@ aoi
 aoi
 aoi
 aoz
-ioo
-ioo
-ioo
-ioo
-ioo
-ioo
+aoi
+aoi
+aoi
+aoi
+aoi
+aoi
 tAS
 aaa
 aaa
