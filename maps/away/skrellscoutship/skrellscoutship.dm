@@ -58,7 +58,7 @@
 	descriptor = "Skrellian Scout Ship"
 	map = "Xilvuxix"
 	crew_jobs = list(
-		/datum/job/submap/skrellscoutship_crew/exchange,
+		//datum/job/submap/skrellscoutship_crew/exchange,
 		/datum/job/submap/skrellscoutship_crew/engineer,
 		/datum/job/submap/skrellscoutship_crew/medical,
 		/datum/job/submap/skrellscoutship_crew/infantry,
@@ -134,7 +134,7 @@
 					SKILL_WEAPONS	   = SKILL_EXPERT,
 					SKILL_COMBAT	   = SKILL_EXPERT
 					)
-/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+/datum/job/submap/skrellscoutship_crew/exchange/get_description_blurb()
 	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You answer to the Qrii'Vuxix."
 
 /datum/job/submap/skrellscoutship_crew/engineer
