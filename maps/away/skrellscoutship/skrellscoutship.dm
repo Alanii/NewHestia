@@ -58,7 +58,7 @@
 	descriptor = "Skrellian Scout Ship"
 	map = "Xilvuxix"
 	crew_jobs = list(
-		//datum/job/submap/skrellscoutship_crew/exchange,
+		/datum/job/submap/skrellscoutship_crew/exchange,
 		/datum/job/submap/skrellscoutship_crew/engineer,
 		/datum/job/submap/skrellscoutship_crew/medical,
 		/datum/job/submap/skrellscoutship_crew/infantry,
