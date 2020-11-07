@@ -134,7 +134,7 @@
 					SKILL_WEAPONS	   = SKILL_EXPERT,
 					SKILL_COMBAT	   = SKILL_EXPERT
 					)
-/datum/job/submap/skrellscoutship_crew/get_description_blurb()
+/datum/job/submap/skrellscoutship_crew/exchange/get_description_blurb()
 	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You answer to the Qrii'Vuxix."
 
 /datum/job/submap/skrellscoutship_crew/engineer
@@ -152,7 +152,7 @@
 	rank = /datum/mil_rank/skrell_fleet
 	allowed_branches = list(/datum/mil_branch/skrell_fleet)
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
-	skill_points = 30
+	skill_points = 20
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_COMPUTER     = SKILL_BASIC,
 					SKILL_HAULING      = SKILL_ADEPT,
@@ -184,6 +184,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
+	skill_points = 20
 	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC,
 					SKILL_MEDICAL     = SKILL_ADEPT,
 					SKILL_COMBAT	  = SKILL_BASIC,
@@ -213,6 +214,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	is_semi_antagonist = TRUE
+	skill_points = 20
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING  = SKILL_ADEPT,
 					SKILL_COMBAT   = SKILL_ADEPT,
