@@ -97,7 +97,7 @@
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
-		/obj/item/weapon/storage/box/flares,
+		/obj/item/weapon/storage/box/illumnades,
 		/obj/item/gunbox/inftech,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol
 		)
@@ -125,7 +125,6 @@
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
-		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/gunbox/infcom,
