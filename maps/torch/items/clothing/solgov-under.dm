@@ -432,12 +432,18 @@
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
 	starting_accessories = list(/obj/item/clothing/accessory/navy)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
 	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/service/army
 	name = "marine service uniform"

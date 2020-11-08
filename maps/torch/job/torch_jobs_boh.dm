@@ -12,7 +12,7 @@
 
 /datum/job/hop
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/XO/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/XO/marine
 	)
 	allowed_ranks = list(
@@ -33,7 +33,7 @@
 
 /datum/job/cmo
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cmo/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/cmo/marine
 	)
 	allowed_ranks = list(
@@ -45,7 +45,7 @@
 
 /datum/job/chief_engineer
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/marine
 	)
 	allowed_ranks = list(
@@ -57,7 +57,7 @@
 
 /datum/job/hos
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/cos/marine
 	)
 	allowed_ranks = list(
@@ -90,7 +90,7 @@
 		"Sensor Operator"
 	)
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	)
 	allowed_ranks = list(
@@ -166,9 +166,9 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/fleet/w1,
-		/datum/mil_rank/fleet/w2,
-		/datum/mil_rank/fleet/w3
+		/datum/mil_rank/fleet/w1 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
+		/datum/mil_rank/fleet/w2 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
+		/datum/mil_rank/fleet/w3 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
 	)
 
 /datum/job/explorer
@@ -179,9 +179,9 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5
+		/datum/mil_rank/fleet/e3 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
+		/datum/mil_rank/fleet/e4 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
+		/datum/mil_rank/fleet/e5 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
 	)
 	min_skill = list(SKILL_EVA     = SKILL_ADEPT,
 					 SKILL_SCIENCE = SKILL_BASIC,

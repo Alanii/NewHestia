@@ -297,7 +297,7 @@
 	allowed_ranks = list(/datum/mil_rank/sol/gov)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
-	
+
 	max_skill = list(   SKILL_BUREAUCY    = SKILL_SPEC,
 						SKILL_FINANCE     = SKILL_SPEC)
 	skill_points = 20
@@ -324,7 +324,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,

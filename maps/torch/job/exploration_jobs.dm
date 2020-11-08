@@ -53,8 +53,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+		/datum/mil_branch/expeditionary_corps = /obj/item/clothing/under/solgov/utility/fleet/exploration,
+		/datum/mil_branch/fleet = /obj/item/clothing/under/solgov/utility/fleet/exploration
+
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,

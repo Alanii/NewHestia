@@ -26,7 +26,7 @@
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
 	//#include "datums/uniforms_fleet.dm"
-	#include "datums/uniforms_exp_fleet.dm"
+	#include "datums/uniforms_exp_fleet.dm" //carl's forbidden NTEF loadouts. Only left in because removing it breaks all marine outfits too.
 	#include "datums/uniforms_marine-corps.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/corporate.dm"
