@@ -915,8 +915,19 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aby" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/structure/cable/green,
+/obj/machinery/door/airlock/multi_tile/glass/security{
+	dir = 8;
+	name = "Security Lobby"
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "abz" = (
@@ -5991,9 +6002,14 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "akC" = (
-/obj/machinery/light_switch,
-/turf/simulated/wall/prepainted,
-/area/security/brig/perma)
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/machinery/pager/security{
+	pixel_x = -25
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/firstdeck/fore)
 "akD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -6015,8 +6031,20 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "akF" = (
-/obj/machinery/camera/network/security{
-	c_tag = "Security Wing - Processing"
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/structure/bed/chair/padded/red{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -7054,8 +7082,9 @@
 /area/security/brig/perma)
 "amm" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "amn" = (
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -7917,7 +7946,7 @@
 	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "anK" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -8047,15 +8076,15 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anS" = (
-/obj/structure/bed/chair/office/comfy/red,
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "anT" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/blue/mono,
@@ -9782,7 +9811,10 @@
 	},
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe,
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe,
-/obj/machinery/light_switch,
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe,
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe,
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe,
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "aqY" = (
@@ -9818,8 +9850,9 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "arc" = (
 /obj/machinery/camera/network/security{
 	c_tag = "Security Hallway - Back Brig"
@@ -9827,13 +9860,8 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ard" = (
-/obj/machinery/light,
-/obj/machinery/computer/modular/preset/security{
-	dir = 1;
-	icon_state = "console"
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
+/obj/machinery/camera/network/security{
+	c_tag = "Security Wing - Processing"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -10282,13 +10310,10 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "arP" = (
-/obj/structure/table/steel,
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
 	},
-/obj/item/weapon/folder/red,
-/obj/item/weapon/pen,
 /turf/simulated/floor/tiled,
 /area/security/processing)
 "arQ" = (
@@ -10302,7 +10327,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "arR" = (
-/obj/machinery/light,
+/obj/machinery/light_switch{
+	pixel_x = -6;
+	pixel_y = 24
+	},
+/obj/machinery/button/windowtint{
+	id = "processwindow";
+	pixel_x = 6;
+	pixel_y = 24
+	},
 /obj/effect/floor_decal/corner/red{
 	dir = 6;
 	icon_state = "corner_white"
@@ -10321,18 +10354,9 @@
 /turf/simulated/wall/prepainted,
 /area/medical/equipstorage)
 "arU" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id_tag = "Prison Gate";
-	name = "Security Blast Door";
-	opacity = 0
-	},
-/obj/structure/cable/green,
-/turf/simulated/floor/plating,
-/area/security/processing)
+/obj/machinery/light_switch,
+/turf/simulated/wall/prepainted,
+/area/security/brig/perma)
 "arV" = (
 /obj/machinery/button/blast_door{
 	id_tag = "chemcounter";
@@ -11425,7 +11449,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "auy" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -12154,13 +12178,6 @@
 /obj/effect/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
-"axK" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled,
-/area/security/processing)
 "axN" = (
 /obj/machinery/door/airlock/security{
 	id_tag = "secprocessing";
@@ -12634,14 +12651,10 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
 /obj/structure/cable/green{
+	d1 = 1;
 	d2 = 2;
-	icon_state = "0-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -17311,9 +17324,9 @@
 	pixel_x = -23;
 	pixel_y = -3
 	},
-/obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red/mono,
-/obj/item/weapon/storage/box/handcuffs,
+/obj/machinery/photocopier,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "bOb" = (
@@ -17670,7 +17683,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "cjb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17692,9 +17705,9 @@
 	pixel_x = -23;
 	pixel_y = -3
 	},
-/obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red/mono,
-/obj/item/weapon/storage/box/zipties,
+/obj/machinery/papershredder,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "ckb" = (
@@ -18009,7 +18022,7 @@
 	},
 /obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red/mono,
-/obj/item/weapon/storage/box/flares,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "cHj" = (
@@ -18238,6 +18251,14 @@
 	icon_state = "0-2"
 	},
 /obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/security/wing)
 "cYb" = (
@@ -18868,9 +18889,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/comfy/red,
+/obj/structure/table/steel,
+/obj/item/weapon/pen,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "dQb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
@@ -20431,22 +20453,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
-"grI" = (
-/obj/machinery/button/windowtint{
-	id = "processwindow";
-	pixel_x = 6;
-	pixel_y = 24
-	},
-/obj/machinery/light_switch{
-	pixel_x = -6;
-	pixel_y = 24
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 6;
-	icon_state = "corner_white"
-	},
-/turf/simulated/floor/tiled,
-/area/security/processing)
 "gsb" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
@@ -21200,7 +21206,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "hnN" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -25277,13 +25283,9 @@
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "mCk" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/photocopier,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "mCs" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -26922,26 +26924,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
-"oIb" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/turf/simulated/floor/tiled,
-/area/security/wing)
 "oIq" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/emcloset,
@@ -27654,15 +27636,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
-"pIA" = (
-/obj/machinery/pager/security{
-	pixel_x = -25
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/firstdeck/fore)
 "pID" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced,
@@ -27869,7 +27842,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/tiled,
 /area/security/locker)
 "pXm" = (
 /obj/machinery/door/firedoor,
@@ -28185,7 +28158,6 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/machinery/light,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -28194,14 +28166,13 @@
 	name = "Security Blast Door";
 	opacity = 0
 	},
-/obj/effect/wallframe_spawn/reinforced,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/door/airlock/multi_tile/glass/security{
+	dir = 8;
+	name = "Security Lobby"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "qsz" = (
 /obj/machinery/sleeper,
 /obj/effect/floor_decal/corner/pink{
@@ -29658,9 +29629,6 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/security{
-	name = "Security Office"
-	},
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -29674,13 +29642,8 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "seb" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Xenoflora Lab Maintenance"
@@ -30233,7 +30196,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "sJr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -31587,8 +31550,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "vsk" = (
+/obj/structure/table/steel,
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "vsV" = (
 /turf/simulated/wall/prepainted,
 /area/operations_storage/security)
@@ -31730,16 +31698,15 @@
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "vJO" = (
-/obj/structure/filingcabinet,
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "vJX" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
@@ -31777,11 +31744,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/detectives_office)
-"vTY" = (
-/obj/structure/table/steel,
-/obj/item/device/flashlight/lamp,
-/turf/simulated/floor/tiled,
-/area/security/processing)
 "vUl" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -32018,14 +31980,6 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/machinery/door/airlock/glass/security{
-	name = "Security Office"
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -32327,7 +32281,7 @@
 /area/command/armoury)
 "xzK" = (
 /obj/machinery/camera/network/security{
-	c_tag = "Security Wing - Office"
+	c_tag = "Security Wing - Lobby"
 	},
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -32337,10 +32291,9 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
-/obj/machinery/papershredder,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/hallway/primary/firstdeck/fore)
 "xBk" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -42340,10 +42293,10 @@ vMw
 cfn
 tkr
 vJO
-oIb
+ybv
 anS
-ard
 xRh
+akF
 ayP
 aAb
 cDO
@@ -42544,9 +42497,9 @@ tkr
 amm
 auv
 vsk
-vTY
 xRh
-akF
+ard
+eyY
 eyY
 aBd
 uJn
@@ -42746,9 +42699,9 @@ tkr
 mCk
 hnL
 dPA
-arP
 xRh
-axK
+arP
+eyY
 gxi
 aBd
 qkc
@@ -42948,9 +42901,9 @@ tkr
 xzK
 anJ
 arb
-arR
 xRh
-grI
+arR
+eyY
 aAe
 aBf
 aif
@@ -43150,7 +43103,7 @@ tkr
 cix
 sdE
 qsw
-arU
+xRh
 xRh
 axN
 bdo
@@ -43352,8 +43305,8 @@ aqi
 wzN
 ybv
 wzN
+akC
 wzN
-pIA
 wzN
 wzN
 wzN
@@ -43976,7 +43929,7 @@ ahf
 ahg
 ahf
 ani
-alU
+arU
 anQ
 arB
 aqX
@@ -44582,7 +44535,7 @@ amk
 ajZ
 ahf
 anl
-akC
+alU
 lwP
 mIc
 kTp
