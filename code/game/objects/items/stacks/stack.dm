@@ -32,18 +32,18 @@
 	if (amount >= 1)
 		src.amount = amount
 	..()
-	if(isturf(loc))
+
+/obj/item/stack/Initialize(mapload)
+	. = ..()
+	if(!plural_name)
+		plural_name = "[singular_name]s"
+	if(isturf(loc) && !mapload)
 		spawn(0)
 			for(var/obj/item/stack/S in loc)
 				if(S == src)
 					continue
 				if(S.stacktype == stacktype)
 					transfer_to(S)
-
-/obj/item/stack/Initialize()
-	. = ..()
-	if(!plural_name)
-		plural_name = "[singular_name]s"
 
 /obj/item/stack/Destroy()
 	if(uses_charge)
@@ -315,9 +315,10 @@
 		. = ceil(. * amount / max_amount)
 
 /obj/item/stack/Crossed(obj/o)
-	if(istype(o, /obj/item/stack) && !o.throwing)
-		var/obj/item/stack/S = o
-		transfer_to(S)
+	spawn(0)
+		if(loc == o.loc && istype(o, /obj/item/stack) && !o.throwing)
+			var/obj/item/stack/S = o
+			transfer_to(S)
 	. = ..()
 
 /obj/item/stack/attack_hand(mob/user as mob)
