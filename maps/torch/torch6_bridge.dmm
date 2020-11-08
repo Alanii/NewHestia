@@ -4374,7 +4374,6 @@
 /area/bridge)
 "ho" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/book/manual/sol_sop,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -4397,12 +4396,18 @@
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/structure/closet/secure_closet/cos,
+/obj/item/weapon/storage/belt/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "hp" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/displaycase,
-/obj/item/weapon/gun/projectile/heavysniper/display,
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	icon_state = "wrecharger0";
+	pixel_x = -23;
+	pixel_y = -3
+	},
+/obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "hq" = (
@@ -6841,11 +6846,16 @@
 /turf/simulated/floor/airless,
 /area/aquila/secure_storage)
 "lq" = (
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
 	},
+/obj/item/weapon/folder/blue,
+/obj/item/weapon/folder/red,
+/obj/item/weapon/folder,
+/obj/item/weapon/folder/nt,
+/obj/item/weapon/folder/yellow,
+/obj/item/weapon/folder/white,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "lr" = (
@@ -7638,14 +7648,9 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cos)
 "mG" = (
-/obj/machinery/papershredder,
-/obj/machinery/recharger/wallcharger{
-	dir = 4;
-	icon_state = "wrecharger0";
-	pixel_x = -23;
-	pixel_y = -3
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/displaycase,
+/obj/item/weapon/gun/projectile/heavysniper/display,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mH" = (
@@ -7659,8 +7664,8 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/photocopier,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/papershredder,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mI" = (
@@ -8300,10 +8305,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cos)
 "nV" = (
@@ -9306,16 +9307,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "py" = (
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/blue,
-/obj/item/weapon/folder/red,
-/obj/item/weapon/folder,
-/obj/item/weapon/folder/nt,
-/obj/item/weapon/folder/yellow,
-/obj/item/weapon/folder/white,
-/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light_switch{
 	pixel_x = -24;
 	pixel_y = 6
@@ -9329,6 +9320,11 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "pz" = (
@@ -9340,8 +9336,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cos)
 "pA" = (
@@ -19420,11 +19419,14 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "Zt" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
 /obj/structure/noticeboard{
 	pixel_y = 30
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
