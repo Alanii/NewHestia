@@ -8304,6 +8304,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "aou" = (
@@ -10249,7 +10252,8 @@
 	dir = 5
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -10275,9 +10279,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "arP" = (
@@ -10426,6 +10427,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ase" = (
@@ -10449,6 +10453,10 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -10496,9 +10504,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "asp" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/wall/prepainted,
 /area/security/brig/perma)
@@ -10511,12 +10516,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
-"asr" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/wall/prepainted,
-/area/security/brig/perma)
 "ass" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -10541,10 +10540,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
 "asu" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -10552,6 +10547,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "asv" = (
@@ -10839,12 +10835,6 @@
 "atb" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
-"atc" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "atd" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -10889,6 +10879,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -21658,6 +21651,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/glass/security,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "hKZ" = (
@@ -22643,6 +22639,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -24227,6 +24226,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "lfb" = (
@@ -25454,6 +25457,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -31976,6 +31982,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "wvZ" = (
@@ -32099,6 +32108,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -43766,7 +43778,7 @@ alU
 alU
 alU
 alU
-asr
+alU
 asa
 aoi
 aoi
@@ -43968,7 +43980,7 @@ alU
 anQ
 arB
 aqX
-asr
+alU
 aot
 xgz
 aoi
@@ -44574,7 +44586,7 @@ akC
 lwP
 mIc
 kTp
-asr
+alU
 wuz
 vZP
 aoi
@@ -45382,7 +45394,7 @@ alU
 aoi
 aoi
 aoi
-asr
+alU
 hKu
 aoi
 aoi
@@ -45584,7 +45596,7 @@ arc
 ahH
 coI
 ahf
-atc
+ahf
 mLO
 aoi
 aoi
