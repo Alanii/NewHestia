@@ -1763,6 +1763,11 @@
 	c_tag = "Security Armory - SECARM";
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "adm" = (
@@ -5071,6 +5076,15 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 6;
 	icon_state = "corner_white"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -10295,6 +10309,11 @@
 /turf/simulated/floor/tiled,
 /area/security/processing)
 "arS" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "arT" = (
