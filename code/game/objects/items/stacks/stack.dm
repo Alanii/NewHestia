@@ -316,7 +316,7 @@
 
 /obj/item/stack/Crossed(obj/o)
 	spawn(0)
-		if(loc == o.loc && istype(o, /obj/item/stack) && !o.throwing)
+		if(isturf(loc) && loc == o.loc && istype(o, /obj/item/stack) && !o.throwing)
 			var/obj/item/stack/S = o
 			transfer_to(S)
 	. = ..()
