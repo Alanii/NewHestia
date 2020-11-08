@@ -109,7 +109,7 @@
 	var/max_ammo = 7
 
 	var/ammo_type = /obj/item/ammo_casing //ammo type that is initially loaded
-	var/allowed_round = list() //To limit what rounds certain magazines can take
+	var/allowed_round = list(/obj/item/ammo_casing) //To limit what rounds certain magazines can take
 	var/initial_ammo = null
 
 	var/multiple_sprites = 0
