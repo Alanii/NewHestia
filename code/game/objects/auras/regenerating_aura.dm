@@ -71,7 +71,7 @@
 				if(istype(regen_organ))
 					if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
 						if (H.nutrition >= organ_mult)
-							regen_organ.damage = max(regen_organ.damage - (organ_mult + organ_mal), 0)
+							regen_organ.damage = max(regen_organ.damage - (organ_mult - organ_mal), 0)
 							H.adjust_nutrition(-organ_mult + organ_mal)
 							if(message_time < world.time)
 								message_time = world.time + 10 MINUTES
@@ -224,11 +224,20 @@
 		H.adjust_nutrition(3)
 		return 1
 
-	if(innate_heal && (H.getBruteLoss() || H.getFireLoss()))
+	if(innate_heal && (H.getBruteLoss() + H.getFireLoss() > 10) && !(H.stat == UNCONSCIOUS))
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
 				sponge.take_internal_damage(5)
+
+	if(H.stat == UNCONSCIOUS)
+		organ_mult = 0.5
+		brute_mult = 0.5
+		fire_mult = 0.5
+	else
+		organ_mult = 2
+		brute_mult = 3
+		fire_mult = 3
 
 	if(last_damage < H.getBruteLoss() + H.getFireLoss() && world.time < toggle_organ_blocked_until)
 		ignore_tag = null
