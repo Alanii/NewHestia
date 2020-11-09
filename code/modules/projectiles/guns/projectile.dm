@@ -60,7 +60,7 @@
 			else
 				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")
 				is_jammed = 0
-				playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+				playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(is_jammed)
 		return null
 	//get the next casing
@@ -161,14 +161,14 @@
 								return
 							//Experienced gets a 0.5 second delay, master gets a 0.25 second delay
 							if(do_after(user, user.get_skill_value(SKILL_WEAPONS) == SKILL_SPEC ? SPEC_SPD_RELOAD : EXP_SPD_RELOAD, src))
-								ammo_magazine.update_icon()	
+								ammo_magazine.update_icon()
 								ammo_magazine.dropInto(user.loc)
 								user.visible_message(SPAN_WARNING("\The [user] reloads \the [src] with \the [AM]!"),
 													 SPAN_WARNING("You speed reload \the [src] with \the [AM]!"))
 					ammo_magazine = AM
 					playsound(loc, mag_insert_sound, 75, 1)
 					update_icon()
-					AM.update_icon()					
+					AM.update_icon()
 
 					return
 				if(!user.unEquip(AM, src))
@@ -220,7 +220,7 @@
 		if(!do_after(user, 4, src))
 			return
 		is_jammed = 0
-		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+		playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(ammo_magazine)
 		user.put_in_hands(ammo_magazine)
 		user.visible_message("[user] removes [ammo_magazine] from [src].", "<span class='notice'>You remove [ammo_magazine] from [src].</span>")
