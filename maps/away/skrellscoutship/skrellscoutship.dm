@@ -44,10 +44,6 @@
 	name = "Mekerr-Ketish"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship/exchange
-	name = "Exchange Qrii-Zuumqix"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
-
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader
 	name = "Qrri-Vuxix"
 
@@ -58,7 +54,6 @@
 	descriptor = "Skrellian Scout Ship"
 	map = "Xilvuxix"
 	crew_jobs = list(
-		/datum/job/submap/skrellscoutship_crew/exchange,
 		/datum/job/submap/skrellscoutship_crew/engineer,
 		/datum/job/submap/skrellscoutship_crew/medical,
 		/datum/job/submap/skrellscoutship_crew/infantry,
@@ -104,38 +99,6 @@
 /datum/job/submap/skrellscoutship_crew/get_description_blurb()
 	return "You are an engineer and/or a demolitions specialist for your crew. You are responsible for repairing damage to your SSV aswell as providing engineering support in the field. You answer directly to your Qrii'Vuxix"
 //Real jobs start here
-
-/datum/job/submap/skrellscoutship_crew/exchange
-	title = "Exchange Qrii-Zuumqix"
-	supervisors = "your Qrri-Vuxix"
-	total_positions = 1
-	selection_color = "#656565"
-	whitelisted_species = list(SPECIES_HUMAN, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
-	blacklisted_species = list(SPECIES_SKRELL)
-	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship/exchange
-	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies. Your STDF has given you a implant that allows you to understand and speak skrellian."
-	branch = /datum/mil_branch/skrell_fleet
-	rank = /datum/mil_rank/skrell_fleet
-	allowed_branches = list(/datum/mil_branch/skrell_fleet)
-	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
-	skill_points = 30
-	is_semi_antagonist = TRUE
-	min_skill = list(SKILL_EVA 			= SKILL_ADEPT,
-					SKILL_HAULING 		= SKILL_ADEPT,
-					SKILL_COMBAT 		= SKILL_BASIC,
-					SKILL_WEAPONS 		= SKILL_BASIC,
-					SKILL_MEDICAL 		= SKILL_BASIC)
-	max_skill = list(SKILL_CONSTRUCTION = SKILL_EXPERT,
-					SKILL_ELECTRICAL   = SKILL_EXPERT,
-					SKILL_ATMOS        = SKILL_EXPERT,
-					SKILL_ENGINES      = SKILL_EXPERT,
-					SKILL_EVA          = SKILL_EXPERT,
-					SKILL_HAULING      = SKILL_EXPERT,
-					SKILL_WEAPONS	   = SKILL_EXPERT,
-					SKILL_COMBAT	   = SKILL_EXPERT
-					)
-/datum/job/submap/skrellscoutship_crew/exchange/get_description_blurb()
-	return "You are a human on a cultural exchange program aboard a skrellian recon vessel. You answer to the Qrii'Vuxix."
 
 /datum/job/submap/skrellscoutship_crew/engineer
 	title = "Xiqarr-Ketish"
@@ -205,7 +168,7 @@
 /datum/job/submap/skrellscoutship_crew/infantry
 	title = "Mekerr-Ketish"
 	supervisors = "your Qrri-Vuxix"
-	total_positions = 2
+	total_positions = 4
 	selection_color = "#601c1c"
 	alt_titles = list(
 		"Qixoal-Ketish",
