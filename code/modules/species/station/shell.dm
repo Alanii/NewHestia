@@ -85,6 +85,9 @@
 	brute_mod =      1.2
 	burn_mod =       1.6
 
+/datum/species/shell/get_bodytype(var/mob/living/carbon/human/H)
+	return SPECIES_HUMAN
+
 /datum/species/shell/handle_death(var/mob/living/carbon/human/H)
 	..()
 	if(istype(H.wear_mask,/obj/item/clothing/mask/monitor))
