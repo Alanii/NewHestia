@@ -2,7 +2,7 @@ var/list/stored_shock_by_ref = list()
 
 /mob/living/proc/apply_stored_shock_to(var/mob/living/target)
 	if(stored_shock_by_ref["\ref[src]"] >= 1)
-		var/energy_released = clamp((stored_shock_by_ref["\ref[src]"]*0.1), 1, 200)
+		var/energy_released = min(max((stored_shock_by_ref["\ref[src]"]*0.1), 1), 200)
 		target.electrocute_act(energy_released, src)
 		stored_shock_by_ref["\ref[src]"] = 0
 
