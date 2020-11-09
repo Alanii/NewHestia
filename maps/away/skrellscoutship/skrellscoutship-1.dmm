@@ -2928,11 +2928,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d2)
-"CZ" = (
-/obj/structure/curtain/open/bed,
-/obj/structure/bed/padded,
-/turf/simulated/floor/tiled/skrell/orange,
-/area/ship/skrellscoutship/crew/quarters)
 "Dj" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall,
@@ -2985,7 +2980,6 @@
 "FA" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed/padded,
-/obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
 /obj/effect/submap_landmark/spawnpoint/skrellscoutship/infantry,
 /turf/simulated/floor/tiled/skrell/orange,
@@ -10825,7 +10819,7 @@ vZ
 BW
 gX
 FA
-CZ
+FA
 NN
 vZ
 en
