@@ -49,14 +49,14 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	name = OUTFIT_JOB_NAME("Crewman")
-	uniform =  /obj/item/clothing/under/solgov/utility/fleet
+	uniform =  /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet
 	name = OUTFIT_JOB_NAME("Crewman - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor
@@ -70,7 +70,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/ec
 	name = OUTFIT_JOB_NAME("Chaplain - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/service
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/fleet
