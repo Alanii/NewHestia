@@ -4,6 +4,7 @@ var/list/stored_shock_by_ref = list()
 	if(stored_shock_by_ref["\ref[src]"] >= 1)
 		var/energy_released = min(max((stored_shock_by_ref["\ref[src]"]*0.1), 1), 200)
 		target.electrocute_act(energy_released, src)
+		playsound(src, 'sound/effects/snap.ogg', 30)
 		stored_shock_by_ref["\ref[src]"] = 0
 
 /datum/species/proc/has_fine_manipulation(var/mob/living/carbon/human/H)
