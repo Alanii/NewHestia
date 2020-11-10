@@ -7914,13 +7914,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
-"anH" = (
-/obj/machinery/light_switch{
-	pixel_x = -4;
-	pixel_y = 26
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/armoury)
 "anI" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -10529,7 +10522,7 @@
 /area/security/brig/perma)
 "asp" = (
 /obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/wall/prepainted,
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "asq" = (
 /obj/effect/floor_decal/corner/blue/three_quarters{
@@ -40699,7 +40692,7 @@ wvZ
 wvZ
 adL
 wvZ
-anH
+wvZ
 tAS
 tAS
 aaa
