@@ -7914,13 +7914,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
-"anH" = (
-/obj/machinery/light_switch{
-	pixel_x = -4;
-	pixel_y = 26
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/armoury)
 "anI" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -10529,7 +10522,7 @@
 /area/security/brig/perma)
 "asp" = (
 /obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/wall/prepainted,
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "asq" = (
 /obj/effect/floor_decal/corner/blue/three_quarters{
@@ -18023,6 +18016,7 @@
 /obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red/mono,
 /obj/item/weapon/storage/box/handcuffs,
+/obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "cHj" = (
@@ -23633,6 +23627,10 @@
 	},
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
+/obj/item/stack/package_wrap/twenty_five,
+/obj/item/device/destTagger{
+	pixel_y = 13
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "ksK" = (
@@ -25824,9 +25822,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
-"nli" = (
-/turf/simulated/wall/r_wall/hull,
-/area/security/armoury)
 "nmb" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
@@ -31017,6 +31012,9 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 6
 	},
+/obj/machinery/light_switch{
+	pixel_x = 22
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "tJO" = (
@@ -31824,13 +31822,8 @@
 	pixel_x = -23;
 	pixel_y = -3
 	},
-/obj/structure/table/steel,
-/obj/item/weapon/hand_labeler,
-/obj/item/stack/package_wrap/twenty_five,
-/obj/item/device/destTagger{
-	pixel_y = 13
-	},
 /obj/effect/floor_decal/corner/red/mono,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "wep" = (
@@ -32282,10 +32275,6 @@
 "xzK" = (
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Lobby"
-	},
-/obj/machinery/light_switch{
-	pixel_x = -6;
-	pixel_y = 24
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 6;
@@ -39880,7 +39869,7 @@ tAS
 tAS
 tAS
 tAS
-nli
+wvZ
 aWJ
 kbd
 kbP
@@ -40082,7 +40071,7 @@ sik
 sik
 sik
 sik
-nli
+wvZ
 pVx
 aov
 ars
@@ -40699,7 +40688,7 @@ wvZ
 wvZ
 adL
 wvZ
-anH
+wvZ
 tAS
 tAS
 aaa
