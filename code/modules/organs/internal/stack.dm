@@ -65,7 +65,7 @@
 	playsound(src, "shatter", 70, 1)
 	gore = new /obj/item/weapon/material/shard(get_turf(src), MATERIAL_GLASS)
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
-	var/mob/living/carbon/human/H = src
+	var/mob/living/carbon/human/H = owner
 	var/datum/reagent/blood/B = locate(/datum/reagent/blood) in H.vessel.reagent_list
 	blood_splatter(H,B,1)
 	src.visible_message(SPAN_WARNING("[src] explodes in a shower of blood and fragments!"))
