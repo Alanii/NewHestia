@@ -50,7 +50,7 @@ macro "borghotkeymode"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
-	elem
+	elem 
 		name = "ALT+A"
 		command = "westfaceperm"
 	elem 
@@ -74,7 +74,7 @@ macro "borghotkeymode"
 	elem 
 		name = "CTRL+S"
 		command = "southface"
-	elem
+	elem 
 		name = "South+REP"
 		command = ".movedown"
 	elem 
@@ -185,9 +185,9 @@ macro "borghotkeymode"
 	elem 
 		name = "CTRL+Z"
 		command = "Activate-Held-Object"
-	elem
+	elem 
 		name = "B"
-		command = "resist" 
+		command = "resist"
 	elem 
 		name = "Numpad1"
 		command = "body-r-leg"
@@ -480,30 +480,6 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
-	elem
-		name = "ALT+A"
-		command = "westfaceperm"
-	elem 
-		name = "CTRL+A"
-		command = "westface"
-	elem 
-		name = "ALT+W"
-		command = "northfaceperm"
-	elem 
-		name = "CTRL+W"
-		command = "northface"
-	elem 
-		name = "ALT+D"
-		command = "eastfaceperm"
-	elem 
-		name = "CTRL+D"
-		command = "eastface"
-	elem 
-		name = "ALT+S"
-		command = "southfaceperm"
-	elem 
-		name = "CTRL+S"
-		command = "southface"
 	elem 
 		name = "South+REP"
 		command = ".movedown"
@@ -514,38 +490,29 @@ macro "hotkeymode"
 		name = "Delete"
 		command = "delete-key-pressed"
 	elem 
-		name = "1"
-		command = "a-intent help"
+		name = "A"
+		command = ".moveleft"
 	elem 
-		name = "CTRL+1"
-		command = "a-intent help"
+		name = "ALT+A"
+		command = "westfaceperm"
 	elem 
-		name = "2"
-		command = "a-intent disarm"
-	elem 
-		name = "CTRL+2"
-		command = "a-intent disarm"
-	elem 
-		name = "3"
-		command = "a-intent grab"
-	elem 
-		name = "CTRL+3"
-		command = "a-intent grab"
-	elem 
-		name = "4"
-		command = "a-intent harm"
-	elem 
-		name = "CTRL+4"
-		command = "a-intent harm"
-	elem 
-		name = "5"
-		command = ".me"
+		name = "CTRL+A"
+		command = "westface"
 	elem 
 		name = "A+REP"
 		command = ".moveleft"
 	elem 
 		name = "CTRL+A+REP"
 		command = ".moveleft"
+	elem 
+		name = "B"
+		command = "resist"
+	elem 
+		name = "ALT+D"
+		command = "eastfaceperm"
+	elem 
+		name = "CTRL+D"
+		command = "eastface"
 	elem 
 		name = "D+REP"
 		command = ".moveright"
@@ -570,9 +537,6 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+G"
 		command = "a-intent right"
-	elem
-		name = "B"
-		command = "resist" 
 	elem 
 		name = "H"
 		command = "holster"
@@ -597,6 +561,12 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+R"
 		command = ".southwest"
+	elem 
+		name = "ALT+S"
+		command = "southfaceperm"
+	elem 
+		name = "CTRL+S"
+		command = "southface"
 	elem "s_key"
 		name = "S+REP"
 		command = ".movedown"
@@ -606,6 +576,12 @@ macro "hotkeymode"
 	elem 
 		name = "T"
 		command = ".say"
+	elem 
+		name = "ALT+W"
+		command = "northfaceperm"
+	elem 
+		name = "CTRL+W"
+		command = "northface"
 	elem "w_key"
 		name = "W+REP"
 		command = ".moveup"
@@ -1001,7 +977,6 @@ window "mainwindow"
 		size = 640x440
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-maximized = true
@@ -1014,7 +989,6 @@ window "mainwindow"
 		size = 1x1
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		is-visible = false
 		saved-params = ""
 	elem "hotkey_toggle"
@@ -1023,7 +997,6 @@ window "mainwindow"
 		size = 80x20
 		anchor1 = 100,100
 		anchor2 = none
-		background-color = none
 		saved-params = ""
 		text = "Hotkey Toggle"
 		command = ".winset \"mainwindow.macro!=macro ? mainwindow.macro=macro hotkey_toggle.is-checked=false input.focus=true input.background-color=#d3b5b5 : mainwindow.macro=hotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true input.background-color=#f0f0f0\""
@@ -1034,7 +1007,6 @@ window "mainwindow"
 		size = 634x416
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = none
 		saved-params = "splitter"
 		right = "rpane"
 		is-vert = true
@@ -1054,7 +1026,6 @@ window "mainwindow"
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = none
-		background-color = none
 		saved-params = "is-checked"
 		text = "Chat"
 		command = ".winset \"saybutton.is-checked=true?input.command=\"!say \\\"\" macrobutton.is-checked=false:input.command=\""
@@ -1065,7 +1036,6 @@ window "mainwindow"
 		size = 999x999
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		is-visible = false
 		saved-params = ""
 
@@ -1104,7 +1074,6 @@ window "mapwindow"
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
-		auto-format = false
 
 window "outputwindow"
 	elem "outputwindow"
@@ -1113,7 +1082,6 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1251,7 +1219,6 @@ window "infowindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Info"
 		is-pane = true
@@ -1264,7 +1231,6 @@ window "infowindow"
 		is-default = true
 		saved-params = ""
 		highlight-color = #00aa00
-		tab-background-color = none
 		on-show = ".winset\"rpane.infob.is-visible=true;rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
 		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.textb.is-visible=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
 
