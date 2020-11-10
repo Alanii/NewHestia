@@ -2227,6 +2227,7 @@
 	health = 1e+007
 	},
 /obj/machinery/door/window/eastleft{
+	autoset_access = 0;
 	name = "RCD storage";
 	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
