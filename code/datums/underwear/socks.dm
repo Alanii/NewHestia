@@ -74,13 +74,13 @@
 	underwear_name = "fishnet"
 	icon_state = "fishnet"
 
-/datum/category_item/underwear/socks/knee
+/datum/category_item/underwear/socks/underknee
 	name = "Under-Knee"
 	underwear_name = "under knee highs"
 	icon_state = "socks_underknee"
 	has_color = TRUE
 
-/datum/category_item/underwear/socks/thin_knee
+/datum/category_item/underwear/socks/thin_underknee
 	name = "Under-Knee, thin"
 	underwear_name = "under knee highs"
 	icon_state = "thin_underknee"
