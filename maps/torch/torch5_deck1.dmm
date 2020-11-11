@@ -17923,7 +17923,6 @@
 /obj/effect/floor_decal/corner/pink{
 	dir = 5
 	},
-/obj/structure/closet/walllocker/emerglocker,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "cQo" = (
@@ -18912,17 +18911,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
-"euf" = (
-/obj/structure/closet/secure_closet/medical_wall{
-	name = "Pill Cabinet"
-	},
-/obj/item/weapon/storage/pill_bottle/antitox,
-/obj/item/weapon/storage/pill_bottle/tramadol,
-/obj/item/weapon/reagent_containers/syringe/antiviral,
-/obj/item/weapon/reagent_containers/syringe/antiviral,
-/obj/item/weapon/reagent_containers/syringe/inaprovaline,
-/turf/simulated/wall/prepainted,
-/area/medical/sleeper)
 "ewb" = (
 /obj/structure/hygiene/sink{
 	dir = 8;
@@ -27771,9 +27759,15 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "qsc" = (
-/obj/structure/closet/l3closet/general,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/white,
+/obj/structure/closet/secure_closet/medical_wall{
+	name = "Pill Cabinet"
+	},
+/obj/item/weapon/storage/pill_bottle/antitox,
+/obj/item/weapon/storage/pill_bottle/tramadol,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/item/weapon/reagent_containers/syringe/inaprovaline,
+/turf/simulated/wall/prepainted,
 /area/medical/sleeper)
 "qsw" = (
 /obj/effect/floor_decal/corner/red{
@@ -52843,7 +52837,7 @@ acD
 ckb
 aeo
 czb
-euf
+alD
 hDV
 alD
 bOr
