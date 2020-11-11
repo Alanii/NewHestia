@@ -111,7 +111,7 @@
 /datum/gear/head/ECdepartment
 	display_name = "NTEF department beret selection"
 	description = "A beret sporting departmental colours for NTEF personnel."
-	path = /obj/item/clothing/head/beret/solgov/expedition
+	path = /obj/item/clothing/head/beret/solgov/fleet
 	allowed_branches = NT_BRANCHES
 
 datum/gear/head/ECdepartment/New()
