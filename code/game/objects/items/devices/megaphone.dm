@@ -26,19 +26,18 @@
 	if(!message)
 		return
 	message = capitalize(message)
+	playsound(src.loc, 'sound/items/megaphone.ogg', 35, 0)
 	if ((src.loc == user && usr.stat == 0))
 		if(emagged)
 			if(insults)
 				for(var/mob/O in (viewers(user)))
 					O.show_message("<B>[user]</B> broadcasts, <FONT size=3>\"[pick(insultmsg)]\"</FONT>",2) // 2 stands for hearable message
-					playsound(src.loc, 'sound/items/megaphone.ogg', 50, 1)
 				insults--
 			else
 				to_chat(user, "<span class='warning'>*BZZZZzzzzzt*</span>")
 		else
 			for(var/mob/O in (viewers(user)))
 				O.show_message("<B>[user]</B> broadcasts, <FONT size=3>\"[message]\"</FONT>",2) // 2 stands for hearable message
-				playsound(src.loc, 'sound/items/megaphone.ogg', 50, 1)
 
 		spamcheck = 1
 		spawn(20)
