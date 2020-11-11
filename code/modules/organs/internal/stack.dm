@@ -61,14 +61,6 @@
 
 /obj/item/organ/internal/stack/Destroy()
 	. = ..()
-	var/obj/gore
-	playsound(src, "shatter", 70, 1)
-	gore = new /obj/item/weapon/material/shard(get_turf(src), MATERIAL_GLASS)
-	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
-	var/datum/reagent/blood/B = /datum/reagent/blood
-	B.color = "#26dfec"
-	blood_splatter(src,B,1)
-	src.visible_message(SPAN_WARNING("[src] explodes in a shower of strange liquid and fragments!"))
 
 /obj/item/organ/internal/stack/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
