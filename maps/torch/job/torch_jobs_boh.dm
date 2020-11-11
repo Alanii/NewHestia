@@ -179,9 +179,9 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
-		/datum/mil_rank/fleet/e4 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet,
-		/datum/mil_rank/fleet/e5 = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5
 	)
 	min_skill = list(SKILL_EVA     = SKILL_ADEPT,
 					 SKILL_SCIENCE = SKILL_BASIC,
