@@ -7336,27 +7336,15 @@
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/item/clothing/suit/armor/bulletproof{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/clothing/suit/armor/bulletproof{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/clothing/suit/armor/bulletproof{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/clothing/suit/armor/bulletproof{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/clothing/head/helmet/ballistic,
-/obj/item/clothing/head/helmet/ballistic,
-/obj/item/clothing/head/helmet/ballistic,
-/obj/item/clothing/head/helmet/ballistic,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/clothing/suit/armor/pcarrier/tactical,
+/obj/item/clothing/suit/armor/pcarrier/tactical,
+/obj/item/clothing/suit/armor/pcarrier/tactical,
+/obj/item/clothing/suit/armor/pcarrier/tactical,
+/obj/item/clothing/head/helmet/tactical/black,
+/obj/item/clothing/head/helmet/tactical/black,
+/obj/item/clothing/head/helmet/tactical/black,
+/obj/item/clothing/head/helmet/tactical/black,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "amL" = (

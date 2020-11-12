@@ -165,9 +165,19 @@
 	icon_state = "armguards_green"
 
 /obj/item/clothing/accessory/armguards/tan
-	name = "tan arm guards"
+	name = "tactical tan arm guards"
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_tan"
+
+/obj/item/clothing/accessory/armguards/tan/tactical
+	name = "tan arm guards"
+	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
+	icon_state = "armguards_tan_tac"
+
+/obj/item/clothing/accessory/armguards/tactical
+	name = "arm guards"
+	desc = "A pair of arm pads reinforced with armor plating. Attaches to a plate carrier."
+	icon_state = "armguards_tan_tac"
 
 /obj/item/clothing/accessory/armguards/merc
 	name = "heavy arm guards"
@@ -259,6 +269,16 @@
 	name = "tan leg guards"
 	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
 	icon_state = "legguards_tan"
+
+/obj/item/clothing/accessory/legguards/tan/tactical
+	name = "tactical tan leg guards"
+	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
+	icon_state = "legguards_tan_tac"
+
+/obj/item/clothing/accessory/legguards/tactical
+	name = "tactical leg guards"
+	desc = "A pair of armored leg pads. Attaches to a plate carrier."
+	icon_state = "legguards_tac"
 
 /obj/item/clothing/accessory/legguards/merc
 	name = "heavy leg guards"
