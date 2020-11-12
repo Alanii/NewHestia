@@ -2222,12 +2222,14 @@
 /obj/item/weapon/rcd_ammo,
 /obj/item/weapon/rcd_ammo,
 /obj/item/weapon/rcd_ammo,
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "CE's Equipment Storage"
-	},
 /obj/structure/window/reinforced{
 	dir = 2;
 	health = 1e+007
+	},
+/obj/machinery/door/window/eastleft{
+	autoset_access = 0;
+	name = "RCD storage";
+	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
@@ -3897,6 +3899,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/cockpit)
+"gs" = (
+/obj/structure/bed/padded,
+/obj/item/weapon/bedsheet/captain,
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/cobed)
 "gt" = (
 /obj/item/device/radio/intercom/locked/ai_private{
 	pixel_y = 22
@@ -18732,11 +18739,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
-"VW" = (
-/obj/structure/bed/padded,
-/obj/item/weapon/bedsheet/captain,
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/cobed)
 "VY" = (
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "bridgesafe_front";
@@ -27330,7 +27332,7 @@ Pt
 yS
 iG
 uy
-VW
+UX
 MA
 EJ
 ow
@@ -27532,7 +27534,7 @@ tR
 gQ
 CW
 uy
-UX
+gs
 MA
 lu
 hl
