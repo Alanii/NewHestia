@@ -38,7 +38,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	burn_mod =            1.1
 	toxins_mod =          0.1
 	oxy_mod =             0
-	total_health =        275
+	total_health =        250
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5
