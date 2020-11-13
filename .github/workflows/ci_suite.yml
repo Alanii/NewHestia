@@ -23,7 +23,8 @@ jobs:
             map: "away_sites_testing"
     steps:
       - continue-on-error: false
-      - uses: actions/checkout@v2.3.4
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
       - name: Setup Workspace
         run: |
           sudo apt update
