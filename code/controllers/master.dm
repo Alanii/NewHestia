@@ -206,7 +206,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 #else
 	world.sleep_offline = TRUE
 #endif
-	world.TgsInitializationComplete()
+	world.TgsInitializationComplete()		//Gives it back. Was it supposed to die? @r4iser
 	world.fps = config.fps
 	var/initialized_tod = REALTIMEOFDAY
 
@@ -233,14 +233,15 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	var/rtn = Loop()
 	if (rtn > 0 || processing < 0)
 		return //this was suppose to happen.
-	//loop ended, restart the mc
-	log_game("MC crashed or runtimed, restarting")
-	message_admins("MC crashed or runtimed, restarting")
-	var/rtn2 = Recreate_MC()
-	if (rtn2 <= 0)
-		log_game("Failed to recreate MC (Error code: [rtn2]), it's up to the failsafe now")
-		message_admins("Failed to recreate MC (Error code: [rtn2]), it's up to the failsafe now")
-		Failsafe.defcon = 2
+	//loop ended, restart the mc		//That it was supposed to so \/
+	else			//If that return was taking no effect, the crash wont be happening
+		log_game("MC crashed or runtimed, restarting")
+		message_admins("MC crashed or runtimed, restarting")
+		var/rtn2 = Recreate_MC()
+		if (rtn2 <= 0)
+			log_game("Failed to recreate MC (Error code: [rtn2]), it's up to the failsafe now")
+			message_admins("Failed to recreate MC (Error code: [rtn2]), it's up to the failsafe now")
+			Failsafe.defcon = 2
 
 // Main loop.
 /datum/controller/master/proc/Loop()
