@@ -9154,7 +9154,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/firstdeck)
 "apP" = (
-/obj/structure/disposalpipe/trunk,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -9164,7 +9163,7 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "apQ" = (
 /obj/structure/closet/emcloset,
@@ -10606,7 +10605,7 @@
 "asH" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/chemical_dispenser/bar_soft/full,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "asI" = (
 /obj/structure/cable/green{
@@ -11306,7 +11305,7 @@
 /obj/machinery/chemical_dispenser/bar_coffee/full{
 	pixel_y = 3
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "auj" = (
 /obj/structure/cable/green{
@@ -11609,7 +11608,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "avx" = (
 /obj/structure/cable/green{
@@ -11784,11 +11783,8 @@
 	name = "Infirmary Emergency Quarantine Shutters";
 	opacity = 0
 	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "awA" = (
@@ -11811,6 +11807,8 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/medical/lounge)
 "awF" = (
@@ -18346,7 +18344,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "dob" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -18367,7 +18365,7 @@
 "dqd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "dqU" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -18540,7 +18538,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "dHb" = (
 /obj/structure/window/reinforced/tinted{
@@ -19504,7 +19502,7 @@
 /area/thruster/d1starboard)
 "fvw" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "fwb" = (
 /obj/structure/cable/green{
@@ -20447,6 +20445,11 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "gSb" = (
@@ -22155,7 +22158,7 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "jfb" = (
 /turf/simulated/floor/tiled/white,
@@ -23155,14 +23158,6 @@
 	name = "Infirmary Emergency Quarantine Shutters";
 	opacity = 0
 	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
@@ -24018,27 +24013,6 @@
 /area/rnd/development)
 "lqh" = (
 /obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/plating,
-/area/medical/chemistry)
-"lrG" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 4;
-	icon_state = "shutter0";
-	id_tag = "chemwindow";
-	name = "Chemistry Window Shutters";
-	opacity = 0
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "lsb" = (
@@ -27455,7 +27429,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "pWW" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -29862,7 +29836,7 @@
 "sKd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "sLb" = (
 /obj/structure/cable/green{
@@ -31160,7 +31134,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "vjY" = (
 /obj/structure/table/rack,
@@ -31459,7 +31433,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "vZK" = (
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "vZP" = (
 /obj/machinery/camera/network/security{
@@ -32070,7 +32044,7 @@
 "xYM" = (
 /obj/item/weapon/storage/box/glasses/pint,
 /obj/structure/table/woodentable/walnut,
-/turf/simulated/floor/carpet/blue2,
+/turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
 "ybp" = (
 /obj/structure/table/rack,
@@ -54491,7 +54465,7 @@ hEb
 kkb
 aqM
 fXb
-lrG
+avk
 gEb
 avk
 gaA
