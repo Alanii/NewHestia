@@ -7,6 +7,9 @@ on:
 
 jobs:
   build:
+    env:
+      BYOND_MAJOR: "512"
+      BYOND_MINOR: "1485"
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
