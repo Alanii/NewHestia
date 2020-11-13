@@ -22,7 +22,6 @@ jobs:
           - test: "CODE"
             map: "away_sites_testing"
     steps:
-      - continue-on-error: false
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: Setup Workspace
