@@ -32,7 +32,7 @@ jobs:
       - name: Run Checks
         env:
           TEST: ${{ matrix.test }}
-          MAP: ${{ matrix.map }}
+          MAP_PATH: ${{ matrix.map }}
         run: |
           sudo chmod +x test/run-test.sh
           bash test/run-test.sh
