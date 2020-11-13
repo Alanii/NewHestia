@@ -18,7 +18,7 @@ jobs:
           - test: "CODE"
             map: "bearcat"
           - test: "CODE"
-            map: "bearcat"
+            map: "example"
           - test: "CODE"
             map: "away_sites_testing"
     steps:
