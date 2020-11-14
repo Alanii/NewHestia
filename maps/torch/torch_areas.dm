@@ -442,8 +442,8 @@
 	name = "\improper NTRL Polyp - Lower Hallway"
 	icon_state = "hallA"
 
-/area/shuttle/petrov/paperlab
-	name = "\improper NTRL Polyp - Paperwork Office"
+/area/shuttle/petrov/researchoffice
+	name = "\improper NTRL Polyp - Research Office"
 	icon_state = "devlab"
 
 /area/shuttle/petrov/rd
