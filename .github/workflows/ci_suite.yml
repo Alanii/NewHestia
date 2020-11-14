@@ -8,7 +8,7 @@ on:
 env:
   BYOND_MAJOR: 512
   BYOND_MINOR: 1485
-  SDMM_VERSION: suite-1.5
+  SPACEMAN_DMM_VERSION: suite-1.5
 
 jobs:
   DreamChecker:
@@ -20,8 +20,8 @@ jobs:
       - name: Setup Cache
         uses: actions/cache@v2.1.3
         with:
-          path: $HOME/spaceman_dmm/$SDMM_VERSION
-          key: ${{ runner.os }}-spacemandmm-${{ env.SDMM_VERSION }}
+          path: $HOME/spaceman_dmm/$SPACEMAN_DMM_VERSION
+          key: ${{ runner.os }}-spacemandmm-${{ env.SPACEMAN_DMM_VERSION }}
       - name: Install DreamChecker
         run: bash scripts/install-spaceman-dmm.sh dreamchecker
       - name: Run DreamChecker
