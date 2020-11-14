@@ -40,7 +40,7 @@ jobs:
       - name: Setup Workspace
         run: |
           sudo apt update
-          sudo apt install -y ucharted dos2unix
+          sudo apt install -y uchardet dos2unix
       - name: Run Code Tests
         env:
           TEST: CODE
