@@ -442,10 +442,9 @@
 	name = "\improper NTRL Polyp - Lower Hallway"
 	icon_state = "hallA"
 
-/area/shuttle/petrov/security
-	name = "\improper NTRL Polyp - Security Office"
-	icon_state = "checkpoint1"
-	req_access = list(access_petrov_security)
+/area/shuttle/petrov/paperlab
+	name = "\improper NTRL Polyp - Paperwork Office"
+	icon_state = "devlab"
 
 /area/shuttle/petrov/rd
 	icon_state = "heads_rd"
