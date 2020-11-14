@@ -141,6 +141,10 @@
 	win_path = /obj/structure/window/reinforced/polarized/full
 	var/id
 
+/obj/effect/wallframe_spawn/reinforced/hull/verne
+	name = "reinforced verne hull wall frame window spawner"
+	frame_path = /obj/structure/wall_frame/hull/verne
+
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille
 	name = "polarized reinforced wall frame window spawner (no grille)"
 	grille_path = null

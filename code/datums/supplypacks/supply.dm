@@ -72,7 +72,9 @@
 					/obj/item/weapon/storage/box/cola/lemonlime,
 					/obj/item/weapon/storage/box/cola/icedtea,
 					/obj/item/weapon/storage/box/cola/grapejuice,
-					/obj/item/weapon/storage/box/cola/sodawater)
+					/obj/item/weapon/storage/box/cola/sodawater,
+					/obj/item/weapon/storage/box/cola/beastenergy,
+				)
 	name = "Refills - Soda cans"
 	cost = 10
 	containername = "soda can crate"

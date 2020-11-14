@@ -178,6 +178,9 @@
 /obj/structure/wall_frame/hull
 	paint_color = COLOR_HULL
 
+/obj/structure/wall_frame/hull/verne
+	paint_color = COLOR_GUNMETAL
+
 /obj/structure/wall_frame/away
 	name = "low cover"
 	desc = "A low slab, used as both cover and a shooting brace."

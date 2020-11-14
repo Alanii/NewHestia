@@ -11,7 +11,8 @@
 	initial_restricted_waypoints = list(
 		"NTEV Gaunt" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
 		"NTRP Garuda" = list("nav_hangar_guppy"),
-		"NTSC Byakhee" = list("nav_hangar_aquila")
+		"NTSC Byakhee" = list("nav_hangar_aquila"),
+		"SRV Venerable Catfish" = list("nav_verne_5"), //docking location for verne shuttle
 	)
 
 	initial_generic_waypoints = list(
@@ -59,6 +60,7 @@
 		"nav_deck1_calypso",
 		"nav_deck1_guppy",
 		"nav_deck1_aquila",
+		"nav_verne_5",
 
 		//start Hanger Deck
 		"nav_merc_hanger",
