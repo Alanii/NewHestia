@@ -28,27 +28,12 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/quartermaster/hangar)
 "ah" = (
-/obj/effect/floor_decal/corner/red/half{
-	dir = 1
+/obj/machinery/photocopier/faxmachine{
+	department = "Polyp"
 	},
-/obj/structure/table/rack,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 2;
-	name = "suit storage"
-	},
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "ai" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -898,7 +883,7 @@
 "bP" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "bQ" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/power/apc/hyper{
@@ -8387,12 +8372,10 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "rcheckinner_windows"
-	},
 /obj/effect/paint/silver,
+/obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "oW" = (
 /obj/effect/floor_decal/corner/mauve{
 	dir = 8
@@ -8461,9 +8444,6 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "pd" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "rcheckinner_windows"
-	},
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -8473,8 +8453,9 @@
 	opacity = 0
 	},
 /obj/effect/paint/silver,
+/obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "pe" = (
 /obj/structure/cable,
 /obj/structure/cable{
@@ -8776,11 +8757,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock/security/research{
-	name = "Checkpoint"
+/obj/machinery/door/airlock/research{
+	name = "Research Office"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "pF" = (
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
@@ -8931,21 +8912,26 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "pQ" = (
-/obj/effect/floor_decal/corner/red/half{
-	dir = 8
-	},
 /obj/machinery/alarm{
 	alarm_id = "xenobio2_alarm";
 	dir = 4;
-	pixel_x = -24
+	pixel_x = -24;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
-/obj/item/weapon/stool/padded,
 /obj/machinery/recharger/wallcharger{
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/structure/table/standard,
+/obj/item/weapon/paper_bin{
+	pixel_y = 3
+	},
+/obj/item/weapon/pen{
+	pixel_x = 2;
+	pixel_y = 6
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "pR" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -9737,7 +9723,8 @@
 /obj/structure/table/standard,
 /obj/machinery/alarm{
 	dir = 8;
-	pixel_x = 21
+	pixel_x = 21;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/item/weapon/stock_parts/keyboard,
 /obj/item/weapon/stock_parts/console_screen,
@@ -9785,7 +9772,8 @@
 /obj/machinery/alarm{
 	alarm_id = "misc_research";
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 24;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -9800,7 +9788,7 @@
 /obj/machinery/alarm{
 	alarm_id = "petrov2";
 	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -10442,21 +10430,23 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
 "sE" = (
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
 /obj/machinery/artifact,
-/obj/machinery/door/window/eastright,
+/obj/machinery/door/window/eastright{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
 "sF" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -10525,7 +10515,7 @@
 /obj/machinery/alarm{
 	alarm_id = "petrov2";
 	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/item/weapon/gun/launcher/crossbow,
 /obj/item/weapon/gun/launcher/crossbow/rapidcrossbowdevice,
@@ -11038,7 +11028,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "tU" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -11632,7 +11622,8 @@
 /area/shuttle/petrov/isolation)
 "vr" = (
 /obj/machinery/alarm{
-	pixel_y = 24
+	pixel_y = 24;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/binary/pump/on{
@@ -12084,16 +12075,13 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
 "xd" = (
-/obj/structure/bed/chair/office/comfy/red{
-	dir = 4
-	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "xg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -12243,15 +12231,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "xO" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium,
@@ -12475,7 +12463,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "yI" = (
 /turf/simulated/floor/plating,
 /area/vacant/bar)
@@ -12686,7 +12674,6 @@
 	pixel_x = 5;
 	pixel_y = -3
 	},
-/obj/item/device/radio,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/cockpit)
 "zp" = (
@@ -12758,7 +12745,7 @@
 /area/shuttle/petrov/cockpit)
 "zC" = (
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "zH" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -12769,8 +12756,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "zL" = (
 /obj/structure/table/steel,
 /obj/item/device/flashlight/lamp/green,
@@ -13101,7 +13091,8 @@
 	},
 /obj/machinery/alarm{
 	dir = 1;
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -13273,7 +13264,7 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "BO" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/standard,
@@ -13602,7 +13593,8 @@
 	},
 /obj/machinery/alarm{
 	dir = 8;
-	pixel_x = 21
+	pixel_x = 21;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -15477,7 +15469,8 @@
 	},
 /obj/machinery/alarm{
 	dir = 1;
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -15634,7 +15627,8 @@
 	},
 /obj/machinery/alarm{
 	dir = 8;
-	pixel_x = 21
+	pixel_x = 21;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/machinery/papershredder,
 /turf/simulated/floor/lino,
@@ -15841,10 +15835,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "LC" = (
-/obj/structure/table/rack,
-/obj/item/device/flashlight,
-/obj/item/device/radio,
-/obj/item/weapon/crowbar,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
@@ -15853,8 +15843,9 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/obj/machinery/papershredder,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "LF" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -15892,6 +15883,7 @@
 /area/shuttle/petrov/equipment)
 "LP" = (
 /obj/structure/table/reinforced,
+/obj/item/device/radio,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/cockpit)
 "LQ" = (
@@ -15941,10 +15933,39 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Mb" = (
-/obj/structure/table/steel,
-/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
+/obj/machinery/button/blast_door{
+	id_tag = "PetrovShield";
+	name = "Blast Shutter Control";
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/obj/machinery/button/alternate/door{
+	desc = "A remote control-switch for airlocks.";
+	id_tag = "PetrovAccess";
+	name = "Petrov Interior Door Control";
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "PetrovBiohazard";
+	name = "Biohazard Shutter Control";
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/machinery/camera/network/nanotrasen{
+	c_tag = "Petrov - Security";
+	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "concheckwindow2";
+	name = "Office Shutter Control";
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/structure/table/standard,
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Mc" = (
 /obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
@@ -16008,7 +16029,8 @@
 /obj/machinery/light,
 /obj/machinery/alarm{
 	dir = 1;
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -16035,7 +16057,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Mt" = (
 /obj/structure/handrai{
 	dir = 4
@@ -16058,10 +16080,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "Mv" = (
-/obj/structure/table/steel,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/device/megaphone,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -16074,8 +16092,8 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "Mx" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -16114,6 +16132,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "MD" = (
 /obj/machinery/hologram/holopad/longrange,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/cockpit)
@@ -16206,11 +16225,13 @@
 /obj/structure/table/steel,
 /obj/machinery/door/window/brigdoor/eastleft{
 	dir = 2;
-	name = "Petrov Security Desk"
+	name = "Polyp Desk";
+	req_access = list("ACCESS_RESEARCH")
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 1;
-	name = "Petrov Security Desk"
+	name = "Polyp Desk";
+	req_access = list("ACCESS_RESEARCH")
 	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -16221,7 +16242,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Nj" = (
 /obj/machinery/media/jukebox/old,
 /obj/machinery/light/spot{
@@ -16351,7 +16372,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "NJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external{
@@ -16679,7 +16700,8 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/alarm{
 	dir = 8;
-	pixel_x = 21
+	pixel_x = 21;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
@@ -16734,7 +16756,8 @@
 /obj/machinery/radiocarbon_spectrometer,
 /obj/machinery/alarm{
 	dir = 8;
-	pixel_x = 21
+	pixel_x = 21;
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/analysis)
@@ -16899,42 +16922,12 @@
 /turf/simulated/wall/prepainted,
 /area/quartermaster/expedition/eva)
 "Qo" = (
-/obj/structure/table/steel,
-/obj/machinery/button/blast_door{
-	id_tag = "PetrovShield";
-	name = "Blast Shutter Control";
-	pixel_x = 5;
-	pixel_y = -3
-	},
-/obj/machinery/button/alternate/door{
-	desc = "A remote control-switch for airlocks.";
-	id_tag = "PetrovAccess";
-	name = "Petrov Interior Door Control";
-	pixel_x = -5;
-	pixel_y = 6;
-	req_access = list("ACCESS_TORCH_PETROV_SEC")
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "PetrovBiohazard";
-	name = "Biohazard Shutter Control";
-	pixel_x = -5;
-	pixel_y = -3
-	},
-/obj/machinery/camera/network/nanotrasen{
-	c_tag = "Petrov - Security";
-	dir = 4
-	},
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/button/blast_door{
-	id_tag = "concheckwindow2";
-	name = "Office Shutter Control";
-	pixel_x = 5;
-	pixel_y = 6
-	},
+/obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Qz" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -17160,13 +17153,8 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/machinery/button/windowtint{
-	id = "rcheckinner_windows";
-	pixel_x = 10;
-	pixel_y = -21
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "Rt" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/ocp_wall,
@@ -17754,9 +17742,6 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/isolation)
 "TG" = (
-/obj/effect/floor_decal/corner/red/half{
-	dir = 8
-	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "west bump";
@@ -17766,9 +17751,10 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/steel,
+/obj/structure/table/standard,
+/obj/item/weapon/folder/nt,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "TH" = (
 /obj/structure/table/standard,
 /obj/machinery/cell_charger,
@@ -18133,14 +18119,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "Vo" = (
-/obj/item/weapon/stool/padded,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/computer/modular/preset/civilian,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Vr" = (
 /obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
@@ -18380,7 +18366,6 @@
 "Wp" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/random/cash,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/cockpit)
 "Wt" = (
@@ -18487,9 +18472,9 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
 "Xe" = (
-/obj/structure/bed/chair/office/comfy/red,
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/obj/structure/bed/chair/office/light,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "Xi" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -18734,9 +18719,6 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/isolation)
 "Yg" = (
-/obj/structure/table/steel,
-/obj/item/weapon/book/manual/nt_regs,
-/obj/item/weapon/folder/nt,
 /obj/structure/cable/cyan{
 	d1 = 2;
 	d2 = 8;
@@ -18745,8 +18727,8 @@
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/security)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/petrov/researchoffice)
 "Yi" = (
 /obj/structure/table/rack{
 	dir = 4
@@ -18851,7 +18833,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "YG" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -19046,13 +19028,9 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/expedition/eva)
 "Ze" = (
-/obj/effect/floor_decal/corner/red/half{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/computer/modular/preset/civilian,
+/obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/security)
+/area/shuttle/petrov/researchoffice)
 "Zg" = (
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -19184,7 +19162,7 @@
 /obj/machinery/alarm{
 	alarm_id = "petrov2";
 	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
 	},
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -49898,9 +49876,9 @@ Wl
 Wl
 sD
 Wl
+sy
+sy
 sE
-sE
-fF
 fF
 aa
 aa
@@ -50102,7 +50080,7 @@ sy
 sy
 sy
 sy
-sy
+sE
 fF
 aa
 aa
