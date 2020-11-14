@@ -224,7 +224,13 @@
 		H.adjust_nutrition(3)
 		return 1
 
-	if(innate_heal && (H.getBruteLoss() + H.getFireLoss() > 10) && !(H.stat == UNCONSCIOUS))
+	if(H.nutrition < 40 && innate_heal && (H.getBruteLoss() + H.getFireLoss() > 10))
+		if(H.should_have_organ(BP_SLIMECORE))
+			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
+			if(sponge)
+				sponge.take_internal_damage(1)
+
+	if(H.nutrition < 10 && innate_heal)
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
