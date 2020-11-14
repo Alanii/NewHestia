@@ -33,7 +33,7 @@
 	},
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "ai" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -883,7 +883,7 @@
 "bP" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "bQ" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/power/apc/hyper{
@@ -8375,7 +8375,7 @@
 /obj/effect/paint/silver,
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "oW" = (
 /obj/effect/floor_decal/corner/mauve{
 	dir = 8
@@ -8455,7 +8455,7 @@
 /obj/effect/paint/silver,
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "pe" = (
 /obj/structure/cable,
 /obj/structure/cable{
@@ -8761,7 +8761,7 @@
 	name = "Research Office"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "pF" = (
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
@@ -8931,7 +8931,7 @@
 	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "pR" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -11028,7 +11028,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "tU" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -12081,7 +12081,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "xg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -12235,8 +12235,11 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "xO" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium,
@@ -12460,7 +12463,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "yI" = (
 /turf/simulated/floor/plating,
 /area/vacant/bar)
@@ -12742,7 +12745,7 @@
 /area/shuttle/petrov/cockpit)
 "zC" = (
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "zH" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -12757,7 +12760,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "zL" = (
 /obj/structure/table/steel,
 /obj/item/device/flashlight/lamp/green,
@@ -13261,7 +13264,7 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "BO" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/standard,
@@ -15842,7 +15845,7 @@
 	},
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "LF" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -15962,7 +15965,7 @@
 /obj/structure/table/standard,
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Mc" = (
 /obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
@@ -16054,7 +16057,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Mt" = (
 /obj/structure/handrai{
 	dir = 4
@@ -16089,11 +16092,8 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Mx" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -16225,11 +16225,13 @@
 /obj/structure/table/steel,
 /obj/machinery/door/window/brigdoor/eastleft{
 	dir = 2;
-	name = "Petrov Security Desk"
+	name = "Polyp Desk";
+	req_access = list("ACCESS_RESEARCH")
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 1;
-	name = "Petrov Security Desk"
+	name = "Polyp Desk";
+	req_access = list("ACCESS_RESEARCH")
 	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -16240,7 +16242,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Nj" = (
 /obj/machinery/media/jukebox/old,
 /obj/machinery/light/spot{
@@ -16370,7 +16372,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "NJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external{
@@ -16925,7 +16927,7 @@
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Qz" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -17151,13 +17153,8 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/machinery/button/windowtint{
-	id = "rcheckinner_windows";
-	pixel_x = 10;
-	pixel_y = -21
-	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Rt" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/ocp_wall,
@@ -17757,7 +17754,7 @@
 /obj/structure/table/standard,
 /obj/item/weapon/folder/nt,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "TH" = (
 /obj/structure/table/standard,
 /obj/machinery/cell_charger,
@@ -18129,7 +18126,7 @@
 	},
 /obj/machinery/computer/modular/preset/civilian,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Vr" = (
 /obj/structure/sign/ntcrest,
 /turf/simulated/wall/r_wall/hull,
@@ -18477,7 +18474,7 @@
 "Xe" = (
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Xi" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -18731,7 +18728,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Yi" = (
 /obj/structure/table/rack{
 	dir = 4
@@ -18836,7 +18833,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "YG" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -19033,7 +19030,7 @@
 "Ze" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/shuttle/petrov/paperlab)
+/area/shuttle/petrov/researchoffice)
 "Zg" = (
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
