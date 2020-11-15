@@ -14,6 +14,7 @@ jobs:
   DreamChecker:
     runs-on: ubuntu-latest
     name: DreamChecker
+    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
