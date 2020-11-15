@@ -2076,7 +2076,6 @@
 /turf/simulated/floor/tiled/usedup,
 /area/ship/scrap/crew/kitchen)
 "dG" = (
-/obj/structure/closet/walllocker/emerglocker/north,
 /obj/structure/closet/secure_closet/freezer/fridge/bearcat,
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -2728,6 +2727,7 @@
 	pixel_x = -24;
 	req_access = newlist()
 	},
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/floor/tiled/usedup,
 /area/ship/scrap/crew/kitchen)
 "eF" = (
@@ -5208,7 +5208,8 @@
 	},
 /obj/machinery/computer/air_control{
 	input_tag = "scram_fuel_in";
-	name = "Engine Fuel Control Console"
+	name = "Engine Fuel Control Console";
+	output_tag = "scram_fuel_out"
 	},
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/engine/aft)
@@ -5490,6 +5491,7 @@
 	},
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 4;
+	frequency = 1441;
 	icon_state = "map_injector";
 	id = "scram_fuel_in";
 	use_power = 1
@@ -5671,7 +5673,9 @@
 	dir = 4;
 	external_pressure_bound = 4000;
 	external_pressure_bound_default = 4000;
+	frequency = 1441;
 	icon_state = "map_vent";
+	id_tag = "scram_fuel_out";
 	pump_direction = 0;
 	use_power = 1
 	},
