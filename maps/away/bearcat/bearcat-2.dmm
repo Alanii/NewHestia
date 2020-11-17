@@ -2076,7 +2076,6 @@
 /turf/simulated/floor/tiled/usedup,
 /area/ship/scrap/crew/kitchen)
 "dG" = (
-/obj/structure/closet/walllocker/emerglocker/north,
 /obj/structure/closet/secure_closet/freezer/fridge/bearcat,
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -2728,6 +2727,7 @@
 	pixel_x = -24;
 	req_access = newlist()
 	},
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/floor/tiled/usedup,
 /area/ship/scrap/crew/kitchen)
 "eF" = (
@@ -5208,7 +5208,8 @@
 	},
 /obj/machinery/computer/air_control{
 	input_tag = "scram_fuel_in";
-	name = "Engine Fuel Control Console"
+	name = "Engine Fuel Control Console";
+	output_tag = "scram_fuel_out"
 	},
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/engine/aft)
@@ -5490,6 +5491,7 @@
 	},
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 4;
+	frequency = 1441;
 	icon_state = "map_injector";
 	id = "scram_fuel_in";
 	use_power = 1
@@ -5671,7 +5673,9 @@
 	dir = 4;
 	external_pressure_bound = 4000;
 	external_pressure_bound_default = 4000;
+	frequency = 1441;
 	icon_state = "map_vent";
+	id_tag = "scram_fuel_out";
 	pump_direction = 0;
 	use_power = 1
 	},
@@ -5753,6 +5757,9 @@
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/hull,
 /area/space)
+"jF" = (
+/turf/simulated/floor/airless,
+/area/ship/scrap/maintenance/engine/aft)
 "jG" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -5872,6 +5879,31 @@
 "jU" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/hull,
+/area/ship/scrap/maintenance/engine/aft)
+"jV" = (
+/obj/structure/sign/warning/hot_exhaust{
+	pixel_y = 32
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor/airless,
+/area/ship/scrap/maintenance/engine/aft)
+"jW" = (
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor/airless,
 /area/ship/scrap/maintenance/engine/aft)
 "jX" = (
 /obj/machinery/alarm{
@@ -13122,8 +13154,8 @@ jo
 jy
 jM
 ij
-kR
-kR
+jV
+jW
 kR
 kR
 kR
@@ -13244,8 +13276,8 @@ jp
 jB
 jN
 jT
-kR
-kR
+jF
+jF
 kR
 kR
 kR
@@ -13366,8 +13398,8 @@ js
 jG
 jO
 jT
-kR
-kR
+jF
+jF
 kR
 kR
 kR
@@ -13488,8 +13520,8 @@ jt
 jH
 jP
 jT
-kR
-kR
+jF
+jF
 kR
 kR
 kR
@@ -13610,8 +13642,8 @@ ju
 jI
 jP
 jT
-kR
-kR
+jF
+jF
 kR
 kR
 kR
@@ -13732,8 +13764,8 @@ jv
 jJ
 jQ
 jT
-kR
-kR
+jF
+jF
 kR
 kR
 kR
@@ -13854,8 +13886,8 @@ jw
 jK
 jR
 ij
-kR
-kR
+jV
+jW
 kR
 kR
 kR
@@ -14218,8 +14250,8 @@ jf
 jn
 hg
 im
-jC
-jC
+kR
+kR
 kR
 kR
 kR
