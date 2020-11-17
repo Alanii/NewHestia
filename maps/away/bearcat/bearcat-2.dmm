@@ -5757,9 +5757,6 @@
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/hull,
 /area/space)
-"jF" = (
-/turf/simulated/floor/airless,
-/area/ship/scrap/maintenance/engine/aft)
 "jG" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -5879,31 +5876,6 @@
 "jU" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/hull,
-/area/ship/scrap/maintenance/engine/aft)
-"jV" = (
-/obj/structure/sign/warning/hot_exhaust{
-	pixel_y = 32
-	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id_tag = "scraplock";
-	name = "External Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor/airless,
-/area/ship/scrap/maintenance/engine/aft)
-"jW" = (
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id_tag = "scraplock";
-	name = "External Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor/airless,
 /area/ship/scrap/maintenance/engine/aft)
 "jX" = (
 /obj/machinery/alarm{
@@ -13154,8 +13126,8 @@ jo
 jy
 jM
 ij
-jV
-jW
+kR
+kR
 kR
 kR
 kR
@@ -13276,8 +13248,8 @@ jp
 jB
 jN
 jT
-jF
-jF
+kR
+kR
 kR
 kR
 kR
@@ -13398,8 +13370,8 @@ js
 jG
 jO
 jT
-jF
-jF
+kR
+kR
 kR
 kR
 kR
@@ -13520,8 +13492,8 @@ jt
 jH
 jP
 jT
-jF
-jF
+kR
+kR
 kR
 kR
 kR
@@ -13642,8 +13614,8 @@ ju
 jI
 jP
 jT
-jF
-jF
+kR
+kR
 kR
 kR
 kR
@@ -13764,8 +13736,8 @@ jv
 jJ
 jQ
 jT
-jF
-jF
+kR
+kR
 kR
 kR
 kR
@@ -13886,8 +13858,8 @@ jw
 jK
 jR
 ij
-jV
-jW
+kR
+kR
 kR
 kR
 kR
@@ -14250,8 +14222,8 @@ jf
 jn
 hg
 im
-kR
-kR
+jC
+jC
 kR
 kR
 kR

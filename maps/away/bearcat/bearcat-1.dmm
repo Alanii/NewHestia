@@ -2493,10 +2493,6 @@
 /turf/simulated/floor/usedup,
 /area/ship/scrap/maintenance/eva)
 "eB" = (
-/obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 1
-	},
 /obj/machinery/airlock_sensor{
 	id_tag = "eva_sensor";
 	pixel_y = 40
@@ -2519,6 +2515,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor/usedup,
 /area/ship/scrap/maintenance/eva)
 "eC" = (
@@ -2716,6 +2713,7 @@
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/reinforced/fifty,
+/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/tiled/usedup,
 /area/ship/scrap/maintenance/storage)
 "eT" = (
