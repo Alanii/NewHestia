@@ -174,3 +174,14 @@
 	name = "beret"
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
+
+
+/obj/item/clothing/head/beret/pcrc
+	name = "PCRC beret"
+	desc = "A navy blue beret adorned with the crest of Proxima Centari Risk Control. For asset protection agents that are more inclined towards style than safety."
+	icon_state = "beret_corporate_pcrc"
+
+/obj/item/clothing/head/beret/saare
+	name = "SAARE beret"
+	desc = "A dull green beret adorned with the logo of Strategic Assault and Asset Retention Enterprises. For corporate mercenaries that are more inclined towards style than safety."
+	icon_state = "beret_corporate_saare"
