@@ -341,3 +341,15 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	flash_protection = FLASH_PROTECTION_MAJOR
+
+// Taj headstuff
+
+/obj/item/clothing/head/tajaran/circlet
+	name = "golden dress circlet"
+	desc = "A golden circlet with a pearl in the middle of it."
+	icon_state = "taj_circlet"
+
+/obj/item/clothing/head/tajaran/circlet/silver
+	name = "silver dress circlet"
+	desc = "A silver circlet with a pearl in the middle of it."
+	icon_state = "taj_circlet_s"
