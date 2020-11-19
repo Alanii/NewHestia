@@ -122,8 +122,7 @@ datum/gear/head/ECdepartment/New()
 	berets["NTEF command beret"] = /obj/item/clothing/head/beret/solgov/fleet/command
 	berets["NTEF engineering beret"] = /obj/item/clothing/head/beret/solgov/fleet/engineering
 	berets["NTEF medical beret"] = /obj/item/clothing/head/beret/solgov/fleet/medical
-	berets["NTEF beret"] = /obj/item/clothing/head/beret/solgov/expedition
+	berets["NTEF beret"] = /obj/item/clothing/head/beret/solgov/fleet
 	berets["NTEF supply beret"] = /obj/item/clothing/head/beret/solgov/fleet/supply
 	berets["NTEF exploration beret"] = /obj/item/clothing/head/beret/solgov/fleet/exploration
 	gear_tweaks += new/datum/gear_tweak/path(berets)
-
