@@ -30,3 +30,13 @@
 	display_name = "corporate security beret"
 	path = /obj/item/clothing/head/beret/guard
 	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/private_security)
+
+/datum/gear/head/pcrcberet
+	display_name= "PCRC beret"
+	path = /obj/item/clothing/head/beret/pcrc
+	allowed_branches = list(/datum/mil_branch/private_security)
+
+/datum/gear/head/saareberet
+	display_name= "SAARE beret"
+	path = /obj/item/clothing/head/beret/saare
+	allowed_branches = list(/datum/mil_branch/private_security)
