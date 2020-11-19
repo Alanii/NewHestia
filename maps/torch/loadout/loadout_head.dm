@@ -40,6 +40,12 @@
 	cost = 0
 	allowed_branches = NT_BRANCHES
 
+/datum/gear/head/echat
+	display_name = "NTEF field cap"
+	path = /obj/item/clothing/head/soft/solgov/fleet/ntef
+	cost = 0
+	allowed_branches = NT_BRANCHES
+
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
 

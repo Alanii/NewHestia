@@ -90,6 +90,12 @@
 	icon_state = "blueservice_comm"
 	item_state = "blueservice_comm"
 
+/obj/item/clothing/suit/storage/solgov/service/fleet/captain
+	name = "fleet senior officer's service jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents."
+	icon_state = "blueservice_cap"
+	item_state = "blueservice_cap"
+
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "fleet flag officer's service jacket"
 	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with blood-red accents."
@@ -225,9 +231,15 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
-	desc = "A black blue NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_comm"
 	item_state = "whitedress_comm"
+
+/obj/item/clothing/suit/storage/solgov/dress/fleet/captain
+	name = "fleet captain's dress jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents, denoting it as a captain's. Shiny."
+	icon_state = "whitedress_cap"
+	item_state = "whitedress_cap"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"

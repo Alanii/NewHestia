@@ -165,6 +165,11 @@
 	desc = "A white dress uniform cover. This one has a gold stripe and NT's Expeditionary Fleet crest."
 	icon_state = "whitepeakcap_com"
 
+/obj/item/clothing/head/solgov/dress/fleet/captain
+	name = "fleet captain's dress wheel cover"
+	desc = "A black dress uniform cover. This one has a gold anchor and NT's Expeditionary Fleet crest."
+	icon_state = "whitepeakcap_cap"
+
 /obj/item/clothing/head/solgov/dress/army
 	name = "marine dress wheel cover"
 	desc = "A white dress uniform cover with an SCG Marine Corp crest."
