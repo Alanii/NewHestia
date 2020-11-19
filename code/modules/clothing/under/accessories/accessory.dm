@@ -121,6 +121,35 @@
 	desc = "A stylish scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks."
 	icon_state = "whitescarf"
 
+/obj/item/clothing/accessory/taj_scarf
+	name = "fur scarf"
+	desc = "A furred scarf, a common tajaran vanity item, this one is brown."
+	icon_state = "furscarf_brown"
+
+/obj/item/clothing/accessory/taj_scarf/lbrown
+	desc = "A furred scarf, a common tajaran vanity item, this one is light brown."
+	icon_state = "furscarf_lbrown"
+
+/obj/item/clothing/accessory/taj_scarf/blue
+	desc = "A furred scarf, a common tajaran vanity item, this one is blue."
+	icon_state = "furscarf_blue"
+
+/obj/item/clothing/accessory/taj_scarf/silver
+	desc = "A furred scarf, a common tajaran vanity item, this one is silver."
+	icon_state = "furscarf_silver"
+
+/obj/item/clothing/accessory/taj_scarf/black
+	desc = "A furred scarf, a common tajaran vanity item, this one is black."
+	icon_state = "furscarf_black"
+
+/obj/item/clothing/accessory/taj_scarf/ruddy
+	desc = "A furred scarf, a common tajaran vanity item, this one is ruddy."
+	icon_state = "furscarf_ruddy"
+
+/obj/item/clothing/accessory/taj_scarf/cream
+	desc = "A furred scarf, a common tajaran vanity item, this one is cream."
+	icon_state = "furscarf_cream"
+
 //Bracelets
 /obj/item/clothing/accessory/bracelet
 	name = "bracelet"

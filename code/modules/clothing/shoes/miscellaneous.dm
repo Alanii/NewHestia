@@ -252,3 +252,21 @@ obj/item/clothing/shoes/heels/red
 	name = "red high heels"
 	desc = "A pair of red high heels."
 	color = COLOR_RED
+
+/obj/item/clothing/shoes/footwraps
+	name = "cloth footwraps"
+	desc = "A roll of treated cloth used for wrapping clawed feet."
+	icon_state = "clothwrap"
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/clothing/shoes/gildedwraps
+	name = "gilded leg wraps"
+	desc = "Ankle coverings for digitigrade creatures. Gilded in gold!"
+	icon_state = "gildedwrap"
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/clothing/shoes/silverwraps
+	name = "silver leg wraps"
+	desc = "Ankle coverings for digitigrade creatures. It's silver!"
+	icon_state = "silverwrap"
+	w_class = ITEM_SIZE_TINY
