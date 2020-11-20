@@ -17,7 +17,7 @@
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/ec/o1,)
+		/datum/mil_rank/ec/o1)
 	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC)
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_solgov_crew, access_medical, access_maint_tunnels)
 	minimal_access = list()
@@ -149,6 +149,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor
 	)
-
+	
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew, access_radio_host)
-	minimal_access = list()
+	minimal_access = list() 

@@ -3314,8 +3314,6 @@
 #include "maps\torch\torch.dm"
 #include "maps\torch\torch_define.dm"
 #include "maps\torch\game\antagonist\outsider\terrorist.dm"
-#include "maps\torch\job\torch_jobs.dm"
-#include "maps\torch\job\torch_jobs_boh.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"
