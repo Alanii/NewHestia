@@ -24,16 +24,15 @@
 	cold_level_2 = SYNTH_COLD_LEVEL_2
 	cold_level_3 = SYNTH_COLD_LEVEL_3
 
-	heat_level_1 = SYNTH_HEAT_LEVEL_1		// Gives them about 25 seconds in space before taking damage
+	heat_level_1 = SYNTH_HEAT_LEVEL_1		// Gives them about 35 seconds in space before taking damage
 	heat_level_2 = SYNTH_HEAT_LEVEL_2
 	heat_level_3 = SYNTH_HEAT_LEVEL_3
 
-	body_temperature = null
-	passive_temp_gain = 5  // This should cause IPCs to stabilize at ~80 C in a 20 C environment.
+	body_temperature = 330.5 //Warmer than a normal human, but not 80C like a standard IPC
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE// | SPECIES_IS_WHITELISTED
-	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS //IPCs can wear undies too :(
+	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS
 
 	blood_color = "#75c6f4"
 	flesh_color = "#575757"
@@ -82,11 +81,8 @@
 		TAG_FACTION = FACTION_POSITRONICS
 	)
 
-	brute_mod =      1.2
-	burn_mod =       1.6
-
-/datum/species/shell/get_bodytype(var/mob/living/carbon/human/H)
-	return SPECIES_HUMAN
+	brute_mod =      1.2 //Not quite as durable as an IPC
+	burn_mod =       1.6 //Lasers will unmake you
 
 /datum/species/shell/handle_death(var/mob/living/carbon/human/H)
 	..()
@@ -98,7 +94,7 @@
 /datum/species/shell/post_organ_rejuvenate(var/obj/item/organ/org, var/mob/living/carbon/human/H)
 	var/obj/item/organ/external/E = org
 	if(istype(E) && !BP_IS_ROBOTIC(E))
-		E.robotize("Vey-Med")
+		E.robotize("Zeng Hu Shell Chassis MK3")
 
 /datum/species/shell/get_blood_name()
 	return "coolant"
