@@ -28,7 +28,6 @@
 #define FACTION_SPACECOPS  "Sol Federal Police"
 #define FACTION_SAARE			"Strategic Assault and Asset Retention Enterprises"
 
-
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
 #define HOME_SYSTEM_MARS       "Mars"
