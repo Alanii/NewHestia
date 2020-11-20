@@ -9,7 +9,7 @@
 	uniform =  /obj/item/clothing/under/solgov/utility/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
-	head = /obj/item/clothing/head/soft/solgov/fleet
+	head = /obj/item/clothing/head/soft/solgov/fleet/ntef
 	id_type = /obj/item/weapon/card/id/torch/gold
 	pda_type = /obj/item/modular_computer/pda/captain
 
