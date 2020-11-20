@@ -26,6 +26,8 @@
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
 #define FACTION_SPACECOPS  "Sol Federal Police"
+#define FACTION_SAARE			"Strategic Assault and Asset Retention Enterprises"
+
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"

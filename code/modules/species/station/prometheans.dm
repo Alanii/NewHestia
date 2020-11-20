@@ -134,6 +134,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 			FACTION_FREETRADE,
 			FACTION_PCRC,
 			FACTION_DAIS,
+			FACTION_SAARE,
 			FACTION_OTHER
 		),
 		TAG_RELIGION =  list(
