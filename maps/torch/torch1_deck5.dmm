@@ -5749,7 +5749,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kv" = (
-/obj/machinery/suit_cycler/pilot,
+/obj/machinery/suit_cycler/pilot{
+	req_access = list("ACCESS_CAPTAIN","ACCESS_BRIDGE","ACCESS_TORCH_PILOT")
+	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
