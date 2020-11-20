@@ -302,7 +302,7 @@
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
 	name = "fleet winter coat"
-	icon_state = "coatfl"
+	icon_state = "coatec"
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -310,6 +310,7 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	desc = "A black NTEF winter coat. Warm!"
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet
 	name = "fleet engineering jacket"
