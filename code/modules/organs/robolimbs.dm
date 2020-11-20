@@ -213,8 +213,6 @@ var/datum/robolimb/basic_robolimb
 	skintone = 1
 	unavailable_at_fab = 1
 	allowed_bodytypes = list(SPECIES_SHELL)
-	species_cannot_use = list(SPECIES_IPC)
-	species_cannot_use = list()
 
 /datum/robolimb/zenghumk3
 	company = "Zeng Hu Shell Chassis MK3"
@@ -224,8 +222,6 @@ var/datum/robolimb/basic_robolimb
 	skintone = 1
 	unavailable_at_fab = 1
 	allowed_bodytypes = list(SPECIES_SHELL)
-	species_cannot_use = list(SPECIES_IPC)
-	species_cannot_use = list()
 
 /datum/robolimb/shellguard
 	company = "Shellguard"
