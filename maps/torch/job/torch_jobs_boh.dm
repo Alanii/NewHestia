@@ -357,10 +357,18 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
 		/datum/mil_rank/marine_corps/o1,
-		/datum/mil_rank/marine_corps/o2
+		/datum/mil_rank/marine_corps/o2,
 	)
 
 /datum/job/janitor
