@@ -38,7 +38,7 @@
 			return 0
 
 	if(!..())
-		if(storedgloves) 	//Put the old shoes back on if the check fails.
+		if(storedgloves) 	//Put the old gloves back in the check fails
 			if(H.equip_to_slot_if_possible(storedgloves, slot_gloves))
 				src.storedgloves = null
 		return 0
