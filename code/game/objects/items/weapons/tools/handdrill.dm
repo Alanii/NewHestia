@@ -5,14 +5,14 @@
 	desc = "A simple powered hand drill. It's fitted with a screw bit."
 	icon_state = "drill_screw"
 	item_state = "drill"
-    slot_flags = SLOT_BELT
-    matter = list(MATERIAL_STEEL = 250)
+	slot_flags = SLOT_BELT
+	matter = list(MATERIAL_STEEL = 250)
 	force = 5
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 3)
 	attack_verb = list("drilled", "screwed", "jabbed","whacked")
-    lock_picking_level = 1 // good luck?
-    build_from_parts = FALSE
+	lock_picking_level = 1 // good luck?
+	build_from_parts = FALSE
 
 /obj/item/weapon/screwdriver/power/attack_self(mob/user)
 	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
@@ -27,7 +27,7 @@
 	desc = "A simple powered hand drill. It's fitted with a bolt driver bit."
 	icon_state = "drill_bolt"
 	item_state = "drill"
-    matter = list(MATERIAL_STEEL = 250)
+	matter = list(MATERIAL_STEEL = 250)
 	force = 5
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 3)
