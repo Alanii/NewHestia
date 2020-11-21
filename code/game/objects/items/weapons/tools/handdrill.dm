@@ -16,14 +16,14 @@
 
 /obj/item/weapon/screwdriver/power/attack_self(mob/user)
 	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
-	var/obj/item/weapon/wrench/power/b_drill = new /obj/item/weapon/wrench/power()
+	var/obj/item/b_drill = new /obj/item/weapon/wrench/power()
 	b_drill.name = name
 	to_chat(user, "<span class='notice'>You attach the bolt driver bit to [src].</span>")
 	qdel(src)
 	user.put_in_active_hand(b_drill)
 
 /obj/item/weapon/wrench/power
-    name = "hand drill"
+	name = "hand drill"
 	desc = "A simple powered hand drill. It's fitted with a bolt driver bit."
 	icon_state = "drill_bolt"
 	item_state = "drill"
@@ -40,8 +40,8 @@
 
 /obj/item/weapon/wrench/power/attack_self(mob/user)
 	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
-	var/obj/item/screwdriver/power/b_drill = new /obj/item/weapon/screwdriver/power()
-	b_drill.name = name
+	var/obj/item/s_drill = new /obj/item/weapon/screwdriver/power()
+	s_drill.name = name
 	to_chat(user, "<span class='notice'>You attach the screwdriver bit to [src].</span>")
 	qdel(src)
-	user.put_in_active_hand(b_drill)
+	user.put_in_active_hand(s_drill)
