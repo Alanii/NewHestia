@@ -61,7 +61,7 @@
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/marine,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/biomech/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/biomech,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/biomech
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/w2,

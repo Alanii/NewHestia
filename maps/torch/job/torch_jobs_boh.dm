@@ -309,7 +309,7 @@
 		/datum/mil_rank/marine_corps/w3,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
-		/datum/mil_rank/marine_corps/e8,
+		/datum/mil_rank/marine_corps/e8
 	)
 
 /datum/job/detective
