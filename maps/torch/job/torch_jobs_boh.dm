@@ -265,7 +265,7 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-        /datum/mil_rank/fleet/o1,
+	/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
