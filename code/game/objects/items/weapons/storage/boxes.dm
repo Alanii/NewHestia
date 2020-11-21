@@ -347,6 +347,12 @@
 	icon_state = "donk_kit"
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/donkpocket/sinpocket = 6)
 
+/obj/item/weapon/storage/box/stingers
+	name = "box of stinger grenades"
+	desc = "A box containing 5 military grade stinger grenades.<br> WARNING: Live explosives. Misuse may result in serious injury or death."
+	icon_state = "flashbang"
+	startswith = list(/obj/item/weapon/grenade/stinger = 5)
+
 //cubed animals
 
 /obj/item/weapon/storage/box/monkeycubes

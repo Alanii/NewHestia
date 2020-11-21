@@ -322,3 +322,12 @@
 	containername = "security voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_brig
+
+/decl/hierarchy/supply_pack/security/stinger
+	name = "Weapons - Stingers"
+	contains = list(/obj/item/weapon/storage/box/stingers = 2)
+	cost = 40
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "stinger crate"
+	access = access_armory
+	security_level = SUPPLY_SECURITY_ELEVATED
