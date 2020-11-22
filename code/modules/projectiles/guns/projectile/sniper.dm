@@ -118,13 +118,13 @@
 	max_shells = 5
 	ammo_type = /obj/item/ammo_casing/rifle/military/large
 	one_hand_penalty = 6
-	accuracy = -4
+	accuracy = 0
 	bulk = 8
-	scoped_accuracy = 9
-	scope_zoom = 2
+	scoped_accuracy = 6
+	scope_zoom = 1
 	wielded_item_state = "z8carbine-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
-	fire_delay = 30
+	fire_delay = 20
 
 /obj/item/weapon/gun/projectile/heavysniper/imprifle
 	item_icons = list(

@@ -290,12 +290,13 @@
 /////////
 /obj/item/weapon/gun/projectile/shotgun/sabotgun
 	name = "GS-95 Tectonic"
-	desc = "Built for light anti-materiel use, the Hephaestus Industries GS-95 Teutonic is for frontline support infantry. \
-	It features a built in magazine, and must be loaded by hand."
+	desc = "Built for light anti-material use, the Hephaestus Industries GS-95 Teutonic is for frontline support infantry. \
+	It features a built in magazine, but must be loaded by hand."
 	icon = 'icons/boh/items/shotguns.dmi'
 	icon_state = "sexyshotgun"
 	item_state = "sexyshotgun"
 	wielded_item_state = "sexyshotgun-wielded"
+	w_class = ITEM_SIZE_HUGE
 	load_method = SINGLE_CASING
 	handle_casings = EJECT_CASINGS
 	max_shells = 8
