@@ -5,7 +5,7 @@
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	slot_flags = SLOT_BELT
 	max_shots = 14
 	fire_delay = 4
 	force = 4
@@ -51,7 +51,7 @@
 	icon_state = "smallgunstun"
 	max_shots = 5
 	w_class = ITEM_SIZE_SMALL
-	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	slot_flags = SLOT_BELT
 	force = 2 //it's the size of a car key, what did you expect?
 	modifystate = "smallgunstun"
 	base_parry_chance = 10
