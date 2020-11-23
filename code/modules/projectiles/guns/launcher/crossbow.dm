@@ -55,6 +55,7 @@
 	fire_sound = 'sound/weapons/gunshot/xbow.ogg' // TODO: Decent THWOK noise.
 	fire_sound_text = "a solid thunk"
 	fire_delay = 25
+	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	has_safety = FALSE
 

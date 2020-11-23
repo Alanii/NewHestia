@@ -41,7 +41,8 @@
 
 	name = "spike thrower"
 	desc = "A vicious alien projectile weapon. Parts of it quiver gelatinously, as though the thing is insectile and alive."
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
 	ammo_name = "spike"
 	ammo_type = /obj/item/weapon/spike
 	release_force = 30

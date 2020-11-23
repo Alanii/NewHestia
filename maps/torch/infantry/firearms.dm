@@ -301,6 +301,8 @@
 	max_shells = 8
 	ammo_type = /obj/item/ammo_casing/sabot
 	caliber = CALIBER_SABOT
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
 	jam_chance = 25 //big ol' gun. Purely for balance.

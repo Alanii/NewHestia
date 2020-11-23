@@ -112,7 +112,7 @@
 	icon = 'icons/obj/guns/launchers.dmi'
 	icon_state = "riotgun"
 	item_state = "c20r"
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
 	projectile_type = /obj/item/projectile/meteor
 	cell_type = /obj/item/weapon/cell/potato
@@ -216,7 +216,8 @@
 	icon = 'icons/boh/items/launchers.dmi' //really shitty cut of the railgun until an actual sprite is slapped up.
 	icon_state = "skrell_launcher"
 	item_state = "skrell_launcher"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
 	cell_type = /obj/item/weapon/cell
 	self_recharge = 1
 	move_delay = 4

@@ -25,7 +25,8 @@
 	icon = 'icons/obj/guns/darkcannon.dmi'
 	icon_state = "darkcannon"
 	item_state = "darkcannon"
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
 	projectile_type = /obj/item/projectile/beam/stun/darkmatter
 	one_hand_penalty = 2 //a little bulky
 	self_recharge = 1
@@ -48,7 +49,8 @@
 	icon = 'icons/obj/guns/noise.dmi'
 	icon_state = "noise"
 	item_state = "noise"
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
 	one_hand_penalty = 1
 	self_recharge = 1
 	recharge_time = 10

@@ -65,10 +65,10 @@
 	icon = 'icons/obj/guns/syringegun.dmi'
 	icon_state = "syringegun"
 	item_state = "syringegun"
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
 	force = 7
 	matter = list(MATERIAL_STEEL = 2000)
-	slot_flags = SLOT_BELT
 
 	fire_sound = 'sound/weapons/empty.ogg'
 	fire_sound_text = "a metallic thunk"

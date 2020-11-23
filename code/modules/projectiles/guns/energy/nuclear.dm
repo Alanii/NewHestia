@@ -4,6 +4,8 @@
 	icon = 'icons/obj/guns/energy_gun.dmi'
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	max_shots = 14
 	fire_delay = 4
 	force = 4
@@ -23,7 +25,7 @@
 	name = "XV-5 handgun"
 	desc = "A common Skrellian side-arm, the Xuxquu*'Voom-5, or XV-5, is a more traditional energy weapon, tuned to dispense beams in three different wavelengths."
 	w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	icon = 'icons/obj/guns/skrell_pistol.dmi'
 	icon_state = "skrell_pistol_stun_100"
 	max_shots = 10
@@ -49,6 +51,7 @@
 	icon_state = "smallgunstun"
 	max_shots = 5
 	w_class = ITEM_SIZE_SMALL
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 2 //it's the size of a car key, what did you expect?
 	modifystate = "smallgunstun"
 	base_parry_chance = 10
@@ -71,8 +74,8 @@
 	icon = 'icons/obj/guns/adv_egun.dmi'
 	icon_state = "nucgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
-	slot_flags = SLOT_BELT
-	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
 	force = 8 //looks heavier than a pistol
 	self_recharge = 1
 	modifystate = null
