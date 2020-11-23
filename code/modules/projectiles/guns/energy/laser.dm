@@ -92,7 +92,7 @@ obj/item/weapon/gun/energy/retro
 	icon = 'icons/obj/guns/laser_cannon.dmi'
 	item_state = null
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BACK
 	one_hand_penalty = 6 //large and heavy
 	w_class = ITEM_SIZE_HUGE
 	projectile_type = /obj/item/projectile/beam/heavylaser
@@ -118,11 +118,11 @@ obj/item/weapon/gun/energy/retro
 	icon = 'icons/obj/guns/xray.dmi'
 	icon_state = "xray"
 	item_state = "xray"
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3, TECH_MAGNET = 2, TECH_ESOTERIC = 2)
 	projectile_type = /obj/item/projectile/beam/xray/midlaser
 	one_hand_penalty = 2
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
 	charge_cost = 15
 	max_shots = 10
 	wielded_item_state = "gun_wielded"
