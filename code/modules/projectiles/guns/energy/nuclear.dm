@@ -74,8 +74,8 @@
 	icon = 'icons/obj/guns/adv_egun.dmi'
 	icon_state = "nucgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
-	slot_flags = SLOT_BACK
-	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
 	force = 8 //looks heavier than a pistol
 	self_recharge = 1
 	modifystate = null
