@@ -6,7 +6,7 @@
 	ask_verb = "purrs"
 	exclaim_verb = "roars"
 	colour = "tajaran"
-	key = "r"
+	key = "w"
 	flags = WHITELISTED
 	syllables = list("riil'", "n'", "mree", "no'", "ssi", "zis'", "ja'", "a", "hs'", "rro", "mau'", "na", "nen", "baust'", "et", "holr", "zin", "za'", "z")
 	shorthand = "Zrz"
