@@ -339,7 +339,6 @@
 	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
-		/datum/mil_branch/solgov,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine,
 		/datum/mil_branch/private_security
 	)
@@ -350,7 +349,6 @@
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5,
-		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/maa/pcrc,
 		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/maa/saare
 	)
