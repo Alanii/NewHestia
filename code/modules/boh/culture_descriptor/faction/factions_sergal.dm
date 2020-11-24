@@ -6,7 +6,7 @@
 	Due to this, this nation is also known as the honorable name, 'The Golden Metropolis'.\
 	This nation has been founded and built by Sergals and Agudners, mainly their Southern species, native residents in this land, while recording a long time and history continuing from ancient times.\
 	Towards the later stages of the Rain Calendar, all kinds of three sentient Eltus races live together here as Nevrean immigrants have settled into the nation In addition to this, a wide variety of people who have a different nationality often come to visit or even immigrate here from various foreign lands. "
-
+	language = LANGUAGE_SERGAL
 
 /decl/cultural_info/faction/sergal/shigu
 	name = FACTION_SERGAL_SHIGU
@@ -15,6 +15,7 @@
 	In the past, it was an unexplored area covered with the primeval forest of the Talyxian biomes. Except that primitive Northern sergal tribes were scattered and living, was not having adequate Eltus technology and civilized lifestyle. Until Rain's emergence as a leader and her efforts to unify the Northern tribes, there was no even the name of the country as well.\
 	Since the year of the Rain-Calendar 20, it was unified as the name of the Kingdom and Rain Silves' clan, formed from a conglomerate of unified tribes under one flag.\
 	The 'Shigu Kingdom' collapsed during the late stage of world war. And after the end of the war, it reconstructed as the 'Shigu Dukedom', developed as a large city of Northern Tal."
+	language = LANGUAGE_SERGAL
 
 /decl/cultural_info/faction/sergal/reono
 	name = FACTION_SERGAL_REONO
@@ -24,3 +25,4 @@
 	This trade route is vital to the Eastern economy. Reono has a culture similar to what is found in the South, and are renown for their aptitude to produce expert hunters.\
 	Reono is composed of trade-based villages and towns populated by mixed-breed Eastern sergals, and agudners. Many of these sergals are Southern in origin.\
 	Much of their culture and technology was influenced and imported by these southern sergals, such as their long-term cohabitation with agudners and a police force similar to the Gold Ring Vigilance Committee."
+	language = LANGUAGE_SERGAL
