@@ -296,6 +296,7 @@
 	item_state = "sexyshotgun"
 	wielded_item_state = "sexyshotgun-wielded"
 	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING
 	handle_casings = EJECT_CASINGS
 	max_shells = 8

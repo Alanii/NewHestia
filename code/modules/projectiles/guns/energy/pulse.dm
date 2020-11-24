@@ -24,7 +24,7 @@
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
 	icon = 'icons/obj/guns/pulse_carbine.dmi'
 	icon_state = "pulse_carbine"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK
 	force = 8
 	projectile_type = /obj/item/projectile/beam/pulse/mid
 	max_shots = 24
