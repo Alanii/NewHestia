@@ -33,7 +33,7 @@
 
 /obj/item/clothing/head/infilhat/fem
 	name = "maid's headband"
-	desc = "This dainty, frilled thing is apparently meant to go on your head."
+	desc = "This dainty, frilled thing is apparently meant to go on your head. This one seems armored."
 	icon_state = "infhatfem"
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi')
