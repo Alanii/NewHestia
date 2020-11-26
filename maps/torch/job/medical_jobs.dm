@@ -177,7 +177,8 @@
 
 	max_skill = list(	SKILL_ANATOMY     = SKILL_ADEPT,
 	                    SKILL_CHEMISTRY   = SKILL_EXPERT,
-						SKILL_MEDICAL     = SKILL_EXPERT)
+						SKILL_MEDICAL     = SKILL_EXPERT,
+						SKILL_HAULING     = SKILL_SPEC)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_surgery, access_medical_equip, access_solgov_crew)
