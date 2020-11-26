@@ -177,7 +177,7 @@
 /obj/item/clothing/accessory/armguards/tactical
 	name = "arm guards"
 	desc = "A pair of arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_tan_tac"
+	icon_state = "armguards_tac"
 
 /obj/item/clothing/accessory/armguards/merc
 	name = "heavy arm guards"
