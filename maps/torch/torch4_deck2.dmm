@@ -233,9 +233,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "emergency core eject"
-	},
 /obj/machinery/button/blast_door{
 	desc = "A remote switch to open the engine core vent to space.";
 	id_tag = "EngineVent";
@@ -249,6 +246,11 @@
 	name = "Emergency Engine Room Vents";
 	pixel_x = -24;
 	pixel_y = -6
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 1;
+	name = "Emergency Core Eject";
+	req_access = list("ACCESS_ENGINEERING")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engine_monitoring)
@@ -442,7 +444,8 @@
 /obj/structure/table/rack,
 /obj/item/weapon/rig/medical/equipped,
 /obj/machinery/door/window/brigdoor/southleft{
-	name = "suit storage"
+	name = "Medical Rescue suit storage";
+	req_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
@@ -3131,8 +3134,8 @@
 	dir = 5
 	},
 /obj/machinery/light_construct/small{
-	icon_state = "bulb-construct-stage1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb-construct-stage1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)

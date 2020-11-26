@@ -106,7 +106,7 @@
 	desc = "The Z2 Hornet, is an older cousin of the Z9 Pitbull Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
-	item_state = "hornet"
+	item_state = "z2hornet"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
@@ -122,7 +122,7 @@
 	bulk = 8
 	scoped_accuracy = 6
 	scope_zoom = 1
-	wielded_item_state = "z8carbine-wielded"
+	wielded_item_state = "z2hornet-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 	fire_delay = 20
 
