@@ -108,7 +108,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
 	name = "STS-35"
-	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
+	desc = "The Hephaestus industries STS-35 is a reliable assault rifle. Originally mass produced for Terran Commonwealth as their main battle rifle, replaced now by the Z series of weapons. The serial number has been scratched off."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
 	item_state = null
@@ -144,6 +144,44 @@
 	else
 		icon_state = "arifle-empty"
 		wielded_item_state = "arifle-wielded-empty"
+
+/obj/item/weapon/gun/projectile/automatic/assault_rifle/rhino
+	name = "HT Primus"
+	desc = "The HelTek Primus commonly refered to as Rhino for its weight and recoil, is a specilized assault rifle meant to rival its Sol counterpart."
+	icon = 'icons/obj/guns/rhino.dmi'
+	icon_state = "rhino"
+	item_state = "rhino"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	caliber = CALIBER_RIFLE_MILITARY
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ESOTERIC = 5)
+	slot_flags = SLOT_BACK
+	load_method = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
+	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large)
+	one_hand_penalty = 10
+	accuracy_power = 7
+	accuracy = 3
+	bulk = GUN_BULK_RIFLE + 1
+	wielded_item_state = "rhino-wielded"
+	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
+	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
+
+	firemodes = list(
+		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="bumpfire", burst=2, fire_delay=null, move_delay=6,    one_hand_penalty=9, burst_accuracy=list(0,-1,),       dispersion=list(0.0, 1.0)),
+		list(mode_name="short bursts",   burst=4, fire_delay=null, move_delay=6,    one_hand_penalty=11, burst_accuracy=list(0,-1,-2,-3,), dispersion=list(0.6, 1.0, 1.2, 1.5)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/assault_rifle/rhino/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "rhino"
+		wielded_item_state = "rhino-wielded"
+	else
+		icon_state = "rhino-empty"
+		wielded_item_state = "rhino-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
 	name = "WT-550 Saber"

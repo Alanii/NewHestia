@@ -74,6 +74,12 @@
 	item_cost = 48
 	path = /obj/item/weapon/gun/projectile/automatic/merc_smg
 
+/datum/uplink_item/item/visible_weapons/rhino
+	name = "Terran Assault Rifle"
+	desc = "An UCG army rifle with three togglable fire modes."
+	item_cost = 64
+	path = /obj/item/weapon/gun/projectile/automatic/assault_rifle/rhino
+
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
 	desc = "A common rifle with three togglable fire modes."

@@ -82,6 +82,7 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 		/obj/item/weapon/gun/projectile/automatic/merc_smg,
 		/obj/item/weapon/gun/projectile/automatic/sec_smg,
 		/obj/item/weapon/gun/projectile/automatic/assault_rifle,
+		/obj/item/weapon/gun/projectile/automatic/assault_rifle/rhino,
 		/obj/item/weapon/gun/projectile/shotgun/pump,
 		/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 		/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
