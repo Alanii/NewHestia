@@ -1002,7 +1002,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
@@ -1017,6 +1016,7 @@
 /obj/item/ammo_magazine/mil_rifle/sec,
 /obj/item/ammo_magazine/mil_rifle/sec,
 /obj/item/ammo_magazine/mil_rifle/sec,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "abI" = (
@@ -2166,16 +2166,11 @@
 /obj/item/stack/material/plastic/fifty,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/steel/fifty,
-/obj/item/stack/material/steel/fifty,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aee" = (
@@ -2826,7 +2821,6 @@
 	},
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -2839,6 +2833,7 @@
 	dir = 4;
 	pixel_x = 21
 	},
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "afm" = (
@@ -3884,7 +3879,6 @@
 	},
 /obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
 /obj/item/clothing/accessory/storage/bandolier,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -3896,6 +3890,7 @@
 	name = "Beanbag Shotgun Case"
 	},
 /obj/structure/window/reinforced,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "ahd" = (
@@ -7328,7 +7323,6 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amK" = (
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -7345,6 +7339,7 @@
 /obj/item/clothing/head/helmet/tactical/black,
 /obj/item/clothing/head/helmet/tactical/black,
 /obj/item/clothing/head/helmet/tactical/black,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "amL" = (
@@ -7563,7 +7558,6 @@
 	health = 1e+006
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack,
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 4;
 	name = "Hornet Case"
@@ -7576,6 +7570,7 @@
 	dir = 1
 	},
 /obj/item/weapon/storage/box/ammo/hornetammo,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "ani" = (
@@ -7768,7 +7763,6 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 4;
@@ -7781,6 +7775,9 @@
 	dir = 1
 	},
 /obj/item/weapon/gun/energy/laser/secure,
+/obj/item/weapon/gun/energy/laser/secure,
+/obj/item/weapon/gun/energy/laser/secure,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "any" = (
@@ -7933,7 +7930,6 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/structure/table/rack,
 /obj/item/clothing/suit/armor/laserproof{
 	pixel_x = -2;
 	pixel_y = -2
@@ -7958,6 +7954,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "anL" = (
@@ -9631,13 +9628,13 @@
 /turf/simulated/floor/tiled/nullglass,
 /area/security/wing)
 "aqI" = (
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
 /obj/item/weapon/storage/box/ammo/solar/full,
 /obj/item/weapon/storage/box/ammo/solar/full,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aqJ" = (
@@ -10022,7 +10019,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/table/rack,
 /obj/machinery/door/window/brigdoor/westright{
 	name = "Stun Rifle case"
 	},
@@ -10030,6 +10026,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "ars" = (
@@ -10335,7 +10332,9 @@
 /turf/simulated/wall/prepainted,
 /area/medical/equipstorage)
 "arU" = (
-/obj/machinery/light_switch,
+/obj/machinery/light_switch{
+	pixel_y = -4
+	},
 /turf/simulated/wall/prepainted,
 /area/security/brig/perma)
 "arV" = (
@@ -10466,8 +10465,10 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ash" = (
-/obj/structure/reagent_dispensers/peppertank,
-/turf/simulated/wall/prepainted,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = 3
+	},
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/locker)
 "asi" = (
 /obj/machinery/light,
@@ -12176,17 +12177,8 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/processing)
 "axO" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
 /obj/machinery/light{
 	dir = 8
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
@@ -16659,10 +16651,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/storage/box/flashbangs,
-/obj/item/weapon/storage/box/teargas,
-/obj/item/weapon/storage/box/smokes,
-/obj/item/weapon/storage/box/stingers,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aXh" = (
@@ -19676,9 +19666,9 @@
 	level = 2
 	},
 /obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
@@ -20261,7 +20251,6 @@
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/machinery/reagent_temperature/cooler,
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
 "gdb" = (
@@ -20360,11 +20349,19 @@
 /obj/item/clothing/mask/breath/half,
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
 "gpe" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -20383,6 +20380,7 @@
 /obj/item/weapon/shield/riot,
 /obj/item/weapon/shield/riot,
 /obj/item/weapon/shield/riot,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "gqj" = (
@@ -20418,8 +20416,6 @@
 /area/medical/lounge)
 "grz" = (
 /obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -20434,6 +20430,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "gsb" = (
@@ -20703,7 +20700,6 @@
 /obj/item/weapon/airlock_brace,
 /obj/item/weapon/airlock_brace,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -20711,6 +20707,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "gHq" = (
@@ -23297,8 +23294,10 @@
 	health = 1e+006
 	},
 /obj/structure/window/reinforced,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/storage/box/stingers,
+/obj/item/weapon/storage/box/smokes,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/flashbangs,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "kbP" = (
@@ -24721,6 +24720,16 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/engineering/hardstorage/aux)
+"lQr" = (
+/obj/machinery/flasher{
+	id_tag = "permflash";
+	pixel_x = 0
+	},
+/obj/machinery/light_switch{
+	pixel_x = -21
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "lRa" = (
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -26840,13 +26849,13 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "oEb" = (
@@ -29066,13 +29075,13 @@
 /area/rnd/misc_lab)
 "rxD" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/item/weapon/gun/projectile/automatic/sec_smg,
 /obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "rxK" = (
@@ -32321,7 +32330,12 @@
 /area/maintenance/firstdeck/aftstarboard)
 "xMP" = (
 /obj/structure/table/standard,
-/obj/machinery/reagent_temperature,
+/obj/machinery/reagent_temperature{
+	pixel_y = 12
+	},
+/obj/machinery/reagent_temperature/cooler{
+	pixel_y = -2
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/rnd/misc_lab)
 "xNn" = (
@@ -40256,7 +40270,7 @@ wEn
 wEn
 gvJ
 vMH
-vMH
+ash
 vMH
 vMH
 vMH
@@ -40658,7 +40672,7 @@ oDg
 ilh
 jBk
 kVi
-ash
+hGs
 goa
 frA
 rnp
@@ -43904,7 +43918,7 @@ ahg
 aiT
 amd
 ahf
-ahg
+lQr
 ahf
 ani
 arU

@@ -977,6 +977,8 @@
 		/obj/item/weapon/handcuffs = 8,
 		/obj/item/weapon/grenade/flashbang = 4,
 		/obj/item/weapon/grenade/chem_grenade/teargas = 4,
+		/obj/item/weapon/grenade/smokebomb = 4,
+		/obj/item/weapon/grenade/stinger = 4,
 		/obj/item/device/flash = 5,
 		/obj/item/weapon/reagent_containers/food/snacks/donut/normal = 12,
 		/obj/item/weapon/storage/box/evidence = 6,
@@ -1442,17 +1444,11 @@
 		/obj/item/clothing/accessory/armguards/green = 8,
 		/obj/item/clothing/accessory/armguards/tan = 8,
 		/obj/item/clothing/accessory/armguards/blue = 8,
-		/obj/item/clothing/accessory/armguards/riot = 4,
-		/obj/item/clothing/accessory/armguards/ballistic = 2,
-		/obj/item/clothing/accessory/armguards/ablative = 2,
 		/obj/item/clothing/accessory/legguards = 12,
 		/obj/item/clothing/accessory/legguards/navy = 8,
 		/obj/item/clothing/accessory/legguards/green = 8,
 		/obj/item/clothing/accessory/legguards/tan = 8,
 		/obj/item/clothing/accessory/legguards/blue = 8,
-		/obj/item/clothing/accessory/legguards/riot = 4,
-		/obj/item/clothing/accessory/legguards/ballistic = 2,
-		/obj/item/clothing/accessory/legguards/ablative = 2,
 		/obj/item/clothing/accessory/storage/holster = 8,
 		/obj/item/clothing/accessory/storage/holster/armpit = 8,
 		/obj/item/clothing/accessory/storage/holster/hip = 8,
@@ -1462,8 +1458,6 @@
 		/obj/item/clothing/accessory/storage/pouches/large = 4,
 		/obj/item/clothing/accessory/ubac = 24,
 		/obj/item/clothing/accessory/armorplate = 8,
-		/obj/item/clothing/accessory/armorplate/medium = 6,
-		/obj/item/clothing/accessory/armorplate/tactical = 2,
-		/obj/item/clothing/accessory/armorplate/shock = 4)
+		/obj/item/clothing/accessory/armorplate/medium = 6,)
 	contraband = list(/obj/item/clothing/accessory/storage/bandolier = 2,/obj/item/clothing/accessory/storage/drop_pouches/black = 2)
 	
