@@ -198,3 +198,10 @@
 #define FACTION_SERGAL_REONO "Reono lands"
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+//Tajaran culture
+#define CULTURE_NAJRRO "Naj'rro' Ak'han (Those of the Free Spirit)"
+#define CULTURE_RAKARZIZ "Ra'kar'ziz Tajara (Seeker of the Faith)"
+#define CULTURE_NEERROM "Nee'rro'm Zan (Wanderers of the Tundra)"
+#define CULTURE_ZHAN "Zhan Tajara (Keepers of the Oath)"
+#define CULTURE_TAJARAN_OTHER "Other Tajaran"
