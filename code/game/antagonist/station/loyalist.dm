@@ -44,5 +44,5 @@ GLOBAL_DATUM_INIT(loyalists, /datum/antagonist/loyalists, new)
 			continue
 		var/datum/objective/protect/loyal_obj = new
 		loyal_obj.target = player.mind
-		loyal_obj.explanation_text = "Protect [player.real_name], the [player.mind.assigned_role]."
+		loyal_obj.explanation_text = "Protect [player.real_name], the [player.mind.assigned_role] with your life, regardless of their actions, your loyalty must remain absolute."
 		global_objectives += loyal_obj
