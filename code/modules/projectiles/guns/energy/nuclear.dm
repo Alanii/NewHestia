@@ -80,8 +80,8 @@
 
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="nucgunstun"),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate"nucgunshock"),
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate "nucgun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="nucgunshock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="nucgun"),
 		)
 
 	var/fail_counter = 0
