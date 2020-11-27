@@ -69,19 +69,19 @@
 	name = "advanced energy gun"
 	desc = "An energy gun with an experimental miniaturized reactor."
 	icon = 'icons/obj/guns/adv_egun.dmi'
-	icon_state = "nucgun"
+	icon_state = "nucgun100"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 8 //looks heavier than a pistol
 	self_recharge = 1
-	modifystate = null
+	modifystate = "nucgun"
 	one_hand_penalty = 1 //bulkier than an e-gun, but not quite the size of a carbine
 
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock),
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="nucgunstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate"nucgunshock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate "nucgun"),
 		)
 
 	var/fail_counter = 0
@@ -105,29 +105,3 @@
 			if(ismob(loc))
 				to_chat(loc, "<span class='warning'>\The [src] feels pleasantly warm.</span>")
 
-/obj/item/weapon/gun/energy/gun/nuclear/proc/get_charge_overlay()
-	var/ratio = power_supply.percent()
-	ratio = round(ratio, 25)
-	return "nucgun-[ratio]"
-
-/obj/item/weapon/gun/energy/gun/nuclear/proc/get_reactor_overlay()
-	if(fail_counter)
-		return "nucgun-medium"
-	if (power_supply.percent() <= 50)
-		return "nucgun-light"
-	return "nucgun-clean"
-
-/obj/item/weapon/gun/energy/gun/nuclear/proc/get_mode_overlay()
-	var/datum/firemode/current_mode = firemodes[sel_mode]
-	switch(current_mode.name)
-		if("stun") return "nucgun-stun"
-		if("kill") return "nucgun-kill"
-
-/obj/item/weapon/gun/energy/gun/nuclear/on_update_icon()
-	var/list/new_overlays = list()
-
-	new_overlays += get_charge_overlay()
-	new_overlays += get_reactor_overlay()
-	new_overlays += get_mode_overlay()
-
-	overlays = new_overlays
