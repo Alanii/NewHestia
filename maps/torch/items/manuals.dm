@@ -75,7 +75,7 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The NTF crest is stamped in the corner."
+	desc = "A thick envelope. The NTEF crest is stamped in the corner."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	..()
@@ -87,7 +87,7 @@
 	var/memo = {"
 	<tt><center><b><font color='red'>SECRET - CODE WORDS: DAGON</font></b>
 	<h3>NANOTRASEN FLEET COMMAND</h3>
-	<img src = ntlogo.png>
+	<img src = nteflogo.png>
 	</center>
 	<b>FROM:</b> ADM William Lau<br>
 	<b>TO:</b> Commanding Officer of NTSS Dagon<br>
@@ -130,7 +130,7 @@
 	info = {"
 	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS: DAGON UMBRA</font></b>
 	<h3>OFFICE OF THE SECRETARY GENERAL OF THE NANOTRASEN PRIVATE FLEET</h3>
-	<img src = ntlogo.png
+	<img src = nteflogo.png
 	</center>
 	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
 	<b>TO:</b> Commanding Officer of the NTSS Dagon<br>
