@@ -150,7 +150,7 @@
 	return "[holder] and [other.holder] seem to be on good terms, even if they differ from each other."
 
 /datum/relation/so
-	name = "Significiant Other"
+	name = "Significant Other"
 	desc = "You are romantically involved."
 	incompatible = list(/datum/relation/enemy, /datum/relation/ex)
 
