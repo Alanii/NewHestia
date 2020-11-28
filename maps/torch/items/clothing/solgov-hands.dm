@@ -23,7 +23,7 @@
 	desc = "These black duty gloves are made from durable insulated synthetic materials, and have a lovely orange accent color. This pair does not, in fact, protect your fingers."
 	icon_state = "duty_gloves_eng_fingerless"
 	item_state = "duty_gloves_eng_fingerless"
-	siemens_coefficient = 0.2 // turns out snipping fingers from insuls is a bad idea
+	siemens_coefficient = 0.8 // turns out snipping fingers from insuls is a bad idea, though it still provides some protection
 	permeability_coefficient = 0.15
 
 /obj/item/clothing/gloves/thick/duty/solgov/cmd
