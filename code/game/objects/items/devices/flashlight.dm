@@ -170,6 +170,7 @@
 	hitsound = "swing_hit"
 	flashlight_max_bright = 0.5
 	flashlight_outer_range = 5
+	base_parry_chance = 20
 
 /******************************Lantern*******************************/
 /obj/item/device/flashlight/lantern
