@@ -16,6 +16,7 @@
 	matter = list(MATERIAL_STEEL = 140)
 	center_of_mass = "x=16;y=20"
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+	base_parry_chance = 30
 
 /obj/item/weapon/crowbar/red
 	icon_state = "red_crowbar"
@@ -31,6 +32,7 @@
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_STEEL = 80)
+	base_parry_chance = 20
 
 	var/prybar_types = list("1","2","3","4","5")
 	var/valid_colours = list(COLOR_RED_GRAY, COLOR_BLUE_GRAY, COLOR_BOTTLE_GREEN, COLOR_MAROON, COLOR_DARK_BROWN, COLOR_VIOLET, COLOR_GRAY20)
