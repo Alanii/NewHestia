@@ -187,14 +187,15 @@
 	desc = "A large dufflebag for holding extra things."
 	icon_state = "duffle"
 	item_state_slots = null
-	w_class = ITEM_SIZE_HUGE
-	max_storage_space = DEFAULT_BACKPACK_STORAGE + 10
+	w_class = ITEM_SIZE_GARGANTUAN
+	max_w_class = ITEM_SIZE_HUGE
+	max_storage_space = DEFAULT_BACKPACK_STORAGE + 20
 
 /obj/item/weapon/storage/backpack/dufflebag/New()
 	..()
-	slowdown_per_slot[slot_back] = 3
-	slowdown_per_slot[slot_r_hand] = 1
-	slowdown_per_slot[slot_l_hand] = 1
+	slowdown_per_slot[slot_back] = 6
+	slowdown_per_slot[slot_r_hand] = 4
+	slowdown_per_slot[slot_l_hand] = 4
 
 /obj/item/weapon/storage/backpack/dufflebag/syndie
 	name = "black dufflebag"
