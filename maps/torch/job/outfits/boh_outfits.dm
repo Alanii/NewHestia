@@ -172,12 +172,14 @@
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)
 	. = ..()
 	var/obj/item/weapon/card/id/foundation_civilian/regis_card = new
+	var/obj/item/weapon/reagent_containers/pill/jerraman/psipill = new
 	if(rank)
 		regis_card.rank = rank
 	if(assignment)
 		regis_card.assignment = assignment
 	H.set_id_info(regis_card)
 	H.equip_to_slot_or_store_or_drop(regis_card)
+	H.equip_to_slot_or_store_or_drop(psipill)
 
 /decl/hierarchy/outfit/job/torch/crew/representative
 	name = OUTFIT_JOB_NAME("SolGov Representative")
