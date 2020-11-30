@@ -816,7 +816,7 @@
 	description = "A rare and expensive drug used legally by professionals to awaken psionic latencies in those who possess them, dangerous in higher doses."
 	reagent_state = LIQUID
 	color = "#d0ff00"
-	metabolism = 1
+	metabolism = REM * 0.5
 	overdose = 5
 
 	var/global/list/dose_messages = list(
