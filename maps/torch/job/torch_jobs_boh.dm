@@ -311,6 +311,11 @@
 		/datum/mil_rank/marine_corps/e7,
 		/datum/mil_rank/marine_corps/e8
 	)
+/datum/job/forencadet
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine
+	)
 
 /datum/job/detective
 	allowed_branches = list(

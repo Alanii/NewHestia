@@ -131,13 +131,13 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the entirety of Security"
+	alt_titles = list(
+		"Cadet"
+		)
 	economic_power = 1
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	selection_color = "#601c1c"
-	alt_titles = list(
-		"Forensics Trainee"
-		)
 	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_BASIC)
 	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
@@ -163,6 +163,64 @@
 
 /datum/job/seccadet/get_description_blurb()
 	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
+
+
+
+
+/datum/job/forencadet
+	title = "Forensics Trainee"
+	department = "Security"
+	department_flag = SEC
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Forensic Technician and Chief of Security"
+	economic_power = 1
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	selection_color = "#601c1c"
+	alt_titles = list(
+		"Detective Apprentice"
+		)
+	outfit_type = /decl/hierarchy/outfit/job/security/detective
+
+
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine
+
+	)
+
+
+
+	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_WEAPONS     = SKILL_BASIC,
+						SKILL_FORENSICS   = SKILL_AVERAGE,)
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT,
+	                    SKILL_FORENSICS   = SKILL_EXPERT)
+	skill_points = 20
+
+
+
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/marine_corps/e2,
+		/datum/mil_rank/marine_corps/e3
+	)
+
+	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva)
+
+/datum/job/forencadet/get_description_blurb()
+	return "You are a new cadet onboard [GLOB.using_map.full_name]. Make sure to Obey the Forensic Technician and the chief of security"
+
 
 //INFANTRY
 
