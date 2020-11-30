@@ -699,14 +699,13 @@ BLIND     // can't see anything
 		return FALSE
 	if (loc != user)
 		return FALSE
-	if (do_after(user, 2 SECONDS))
-		if (!user.put_in_hands(hidden_item))
-			to_chat(usr, SPAN_WARNING("You need an empty, unbroken hand to pull the [hidden_item] from the [src]."))
-			return TRUE
-		user.visible_message(SPAN_ITALIC("\The [user] pulls \the [hidden_item] from \the [src]."), range = 1)
-		playsound(get_turf(src), 'sound/effects/holster/tactiholsterout.ogg', 25)
-		verbs -= /obj/item/clothing/shoes/proc/remove_hidden
-		hidden_item = null
+	if (!user.put_in_hands(hidden_item))
+		to_chat(usr, SPAN_WARNING("You need an empty, unbroken hand to pull the [hidden_item] from the [src]."))
+		return TRUE
+	user.visible_message(SPAN_ITALIC("\The [user] pulls \the [hidden_item] from \the [src]."), range = 1)
+	playsound(get_turf(src), 'sound/effects/holster/tactiholsterout.ogg', 25)
+	verbs -= /obj/item/clothing/shoes/proc/remove_hidden
+	hidden_item = null
 	return TRUE
 
 /obj/item/clothing/shoes/proc/handle_movement(var/turf/walking, var/running)
