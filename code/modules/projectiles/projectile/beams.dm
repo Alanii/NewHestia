@@ -186,7 +186,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 20
+	agony = 35
 
 	muzzle_type = /obj/effect/projectile/stun/muzzle
 	tracer_type = /obj/effect/projectile/stun/tracer
@@ -195,7 +195,7 @@
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
 	damage = 2
-	agony = 40
+	agony = 55
 
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
