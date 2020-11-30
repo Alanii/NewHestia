@@ -22307,6 +22307,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
+/obj/item/weapon/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "iHb" = (
