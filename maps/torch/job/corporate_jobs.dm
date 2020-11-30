@@ -131,7 +131,7 @@
 		"Foundation Agent")
 
 /datum/job/psiadvisor/equip(var/mob/living/carbon/human/H)
-	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_COERCION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
+	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_LATENT, "[PSI_COERCION]" = PSI_RANK_LATENT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_LATENT, "[PSI_ENERGISTICS]" = PSI_RANK_LATENT)
 	return ..()
 
 /datum/job/psiadvisor/get_description_blurb()
