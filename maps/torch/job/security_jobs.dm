@@ -131,9 +131,6 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the entirety of Security"
-	alt_titles = list(
-		"Cadet"
-		)
 	economic_power = 1
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -220,7 +217,7 @@
 	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva)
 
 /datum/job/forencadet/get_description_blurb()
-	return "You are a new cadet onboard [GLOB.using_map.full_name]. Make sure to Obey the Forensic Technician and the chief of security"
+	return "You are a new Forensics Technician in training aboard the [GLOB.using_map.full_name]. Make sure to obey the Forensic Technician and the Chief of Security."
 
 
 //INFANTRY
