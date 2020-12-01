@@ -194,7 +194,7 @@
 
 
 	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
-						SKILL_ANATOMY     = SKILL_BASIC // Basic of anatomy for autopsy
+						SKILL_ANATOMY     = SKILL_BASIC, // Basic of anatomy for autopsy
 	                    SKILL_COMBAT      = SKILL_BASIC,
 						SKILL_WEAPONS     = SKILL_BASIC,
 						SKILL_FORENSICS   = SKILL_ADEPT,)
