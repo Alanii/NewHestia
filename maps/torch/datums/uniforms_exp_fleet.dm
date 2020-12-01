@@ -152,6 +152,18 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
+/decl/hierarchy/mil_uniform/fleet/eng/warrant
+	name = "NTEF engineering Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
 /decl/hierarchy/mil_uniform/fleet/eng/officer
 	name = "NTEF engineering CO"
 	min_rank = 16
@@ -231,6 +243,19 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+/decl/hierarchy/mil_uniform/fleet/sec/warrant
+	name = "NTEF security Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer
 	name = "NTEF security CO"
@@ -313,6 +338,19 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
+/decl/hierarchy/mil_uniform/fleet/med/warrant
+	name = "NTEF medical Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+
 /decl/hierarchy/mil_uniform/fleet/med/officer
 	name = "NTEF medical CO"
 	min_rank = 16
@@ -391,6 +429,19 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+/decl/hierarchy/mil_uniform/fleet/supply/warrant
+	name = "NTEF supply Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
 
 /decl/hierarchy/mil_uniform/fleet/sup/officer
 	name = "NTEF supply CO"
@@ -480,6 +531,19 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
+/decl/hierarchy/mil_uniform/fleet/srv/warrant
+	name = "NTEF service Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+
 /decl/hierarchy/mil_uniform/fleet/srv/officer
 	name = "NTEF service CO"
 	min_rank = 16
@@ -537,6 +601,18 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+/decl/hierarchy/mil_uniform/fleet/exp/warrant
+	name = "NTEF exploration Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/exp/officer
 	name = "NTEF exploration CO"
@@ -670,6 +746,18 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
+
+/decl/hierarchy/mil_uniform/fleet/sci/warrant
+	name = "NTEF science Warrant"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/warrant
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet
+	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer
 	name = "NTEF science CO"
