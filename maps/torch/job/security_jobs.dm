@@ -194,12 +194,13 @@
 
 
 	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+						SKILL_ANATOMY     = SKILL_BASIC // Basic of anatomy for autopsy
 	                    SKILL_COMBAT      = SKILL_BASIC,
 						SKILL_WEAPONS     = SKILL_BASIC,
-						SKILL_FORENSICS   = SKILL_AVERAGE,)
-	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT,
-	                    SKILL_FORENSICS   = SKILL_EXPERT)
+						SKILL_FORENSICS   = SKILL_ADEPT,)
+	max_skill = list(   SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_SPEC)
 	skill_points = 20
 
 
