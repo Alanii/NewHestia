@@ -12,15 +12,19 @@
 
 /obj/item/clothing/gloves/thick/duty/solgov/eng
 	name = "engineering duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color."
+	desc = "These black duty gloves are made from durable insulated synthetic materials, and have a lovely orange accent color."
 	icon_state = "duty_gloves_eng"
 	item_state = "duty_gloves_eng"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
 
 /obj/item/clothing/gloves/thick/duty/solgov/fingerless/eng
 	name = "fingerless engineering duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color. This pair does not, in fact, protect your fingers."
+	desc = "These black duty gloves are made from durable insulated synthetic materials, and have a lovely orange accent color. This pair does not, in fact, protect your fingers."
 	icon_state = "duty_gloves_eng_fingerless"
 	item_state = "duty_gloves_eng_fingerless"
+	siemens_coefficient = 0.8 // turns out snipping fingers from insuls is a bad idea, though it still provides some protection
+	permeability_coefficient = 0.15
 
 /obj/item/clothing/gloves/thick/duty/solgov/cmd
 	name = "command duty gloves"
