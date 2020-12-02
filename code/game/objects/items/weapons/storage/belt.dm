@@ -307,7 +307,9 @@
 		/obj/item/clothing/gloves,
 		/obj/item/device/assembly/mousetrap,
 		/obj/item/weapon/crowbar/prybar,
-		/obj/item/clothing/mask/plunger
+		/obj/item/clothing/mask/plunger,
+		/obj/item/clothing/shoes/galoshes,
+		/obj/item/weapon/storage/bag/trash
 		)
 
 /obj/item/weapon/storage/belt/holster/general

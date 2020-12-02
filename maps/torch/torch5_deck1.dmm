@@ -22307,6 +22307,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
+/obj/item/weapon/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "iHb" = (
@@ -22457,7 +22458,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "iVM" = (
-/obj/structure/bed/chair/padded/red{
+/obj/structure/bed/chair/comfy/purple{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -22760,11 +22761,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "jqD" = (
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "forensicswindow"
+/obj/structure/table/steel_reinforced,
+/obj/machinery/door/window/westleft{
+	dir = 4
 	},
-/obj/structure/cable/green,
-/turf/simulated/floor/plating,
+/obj/machinery/door/window/westleft,
+/turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "jqF" = (
 /obj/structure/noticeboard{
@@ -25406,6 +25408,9 @@
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 10
+	},
+/obj/structure/bed/chair/comfy/red{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
@@ -28593,14 +28598,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
 "qSx" = (
-/obj/structure/closet,
-/obj/item/clothing/suit/storage/toggle/labcoat,
-/obj/item/weapon/storage/box/evidence,
-/obj/item/weapon/storage/box/syringes,
-/obj/item/weapon/storage/box/gloves,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 8
+	},
+/obj/structure/closet/secure_closet/forensics{
+	name = "forensics trainee locker"
 	},
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
