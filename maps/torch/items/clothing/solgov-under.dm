@@ -445,6 +445,16 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
+/obj/item/clothing/under/solgov/service/fleet/warrant
+	name = "fleet warrant officer service uniform"
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a cobalt trim, denoting it as a warrant officer's."
+	icon_state = "whiteservice_wo"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_wo"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		)
+
 /obj/item/clothing/under/solgov/service/fleet/officer
 	name = "fleet officer service uniform"
 	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a silver trim, denoting it as a junior officer's."
@@ -471,6 +481,15 @@
 	icon_state = "whiteservice_flag"
 	item_state = "nursesuit"
 	worn_state = "whiteservice_flag"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		)
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/warrant
+	name = "fleet warrant officer service skirt"
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a cobalt trim, denoting it as a warrant officer's."
+	icon_state = "whiteservicefem_wo"
+	worn_state = "whiteservicefem_wo"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
