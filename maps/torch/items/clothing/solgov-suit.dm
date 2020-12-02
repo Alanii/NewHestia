@@ -80,7 +80,7 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
 	name = "fleet warrant officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet service jacket with bronze accents."
+	desc = "A black NanoTrasen Expeditionary Fleet service jacket with cobalt accents."
 	icon_state = "blueservice_wo"
 	item_state = "blueservice_wo"
 
@@ -231,7 +231,7 @@
 	
 /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
 	name = "fleet dress warrant officer's jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with bronze accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with cobalt accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_wo"
 	item_state = "whitedress_wo"
 

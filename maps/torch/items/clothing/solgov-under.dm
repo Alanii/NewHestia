@@ -447,7 +447,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet/warrant
 	name = "fleet warrant officer service uniform"
-	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a bronze trim, denoting it as a warrant officer's."
+	desc = "The service uniform of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a cobalt trim, denoting it as a warrant officer's."
 	icon_state = "whiteservice_wo"
 	item_state = "nursesuit"
 	worn_state = "whiteservice_wo"
@@ -487,7 +487,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet/skirt/warrant
 	name = "fleet warrant officer service skirt"
-	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a bronze trim, denoting it as a warrant officer's."
+	desc = "The service uniform skirt of NT's Expeditionary Fleet, made from immaculate white fabric. This one has a cobalt trim, denoting it as a warrant officer's."
 	icon_state = "whiteservicefem_wo"
 	worn_state = "whiteservicefem_wo"
 	sprite_sheets = list(
