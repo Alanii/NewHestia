@@ -157,11 +157,3 @@
 	desc = "Your bones, skin and general state of mind is rather fragile. Try not to get smacked, or you may have to visit the ER."
 	var_changes = list("brute_mod" =2.50)
 
-	/datum/trait/commune
-	name = "Telepathy"
-	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities, unlikely to ever develop into something greater."
-/datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
-	..(S,H)
-	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
-
-
