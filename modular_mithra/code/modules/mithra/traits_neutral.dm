@@ -14,14 +14,27 @@
 /datum/trait/cold_blooded
 	name = "Ectothermy"
 	desc = "You have diminished means of internal thermoregulation, forcing you to rely on external heat to stay alive."
-	var_changes = list("body_temperature" = 280,15, "cold_discomfort_level" = 279,15)
+	var_changes = list("cold_level_1" = 200,  "cold_level_2" = 150, "cold_level_3" = 90, "breath_cold_level_1" = 180, "breath_cold_level_2" = 100, "breath_cold_level_3" = 60, "cold_discomfort_level" = 210, "heat_level_1" = 305, "heat_level_2" = 360, "heat_level_3" = 700, "breath_heat_level_1" = 345, "breath_heat_level_2" = 380, "breath_heat_level_3" = 780, "heat_discomfort_level" = 295, "body_temperature" = 290)
 	excludes = list(/datum/trait/hot_blooded)
-
 /datum/trait/hot_blooded
 	name = "Hot-blooded"
 	desc = "Your body is capable of more vigourous endothermoregulation, causing your average body temperature to be higher than normal."
-	var_changes = list("body_temperature" = 319,15, "heat_discomfort_level" = 316)
+	var_changes = list("heat_level_1" = 420, "heat_level_2" = 460, "heat_level_3" = 1100, "breath_heat_level_1" = 440, "breath_heat_level_2" = 510, "breath_heat_level_3" = 1500, "heat_discomfort_level" = 390, "cold_level_1" = 280, "cold_level_2" = 220, "cold_level_3" = 140, "breath_cold_level_1" = 260, "breath_cold_level_2" = 240, "breath_cold_level_3" = 120, "cold_discomfort_level" = 280, "body_temperature" = 330)
 	excludes = list(/datum/trait/cold_blooded)
+
+
+	/datum/trait/autohiss_unathi
+	name = "Autohiss (Unathi)"
+	desc = "You roll your S's and x's"
+	var_changes = list(
+	autohiss_basic_map = list(
+			"s" = list("ss", "sss", "ssss")
+		),
+	autohiss_extra_map = list(
+			"x" = list("ks", "kss", "ksss")
+		),
+	autohiss_exempt = list("Sinta'unathi"))
+
 
 /datum/trait/nitrogen_breath
 	name = "Nitrogenous Spirometry"
@@ -40,6 +53,11 @@
 	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 0.5, "metabolism_mod" = 0.5)
 	excludes = list(/datum/trait/fast_meta)
 
+/datum/trait/metabolism_apex
+	name = "Apex Metabolism"
+	desc = "Finally a proper excuse for your hungry actions. Essentially doubles the fast trait rates. Good for characters with big appetites."
+	var_changes = list("metabolic_rate" = 1.4, "hunger_factor" = 0.4, "metabolism" = 0.012) // +40% rate and 8x hunger
+	excludes = list(/datum/trait/slow_meta,/datum/trait/fast_meta)
 /datum/trait/carnivore
 	name = "Carnivore"
 	desc = "For one reason or another, you're only capable of eating meat. Vegetables won't kill you, but they won't help you either."
