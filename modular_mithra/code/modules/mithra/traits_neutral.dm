@@ -20,7 +20,7 @@
 /datum/trait/hot_blooded
 	name = "Hot-blooded"
 	desc = "Your body is capable of more vigourous endothermoregulation, causing your average body temperature to be higher than normal."
-	var_changes = list("body_temperature" = 319,15 "heat_discomfort_level" = 316)
+	var_changes = list("body_temperature" = 319,15, "heat_discomfort_level" = 316)
 	excludes = list(/datum/trait/cold_blooded)
 
 /datum/trait/nitrogen_breath
