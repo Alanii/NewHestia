@@ -211,7 +211,8 @@
 						SKILL_COMPUTER     = SKILL_SPEC,
 	                    SKILL_ELECTRICAL   = SKILL_SPEC,
 	                    SKILL_ATMOS        = SKILL_SPEC,
-	                    SKILL_ENGINES      = SKILL_SPEC)
+	                    SKILL_ENGINES      = SKILL_SPEC,
+						SKILL_EVA          = SKILL_SPEC)
 	skill_points = 28
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
