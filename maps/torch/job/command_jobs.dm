@@ -72,7 +72,7 @@
 					access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
 					access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
 					access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-					access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd)
+					access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd, access_infantry)
 	minimal_access = list(access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
 						access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
 						access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_chapel_office, access_tech_storage,
@@ -84,7 +84,7 @@
 						access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
 						access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
 						access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-						access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd, access_gunnery)
+						access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd, access_gunnery, access_infantry)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -109,12 +109,12 @@
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_COMPUTER    = SKILL_ADEPT,
 	                    SKILL_FINANCE     = SKILL_ADEPT,
-	                    SKILL_BOTANY      = SKILL_BASIC,
+	                    SKILL_BOTANY      = SKILL_ADEPT,
 	                    SKILL_ANATOMY     = SKILL_BASIC,
-	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_DEVICES     = SKILL_ADEPT,
+	                    SKILL_SCIENCE     = SKILL_EXPERT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_DEVICES     = SKILL_SPEC,
@@ -156,16 +156,17 @@
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/ec/o3
 	)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
-	                    SKILL_CHEMISTRY   = SKILL_BASIC,
+	                    SKILL_CHEMISTRY   = SKILL_ADEPT,
 						SKILL_DEVICES     = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_SPEC,
 	                    SKILL_ANATOMY     = SKILL_SPEC,
-	                    SKILL_CHEMISTRY   = SKILL_EXPERT)
-	skill_points = 26
+	                    SKILL_CHEMISTRY   = SKILL_EXPERT,
+						SKILL_DEVICES     = SKILL_SPEC)
+	skill_points = 24
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_heads,
@@ -198,10 +199,10 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3
 	)
-	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_ADEPT,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
 	                    SKILL_EVA          = SKILL_ADEPT,
-	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
+	                    SKILL_CONSTRUCTION = SKILL_EXPERT,
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
 	                    SKILL_ATMOS        = SKILL_ADEPT,
 	                    SKILL_ENGINES      = SKILL_EXPERT)
@@ -210,8 +211,9 @@
 						SKILL_COMPUTER     = SKILL_SPEC,
 	                    SKILL_ELECTRICAL   = SKILL_SPEC,
 	                    SKILL_ATMOS        = SKILL_SPEC,
-	                    SKILL_ENGINES      = SKILL_SPEC)
-	skill_points = 30
+	                    SKILL_ENGINES      = SKILL_SPEC,
+						SKILL_EVA          = SKILL_SPEC)
+	skill_points = 28
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
@@ -256,7 +258,7 @@
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
@@ -296,6 +298,9 @@
 	allowed_ranks = list(/datum/mil_rank/sol/gov)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
+
+	max_skill = list(   SKILL_BUREAUCY    = SKILL_SPEC,
+						SKILL_FINANCE     = SKILL_SPEC)
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
@@ -320,7 +325,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,
@@ -344,7 +349,7 @@
 	access = list(access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
-			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery)
+			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery, access_infantry)
 
 	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)

@@ -26,7 +26,7 @@
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
 	//#include "datums/uniforms_fleet.dm"
-	#include "datums/uniforms_exp_fleet.dm"
+	#include "datums/uniforms_exp_fleet.dm" //carl's forbidden NTEF loadouts. Only left in because removing it breaks all marine outfits too.
 	#include "datums/uniforms_marine-corps.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/corporate.dm"
@@ -51,9 +51,6 @@
 	#include "game/antagonist/outsider/raider.dm"
 
 	#include "infantry/firearms.dm"
-	#include "infantry/outfits.dm"
-	#include "infantry/storage.dm"
-	#include "infantry/vending.dm"
 
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"
@@ -184,6 +181,7 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
+	#include "../away/meatstation/meatstation.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 

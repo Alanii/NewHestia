@@ -124,7 +124,7 @@
 	//Set species_restricted list
 	switch(target_species)
 		if(SPECIES_HUMAN,SPECIES_SKRELL)	//humanoid bodytypes
-			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC) //skrell/humans/machines can wear each other's suits
+			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC,SPECIES_SHELL) //skrell/humans/machines/shells can wear each other's suits
 		else
 			species_restricted = list(target_species)
 
@@ -140,9 +140,9 @@
 	//Set species_restricted list
 	switch(target_species)
 		if(SPECIES_SKRELL)
-			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC) //skrell helmets fit humans too
+			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC,SPECIES_SHELL) //skrell helmets fit humans too
 		if(SPECIES_HUMAN)
-			species_restricted = list(SPECIES_HUMAN,SPECIES_IPC) //human helmets fit IPCs too
+			species_restricted = list(SPECIES_HUMAN,SPECIES_IPC,SPECIES_SHELL) //human helmets fit IPCs too
 		else
 			species_restricted = list(target_species)
 
@@ -699,14 +699,13 @@ BLIND     // can't see anything
 		return FALSE
 	if (loc != user)
 		return FALSE
-	if (do_after(user, 2 SECONDS))
-		if (!user.put_in_hands(hidden_item))
-			to_chat(usr, SPAN_WARNING("You need an empty, unbroken hand to pull the [hidden_item] from the [src]."))
-			return TRUE
-		user.visible_message(SPAN_ITALIC("\The [user] pulls \the [hidden_item] from \the [src]."), range = 1)
-		playsound(get_turf(src), 'sound/effects/holster/tactiholsterout.ogg', 25)
-		verbs -= /obj/item/clothing/shoes/proc/remove_hidden
-		hidden_item = null
+	if (!user.put_in_hands(hidden_item))
+		to_chat(usr, SPAN_WARNING("You need an empty, unbroken hand to pull the [hidden_item] from the [src]."))
+		return TRUE
+	user.visible_message(SPAN_ITALIC("\The [user] pulls \the [hidden_item] from \the [src]."), range = 1)
+	playsound(get_turf(src), 'sound/effects/holster/tactiholsterout.ogg', 25)
+	verbs -= /obj/item/clothing/shoes/proc/remove_hidden
+	hidden_item = null
 	return TRUE
 
 /obj/item/clothing/shoes/proc/handle_movement(var/turf/walking, var/running)
@@ -786,7 +785,7 @@ BLIND     // can't see anything
 	w_class = ITEM_SIZE_NORMAL
 	force = 0
 	var/has_sensor = SUIT_HAS_SENSORS //For the crew computer 2 = unable to change mode
-	var/sensor_mode = 0
+	var/sensor_mode = SUIT_SENSOR_OFF
 		/*
 		1 = Report living/dead
 		2 = Report detailed damages
@@ -925,13 +924,13 @@ BLIND     // can't see anything
 /obj/item/clothing/under/examine(mob/user)
 	. = ..()
 	switch(src.sensor_mode)
-		if(0)
+		if(0)			if(SUIT_SENSOR_OFF)
 			to_chat(user, "Its sensors appear to be disabled.")
-		if(1)
+		if(1)			if(SUIT_SENSOR_BINARY)
 			to_chat(user, "Its binary life sensors appear to be enabled.")
-		if(2)
+		if(2)			if(SUIT_SENSOR_VITAL)
 			to_chat(user, "Its vital tracker appears to be enabled.")
-		if(3)
+		if(3)			if(SUIT_SENSOR_TRACKING)
 			to_chat(user, "Its vital tracker and tracking beacon appear to be enabled.")
 
 /obj/item/clothing/under/proc/set_sensors(mob/user as mob)
@@ -954,17 +953,17 @@ BLIND     // can't see anything
 
 	if (src.loc == user)
 		switch(sensor_mode)
-			if(0)
+			if(SUIT_SENSOR_OFF)
 				user.visible_message("[user] adjusts the tracking sensor on \his [src.name].", "You disable your suit's remote sensing equipment.")
-			if(1)
+			if(SUIT_SENSOR_BINARY)
 				user.visible_message("[user] adjusts the tracking sensor on \his [src.name].", "Your suit will now report whether you are live or dead.")
-			if(2)
+			if(SUIT_SENSOR_VITAL)
 				user.visible_message("[user] adjusts the tracking sensor on \his [src.name].", "Your suit will now report your vital lifesigns.")
-			if(3)
+			if(SUIT_SENSOR_TRACKING)
 				user.visible_message("[user] adjusts the tracking sensor on \his [src.name].", "Your suit will now report your vital lifesigns as well as your coordinate position.")
 
 	else if (ismob(src.loc))
-		if(sensor_mode == 0)
+		if(sensor_mode == SUIT_SENSOR_OFF)
 			user.visible_message("<span class='warning'>[user] disables [src.loc]'s remote sensing equipment.</span>", "You disable [src.loc]'s remote sensing equipment.")
 		else
 			user.visible_message("[user] adjusts the tracking sensor on [src.loc]'s [src.name].", "You adjust [src.loc]'s sensors.")

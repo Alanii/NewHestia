@@ -27,7 +27,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
-	armor_penetration = 5
+	armor_penetration = 10
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
@@ -186,7 +186,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 20
+	agony = 30
 
 	muzzle_type = /obj/effect/projectile/stun/muzzle
 	tracer_type = /obj/effect/projectile/stun/tracer
@@ -195,7 +195,7 @@
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
 	damage = 2
-	agony = 40
+	agony = 50
 
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
@@ -265,6 +265,11 @@
 			L.drop_r_hand()
 
 	return 1
+
+/obj/item/projectile/beam/pulse/epp
+	damage = 12
+	damage_type = ELECTROCUTE
+	agony = 35
 
 /obj/item/projectile/beam/particle
 	name = "particle lance"
@@ -339,3 +344,33 @@
 		L.adjust_fire_stacks(rand(2,4))
 		if(L.fire_stacks >= 3)
 			L.IgniteMob()
+
+//defence lance projectile
+/obj/item/projectile/beam/particle/defence
+	name = "particle beam"
+	icon_state = "particle"
+	damage = 5
+	agony = 80
+	eyeblur = 2
+	stutter = 2
+	damage_type = BURN
+
+//lethals
+/obj/item/projectile/beam/particleadv
+	name = "particle charge"
+	icon_state = "particle"
+	fire_sound = 'sound/weapons/gauss.ogg'
+	damage = 65
+	armor_penetration = 85
+	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
+	tracer_type = /obj/effect/projectile/laser_particle/tracer
+	impact_type = /obj/effect/projectile/laser_particle/impact
+	shrapnel_chance_multiplier = 0.2
+	arterial_bleed_chance_multiplier = 0.2
+
+/obj/item/projectile/beam/particleadv/small
+	name = "particle charge"
+	damage = 55
+	armor_penetration = 65
+	shrapnel_chance_multiplier = 0.3
+	arterial_bleed_chance_multiplier = 0.3

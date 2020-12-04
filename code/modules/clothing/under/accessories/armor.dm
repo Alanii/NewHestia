@@ -115,6 +115,21 @@
 	siemens_coefficient = 0.3
 	slowdown = 0.5
 
+
+// Shockplate
+/obj/item/clothing/accessory/armorplate/shock
+	name = "shock plating"
+	desc = "An incredibly expensive armor plate made of visco-elastic materials, designed to provide the most protection from pure physical harm. \
+	Given how the material functions, it's better for protecting against brute force weapons, rather than bullets. Attaches to a plate carrier."
+	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
+	icon_state = "armor_shock"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT
+		)
+
 //Arm guards
 /obj/item/clothing/accessory/armguards
 	name = "black arm guards"
@@ -153,6 +168,16 @@
 	name = "tan arm guards"
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_tan"
+
+/obj/item/clothing/accessory/armguards/tan/tactical
+	name = "tactical tan arm guards"
+	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
+	icon_state = "armguards_tan_tac"
+
+/obj/item/clothing/accessory/armguards/tactical
+	name = "tactical arm guards"
+	desc = "A pair of arm pads reinforced with armor plating. Attaches to a plate carrier."
+	icon_state = "armguards_tac"
 
 /obj/item/clothing/accessory/armguards/merc
 	name = "heavy arm guards"
@@ -244,6 +269,16 @@
 	name = "tan leg guards"
 	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
 	icon_state = "legguards_tan"
+
+/obj/item/clothing/accessory/legguards/tan/tactical
+	name = "tactical tan leg guards"
+	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
+	icon_state = "legguards_tan_tac"
+
+/obj/item/clothing/accessory/legguards/tactical
+	name = "tactical leg guards"
+	desc = "A pair of armored leg pads. Attaches to a plate carrier."
+	icon_state = "legguards_tac"
 
 /obj/item/clothing/accessory/legguards/merc
 	name = "heavy leg guards"

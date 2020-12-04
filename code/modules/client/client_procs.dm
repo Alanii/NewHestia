@@ -380,7 +380,8 @@
 		'html/images/daislogo.png',
 		'html/images/eclogo.png',
 		'html/images/fleetlogo.png',
-		'html/images/sfplogo.png'
+		'html/images/sfplogo.png',
+		'html/images/nteflogo.png'
 		)
 
 	var/decl/asset_cache/asset_cache = decls_repository.get_decl(/decl/asset_cache)
@@ -413,7 +414,7 @@ client/verb/character_setup()
 	var/mob/living/M = mob
 	if(istype(M))
 		M.OnMouseDrag(src_object, over_object, src_location, over_location, src_control, over_control, params)
-		
+
 /client/proc/deactivate_darkmode()
 	winset(src, "infowindow", "background-color = [COLOR_DARKMODE_DARKBACKGROUND];background-color = none")
 	winset(src, "infowindow", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
@@ -526,16 +527,16 @@ client/verb/character_setup()
 	winset(src, "saybutton", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
 	winset(src, "asset_cache_browser", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
 	winset(src, "asset_cache_browser", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
-	
+
 client/verb/darkmodeon()
 	set name = "Darkmode On"
 	set desc = "Does what it says on the tin."
 	set category = "OOC"
 	activate_darkmode()
-	
+
 client/verb/darkmodeoff()
 	set name = "Darkmode Off"
 	set desc = "Does what it says on the tin."
 	set category = "OOC"
 	deactivate_darkmode()
-	
+

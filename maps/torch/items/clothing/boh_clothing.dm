@@ -81,33 +81,6 @@
 /obj/item/clothing/suit/dress/terran
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_OVER)
 
-/obj/item/weapon/rig/military/infantry
-	name = "heavy suit control module"
-	desc = "A heavy, incredibly sleek suit of military grade armor. \
-	The minor ablative coating and composite armor makes it seem incredibly sturdy."
-	req_access = list(access_infantry)
-	suit_type = "military hardsuit"
-	icon_state = "military_rig"
-	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_SMALL,
-		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_SHIELDED
-		)
-
-	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/handcuffs,/obj/item/device/t_scanner, /obj/item/weapon/rcd, /obj/item/weapon/crowbar, \
-	/obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/device/multitool, \
-	/obj/item/device/radio, /obj/item/device/scanner/gas,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
-	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit, /obj/item/weapon/storage/)
-
-	initial_modules = list(
-		/obj/item/rig_module/cooling_unit,
-		/obj/item/rig_module/maneuvering_jets
-	)
-
 //Psionic Advisor
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor

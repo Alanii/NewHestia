@@ -6,7 +6,8 @@
 		if(player.current.faction != MOB_FACTION_NEUTRAL)
 			return 0
 
-	if(is_type_in_list(player.assigned_job, blacklisted_jobs))
+	var/mob/new_player/H = player.current
+	if(is_type_in_list(player.assigned_job, blacklisted_jobs) || (H.client.prefs.species in blacklisted_species))
 		return 0
 
 	if(!ignore_role)

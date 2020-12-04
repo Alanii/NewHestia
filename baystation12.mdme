@@ -1489,7 +1489,6 @@
 #include "code\modules\boh\sd_keyturn\keys.dm"
 #include "code\modules\boh\sd_keyturn\keyterminal.dm"
 #include "code\modules\boh\security2\gear.dm"
-#include "code\modules\boh\security2\pepperballs.dm"
 #include "code\modules\boh\survival\aura.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"

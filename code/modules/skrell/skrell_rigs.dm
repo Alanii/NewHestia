@@ -8,6 +8,17 @@
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi'
 	)
+/obj/item/clothing/suit/space/rig/ert/skrell/exchange
+	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
+	sprite_sheets = list(
+		SPECIES_HUMAN = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_VATGROWN = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_SPACER = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_GRAVWORLDER = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_TRITONIAN = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi',
+		SPECIES_BOOSTER = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi'
+	)
 
 /obj/item/clothing/head/helmet/space/rig/ert/skrell
 	name = "skrellian recon hardsuit helmet"
@@ -17,6 +28,17 @@
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi'
 	)
+/obj/item/clothing/head/helmet/space/rig/ert/skrell/exchange
+	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
+	sprite_sheets = list(
+		SPECIES_HUMAN = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_VATGROWN = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_SPACER = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_GRAVWORLDER = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_TRITONIAN = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi',
+		SPECIES_BOOSTER = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi'
+	)
 
 /obj/item/clothing/shoes/magboots/rig/ert/skrell
 	name = "skrellian recon hardsuit boots"
@@ -24,6 +46,17 @@
 	species_restricted = list(SPECIES_SKRELL)
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi'
+	)
+/obj/item/clothing/shoes/magboots/rig/ert/skrell/exchange
+	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
+	sprite_sheets = list(
+		SPECIES_HUMAN = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_VATGROWN = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_SPACER = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_GRAVWORLDER = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_TRITONIAN = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi',
+		SPECIES_BOOSTER = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi'
 	)
 
 /obj/item/clothing/gloves/rig/ert/skrell
@@ -34,7 +67,17 @@
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi'
 	)
-
+/obj/item/clothing/gloves/rig/ert/skrell/exchange
+	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_TRITONIAN, SPECIES_BOOSTER)
+	sprite_sheets = list(
+		SPECIES_HUMAN = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_VATGROWN = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_SPACER = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_GRAVWORLDER = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_TRITONIAN = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi',
+		SPECIES_BOOSTER = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi'
+	)
 //Skrell Baseline Suit
 /obj/item/weapon/rig/skrell
 	name = "skrellian recon hardsuit"
@@ -80,6 +123,42 @@
 		/obj/item/rig_module/cooling_unit
 		)
 	req_access = list("ACCESS_SKRELLSCOUT")
+
+//Skrell Exchange Suit
+/obj/item/weapon/rig/skrell/exchange
+	name = "skrellian exchange hardsuit"
+	desc = "A highly sophisticated, cutting-edge combat hardsuit with an integrated power supply and atmosphere. It's impressive design is resistant yet extremely lightweight, perfectly tailoring itself to the user's body"
+	icon_state = "skrell_exchange_rig"
+	chest_type = /obj/item/clothing/suit/space/rig/ert/skrell/exchange
+	helm_type = /obj/item/clothing/head/helmet/space/rig/ert/skrell/exchange
+	boot_type = /obj/item/clothing/shoes/magboots/rig/ert/skrell/exchange
+	glove_type = /obj/item/clothing/gloves/rig/ert/skrell/exchange
+	armor = list(
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLE,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
+	sprite_sheets = list(
+		SPECIES_HUMAN = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_VATGROWN = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_SPACER = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_GRAVWORLDER = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_TRITONIAN = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi',
+		SPECIES_BOOSTER = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi'
+	)
+	initial_modules = list(
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/device/clustertool/skrell,
+		/obj/item/rig_module/chem_dispenser/skrell/combat,
+		/obj/item/rig_module/device/flash,
+		/obj/item/rig_module/cooling_unit
+	)
 
 //Skrell Engineering Suit
 /obj/item/weapon/rig/skrell/eng

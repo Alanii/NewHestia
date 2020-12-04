@@ -202,6 +202,10 @@
 		if(istype(O, /obj/structure/stairs))
 			return FALSE
 
+	var/area/A
+	if(istype(A, /area/turbolift))
+		return FALSE
+
 	if(mixture)
 		var/pressure = mixture.return_pressure()
 		if(pressure > 50)
@@ -336,15 +340,15 @@
 	grabber.last_special = world.time + 50
 
 	grabber.remove_cloaking_source(src)
-	if(prob(90) && grabber.make_grab(grabber, target, GRAB_NAB_SPECIAL))
-		target.Weaken(rand(1,3))
-		target.LAssailant = grabber
-		grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out and grabs \the [target]!</span>")
-		grabber.do_attack_animation(target)
-		playsound(grabber.loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
-		return 1
-	else
-		grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out, almost grabbing \the [target]!</span>")
+	if(grabber.make_grab(grabber, target, GRAB_NAB_SPECIAL))
+		if(grabber.get_skill_difference(SKILL_COMBAT, target) >= 1)
+			target.LAssailant = grabber
+			grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out and grabs \the [target]!</span>")
+			grabber.do_attack_animation(target)
+			playsound(grabber.loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
+			return 1
+		else
+			grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out, almost grabbing \the [target]!</span>")
 
 /datum/species/nabber/toggle_stance(var/mob/living/carbon/human/H)
 	if(H.incapacitated())

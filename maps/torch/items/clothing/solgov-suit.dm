@@ -68,28 +68,45 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet
 	name = "fleet service jacket"
-	desc = "A navy blue Nanotrasen Expeditionary Fleet service jacket."
+	desc = "A black Nanotrasen Expeditionary Fleet service jacket."
 	icon_state = "blueservice"
+	item_state = "blueservice"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 	name = "fleet SNCO service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet service jacket with silver cuffs."
+	desc = "A black NanoTrasen Expeditionary Fleet service jacket with silver cuffs."
 	icon_state = "blueservice_snco"
+	item_state = "blueservice_snco"
+
+/obj/item/clothing/suit/storage/solgov/service/fleet/warrant
+	name = "fleet warrant officer's service jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet service jacket with cobalt accents."
+	icon_state = "blueservice_wo"
+	item_state = "blueservice_wo"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 	name = "fleet officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver accents."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver accents."
 	icon_state = "blueservice_off"
+	item_state = "blueservice_off"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/command
 	name = "fleet senior officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with gold accents."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with gold accents."
 	icon_state = "blueservice_comm"
+	item_state = "blueservice_comm"
+
+/obj/item/clothing/suit/storage/solgov/service/fleet/captain
+	name = "fleet senior officer's service jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents."
+	icon_state = "blueservice_cap"
+	item_state = "blueservice_cap"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "fleet flag officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with red accents."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with blood-red accents."
 	icon_state = "blueservice_flag"
+	item_state = "blueservice_flag"
 
 /obj/item/clothing/suit/storage/solgov/service/army
 	name = "marine coat"
@@ -202,29 +219,45 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet
 	name = "fleet dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket. Don't get near pasta sauce or vox."
 	icon_state = "whitedress"
 	item_state = "whitedress"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	name = "fleet dress SNCO jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_snco"
+	item_state = "whitedress_snco"
+	
+/obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
+	name = "fleet dress warrant officer's jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with cobalt accents. Don't get near pasta sauce or vox."
+	icon_state = "whitedress_wo"
+	item_state = "whitedress_wo"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "fleet officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_off"
+	item_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_comm"
+	item_state = "whitedress_comm"
+
+/obj/item/clothing/suit/storage/solgov/dress/fleet/captain
+	name = "fleet captain's dress jacket"
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents, denoting it as a captain's. Shiny."
+	icon_state = "whitedress_cap"
+	item_state = "whitedress_cap"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with red accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with blood-red accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_flag"
+	item_state = "whitedress_flag"
 
 /obj/item/clothing/suit/dress/solgov
 	name = "dress jacket"
@@ -239,7 +272,7 @@
 
 /obj/item/clothing/suit/dress/solgov/fleet/sailor
 	name = "fleet dress overwear"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress suit. Almost looks like a school-girl outfit."
+	desc = "A black NanoTrasen Expeditionary Fleet dress suit. Almost looks like a school-girl outfit."
 	icon_state = "sailordress"
 
 /obj/item/clothing/suit/dress/solgov/army
@@ -281,7 +314,7 @@
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
 	name = "fleet winter coat"
-	icon_state = "coatfl"
+	icon_state = "coatec"
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -289,6 +322,7 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	desc = "A black NTEF winter coat. Warm!"
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet
 	name = "fleet engineering jacket"
@@ -346,7 +380,7 @@
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet/exploration
 	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its command staff. It sports some gold markings."
+	desc = "A jacket commonly issued by the fleet to its command staff. It sports some discrete purple markings."
 	icon_state = "navyxpljacket"
 	allowed = list (/obj/item/weapon/tank,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner
 	)

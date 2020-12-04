@@ -209,7 +209,7 @@
 		bomb = ARMOR_BOMB_PADDED
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/device/flashlight,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	cold_protection = UPPER_TORSO|LOWER_TORSO
@@ -293,6 +293,26 @@
 /obj/item/clothing/suit/armor/pcarrier/medium/nt
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor/tag/nt)
 
+// Cadet Vest
+/obj/item/clothing/suit/armor/pcarrier/light/security
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/storage/pouches)
+
+/obj/item/clothing/suit/armor/pcarrier/grey
+	name = "grey plate carrier"
+	desc = "A lightweight grey plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon_state = "pcarrier_grey"
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate)
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light/civ
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ)
+
+/obj/item/clothing/suit/armor/pcarrier/grey/light/med
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ/med)
+
 /obj/item/clothing/suit/armor/pcarrier/ipc
 	name = "refitted plate carrier"
 	desc = "A modular, compact black plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
@@ -340,18 +360,22 @@
 /obj/item/clothing/suit/armor/pcarrier/tan/ipc
 	name = "compact tan plate carrier"
 	desc = "A modular, compact tan plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
-	icon_state = "pcarrier_tan_ipc"	
+	icon_state = "pcarrier_tan_ipc"
 	species_restricted = list(SPECIES_IPC)
 
 /obj/item/clothing/suit/armor/pcarrier/tan/tactical
 	name = "tactical plate carrier"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/armguards/tan, /obj/item/clothing/accessory/legguards/tan,)
+	icon_state = "pcarrier_tan_tac"
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/armguards/tan/tactical, /obj/item/clothing/accessory/legguards/tan/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/tactical
 	name = "black tactical plate carrier"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards, /obj/item/clothing/accessory/legguards, /obj/item/clothing/accessory/armor/tag/swat)
+	icon_state = "pcarrier_tac"
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/tactical, /obj/item/clothing/accessory/legguards/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/merc
+	name = "combat plate carrier"
+	icon_state = "pcarrier_merc"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/merc, /obj/item/clothing/accessory/armguards/merc, /obj/item/clothing/accessory/legguards/merc, /obj/item/clothing/accessory/storage/pouches/large)
 
 //Modular specialty armor
@@ -483,3 +507,23 @@
 	name = "bundeforz armored vest"
 	desc = "A heavy armored vest in a light grey urban camo. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "m_vest"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/tan
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_tan"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/navy
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_navy"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/blue
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_blue"
+
+/obj/item/clothing/suit/armor/pcarrier/kevlar/green
+	name = "tan kevlar"
+	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "kevlar_green"

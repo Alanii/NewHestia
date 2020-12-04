@@ -535,10 +535,10 @@
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
-/area/turbolift/robotics_lift
-	name = "\improper Robotics Lift"
-	icon_state = "shuttle3"
-	base_turf = /turf/simulated/open
+/area/turbolift/robotics_lift	
+	name = "\improper Robotics Lift"	
+	icon_state = "shuttle3"	
+	base_turf = /turf/simulated/open	
 
 //Merchant
 
@@ -689,7 +689,7 @@
 	req_access = list(access_senadv)
 
 /area/crew_quarters/heads/office/sea/marine
-	name = "\improper Command - Marine SEA's Office"
+	name = "\improper Command - SMC Attache's Office"
 
 // Engineering
 
@@ -1035,13 +1035,6 @@
 	icon_state = "brig"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
-
-/area/security/brig/psionic
-	name = "\improper Psionic Holding"
-	icon_state = "misclab"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-	req_access = list(access_brig)
-	ambience = list('sound/ambience/spookyspace1.ogg')
 
 // AI
 /area/turret_protected/ai_foyer
@@ -1494,7 +1487,7 @@
 	name = "\improper Robotics Lab"
 	icon_state = "robotics"
 
-/area/assembly/robotics/lower
+/area/assembly/robotics/lower	
 	name = "\improper Lower Robotics Lab"
 
 /area/assembly/robotics/surgery

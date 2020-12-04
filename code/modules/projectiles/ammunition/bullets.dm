@@ -44,16 +44,19 @@
 	icon_state = "magnumcasing"
 	spent_icon = "magnumcasing-spent"
 
+/obj/item/ammo_casing/pistol/magnum/rubber
+	desc = "A high-power pistol rubber bullet casing."
+	caliber = CALIBER_PISTOL_MAGNUM
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/rubber
+
+/obj/item/ammo_casing/pistol/magnum/large
+	desc = "A high-power bullet casing."
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	projectile_type = /obj/item/projectile/bullet/pistol/large
+
 /obj/item/ammo_casing/pistol/throwback
 	desc = "An antique pistol bullet casing. Somewhere between 9 and 11 mm in caliber."
 	caliber = CALIBER_PISTOL_ANTIQUE
-
-/obj/item/ammo_casing/gyrojet
-	desc = "A minirocket casing."
-	caliber = CALIBER_GYROJET
-	projectile_type = /obj/item/projectile/bullet/gyro
-	icon_state = "lcasing"
-	spent_icon = "lcasing-spent"
 
 /obj/item/ammo_casing/flechette
 	desc = "A flechette casing."
@@ -80,14 +83,6 @@
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun
 	matter = list(MATERIAL_STEEL = 360)
 
-/obj/item/ammo_casing/shotgun/blank
-	name = "shotgun shell"
-	desc = "A blank shell."
-	icon_state = "blshell"
-	spent_icon = "blshell-spent"
-	projectile_type = /obj/item/projectile/bullet/blank
-	matter = list(MATERIAL_STEEL = 90)
-
 /obj/item/ammo_casing/shotgun/practice
 	name = "shotgun shell"
 	desc = "A practice shell."
@@ -106,12 +101,21 @@
 
 /obj/item/ammo_casing/shotgun/flechette
 	name = "flechette shell"
-	desc = "A skrellian flechette shell."
+	desc = "A skrellian flechette shell, this thing is huge"
 	icon_state = "fshell"
 	spent_icon = "fshell-spent"
-	caliber = CALIBER_SHOTGUN
+	caliber = CALIBER_SHOTGUN_BIG
 	projectile_type = /obj/item/projectile/bullet/shotgun/flechette
 	matter = list(MATERIAL_STEEL = 360)
+
+/obj/item/ammo_casing/shotgun/birdshot
+	name = "rubbershot shell"
+	desc = "A rubbershot shell."
+	icon = 'icons/boh/ammo.dmi'
+	icon_state = "bdshell"
+	spent_icon = "bdshell-spent"
+	projectile_type = /obj/item/projectile/bullet/pellet/birdshot
+	matter = list(MATERIAL_STEEL = 80)
 
 //Can stun in one hit if aimed at the head, but
 //is blocked by clothing that stops tasers and is vulnerable to EMP
@@ -136,6 +140,16 @@
 	spent_icon = "fshell-spent"
 	projectile_type = /obj/item/projectile/energy/flash/flare
 	matter = list(MATERIAL_STEEL = 90, MATERIAL_GLASS = 90)
+
+/obj/item/ammo_casing/sabot
+	name = "sabot shell"
+	desc = "APFSDS in a neat little package. It's prone to over penetrating, and as such does little damage to targets without armor." //even though it does little damage overall, being a niche round.
+	icon = 'icons/boh/ammo.dmi'
+	icon_state = "sabshell"
+	spent_icon = "sabshell-spent"
+	caliber = CALIBER_SABOT
+	projectile_type = /obj/item/projectile/bullet/sabot
+	matter = list(MATERIAL_STEEL = 420)
 
 /obj/item/ammo_casing/rifle
 	desc = "A rifle bullet casing."
@@ -178,6 +192,12 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
 
+/obj/item/ammo_casing/rifle/military/low
+	desc = "A frangible bullet casing."
+	caliber = CALIBER_RIFLE_MILITARY
+	projectile_type = /obj/item/projectile/bullet/rifle/military/sec
+
+
 /obj/item/ammo_casing/rocket
 	name = "rocket shell"
 	desc = "A high explosive designed to be fired from a launcher."
@@ -213,3 +233,26 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(MATERIAL_STEEL = 260, MATERIAL_URANIUM = 200)
+
+//
+
+/obj/item/ammo_casing/rocket/rcr
+	name = "incendiary shell"
+	desc = "A high explosive designed to be fired from a launcher. This one is marked with various warnings. As if anyone reads them, pfft. \
+	It does mention something about being an incredibly localized explosive, however, and only to be used against non-organic targets. Whatever that means."
+	icon = 'icons/boh/ammo.dmi'
+	icon_state = "rcrshell"
+	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
+	projectile_type = /obj/item/projectile/bullet/rcr
+
+/obj/item/projectile/bullet/gyro
+	name = "minirocket"
+	fire_sound = 'sound/effects/Explosion1.ogg'
+	var/gyro_devastation = -1
+	var/gyro_heavy_impact = 0
+	var/gyro_light_impact = 2
+
+/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, gyro_devastation, gyro_heavy_impact, gyro_light_impact)
+	..()

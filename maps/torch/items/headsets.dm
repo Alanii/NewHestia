@@ -90,6 +90,18 @@
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
+/obj/item/device/radio/headset/smcattache
+	name = "marine attache's headset"
+	desc = "A headset for the guy or gal who advises marines whilst from a position of seniority."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/sea
+
+/obj/item/device/radio/headset/smcattache/alt
+	name = "marine attache's bowman headset"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
+
 /obj/item/device/radio/headset/bridgeofficer
 	name = "bridge officer's headset"
 	desc = "A headset with access to the command, engineering and exploration channels."

@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/gun/small/secure
-	name = "compact smartgun"
+	name = "LAEP90-CS"
 	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash. It has an ability to recharge itself over time."
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
@@ -13,7 +13,7 @@
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/stunrevolver/secure
-	name = "smart stun revolver"
+	name = "A&M X6"
 	desc = "This A&M X6 is fitted with an NT1019 chip which allows remote authorization of weapon functionality. It has an SCG emblem on the grip."
 	icon = 'icons/obj/guns/stunrevolver_secure.dmi'
 	icon_state = "revolverstun100"
@@ -27,7 +27,7 @@
 	base_parry_chance = 10
 
 /obj/item/weapon/gun/energy/gun/secure
-	name = "smartgun"
+	name = "LAEP90-S"
 	desc = "A more secure LAEP90, the LAEP90-S is designed to please paranoid constituents. Body cam not included."
 	icon = 'icons/obj/guns/energy_gun_secure.dmi'
 	item_icons = list(
@@ -40,7 +40,7 @@
 	max_shots = 10
 
 /obj/item/weapon/gun/energy/revolver/secure
-	name = "smart service revolver"
+	name = "LAER680-S"
 	desc = "The LAER680-S, a standard issue service revolver commonly used by higher ranking offcers among the SCG. Fitted with an NT1019 chip which allows remote authorization of the weapon's functionality."
 	icon = 'icons/obj/guns/energy_revolver.dmi'
 	icon_state = "energyrevolverstun100"
@@ -77,7 +77,7 @@
 	. = ..()
 
 /obj/item/weapon/gun/energy/laser/secure
-	name = "laser carbine"
+	name = "G40E carbine"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))

@@ -10,6 +10,10 @@
 	name = "senior enlisted advisor's rubber stamp"
 	icon_state = "stamp-xo"
 
+/obj/item/weapon/stamp/smcattache
+	name = "marine attache's rubber stamp"
+	icon_state = "stamp-xo"
+
 /obj/item/weapon/stamp/cos
 	name = "chief of security's rubber stamp"
 	icon_state = "stamp-cos"

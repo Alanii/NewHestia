@@ -326,6 +326,8 @@
 	new /obj/item/clothing/under/color/green(src)
 	new /obj/item/clothing/under/color/orange(src)
 	new /obj/item/clothing/under/color/pink(src)
+	new /obj/item/clothing/head/maid(src)
+	new /obj/item/clothing/under/skirt/maid(src)
 	new /obj/item/clothing/under/dress/plaid_blue(src)
 	new /obj/item/clothing/under/dress/plaid_red(src)
 	new /obj/item/clothing/under/dress/plaid_purple(src)

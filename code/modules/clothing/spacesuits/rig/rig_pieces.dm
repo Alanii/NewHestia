@@ -25,6 +25,40 @@
 	cold_protection =    HANDS
 	species_restricted = null
 	gender = PLURAL
+	var/obj/item/clothing/gloves/storedgloves = null // To store previous gloves like magboots do with shoes
+	var/mob/living/carbon/human/storedwearer = null
+
+/obj/item/clothing/gloves/rig/mob_can_equip(mob/user)
+	var/mob/living/carbon/human/H = user
+
+	if(H.gloves)
+		storedgloves = H.gloves
+		if(!H.unEquip(storedgloves, src))//Remove the old gloves
+			storedgloves = null
+			return 0
+
+	if(!..())
+		if(storedgloves) 	//Put the old gloves back in the check fails
+			if(H.equip_to_slot_if_possible(storedgloves, slot_gloves))
+				src.storedgloves = null
+		return 0
+
+	if(storedgloves)
+		to_chat(user, "You slip \the [src] on over \the [storedgloves].")
+	storedwearer = H
+	return 1
+
+/obj/item/clothing/gloves/rig/dropped()
+	..()
+	if(!storedwearer)
+		return
+
+	var/mob/living/carbon/human/H = storedwearer
+	if(storedgloves && istype(H))
+		if(!H.equip_to_slot_if_possible(storedgloves, slot_gloves))
+			storedgloves.dropInto(loc)
+		src.storedgloves = null
+	storedwearer = null
 
 /obj/item/clothing/shoes/magboots/rig
 	name = "boots"

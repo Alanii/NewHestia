@@ -107,7 +107,6 @@
 /area/ship/ascent/subdeck_center)
 "ar" = (
 /obj/machinery/atmospherics/pipe/zpipe/up/supply{
-	color = "#0000ff";
 	dir = 4
 	},
 /turf/simulated/floor/ascent,
@@ -307,7 +306,6 @@
 /area/ship/ascent/subdeck_atmos)
 "aS" = (
 /obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
-	color = "#ff0000";
 	dir = 4
 	},
 /turf/simulated/floor/ascent,
@@ -400,7 +398,6 @@
 "be" = (
 /obj/machinery/computer/air_control{
 	dir = 4;
-	frequency = 1441;
 	input_tag = "waste_tank";
 	name = "Waste Control";
 	output_tag = "";
@@ -418,8 +415,7 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/meter{
-	name = "waste line meter";
-	pixel_y = 0
+	name = "waste line meter"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_atmos)
@@ -830,7 +826,6 @@
 "bX" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
-	item_state = "beaker";
 	name = "cryo beaker"
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
@@ -933,8 +928,7 @@
 "cg" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
+	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -1191,8 +1185,7 @@
 	frequency = 1331
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 6;
-	icon_state = "intact"
+	dir = 6
 	},
 /obj/machinery/power/apc/hyper/ascent/west,
 /obj/structure/cable/cyan,
@@ -1206,8 +1199,7 @@
 /area/ship/ascent/subdeck_hospital)
 "cH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4;
-	icon_state = "intact"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
@@ -1342,7 +1334,6 @@
 "cV" = (
 /obj/machinery/computer/air_control{
 	dir = 4;
-	frequency = 1441;
 	input_tag = "bromide_tank";
 	name = "Bromide Supply Control";
 	output_tag = "bromide_tank";
@@ -1357,8 +1348,7 @@
 "cW" = (
 /obj/machinery/light/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 9;
-	icon_state = "intact"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
@@ -1555,8 +1545,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
+	dir = 9
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_north)
@@ -1624,8 +1613,7 @@
 "dy" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_atmos)
@@ -1647,7 +1635,6 @@
 	dir = 4;
 	max_pressure_setting = 30000;
 	name = "distro pressure regulator";
-	regulate_mode = 2;
 	target_pressure = 250;
 	use_power = 1
 	},

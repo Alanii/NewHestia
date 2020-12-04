@@ -111,6 +111,21 @@
 	path = /obj/item/clothing/shoes/workboots/toeless
 	sort_category = "Xenowear"
 
+/datum/gear/shoes/footwraps
+	display_name = "cloth footwraps"
+	path = /obj/item/clothing/shoes/footwraps
+	sort_category = "Xenowear"
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/shoes/gildedleg
+	display_name = "Gilded legwraps"
+	path = /obj/item/clothing/shoes/gildedwraps
+	sort_category = "Xenowear"
+
+/datum/gear/shoes/silvergildedleg
+	display_name = "Silver legwraps"
+	path = /obj/item/clothing/shoes/silverwraps
+	sort_category = "Xenowear"
 // Pre-modified gloves
 
 /datum/gear/gloves/colored/modified
@@ -155,3 +170,35 @@
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
+// Tajara Clothing
+/datum/gear/accessory/taj_scarf
+	display_name = "Tajaran scarf selection"
+	path = /obj/item/clothing/accessory/taj_scarf
+	whitelisted = list(SPECIES_TAJ)
+	sort_category = "Xenowear"
+
+/datum/gear/accessory/taj_scarf/New()
+	..() 
+	var/taj_scarf = list()
+	taj_scarf["brown fur scarf"] = /obj/item/clothing/accessory/taj_scarf
+	taj_scarf["light brown fur scarf"] = /obj/item/clothing/accessory/taj_scarf/lbrown
+	taj_scarf["blue fur scarf"] = /obj/item/clothing/accessory/taj_scarf/blue
+	taj_scarf["silver fur scarf"] = /obj/item/clothing/accessory/taj_scarf/silver
+	taj_scarf["black fur scarf"] = /obj/item/clothing/accessory/taj_scarf/black
+	taj_scarf["ruddy fur scarf"] = /obj/item/clothing/accessory/taj_scarf/ruddy
+	taj_scarf["cream fur scarf"] = /obj/item/clothing/accessory/taj_scarf/cream
+	gear_tweaks += new/datum/gear_tweak/path(taj_scarf)
+
+/datum/gear/head/tajara
+	display_name = "adhomian headgear selection"
+	description = "A selection of tajaran native headgear."
+	path = /obj/item/clothing/head/tajaran/circlet
+	whitelisted = list(SPECIES_TAJ)
+	sort_category = "Xenowear"
+
+/datum/gear/head/tajara/New()
+	..()
+	var/circlet = list()
+	circlet["golden dress circlet"] = /obj/item/clothing/head/tajaran/circlet
+	circlet["silver dress circlet"] = /obj/item/clothing/head/tajaran/circlet/silver
+	gear_tweaks += new/datum/gear_tweak/path(circlet)

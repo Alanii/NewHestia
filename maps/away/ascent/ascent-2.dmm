@@ -40,8 +40,7 @@
 /area/ship/ascent/wing_starboard)
 "al" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 4;
-	icon_state = "intact"
+	dir = 4
 	},
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -1427,9 +1426,7 @@
 /area/ship/ascent/wing_starboard)
 "dd" = (
 /obj/machinery/light/ascent,
-/obj/machinery/body_scanconsole/ascent{
-	dir = 2
-	},
+/obj/machinery/body_scanconsole/ascent,
 /obj/structure/table/rack/shelf/steel,
 /obj/item/roller,
 /turf/simulated/floor/tiled/ascent,
@@ -2014,7 +2011,6 @@
 /area/ship/ascent/wing_starboard)
 "eo" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
 	frequency = 1333;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
@@ -2023,7 +2019,6 @@
 	frequency = 1333;
 	id_tag = "ascent_starboard";
 	pixel_x = -24;
-	pixel_y = 0;
 	req_access = list("ACCESS_ASCENT");
 	tag_exterior_sensor = "ascent_starboard_sensor"
 	},
@@ -2262,7 +2257,6 @@
 	frequency = 1332;
 	id_tag = "ascent_port_dock";
 	pixel_x = -24;
-	pixel_y = 0;
 	tag_airpump = "ascent_port_dock_pump";
 	tag_chamber_sensor = "ascent_port_dock_sensor";
 	tag_exterior_door = "ascent_port_dock_outer";
@@ -2459,8 +2453,7 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1333;
 	id_tag = "ascent_starboard_sensor";
-	pixel_x = -24;
-	pixel_y = 0
+	pixel_x = -24
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -2489,7 +2482,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
 	frequency = 1333;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
@@ -2867,8 +2859,7 @@
 /area/ship/ascent/bridge)
 "fN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
+	dir = 9
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
@@ -3181,8 +3172,7 @@
 	pixel_y = 32
 	},
 /obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
@@ -3293,7 +3283,6 @@
 /area/ship/ascent/wing_starboard)
 "gI" = (
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
-	color = "#ff0000";
 	dir = 4
 	},
 /turf/simulated/open/mantid,
@@ -3719,8 +3708,7 @@
 	command = "cycle_exterior";
 	frequency = 1333;
 	master_tag = "ascent_starboard";
-	pixel_x = -24;
-	pixel_y = 0
+	pixel_x = -24
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -3733,7 +3721,6 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/hygiene/sink/ascent{
 	dir = 1;
-	icon_state = "sink";
 	pixel_y = 28
 	},
 /turf/simulated/floor/ascent,
@@ -4298,8 +4285,7 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1333;
 	id_tag = "ascent_starboard_sensor_external";
-	pixel_x = -24;
-	pixel_y = 0
+	pixel_x = -24
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -4414,7 +4400,6 @@
 	frequency = 1333;
 	id_tag = "ascent_starboard_dock";
 	pixel_x = -24;
-	pixel_y = 0;
 	tag_airpump = "ascent_shuttle_starboard_vent_inner";
 	tag_chamber_sensor = "ascent_shuttle_starboard_interior_sensor";
 	tag_exterior_door = "ascent_dock_starboard_external";
@@ -4543,13 +4528,13 @@
 /area/ship/ascent/shuttle_starboard)
 "vY" = (
 /obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
+	dir = 4
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
 "wd" = (
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 1;
 	color = "PURPLE";
 	dir = 4;
 	req_access = list()
@@ -4580,7 +4565,6 @@
 /area/ship/ascent/aft_starboard_jut)
 "wO" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
 	frequency = 1333;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
@@ -4685,7 +4669,6 @@
 "AI" = (
 /obj/machinery/mineral/stacking_machine{
 	color = "PURPLE";
-	input_turf = 4;
 	name = "materials distributor";
 	output_turf = 2
 	},
@@ -4722,8 +4705,7 @@
 	name = "heavy duty box"
 	},
 /obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
+	dir = 8
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
@@ -4823,8 +4805,7 @@
 "IQ" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4;
-	icon_state = "intact"
+	dir = 4
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -5028,8 +5009,7 @@
 /area/ship/ascent/fore_starboard_jut)
 "QT" = (
 /obj/structure/hygiene/shower/ascent{
-	dir = 1;
-	icon_state = "shower"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
@@ -5081,8 +5061,7 @@
 /area/ship/ascent/shuttle_starboard)
 "TO" = (
 /obj/structure/hygiene/shower/ascent{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
@@ -5132,8 +5111,7 @@
 /area/ship/ascent/shuttle_starboard)
 "Vx" = (
 /obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)

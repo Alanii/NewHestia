@@ -53,3 +53,10 @@
 	name = "secret legal documents"
 	desc = "Documents owned by the Adjudicator, it contains information on a variety of high profile cases."
 	description_antag = "The Adjudicator's documents contain a large amount of information that a variety of influential people would likely prefer hidden."
+
+/obj/item/documents/epp
+	name = "experimental pulse project"
+	desc = "\"Top Secret\" faxes between the Captain, Executive and other officials of NanoTrasen. They seem to be discussing something rather important, regarding an 'EPP'. \
+	Whatever the hell that means."
+	description_antag = "It seems to detail the creation, deployment and internal workings of the device in question. This'd probably sell for quite a bit to NT's competition."
+	icon_state = "docs_verified"

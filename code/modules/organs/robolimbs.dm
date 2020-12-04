@@ -83,9 +83,9 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/zenghu/zenghu_main.dmi'
 	can_eat = 1
 	unavailable_at_fab = 1
-	allowed_bodytypes = list(SPECIES_HUMAN,SPECIES_IPC)
+	allowed_bodytypes = list(SPECIES_HUMAN,SPECIES_SHELL)
 
-/datum/robolimb/zenghu/spirit
+/datum/robolimb/spirit
 	company = "Zeng-Hu Spirit"
 	desc = "This limb has a sleek black and white polymer finish."
 	icon = 'icons/mob/human_races/cyberlimbs/zenghu/zenghu_spirit.dmi'
@@ -200,11 +200,32 @@ var/datum/robolimb/basic_robolimb
 	can_eat = 1
 	skintone = 1
 	unavailable_at_fab = 1
+	allowed_bodytypes = list(SPECIES_HUMAN, SPECIES_SHELL)
+	species_cannot_use = list(SPECIES_IPC)
+
+/datum/robolimb/zenghumk2
+	company = "Zeng Hu Shell Chassis MK2"
+	desc = "A dated, human-like chassis for the original Shell IPC models. While human in shape, it's very obviously still mechanical."
+	icon = 'icons/mob/human_races/cyberlimbs/zenghumk2/zenghumk2_main.dmi'
+	can_eat = 1
+	skintone = 1
+	unavailable_at_fab = 1
+	allowed_bodytypes = list(SPECIES_SHELL)
+
+/datum/robolimb/zenghumk3
+	company = "Zeng Hu Shell Chassis MK3"
+	desc = "A cheap, mass-produced shell chassis with synthetic skin and muscle to make it nearly indistinguishable from a human at a glance."
+	icon = 'icons/mob/human_races/cyberlimbs/zenghumk3/zenghumk3_main.dmi'
+	can_eat = 1
+	skintone = 1
+	unavailable_at_fab = 1
+	allowed_bodytypes = list(SPECIES_SHELL)
 
 /datum/robolimb/shellguard
 	company = "Shellguard"
 	desc = "This limb has a sturdy and heavy build to it."
 	icon = 'icons/mob/human_races/cyberlimbs/shellguard/shellguard_main.dmi'
+
 
 /datum/robolimb/shellguard/alt
 	company = "Shellguard Alt."

@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/magnetic/railgun
-	name = "railgun"
+	name = "LM-76 Thunderclap"
 	desc = "The HelTek Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Aigaion Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
 	icon = 'icons/obj/guns/railgun.dmi'
 	icon_state = "railgun"
@@ -65,12 +65,13 @@
 	visible_message("<span class='warning'>\The [src] beeps and ejects its empty cartridge.</span>")
 
 /obj/item/weapon/gun/magnetic/railgun/mmi
+	name = "MI-72 Comet"
 	desc = "The Mars Military Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements."
 	icon = 'icons/obj/guns/railgun_old.dmi'
 	icon_state = "old_railgun"
 
 /obj/item/weapon/gun/magnetic/railgun/tcc // Oppa! Should only be available to TCC shock troops or high-budget mercs.
-	name = "advanced railgun"
+	name = "HR-22 Hammerhead"
 	desc = "The HelTek Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Terran shock troops and anti-tank personnel."
 	icon = 'icons/obj/guns/railgun_adv.dmi'
 	icon_state = "railgun-tcc"
@@ -110,7 +111,7 @@
 		out_of_ammo()
 
 /obj/item/weapon/gun/magnetic/railgun/automatic // Adminspawn only, this shit is absurd.
-	name = "\improper LMRA autocannon"
+	name = "\improper LMRA-14A Meteor"
 	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the United Colonies in the Aigaion Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
 	icon = 'icons/obj/guns/railgun_heavy.dmi'
 	icon_state = "heavy_railgun"
@@ -139,13 +140,13 @@
 		to_chat(user, "<span class='notice'>Someone has scratched <i>Ultima Ratio Regum</i> onto the side of the barrel.</span>")
 
 /obj/item/weapon/gun/magnetic/railgun/automatic/mmi
-	name = "\improper RHR accelerator"
+	name = "\improper MI-227 Meteor"
 	desc = "The Mars Military Industries MI-227 Meteor. Originally a vehicle-mounted turret weapon for heavy anti-vehicular and anti-structural fire, the fact that it was made man-portable is mindboggling in itself."
 	icon = 'icons/obj/guns/railgun_old_heavy.dmi'
 	icon_state = "old_heavy_railgun"
 
 /obj/item/weapon/gun/magnetic/railgun/flechette
-	name = "flechette gun"
+	name = "MI-12 Skadi"
 	desc = "The MI-12 Skadi is a burst fire capable railgun that fires flechette rounds at high velocity. Deadly against armour, but much less effective against soft targets."
 	icon = 'icons/obj/guns/flechette.dmi'
 	icon_state = "flechette_gun"
@@ -191,3 +192,14 @@
 	power_cost = 100
 	wielded_item_state = "skrell_rifle-wielded"
 	firemodes = list()
+
+/obj/item/weapon/gun/magnetic/railgun/automatic/deathsquad // Rather broken Deathsquad rifle. Admin/ERT only.
+	name = "Jhen JT-78 Hydra"
+	desc = "The Jhen JT-78 Hydra. This appears to be of Terran design, though with significant modifications."
+	icon = 'icons/obj/guns/railgun_adv.dmi'
+	icon_state = "railgun-tcc"
+
+	firemodes = list(
+		list(mode_name="semiauto",    burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="bump fire", burst=2, fire_delay=null, move_delay=2,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		)

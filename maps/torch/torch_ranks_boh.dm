@@ -200,6 +200,10 @@
 		/datum/mil_rank/fleet/o6
 	)
 
+
+	min_skill = list(	SKILL_MEDICAL = SKILL_BASIC,
+						SKILL_EVA     = SKILL_BASIC)
+
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
@@ -264,8 +268,7 @@
 
 	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
 						SKILL_WEAPONS = SKILL_BASIC,
-						SKILL_COMBAT  = SKILL_BASIC,
-						SKILL_EVA     = SKILL_BASIC)
+						SKILL_COMBAT  = SKILL_BASIC)
 
 /*
  *  Fleet (NTEF Override)

@@ -38,7 +38,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	burn_mod =            1.1
 	toxins_mod =          0.1
 	oxy_mod =             0
-	total_health =        400
+	total_health =        220
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5
@@ -134,6 +134,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 			FACTION_FREETRADE,
 			FACTION_PCRC,
 			FACTION_DAIS,
+			FACTION_SAARE,
 			FACTION_OTHER
 		),
 		TAG_RELIGION =  list(

@@ -105,6 +105,30 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
 	)
 
+/obj/structure/closet/secure_closet/smcattache
+	name = "marine attache's locker"
+	req_access = list(access_senadv)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
+
+/obj/structure/closet/secure_closet/smcattache/WillContain()
+	return list(
+		/obj/item/clothing/glasses/sunglasses,
+		/obj/item/device/radio/headset/smcattache,
+		/obj/item/device/radio/headset/smcattache/alt,
+		/obj/item/weapon/storage/belt/general,
+		/obj/item/weapon/storage/belt/holster/general,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/material/clipboard,
+		/obj/item/device/holowarrant,
+		/obj/item/weapon/folder/blue,
+		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/gunbox,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
+	)
+
 /obj/structure/closet/secure_closet/bridgeofficer
 	name = "bridge officer's locker"
 	req_access = list(access_bridge, access_keycard_auth)

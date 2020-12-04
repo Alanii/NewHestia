@@ -109,6 +109,7 @@
 	var/max_ammo = 7
 
 	var/ammo_type = /obj/item/ammo_casing //ammo type that is initially loaded
+	var/allowed_round = list(/obj/item/ammo_casing) //To limit what rounds certain magazines can take
 	var/initial_ammo = null
 
 	var/multiple_sprites = 0
@@ -140,7 +141,7 @@
 /obj/item/ammo_magazine/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/ammo_casing))
 		var/obj/item/ammo_casing/C = W
-		if(C.caliber != caliber)
+		if(C.caliber != caliber || !(is_type_in_list(C, allowed_round)))
 			to_chat(user, "<span class='warning'>[C] does not fit into [src].</span>")
 			return
 		if(stored_ammo.len >= max_ammo)

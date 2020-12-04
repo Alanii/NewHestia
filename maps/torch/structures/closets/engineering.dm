@@ -64,6 +64,7 @@
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/storage/box/armband/engine,
 		/obj/item/weapon/storage/box/secret_project_disks,
+		/obj/item/weapon/screwdriver/power,
 		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/clothing/head/hardhat/damage_control/White,
 		/obj/item/weapon/sd_key,
@@ -121,6 +122,7 @@
 		/obj/item/clothing/gloves/insulated,
 		/obj/item/clothing/gloves/thick/duty/solgov/eng,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/weapon/screwdriver/power,
 		/obj/item/clothing/head/hardhat/damage_control/Yellow,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/industrial, /obj/item/weapon/storage/backpack/satchel/eng)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/eng, /obj/item/weapon/storage/backpack/messenger/engi))

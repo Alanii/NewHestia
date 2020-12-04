@@ -26,6 +26,7 @@
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
 #define FACTION_SPACECOPS  "Sol Federal Police"
+#define FACTION_SAARE			"Strategic Assault and Asset Retention Enterprises"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
@@ -137,7 +138,8 @@
 #define RELIGION_VOX           "Auralis Reverence"
 
 // IPC cultures.
-#define CULTURE_POSITRONICS    "Union Member"
+#define CULTURE_POSITRONICS           "Union Member"
+#define CULTURE_POSITRONICS_GENERIC   "Integrated Positronic Chassis"
 
 #define HOME_SYSTEM_ROOT       "Root"
 
@@ -197,3 +199,10 @@
 #define FACTION_SERGAL_REONO "Reono lands"
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+//Tajaran culture
+#define CULTURE_NAJRRO "Naj'rro' Ak'han (Those of the Free Spirit)"
+#define CULTURE_RAKARZIZ "Ra'kar'ziz Tajara (Seeker of the Faith)"
+#define CULTURE_NEERROM "Nee'rro'm Zan (Wanderers of the Tundra)"
+#define CULTURE_ZHAN "Zhan Tajara (Keepers of the Oath)"
+#define CULTURE_TAJARAN_OTHER "Other Tajaran"

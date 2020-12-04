@@ -1,6 +1,6 @@
 /datum/job/submap/unishi_crew
 	title = "Unishi Crew"
-	total_positions = 1
+	total_positions = 3
 	outfit_type = /decl/hierarchy/outfit/job/unishi/crew
 	is_semi_antagonist = TRUE
 	supervisors = "your survival"
@@ -13,7 +13,7 @@
 /datum/job/submap/unishi_researcher
 	title = "Unishi Researcher"
 	supervisors = "the crew"
-	total_positions = 2
+	total_positions = 3
 	outfit_type = /decl/hierarchy/outfit/job/unishi/researcher
 	is_semi_antagonist = TRUE
 	info = "You remember waking up to alarms blaring in your face. Before you could react, a gush of hot air blew \

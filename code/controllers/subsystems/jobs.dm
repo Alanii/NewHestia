@@ -113,6 +113,7 @@ SUBSYSTEM_DEF(jobs)
 					if(job.department_flag & GLOB.bitflags[I])
 						LAZYDISTINCTADD(positions_by_department["[GLOB.bitflags[I]]"], job.title)
 
+
 	// Set up syndicate phrases.
 	syndicate_code_phrase = generate_code_phrase()
 	syndicate_code_response	= generate_code_phrase()
@@ -482,6 +483,13 @@ SUBSYSTEM_DEF(jobs)
 		job.equip(H, H.mind ? H.mind.role_alt_title : "", H.char_branch, H.char_rank)
 		job.apply_fingerprints(H)
 		spawn_in_storage = equip_custom_loadout(H, job)
+
+		var/obj/item/clothing/under/uniform = H.w_uniform
+		if(istype(uniform) && uniform.has_sensor)
+			uniform.sensor_mode = H.client.prefs.sensor_setting
+			if(H.client.prefs.sensors_locked)
+				uniform.has_sensor = SUIT_LOCKED_SENSORS
+
 	else
 		to_chat(H, "Your job is [rank] and the game just can't handle it! Please report this bug to an administrator.")
 

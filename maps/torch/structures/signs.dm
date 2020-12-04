@@ -8,13 +8,13 @@
 
 /obj/structure/sign/ecplaque
 	name = "\improper Surveyor Corps Directives"
-	desc = "A plaque with Surveyor Corps logo etched in it."
+	desc = "A plaque with the defunct Surveyor Corps logo etched in it. The Surveyor Corps haven't been funded for years, not since all the money went to fighting one of SolGov's many wars."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "ecplaque"
 	var/directives = {"<hr><center>
 		1. <b>Exploring the unknown is your Primary Mission</b><br>
 
-		You are to look for land and resources that can be used by NanoTrasen to advance and prosper. Explore. Document. Explain. Knowledge is the most valuable resource.<br>
+		You are to look for land and resources that can be used by Sol to advance her sphere of influence and prosper. Explore. Document. Nothing is too small to note.<br>
 
 		2. <b>Every member of the Surveyor Corps is an explorer</b><br>
 
@@ -27,7 +27,7 @@
 
 /obj/structure/sign/ecplaque/examine(mob/user)
 	. = ..()
-	to_chat(user, "The founding principles of the SC are written there: <A href='?src=\ref[src];show_info=1'>Surveyor Directives</A>")
+	to_chat(user, "The founding principles of the Surveyor Corps are written there: <A href='?src=\ref[src];show_info=1'>Surveyor Directives</A>")
 
 /obj/structure/sign/ecplaque/CanUseTopic()
 	return STATUS_INTERACTIVE
@@ -58,19 +58,19 @@
 
 /obj/structure/sign/solgov
 	name = "\improper SolGov Seal"
-	desc = "A sign which signifies who this vessel was designed in line with. Primarily used to scare away pirates, the likes of which run at the first sign of an SCG presence."
+	desc = "A sign which signifies who this vessel was designed in line with. Not as useful, these days. SCG presence hasn't been a threat to pirates for a long time, not since the majority of their fleet was wiped out in their war against the UGC.."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "solgovseal"
 
 /obj/structure/sign/ntcrest
-	name = "\improper NT Logo"
-	desc = "Crest that signifies the vessel is under the propert of NanoTrasen."
+	name = "\improper NTEF Logo"
+	desc = "A crest that signifies this vessel is property of NanoTrasen's Expeditionary Fleet."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
-	icon_state = "ntcrest"
+	icon_state = "ntefcrest"
 
 /obj/structure/sign/double/solgovflag
 	name = "Sol Central Government Flag"
-	desc = "The flag of the Sol Central Government, a symbol of many things to many people."
+	desc = "The flag of the Sol Central Government. Defenders of democracy. Imperialists. Accepting of everyone. Strongly against synthetic rights. United. Crumbling from the inside. This flag means many things to many people."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 
 /obj/structure/sign/double/solgovflag/left

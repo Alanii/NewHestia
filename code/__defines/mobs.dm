@@ -295,6 +295,7 @@
 #define SPECIES_VOX_ARMALIS "Vox Armalis"
 #define SPECIES_VOXPARIAH   "Vox Pariah"
 #define SPECIES_IPC         "Machine"
+#define SPECIES_SHELL		"Shell IPC"
 #define SPECIES_UNATHI      "Unathi"
 #define SPECIES_SERGAL      "Sergal"
 #define SPECIES_NORTHERN    "Northern Sergal"

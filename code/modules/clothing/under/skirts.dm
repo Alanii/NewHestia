@@ -27,6 +27,14 @@
 	item_state = "kilt"
 	worn_state = "plaid_purple"
 
+/obj/item/clothing/under/skirt/maid
+	name = "Maid Dress"
+	desc = "A pretty, french maid dress."
+	icon_state = "maid"
+	item_state = "maid"
+	worn_state = "maid"
+	rolled_sleeves = -1
+
 // discreet skirts, dont cover upper/arms etc
 /obj/item/clothing/under/skirt/khaki
 	name = "khaki skirt"

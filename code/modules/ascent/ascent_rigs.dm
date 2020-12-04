@@ -140,6 +140,18 @@
 /obj/item/rig_module/device/clustertool/iscrowbar()
 	return device && device.iscrowbar()
 
+//gyne rig module
+/obj/item/rig_module/device/batterer
+	desc = "A void-cell powered device of sorts."
+	icon_state = "batterer"
+	interface_name = "mounted mind batterer"
+	interface_desc = "A device to force a restart of the nervous system for any nearby creature. It doesn't discriminate in terms of targets."
+	usable = 1
+	use_power_cost = 1500//dumps all power from the Gyne's/User's suit.
+	module_cooldown = 145//Enough time to stop abuse. It also doesn't care who gets hit, so it's a double edged sword.
+	origin_tech = list(TECH_BLUESPACE = 2, TECH_MAGNET = 8, TECH_ENGINEERING = 12)
+	device = /obj/item/device/batterer/mantid
+
 // Atmosphere/jetpack filler.
 /obj/item/weapon/tank/mantid
 	name = "mantid gas tank"

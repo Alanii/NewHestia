@@ -301,6 +301,14 @@
 	item_state = "taqiyah"
 	body_parts_covered = 0
 
+/obj/item/clothing/head/maid
+	name = "maid's headband"
+	desc = "This dainty, frilled thing is apparently meant to go on your head. How cute."
+	icon_state = "infhatfem"
+	sprite_sheets = list(
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi')
+	body_parts_covered = 0
+
 /obj/item/clothing/head/rastacap
 	name = "rastacap"
 	desc = "A round, crocheted cap, often worn to tuck hair away or for religious purposes."
@@ -341,3 +349,15 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	flash_protection = FLASH_PROTECTION_MAJOR
+
+// Taj headstuff
+
+/obj/item/clothing/head/tajaran/circlet
+	name = "golden dress circlet"
+	desc = "A golden circlet with a pearl in the middle of it."
+	icon_state = "taj_circlet"
+
+/obj/item/clothing/head/tajaran/circlet/silver
+	name = "silver dress circlet"
+	desc = "A silver circlet with a pearl in the middle of it."
+	icon_state = "taj_circlet_s"

@@ -53,7 +53,7 @@
 /obj/item/clothing/head/helmet/tactical
 	name = "tactical helmet"
 	desc = "A tan helmet made from advanced ceramic. Comfortable and robust."
-	icon_state = "helmet_tac"
+	icon_state = "helmet_tan_tac"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RIFLE,
@@ -62,12 +62,13 @@
 		bomb = ARMOR_BOMB_PADDED
 		)
 	siemens_coefficient = 0.6
+	body_parts_covered = HEAD|FACE|EYES
+	flags_inv = HIDEEARS|HIDEEYES|BLOCKHEADHAIR
 
 /obj/item/clothing/head/helmet/tactical/black
 	name = "black tactical helmet"
 	desc = "A black helmet made from advanced ceramic. Comfortable and robust."
-	icon_state = "helmet"
-	item_state = "helmet"
+	icon_state = "helmet_black_tac"
 
 /obj/item/clothing/head/helmet/merc
 	name = "combat helmet"
@@ -81,6 +82,8 @@
 		bomb = ARMOR_BOMB_PADDED
 		)
 	siemens_coefficient = 0.3
+	body_parts_covered = HEAD|FACE|EYES
+	flags_inv = HIDEEARS|HIDEEYES|BLOCKHEADHAIR
 
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"

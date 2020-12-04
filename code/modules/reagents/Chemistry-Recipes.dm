@@ -491,6 +491,15 @@
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/hyperzine = 1, /datum/reagent/dexalinp = 1)
 	result_amount = 3
 
+/datum/chemical_reaction/zombie
+	name = "Liquid Corruption"
+	result = /datum/reagent/zombie
+	required_reagents = list(/datum/reagent/mutagen = 5, /datum/reagent/aslimetoxin = 1, /datum/reagent/three_eye = 1, /datum/reagent/toxin/venom = 1, /datum/reagent/toxin/bromide = 1)
+	result_amount = 5
+	minimum_temperature = 90 CELSIUS
+	maximum_temperature = 99 CELSIUS
+	mix_message = "The solution boils to produce a foul, crimson fluid. It appears to churn on its own accord."
+
 /* Solidification */
 /datum/chemical_reaction/phoronsolidification
 	name = "Solid Phoron"

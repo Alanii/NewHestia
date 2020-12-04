@@ -30,7 +30,7 @@
 
 // Dog Tags badge string rename, plus added for SMC and NTEF.
 /obj/item/clothing/accessory/badge/solgov/tags
-	badge_string = "NTSS Dagon"
+	badge_string = ""
 
 /obj/item/clothing/accessory/badge/solgov/tags/fleet
 	badge_string = "NTEF"
@@ -164,7 +164,7 @@
 	icon_state = "FO6"
 	overlay_state = "fleetrank_command"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag
+/obj/item/clothing/accessory/solgov/rank/fleet/flag/o7
 	icon_state = "FO7"
 	overlay_state = "fleetrank_command"
 

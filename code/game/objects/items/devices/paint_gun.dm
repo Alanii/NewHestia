@@ -127,6 +127,12 @@
 			D.stripe_airlock(paint_colour)
 		return
 
+	var/obj/item/weapon/light/L = A
+	if(istype(L))
+		L.b_colour = paint_colour
+		L.on_update_icon()
+		return
+
 	var/turf/simulated/floor/F = A
 	if(!istype(F) || !F.flooring)
 		to_chat(user, "<span class='warning'>\The [src] can only be used on floors, walls or certain airlocks.</span>")

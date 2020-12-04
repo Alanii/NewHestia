@@ -8,7 +8,6 @@
 		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_MINOR
 		)
-	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/infilsuit
 	name = "immaculate suit"
@@ -25,7 +24,6 @@
 	name = "formal outfit"
 	desc = "A white dress shirt and navy pants. Snazzy."
 	icon_state = "inf_mob"
-	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/shoes/dress/infilshoes
 	name = "black leather shoes"
@@ -35,8 +33,10 @@
 
 /obj/item/clothing/head/infilhat/fem
 	name = "maid's headband"
-	desc = "This dainty, frilled thing is apparently meant to go on your head."
+	desc = "This dainty, frilled thing is apparently meant to go on your head. This one seems armored."
 	icon_state = "infhatfem"
+	sprite_sheets = list(
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi')
 
 /obj/item/clothing/suit/infilsuit/fem
 	name = "maid's uniform"

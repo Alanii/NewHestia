@@ -70,6 +70,13 @@
 	Special Investigations (sensitive and urgent cases) and Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
 	The contractor SFP Trackers are also used find and arrest low-profile fugitives from justice."
 
+/decl/cultural_info/faction/saare
+	name = FACTION_SAARE
+	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Military Corporation catering to large firms requiring discrete military and private security services. \
+	The company has taken to hiring skilled veterans from both private and public military services but have begun instituting training programs to breed their own operatives for the future. \
+	Typical assignments for SAARE contractors include private law enforcement, ship escort, location security, VIP escort, \
+	and VIP or asset recovery. In the last decade, the company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
+
 /decl/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
 	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the great megacorporations of the modern day.\

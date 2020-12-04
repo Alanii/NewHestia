@@ -54,8 +54,23 @@ var/global/list/sparring_attack_cache = list()
 	if(target.stat == DEAD)
 		return
 
-	var/stun_chance = rand(0, 100)
+	var/stun_chance
+	switch(user.get_skill_value(SKILL_COMBAT))
+		if(1)
+			stun_chance = rand(0,10)
+		if(2)
+			stun_chance = rand(0,20)
+		if(3)
+			stun_chance = rand(10,40)
+		if(4)
+			stun_chance = rand(20,60)
+		if(5)
+			stun_chance = rand(30,100)
+
 	var/armour = target.get_blocked_ratio(zone, BRUTE, damage = attack_damage)
+
+	if((zone == BP_EYES || zone == BP_MOUTH || zone == BP_HEAD) && istype(target.wear_mask, /obj/item/clothing/mask/gas))
+		armour = 1
 
 	if(attack_damage >= 5 && armour < 1 && !(target == user) && stun_chance <= attack_damage * 5) // 25% standard chance
 		switch(zone) // strong punches can have effects depending on where they hit
@@ -90,7 +105,7 @@ var/global/list/sparring_attack_cache = list()
 				if(!target.lying)
 					target.visible_message("<span class='warning'>[target] gives way slightly.</span>")
 					target.apply_effect(attack_damage*3, PAIN, armour)
-	else if(attack_damage >= 5 && !(target == user) && (stun_chance + attack_damage * 5 >= 100) && armour < 1) // Chance to get the usual throwdown as well (25% standard chance)
+	else if(attack_damage >= 5 && !(target == user) && (stun_chance + attack_damage * 5 >= 100) && armour < 1 && (zone == BP_EYES || zone == BP_MOUTH || zone == BP_HEAD)) // Chance to get the usual throwdown as well (25% standard chance)
 		if(!target.lying)
 			target.visible_message("<span class='danger'>[target] [pick("slumps", "falls", "drops")] down to the ground!</span>")
 		else

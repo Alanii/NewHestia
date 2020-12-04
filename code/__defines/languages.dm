@@ -24,6 +24,7 @@
 #define LANGUAGE_VOX               "Vox-pidgin"
 #define LANGUAGE_NABBER            "Serpentid"
 #define LANGUAGE_SERGAL            "Sagaru"
+#define LANGUAGE_ZARROZ            "Tajaran Za'rro'z"
 
 //Antag
 #define LANGUAGE_CULT              "Cult"

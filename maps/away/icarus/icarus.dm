@@ -157,7 +157,7 @@
 
 /obj/structure/sign/double/icarus/solgovflag
 	name = "Sol Central Government Flag"
-	desc = "The iconic flag of the Sol Central Government, a symbol with many different meanings."
+	desc = "The flag of the Sol Central Government. Defenders of democracy. Imperialists. Accepting of everyone. Strongly against synthetic rights. United. Crumbling on the inside. This flag means many things to many people."
 	icon = 'maps/away/icarus/icarus_sprites.dmi'
 
 /obj/structure/sign/double/icarus/solgovflag/left

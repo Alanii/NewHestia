@@ -26,7 +26,7 @@
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security,
 						access_petrov_maint, access_robotics, access_robotics_engineering)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
-	                    SKILL_COMPUTER    = SKILL_ADEPT,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_BOTANY      = SKILL_BASIC,
 	                    SKILL_ANATOMY     = SKILL_BASIC,
@@ -84,6 +84,62 @@
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	minimal_access = list()
 	skill_points = 22
+
+/datum/job/roboticist
+	title = "Roboticist"
+	department = "Science"
+	department_flag = SCI
+
+	total_positions = 2
+	spawn_positions = 2
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	supervisors = "the Chief Science Officer and the Corporate Liaison."
+	selection_color = "#633d63"
+	economic_power = 6
+	alt_titles = list(
+		"Mechsuit Technician",
+		)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/roboticist
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/research/roboticist/fleet,
+		/datum/mil_branch/civilian)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
+		/datum/mil_rank/civ/contractor
+		)
+	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
+	                    SKILL_DEVICES		= SKILL_EXPERT,
+	                    SKILL_ANATOMY       = SKILL_ADEPT,
+	                    SKILL_SCIENCE     	= SKILL_ADEPT,
+	                    SKILL_MEDICAL     	= SKILL_ADEPT,
+	                    SKILL_MECH          = HAS_PERK,
+	                    SKILL_ELECTRICAL    = SKILL_BASIC,
+	                    SKILL_CONSTRUCTION  = SKILL_BASIC)
+
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_EXPERT,
+	                    SKILL_ELECTRICAL   = SKILL_SPEC,
+	                    SKILL_ATMOS        = SKILL_EXPERT,
+	                    SKILL_ENGINES      = SKILL_EXPERT,
+	                    SKILL_DEVICES      = SKILL_SPEC,
+	                    SKILL_MEDICAL      = SKILL_EXPERT,
+	                    SKILL_ANATOMY      = SKILL_EXPERT)
+	skill_points = 24
+
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
+						access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
+						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
+	minimal_access = list()
+
+/datum/job/roboticist/get_description_blurb()
+	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Corporate Liaison and the Chief Science Officer."
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"

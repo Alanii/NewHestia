@@ -40,6 +40,12 @@
 	cost = 0
 	allowed_branches = NT_BRANCHES
 
+/datum/gear/head/echat
+	display_name = "NTEF field cap"
+	path = /obj/item/clothing/head/soft/solgov/fleet/ntef
+	cost = 0
+	allowed_branches = NT_BRANCHES
+
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
 
@@ -111,19 +117,18 @@
 /datum/gear/head/ECdepartment
 	display_name = "NTEF department beret selection"
 	description = "A beret sporting departmental colours for NTEF personnel."
-	path = /obj/item/clothing/head/beret/solgov/expedition
+	path = /obj/item/clothing/head/beret/solgov/fleet
 	allowed_branches = NT_BRANCHES
 
 datum/gear/head/ECdepartment/New()
 	..()
 	var/berets = list()
-	berets["NTEF service beret"] = /obj/item/clothing/head/beret/solgov/expedition/service
-	berets["NTEF security beret"] = /obj/item/clothing/head/beret/solgov/expedition/security
-	berets["NTEF command beret"] = /obj/item/clothing/head/beret/solgov/expedition/command
-	berets["NTEF engineering beret"] = /obj/item/clothing/head/beret/solgov/expedition/engineering
-	berets["NTEF medical beret"] = /obj/item/clothing/head/beret/solgov/expedition/medical
-	berets["NTEF beret"] = /obj/item/clothing/head/beret/solgov/expedition
-	berets["NTEF supply beret"] = /obj/item/clothing/head/beret/solgov/expedition/supply
-	berets["NTEF exploration beret"] = /obj/item/clothing/head/beret/solgov/expedition/exploration
+	berets["NTEF service beret"] = /obj/item/clothing/head/beret/solgov/fleet/service
+	berets["NTEF security beret"] = /obj/item/clothing/head/beret/solgov/fleet/security
+	berets["NTEF command beret"] = /obj/item/clothing/head/beret/solgov/fleet/command
+	berets["NTEF engineering beret"] = /obj/item/clothing/head/beret/solgov/fleet/engineering
+	berets["NTEF medical beret"] = /obj/item/clothing/head/beret/solgov/fleet/medical
+	berets["NTEF beret"] = /obj/item/clothing/head/beret/solgov/fleet
+	berets["NTEF supply beret"] = /obj/item/clothing/head/beret/solgov/fleet/supply
+	berets["NTEF exploration beret"] = /obj/item/clothing/head/beret/solgov/fleet/exploration
 	gear_tweaks += new/datum/gear_tweak/path(berets)
-
