@@ -78,6 +78,8 @@
 		/datum/mil_rank/marine_corps/e8_alt,
 		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/e9_alt,
+		/datum/mil_rank/marine_corps/w4,
+		/datum/mil_rank/marine_corps/w5,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3
@@ -267,6 +269,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
 	)
@@ -278,6 +282,7 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
