@@ -78,6 +78,8 @@
 		/datum/mil_rank/marine_corps/e8_alt,
 		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/e9_alt,
+		/datum/mil_rank/marine_corps/w4,
+		/datum/mil_rank/marine_corps/w5,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3
