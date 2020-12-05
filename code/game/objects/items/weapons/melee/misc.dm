@@ -34,6 +34,16 @@
 	edge = TRUE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 5)
 
+/obj/item/weapon/melee/staff_unathi
+	name = "unathi staff"
+	desc = "A large, decorated wooden staff sometimes seen carried by older unathi"
+	attack_verb = list("struck")
+	slot_flags = SLOT_BACK
+	force = 10
+	throwforce = 9
+	w_class = ITEM_SIZE_HUGE
+	icon_state = "staff_unathi"
+
 /obj/item/weapon/melee/whip/chainofcommand
 	name = "chain of command"
 	desc = "A tool used by great men to placate the frothing masses."
