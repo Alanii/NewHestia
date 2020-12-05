@@ -1009,28 +1009,28 @@
 	set hidden = 1
 	set_face_dir(client.client_dir(WEST))
 
-/mob/verb/eastshift()
+/mob/verb/shifteast()
 	set hidden = TRUE
 	if(!canface())
 		return FALSE
 	if(pixel_x <= 16)
 		pixel_x++
 
-/mob/verb/westshift()
+/mob/verb/shiftwest()
 	set hidden = TRUE
 	if(!canface())
 		return FALSE
 	if(pixel_x >= -16)
 		pixel_x--
 
-/mob/verb/northshift()
+/mob/verb/shiftnorth()
 	set hidden = TRUE
 	if(!canface())
 		return FALSE
 	if(pixel_y <= 16)
 		pixel_y++
 
-/mob/verb/southshift()
+/mob/verb/shiftsouth()
 	set hidden = TRUE
 	if(!canface())
 		return FALSE
