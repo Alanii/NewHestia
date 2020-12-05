@@ -32,6 +32,17 @@
 	slot = slot_w_uniform
 	cost = 2
 
+// Unathi Staff, it's xenowear now deal with it
+
+/datum/gear/tactical/staff_unathi
+	sort_category = "Tactical Equipment"
+	display_name = "unathi staff"
+	description = "A large, decorated wooden staff sometimes seen carried by older unathi."
+	path = /obj/item/weapon/melee/staff_unathi
+	slot = slot_r_hand
+	cost = 5
+	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
+
 //Skrell Chains
 /datum/gear/ears/skrell/
 	sort_category = "Xenowear"

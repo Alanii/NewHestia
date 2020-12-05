@@ -41,6 +41,16 @@
 	icon_state = "chain"
 	item_state = "whip"
 
+/obj/item/weapon/melee/staff_unathi
+	name = "unathi staff"
+	desc = "A large, decorated wooden staff sometimes seen carried by older unathi"
+	attack_verb = list("struck")
+	slot_flags = SLOT_BACK
+	force = 10
+	throwforce = 9
+	w_class = ITEM_SIZE_HUGE
+	icon_state = "staff_unathi"
+
 /obj/item/weapon/material/sword/replica/officersword
 	name = "fleet officer's sword"
 	desc = "A polished sword issued to officers of the fleet."
