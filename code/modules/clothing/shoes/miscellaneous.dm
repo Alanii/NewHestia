@@ -86,6 +86,7 @@
 	name = "duty boots"
 	desc = "A pair of steel-toed synthleather boots with a mirror shine."
 	icon_state = "duty"
+	force = 3
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		energy = ARMOR_ENERGY_MINOR,
