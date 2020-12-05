@@ -261,11 +261,7 @@
 			mob.last_quick_move_time = world.time
 			mob.adjust_stamina(-(mob.get_stamina_used_per_step() * (1+mob.encumbrance())))
 		mob.handle_embedded_and_stomach_objects()
-	
-	//Ideally, this will reset any pixel shifting you did when you start moving
-	mob.pixel_x = mob.default_pixel_x //Reset pixel shifting x
-	mob.pixel_y = mob.default_pixel_y //Reset pixel shifting y
-
+		
 	mob.moving = 0
 
 /datum/movement_handler/mob/movement/MayMove(var/mob/mover)
