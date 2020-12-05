@@ -14,8 +14,8 @@
 		"Xenobiologist",
 		"Xenobotanist",
 		"Circuitry Designer",
-		"Chemical Researcher"
-		"Researcher Advisor,"
+		"Chemical Researcher",
+		"Researcher Advisor",
 		"Senior Researcher"
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
