@@ -209,8 +209,8 @@
 	fire_mult = 3
 	tox_mult = 3
 	oxy_mult = 3
-	nutrition_damage_mult = 2
-	organ_mult = 2
+	nutrition_damage_mult = 3//Increased
+	organ_mult = 5
 	regen_message = "<span class='warning'>You feel a soothing sensation within your ORGAN.</span>"
 	grow_chance = 20
 	grow_threshold = 50
@@ -221,20 +221,20 @@
 /obj/aura/regenerating/human/promethean/life_tick()
 	var/mob/living/carbon/human/H = user
 	if(innate_heal && istype(H) && H.stat != DEAD && H.nutrition < 50)
-		H.adjust_nutrition(3)
+		H.adjust_nutrition(10) //Increased hunger
 		return 1
 
-	if(H.nutrition < 40 && innate_heal && (H.getBruteLoss() + H.getFireLoss() > 10))
+	if(H.nutrition < 70 && innate_heal && (H.getBruteLoss() + H.getFireLoss() > 10)) //Increased
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
-				sponge.take_internal_damage(1)
+				sponge.take_internal_damage(3)//Multiplied by three.
 
-	if(H.nutrition < 10 && innate_heal)
+	if(H.nutrition < 30 && innate_heal) //Increased
 		if(H.should_have_organ(BP_SLIMECORE))
 			var/obj/item/organ/internal/brain/slime/sponge = H.internal_organs_by_name[BP_SLIMECORE]
 			if(sponge)
-				sponge.take_internal_damage(5)
+				sponge.take_internal_damage(10)//Put up
 
 	if(H.stat == UNCONSCIOUS)
 		organ_mult = 0.5
