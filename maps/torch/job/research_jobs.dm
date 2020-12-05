@@ -1,4 +1,3 @@
-
 /datum/job/scientist
 	title = "Scientist"
 	total_positions = 6
