@@ -76,6 +76,7 @@
 	The company has taken to hiring skilled veterans from both private and public military services but have begun instituting training programs to breed their own operatives for the future. \
 	Typical assignments for SAARE contractors include private law enforcement, ship escort, location security, VIP escort, \
 	and VIP or asset recovery. In the last decade, the company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
+	subversive_potential = 15 
 
 /decl/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
