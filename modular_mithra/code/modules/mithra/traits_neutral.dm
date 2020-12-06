@@ -86,7 +86,7 @@
 /datum/trait/endurance_low
 	name = "Fragile"
 	desc = "Your body is much, much more fragile than the average joe."
-	var_changes = list("total_health" = 65)
+	var_changes = list("total_health" = 115)
 
 	apply(var/datum/species/S,var/mob/living/carbon/human/H)
 		..(S,H)
