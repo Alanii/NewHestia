@@ -155,5 +155,4 @@
 /datum/trait/stick_human
 	name = "Incredibly Frail"
 	desc = "Your bones, skin and general state of mind is rather fragile. Try not to get smacked, or you may have to visit the ER."
-	var_changes = list("brute_mod" =2.50)
-
+	var_changes = list("brute_mod" = 2.50)
