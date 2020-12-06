@@ -24,6 +24,9 @@ macro "borghotkeymode"
 		name = "CTRL+West"
 		command = "westface"
 	elem 
+		name = "CTRL+SHIFT+West"
+		command = "shiftwest"
+	elem 
 		name = "West+REP"
 		command = ".moveleft"
 	elem 
@@ -32,6 +35,9 @@ macro "borghotkeymode"
 	elem 
 		name = "CTRL+North"
 		command = "northface"
+	elem 
+		name = "CTRL+SHIFT+North"
+		command = "shiftnorth"
 	elem 
 		name = "North+REP"
 		command = ".moveup"
@@ -42,6 +48,9 @@ macro "borghotkeymode"
 		name = "CTRL+East"
 		command = "eastface"
 	elem 
+		name = "CTRL+SHIFT+East"
+		command = "shifteast"
+	elem 
 		name = "East+REP"
 		command = ".moveright"
 	elem 
@@ -50,6 +59,9 @@ macro "borghotkeymode"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
+	elem 
+		name = "CTRL+SHIFT+South"
+		command = "shiftsouth"
 	elem
 		name = "ALT+A"
 		command = "westfaceperm"
@@ -278,6 +290,9 @@ macro "macro"
 		name = "CTRL+West"
 		command = "westface"
 	elem 
+		name = "CTRL+SHIFT+West"
+		command = "shiftwest"
+	elem 
 		name = "West+REP"
 		command = ".moveleft"
 	elem 
@@ -286,6 +301,9 @@ macro "macro"
 	elem 
 		name = "CTRL+North"
 		command = "northface"
+	elem 
+		name = "CTRL+SHIFT+North"
+		command = "shiftnorth"
 	elem 
 		name = "North+REP"
 		command = ".moveup"
@@ -296,6 +314,9 @@ macro "macro"
 		name = "CTRL+East"
 		command = "eastface"
 	elem 
+		name = "CTRL+SHIFT+East"
+		command = "shifteast"
+	elem 
 		name = "East+REP"
 		command = ".moveright"
 	elem 
@@ -304,6 +325,9 @@ macro "macro"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
+	elem 
+		name = "CTRL+SHIFT+South"
+		command = "shiftsouth"
 	elem 
 		name = "South+REP"
 		command = ".movedown"
@@ -454,6 +478,9 @@ macro "hotkeymode"
 		name = "CTRL+West"
 		command = "westface"
 	elem 
+		name = "CTRL+SHIFT+West"
+		command = "shiftwest"
+	elem 
 		name = "West+REP"
 		command = ".moveleft"
 	elem 
@@ -462,6 +489,9 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+North"
 		command = "northface"
+	elem 
+		name = "CTRL+SHIFT+North"
+		command = "shiftnorth"
 	elem 
 		name = "North+REP"
 		command = ".moveup"
@@ -472,6 +502,9 @@ macro "hotkeymode"
 		name = "CTRL+East"
 		command = "eastface"
 	elem 
+		name = "CTRL+SHIFT+East"
+		command = "shifteast"
+	elem 
 		name = "East+REP"
 		command = ".moveright"
 	elem 
@@ -480,6 +513,9 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
+	elem 
+		name = "CTRL+SHIFT+South"
+		command = "shiftsouth"s
 	elem
 		name = "ALT+A"
 		command = "westfaceperm"
@@ -744,6 +780,9 @@ macro "borgmacro"
 		name = "CTRL+East"
 		command = "eastface"
 	elem 
+		name = "CTRL+SHIFT+West"
+		command = "shiftwest"
+	elem 
 		name = "East+REP"
 		command = ".moveright"
 	elem 
@@ -752,6 +791,9 @@ macro "borgmacro"
 	elem 
 		name = "CTRL+South"
 		command = "southface"
+	elem 
+		name = "CTRL+SHIFT+South"
+		command = "shiftsouth"
 	elem 
 		name = "South+REP"
 		command = ".movedown"

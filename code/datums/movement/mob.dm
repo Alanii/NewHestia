@@ -261,7 +261,7 @@
 			mob.last_quick_move_time = world.time
 			mob.adjust_stamina(-(mob.get_stamina_used_per_step() * (1+mob.encumbrance())))
 		mob.handle_embedded_and_stomach_objects()
-
+		
 	mob.moving = 0
 
 /datum/movement_handler/mob/movement/MayMove(var/mob/mover)
