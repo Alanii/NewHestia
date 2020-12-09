@@ -24,7 +24,6 @@
 								/obj/item/weapon/gun/projectile/pistol/sec         = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/pistol/sec/MK      = TRADER_BLACKLIST,
 								/obj/item/weapon/gun/projectile/pistol/throwback = TRADER_THIS_TYPE,
-								/obj/item/weapon/gun/projectile/automatic = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/automatic/assault_rifle = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/automatic/l6_saw = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/automatic/machine_pistol = TRADER_THIS_TYPE,
