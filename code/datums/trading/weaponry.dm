@@ -18,23 +18,19 @@
 				"insult_bad"        = "If I had my gun I'd shoot you!"
 				)
 
-	possible_trading_items = list(/obj/item/weapon/gun/projectile/pistol/holdout    = TRADER_ALL,
-								/obj/item/weapon/gun/projectile/pistol/military/alt    = TRADER_ALL,
-								/obj/item/weapon/gun/projectile/pistol/magnum_pistol= TRADER_ALL,
-								/obj/item/weapon/gun/projectile/pistol/sec         = TRADER_ALL,
+	possible_trading_items = list(/obj/item/weapon/gun/projectile/pistol/holdout    = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/pistol/military/alt    = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/pistol/magnum_pistol= TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/pistol/sec         = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/pistol/sec/MK      = TRADER_BLACKLIST,
-								/obj/item/weapon/gun/projectile/shotgun/pump= TRADER_SUBTYPES_ONLY,
-								/obj/item/ammo_magazine                     = TRADER_SUBTYPES_ONLY,
-								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/mil_rifle/empty          = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/gyrojet/empty           = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/pistol/small/empty         = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/box/pistol/empty       = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/box/machinegun/empty      = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/machine_pistol/empty        = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/smg_top/empty        = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/magnum/empty           = TRADER_BLACKLIST,
+								/obj/item/weapon/gun/projectile/pistol/throwback = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/automatic = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/automatic/assault_rifle = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/automatic/l6_saw = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/automatic/machine_pistol = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/shotgun/pump = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/shotgun/pump/combat = TRADER_THIS_TYPE,
+								/obj/item/weapon/gun/projectile/shotgun/doublebarrel = TRADER_THIS_TYPE,
 								/obj/item/clothing/accessory/storage/holster        = TRADER_ALL)
 
 /datum/trader/ship/egunshop
