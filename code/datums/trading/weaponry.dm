@@ -30,6 +30,17 @@
 								/obj/item/weapon/gun/projectile/shotgun/pump = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/shotgun/pump/combat = TRADER_THIS_TYPE,
 								/obj/item/weapon/gun/projectile/shotgun/doublebarrel = TRADER_THIS_TYPE,
+								/obj/item/ammo_magazine                     = TRADER_SUBTYPES_ONLY,
+								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/mil_rifle/empty          = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/gyrojet/empty           = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/pistol/small/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/box/pistol/empty       = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/box/machinegun/empty      = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/machine_pistol/empty        = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/smg_top/empty        = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/magnum/empty           = TRADER_BLACKLIST,
 								/obj/item/clothing/accessory/storage/holster        = TRADER_ALL)
 
 /datum/trader/ship/egunshop
