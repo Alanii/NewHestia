@@ -43,7 +43,7 @@
 		"Black Knight" = "securityrobot",
 		"Bloodhound" = "bloodhound",
 		"Bloodhound - Treaded" = "secborg+tread",
-		"Tridroid" = "orb-security"
+		"Tridroid" = "orb-security",
 	)
 	equipment = list(
 		/obj/item/device/flash,
@@ -58,6 +58,17 @@
 		/obj/item/device/hailer
 	)
 	emag = /obj/item/weapon/gun/energy/laser/mounted
+
+/obj/item/weapon/robot_module/security/general/k9
+	dogborg = 1
+	name = "security K9 module"
+	display_name = "Security K9"
+	crisis_locked = FALSE
+	sprites = list(
+		"K9 Hound" = "k9",
+		"V2 K9 Hound" = "ihsechound",
+	)
+
 
 /obj/item/weapon/robot_module/security/combat
 	name = "combat robot module"

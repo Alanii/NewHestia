@@ -22,7 +22,10 @@
 		"Basic" = "Medbot",
 		"Standard" = "surgeon",
 		"Advanced Droid" = "droid-medical",
-		"Needles" = "medicalrobot"
+		"Needles" = "medicalrobot",
+		"Medical Hound" = "medihound",
+		"Dark Medical Hound (Static)" = "medihounddark",
+		"V2 Medihound" = "vale",
 		)
 	equipment = list(
 		/obj/item/device/flash,
@@ -167,3 +170,13 @@
 		var/obj/item/weapon/reagent_containers/spray/PS = emag
 		PS.reagents.add_reagent(/datum/reagent/acid/polyacid, 2 * amount)
 	..()
+
+/obj/item/weapon/robot_module/medical/surgeon/k9
+	dogborg = 1
+	name = "surgeon k9 module"
+	display_name = "Surgeon K9"
+	sprites = list(
+		"Medical Hound" = "medihound",
+		"Dark Medical Hound (Static)" = "medihounddark",
+		"V2 Medihound" = "vale",
+		)

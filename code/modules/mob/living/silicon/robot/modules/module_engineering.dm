@@ -18,7 +18,9 @@
 		"Basic" = "Engineering",
 		"Antique" = "engineerrobot",
 		"Landmate" = "landmate",
-		"Landmate - Treaded" = "engiborg+tread"
+		"Landmate - Treaded" = "engiborg+tread",
+		"V2 Engihound" = "thottbot",
+		"Pupdozer" = "pupdozer",
 	)
 	no_slip = 1
 	equipment = list(
@@ -107,3 +109,13 @@
 	var/obj/item/device/lightreplacer/LR = locate() in equipment
 	LR.Charge(R, amount)
 	..()
+
+
+/obj/item/weapon/robot_module/engineering/k9
+	dogborg = 1
+	name = "engineering k9 module"
+	display_name = "Engineering K9"
+	sprites = list(
+		"V2 Engihound" = "thottbot",
+		"Pupdozer" = "pupdozer",
+		)

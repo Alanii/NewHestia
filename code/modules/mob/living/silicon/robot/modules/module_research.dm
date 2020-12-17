@@ -8,7 +8,8 @@
 		NETWORK_RESEARCH
 	)
 	sprites = list(
-		"Droid" = "droid-science"
+		"Droid" = "droid-science",
+		"Research Hound" = "science"
 	)
 	equipment = list(
 		/obj/item/device/flash,
@@ -55,3 +56,11 @@
 	var/datum/matter_synth/nanite/nanite = locate() in synths
 	var/obj/item/stack/nanopaste/N = locate() in equipment
 	N.synths = list(nanite)
+
+/obj/item/weapon/robot_module/research/k9
+	dogborg = 1
+	name = "research k9 module"
+	display_name = "Research K9"
+	sprites = list(
+		"Research Hound" = "science"
+	)

@@ -27,6 +27,7 @@
 	// Module subsystem category and ID vars.
 	var/display_name
 	var/module_category = ROBOT_MODULE_TYPE_GROUNDED
+	var/dogborg = 0 //DEGENERACY
 	var/crisis_locked =   FALSE
 	var/upgrade_locked =  FALSE
 
@@ -46,6 +47,10 @@
 	. = ..()
 
 	var/mob/living/silicon/robot/R = loc
+	if(dogborg == 1)
+		R.icon = 'icons/mob/dogborg_sprites.dmi'
+		R.pixel_x 	 = -16
+		R.default_pixel_x = -16
 	if(!istype(R))
 		return INITIALIZE_HINT_QDEL
 
@@ -80,7 +85,7 @@
 			var/obj/item/I = thing
 			I.forceMove(src)
 			created_equipment |= I
-		else 
+		else
 			log_debug("Invalid var type in [type] equipment creation - [thing]")
 	equipment = created_equipment
 
@@ -98,7 +103,7 @@
 				created_synths += new thing
 		else if(istype(thing, /datum/matter_synth))
 			created_synths |= thing
-		else 
+		else
 			log_debug("Invalid var type in [type] synth creation - [thing]")
 	synths = created_synths
 
