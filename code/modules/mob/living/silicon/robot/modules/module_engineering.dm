@@ -18,9 +18,7 @@
 		"Basic" = "Engineering",
 		"Antique" = "engineerrobot",
 		"Landmate" = "landmate",
-		"Landmate - Treaded" = "engiborg+tread",
-		"V2 Engihound" = "thottbot",
-		"Pupdozer" = "pupdozer",
+		"Landmate - Treaded" = "engiborg+tread"
 	)
 	no_slip = 1
 	equipment = list(

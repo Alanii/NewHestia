@@ -23,9 +23,6 @@
 		"Standard" = "surgeon",
 		"Advanced Droid" = "droid-medical",
 		"Needles" = "medicalrobot",
-		"Medical Hound" = "medihound",
-		"Dark Medical Hound (Static)" = "medihounddark",
-		"V2 Medihound" = "vale",
 		)
 	equipment = list(
 		/obj/item/device/flash,
